@@ -1,4 +1,4 @@
-#include "CharSocket.h"
+﻿#include "CharSocket.h"
 
 #include <Network/Packet/Packet.h>
 #include <Network\Packet\Char\Char.h>
@@ -91,13 +91,13 @@ bool CharSocket::onReceiveUserInfo(const Packet& packet)
 	struct MSG_Ret_UserMapInfo_SC : public PACKETDATA, char_packet
 	{
 		int32_t _mapid;
-		BYTE _mapname[32];
-		BYTE _filename[32];
-		//Vector2 _pos;
-		//uint32_t _lineid;
-		//uint32_t _copymapidx;
-		//uint32_t _subcopymapidx;
-		//unsigned long _sceneid;
+		BYTE _mapname[128];
+		BYTE _filename[128];
+		Vector2 _pos;
+		uint32_t _lineid;
+		uint32_t _copymapidx;
+		uint32_t _subcopymapidx;
+		unsigned long _sceneid;
 		// IExtension extensionObject;
 	};
 #pragma pack()
@@ -105,19 +105,19 @@ bool CharSocket::onReceiveUserInfo(const Packet& packet)
 	MSG_Ret_UserMapInfo_SC map_info;
 	{
 		map_info.CMD = 2273;
-		map_info.compress = 0;
-		map_info.encrypt = 0;
+		map_info.compress = 10;
+		map_info.encrypt = 20;
 		map_info.size = sizeof(MSG_Ret_UserMapInfo_SC) - 4;
-		map_info.timestamp = 0;
+		map_info.timestamp = 9750;
 
-		//map_info._copymapidx = 0;
-		//memcpy(map_info._filename, "coucou", strlen("coucou"));
-		memcpy(map_info._mapname, "fb_10022.xml", strlen("fb_10022.xml"));
-		//map_info._lineid = 0;
-		map_info._mapid = 150;
-		//map_info._pos = { 10.0f, 10.0f };
-		//map_info._sceneid = 1;
-		//map_info._subcopymapidx = 0;
+		map_info._copymapidx = 666;
+		memcpy(map_info._filename, "创建角色选人场景", strlen("创建角色选人场景"));
+		memcpy(map_info._mapname, "创建角色选人场景", strlen("创建角色选人场景"));
+		map_info._lineid = 1;
+		map_info._mapid = 698;
+		map_info._pos = { 10.0f, 10.0f };
+		map_info._sceneid = 270;
+		map_info._subcopymapidx = 90;
 	}
 	Write(map_info);
 
