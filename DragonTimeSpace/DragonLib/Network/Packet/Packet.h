@@ -66,21 +66,5 @@ public:
 	PACKETDATA _header;
 	std::vector<char> _data;
 	std::chrono::time_point<std::chrono::system_clock> _receiveTime;
-
-//Quick Definitions for Packets
-#define BEGIN_PROTOCOL(opcode)						\
-struct s##opcode :									\
-	public PACKETDATA								\
-{													\
-	s##opcode() :									\
-		PACKETDATA(opcode)							\
-	{												\
-		wSize = sizeof(s##opcode) - 4;				\
-		wOpcode = opcode;							\
-	}
-
-#define END_PROTOCOL()	};
-
-#define DECLARE_PACKET_NAME( opcode )	{ #opcode }
 };
 #endif /* _GAMESOCKET_H */

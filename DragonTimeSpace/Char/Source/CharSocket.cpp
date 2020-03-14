@@ -83,25 +83,6 @@ bool CharSocket::onReceiveUserInfo(const Packet& packet)
 	stIphoneLoginUserCmd_CS* data = (stIphoneLoginUserCmd_CS*)packet.GetPacketData();
 	LOG_DEBUG << "accid: " << data->accid;
 
-	struct Vector2
-	{
-		float x, y;
-	};
-#pragma pack(1)
-	struct MSG_Ret_UserMapInfo_SC : public PACKETDATA, char_packet
-	{
-		int32_t _mapid;
-		BYTE _mapname[128];
-		BYTE _filename[128];
-		Vector2 _pos;
-		uint32_t _lineid;
-		uint32_t _copymapidx;
-		uint32_t _subcopymapidx;
-		unsigned long _sceneid;
-		// IExtension extensionObject;
-	};
-#pragma pack()
-
 	MSG_Ret_UserMapInfo_SC map_info;
 	{
 		map_info.CMD = 2273;
@@ -115,7 +96,8 @@ bool CharSocket::onReceiveUserInfo(const Packet& packet)
 		memcpy(map_info._mapname, "创建角色选人场景", strlen("创建角色选人场景"));
 		map_info._lineid = 1;
 		map_info._mapid = 698;
-		map_info._pos = { 10.0f, 10.0f };
+		map_info.x = 10.0f;
+		map_info.y = 10.0f;
 		map_info._sceneid = 270;
 		map_info._subcopymapidx = 90;
 	}

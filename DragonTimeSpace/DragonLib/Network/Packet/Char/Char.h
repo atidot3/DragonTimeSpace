@@ -5,20 +5,19 @@
 const int CHAR_GATEWAY_VERSION = 2002;
 const int CHAR_USER_INFO = 2004;
 
+#pragma pack(1)
 struct char_packet
 {
 	WORD CMD;
 	int32_t timestamp;
 };
-
-// SEND
-
 // RECV
 struct gateway_version : public char_packet
 {
 	uint32_t reserve;
 	uint32_t version;
 };
+#pragma pack(0)
 
 struct PhoneInfo
 {
@@ -42,3 +41,26 @@ struct stIphoneLoginUserCmd_CS : public char_packet
 	BYTE szFlat[100];
 	PhoneInfo info;
 };
+
+#pragma pack(4)
+// SEND
+struct MSG_Ret_UserMapInfo_SC
+{
+	WORD size;
+	BYTE encrypt;
+	BYTE compress;
+
+	WORD CMD;
+	int32_t timestamp;
+
+	int32_t _mapid;
+	BYTE _mapname[128];
+	BYTE _filename[128];
+	float x, y;
+	uint32_t _lineid;
+	uint32_t _copymapidx;
+	uint32_t _subcopymapidx;
+	unsigned long _sceneid;
+	// IExtension extensionObject;
+};
+#pragma pack()
