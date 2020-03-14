@@ -53,7 +53,7 @@ void CharSocket::OnConnected()
 bool CharSocket::ProcessIncomingData(const Packet& packet)
 {
 	char_packet* p = (char_packet*)packet.GetPacketData();
-	LOG_WARNING << "Get packet: command type [" << std::to_string(p->CMD) << "] param: [" << std::to_string(p->CMD) << "]";
+	LOG_WARNING << "Get packet: command type [" << std::to_string(p->CMD) << "]";
 	for (const auto& method : methodList)
 	{
 		if (std::get<0>(method) == p->CMD)
@@ -71,11 +71,13 @@ bool CharSocket::onCheckGatewayVer(const Packet& packet)
 {
 	LOG_DEBUG << "Received gateway check version";
 
-	struct version
+#pragma pack(1)
+	struct version : public char_packet
 	{
 		uint32_t reserve;
 		uint32_t version;
 	};
+#pragma pack()
 
 	version* data = (version*)packet.GetPacketData();
 	LOG_DEBUG << "version : " << data->version;
@@ -98,7 +100,7 @@ bool CharSocket::onReceiveUserInfo(const Packet& packet)
 		char ram[100];
 		char os[100];
 	};
-	struct stIphoneLoginUserCmd_CS
+	struct stIphoneLoginUserCmd_CS : public char_packet
 	{
 		uint32_t accid;
 		short user_type;

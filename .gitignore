@@ -80,3 +80,7 @@
 /DragonTimeSpace/Auth/Log
 /DragonTimeSpace/Char/Log
 /DragonTimeSpace/packages
+/DragonTimeSpace/Auth/x64/Debug
+/DragonTimeSpace/Char/x64/Debug
+/DragonTimeSpace/DragonLib/x64/Debug
+/DragonTimeSpace/x64/Debug
