@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Configuration">
+      <UniqueIdentifier>{e9f36860-02f9-4ee8-bdef-ddab8ebacd9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database">
+      <UniqueIdentifier>{76ed7f18-5616-4343-bb05-04ab52c986d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjson">
+      <UniqueIdentifier>{b78cf283-25ee-4339-b5a8-159d374d1cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{05d76acc-c67f-459e-a94d-6ec346ebf593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{302c403a-15a5-4c0a-b535-7d4ee4f80add}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database\Connection">
+      <UniqueIdentifier>{6c968003-00f7-450d-9265-21b570282f74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database\DatabaseWorker">
+      <UniqueIdentifier>{002fd145-a972-4135-a6f8-4767517cb54a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database\Query">
+      <UniqueIdentifier>{da923d6a-7d24-4e1c-baab-5a9144ed36ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database\Repository">
+      <UniqueIdentifier>{8fded685-3c95-4993-926a-27fdddc47d13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjson\include">
+      <UniqueIdentifier>{9b56fe20-aa2c-40e6-ab44-d6272c720f6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network\Buffer">
+      <UniqueIdentifier>{e6cc1388-3979-4761-a43a-3b89749d720a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network\Packet">
+      <UniqueIdentifier>{3f04375d-cc35-4483-9b02-95a2076e9edb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\BitFlag">
+      <UniqueIdentifier>{92255ce0-6353-49c9-85ff-799827b199ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Logger">
+      <UniqueIdentifier>{8bacd88b-2c83-4c03-a73b-3ba4a15d6efa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\SafeQueue">
+      <UniqueIdentifier>{6f714fae-9dae-4ac1-aed1-a325ba68c5af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Time">
+      <UniqueIdentifier>{1850f153-c18d-458c-a6aa-4ccc12036cbe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Configuration\Configuration.cpp">
+      <Filter>Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\MySQLWrapper.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\Connection\MySQLConnection.cpp">
+      <Filter>Database\Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\DatabaseWorker\DatabaseWorker.cpp">
+      <Filter>Database\DatabaseWorker</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\Repository\RepositoryManager.cpp">
+      <Filter>Database\Repository</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\Query\Query.cpp">
+      <Filter>Database\Query</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\Query\QueryResult.cpp">
+      <Filter>Database\Query</Filter>
+    </ClCompile>
+    <ClCompile Include="libjson\json_reader.cpp">
+      <Filter>libjson</Filter>
+    </ClCompile>
+    <ClCompile Include="libjson\json_value.cpp">
+      <Filter>libjson</Filter>
+    </ClCompile>
+    <ClCompile Include="libjson\json_writer.cpp">
+      <Filter>libjson</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\io_context_pool.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Socket.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\BitFlag\BitFlagManager.cpp">
+      <Filter>Utils\BitFlag</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Logger\Logger.cpp">
+      <Filter>Utils\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Time\Time.cpp">
+      <Filter>Utils\Time</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Configuration\Configuration.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="Database\MySQLWrapper.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="Database\Connection\MySQLConnection.h">
+      <Filter>Database\Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="Database\DatabaseWorker\DatabaseWorker.h">
+      <Filter>Database\DatabaseWorker</Filter>
+    </ClInclude>
+    <ClInclude Include="Database\Repository\RepositoryManager.h">
+      <Filter>Database\Repository</Filter>
+    </ClInclude>
+    <ClInclude Include="Database\Query\Field.h">
+      <Filter>Database\Query</Filter>
+    </ClInclude>
+    <ClInclude Include="Database\Query\Query.h">
+      <Filter>Database\Query</Filter>
+    </ClInclude>
+    <ClInclude Include="Database\Query\QueryResult.h">
+      <Filter>Database\Query</Filter>
+    </ClInclude>
+    <ClInclude Include="libjson\json_batchallocator.h">
+      <Filter>libjson</Filter>
+    </ClInclude>
+    <ClInclude Include="libjson\json\autolink.h">
+      <Filter>libjson\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libjson\json\config.h">
+      <Filter>libjson\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libjson\json\features.h">
+      <Filter>libjson\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libjson\json\forwards.h">
+      <Filter>libjson\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libjson\json\json.h">
+      <Filter>libjson\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libjson\json\reader.h">
+      <Filter>libjson\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libjson\json\value.h">
+      <Filter>libjson\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libjson\json\writer.h">
+      <Filter>libjson\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\io_context_pool.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Listener.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Socket.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\SocketManager.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\WebRequestSocket.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Buffer\MessageBuffer.h">
+      <Filter>Network\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Packet\Packet.h">
+      <Filter>Network\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\BitFlag\BitFlagManager.h">
+      <Filter>Utils\BitFlag</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Logger\consoleColor.h">
+      <Filter>Utils\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Logger\Logger.h">
+      <Filter>Utils\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Time\Time.h">
+      <Filter>Utils\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\SafeQueue\SafeQueue.h">
+      <Filter>Utils\SafeQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\SafeQueue\SafeVector.h">
+      <Filter>Utils\SafeQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Define.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libjson\json_internalarray.inl">
+      <Filter>libjson</Filter>
+    </None>
+    <None Include="libjson\json_internalmap.inl">
+      <Filter>libjson</Filter>
+    </None>
+    <None Include="libjson\json_valueiterator.inl">
+      <Filter>libjson</Filter>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

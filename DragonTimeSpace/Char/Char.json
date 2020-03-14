@@ -1,0 +1,17 @@
+{
+  "serverworker": 6,
+  "loglevel": 0,
+  "logFile": "./Log/Char.log",
+  "server":
+  {
+    "ID": 1,
+    "IP":"127.0.0.1",
+    "Port":50300
+  },
+  "database": {
+    "Host": "127.0.0.1",
+    "DB": "dbo",
+    "User": "root",
+    "Password": "password"
+  }
+}
