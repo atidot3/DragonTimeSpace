@@ -117,8 +117,6 @@ bool AuthSocket::OnLoginReq(const Packet& packet)
 	memcpy(login_ok.ip, ip.c_str(), strlen("192.168.1.6"));
 	memcpy(login_ok.key, "coucou", strlen("coucou"));
 
-
-	LOG_DEBUG << "login ok res size = " << (int)login_ok.size;
 	Write(login_ok);
 	return true;
 }

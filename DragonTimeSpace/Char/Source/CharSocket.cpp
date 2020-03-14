@@ -71,15 +71,7 @@ bool CharSocket::onCheckGatewayVer(const Packet& packet)
 {
 	LOG_DEBUG << "Received gateway check version";
 
-#pragma pack(1)
-	struct version : public char_packet
-	{
-		uint32_t reserve;
-		uint32_t version;
-	};
-#pragma pack()
-
-	version* data = (version*)packet.GetPacketData();
+	gateway_version* data = (gateway_version*)packet.GetPacketData();
 	LOG_DEBUG << "version : " << data->version;
 
 	return true;
@@ -88,33 +80,46 @@ bool CharSocket::onReceiveUserInfo(const Packet& packet)
 {
 	LOG_DEBUG << "Received user info";
 
-#pragma pack(1)
-	struct PhoneInfo
+	stIphoneLoginUserCmd_CS* data = (stIphoneLoginUserCmd_CS*)packet.GetPacketData();
+	LOG_DEBUG << "accid: " << data->accid;
+
+	struct Vector2
 	{
-		char phone_uuid[100];
-		char pushid[100];
-		char phone_model[100];
-		char resolution[100];
-		char opengl[100];
-		char _cpu[100];
-		char ram[100];
-		char os[100];
+		float x, y;
 	};
-	struct stIphoneLoginUserCmd_CS : public char_packet
+#pragma pack(1)
+	struct MSG_Ret_UserMapInfo_SC : public PACKETDATA, char_packet
 	{
-		uint32_t accid;
-		short user_type;
-		uint32_t temp_user_id;
-		BYTE user[48];
-		BYTE password[33];
-		BYTE mac[24];
-		BYTE szFlat[100];
-		PhoneInfo info;
+		int32_t _mapid;
+		BYTE _mapname[32];
+		BYTE _filename[32];
+		//Vector2 _pos;
+		//uint32_t _lineid;
+		//uint32_t _copymapidx;
+		//uint32_t _subcopymapidx;
+		//unsigned long _sceneid;
+		// IExtension extensionObject;
 	};
 #pragma pack()
 
-	stIphoneLoginUserCmd_CS* data = (stIphoneLoginUserCmd_CS*)packet.GetPacketData();
-	LOG_DEBUG << "accid: " << data->accid;
+	MSG_Ret_UserMapInfo_SC map_info;
+	{
+		map_info.CMD = 2273;
+		map_info.compress = 0;
+		map_info.encrypt = 0;
+		map_info.size = sizeof(MSG_Ret_UserMapInfo_SC) - 4;
+		map_info.timestamp = 0;
+
+		//map_info._copymapidx = 0;
+		//memcpy(map_info._filename, "coucou", strlen("coucou"));
+		memcpy(map_info._mapname, "fb_10022.xml", strlen("fb_10022.xml"));
+		//map_info._lineid = 0;
+		map_info._mapid = 150;
+		//map_info._pos = { 10.0f, 10.0f };
+		//map_info._sceneid = 1;
+		//map_info._subcopymapidx = 0;
+	}
+	Write(map_info);
 
 	return true;
 }

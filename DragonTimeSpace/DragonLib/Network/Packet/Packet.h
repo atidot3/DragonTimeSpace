@@ -12,7 +12,6 @@
 #include <vector>
 #include <chrono>
 
-#pragma pack(1)
 typedef struct PACKETDATA
 {
 	PACKETDATA()
@@ -25,7 +24,7 @@ typedef struct PACKETDATA
 	BYTE encrypt;
 	BYTE compress;
 } PACKETDATA, *LPPACKETDATA;
-#pragma pack()
+
 const int HEADER_SIZE = sizeof(PACKETDATA);
 const int PACKET_LIMIT_SIZE = 4096;
 const BYTE PACKET_MAX_SEQUENCE = 0xFF;
