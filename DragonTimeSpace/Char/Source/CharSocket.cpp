@@ -20,6 +20,8 @@ CharSocket::CharSocket(boost::asio::io_context &service)
 {
 	methodList.emplace_back(CHAR_GATEWAY_VERSION, std::bind(&CharSocket::onCheckGatewayVer, this, std::placeholders::_1));
 	methodList.emplace_back(CHAR_USER_INFO, std::bind(&CharSocket::onReceiveUserInfo, this, std::placeholders::_1));
+
+	methodList.emplace_back(2273, std::bind(&CharSocket::onReceiveProtobuf, this, std::placeholders::_1));
 }
 
 //----------------------------------------
@@ -76,57 +78,128 @@ bool CharSocket::onCheckGatewayVer(const Packet& packet)
 
 	return true;
 }
+
+void log_data(const unsigned char* data, const int32_t& size)
+{
+	std::cout << std::hex << std::setfill('0');  // needs to be set only once
+	auto* ptr = data;
+	for (int i = 0; i < size; i++, ptr++)
+	{
+		std::cout << std::setw(2) << static_cast<unsigned>(*ptr) << " ";
+	}
+	std::cout << std::endl;
+}
+
 bool CharSocket::onReceiveUserInfo(const Packet& packet)
 {
+#pragma pack(1)
+	struct res {
+		WORD size;
+		BYTE encrypt;
+		BYTE compress;
+
+		WORD CMD;
+		BYTE pad;
+		BYTE pad1;
+		BYTE pad2;
+		BYTE pad3;
+
+		WORD protobuff_length;
+	};
+#pragma pack()
+
+
 	LOG_DEBUG << "Received user info";
 	stIphoneLoginUserCmd_CS* data = (stIphoneLoginUserCmd_CS*)packet.GetPacketData();
-
-	std::unique_ptr<msg::MSG_Ret_UserMapInfo_SC> mapInfo = std::make_unique<msg::MSG_Ret_UserMapInfo_SC>();
-	mapInfo->set_mapid(695);
-	mapInfo->set_filename("message");
-	mapInfo->set_mapname("Login");
-	mapInfo->set_lineid(1);
-	mapInfo->set_sceneid(1);
+	msg::MSG_Ret_UserMapInfo_SC* mapInfo = new msg::MSG_Ret_UserMapInfo_SC();
 	msg::FloatMovePos pos;
-	pos.set_fx(0.0f);
-	pos.set_fy(0.0f);
 
+	mapInfo->set_mapid(695);
+	mapInfo->set_filename(std::move(std::string("toto")));
+	mapInfo->set_mapname(std::move(std::string("toto")));
+	mapInfo->set_lineid(64);
+	mapInfo->set_sceneid(864);
 	mapInfo->set_allocated_pos(&pos);
-	mapInfo->set_copymapidx(0);
-	mapInfo->set_subcopymapidx(0);
+	mapInfo->set_copymapidx(123);
+	mapInfo->set_subcopymapidx(486);
+
+	const unsigned short protobuff_data_size = mapInfo->ByteSizeLong();
+	BYTE * protobuff_buffer = new BYTE[protobuff_data_size];
+	mapInfo->SerializeToArray(protobuff_buffer, protobuff_data_size);
 	
-	std::string sData;
-	mapInfo->SerializeToString(&sData);
+
+	LOG_DEBUG << "Protobuff packet to send HEX: ";
+	log_data(protobuff_buffer, protobuff_data_size);
+
+
+	res resp;
 	MessageBuffer buffer;
-	buffer.Resize(mapInfo->ByteSizeLong());
-	buffer.Write(sData.c_str(), mapInfo->ByteSizeLong());
-	_writeQueue.push(std::move(buffer));
 
+	buffer.Resize((sizeof(res) + protobuff_data_size));
 
-	/*LOG_DEBUG << "Received user info";
-
+	resp.size = (sizeof(res) - 4) + protobuff_data_size;
+	resp.CMD = 2273;
+	resp.compress = 0;
+	resp.encrypt = 0;
+	resp.pad = 0x81;
+	resp.pad1 = 0xde;
+	resp.pad2 = 0x46;
+	resp.pad3 = 0xdf;
+	resp.protobuff_length = protobuff_data_size;
 	
-	LOG_DEBUG << "accid: " << data->accid;
 
-	MSG_Ret_UserMapInfo_SC map_info;
-	{
-		map_info.CMD = 2273;
-		map_info.compress = 10;
-		map_info.encrypt = 20;
-		map_info.size = sizeof(MSG_Ret_UserMapInfo_SC) - 4;
-		map_info.timestamp = 9750;
+	buffer.Write(&resp, sizeof(res));
+	buffer.Write(protobuff_buffer, protobuff_data_size);
+	buffer.Write("0", 1);
+	buffer.Resize(sizeof(res) + protobuff_data_size + 1);
 
-		map_info._copymapidx = 666;
-		memcpy(map_info._filename, "创建角色选人场景", strlen("创建角色选人场景"));
-		memcpy(map_info._mapname, "创建角色选人场景", strlen("创建角色选人场景"));
-		map_info._lineid = 1;
-		map_info._mapid = 698;
-		map_info.x = 10.0f;
-		map_info.y = 10.0f;
-		map_info._sceneid = 270;
-		map_info._subcopymapidx = 90;
-	}
-	Write(map_info);*/
+	LOG_DEBUG << "PACKET TO SEND HEX:";
+	log_data(buffer.GetReadPointer(), sizeof(res) + protobuff_data_size + 1);
 
+	_writeQueue.push(std::move(buffer));;
+	return true;
+}
+
+#include <Network/Messages/ParseProto.h>
+bool CharSocket::onReceiveProtobuf(const Packet& packet)
+{
+	LOG_DEBUG << "on protobuf received";
+
+	// -- Protobuf packet recev :
+	/*
+	
+		2 bytes		=>	commandId
+		4 bytes		=>	????
+		2 bytes		=>	protobuf data size
+		X bytes		=>	protobuf data
+	
+	*/
+
+	LOG_DEBUG << "PACKET HEX: ";
+	log_data((unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
+
+	// -- for some reason the received protobuf packet looks like:
+	// -- HEADER	4 sized
+	// -- cmdId		2 size
+	// -- int time?	4 size
+	// -- padding ?	2 size
+	MessageBuffer buffer;
+	buffer.Resize((packet.GetPacketHeader().size - 8));
+	buffer.Write(&packet.GetPacketData()[8], (packet.GetPacketHeader().size - 8));
+
+	LOG_DEBUG << "USERMAP HEX[from 8]: ";
+	log_data(buffer.GetReadPointer(), (packet.GetPacketHeader().size - 8));
+
+	msg::MSG_Ret_UserMapInfo_SC mapInfo;
+	bool isOk = ParseProtoMsg<msg::MSG_Ret_UserMapInfo_SC>((const char*)buffer.GetReadPointer(), (packet.GetPacketHeader().size - 8), mapInfo);
+
+	LOG_DEBUG << "mapid " << mapInfo.mapid();
+	LOG_DEBUG << "filename " << mapInfo.filename();
+	LOG_DEBUG << "mapname " << mapInfo.mapname();
+	LOG_DEBUG << "copymapidx " << mapInfo.copymapidx();
+	LOG_DEBUG << "subcopymapidx " << mapInfo.subcopymapidx();
+	LOG_DEBUG << "lineid " << mapInfo.lineid();
+	LOG_DEBUG << "mapInfo ByteSizeLong: " << mapInfo.ByteSizeLong();
+	
 	return true;
 }

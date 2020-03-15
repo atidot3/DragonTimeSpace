@@ -56,6 +56,12 @@
     <Filter Include="Network\Messages">
       <UniqueIdentifier>{b3d16346-1a72-48a2-993a-3e463cf2b194}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Network\Packet\Char">
+      <UniqueIdentifier>{2e085d3d-1cc1-48e6-8564-b65c55c730d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network\Packet\Auth">
+      <UniqueIdentifier>{3c0eec42-844c-4790-b925-69c6943d68bd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Configuration\Configuration.cpp">
@@ -104,6 +110,9 @@
       <Filter>Utils\Time</Filter>
     </ClCompile>
     <ClCompile Include="Network\Messages\message.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\ParseProto.cpp">
       <Filter>Network\Messages</Filter>
     </ClCompile>
   </ItemGroup>
@@ -206,6 +215,15 @@
     </ClInclude>
     <ClInclude Include="Network\Messages\message.pb.h">
       <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Packet\Char\Char.h">
+      <Filter>Network\Packet\Char</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\ParseProto.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Packet\Auth\Auth.h">
+      <Filter>Network\Packet\Auth</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

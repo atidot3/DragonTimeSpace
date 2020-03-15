@@ -180,6 +180,7 @@
     <ClCompile Include="libjson\json_writer.cpp" />
     <ClCompile Include="Network\io_context_pool.cpp" />
     <ClCompile Include="Network\Messages\message.pb.cc" />
+    <ClCompile Include="Network\Messages\ParseProto.cpp" />
     <ClCompile Include="Network\Socket.cpp" />
     <ClCompile Include="Utils\BitFlag\BitFlagManager.cpp" />
     <ClCompile Include="Utils\Logger\Logger.cpp" />
@@ -207,6 +208,9 @@
     <ClInclude Include="Network\io_context_pool.h" />
     <ClInclude Include="Network\Listener.h" />
     <ClInclude Include="Network\Messages\message.pb.h" />
+    <ClInclude Include="Network\Messages\ParseProto.h" />
+    <ClInclude Include="Network\Packet\Auth\Auth.h" />
+    <ClInclude Include="Network\Packet\Char\Char.h" />
     <ClInclude Include="Network\Packet\Packet.h" />
     <ClInclude Include="Network\Socket.h" />
     <ClInclude Include="Network\SocketManager.h" />

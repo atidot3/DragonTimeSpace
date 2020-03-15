@@ -40,4 +40,6 @@ protected:
 private:
 	bool onCheckGatewayVer(const Packet& packet);
 	bool onReceiveUserInfo(const Packet& packet);
+
+	bool onReceiveProtobuf(const Packet& packet);
 };

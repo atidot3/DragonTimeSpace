@@ -17,7 +17,7 @@ struct gateway_version : public char_packet
 	uint32_t reserve;
 	uint32_t version;
 };
-#pragma pack(0)
+#pragma pack()
 
 struct PhoneInfo
 {
