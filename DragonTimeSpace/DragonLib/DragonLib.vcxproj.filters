@@ -115,6 +115,15 @@
     <ClCompile Include="Network\Messages\ParseProto.cpp">
       <Filter>Network\Messages</Filter>
     </ClCompile>
+    <ClCompile Include="Network\Messages\avatar.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\hero.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\object.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Configuration\Configuration.h">
@@ -224,6 +233,18 @@
     </ClInclude>
     <ClInclude Include="Network\Packet\Auth\Auth.h">
       <Filter>Network\Packet\Auth</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\avatar.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\hero.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\object.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\CommandID.h">
+      <Filter>Network\Messages</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
