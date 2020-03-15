@@ -2,7 +2,7 @@
 
 #include <Network/Packet/Packet.h>
 #include <Network\Packet\Char\Char.h>
-
+#include <Network\Messages\message.pb.h>
 //#include <Utils/Opcodes.h>
 //#include <Utils/ResultCode.h>
 #include <Utils/Logger/Logger.h>
@@ -79,8 +79,33 @@ bool CharSocket::onCheckGatewayVer(const Packet& packet)
 bool CharSocket::onReceiveUserInfo(const Packet& packet)
 {
 	LOG_DEBUG << "Received user info";
-
 	stIphoneLoginUserCmd_CS* data = (stIphoneLoginUserCmd_CS*)packet.GetPacketData();
+
+	std::unique_ptr<msg::MSG_Ret_UserMapInfo_SC> mapInfo = std::make_unique<msg::MSG_Ret_UserMapInfo_SC>();
+	mapInfo->set_mapid(695);
+	mapInfo->set_filename("message");
+	mapInfo->set_mapname("Login");
+	mapInfo->set_lineid(1);
+	mapInfo->set_sceneid(1);
+	msg::FloatMovePos pos;
+	pos.set_fx(0.0f);
+	pos.set_fy(0.0f);
+
+	mapInfo->set_allocated_pos(&pos);
+	mapInfo->set_copymapidx(0);
+	mapInfo->set_subcopymapidx(0);
+	
+	std::string sData;
+	mapInfo->SerializeToString(&sData);
+	MessageBuffer buffer;
+	buffer.Resize(mapInfo->ByteSizeLong());
+	buffer.Write(sData.c_str(), mapInfo->ByteSizeLong());
+	_writeQueue.push(std::move(buffer));
+
+
+	/*LOG_DEBUG << "Received user info";
+
+	
 	LOG_DEBUG << "accid: " << data->accid;
 
 	MSG_Ret_UserMapInfo_SC map_info;
@@ -101,7 +126,7 @@ bool CharSocket::onReceiveUserInfo(const Packet& packet)
 		map_info._sceneid = 270;
 		map_info._subcopymapidx = 90;
 	}
-	Write(map_info);
+	Write(map_info);*/
 
 	return true;
 }

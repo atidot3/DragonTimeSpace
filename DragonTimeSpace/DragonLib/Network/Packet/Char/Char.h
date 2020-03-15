@@ -42,25 +42,25 @@ struct stIphoneLoginUserCmd_CS : public char_packet
 	PhoneInfo info;
 };
 
-#pragma pack(4)
-// SEND
-struct MSG_Ret_UserMapInfo_SC
-{
-	WORD size;
-	BYTE encrypt;
-	BYTE compress;
-
-	WORD CMD;
-	int32_t timestamp;
-
-	int32_t _mapid;
-	BYTE _mapname[128];
-	BYTE _filename[128];
-	float x, y;
-	uint32_t _lineid;
-	uint32_t _copymapidx;
-	uint32_t _subcopymapidx;
-	unsigned long _sceneid;
-	// IExtension extensionObject;
-};
-#pragma pack()
+//#pragma pack(4)
+//// SEND
+//struct MSG_Ret_UserMapInfo_SC
+//{
+//	WORD size;
+//	BYTE encrypt;
+//	BYTE compress;
+//
+//	WORD CMD;
+//	int32_t timestamp;
+//
+//	int32_t _mapid;
+//	BYTE _mapname[128];
+//	BYTE _filename[128];
+//	float x, y;
+//	uint32_t _lineid;
+//	uint32_t _copymapidx;
+//	uint32_t _subcopymapidx;
+//	unsigned long _sceneid;
+//	// IExtension extensionObject;
+//};
+//#pragma pack()

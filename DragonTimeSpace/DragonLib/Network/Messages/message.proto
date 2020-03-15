@@ -1,0 +1,561 @@
+syntax = "proto2";
+
+package msg;
+enum ChooseTargetType {
+	CHOOSE_TARGE_TTYPE_SET = 1;
+	CHOOSE_TARGE_TTYPE_CANCEL = 2;
+}
+enum EntryIDType
+{
+ id = 1;
+ type = 2;
+}
+enum SEX
+{
+	Male = 1;
+	FEMALE = 2;
+}
+enum ERechargeReturnCode
+{
+	BULLSHIT =1;
+}
+enum MapDataType
+{
+	MAP_DATATYPE_USER = 1;
+	MAP_DATATYPE_NPC = 2;
+}
+message CharacterBaseData {
+	optional uint64 exp = 2;
+	optional uint32 money = 3;
+	optional uint32 welpoint = 4;
+	optional uint32 tilizhi = 5;
+	optional uint32 type = 6;
+	optional uint32 famelevel = 7;
+	optional uint32 position = 8;
+	optional uint32 viplevel = 9;
+	optional uint32 port = 10;
+	optional uint32 laststage = 11;
+	optional uint64 nextexp = 12;
+	optional uint32 pkmode = 13;
+	optional uint32 level = 14;
+	optional uint32 stone = 15;
+	optional uint32 edupoint = 16;
+	optional uint32 cooppoint = 17;
+	optional uint32 bluecrystal = 18;
+	optional uint32 bluecrystalincnum = 19;
+	optional uint32 purplecrystal = 20;
+	optional uint32 purplecrystalincnum = 21;
+	optional uint32 vigourpoint = 22;
+	optional uint32 doublepoint = 23;
+	optional uint32 familyatt = 24;
+	optional string herothisid = 25;
+}
+message AttributeData {
+	optional uint32 hp = 1;
+	optional uint32 maxhp = 2;
+	optional uint32 str = 3;
+	optional uint32 dex = 4;
+	optional uint32 intel = 5;
+	optional uint32 phy = 6;
+	optional uint32 matt = 7;
+	optional uint32 patt = 8;
+	optional uint32 mdef = 9;
+	optional uint32 pdef = 10;
+	optional uint32 bang = 11;
+	optional uint32 bangextradamage = 12;
+	optional uint32 toughness = 13;
+	optional uint32 toughnessreducedamage = 14;
+	optional uint32 penetrate = 15;
+	optional uint32 penetrateextradamage = 16;
+	optional uint32 block = 17;
+	optional uint32 blockreducedamage = 18;
+	optional uint32 accurate = 19;
+	optional uint32 accurateextradamage = 20;
+	optional uint32 hold = 21;
+	optional uint32 holdreducedamage = 22;
+	optional uint32 deflect = 23;
+	optional uint32 deflectreducedamage = 24;
+	optional uint32 dodge = 25;
+	optional uint32 weaponatt = 26;
+	optional uint32 mp = 27;
+	optional uint32 maxmp = 28;
+	optional uint32 hit = 29;
+	optional uint32 firemastery = 30;
+	optional uint32 icemastery = 31;
+	optional uint32 lightningmastery = 32;
+	optional uint32 brightmastery = 33;
+	optional uint32 darkmastery = 34;
+	optional uint32 fireresist = 35;
+	optional uint32 iceresist = 36;
+	optional uint32 lightningresist = 37;
+	optional uint32 brightresist = 38;
+	optional uint32 darkresist = 39;
+	optional uint32 firepen = 40;
+	optional uint32 icepen = 41;
+	optional uint32 lightningpen = 42;
+	optional uint32 brightpen = 43;
+	optional uint32 darkpen = 44;
+	optional uint32 blowint = 45;
+	optional uint32 knockint = 46;
+	optional uint32 floatint = 47;
+	optional uint32 superhitint = 48;
+	optional uint32 blowresist = 49;
+	optional uint32 knockresist = 50;
+	optional uint32 floatresist = 51;
+	optional uint32 superhitresist = 52;
+	optional uint32 blowdectime = 53;
+	optional uint32 knockdectime = 54;
+	optional uint32 floatdectime = 55;
+	optional uint32 superhitdectime = 56;
+	optional uint32 stiffaddtime = 57;
+	optional uint32 stiffdectime = 58;
+}
+message CharacterFightData {
+	optional uint32 curfightvalue = 1;
+}
+message CharacterMainData {
+	optional .msg.CharacterBaseData basedata = 1;
+	optional .msg.AttributeData attridata = 2;
+	optional .msg.MapUserData mapdata = 3;
+	optional .msg.CharacterFightData fightdata = 4;
+}
+message CharacterMapShow {
+	optional uint32 face = 1;
+	optional uint32 weapon = 2;
+	optional uint32 coat = 3;
+	optional uint32 occupation = 4;
+	optional uint32 heroid = 5;
+	optional uint32 facestyle = 6;
+	optional uint32 hairstyle = 7;
+	optional uint32 haircolor = 8;
+	optional uint32 antenna = 9;
+	optional uint32 bodystyle = 10;
+	optional uint32 avatarId = 11;
+}
+message CharacterMapData {
+	optional uint32 level = 1;
+	optional .msg.FloatMovePos pos = 2;
+	optional uint32 dir = 3;
+	optional uint32 movespeed = 4;
+	optional uint32 hp = 5;
+	optional uint32 maxhp = 6;
+	repeated .msg.StateItem states = 7;
+	optional uint32 teamid = 8;
+	optional uint64 guildid = 9;
+	optional uint32 country = 10;
+	optional string guildname = 11;
+}
+message StateItem {
+	optional uint64 uniqid = 1;
+	optional uint64 lasttime = 2;
+	optional uint64 overtime = 3;
+	optional uint64 settime = 4;
+	optional uint64 configtime = 5;
+	optional uint64 skilluuid = 6;
+	repeated uint64 effects = 7;
+}
+message MapUserData {
+	optional uint64 charid = 1;
+	optional string name = 2;
+	optional .msg.CharacterMapShow mapshow = 3;
+	optional .msg.CharacterMapShow bakhero = 4;
+	optional .msg.CharacterMapData mapdata = 5;
+}
+message MasterData {
+	optional .msg.EntryIDType idtype = 1;
+	optional string name = 2;
+	optional uint32 country = 3;
+	optional uint64 guildid = 4;
+	optional uint32 teamid = 5;
+}
+message MapNpcData {
+	optional uint32 baseid = 1;
+	optional uint64 tempid = 2;
+	optional string name = 3;
+	optional uint32 hp = 4;
+	optional uint32 maxhp = 5;
+	optional .msg.FloatMovePos pos = 6;
+	optional uint32 dir = 8;
+	optional uint32 movespeed = 9;
+	optional uint32 attspeed = 10;
+	optional .msg.MasterData master = 11;
+	optional uint32 visit = 12;
+	repeated .msg.StateItem states = 13;
+	optional .msg.CharacterMapShow showdata = 14;
+	optional string titlename = 15;
+	optional bool birth = 16 [default = false];
+	optional .msg.NPC_HatredList hatredlist = 17;
+}
+message MSG_Create_Role_CS {
+	optional string name = 1;
+	optional uint32 occupation = 2;
+	optional uint32 heroid = 3;
+	required .msg.SEX sex = 4;
+	optional uint32 facestyle = 5;
+	optional uint32 hairstyle = 6;
+	optional uint32 haircolor = 7;
+	optional uint32 antenna = 8;
+}
+message MSG_ChangeName_CS {
+	optional string name = 1;
+}
+message MSG_Ret_ChangeName_SC {
+	optional string name = 1;
+	optional bool result = 2;
+}
+message MSG_DataCharacterMain_SC {
+	optional .msg.CharacterMainData data = 1;
+}
+message MSG_Req_Use_GM_CS {
+	optional string strcontent = 1;
+}
+message MSG_Ret_Common_Error_SC {
+	optional uint32 errorcode = 1;
+}
+message MSG_Ret_Common_Tips_SC {
+	optional string strcontent = 1;
+}
+message MSG_Req_Main_Data_CS {
+}
+message MSG_Req_Test_Network_CS {
+	optional uint32 num = 1;
+	optional string name = 2;
+	repeated uint32 num2 = 3;
+}
+message MSG_Ret_GameTime_SC {
+	optional uint64 gametime = 1;
+}
+message MSG_Req_UserGameTime_SC {
+}
+message MSG_Ret_UserGameTime_CS {
+	optional uint32 usertempid = 1;
+	optional uint64 gametime = 2;
+}
+message MSG_Ret_ServerTime_SC {
+	optional uint64 servertime = 1;
+}
+message MSG_Ret_NotifyUserKickout_SC {
+}
+message MSG_Ret_ServerLoginFailed_SC {
+	optional uint32 returncode = 1;
+}
+message MSG_Ret_QueueInfo_SC {
+	optional uint32 queue_user_num = 1;
+	optional uint32 queue_wait_time = 2;
+}
+message MSG_Ret_UserMapInfo_SC {
+	optional uint32 mapid = 1;
+	optional string mapname = 2;
+	optional string filename = 3;
+	optional .msg.FloatMovePos pos = 4;
+	optional uint32 lineid = 5;
+	optional uint32 copymapidx = 6;
+	optional uint32 subcopymapidx = 7;
+	optional uint64 sceneid = 8;
+}
+message MSG_Ret_NineScreenRefreshPlayer_SC {
+	repeated .msg.MapUserData data = 1;
+}
+message MSG_Ret_MapScreenRefreshCharacter_SC {
+	optional .msg.MapUserData data = 1;
+}
+message MSG_Ret_MapScreenRemoveCharacter_SC {
+	optional uint64 charid = 1;
+}
+message MSG_Ret_MapScreenRemoveCharacterShowCorpse_SC {
+	optional uint64 charid = 1;
+}
+message MSG_Ret_MapScreenBatchRemoveCharacter_SC {
+	repeated uint64 charids = 1;
+}
+message MSG_Ret_StateList_SC {
+	repeated .msg.StateItem states = 1;
+}
+message FloatMovePos {
+	optional float fx = 1;
+	optional float fy = 2;
+}
+message MoveData {
+	optional .msg.FloatMovePos pos = 1;
+	optional uint32 dir = 4;
+}
+message MSG_Req_Move_CS {
+	optional uint64 charid = 1;
+	repeated .msg.MoveData movedata = 2;
+	optional uint32 steplenth = 3;
+}
+message MSG_Ret_Move_SC {
+	optional uint64 charid = 1;
+	repeated .msg.MoveData movedata = 2;
+	optional uint32 steplength = 3;
+}
+message MSG_Req_TELE_PORT_CS {
+	required uint64 teleportid = 1;
+}
+message MSG_Server_Force_Move_SC {
+	optional uint64 charid = 1;
+	repeated .msg.MoveData movedata = 2;
+	optional uint32 steplength = 3;
+}
+message MSG_Ret_Move_Failed_SC {
+	optional uint64 charid = 1;
+	optional .msg.MoveData movedata = 2;
+	optional uint32 steplength = 3;
+}
+message MSG_Ret_SetState_SC {
+	optional uint32 type = 1;
+	optional uint64 id = 2;
+	repeated .msg.StateItem state = 3;
+}
+message MSG_Ret_ClearState_SC {
+	optional uint32 type = 1;
+	optional uint64 id = 2;
+	optional .msg.StateItem state = 3;
+}
+message MSG_Ret_MapScreenBatchRefreshNpc_SC {
+	repeated .msg.MapNpcData data = 1;
+}
+message MSG_Ret_MapScreenBatchRemoveNpc_SC {
+	repeated uint64 tempids = 1;
+}
+message MSG_Ret_MapScreenRefreshNpc_SC {
+	optional .msg.MapNpcData data = 1;
+}
+message MSG_Ret_MapScreenRemoveNpc_SC {
+	optional uint64 tempid = 1;
+}
+message FuncNpcData {
+	optional uint32 baseid = 1;
+	optional uint64 tempid = 2;
+	optional uint32 x = 3;
+	optional uint32 y = 4;
+}
+message MSG_Ret_MapScreenFuncNpc_SC {
+	repeated .msg.FuncNpcData data = 1;
+}
+message MSG_Ret_RetNpcMove_SC {
+	optional uint64 tempid = 1;
+	repeated .msg.MoveData movedata = 2;
+	optional uint32 speed = 3;
+}
+message MSG_RetNpcWarpMove_SC {
+	optional uint64 tempid = 1;
+	optional .msg.MoveData movedata = 2;
+}
+message MSG_RetNpcDir_SC {
+	optional uint64 tempid = 1;
+	optional uint32 dir = 2;
+}
+message TempNpcInfo {
+	optional uint32 npcid = 1;
+	optional uint32 num = 2;
+	optional uint32 script = 3;
+}
+message MSG_Req_Summon_Npc_CS {
+	repeated .msg.TempNpcInfo npcs = 1;
+}
+message MSG_Ret_setTimeState_SC {
+	optional .msg.EntryIDType target = 1;
+	optional uint32 state = 2;
+	optional uint32 maxtime = 3;
+	optional uint32 lefttime = 4;
+}
+message MSG_Req_Ping_CS {
+}
+message MSG_Ret_VisibleNpcList_SC {
+	repeated uint32 npc = 1;
+}
+message MSG_RetNinePlayerLevelUp_SC {
+	optional .msg.EntryIDType target = 1;
+}
+message MSG_UpdateExpLevel_SC {
+	optional uint32 curexp = 1;
+	optional uint32 curlevel = 2;
+	optional uint64 mainhero_thisid = 3;
+	optional uint64 mainhero_exp = 4;
+	optional uint32 mainhero_lv = 5;
+}
+message MSG_NotifyAntiAddict_SC {
+	optional uint32 onlinelasttime = 1;
+	optional bool isAntiAddcit = 2;
+	optional bool isLoginPush = 3;
+}
+message MSG_ReqUpdateAntiAddict_CS {
+}
+message MSG_ReqEntrySelectState_CS {
+	optional .msg.EntryIDType oldone = 1;
+	optional .msg.EntryIDType newone = 2;
+}
+message MSG_RetEntrySelectState_SC {
+	optional .msg.EntryIDType choosen = 1;
+	repeated .msg.StateItem states = 2;
+}
+message MSG_RetHpMpToSelects_SC {
+	optional .msg.EntryIDType choosen = 1;
+	optional uint32 curhp = 2;
+	optional uint32 maxhp = 3;
+	optional uint32 curmp = 4;
+	optional uint32 maxmp = 5;
+}
+message MSG_ReqHeroAttributeData_CS {
+	optional string herothisid = 1;
+}
+message MSG_RetHeroAttributeData_SC {
+	optional string herothisid = 1;
+	optional .msg.AttributeData data = 2;
+	optional uint32 fightvalue = 3;
+}
+message MSG_RetDiffLineOfLeader_SC {
+}
+message MSG_ReqJumptoLeaderLine_CS {
+}
+message SelectUserInfo {
+	optional uint64 charid = 1;
+	optional string name = 2;
+	optional uint32 level = 3;
+	required .msg.SEX sex = 4;
+	optional uint32 heroid = 5;
+	optional uint32 curheroid = 6;
+	optional uint32 delTime = 7;
+	optional uint32 offlinetime = 8;
+	optional uint32 facestyle = 9;
+	optional uint32 hairstyle = 10;
+	optional uint32 haircolor = 11;
+	optional uint32 bodystyle = 12;
+	optional uint32 antenna = 13;
+	optional uint32 onlinelasttime = 14;
+	optional uint32 addictpreuptime = 15;
+	optional string mapname = 16;
+	optional uint32 avatarid = 17;
+}
+message MSG_Ret_LoginOnReturnCharList_SC {
+	repeated .msg.SelectUserInfo charList = 1;
+}
+message MSG_Req_SelectCharToLogin_CS {
+	optional uint64 charid = 1;
+}
+message MSG_Req_IS_NICKNAME_REPEATED_CSC {
+	optional string name = 1;
+	optional uint32 ret = 2;
+}
+message MSG_Req_Back_to_Select_CS {
+}
+message MSG_Req_Delete_Char_CSC {
+	optional uint64 charid = 1;
+	optional uint32 opcode = 2;
+	optional uint32 retcode = 3;
+}
+message MSG_Req_Syn_MoveState_CS {
+	optional uint32 move_state = 1;
+	optional uint32 dir = 2;
+	optional uint32 destx = 3;
+	optional uint32 desty = 4;
+	optional uint32 movespeed = 5;
+	optional uint32 step = 6;
+	optional uint32 srcx = 7;
+	optional uint32 srcy = 8;
+	repeated .msg.FloatMovePos pos = 9;
+}
+message MSG_Ret_Find_Path_SC {
+	optional uint64 charid = 1;
+	optional uint32 gridindex = 2;
+	optional uint32 moveres = 3;
+}
+message MSG_Ret_Rondom_Way_SC {
+	optional uint32 zonecenterx = 1;
+	optional uint32 zonecentery = 2;
+	optional uint32 zonewidth = 3;
+	optional uint32 zoneheight = 4;
+	optional uint32 gridwidth = 5;
+	optional uint32 gridheight = 6;
+	optional uint32 pathid = 7;
+	optional string pathinfo = 8;
+}
+message MSG_Ret_Find_Path_End_SC {
+	optional uint32 endcode = 1;
+}
+message MSG_Show_Path_Way_End_CS {
+}
+message LineItem {
+	optional uint32 index = 1;
+	optional uint32 user_num = 2;
+}
+message MSG_NoticeClientAllLines_SC {
+	repeated .msg.LineItem lines = 1;
+	optional uint32 your_line = 2;
+}
+message MSG_UserReqChangeLine_CS {
+	optional uint32 lineid = 1;
+}
+message MSG_OnUserJump_CSC {
+	optional .msg.MoveData data = 1;
+	optional uint64 charid = 2;
+}
+message MSG_NPCHatredList_SC {
+	optional uint64 npctempid = 1;
+	repeated uint64 enemytempid = 2;
+}
+message NPC_HatredList {
+	optional uint64 npctempid = 1;
+	repeated uint64 enemytempid = 2;
+}
+message MSG_ACCOUNT_SEC_PASSWD_SC {
+	optional string sec_passwd = 1;
+	optional bool isonline = 2;
+}
+message MSG_USER_REQ_SETPASSWD_CS {
+	optional string old_passwd = 1;
+	optional string new_passwd = 2;
+}
+message MSG_NEW_ROLE_CUTSCENE_SCS {
+}
+message MSG_User_Drop_SCS {
+	optional uint64 charid = 1;
+}
+message MSG_START_CUTSCENE_SC {
+	optional uint32 cutsceneid = 1;
+	optional string onfinish = 2;
+}
+message MSG_UserLoadingOk_CS {
+}
+message MSG_ReqQueryBalance_CS {
+}
+message MSG_RetQueryBalance_SC {
+	required .msg.ERechargeReturnCode retcode = 1;
+	optional uint32 balance = 2;
+	optional uint32 bonus = 3;
+	optional uint32 hadfilled = 4;
+	optional uint32 point2tone = 5;
+}
+message MSG_ReqRecharge_CS {
+	optional uint32 point = 1;
+	optional uint32 type = 2;
+}
+message MSG_RetRecharge_SC {
+	required .msg.ERechargeReturnCode retcode = 1;
+	optional uint32 point = 2;
+	optional uint32 balance = 3;
+	optional uint32 bonus = 4;
+	optional uint32 hadfilled = 5;
+}
+message MSG_SetChooseTarget_CS {
+	optional uint64 charid = 1;
+	optional .msg.ChooseTargetType choosetype = 2;
+	required .msg.MapDataType mapdatatype = 3;
+}
+message MSG_AttackTargetChange_SC {
+	optional uint64 charid = 1;
+	optional string name = 2;
+	optional uint32 level = 3;
+	optional uint32 HP = 4;
+	optional uint32 relation = 5;
+	optional .msg.ChooseTargetType choosetype = 6;
+}
+message MSG_NotifyAccountReuse {
+}
+message MSG_Notify_SceneLoaded_CS {
+	optional uint64 sceneid = 1;
+}
+message MSG_Upload_Crash_Info {
+	optional uint32 crashnum = 1;
+}

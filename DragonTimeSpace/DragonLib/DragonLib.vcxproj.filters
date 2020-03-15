@@ -53,6 +53,9 @@
     <Filter Include="Utils\Time">
       <UniqueIdentifier>{1850f153-c18d-458c-a6aa-4ccc12036cbe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Network\Messages">
+      <UniqueIdentifier>{b3d16346-1a72-48a2-993a-3e463cf2b194}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Configuration\Configuration.cpp">
@@ -99,6 +102,9 @@
     </ClCompile>
     <ClCompile Include="Utils\Time\Time.cpp">
       <Filter>Utils\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\message.pb.cc">
+      <Filter>Network\Messages</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -197,6 +203,9 @@
     </ClInclude>
     <ClInclude Include="Utils\Define.h">
       <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\message.pb.h">
+      <Filter>Network\Messages</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
