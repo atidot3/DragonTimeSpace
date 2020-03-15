@@ -113,12 +113,75 @@ void fill_my_data(T& t, const unsigned char* data, const WORD& size)
 
 bool CharSocket::onReceiveUserInfo(const Packet& packet)
 {
+	msg::MSG_Ret_LoginOnReturnCharList_SC* characterList = new msg::MSG_Ret_LoginOnReturnCharList_SC();
+
+	/*for (mysql->total_characters)
+	{
+		auto list = characterList->add_charlist();
+		list->set_charid(mysql->charId);
+	}*/
+
+	for (int i = 0; i < 2; ++i)
+	{
+		auto it = characterList->add_charlist();
+		it->set_charid(i+1);
+		it->set_level(1);
+		it->set_sex(msg::SEX::FEMALE);
+		it->set_heroid(i+1);
+		it->set_curheroid(i);
+		it->set_facestyle(1);
+		it->set_haircolor(1);
+		it->set_haircolor(1);
+		it->set_bodystyle(0);
+		it->set_avatarid(0);
+		it->set_mapname(std::move(std::string("namek")));
+		it->set_name(std::move(std::string("atidot") + std::to_string(i)));
+	}
+
+	const unsigned short protobuff_data_size = characterList->ByteSizeLong();
+	std::vector<BYTE> protobuff_buffer(protobuff_data_size);
+	characterList->SerializeToArray(protobuff_buffer.data(), protobuff_data_size);
+
+
+	LOG_DEBUG << "Protobuff packet to send HEX: ";
+	log_data(protobuff_buffer.data(), protobuff_data_size);
+
+	res_test resp;
+	MessageBuffer buffer;
+
+	buffer.Resize((sizeof(res_test) + protobuff_data_size));
+
+	resp.size = (sizeof(res_test) - HEADER_SIZE) + protobuff_data_size;
+	resp.CMD = 2308;
+	resp.compress = 0;
+	resp.encrypt = 0;
+	resp.pad = 0x81;
+	resp.pad1 = 0xde;
+	resp.pad2 = 0x46;
+	resp.pad3 = 0xdf;
+	resp.protobuff_length = protobuff_data_size;
+
+
+	buffer.Write(&resp, sizeof(res_test));
+	buffer.Write(protobuff_buffer.data(), protobuff_data_size);
+	LOG_DEBUG << buffer.GetBufferSize();
+	// -- padding
+	BYTE padding = 0;
+	while (((sizeof(res_test) + protobuff_data_size) + padding) % 8 != 0 && padding < 10)
+		buffer.Write(&++padding, 1);
+
+	LOG_DEBUG << "PACKET TO SEND HEX:";
+	log_data(buffer.GetReadPointer(), sizeof(res_test) + protobuff_data_size);
+
+	_writeQueue.push(std::move(buffer));
+
+	/*
 	LOG_DEBUG << "Received user info";
 	stIphoneLoginUserCmd_CS* data = (stIphoneLoginUserCmd_CS*)packet.GetPacketData();
 	msg::MSG_Ret_UserMapInfo_SC* mapInfo = new msg::MSG_Ret_UserMapInfo_SC();
 	msg::FloatMovePos pos;
 
-	mapInfo->set_mapid(1);
+	mapInfo->set_mapid(698);
 	mapInfo->set_filename(std::move(std::string("toto")));
 	mapInfo->set_mapname(std::move(std::string("toto")));
 	mapInfo->set_lineid(1);
@@ -162,7 +225,8 @@ bool CharSocket::onReceiveUserInfo(const Packet& packet)
 	LOG_DEBUG << "PACKET TO SEND HEX:";
 	log_data(buffer.GetReadPointer(), sizeof(res_test) + protobuff_data_size);
 
-	_writeQueue.push(std::move(buffer));;
+	_writeQueue.push(std::move(buffer));
+	*/
 	return true;
 }
 
