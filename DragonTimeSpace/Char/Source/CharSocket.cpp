@@ -140,7 +140,7 @@ bool CharSocket::onReceiveUserInfo(const Packet& packet)
 
 	buffer.Resize((sizeof(res_test) + protobuff_data_size));
 
-	resp.size = (sizeof(res_test) - 4) + protobuff_data_size;
+	resp.size = (sizeof(res_test) - HEADER_SIZE) + protobuff_data_size;
 	resp.CMD = 2273;
 	resp.compress = 0;
 	resp.encrypt = 0;
@@ -187,7 +187,7 @@ bool CharSocket::onReceiveMainHero(const Packet& packet)
 
 	buffer.Resize((sizeof(res_test) + protobuff_data_size));
 
-	resp.size = (sizeof(res_test) - 4) + protobuff_data_size;
+	resp.size = (sizeof(res_test) - HEADER_SIZE) + protobuff_data_size;
 	resp.CMD = 2203;
 	resp.compress = 0;
 	resp.encrypt = 0;
