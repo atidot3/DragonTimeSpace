@@ -29,6 +29,7 @@ CharSocket::CharSocket(boost::asio::io_context &service)
 
 	methodList.emplace_back(CommandID::SetMainHero_CSC, std::bind(&CharSocket::onReceiveMainHero, this, std::placeholders::_1));
 	methodList.emplace_back(CommandID::Notify_SceneLoaded_CS, std::bind(&CharSocket::onSceneLoaded, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::Create_Role_CS, std::bind(&CharSocket::onReceiveCharCreate, this, std::placeholders::_1));
 
 	// debug test
 	//methodList.emplace_back(2273, std::bind(&CharSocket::onReceiveProtobuf, this, std::placeholders::_1));
@@ -65,7 +66,7 @@ void CharSocket::OnConnected()
 bool CharSocket::ProcessIncomingData(const Packet& packet)
 {
 	char_packet* p = (char_packet*)packet.GetPacketData();
-	LOG_WARNING << "Get packet: command type [" << std::to_string(p->CMD) << "]";
+	LOG_WARNING << "Get packet: command type [" << GetPacketName(p->CMD) << "]";
 	for (const auto& method : methodList)
 	{
 		if (std::get<0>(method) == p->CMD)
@@ -121,29 +122,26 @@ bool CharSocket::onReceiveUserInfo(const Packet& packet)
 		list->set_charid(mysql->charId);
 	}*/
 
-	for (int i = 0; i < 2; ++i)
-	{
+	
 		auto it = characterList->add_charlist();
-		it->set_charid(i+1);
+		it->set_charid(70022);
 		it->set_level(1);
 		it->set_sex(msg::SEX::FEMALE);
-		it->set_heroid(i+1);
-		it->set_curheroid(i);
-		it->set_facestyle(1);
-		it->set_haircolor(1);
-		it->set_haircolor(1);
-		it->set_bodystyle(0);
-		it->set_avatarid(0);
-		it->set_mapname(std::move(std::string("namek")));
-		it->set_name(std::move(std::string("atidot") + std::to_string(i)));
-	}
+		it->set_heroid(70022);
+		it->set_curheroid(70022);
+		it->set_facestyle(49);
+		it->set_haircolor(116);
+		it->set_hairstyle(45);
+		it->set_avatarid(4001);
+		it->set_mapname(std::move(std::string("Time and space city")));
+		it->set_name(std::move(std::string("TaSLPServer")));
 
 	const unsigned short protobuff_data_size = characterList->ByteSizeLong();
 	std::vector<BYTE> protobuff_buffer(protobuff_data_size);
 	characterList->SerializeToArray(protobuff_buffer.data(), protobuff_data_size);
 
-
-	LOG_DEBUG << "Protobuff packet to send HEX: ";
+	
+	LOG_DEBUG << "MSG_Ret_LoginOnReturnCharList_SC packet to send HEX: ";
 	log_data(protobuff_buffer.data(), protobuff_data_size);
 
 	res_test resp;
@@ -164,14 +162,17 @@ bool CharSocket::onReceiveUserInfo(const Packet& packet)
 
 	buffer.Write(&resp, sizeof(res_test));
 	buffer.Write(protobuff_buffer.data(), protobuff_data_size);
-	LOG_DEBUG << buffer.GetBufferSize();
+	LOG_DEBUG << "Before Padding Size " << buffer.GetBufferSize();
 	// -- padding
 	BYTE padding = 0;
 	while (((sizeof(res_test) + protobuff_data_size) + padding) % 8 != 0 && padding < 10)
 		buffer.Write(&++padding, 1);
 
+
+
 	LOG_DEBUG << "PACKET TO SEND HEX:";
 	log_data(buffer.GetReadPointer(), sizeof(res_test) + protobuff_data_size);
+	LOG_DEBUG << "Packet Size True:" << buffer.GetBufferSize();
 
 	_writeQueue.push(std::move(buffer));
 
@@ -230,6 +231,204 @@ bool CharSocket::onReceiveUserInfo(const Packet& packet)
 	return true;
 }
 
+bool CharSocket::onReceiveCharCreate(const Packet& packet)
+{
+	LOG_DEBUG << "NEW_ROLE_CUTSCENE_SCS";
+	msg::MSG_Create_Role_CS _hero;
+	fill_my_data(_hero, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
+
+	msg::MSG_Ret_UserMapInfo_SC* mapInfo = new msg::MSG_Ret_UserMapInfo_SC();
+	msg::FloatMovePos pos;
+	pos.set_fx(801.f);
+	pos.set_fy(908.f);
+	mapInfo->set_mapid(695);
+	mapInfo->set_filename(std::move(std::string("Pc_sgc")));
+	mapInfo->set_mapname(std::move(std::string("Time and space city")));
+	mapInfo->set_lineid(0);
+	mapInfo->set_sceneid(0);
+	mapInfo->set_allocated_pos(&pos);
+	mapInfo->set_copymapidx(0);
+	mapInfo->set_subcopymapidx(0);
+
+	const unsigned short protobuff_data_size = mapInfo->ByteSizeLong();
+	std::vector<BYTE> protobuff_buffer(protobuff_data_size);
+	mapInfo->SerializeToArray(protobuff_buffer.data(), protobuff_data_size);
+
+
+	LOG_DEBUG << "Protobuff packet to send HEX: ";
+	log_data(protobuff_buffer.data(), protobuff_data_size);
+
+	res_test resp;
+	MessageBuffer buffer;
+
+	buffer.Resize((sizeof(res_test) + protobuff_data_size));
+
+	resp.size = (sizeof(res_test) - HEADER_SIZE) + protobuff_data_size;
+	resp.CMD = 2273;
+	resp.compress = 0;
+	resp.encrypt = 0;
+	resp.pad = 0x81;
+	resp.pad1 = 0xde;
+	resp.pad2 = 0x46;
+	resp.pad3 = 0xdf;
+	resp.protobuff_length = protobuff_data_size;
+
+
+	buffer.Write(&resp, sizeof(res_test));
+	buffer.Write(protobuff_buffer.data(), protobuff_data_size);
+	LOG_DEBUG << buffer.GetBufferSize();
+	// -- padding
+	BYTE padding = 0;
+	while (((sizeof(res_test) + protobuff_data_size) + padding) % 8 != 0 && padding < 10)
+		buffer.Write(&++padding, 1);
+
+	LOG_DEBUG << "PACKET TO SEND HEX:";
+	log_data(buffer.GetReadPointer(), sizeof(res_test) + protobuff_data_size);
+
+	_writeQueue.push(std::move(buffer));
+
+	//msg::MSG_NEW_ROLE_CUTSCENE_SCS* characterList = new msg::MSG_NEW_ROLE_CUTSCENE_SCS();
+	//
+	//
+	//const unsigned short protobuff_data_size = characterList->ByteSizeLong();
+	//std::vector<BYTE> protobuff_buffer(protobuff_data_size);
+	//characterList->SerializeToArray(protobuff_buffer.data(), protobuff_data_size);
+
+
+	//LOG_DEBUG << "Protobuff packet to send HEX: ";
+	//log_data(protobuff_buffer.data(), protobuff_data_size);
+
+	//res_test resp;
+	//MessageBuffer buffer;
+
+	//buffer.Resize((sizeof(res_test) + protobuff_data_size));
+
+	//resp.size = (sizeof(res_test) - HEADER_SIZE) + protobuff_data_size;
+	//resp.CMD = 2324;
+	//resp.compress = 0;
+	//resp.encrypt = 0;
+	//resp.pad = 0x81;//Timestamp
+	//resp.pad1 = 0xde;
+	//resp.pad2 = 0x46;
+	//resp.pad3 = 0xdf;
+	//resp.protobuff_length = protobuff_data_size;
+
+
+	//buffer.Write(&resp, sizeof(res_test));
+	//buffer.Write(protobuff_buffer.data(), protobuff_data_size);
+	//LOG_DEBUG << "Before Padding Size " << buffer.GetBufferSize();
+	//// -- padding
+	//BYTE padding = 0;
+	//while (((sizeof(res_test) + protobuff_data_size) + padding) % 8 != 0 && padding < 10)
+	//	buffer.Write(&++padding, 1);
+
+	//
+	//log_data(buffer.GetReadPointer(), sizeof(res_test) + protobuff_data_size + 2);
+	//LOG_DEBUG << "Real Packet Size: " << buffer.GetBufferSize();
+
+	//_writeQueue.push(std::move(buffer));
+
+
+
+	msg::MSG_START_CUTSCENE_SC* cutscene = new msg::MSG_START_CUTSCENE_SC();
+	cutscene->set_cutsceneid(2);
+	//cutscene->set_onfinish();
+
+	const unsigned short protobuff_data_size2 = cutscene->ByteSizeLong();
+	std::vector<BYTE> protobuff_buffer2(protobuff_data_size2);
+	cutscene->SerializeToArray(protobuff_buffer2.data(), protobuff_data_size2);
+
+
+	LOG_DEBUG << "Protobuff packet to send HEX: ";
+	log_data(protobuff_buffer2.data(), protobuff_data_size2);
+
+	res_test resp2;
+	MessageBuffer buffer2;
+
+	buffer2.Resize((sizeof(res_test) + protobuff_data_size2));
+
+	resp2.size = (sizeof(res_test) - HEADER_SIZE) + protobuff_data_size2;
+	resp2.CMD = 2324;
+	resp2.compress = 0;
+	resp2.encrypt = 0;
+	resp2.pad = 0x81;//Timestamp
+	resp2.pad1 = 0xde;
+	resp2.pad2 = 0x46;
+	resp2.pad3 = 0xdf;
+	resp2.protobuff_length = protobuff_data_size2;
+
+
+	buffer2.Write(&resp2, sizeof(res_test));
+	buffer2.Write(protobuff_buffer2.data(), protobuff_data_size2);
+	LOG_DEBUG << "Before Padding Size " << buffer2.GetBufferSize();
+	// -- padding
+	padding = 0;
+	while (((sizeof(res_test) + protobuff_data_size2) + padding) % 8 != 0 && padding < 10)
+		buffer2.Write(&++padding, 1);
+
+
+	log_data(buffer2.GetReadPointer(), sizeof(res_test) + protobuff_data_size2 + 2);
+	LOG_DEBUG << "Real Packet Size: " << buffer2.GetBufferSize();
+
+	_writeQueue.push(std::move(buffer2));
+
+
+	/*
+	LOG_DEBUG << "Received user info";
+	stIphoneLoginUserCmd_CS* data = (stIphoneLoginUserCmd_CS*)packet.GetPacketData();
+	msg::MSG_Ret_UserMapInfo_SC* mapInfo = new msg::MSG_Ret_UserMapInfo_SC();
+	msg::FloatMovePos pos;
+
+	mapInfo->set_mapid(698);
+	mapInfo->set_filename(std::move(std::string("toto")));
+	mapInfo->set_mapname(std::move(std::string("toto")));
+	mapInfo->set_lineid(1);
+	mapInfo->set_sceneid(1);
+	mapInfo->set_allocated_pos(&pos);
+	mapInfo->set_copymapidx(0);
+	mapInfo->set_subcopymapidx(0);
+
+	const unsigned short protobuff_data_size = mapInfo->ByteSizeLong();
+	std::vector<BYTE> protobuff_buffer(protobuff_data_size);
+	mapInfo->SerializeToArray(protobuff_buffer.data(), protobuff_data_size);
+
+
+	LOG_DEBUG << "Protobuff packet to send HEX: ";
+	log_data(protobuff_buffer.data(), protobuff_data_size);
+
+	res_test resp;
+	MessageBuffer buffer;
+
+	buffer.Resize((sizeof(res_test) + protobuff_data_size));
+
+	resp.size = (sizeof(res_test) - HEADER_SIZE) + protobuff_data_size;
+	resp.CMD = 2273;
+	resp.compress = 0;
+	resp.encrypt = 0;
+	resp.pad = 0x81;
+	resp.pad1 = 0xde;
+	resp.pad2 = 0x46;
+	resp.pad3 = 0xdf;
+	resp.protobuff_length = protobuff_data_size;
+
+
+	buffer.Write(&resp, sizeof(res_test));
+	buffer.Write(protobuff_buffer.data(), protobuff_data_size);
+	LOG_DEBUG << buffer.GetBufferSize();
+	// -- padding
+	BYTE padding = 0;
+	while (((sizeof(res_test) + protobuff_data_size) + padding) % 8 != 0 && padding < 10)
+		buffer.Write(&++padding, 1);
+
+	LOG_DEBUG << "PACKET TO SEND HEX:";
+	log_data(buffer.GetReadPointer(), sizeof(res_test) + protobuff_data_size);
+
+	_writeQueue.push(std::move(buffer));
+	*/
+	return true;
+}
+
+
 bool CharSocket::onReceiveMainHero(const Packet& packet)
 {
 	LOG_DEBUG << "on main hero request received";
@@ -237,10 +436,9 @@ bool CharSocket::onReceiveMainHero(const Packet& packet)
 	fill_my_data(_hero, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
 
 	hero::MSG_SetMainHero_CSC * hero = new hero::MSG_SetMainHero_CSC();
-
 	hero->set_errorcode(0);
 	hero->set_opcode(1);
-	hero->set_herothisid(0);
+	hero->set_herothisid(70022);
 
 	const unsigned short protobuff_data_size = hero->ByteSizeLong();
 	std::vector<BYTE> protobuff_buffer(protobuff_data_size);

@@ -124,6 +124,9 @@
     <ClCompile Include="Network\Messages\object.pb.cc">
       <Filter>Network\Messages</Filter>
     </ClCompile>
+    <ClCompile Include="Network\Messages\CommandID.cpp">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Configuration\Configuration.h">
