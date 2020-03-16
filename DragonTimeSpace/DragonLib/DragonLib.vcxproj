@@ -225,7 +225,6 @@
     <ClInclude Include="Network\Packet\ProtobufPacket.h" />
     <ClInclude Include="Network\Socket.h" />
     <ClInclude Include="Network\SocketManager.h" />
-    <ClInclude Include="Network\WebRequestSocket.h" />
     <ClInclude Include="Utils\BitFlag\BitFlagManager.h" />
     <ClInclude Include="Utils\Define.h" />
     <ClInclude Include="Utils\Logger\consoleColor.h" />

@@ -34,10 +34,10 @@ public:
 	// -- Build the internal packet ready to send
 	void compute()
 	{
-		protobuff_length = data.ByteSizeLong();
-		size = PROTOBUF_HEADER_SIZE + protobuff_length;
+		protobuff_length = static_cast<WORD>(data.ByteSizeLong());
+		size = static_cast<WORD>(PROTOBUF_HEADER_SIZE + protobuff_length);
 
-		buffer.Resize(HEADER_SIZE + PROTOBUF_HEADER_SIZE + protobuff_length);
+		buffer.Resize(std::size_t(HEADER_SIZE + PROTOBUF_HEADER_SIZE + protobuff_length));
 
 		buffer.Write(&size, sizeof(WORD));
 		buffer.Write(&encrypt, sizeof(BYTE));
@@ -48,7 +48,7 @@ public:
 		buffer.Write(&pad2, sizeof(BYTE));
 		buffer.Write(&pad3, sizeof(BYTE));
 		buffer.Write(&protobuff_length, sizeof(WORD));
-		buffer.Write(data.SerializePartialAsString().c_str(), protobuff_length);
+		buffer.Write(data.SerializePartialAsString().c_str(), static_cast<size_t>(protobuff_length));
 
 		BYTE padding = 0;
 		while (((PROTOBUF_HEADER_SIZE + protobuff_length) + padding) % 8 != 0 && padding < 10)
@@ -71,6 +71,22 @@ public:
 	const MessageBuffer& get_buffer() const
 	{
 		return buffer;
+	}
+
+	// -- print as hex protobuf data
+	void log_data()
+	{
+		std::cout << std::hex << std::setfill('0');  // needs to be set only once
+
+		std::vector<BYTE> protobuff_buffer(protobuff_length);
+		data.SerializeToArray(protobuff_buffer.data(), protobuff_length);
+
+		auto *ptr = protobuff_buffer.data();
+		for (int i = 0; i < protobuff_length; i++, ptr++)
+		{
+			std::cout << std::setw(2) << static_cast<unsigned>(*ptr) << " ";
+		}
+		std::cout << std::endl;
 	}
 
 private:

@@ -87,7 +87,7 @@ bool AuthSocket::OnClientIp(const Packet& packet)
 	std::string ip = "073.240.48.134"; //+ this->GetAddress();
 	memcpy(stru_ip.ip, ip.c_str(), 16);
 
-	Write(stru_ip);
+	st_Write(stru_ip);
 	return true;
 }
 bool AuthSocket::OnLoginReq(const Packet& packet)
@@ -110,13 +110,13 @@ bool AuthSocket::OnLoginReq(const Packet& packet)
 
 	login_ok.dwUserID = 14578;
 	login_ok.loginTempID = 421;
-	login_ok.state = 1;
-	login_ok.wdPort = 50300;
+	login_ok.state = BYTE(1);
+	login_ok.wdPort = WORD(50300);
 
 	std::string ip = "10.0.0.209";
 	memcpy(login_ok.ip, ip.c_str(), strlen("10.0.0.209"));
 	memcpy(login_ok.key, "coucou", strlen("coucou"));
 
-	Write(login_ok);
+	st_Write(login_ok);
 	return true;
 }

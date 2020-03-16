@@ -76,7 +76,31 @@ public:
 	*	return true on close or false on open
 	**/
 	template <class T>
-	void Write(const T& t)
+	void ms_Write(const T& t)
+	{
+		if (_closed)
+			return;
+		if (_pendingClose)
+			return;
+		if (IsClosed())
+			return;
+
+		MessageBuffer buffer(t);
+		LOG_DEBUG << "Buff to send size: " << buffer.GetBufferSize();
+		// -- Emplace the packet in the queue
+		if (_writeQueue.push(std::move(buffer)))
+		{
+#ifdef SOCKET_USE_IOCP
+			AsyncProcessQueue();
+#endif
+		}
+	}
+	/**
+	*	Get if the socket is close.
+	*	return true on close or false on open
+	**/
+	template <class T>
+	void st_Write(const T& t)
 	{
 		if (_closed)
 			return;
@@ -139,6 +163,7 @@ private:
 	MessageBuffer _recvBuffer;
 	MessageBuffer _headerBuffer;
 	MessageBuffer _packetBuffer;
+	SafeVector<MessageBuffer> _writeQueue;
 
 	size_t getSizeLeft() { return _recvBuffer.GetRemainingSpace(); }
 	size_t getActiveSize() { return _recvBuffer.GetActiveSize(); }
@@ -148,5 +173,4 @@ protected:
 	const std::string m_address;
 	const std::string m_remoteEndpoint;
 	int receiveSequence;
-	SafeVector<MessageBuffer> _writeQueue;
 };
