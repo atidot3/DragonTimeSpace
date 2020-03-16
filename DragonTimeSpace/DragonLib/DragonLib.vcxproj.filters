@@ -255,6 +255,9 @@
     <ClInclude Include="Network\Messages\team.pb.h">
       <Filter>Network\Messages</Filter>
     </ClInclude>
+    <ClInclude Include="Network\Packet\ProtobufPacket.h">
+      <Filter>Network\Packet</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="libjson\json_internalarray.inl">
