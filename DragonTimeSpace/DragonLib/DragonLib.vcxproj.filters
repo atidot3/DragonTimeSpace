@@ -127,6 +127,9 @@
     <ClCompile Include="Network\Messages\CommandID.cpp">
       <Filter>Network\Messages</Filter>
     </ClCompile>
+    <ClCompile Include="Network\Messages\team.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Configuration\Configuration.h">
@@ -247,6 +250,9 @@
       <Filter>Network\Messages</Filter>
     </ClInclude>
     <ClInclude Include="Network\Messages\CommandID.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\team.pb.h">
       <Filter>Network\Messages</Filter>
     </ClInclude>
   </ItemGroup>
