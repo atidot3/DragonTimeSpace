@@ -292,9 +292,6 @@ bool CharSocket::onReceiveCharCreate(const Packet& packet)
 
 		mapBase.get_protobuff().set_allocated_mapdata(&mapdata.get_protobuff());
 		mapBase.get_protobuff().set_allocated_mapshow(&mapshow.get_protobuff());
-		
-		LOG_ERROR << "Stupid doggo you miss bakhero here";
-		//mapBase.get_protobuff().set_allocated_bakhero(mapshow);
 		mapBase.get_protobuff().set_allocated_bakhero(&mapshow.get_protobuff());
 	}
 	ProtobufPacket<msg::CharacterMainData> charMain(CommandID::RetCommonError_SC);
@@ -394,8 +391,8 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 	fill_my_data(_hero, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
 	LOG_DEBUG << _hero.DebugString();
 
-	pos.set_fx(801.f);
-	pos.set_fy(908.f);
+	pos.set_fx(795.f);
+	pos.set_fy(1089.f);
 
 	ProtobufPacket<msg::MSG_Ret_UserMapInfo_SC> mapInfo(CommandID::Ret_UserMapInfo_SC);
 	{
@@ -546,9 +543,6 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 
 		mapBase.get_protobuff().set_allocated_mapdata(&mapdata.get_protobuff());
 		mapBase.get_protobuff().set_allocated_mapshow(&mapshow.get_protobuff());
-
-		LOG_ERROR << "Stupid doggo you miss bakhero here";
-		//mapBase.get_protobuff().set_allocated_bakhero(mapshow);
 		mapBase.get_protobuff().set_allocated_bakhero(&mapshow.get_protobuff());
 
 		mapBase.compute();
@@ -589,6 +583,57 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 
 	pktMain.get_protobuff().release_data();
 
+
+	ProtobufPacket<msg::MSG_Ret_MapScreenRefreshNpc_SC> npc_info(CommandID::Ret_MapScreenRefreshNpc_SC);
+	{
+		auto npcs = npc_info.get_protobuff().data();
+
+		msg::MasterData master;
+		{
+			master.set_country(0);
+			master.set_guildid(0);
+			master.set_idtype(msg::EntryIDType::id);
+			master.set_name(std::move(std::string("Atidote")));
+			master.set_teamid(0);
+		}
+		msg::FloatMovePos pos;
+		{
+			pos.set_fx(795);
+			pos.set_fy(1089);
+		}
+		msg::CharacterMapShow cmshow;
+		{
+		}
+		msg::NPC_HatredList list;
+		{
+			list.set_npctempid(2);
+		}
+
+		npcs.set_tempid(2);
+		npcs.set_allocated_hatredlist(&list);
+		npcs.set_allocated_master(&master);
+		npcs.set_allocated_pos(&pos);
+		npcs.set_allocated_showdata(&cmshow);
+		npcs.set_attspeed(0);
+		npcs.set_baseid(0);
+		npcs.set_birth(false);
+		npcs.set_dir(0);
+		npcs.set_hp(10);
+		npcs.set_maxhp(10);
+		npcs.set_movespeed(0);
+		npcs.set_name(std::move(std::string("Atidote")));
+		npcs.set_titlename(std::move(std::string("Atidote")));
+		npcs.set_visit(0);
+
+		npc_info.compute();
+
+		npcs.release_hatredlist();
+		npcs.release_master();
+		npcs.release_pos();
+		npcs.release_showdata();
+	}
+
+	ms_Write(npc_info.get_buffer());
 	return true;
 }
 
