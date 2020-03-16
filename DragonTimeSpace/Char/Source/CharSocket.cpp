@@ -88,16 +88,23 @@ void fill_my_data(T& t, const unsigned char* data, const WORD& size)
 	bool isOk = ParseProtoMsg<T>((const char*)buffer.GetReadPointer(), (size - 8), t);
 }
 
+void log_data(const unsigned char* data, const int32_t& size)
+{
+	std::cout << std::hex << std::setfill('0');  // needs to be set only once
+	auto* ptr = data;
+	for (int i = 0; i < size; i++, ptr++)
+	{
+		std::cout << std::setw(2) << static_cast<unsigned>(*ptr) << " ";
+	}
+	std::cout << std::endl;
+}
+
 bool CharSocket::onReceiveUserInfo(const Packet& packet)
 {
+	LOG_DEBUG << "MSG_Ret_LoginOnReturnCharList_SC";
+
 	ProtobufPacket<msg::MSG_Ret_LoginOnReturnCharList_SC> characterList(CommandID::Ret_LoginOnReturnCharList_SC);
 
-	/*for (mysql->total_characters)
-	{
-		auto list = characterList->add_charlist();
-		list->set_charid(mysql->charId);
-	}*/
-	
 	auto it = characterList.get_protobuff().add_charlist();
 	it->set_charid(70022);
 	it->set_level(1);
@@ -111,7 +118,6 @@ bool CharSocket::onReceiveUserInfo(const Packet& packet)
 	it->set_mapname(std::move(std::string("Time and space city")));
 	it->set_name(std::move(std::string("Sangawku")));
 
-
 	characterList.compute();
 	LOG_DEBUG << "MSG_Ret_LoginOnReturnCharList_SC packet to send HEX: ";
 	characterList.log_data();
@@ -124,6 +130,7 @@ bool CharSocket::onReceiveUserInfo(const Packet& packet)
 bool CharSocket::onReceiveCharCreate(const Packet& packet)
 {
 	LOG_DEBUG << "NEW_ROLE_CUTSCENE_SCS";
+
 	msg::MSG_Create_Role_CS _hero;
 	msg::FloatMovePos pos;
 
@@ -288,6 +295,7 @@ bool CharSocket::onReceiveCharCreate(const Packet& packet)
 		
 		LOG_ERROR << "Stupid doggo you miss bakhero here";
 		//mapBase.get_protobuff().set_allocated_bakhero(mapshow);
+		mapBase.get_protobuff().set_allocated_bakhero(&mapshow.get_protobuff());
 	}
 	ProtobufPacket<msg::CharacterMainData> charMain(CommandID::RetCommonError_SC);
 	{
@@ -309,7 +317,7 @@ bool CharSocket::onReceiveCharCreate(const Packet& packet)
 	}
 
 	// -- do_fucking_matter
-	//mapBase.get_protobuff().release_bakhero();
+	mapBase.get_protobuff().release_bakhero();
 	mapBase.get_protobuff().release_mapdata();
 	mapBase.get_protobuff().release_mapshow();
 
@@ -469,6 +477,8 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 		attrData.get_protobuff().set_superhitdectime(10);
 		attrData.get_protobuff().set_stiffaddtime(10);
 		attrData.get_protobuff().set_stiffdectime(10);
+
+		attrData.compute();
 	}
 	ProtobufPacket<msg::CharacterBaseData> charBase(CommandID::RetCommonError_SC);
 	{
@@ -495,19 +505,20 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 		charBase.get_protobuff().set_purplecrystalincnum(1);
 		charBase.get_protobuff().set_familyatt(0);
 		charBase.get_protobuff().set_herothisid((std::string)"70022");
+
+		charBase.compute();
 	}
 	ProtobufPacket<msg::CharacterMapData> mapdata(CommandID::RetCommonError_SC);
 	{
 		mapdata.get_protobuff().set_hp(100);
 		mapdata.get_protobuff().set_maxhp(100);
 		mapdata.get_protobuff().set_level(10);
-
 		mapdata.get_protobuff().set_allocated_pos(&pos);
 		mapdata.get_protobuff().set_movespeed(10);
 		mapdata.get_protobuff().set_country(1);
-
-
 		mapdata.get_protobuff().set_dir(0);
+
+		mapdata.compute();
 	}
 	ProtobufPacket<msg::CharacterMapShow> mapshow(CommandID::RetCommonError_SC);
 	{
@@ -519,10 +530,14 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 		mapshow.get_protobuff().set_haircolor(86);
 		mapshow.get_protobuff().set_facestyle(49);
 		mapshow.get_protobuff().set_bodystyle(0);
+
+		mapshow.compute();
 	}
 	ProtobufPacket<msg::CharacterFightData> fightBase(CommandID::RetCommonError_SC);
 	{
 		fightBase.get_protobuff().set_curfightvalue(0);
+
+		fightBase.compute();
 	}
 	ProtobufPacket<msg::MapUserData> mapBase(CommandID::RetCommonError_SC);
 	{
@@ -534,6 +549,9 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 
 		LOG_ERROR << "Stupid doggo you miss bakhero here";
 		//mapBase.get_protobuff().set_allocated_bakhero(mapshow);
+		mapBase.get_protobuff().set_allocated_bakhero(&mapshow.get_protobuff());
+
+		mapBase.compute();
 	}
 	ProtobufPacket<msg::CharacterMainData> charMain(CommandID::RetCommonError_SC);
 	{
@@ -541,6 +559,8 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 		charMain.get_protobuff().set_allocated_basedata(&charBase.get_protobuff());
 		charMain.get_protobuff().set_allocated_fightdata(&fightBase.get_protobuff());
 		charMain.get_protobuff().set_allocated_mapdata(&mapBase.get_protobuff());
+
+		charMain.compute();
 	}
 	ProtobufPacket<msg::MSG_DataCharacterMain_SC> pktMain(CommandID::DataCharacterMain_SC);
 	{
@@ -555,7 +575,7 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 	}
 
 	// -- do_fucking_matter
-	//mapBase.get_protobuff().release_bakhero();
+	mapBase.get_protobuff().release_bakhero();
 	mapBase.get_protobuff().release_mapdata();
 	mapBase.get_protobuff().release_mapshow();
 

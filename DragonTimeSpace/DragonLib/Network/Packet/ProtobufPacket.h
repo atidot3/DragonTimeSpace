@@ -16,49 +16,54 @@
 template <typename T>
 class ProtobufPacket
 {
-	const int PROTOBUF_HEADER_SIZE = sizeof(WORD) + sizeof(BYTE) + sizeof(BYTE) + sizeof(BYTE) + sizeof(BYTE) + sizeof(WORD);
+#pragma pack(1)
+	struct responce
+	{
+		WORD size;
+		BYTE encrypt;
+		BYTE compress;
+
+		WORD CMD;
+		BYTE pad;
+		BYTE pad1;
+		BYTE pad2;
+		BYTE pad3;
+
+		WORD protobuff_length;
+	};
+#pragma pack()
+	const int PROTOBUF_HEADER_SIZE = sizeof(responce) - HEADER_SIZE;
 public:
 	ProtobufPacket<T>(const CommandID& cmd)
-		: size{ 0 }
-		, encrypt{ 0 }
-		, compress{ 0 }
-		, CMD{ static_cast<WORD>(cmd) }
-		, pad{ 0 }
-		, pad1{ 0 }
-		, pad2{ 0 }
-		, pad3{ 0 }
-		, protobuff_length{ 0 }
+		: res{ 0 }
 	{
+		res.CMD = cmd;
+		res.size = 0;
+		res.encrypt = 0;
+		res.compress = 0;
+		res.pad = 0x81;
+		res.pad1 = 0xde;
+		res.pad2 = 0x46;
+		res.pad3 = 0xdf;
+		res.protobuff_length = 0;
 	}
 
 	// -- Build the internal packet ready to send
 	void compute()
 	{
-		protobuff_length = static_cast<WORD>(data.ByteSizeLong());
-		size = static_cast<WORD>(PROTOBUF_HEADER_SIZE + protobuff_length);
+		res.protobuff_length = static_cast<WORD>(data.ByteSizeLong());
+		res.size = static_cast<WORD>(PROTOBUF_HEADER_SIZE + res.protobuff_length);
 
-		buffer.Resize(std::size_t(HEADER_SIZE + PROTOBUF_HEADER_SIZE + protobuff_length));
+		buffer.Resize(std::size_t(HEADER_SIZE + PROTOBUF_HEADER_SIZE + res.protobuff_length));
 
-		buffer.Write(&size, sizeof(WORD));
-		buffer.Write(&encrypt, sizeof(BYTE));
-		buffer.Write(&compress, sizeof(BYTE));
-		buffer.Write(&CMD, sizeof(WORD));
-		buffer.Write(&pad, sizeof(BYTE));
-		buffer.Write(&pad1, sizeof(BYTE));
-		buffer.Write(&pad2, sizeof(BYTE));
-		buffer.Write(&pad3, sizeof(BYTE));
-		buffer.Write(&protobuff_length, sizeof(WORD));
-		buffer.Write(data.SerializePartialAsString().c_str(), static_cast<size_t>(protobuff_length));
-
-		BYTE padding = 0;
-		while (((PROTOBUF_HEADER_SIZE + protobuff_length) + padding) % 8 != 0 && padding < 10)
-			buffer.Write(&++padding, 1);
+		buffer.Write(&res, sizeof(responce));
+		buffer.Write(data.SerializePartialAsString().c_str(), static_cast<size_t>(res.protobuff_length));
 	}
 
 	// -- return packet size without header
 	const WORD get_size() const
 	{
-		return size;
+		return responce.size;
 	}
 
 	// -- return protobuf T struct
@@ -78,11 +83,11 @@ public:
 	{
 		std::cout << std::hex << std::setfill('0');  // needs to be set only once
 
-		std::vector<BYTE> protobuff_buffer(protobuff_length);
-		data.SerializeToArray(protobuff_buffer.data(), protobuff_length);
+		std::vector<BYTE> protobuff_buffer(res.protobuff_length);
+		data.SerializeToArray(protobuff_buffer.data(), res.protobuff_length);
 
 		auto *ptr = protobuff_buffer.data();
-		for (int i = 0; i < protobuff_length; i++, ptr++)
+		for (int i = 0; i < res.protobuff_length; i++, ptr++)
 		{
 			std::cout << std::setw(2) << static_cast<unsigned>(*ptr) << " ";
 		}
@@ -90,18 +95,7 @@ public:
 	}
 
 private:
-	WORD size;
-	BYTE encrypt;
-	BYTE compress;
-
-	WORD CMD;
-	BYTE pad;
-	BYTE pad1;
-	BYTE pad2;
-	BYTE pad3;
-
-	WORD protobuff_length;
-
+	responce res;
 	T data;
 
 	MessageBuffer buffer;
