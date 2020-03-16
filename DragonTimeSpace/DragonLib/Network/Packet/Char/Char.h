@@ -54,4 +54,15 @@ struct res_test
 
 	WORD protobuff_length;
 };
+
+struct res_testnopad
+{
+	WORD size;
+	BYTE encrypt;
+	BYTE compress;
+
+	WORD CMD;
+
+	WORD protobuff_length;
+};
 #pragma pack()

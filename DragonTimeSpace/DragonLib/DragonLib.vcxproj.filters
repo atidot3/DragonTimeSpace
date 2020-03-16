@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Fichiers de ressources">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="Configuration">
       <UniqueIdentifier>{e9f36860-02f9-4ee8-bdef-ddab8ebacd9e}</UniqueIdentifier>
     </Filter>
@@ -124,6 +120,12 @@
     <ClCompile Include="Network\Messages\object.pb.cc">
       <Filter>Network\Messages</Filter>
     </ClCompile>
+    <ClCompile Include="Network\Messages\CommandID.cpp">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\team.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Configuration\Configuration.h">
@@ -189,9 +191,6 @@
     <ClInclude Include="Network\SocketManager.h">
       <Filter>Network</Filter>
     </ClInclude>
-    <ClInclude Include="Network\WebRequestSocket.h">
-      <Filter>Network</Filter>
-    </ClInclude>
     <ClInclude Include="Network\Buffer\MessageBuffer.h">
       <Filter>Network\Buffer</Filter>
     </ClInclude>
@@ -245,6 +244,12 @@
     </ClInclude>
     <ClInclude Include="Network\Messages\CommandID.h">
       <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\team.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Packet\ProtobufPacket.h">
+      <Filter>Network\Packet</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

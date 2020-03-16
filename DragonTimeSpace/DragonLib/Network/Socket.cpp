@@ -351,7 +351,7 @@ bool Socket::Update()
 
 bool Socket::HandleQueue()
 {
-	LOG_DEBUG << "HandleQueue";
+	//LOG_DEBUG << "HandleQueue";
 	boost::unique_lock<boost::recursive_mutex> scoped_lock(mutex);
 
 	if (_writeQueue.empty())

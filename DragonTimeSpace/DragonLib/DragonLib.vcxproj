@@ -180,10 +180,12 @@
     <ClCompile Include="libjson\json_writer.cpp" />
     <ClCompile Include="Network\io_context_pool.cpp" />
     <ClCompile Include="Network\Messages\avatar.pb.cc" />
+    <ClCompile Include="Network\Messages\CommandID.cpp" />
     <ClCompile Include="Network\Messages\hero.pb.cc" />
     <ClCompile Include="Network\Messages\message.pb.cc" />
     <ClCompile Include="Network\Messages\object.pb.cc" />
     <ClCompile Include="Network\Messages\ParseProto.cpp" />
+    <ClCompile Include="Network\Messages\team.pb.cc" />
     <ClCompile Include="Network\Socket.cpp" />
     <ClCompile Include="Utils\BitFlag\BitFlagManager.cpp" />
     <ClCompile Include="Utils\Logger\Logger.cpp" />
@@ -216,12 +218,13 @@
     <ClInclude Include="Network\Messages\message.pb.h" />
     <ClInclude Include="Network\Messages\object.pb.h" />
     <ClInclude Include="Network\Messages\ParseProto.h" />
+    <ClInclude Include="Network\Messages\team.pb.h" />
     <ClInclude Include="Network\Packet\Auth\Auth.h" />
     <ClInclude Include="Network\Packet\Char\Char.h" />
     <ClInclude Include="Network\Packet\Packet.h" />
+    <ClInclude Include="Network\Packet\ProtobufPacket.h" />
     <ClInclude Include="Network\Socket.h" />
     <ClInclude Include="Network\SocketManager.h" />
-    <ClInclude Include="Network\WebRequestSocket.h" />
     <ClInclude Include="Utils\BitFlag\BitFlagManager.h" />
     <ClInclude Include="Utils\Define.h" />
     <ClInclude Include="Utils\Logger\consoleColor.h" />
