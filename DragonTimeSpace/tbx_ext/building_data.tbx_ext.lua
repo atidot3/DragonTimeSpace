@@ -3,42 +3,42 @@
         ["level"] = 1,
         ["id"] = 10001,
         ["tbxid"] = 10001,
-        ["name"] = "公会大厅",
+        ["name"] = "Guild hall",
         ["type"] = 2
     },
     [2] = {
         ["level"] = 2,
         ["id"] = 10002,
         ["tbxid"] = 10002,
-        ["name"] = "公会大厅",
+        ["name"] = "Guild hall",
         ["type"] = 2
     },
     [3] = {
         ["level"] = 1,
         ["id"] = 5001,
         ["tbxid"] = 5001,
-        ["name"] = "宿舍",
+        ["name"] = "Living quarters",
         ["type"] = 3
     },
     [4] = {
         ["level"] = 1,
         ["id"] = 8001,
         ["tbxid"] = 8001,
-        ["name"] = "桌子",
+        ["name"] = "Table",
         ["type"] = 0
     },
     [5] = {
         ["level"] = 2,
         ["id"] = 8002,
         ["tbxid"] = 8002,
-        ["name"] = "桌子",
+        ["name"] = "Table",
         ["type"] = 0
     },
     [6] = {
         ["level"] = 1,
         ["id"] = 9001,
         ["tbxid"] = 9001,
-        ["name"] = "椅子",
+        ["name"] = "Chair",
         ["type"] = 0
     }
 }

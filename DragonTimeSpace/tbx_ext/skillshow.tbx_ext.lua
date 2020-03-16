@@ -1,6 +1,6 @@
 ["datas"] = {
     [1] = {
-        ["heroname"] = "赛亚人男",
+        ["heroname"] = "Male Saiyan",
         ["id"] = 70021,
         ["evolution"] = "",
         ["tbxid"] = 70021,
@@ -9,7 +9,7 @@
         ["coreskill"] = "200110|200109|200105|200104"
     },
     [2] = {
-        ["heroname"] = "赛亚人女",
+        ["heroname"] = "Female Saiyan",
         ["id"] = 70022,
         ["evolution"] = "",
         ["tbxid"] = 70022,
@@ -18,7 +18,7 @@
         ["coreskill"] = "200110|200109|200105|200104"
     },
     [3] = {
-        ["heroname"] = "地球人男",
+        ["heroname"] = "Male Human",
         ["id"] = 70023,
         ["evolution"] = "",
         ["tbxid"] = 70023,
@@ -27,7 +27,7 @@
         ["coreskill"] = "100112|100110|100109|100102"
     },
     [4] = {
-        ["heroname"] = "地球人女",
+        ["heroname"] = "Female Human",
         ["id"] = 70024,
         ["evolution"] = "",
         ["tbxid"] = 70024,
@@ -36,7 +36,7 @@
         ["coreskill"] = "100112|100110|100109|100102"
     },
     [5] = {
-        ["heroname"] = "魔人男",
+        ["heroname"] = "Male Majin",
         ["id"] = 70025,
         ["evolution"] = "",
         ["tbxid"] = 70025,
@@ -45,7 +45,7 @@
         ["coreskill"] = "300103|300106|300109|300111"
     },
     [6] = {
-        ["heroname"] = "魔人女",
+        ["heroname"] = "Female Majin",
         ["id"] = 70026,
         ["evolution"] = "",
         ["tbxid"] = 70026,
@@ -54,7 +54,7 @@
         ["coreskill"] = "300103|300106|300109|300111"
     },
     [7] = {
-        ["heroname"] = "那美克星人",
+        ["heroname"] = "Namek",
         ["id"] = 70027,
         ["evolution"] = "",
         ["tbxid"] = 70027,
@@ -63,7 +63,7 @@
         ["coreskill"] = "400104|400105|400102|400111"
     },
     [8] = {
-        ["heroname"] = "布尔玛",
+        ["heroname"] = "Bulma",
         ["id"] = 71000,
         ["evolution"] = "",
         ["tbxid"] = 71000,
@@ -72,7 +72,7 @@
         ["coreskill"] = "1500121|1500110|1500112|1500113"
     },
     [9] = {
-        ["heroname"] = "孙悟空",
+        ["heroname"] = "Adult Goku",
         ["id"] = 71001,
         ["evolution"] = "",
         ["tbxid"] = 71001,
@@ -81,7 +81,7 @@
         ["coreskill"] = "500109|500106|500111|500113"
     },
     [10] = {
-        ["heroname"] = "库林",
+        ["heroname"] = "Krillin",
         ["id"] = 71002,
         ["evolution"] = "",
         ["tbxid"] = 71002,
@@ -90,7 +90,7 @@
         ["coreskill"] = "600104|600102|600105|600109"
     },
     [11] = {
-        ["heroname"] = "亚姆查",
+        ["heroname"] = "Yamcha",
         ["id"] = 71003,
         ["evolution"] = "",
         ["tbxid"] = 71003,
@@ -99,7 +99,7 @@
         ["coreskill"] = "700113|700105|700109|700112"
     },
     [12] = {
-        ["heroname"] = "龟仙人",
+        ["heroname"] = "Master Roshi",
         ["id"] = 71004,
         ["evolution"] = "",
         ["tbxid"] = 71004,
@@ -108,7 +108,7 @@
         ["coreskill"] = "900112|900107|900104|900111"
     },
     [13] = {
-        ["heroname"] = "天津饭",
+        ["heroname"] = "Tien Shinhan",
         ["id"] = 71005,
         ["evolution"] = "",
         ["tbxid"] = 71005,
@@ -117,7 +117,7 @@
         ["coreskill"] = "1300105|1300103|1300107|1300109"
     },
     [14] = {
-        ["heroname"] = "饺子",
+        ["heroname"] = "Chaouzu",
         ["id"] = 71006,
         ["evolution"] = "",
         ["tbxid"] = 71006,
@@ -126,7 +126,7 @@
         ["coreskill"] = "1000105|1000103|1000109|1000104"
     },
     [15] = {
-        ["heroname"] = "比克",
+        ["heroname"] = "Chaouzu",
         ["id"] = 71007,
         ["evolution"] = "",
         ["tbxid"] = 71007,
@@ -135,7 +135,7 @@
         ["coreskill"] = "800103|800109|800113|800110"
     },
     [16] = {
-        ["heroname"] = "贝吉塔",
+        ["heroname"] = "Vegeta",
         ["id"] = 71008,
         ["evolution"] = "",
         ["tbxid"] = 71008,
@@ -144,7 +144,7 @@
         ["coreskill"] = "1400102|1400103|1400111|1400110"
     },
     [17] = {
-        ["heroname"] = "小悟空",
+        ["heroname"] = "Little Goku",
         ["id"] = 71010,
         ["evolution"] = "",
         ["tbxid"] = 71010,
@@ -153,7 +153,7 @@
         ["coreskill"] = "1600109|1600106|1600111|1600113"
     },
     [18] = {
-        ["heroname"] = "小特兰克斯",
+        ["heroname"] = "Small Trunks",
         ["id"] = 71012,
         ["evolution"] = "",
         ["tbxid"] = 71012,
@@ -162,7 +162,7 @@
         ["coreskill"] = "1700102|1700106|1700107|1700112"
     },
     [19] = {
-        ["heroname"] = "比鲁斯",
+        ["heroname"] = "Bills",
         ["id"] = 71017,
         ["evolution"] = "",
         ["tbxid"] = 71017,
@@ -171,7 +171,7 @@
         ["coreskill"] = "1800109|1800108|1800104|1800105"
     },
     [20] = {
-        ["heroname"] = "撒旦",
+        ["heroname"] = "Mr. Satan",
         ["id"] = 71018,
         ["evolution"] = "",
         ["tbxid"] = 71018,
@@ -180,7 +180,7 @@
         ["coreskill"] = "1900107|1900110|1900111|1900105"
     },
     [21] = {
-        ["heroname"] = "特兰克斯（成年）",
+        ["heroname"] = "Future Trunks（Adult）",
         ["id"] = 71019,
         ["evolution"] = "",
         ["tbxid"] = 71019,
@@ -189,7 +189,7 @@
         ["coreskill"] = "1200110|1200108|1200106|1200112"
     },
     [22] = {
-        ["heroname"] = "孙悟饭（少年）",
+        ["heroname"] = "Son Gohan（Kid）",
         ["id"] = 71011,
         ["evolution"] = "",
         ["tbxid"] = 71011,
@@ -198,7 +198,7 @@
         ["coreskill"] = "2000103|2000104|2000105|2000106|"
     },
     [23] = {
-        ["heroname"] = "孙悟天（少年）",
+        ["heroname"] = "Son Goten（Kid）",
         ["id"] = 71013,
         ["evolution"] = "",
         ["tbxid"] = 71013,
@@ -207,7 +207,7 @@
         ["coreskill"] = "2300103|2300104|2300105|2300106|"
     },
     [24] = {
-        ["heroname"] = "孙悟饭（成年）",
+        ["heroname"] = "Son Gohan（Adult）",
         ["id"] = 71014,
         ["evolution"] = "",
         ["tbxid"] = 71014,
@@ -216,7 +216,7 @@
         ["coreskill"] = "1100103|1100104|1100105|1100106|"
     },
     [25] = {
-        ["heroname"] = "悟天克斯（少年）",
+        ["heroname"] = "Gotrunks（Kid）",
         ["id"] = 71015,
         ["evolution"] = "",
         ["tbxid"] = 71015,
@@ -225,7 +225,7 @@
         ["coreskill"] = "2400107|2400108|2400109|2400110|"
     },
     [26] = {
-        ["heroname"] = "人造人17号",
+        ["heroname"] = "Android 17",
         ["id"] = 71020,
         ["evolution"] = "",
         ["tbxid"] = 71020,
@@ -234,7 +234,7 @@
         ["coreskill"] = "2100103|2100104|2100105|2100106|"
     },
     [27] = {
-        ["heroname"] = "人造人18号",
+        ["heroname"] = "Android 18",
         ["id"] = 71021,
         ["evolution"] = "",
         ["tbxid"] = 71021,

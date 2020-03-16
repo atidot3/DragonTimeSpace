@@ -1,11 +1,11 @@
 ["datas"] = {
     [1] = {
-        ["desc"] = "在这个训练中，一个队员会限制移动并且看到光圈，另外一个队员则会变成巧克力，只要在队友的指挥下碰到光圈，则会获得延长副本时间的奖励",
+        ["desc"] = "This is the training room, one player may have limited movement and one aperture will be opened, other party members will turn into chocolate. As long as you hit the aperture under the command of your partymemenbers, you'll receive a reward for the extending period of time.",
         ["lasttime"] = 120,
         ["id"] = 1001,
         ["tbxid"] = 1001,
         ["type"] = 1,
-        ["name"] = "默契训练",
+        ["name"] = "Understanding training",
         ["preparetime"] = 5
     }
 }

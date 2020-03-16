@@ -17,7 +17,7 @@
         ["daytimesuclimit"] = 0,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "时光城竞技场",
+        ["name"] = "Time and Space City arena",
         ["assist_npc"] = ""
     },
     [2] = {
@@ -38,7 +38,7 @@
         ["daytimesuclimit"] = 0,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "地球竞技场",
+        ["name"] = "Earth arena",
         ["assist_npc"] = ""
     },
     [3] = {
@@ -59,7 +59,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "夺取水晶球",
+        ["name"] = "Capture the dragon ball",
         ["assist_npc"] = ""
     },
     [4] = {
@@ -74,13 +74,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "1-2;2-1;4-1",
         ["explvllimit"] = 0,
-        ["desc"] = "水晶婆婆挑战副本",
+        ["desc"] = "Baba's the whitch copy battle",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 0,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "水晶婆婆",
+        ["name"] = "Baba's the whitch",
         ["assist_npc"] = ""
     },
     [5] = {
@@ -95,13 +95,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "1-2;2-1;4-1",
         ["explvllimit"] = 0,
-        ["desc"] = "挑战的难度越高，奖励越丰厚",
+        ["desc"] = "Challenge: very hard, best reward ever",
         ["originonly"] = 0,
         ["daytimelimit"] = 2,
         ["daytimesuclimit"] = 0,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "界王的试炼",
+        ["name"] = "Trial of the king",
         ["assist_npc"] = ""
     },
     [6] = {
@@ -116,13 +116,13 @@
         ["min_need_player"] = 2,
         ["overmap_type_ui"] = "",
         ["explvllimit"] = 0,
-        ["desc"] = "请带着朋友一起来时光小屋副本训练吧，越默契的配合会得到越明显的进步哦！",
+        ["desc"] = "Please bring a friend to the time and space copy training., More cooperation will get more easy progress!",
         ["originonly"] = 0,
         ["daytimelimit"] = 1,
         ["daytimesuclimit"] = 0,
         ["type"] = 1,
         ["award"] = "1-100-1",
-        ["name"] = "精神时光小屋",
+        ["name"] = "Spiritual Time Cabin",
         ["assist_npc"] = ""
     },
     [7] = {
@@ -137,13 +137,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "",
         ["explvllimit"] = 0,
-        ["desc"] = "测试同场景副本跳转是否有loading",
+        ["desc"] = "Test in the same field with the same scene copy wheter the jump has loading",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 0,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "地球野外测试",
+        ["name"] = "Earth test field",
         ["assist_npc"] = ""
     },
     [8] = {
@@ -158,13 +158,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "1-2;2-1;4-1",
         ["explvllimit"] = 0,
-        ["desc"] = "战斗过程中，撒旦先生没有被击败，撒旦先生将会向您提供一笔很丰厚的报酬；如果撒旦先生被击败，你只会得到基础奖励!",
+        ["desc"] = "During the battle, if  Mr. Satan hasn't been defeated after finish the battle, He'll give you a very great reward；if Mr. Satan is defeated after finihs the battle, you'll only recieve the basic reward!",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 0,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "撒旦的委托",
+        ["name"] = "Mr. Satan's commision",
         ["assist_npc"] = ""
     },
     [9] = {
@@ -179,13 +179,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "",
         ["explvllimit"] = 0,
-        ["desc"] = "小明测试副本功能",
+        ["desc"] = "Little explaining test copy function",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "调换龙珠1",
+        ["name"] = "Change dragon ball1",
         ["assist_npc"] = ""
     },
     [10] = {
@@ -200,13 +200,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "",
         ["explvllimit"] = 0,
-        ["desc"] = "妹子测试副本功能",
+        ["desc"] = "Sister test copy function",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 5,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "沙漠亚姆查",
+        ["name"] = "Desert Yamcha",
         ["assist_npc"] = ""
     },
     [11] = {
@@ -221,13 +221,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "",
         ["explvllimit"] = 0,
-        ["desc"] = "副本跑步任务",
+        ["desc"] = "Replica race quest",
         ["originonly"] = 1,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "龟仙人跑步",
+        ["name"] = "Master Roshi's race",
         ["assist_npc"] = ""
     },
     [12] = {
@@ -242,13 +242,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "",
         ["explvllimit"] = 0,
-        ["desc"] = "沙鲁副本任务",
+        ["desc"] = "Cell's copy quest",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "沙鲁副本",
+        ["name"] = "Cell's copy",
         ["assist_npc"] = ""
     },
     [13] = {
@@ -263,13 +263,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "",
         ["explvllimit"] = 0,
-        ["desc"] = "副本铃铛QTE任务",
+        ["desc"] = "Quick time event replica bell quest",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "波波先生的修炼任务（铃铛QTE波波先生的铃铛QTE任务",
+        ["name"] = "Mr. Bobo's cultivation quest (Mr. Bobo's bell quick time event quest)",
         ["assist_npc"] = ""
     },
     [14] = {
@@ -284,13 +284,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "",
         ["explvllimit"] = 0,
-        ["desc"] = "可洛山取神圣之冠任务",
+        ["desc"] = "Quest to recover the sacred crown from Kolo mountain",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "可洛山顶",
+        ["name"] = "Kolo peak",
         ["assist_npc"] = ""
     },
     [15] = {
@@ -305,13 +305,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "",
         ["explvllimit"] = 0,
-        ["desc"] = "与波波做的人形战斗",
+        ["desc"] = "Bobo's humanoid battle ",
         ["originonly"] = 1,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "人形战斗",
+        ["name"] = "Humanoid battle",
         ["assist_npc"] = ""
     },
     [16] = {
@@ -326,13 +326,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "",
         ["explvllimit"] = 0,
-        ["desc"] = "与时光城的特兰克斯战斗，任务10022",
+        ["desc"] = "Fighting with the Trunks in Time and Space City, Quest10022",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "与特兰克斯的较量",
+        ["name"] = "Contest with Trunks",
         ["assist_npc"] = ""
     },
     [17] = {
@@ -347,13 +347,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "",
         ["explvllimit"] = 0,
-        ["desc"] = "副本跑步,任务10116",
+        ["desc"] = "Copy race,Quest10116",
         ["originonly"] = 1,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "龟仙人跑步10116",
+        ["name"] = "Master Roshi's race10116",
         ["assist_npc"] = ""
     },
     [18] = {
@@ -368,13 +368,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "",
         ["explvllimit"] = 0,
-        ["desc"] = "fb_dsl_10202 任务10202,与卡林仙人第1个罐子交互进入副本",
+        ["desc"] = "fb_dsl_10202 Quest10202, Interact with Karin's first jar to enter the copy",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "卡林仙人的罐子1",
+        ["name"] = "Karinis jar1",
         ["assist_npc"] = ""
     },
     [19] = {
@@ -389,13 +389,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "",
         ["explvllimit"] = 0,
-        ["desc"] = "fb_js1_10206 任务10206",
+        ["desc"] = "fb_js1_10206 Quest10206",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "与卡林仙人的竞赛1",
+        ["name"] = "Competition agains Karin 1",
         ["assist_npc"] = ""
     },
     [20] = {
@@ -410,13 +410,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "",
         ["explvllimit"] = 0,
-        ["desc"] = "fb_js2_10207 任务10207",
+        ["desc"] = "fb_js2_10207 Quest10207",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "与卡林仙人的竞赛2",
+        ["name"] = "Competition agains Karin 2",
         ["assist_npc"] = ""
     },
     [21] = {
@@ -431,13 +431,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "",
         ["explvllimit"] = 0,
-        ["desc"] = "fb_js3_10208 任务10208",
+        ["desc"] = "fb_js3_10208 Quest10208",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "与卡林仙人的竞赛3",
+        ["name"] = "Competition agains Karin 3",
         ["assist_npc"] = ""
     },
     [22] = {
@@ -452,13 +452,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "",
         ["explvllimit"] = 0,
-        ["desc"] = "fb_tbb_10211 任务10211",
+        ["desc"] = "fb_tbb_10211 Quest10211",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "挑战桃白白",
+        ["name"] = "Battle agains Tao Baibai",
         ["assist_npc"] = ""
     },
     [23] = {
@@ -473,13 +473,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "",
         ["explvllimit"] = 0,
-        ["desc"] = "fb_mslt_10212 任务10212 fb_mslt_10212_1  fb_mslt_10212_2  fb_mslt_10212_3  fb_mslt_10212_4   ",
+        ["desc"] = "fb_mslt_10212 Quest10212 fb_mslt_10212_1  fb_mslt_10212_2  fb_mslt_10212_3  fb_mslt_10212_4   ",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "激战玛斯鲁塔",
+        ["name"] = "Matsuruta's battle",
         ["assist_npc"] = ""
     },
     [24] = {
@@ -494,13 +494,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "",
         ["explvllimit"] = 0,
-        ["desc"] = "fb_sjpp_10219 fb_sjpp_10219_2任务10219",
+        ["desc"] = "fb_sjpp_10219 fb_sjpp_10219_2 Quest10219",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "打败水晶婆婆的五位战士",
+        ["name"] = "Defeat the 5 Baba's the whitch guardians",
         ["assist_npc"] = ""
     },
     [25] = {
@@ -515,13 +515,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "",
         ["explvllimit"] = 0,
-        ["desc"] = "fb_bk_10240 任务10240",
+        ["desc"] = "fb_bk_10240 Quest10240",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "比克大魔王",
+        ["name"] = "Evil Piccolo",
         ["assist_npc"] = ""
     },
     [26] = {
@@ -542,7 +542,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "抓住巴布鲁斯1/3",
+        ["name"] = "Catch Bubbles 1/3",
         ["assist_npc"] = ""
     },
     [27] = {
@@ -563,7 +563,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "巴布鲁斯训练1",
+        ["name"] = "Bubbles training 1",
         ["assist_npc"] = ""
     },
     [28] = {
@@ -584,7 +584,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "巴布鲁斯训练2",
+        ["name"] = "Bubbles training 2",
         ["assist_npc"] = ""
     },
     [29] = {
@@ -605,7 +605,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "界王拳的练习1",
+        ["name"] = "King Kaio practice 1",
         ["assist_npc"] = ""
     },
     [30] = {
@@ -626,7 +626,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "界王拳的练习2",
+        ["name"] = "King Kaio practice 2",
         ["assist_npc"] = ""
     },
     [31] = {
@@ -647,7 +647,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "界王拳的练习3",
+        ["name"] = "King Kaio practice 3",
         ["assist_npc"] = ""
     },
     [32] = {
@@ -668,7 +668,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "冰山一角1",
+        ["name"] = "The tip of the iceberg 1",
         ["assist_npc"] = ""
     },
     [33] = {
@@ -689,7 +689,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "元气弹练习1",
+        ["name"] = "Elemental energy practice 1",
         ["assist_npc"] = ""
     },
     [34] = {
@@ -710,7 +710,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "元气弹练习2",
+        ["name"] = "Elemental energy practice 2",
         ["assist_npc"] = ""
     },
     [35] = {
@@ -731,7 +731,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "你好，天津饭！",
+        ["name"] = "Hi, Tian Shinhan!",
         ["assist_npc"] = ""
     },
     [36] = {
@@ -752,7 +752,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "界王的馈赠",
+        ["name"] = "King's gift",
         ["assist_npc"] = ""
     },
     [37] = {
@@ -773,7 +773,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "赛亚人抵达地球",
+        ["name"] = "Saiyans arrive on Earth",
         ["assist_npc"] = ""
     },
     [38] = {
@@ -794,7 +794,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "地球野外",
+        ["name"] = "Earth field",
         ["assist_npc"] = ""
     },
     [39] = {
@@ -815,7 +815,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "表现惊人的小库林",
+        ["name"] = "Amazing kid Krillin",
         ["assist_npc"] = ""
     },
     [40] = {
@@ -836,7 +836,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "与龟仙人的约定",
+        ["name"] = "Agreement with Master Roshi",
         ["assist_npc"] = ""
     },
     [41] = {
@@ -857,7 +857,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "10倍超重力室",
+        ["name"] = "10 Double gravity chamber",
         ["assist_npc"] = ""
     },
     [42] = {
@@ -878,7 +878,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "10倍超重力室",
+        ["name"] = "10 Double gravity chamber",
         ["assist_npc"] = ""
     },
     [43] = {
@@ -899,7 +899,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "10倍超重力室",
+        ["name"] = "10 Double gravity chamber",
         ["assist_npc"] = ""
     },
     [44] = {
@@ -920,7 +920,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "那美克星时空乱流一",
+        ["name"] = "Planet Namek's time and space chaos event 1",
         ["assist_npc"] = ""
     },
     [45] = {
@@ -941,7 +941,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "20倍超重力室",
+        ["name"] = "20 Double gravity chamber",
         ["assist_npc"] = ""
     },
     [46] = {
@@ -962,7 +962,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "20倍超重力室",
+        ["name"] = "20 Double gravity chamber",
         ["assist_npc"] = ""
     },
     [47] = {
@@ -983,7 +983,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "20倍超重力室",
+        ["name"] = "20 Double gravity chamber",
         ["assist_npc"] = ""
     },
     [48] = {
@@ -1004,7 +1004,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "20倍超重力室",
+        ["name"] = "20 Double gravity chamber",
         ["assist_npc"] = ""
     },
     [49] = {
@@ -1025,7 +1025,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "那美克星时空乱流二",
+        ["name"] = "Planet Namek's time and space chaos event 2",
         ["assist_npc"] = ""
     },
     [50] = {
@@ -1046,7 +1046,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "30倍超重力室",
+        ["name"] = "30 Double gravity chamber",
         ["assist_npc"] = ""
     },
     [51] = {
@@ -1067,7 +1067,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "30倍超重力室",
+        ["name"] = "30 Double gravity chamber",
         ["assist_npc"] = ""
     },
     [52] = {
@@ -1088,7 +1088,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "30倍超重力室",
+        ["name"] = "30 Double gravity chamber",
         ["assist_npc"] = ""
     },
     [53] = {
@@ -1109,7 +1109,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "30倍超重力室",
+        ["name"] = "30 Double gravity chamber",
         ["assist_npc"] = ""
     },
     [54] = {
@@ -1130,7 +1130,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "那美克星时空乱流三",
+        ["name"] = "Planet Namek's time and space chaos event 3",
         ["assist_npc"] = ""
     },
     [55] = {
@@ -1151,7 +1151,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "恐怖森林",
+        ["name"] = "Kreepy forest",
         ["assist_npc"] = ""
     },
     [56] = {
@@ -1172,7 +1172,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "那美克星时空乱流四",
+        ["name"] = "Planet Namek's time and space chaos event 4",
         ["assist_npc"] = ""
     },
     [57] = {
@@ -1193,7 +1193,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "找到布雷哥利",
+        ["name"] = "Find Gregory",
         ["assist_npc"] = ""
     },
     [58] = {
@@ -1214,7 +1214,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "副本皮拉夫城堡",
+        ["name"] = "Pilaf's castle Copy",
         ["assist_npc"] = ""
     },
     [59] = {
@@ -1235,7 +1235,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "龟仙人跑步10132",
+        ["name"] = "Master Roshi's race 10132",
         ["assist_npc"] = ""
     },
     [60] = {
@@ -1251,12 +1251,12 @@
         ["overmap_type_ui"] = "",
         ["explvllimit"] = 0,
         ["desc"] = "fb_10240",
-        ["originonly"] = 0,
+        ["originonly"] = 1,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "国王的城堡",
+        ["name"] = "King's castle",
         ["assist_npc"] = ""
     },
     [61] = {
@@ -1277,7 +1277,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "悟空的家室内2",
+        ["name"] = "Inside Son Goku's home 2",
         ["assist_npc"] = ""
     },
     [62] = {
@@ -1298,7 +1298,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "冰山一角2",
+        ["name"] = "The tip of the iceberg 2",
         ["assist_npc"] = ""
     },
     [63] = {
@@ -1319,7 +1319,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "冰山一角3",
+        ["name"] = "The tip of the iceberg 3",
         ["assist_npc"] = ""
     },
     [64] = {
@@ -1340,7 +1340,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "冰山一角4",
+        ["name"] = "The tip of the iceberg 4",
         ["assist_npc"] = ""
     },
     [65] = {
@@ -1361,7 +1361,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "矿脉里的余孽",
+        ["name"] = "The remmants inside the veins",
         ["assist_npc"] = ""
     },
     [66] = {
@@ -1382,7 +1382,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "秘密调查",
+        ["name"] = "Secret investigation",
         ["assist_npc"] = ""
     },
     [67] = {
@@ -1403,7 +1403,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "界王的感知",
+        ["name"] = "The king of the perception",
         ["assist_npc"] = ""
     },
     [68] = {
@@ -1418,13 +1418,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "1-2;2-1;4-1",
         ["explvllimit"] = 0,
-        ["desc"] = "100倍重力修炼室",
+        ["desc"] = "100 Double gravity training room",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "100倍重力修炼室",
+        ["name"] = "100 Double gravity training room",
         ["assist_npc"] = ""
     },
     [69] = {
@@ -1439,13 +1439,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "1-2;2-1;4-1",
         ["explvllimit"] = 0,
-        ["desc"] = "200倍重力修炼室",
+        ["desc"] = "200 Double gravity training room",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "200倍重力修炼室",
+        ["name"] = "200 Double gravity training room",
         ["assist_npc"] = ""
     },
     [70] = {
@@ -1460,13 +1460,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "1-2;2-1;4-1",
         ["explvllimit"] = 0,
-        ["desc"] = "300倍重力修炼室",
+        ["desc"] = "300 Double gravity training room",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "300倍重力修炼室",
+        ["name"] = "300 Double gravity training room",
         ["assist_npc"] = ""
     },
     [71] = {
@@ -1481,13 +1481,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "1-2;2-1;4-1",
         ["explvllimit"] = 0,
-        ["desc"] = "400倍重力修炼室",
+        ["desc"] = "400 Double gravity training room",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "400倍重力修炼室",
+        ["name"] = "400 Double gravity training room",
         ["assist_npc"] = ""
     },
     [72] = {
@@ -1502,13 +1502,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "1-2;2-1;4-1",
         ["explvllimit"] = 0,
-        ["desc"] = "500倍重力修炼室",
+        ["desc"] = "500 Double gravity training room",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "500倍重力修炼室",
+        ["name"] = "500 Double gravity training room",
         ["assist_npc"] = ""
     },
     [73] = {
@@ -1523,13 +1523,13 @@
         ["min_need_player"] = 1,
         ["overmap_type_ui"] = "1-2;2-1;4-1",
         ["explvllimit"] = 0,
-        ["desc"] = "500倍重力修炼室",
+        ["desc"] = "500 Double gravity training room",
         ["originonly"] = 0,
         ["daytimelimit"] = 9999,
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "力量大会",
+        ["name"] = "Power Assembly",
         ["assist_npc"] = ""
     },
     [74] = {
@@ -1550,7 +1550,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "掠夺者矿井",
+        ["name"] = "Predator mine",
         ["assist_npc"] = ""
     },
     [75] = {
@@ -1571,7 +1571,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "地下擂台",
+        ["name"] = "Underground platform",
         ["assist_npc"] = ""
     },
     [76] = {
@@ -1592,7 +1592,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "掠夺者矿井",
+        ["name"] = "Predator mine",
         ["assist_npc"] = ""
     },
     [77] = {
@@ -1613,7 +1613,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "掠夺者矿井",
+        ["name"] = "Predator mine",
         ["assist_npc"] = ""
     },
     [78] = {
@@ -1634,7 +1634,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "地下擂台",
+        ["name"] = "Underground platform",
         ["assist_npc"] = ""
     },
     [79] = {
@@ -1655,7 +1655,7 @@
         ["daytimesuclimit"] = 9999,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "地下擂台",
+        ["name"] = "Underground platform",
         ["assist_npc"] = ""
     },
     [80] = {
@@ -1676,7 +1676,7 @@
         ["daytimesuclimit"] = 0,
         ["type"] = 1,
         ["award"] = "",
-        ["name"] = "武道家竞技场",
+        ["name"] = "Budokai arena",
         ["assist_npc"] = ""
     }
 }

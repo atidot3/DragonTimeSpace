@@ -8,7 +8,7 @@
         ["exp"] = 75,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "生命上限_白_1级",
+        ["name"] = "Maximum_Hp_whited_1level",
         ["tbxid"] = 90101001
     },
     [2] = {
@@ -20,7 +20,7 @@
         ["exp"] = 450,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "生命上限_白_2级",
+        ["name"] = "Maximum_Hp_whited_2level",
         ["tbxid"] = 90101002
     },
     [3] = {
@@ -32,7 +32,7 @@
         ["exp"] = 900,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "生命上限_白_3级",
+        ["name"] = "Maximum_Hp_whited_3level",
         ["tbxid"] = 90101003
     },
     [4] = {
@@ -44,7 +44,7 @@
         ["exp"] = 1800,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "生命上限_白_4级",
+        ["name"] = "Maximum_Hp_whited_4level",
         ["tbxid"] = 90101004
     },
     [5] = {
@@ -56,7 +56,7 @@
         ["exp"] = 3300,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "生命上限_白_5级",
+        ["name"] = "Maximum_Hp_whited_5level",
         ["tbxid"] = 90101005
     },
     [6] = {
@@ -68,7 +68,7 @@
         ["exp"] = 5550,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "生命上限_白_6级",
+        ["name"] = "Maximum_Hp_whited_6level",
         ["tbxid"] = 90101006
     },
     [7] = {
@@ -80,7 +80,7 @@
         ["exp"] = 8550,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "生命上限_白_7级",
+        ["name"] = "Maximum_Hp_whited_7level",
         ["tbxid"] = 90101007
     },
     [8] = {
@@ -92,7 +92,7 @@
         ["exp"] = 13125,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "生命上限_白_8级",
+        ["name"] = "Maximum_Hp_whited_8level",
         ["tbxid"] = 90101008
     },
     [9] = {
@@ -104,7 +104,7 @@
         ["exp"] = 20325,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "生命上限_白_9级",
+        ["name"] = "Maximum_Hp_whited_9level",
         ["tbxid"] = 90101009
     },
     [10] = {
@@ -116,7 +116,7 @@
         ["exp"] = 40500,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "生命上限_白_10级",
+        ["name"] = "Maximum_Hp_whited_10level",
         ["tbxid"] = 90101010
     },
     [11] = {
@@ -128,7 +128,7 @@
         ["exp"] = 67425,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "生命上限_白_11级",
+        ["name"] = "Maximum_Hp_whited_11level",
         ["tbxid"] = 90101011
     },
     [12] = {
@@ -140,7 +140,7 @@
         ["exp"] = 134775,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "生命上限_白_12级",
+        ["name"] = "Maximum_Hp_whited_12level",
         ["tbxid"] = 90101012
     },
     [13] = {
@@ -152,7 +152,7 @@
         ["exp"] = 269475,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "生命上限_白_13级",
+        ["name"] = "Maximum_Hp_whited_13level",
         ["tbxid"] = 90101013
     },
     [14] = {
@@ -164,7 +164,7 @@
         ["exp"] = 404100,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "生命上限_白_14级",
+        ["name"] = "Maximum_Hp_whited_14level",
         ["tbxid"] = 90101014
     },
     [15] = {
@@ -176,7 +176,7 @@
         ["exp"] = 538800,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "生命上限_白_15级",
+        ["name"] = "Maximum_Hp_whited_15level",
         ["tbxid"] = 90101015
     },
     [16] = {
@@ -188,7 +188,7 @@
         ["exp"] = 673425,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "生命上限_白_16级",
+        ["name"] = "Maximum_Hp_whited_16level",
         ["tbxid"] = 90101016
     },
     [17] = {
@@ -200,7 +200,7 @@
         ["exp"] = 808125,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "生命上限_白_17级",
+        ["name"] = "Maximum_Hp_whited_17level",
         ["tbxid"] = 90101017
     },
     [18] = {
@@ -212,7 +212,7 @@
         ["exp"] = 942750,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "生命上限_白_18级",
+        ["name"] = "Maximum_Hp_whited_18level",
         ["tbxid"] = 90101018
     },
     [19] = {
@@ -224,7 +224,7 @@
         ["exp"] = 1144725,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "生命上限_白_19级",
+        ["name"] = "Maximum_Hp_whited_19level",
         ["tbxid"] = 90101019
     },
     [20] = {
@@ -236,7 +236,7 @@
         ["exp"] = 1346775,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "生命上限_白_20级",
+        ["name"] = "Maximum_Hp_whited_20level",
         ["tbxid"] = 90101020
     },
     [21] = {
@@ -248,7 +248,7 @@
         ["exp"] = 75,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "格斗防御_白_1级",
+        ["name"] = "Physical_defense_whited_1level",
         ["tbxid"] = 90201001
     },
     [22] = {
@@ -260,7 +260,7 @@
         ["exp"] = 450,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "格斗防御_白_2级",
+        ["name"] = "Physical_defense_whited_2level",
         ["tbxid"] = 90201002
     },
     [23] = {
@@ -272,7 +272,7 @@
         ["exp"] = 900,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "格斗防御_白_3级",
+        ["name"] = "Physical_defense_whited_3level",
         ["tbxid"] = 90201003
     },
     [24] = {
@@ -284,7 +284,7 @@
         ["exp"] = 1800,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "格斗防御_白_4级",
+        ["name"] = "Physical_defense_whited_4level",
         ["tbxid"] = 90201004
     },
     [25] = {
@@ -296,7 +296,7 @@
         ["exp"] = 3300,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "格斗防御_白_5级",
+        ["name"] = "Physical_defense_whited_5level",
         ["tbxid"] = 90201005
     },
     [26] = {
@@ -308,7 +308,7 @@
         ["exp"] = 5550,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "格斗防御_白_6级",
+        ["name"] = "Physical_defense_whited_6level",
         ["tbxid"] = 90201006
     },
     [27] = {
@@ -320,7 +320,7 @@
         ["exp"] = 8550,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "格斗防御_白_7级",
+        ["name"] = "Physical_defense_whited_7level",
         ["tbxid"] = 90201007
     },
     [28] = {
@@ -332,7 +332,7 @@
         ["exp"] = 13125,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "格斗防御_白_8级",
+        ["name"] = "Physical_defense_whited_8level",
         ["tbxid"] = 90201008
     },
     [29] = {
@@ -344,7 +344,7 @@
         ["exp"] = 20325,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "格斗防御_白_9级",
+        ["name"] = "Physical_defense_whited_9level",
         ["tbxid"] = 90201009
     },
     [30] = {
@@ -356,7 +356,7 @@
         ["exp"] = 40500,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "格斗防御_白_10级",
+        ["name"] = "Physical_defense_whited_10level",
         ["tbxid"] = 90201010
     },
     [31] = {
@@ -368,7 +368,7 @@
         ["exp"] = 67425,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "格斗防御_白_11级",
+        ["name"] = "Physical_defense_whited_11level",
         ["tbxid"] = 90201011
     },
     [32] = {
@@ -380,7 +380,7 @@
         ["exp"] = 134775,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "格斗防御_白_12级",
+        ["name"] = "Physical_defense_whited_12level",
         ["tbxid"] = 90201012
     },
     [33] = {
@@ -392,7 +392,7 @@
         ["exp"] = 269475,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "格斗防御_白_13级",
+        ["name"] = "Physical_defense_whited_13level",
         ["tbxid"] = 90201013
     },
     [34] = {
@@ -404,7 +404,7 @@
         ["exp"] = 404100,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "格斗防御_白_14级",
+        ["name"] = "Physical_defense_whited_14level",
         ["tbxid"] = 90201014
     },
     [35] = {
@@ -416,7 +416,7 @@
         ["exp"] = 538800,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "格斗防御_白_15级",
+        ["name"] = "Physical_defense_whited_15level",
         ["tbxid"] = 90201015
     },
     [36] = {
@@ -428,7 +428,7 @@
         ["exp"] = 673425,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "格斗防御_白_16级",
+        ["name"] = "Physical_defense_whited_16level",
         ["tbxid"] = 90201016
     },
     [37] = {
@@ -440,7 +440,7 @@
         ["exp"] = 808125,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "格斗防御_白_17级",
+        ["name"] = "Physical_defense_whited_17level",
         ["tbxid"] = 90201017
     },
     [38] = {
@@ -452,7 +452,7 @@
         ["exp"] = 942750,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "格斗防御_白_18级",
+        ["name"] = "Physical_defense_whited_18level",
         ["tbxid"] = 90201018
     },
     [39] = {
@@ -464,7 +464,7 @@
         ["exp"] = 1144725,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "格斗防御_白_19级",
+        ["name"] = "Physical_defense_whited_19level",
         ["tbxid"] = 90201019
     },
     [40] = {
@@ -476,7 +476,7 @@
         ["exp"] = 1346775,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "格斗防御_白_20级",
+        ["name"] = "Physical_defense_whited_20level",
         ["tbxid"] = 90201020
     },
     [41] = {
@@ -488,7 +488,7 @@
         ["exp"] = 75,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "气功防御_白_1级",
+        ["name"] = "Energy_defense_whited_1level",
         ["tbxid"] = 90301001
     },
     [42] = {
@@ -500,7 +500,7 @@
         ["exp"] = 450,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "气功防御_白_2级",
+        ["name"] = "Energy_defense_whited_2level",
         ["tbxid"] = 90301002
     },
     [43] = {
@@ -512,7 +512,7 @@
         ["exp"] = 900,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "气功防御_白_3级",
+        ["name"] = "Energy_defense_whited_3level",
         ["tbxid"] = 90301003
     },
     [44] = {
@@ -524,7 +524,7 @@
         ["exp"] = 1800,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "气功防御_白_4级",
+        ["name"] = "Energy_defense_whited_4level",
         ["tbxid"] = 90301004
     },
     [45] = {
@@ -536,7 +536,7 @@
         ["exp"] = 3300,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "气功防御_白_5级",
+        ["name"] = "Energy_defense_whited_5level",
         ["tbxid"] = 90301005
     },
     [46] = {
@@ -548,7 +548,7 @@
         ["exp"] = 5550,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "气功防御_白_6级",
+        ["name"] = "Energy_defense_whited_6level",
         ["tbxid"] = 90301006
     },
     [47] = {
@@ -560,7 +560,7 @@
         ["exp"] = 8550,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "气功防御_白_7级",
+        ["name"] = "Energy_defense_whited_7level",
         ["tbxid"] = 90301007
     },
     [48] = {
@@ -572,7 +572,7 @@
         ["exp"] = 13125,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "气功防御_白_8级",
+        ["name"] = "Energy_defense_whited_8level",
         ["tbxid"] = 90301008
     },
     [49] = {
@@ -584,7 +584,7 @@
         ["exp"] = 20325,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "气功防御_白_9级",
+        ["name"] = "Energy_defense_whited_9level",
         ["tbxid"] = 90301009
     },
     [50] = {
@@ -596,7 +596,7 @@
         ["exp"] = 40500,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "气功防御_白_10级",
+        ["name"] = "Energy_defense_whited_10level",
         ["tbxid"] = 90301010
     },
     [51] = {
@@ -608,7 +608,7 @@
         ["exp"] = 67425,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "气功防御_白_11级",
+        ["name"] = "Energy_defense_whited_11level",
         ["tbxid"] = 90301011
     },
     [52] = {
@@ -620,7 +620,7 @@
         ["exp"] = 134775,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "气功防御_白_12级",
+        ["name"] = "Energy_defense_whited_12level",
         ["tbxid"] = 90301012
     },
     [53] = {
@@ -632,7 +632,7 @@
         ["exp"] = 269475,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "气功防御_白_13级",
+        ["name"] = "Energy_defense_whited_13level",
         ["tbxid"] = 90301013
     },
     [54] = {
@@ -644,7 +644,7 @@
         ["exp"] = 404100,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "气功防御_白_14级",
+        ["name"] = "Energy_defense_whited_14level",
         ["tbxid"] = 90301014
     },
     [55] = {
@@ -656,7 +656,7 @@
         ["exp"] = 538800,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "气功防御_白_15级",
+        ["name"] = "Energy_defense_whited_15level",
         ["tbxid"] = 90301015
     },
     [56] = {
@@ -668,7 +668,7 @@
         ["exp"] = 673425,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "气功防御_白_16级",
+        ["name"] = "Energy_defense_whited_16level",
         ["tbxid"] = 90301016
     },
     [57] = {
@@ -680,7 +680,7 @@
         ["exp"] = 808125,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "气功防御_白_17级",
+        ["name"] = "Energy_defense_whited_17level",
         ["tbxid"] = 90301017
     },
     [58] = {
@@ -692,7 +692,7 @@
         ["exp"] = 942750,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "气功防御_白_18级",
+        ["name"] = "Energy_defense_whited_18level",
         ["tbxid"] = 90301018
     },
     [59] = {
@@ -704,7 +704,7 @@
         ["exp"] = 1144725,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "气功防御_白_19级",
+        ["name"] = "Energy_defense_whited_19level",
         ["tbxid"] = 90301019
     },
     [60] = {
@@ -716,7 +716,7 @@
         ["exp"] = 1346775,
         ["type"] = 1,
         ["quality"] = 1,
-        ["name"] = "气功防御_白_20级",
+        ["name"] = "Energy_defense_whited_20level",
         ["tbxid"] = 90301020
     },
     [61] = {
@@ -728,7 +728,7 @@
         ["exp"] = 75,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "格斗攻击_白_1级",
+        ["name"] = "Physical_attack_white_1level",
         ["tbxid"] = 90401001
     },
     [62] = {
@@ -740,7 +740,7 @@
         ["exp"] = 450,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "格斗攻击_白_2级",
+        ["name"] = "Physical_attack_white_2level",
         ["tbxid"] = 90401002
     },
     [63] = {
@@ -752,7 +752,7 @@
         ["exp"] = 900,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "格斗攻击_白_3级",
+        ["name"] = "Physical_attack_white_3level",
         ["tbxid"] = 90401003
     },
     [64] = {
@@ -764,7 +764,7 @@
         ["exp"] = 1800,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "格斗攻击_白_4级",
+        ["name"] = "Physical_attack_white_4level",
         ["tbxid"] = 90401004
     },
     [65] = {
@@ -776,7 +776,7 @@
         ["exp"] = 3300,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "格斗攻击_白_5级",
+        ["name"] = "Physical_attack_white_5level",
         ["tbxid"] = 90401005
     },
     [66] = {
@@ -788,7 +788,7 @@
         ["exp"] = 5550,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "格斗攻击_白_6级",
+        ["name"] = "Physical_attack_white_6level",
         ["tbxid"] = 90401006
     },
     [67] = {
@@ -800,7 +800,7 @@
         ["exp"] = 8550,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "格斗攻击_白_7级",
+        ["name"] = "Physical_attack_white_7level",
         ["tbxid"] = 90401007
     },
     [68] = {
@@ -812,7 +812,7 @@
         ["exp"] = 13125,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "格斗攻击_白_8级",
+        ["name"] = "Physical_attack_white_8level",
         ["tbxid"] = 90401008
     },
     [69] = {
@@ -824,7 +824,7 @@
         ["exp"] = 20325,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "格斗攻击_白_9级",
+        ["name"] = "Physical_attack_white_9level",
         ["tbxid"] = 90401009
     },
     [70] = {
@@ -836,7 +836,7 @@
         ["exp"] = 40500,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "格斗攻击_白_10级",
+        ["name"] = "Physical_attack_white_10level",
         ["tbxid"] = 90401010
     },
     [71] = {
@@ -848,7 +848,7 @@
         ["exp"] = 67425,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "格斗攻击_白_11级",
+        ["name"] = "Physical_attack_white_11level",
         ["tbxid"] = 90401011
     },
     [72] = {
@@ -860,7 +860,7 @@
         ["exp"] = 134775,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "格斗攻击_白_12级",
+        ["name"] = "Physical_attack_white_12level",
         ["tbxid"] = 90401012
     },
     [73] = {
@@ -872,7 +872,7 @@
         ["exp"] = 269475,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "格斗攻击_白_13级",
+        ["name"] = "Physical_attack_white_13level",
         ["tbxid"] = 90401013
     },
     [74] = {
@@ -884,7 +884,7 @@
         ["exp"] = 404100,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "格斗攻击_白_14级",
+        ["name"] = "Physical_attack_white_14level",
         ["tbxid"] = 90401014
     },
     [75] = {
@@ -896,7 +896,7 @@
         ["exp"] = 538800,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "格斗攻击_白_15级",
+        ["name"] = "Physical_attack_white_15level",
         ["tbxid"] = 90401015
     },
     [76] = {
@@ -908,7 +908,7 @@
         ["exp"] = 673425,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "格斗攻击_白_16级",
+        ["name"] = "Physical_attack_white_16level",
         ["tbxid"] = 90401016
     },
     [77] = {
@@ -920,7 +920,7 @@
         ["exp"] = 808125,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "格斗攻击_白_17级",
+        ["name"] = "Physical_attack_white_17level",
         ["tbxid"] = 90401017
     },
     [78] = {
@@ -932,7 +932,7 @@
         ["exp"] = 942750,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "格斗攻击_白_18级",
+        ["name"] = "Physical_attack_white_18level",
         ["tbxid"] = 90401018
     },
     [79] = {
@@ -944,7 +944,7 @@
         ["exp"] = 1144725,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "格斗攻击_白_19级",
+        ["name"] = "Physical_attack_white_19level",
         ["tbxid"] = 90401019
     },
     [80] = {
@@ -956,7 +956,7 @@
         ["exp"] = 1346775,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "格斗攻击_白_20级",
+        ["name"] = "Physical_attack_white_20level",
         ["tbxid"] = 90401020
     },
     [81] = {
@@ -968,7 +968,7 @@
         ["exp"] = 75,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "气功攻击_白_1级",
+        ["name"] = "Energy_attack_white_1level",
         ["tbxid"] = 90501001
     },
     [82] = {
@@ -980,7 +980,7 @@
         ["exp"] = 450,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "气功攻击_白_2级",
+        ["name"] = "Energy_attack_white_2level",
         ["tbxid"] = 90501002
     },
     [83] = {
@@ -992,7 +992,7 @@
         ["exp"] = 900,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "气功攻击_白_3级",
+        ["name"] = "Energy_attack_white_3level",
         ["tbxid"] = 90501003
     },
     [84] = {
@@ -1004,7 +1004,7 @@
         ["exp"] = 1800,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "气功攻击_白_4级",
+        ["name"] = "Energy_attack_white_4level",
         ["tbxid"] = 90501004
     },
     [85] = {
@@ -1016,7 +1016,7 @@
         ["exp"] = 3300,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "气功攻击_白_5级",
+        ["name"] = "Energy_attack_white_5level",
         ["tbxid"] = 90501005
     },
     [86] = {
@@ -1028,7 +1028,7 @@
         ["exp"] = 5550,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "气功攻击_白_6级",
+        ["name"] = "Energy_attack_white_6level",
         ["tbxid"] = 90501006
     },
     [87] = {
@@ -1040,7 +1040,7 @@
         ["exp"] = 8550,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "气功攻击_白_7级",
+        ["name"] = "Energy_attack_white_7level",
         ["tbxid"] = 90501007
     },
     [88] = {
@@ -1052,7 +1052,7 @@
         ["exp"] = 13125,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "气功攻击_白_8级",
+        ["name"] = "Energy_attack_white_8level",
         ["tbxid"] = 90501008
     },
     [89] = {
@@ -1064,7 +1064,7 @@
         ["exp"] = 20325,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "气功攻击_白_9级",
+        ["name"] = "Energy_attack_white_9level",
         ["tbxid"] = 90501009
     },
     [90] = {
@@ -1076,7 +1076,7 @@
         ["exp"] = 40500,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "气功攻击_白_10级",
+        ["name"] = "Energy_attack_white_10level",
         ["tbxid"] = 90501010
     },
     [91] = {
@@ -1088,7 +1088,7 @@
         ["exp"] = 67425,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "气功攻击_白_11级",
+        ["name"] = "Energy_attack_white_11level",
         ["tbxid"] = 90501011
     },
     [92] = {
@@ -1100,7 +1100,7 @@
         ["exp"] = 134775,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "气功攻击_白_12级",
+        ["name"] = "Energy_attack_white_12level",
         ["tbxid"] = 90501012
     },
     [93] = {
@@ -1112,7 +1112,7 @@
         ["exp"] = 269475,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "气功攻击_白_13级",
+        ["name"] = "Energy_attack_white_13level",
         ["tbxid"] = 90501013
     },
     [94] = {
@@ -1124,7 +1124,7 @@
         ["exp"] = 404100,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "气功攻击_白_14级",
+        ["name"] = "Energy_attack_white_14level",
         ["tbxid"] = 90501014
     },
     [95] = {
@@ -1136,7 +1136,7 @@
         ["exp"] = 538800,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "气功攻击_白_15级",
+        ["name"] = "Energy_attack_white_15level",
         ["tbxid"] = 90501015
     },
     [96] = {
@@ -1148,7 +1148,7 @@
         ["exp"] = 673425,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "气功攻击_白_16级",
+        ["name"] = "Energy_attack_white_16level",
         ["tbxid"] = 90501016
     },
     [97] = {
@@ -1160,7 +1160,7 @@
         ["exp"] = 808125,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "气功攻击_白_17级",
+        ["name"] = "Energy_attack_white_17level",
         ["tbxid"] = 90501017
     },
     [98] = {
@@ -1172,7 +1172,7 @@
         ["exp"] = 942750,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "气功攻击_白_18级",
+        ["name"] = "Energy_attack_white_18level",
         ["tbxid"] = 90501018
     },
     [99] = {
@@ -1184,7 +1184,7 @@
         ["exp"] = 1144725,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "气功攻击_白_19级",
+        ["name"] = "Energy_attack_white_19level",
         ["tbxid"] = 90501019
     },
     [100] = {
@@ -1196,7 +1196,7 @@
         ["exp"] = 1346775,
         ["type"] = 2,
         ["quality"] = 1,
-        ["name"] = "气功攻击_白_20级",
+        ["name"] = "Energy_attack_white_20level",
         ["tbxid"] = 90501020
     },
     [101] = {
@@ -1208,7 +1208,7 @@
         ["exp"] = 75,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "暴击等级_白_1级",
+        ["name"] = "Critical_rate_white__1level",
         ["tbxid"] = 90601001
     },
     [102] = {
@@ -1220,7 +1220,7 @@
         ["exp"] = 450,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "暴击等级_白_2级",
+        ["name"] = "Critical_rate_white__2level",
         ["tbxid"] = 90601002
     },
     [103] = {
@@ -1232,7 +1232,7 @@
         ["exp"] = 900,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "暴击等级_白_3级",
+        ["name"] = "Critical_rate_white__3level",
         ["tbxid"] = 90601003
     },
     [104] = {
@@ -1244,7 +1244,7 @@
         ["exp"] = 1800,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "暴击等级_白_4级",
+        ["name"] = "Critical_rate_white__4level",
         ["tbxid"] = 90601004
     },
     [105] = {
@@ -1256,7 +1256,7 @@
         ["exp"] = 3300,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "暴击等级_白_5级",
+        ["name"] = "Critical_rate_white__5level",
         ["tbxid"] = 90601005
     },
     [106] = {
@@ -1268,7 +1268,7 @@
         ["exp"] = 5550,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "暴击等级_白_6级",
+        ["name"] = "Critical_rate_white__6level",
         ["tbxid"] = 90601006
     },
     [107] = {
@@ -1280,7 +1280,7 @@
         ["exp"] = 8550,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "暴击等级_白_7级",
+        ["name"] = "Critical_rate_white__7level",
         ["tbxid"] = 90601007
     },
     [108] = {
@@ -1292,7 +1292,7 @@
         ["exp"] = 13125,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "暴击等级_白_8级",
+        ["name"] = "Critical_rate_white__8level",
         ["tbxid"] = 90601008
     },
     [109] = {
@@ -1304,7 +1304,7 @@
         ["exp"] = 20325,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "暴击等级_白_9级",
+        ["name"] = "Critical_rate_white__9level",
         ["tbxid"] = 90601009
     },
     [110] = {
@@ -1316,7 +1316,7 @@
         ["exp"] = 40500,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "暴击等级_白_10级",
+        ["name"] = "Critical_rate_white__10level",
         ["tbxid"] = 90601010
     },
     [111] = {
@@ -1328,7 +1328,7 @@
         ["exp"] = 67425,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "暴击等级_白_11级",
+        ["name"] = "Critical_rate_white__11level",
         ["tbxid"] = 90601011
     },
     [112] = {
@@ -1340,7 +1340,7 @@
         ["exp"] = 134775,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "暴击等级_白_12级",
+        ["name"] = "Critical_rate_white__12level",
         ["tbxid"] = 90601012
     },
     [113] = {
@@ -1352,7 +1352,7 @@
         ["exp"] = 269475,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "暴击等级_白_13级",
+        ["name"] = "Critical_rate_white__13level",
         ["tbxid"] = 90601013
     },
     [114] = {
@@ -1364,7 +1364,7 @@
         ["exp"] = 404100,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "暴击等级_白_14级",
+        ["name"] = "Critical_rate_white__14level",
         ["tbxid"] = 90601014
     },
     [115] = {
@@ -1376,7 +1376,7 @@
         ["exp"] = 538800,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "暴击等级_白_15级",
+        ["name"] = "Critical_rate_white__15level",
         ["tbxid"] = 90601015
     },
     [116] = {
@@ -1388,7 +1388,7 @@
         ["exp"] = 673425,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "暴击等级_白_16级",
+        ["name"] = "Critical_rate_white__16level",
         ["tbxid"] = 90601016
     },
     [117] = {
@@ -1400,7 +1400,7 @@
         ["exp"] = 808125,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "暴击等级_白_17级",
+        ["name"] = "Critical_rate_white__17level",
         ["tbxid"] = 90601017
     },
     [118] = {
@@ -1412,7 +1412,7 @@
         ["exp"] = 942750,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "暴击等级_白_18级",
+        ["name"] = "Critical_rate_white__18level",
         ["tbxid"] = 90601018
     },
     [119] = {
@@ -1424,7 +1424,7 @@
         ["exp"] = 1144725,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "暴击等级_白_19级",
+        ["name"] = "Critical_rate_white__19level",
         ["tbxid"] = 90601019
     },
     [120] = {
@@ -1436,7 +1436,7 @@
         ["exp"] = 1346775,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "暴击等级_白_20级",
+        ["name"] = "Critical_rate_white__20level",
         ["tbxid"] = 90601020
     },
     [121] = {
@@ -1448,7 +1448,7 @@
         ["exp"] = 75,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "格挡等级_白_1级",
+        ["name"] = "Blocking_white_1level",
         ["tbxid"] = 90701001
     },
     [122] = {
@@ -1460,7 +1460,7 @@
         ["exp"] = 450,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "格挡等级_白_2级",
+        ["name"] = "Blocking_white_2level",
         ["tbxid"] = 90701002
     },
     [123] = {
@@ -1472,7 +1472,7 @@
         ["exp"] = 900,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "格挡等级_白_3级",
+        ["name"] = "Blocking_white_3level",
         ["tbxid"] = 90701003
     },
     [124] = {
@@ -1484,7 +1484,7 @@
         ["exp"] = 1800,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "格挡等级_白_4级",
+        ["name"] = "Blocking_white_4level",
         ["tbxid"] = 90701004
     },
     [125] = {
@@ -1496,7 +1496,7 @@
         ["exp"] = 3300,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "格挡等级_白_5级",
+        ["name"] = "Blocking_white_5level",
         ["tbxid"] = 90701005
     },
     [126] = {
@@ -1508,7 +1508,7 @@
         ["exp"] = 5550,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "格挡等级_白_6级",
+        ["name"] = "Blocking_white_6level",
         ["tbxid"] = 90701006
     },
     [127] = {
@@ -1520,7 +1520,7 @@
         ["exp"] = 8550,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "格挡等级_白_7级",
+        ["name"] = "Blocking_white_7level",
         ["tbxid"] = 90701007
     },
     [128] = {
@@ -1532,7 +1532,7 @@
         ["exp"] = 13125,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "格挡等级_白_8级",
+        ["name"] = "Blocking_white_8level",
         ["tbxid"] = 90701008
     },
     [129] = {
@@ -1544,7 +1544,7 @@
         ["exp"] = 20325,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "格挡等级_白_9级",
+        ["name"] = "Blocking_white_9level",
         ["tbxid"] = 90701009
     },
     [130] = {
@@ -1556,7 +1556,7 @@
         ["exp"] = 40500,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "格挡等级_白_10级",
+        ["name"] = "Blocking_white_10level",
         ["tbxid"] = 90701010
     },
     [131] = {
@@ -1568,7 +1568,7 @@
         ["exp"] = 67425,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "格挡等级_白_11级",
+        ["name"] = "Blocking_white_11level",
         ["tbxid"] = 90701011
     },
     [132] = {
@@ -1580,7 +1580,7 @@
         ["exp"] = 134775,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "格挡等级_白_12级",
+        ["name"] = "Blocking_white_12level",
         ["tbxid"] = 90701012
     },
     [133] = {
@@ -1592,7 +1592,7 @@
         ["exp"] = 269475,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "格挡等级_白_13级",
+        ["name"] = "Blocking_white_13level",
         ["tbxid"] = 90701013
     },
     [134] = {
@@ -1604,7 +1604,7 @@
         ["exp"] = 404100,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "格挡等级_白_14级",
+        ["name"] = "Blocking_white_14level",
         ["tbxid"] = 90701014
     },
     [135] = {
@@ -1616,7 +1616,7 @@
         ["exp"] = 538800,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "格挡等级_白_15级",
+        ["name"] = "Blocking_white_15level",
         ["tbxid"] = 90701015
     },
     [136] = {
@@ -1628,7 +1628,7 @@
         ["exp"] = 673425,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "格挡等级_白_16级",
+        ["name"] = "Blocking_white_16level",
         ["tbxid"] = 90701016
     },
     [137] = {
@@ -1640,7 +1640,7 @@
         ["exp"] = 808125,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "格挡等级_白_17级",
+        ["name"] = "Blocking_white_17level",
         ["tbxid"] = 90701017
     },
     [138] = {
@@ -1652,7 +1652,7 @@
         ["exp"] = 942750,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "格挡等级_白_18级",
+        ["name"] = "Blocking_white_18level",
         ["tbxid"] = 90701018
     },
     [139] = {
@@ -1664,7 +1664,7 @@
         ["exp"] = 1144725,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "格挡等级_白_19级",
+        ["name"] = "Blocking_white_19level",
         ["tbxid"] = 90701019
     },
     [140] = {
@@ -1676,7 +1676,7 @@
         ["exp"] = 1346775,
         ["type"] = 3,
         ["quality"] = 1,
-        ["name"] = "格挡等级_白_20级",
+        ["name"] = "Blocking_white_20level",
         ["tbxid"] = 90701020
     },
     [141] = {
@@ -1688,7 +1688,7 @@
         ["exp"] = 75,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "韧性等级_白_1级",
+        ["name"] = "Resilience_level_white_1level",
         ["tbxid"] = 90801001
     },
     [142] = {
@@ -1700,7 +1700,7 @@
         ["exp"] = 450,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "韧性等级_白_2级",
+        ["name"] = "Resilience_level_white_2level",
         ["tbxid"] = 90801002
     },
     [143] = {
@@ -1712,7 +1712,7 @@
         ["exp"] = 900,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "韧性等级_白_3级",
+        ["name"] = "Resilience_level_white_3level",
         ["tbxid"] = 90801003
     },
     [144] = {
@@ -1724,7 +1724,7 @@
         ["exp"] = 1800,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "韧性等级_白_4级",
+        ["name"] = "Resilience_level_white_4level",
         ["tbxid"] = 90801004
     },
     [145] = {
@@ -1736,7 +1736,7 @@
         ["exp"] = 3300,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "韧性等级_白_5级",
+        ["name"] = "Resilience_level_white_5level",
         ["tbxid"] = 90801005
     },
     [146] = {
@@ -1748,7 +1748,7 @@
         ["exp"] = 5550,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "韧性等级_白_6级",
+        ["name"] = "Resilience_level_white_6level",
         ["tbxid"] = 90801006
     },
     [147] = {
@@ -1760,7 +1760,7 @@
         ["exp"] = 8550,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "韧性等级_白_7级",
+        ["name"] = "Resilience_level_white_7level",
         ["tbxid"] = 90801007
     },
     [148] = {
@@ -1772,7 +1772,7 @@
         ["exp"] = 13125,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "韧性等级_白_8级",
+        ["name"] = "Resilience_level_white_8level",
         ["tbxid"] = 90801008
     },
     [149] = {
@@ -1784,7 +1784,7 @@
         ["exp"] = 20325,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "韧性等级_白_9级",
+        ["name"] = "Resilience_level_white_9level",
         ["tbxid"] = 90801009
     },
     [150] = {
@@ -1796,7 +1796,7 @@
         ["exp"] = 40500,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "韧性等级_白_10级",
+        ["name"] = "Resilience_level_white_10level",
         ["tbxid"] = 90801010
     },
     [151] = {
@@ -1808,7 +1808,7 @@
         ["exp"] = 67425,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "韧性等级_白_11级",
+        ["name"] = "Resilience_level_white_11level",
         ["tbxid"] = 90801011
     },
     [152] = {
@@ -1820,7 +1820,7 @@
         ["exp"] = 134775,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "韧性等级_白_12级",
+        ["name"] = "Resilience_level_white_12level",
         ["tbxid"] = 90801012
     },
     [153] = {
@@ -1832,7 +1832,7 @@
         ["exp"] = 269475,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "韧性等级_白_13级",
+        ["name"] = "Resilience_level_white_13level",
         ["tbxid"] = 90801013
     },
     [154] = {
@@ -1844,7 +1844,7 @@
         ["exp"] = 404100,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "韧性等级_白_14级",
+        ["name"] = "Resilience_level_white_14level",
         ["tbxid"] = 90801014
     },
     [155] = {
@@ -1856,7 +1856,7 @@
         ["exp"] = 538800,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "韧性等级_白_15级",
+        ["name"] = "Resilience_level_white_15level",
         ["tbxid"] = 90801015
     },
     [156] = {
@@ -1868,7 +1868,7 @@
         ["exp"] = 673425,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "韧性等级_白_16级",
+        ["name"] = "Resilience_level_white_16level",
         ["tbxid"] = 90801016
     },
     [157] = {
@@ -1880,7 +1880,7 @@
         ["exp"] = 808125,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "韧性等级_白_17级",
+        ["name"] = "Resilience_level_white_17level",
         ["tbxid"] = 90801017
     },
     [158] = {
@@ -1892,7 +1892,7 @@
         ["exp"] = 942750,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "韧性等级_白_18级",
+        ["name"] = "Resilience_level_white_18level",
         ["tbxid"] = 90801018
     },
     [159] = {
@@ -1904,7 +1904,7 @@
         ["exp"] = 1144725,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "韧性等级_白_19级",
+        ["name"] = "Resilience_level_white_19level",
         ["tbxid"] = 90801019
     },
     [160] = {
@@ -1916,7 +1916,7 @@
         ["exp"] = 1346775,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "韧性等级_白_20级",
+        ["name"] = "Resilience_level_white_20level",
         ["tbxid"] = 90801020
     },
     [161] = {
@@ -1928,7 +1928,7 @@
         ["exp"] = 75,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "穿透等级_白_1级",
+        ["name"] = "Penetration_level_white_1level",
         ["tbxid"] = 90901001
     },
     [162] = {
@@ -1940,7 +1940,7 @@
         ["exp"] = 450,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "穿透等级_白_2级",
+        ["name"] = "Penetration_level_white_2level",
         ["tbxid"] = 90901002
     },
     [163] = {
@@ -1952,7 +1952,7 @@
         ["exp"] = 900,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "穿透等级_白_3级",
+        ["name"] = "Penetration_level_white_3level",
         ["tbxid"] = 90901003
     },
     [164] = {
@@ -1964,7 +1964,7 @@
         ["exp"] = 1800,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "穿透等级_白_4级",
+        ["name"] = "Penetration_level_white_4level",
         ["tbxid"] = 90901004
     },
     [165] = {
@@ -1976,7 +1976,7 @@
         ["exp"] = 3300,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "穿透等级_白_5级",
+        ["name"] = "Penetration_level_white_5level",
         ["tbxid"] = 90901005
     },
     [166] = {
@@ -1988,7 +1988,7 @@
         ["exp"] = 5550,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "穿透等级_白_6级",
+        ["name"] = "Penetration_level_white_6level",
         ["tbxid"] = 90901006
     },
     [167] = {
@@ -2000,7 +2000,7 @@
         ["exp"] = 8550,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "穿透等级_白_7级",
+        ["name"] = "Penetration_level_white_7level",
         ["tbxid"] = 90901007
     },
     [168] = {
@@ -2012,7 +2012,7 @@
         ["exp"] = 13125,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "穿透等级_白_8级",
+        ["name"] = "Penetration_level_white_8level",
         ["tbxid"] = 90901008
     },
     [169] = {
@@ -2024,7 +2024,7 @@
         ["exp"] = 20325,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "穿透等级_白_9级",
+        ["name"] = "Penetration_level_white_9level",
         ["tbxid"] = 90901009
     },
     [170] = {
@@ -2036,7 +2036,7 @@
         ["exp"] = 40500,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "穿透等级_白_10级",
+        ["name"] = "Penetration_level_white_10level",
         ["tbxid"] = 90901010
     },
     [171] = {
@@ -2048,7 +2048,7 @@
         ["exp"] = 67425,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "穿透等级_白_11级",
+        ["name"] = "Penetration_level_white_11level",
         ["tbxid"] = 90901011
     },
     [172] = {
@@ -2060,7 +2060,7 @@
         ["exp"] = 134775,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "穿透等级_白_12级",
+        ["name"] = "Penetration_level_white_12level",
         ["tbxid"] = 90901012
     },
     [173] = {
@@ -2072,7 +2072,7 @@
         ["exp"] = 269475,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "穿透等级_白_13级",
+        ["name"] = "Penetration_level_white_13level",
         ["tbxid"] = 90901013
     },
     [174] = {
@@ -2084,7 +2084,7 @@
         ["exp"] = 404100,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "穿透等级_白_14级",
+        ["name"] = "Penetration_level_white_14level",
         ["tbxid"] = 90901014
     },
     [175] = {
@@ -2096,7 +2096,7 @@
         ["exp"] = 538800,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "穿透等级_白_15级",
+        ["name"] = "Penetration_level_white_15level",
         ["tbxid"] = 90901015
     },
     [176] = {
@@ -2108,7 +2108,7 @@
         ["exp"] = 673425,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "穿透等级_白_16级",
+        ["name"] = "Penetration_level_white_16level",
         ["tbxid"] = 90901016
     },
     [177] = {
@@ -2120,7 +2120,7 @@
         ["exp"] = 808125,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "穿透等级_白_17级",
+        ["name"] = "Penetration_level_white_17level",
         ["tbxid"] = 90901017
     },
     [178] = {
@@ -2132,7 +2132,7 @@
         ["exp"] = 942750,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "穿透等级_白_18级",
+        ["name"] = "Penetration_level_white_18level",
         ["tbxid"] = 90901018
     },
     [179] = {
@@ -2144,7 +2144,7 @@
         ["exp"] = 1144725,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "穿透等级_白_19级",
+        ["name"] = "Penetration_level_white_19level",
         ["tbxid"] = 90901019
     },
     [180] = {
@@ -2156,7 +2156,7 @@
         ["exp"] = 1346775,
         ["type"] = 4,
         ["quality"] = 1,
-        ["name"] = "穿透等级_白_20级",
+        ["name"] = "Penetration_level_white_20level",
         ["tbxid"] = 90901020
     },
     [181] = {
@@ -2168,7 +2168,7 @@
         ["exp"] = 500,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "生命上限_绿_1级",
+        ["name"] = "Life_limit_green_1level",
         ["tbxid"] = 90102001
     },
     [182] = {
@@ -2180,7 +2180,7 @@
         ["exp"] = 875,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "生命上限_绿_2级",
+        ["name"] = "Life_limit_green_2level",
         ["tbxid"] = 90102002
     },
     [183] = {
@@ -2192,7 +2192,7 @@
         ["exp"] = 1325,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "生命上限_绿_3级",
+        ["name"] = "Life_limit_green_3level",
         ["tbxid"] = 90102003
     },
     [184] = {
@@ -2204,7 +2204,7 @@
         ["exp"] = 2225,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "生命上限_绿_4级",
+        ["name"] = "Life_limit_green_4level",
         ["tbxid"] = 90102004
     },
     [185] = {
@@ -2216,7 +2216,7 @@
         ["exp"] = 3725,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "生命上限_绿_5级",
+        ["name"] = "Life limit_green_5level",
         ["tbxid"] = 90102005
     },
     [186] = {
@@ -2228,7 +2228,7 @@
         ["exp"] = 5975,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "生命上限_绿_6级",
+        ["name"] = "Life_limit_green_6level",
         ["tbxid"] = 90102006
     },
     [187] = {
@@ -2240,7 +2240,7 @@
         ["exp"] = 8975,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "生命上限_绿_7级",
+        ["name"] = "Life_limit_green_7level",
         ["tbxid"] = 90102007
     },
     [188] = {
@@ -2252,7 +2252,7 @@
         ["exp"] = 13550,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "生命上限_绿_8级",
+        ["name"] = "Life_limit_green_8level",
         ["tbxid"] = 90102008
     },
     [189] = {
@@ -2264,7 +2264,7 @@
         ["exp"] = 20750,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "生命上限_绿_9级",
+        ["name"] = "Life_limit_green_9level",
         ["tbxid"] = 90102009
     },
     [190] = {
@@ -2276,7 +2276,7 @@
         ["exp"] = 40925,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "生命上限_绿_10级",
+        ["name"] = "Life_limit_green_10level",
         ["tbxid"] = 90102010
     },
     [191] = {
@@ -2288,7 +2288,7 @@
         ["exp"] = 67850,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "生命上限_绿_11级",
+        ["name"] = "Life_limit_green_11level",
         ["tbxid"] = 90102011
     },
     [192] = {
@@ -2300,7 +2300,7 @@
         ["exp"] = 135200,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "生命上限_绿_12级",
+        ["name"] = "Life_limit_green_12level",
         ["tbxid"] = 90102012
     },
     [193] = {
@@ -2312,7 +2312,7 @@
         ["exp"] = 269900,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "生命上限_绿_13级",
+        ["name"] = "Life_limit_green_13level",
         ["tbxid"] = 90102013
     },
     [194] = {
@@ -2324,7 +2324,7 @@
         ["exp"] = 404525,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "生命上限_绿_14级",
+        ["name"] = "Life_limit_green_14level",
         ["tbxid"] = 90102014
     },
     [195] = {
@@ -2336,7 +2336,7 @@
         ["exp"] = 539225,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "生命上限_绿_15级",
+        ["name"] = "Life_limit_green_15level",
         ["tbxid"] = 90102015
     },
     [196] = {
@@ -2348,7 +2348,7 @@
         ["exp"] = 673850,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "生命上限_绿_16级",
+        ["name"] = "Life_limit_green_16level",
         ["tbxid"] = 90102016
     },
     [197] = {
@@ -2360,7 +2360,7 @@
         ["exp"] = 808550,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "生命上限_绿_17级",
+        ["name"] = "Life_limit_green_17level",
         ["tbxid"] = 90102017
     },
     [198] = {
@@ -2372,7 +2372,7 @@
         ["exp"] = 943175,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "生命上限_绿_18级",
+        ["name"] = "Life_limit_green_18level",
         ["tbxid"] = 90102018
     },
     [199] = {
@@ -2384,7 +2384,7 @@
         ["exp"] = 1145150,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "生命上限_绿_19级",
+        ["name"] = "Life_limit_green_19level",
         ["tbxid"] = 90102019
     },
     [200] = {
@@ -2396,7 +2396,7 @@
         ["exp"] = 1347200,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "生命上限_绿_20级",
+        ["name"] = "Life_limit_green_20level",
         ["tbxid"] = 90102020
     },
     [201] = {
@@ -2408,7 +2408,7 @@
         ["exp"] = 500,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "格斗防御_绿_1级",
+        ["name"] = "Physical_defense_green_1level",
         ["tbxid"] = 90202001
     },
     [202] = {
@@ -2420,7 +2420,7 @@
         ["exp"] = 875,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "格斗防御_绿_2级",
+        ["name"] = "Physical_defense_green_2level",
         ["tbxid"] = 90202002
     },
     [203] = {
@@ -2432,7 +2432,7 @@
         ["exp"] = 1325,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "格斗防御_绿_3级",
+        ["name"] = "Physical_defense_green_3level",
         ["tbxid"] = 90202003
     },
     [204] = {
@@ -2444,7 +2444,7 @@
         ["exp"] = 2225,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "格斗防御_绿_4级",
+        ["name"] = "Physical_defense_green_4level",
         ["tbxid"] = 90202004
     },
     [205] = {
@@ -2456,7 +2456,7 @@
         ["exp"] = 3725,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "格斗防御_绿_5级",
+        ["name"] = "Physical_defense_green_5level",
         ["tbxid"] = 90202005
     },
     [206] = {
@@ -2468,7 +2468,7 @@
         ["exp"] = 5975,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "格斗防御_绿_6级",
+        ["name"] = "Physical_defense_green_6level",
         ["tbxid"] = 90202006
     },
     [207] = {
@@ -2480,7 +2480,7 @@
         ["exp"] = 8975,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "格斗防御_绿_7级",
+        ["name"] = "Physical_defense_green_7level",
         ["tbxid"] = 90202007
     },
     [208] = {
@@ -2492,7 +2492,7 @@
         ["exp"] = 13550,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "格斗防御_绿_8级",
+        ["name"] = "Physical_defense_green_8level",
         ["tbxid"] = 90202008
     },
     [209] = {
@@ -2504,7 +2504,7 @@
         ["exp"] = 20750,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "格斗防御_绿_9级",
+        ["name"] = "Physical_defense_green_9level",
         ["tbxid"] = 90202009
     },
     [210] = {
@@ -2516,7 +2516,7 @@
         ["exp"] = 40925,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "格斗防御_绿_10级",
+        ["name"] = "Physical_defense_green_10level",
         ["tbxid"] = 90202010
     },
     [211] = {
@@ -2528,7 +2528,7 @@
         ["exp"] = 67850,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "格斗防御_绿_11级",
+        ["name"] = "Physical_defense_green_11level",
         ["tbxid"] = 90202011
     },
     [212] = {
@@ -2540,7 +2540,7 @@
         ["exp"] = 135200,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "格斗防御_绿_12级",
+        ["name"] = "Physical_defense_green_12level",
         ["tbxid"] = 90202012
     },
     [213] = {
@@ -2552,7 +2552,7 @@
         ["exp"] = 269900,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "格斗防御_绿_13级",
+        ["name"] = "Physical_defense_green_13level",
         ["tbxid"] = 90202013
     },
     [214] = {
@@ -2564,7 +2564,7 @@
         ["exp"] = 404525,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "格斗防御_绿_14级",
+        ["name"] = "Physical_defense_green_14level",
         ["tbxid"] = 90202014
     },
     [215] = {
@@ -2576,7 +2576,7 @@
         ["exp"] = 539225,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "格斗防御_绿_15级",
+        ["name"] = "Physical_defense_green_15level",
         ["tbxid"] = 90202015
     },
     [216] = {
@@ -2588,7 +2588,7 @@
         ["exp"] = 673850,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "格斗防御_绿_16级",
+        ["name"] = "Physical_defense_green_16level",
         ["tbxid"] = 90202016
     },
     [217] = {
@@ -2600,7 +2600,7 @@
         ["exp"] = 808550,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "格斗防御_绿_17级",
+        ["name"] = "Physical_defense_green_17level",
         ["tbxid"] = 90202017
     },
     [218] = {
@@ -2612,7 +2612,7 @@
         ["exp"] = 943175,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "格斗防御_绿_18级",
+        ["name"] = "Physical_defense_green_18level",
         ["tbxid"] = 90202018
     },
     [219] = {
@@ -2624,7 +2624,7 @@
         ["exp"] = 1145150,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "格斗防御_绿_19级",
+        ["name"] = "Physical_defense_green_19level",
         ["tbxid"] = 90202019
     },
     [220] = {
@@ -2636,7 +2636,7 @@
         ["exp"] = 1347200,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "格斗防御_绿_20级",
+        ["name"] = "Physical_defense_green_20level",
         ["tbxid"] = 90202020
     },
     [221] = {
@@ -2648,7 +2648,7 @@
         ["exp"] = 500,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "气功防御_绿_1级",
+        ["name"] = "Energy_defense_green_1level",
         ["tbxid"] = 90302001
     },
     [222] = {
@@ -2660,7 +2660,7 @@
         ["exp"] = 875,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "气功防御_绿_2级",
+        ["name"] = "Energy_defense_green_2level",
         ["tbxid"] = 90302002
     },
     [223] = {
@@ -2672,7 +2672,7 @@
         ["exp"] = 1325,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "气功防御_绿_3级",
+        ["name"] = "Energy_defense_green_3level",
         ["tbxid"] = 90302003
     },
     [224] = {
@@ -2684,7 +2684,7 @@
         ["exp"] = 2225,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "气功防御_绿_4级",
+        ["name"] = "Energy_defense_green_4level",
         ["tbxid"] = 90302004
     },
     [225] = {
@@ -2696,7 +2696,7 @@
         ["exp"] = 3725,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "气功防御_绿_5级",
+        ["name"] = "Energy_defense_green_5level",
         ["tbxid"] = 90302005
     },
     [226] = {
@@ -2708,7 +2708,7 @@
         ["exp"] = 5975,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "气功防御_绿_6级",
+        ["name"] = "Energy_defense_green_6level",
         ["tbxid"] = 90302006
     },
     [227] = {
@@ -2720,7 +2720,7 @@
         ["exp"] = 8975,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "气功防御_绿_7级",
+        ["name"] = "Energy_defense_green_7level",
         ["tbxid"] = 90302007
     },
     [228] = {
@@ -2732,7 +2732,7 @@
         ["exp"] = 13550,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "气功防御_绿_8级",
+        ["name"] = "Energy_defense_green_8level",
         ["tbxid"] = 90302008
     },
     [229] = {
@@ -2744,7 +2744,7 @@
         ["exp"] = 20750,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "气功防御_绿_9级",
+        ["name"] = "Energy_defense_green_9level",
         ["tbxid"] = 90302009
     },
     [230] = {
@@ -2756,7 +2756,7 @@
         ["exp"] = 40925,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "气功防御_绿_10级",
+        ["name"] = "Energy_defense_green_10level",
         ["tbxid"] = 90302010
     },
     [231] = {
@@ -2768,7 +2768,7 @@
         ["exp"] = 67850,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "气功防御_绿_11级",
+        ["name"] = "Energy_defense_green_11level",
         ["tbxid"] = 90302011
     },
     [232] = {
@@ -2780,7 +2780,7 @@
         ["exp"] = 135200,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "气功防御_绿_12级",
+        ["name"] = "Energy_defense_green_12level",
         ["tbxid"] = 90302012
     },
     [233] = {
@@ -2792,7 +2792,7 @@
         ["exp"] = 269900,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "气功防御_绿_13级",
+        ["name"] = "Energy_defense_green_13level",
         ["tbxid"] = 90302013
     },
     [234] = {
@@ -2804,7 +2804,7 @@
         ["exp"] = 404525,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "气功防御_绿_14级",
+        ["name"] = "Energy_defense_green_14level",
         ["tbxid"] = 90302014
     },
     [235] = {
@@ -2816,7 +2816,7 @@
         ["exp"] = 539225,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "气功防御_绿_15级",
+        ["name"] = "Energy_defense_green_15level",
         ["tbxid"] = 90302015
     },
     [236] = {
@@ -2828,7 +2828,7 @@
         ["exp"] = 673850,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "气功防御_绿_16级",
+        ["name"] = "Energy_defense_green_16level",
         ["tbxid"] = 90302016
     },
     [237] = {
@@ -2840,7 +2840,7 @@
         ["exp"] = 808550,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "气功防御_绿_17级",
+        ["name"] = "Energy_defense_green_17level",
         ["tbxid"] = 90302017
     },
     [238] = {
@@ -2852,7 +2852,7 @@
         ["exp"] = 943175,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "气功防御_绿_18级",
+        ["name"] = "Energy_defense_green_18level",
         ["tbxid"] = 90302018
     },
     [239] = {
@@ -2864,7 +2864,7 @@
         ["exp"] = 1145150,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "气功防御_绿_19级",
+        ["name"] = "Energy_defense_green_19level",
         ["tbxid"] = 90302019
     },
     [240] = {
@@ -2876,7 +2876,7 @@
         ["exp"] = 1347200,
         ["type"] = 1,
         ["quality"] = 2,
-        ["name"] = "气功防御_绿_20级",
+        ["name"] = "Energy_defense_green_20level",
         ["tbxid"] = 90302020
     },
     [241] = {
@@ -2888,7 +2888,7 @@
         ["exp"] = 500,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "格斗攻击_绿_1级",
+        ["name"] = "Physical_attack_green_1level",
         ["tbxid"] = 90402001
     },
     [242] = {
@@ -2900,7 +2900,7 @@
         ["exp"] = 875,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "格斗攻击_绿_2级",
+        ["name"] = "Physical_attack_green_2level",
         ["tbxid"] = 90402002
     },
     [243] = {
@@ -2912,7 +2912,7 @@
         ["exp"] = 1325,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "格斗攻击_绿_3级",
+        ["name"] = "Physical_attack_green_3level",
         ["tbxid"] = 90402003
     },
     [244] = {
@@ -2924,7 +2924,7 @@
         ["exp"] = 2225,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "格斗攻击_绿_4级",
+        ["name"] = "Physical_attack_green_4level",
         ["tbxid"] = 90402004
     },
     [245] = {
@@ -2936,7 +2936,7 @@
         ["exp"] = 3725,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "格斗攻击_绿_5级",
+        ["name"] = "Physical_attack_green_5level",
         ["tbxid"] = 90402005
     },
     [246] = {
@@ -2948,7 +2948,7 @@
         ["exp"] = 5975,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "格斗攻击_绿_6级",
+        ["name"] = "Physical_attack_green_6level",
         ["tbxid"] = 90402006
     },
     [247] = {
@@ -2960,7 +2960,7 @@
         ["exp"] = 8975,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "格斗攻击_绿_7级",
+        ["name"] = "Physical_attack_green_7level",
         ["tbxid"] = 90402007
     },
     [248] = {
@@ -2972,7 +2972,7 @@
         ["exp"] = 13550,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "格斗攻击_绿_8级",
+        ["name"] = "Physical_attack_green_8level",
         ["tbxid"] = 90402008
     },
     [249] = {
@@ -2984,7 +2984,7 @@
         ["exp"] = 20750,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "格斗攻击_绿_9级",
+        ["name"] = "Physical_attack_green_9level",
         ["tbxid"] = 90402009
     },
     [250] = {
@@ -2996,7 +2996,7 @@
         ["exp"] = 40925,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "格斗攻击_绿_10级",
+        ["name"] = "Physical_attack_green_10level",
         ["tbxid"] = 90402010
     },
     [251] = {
@@ -3008,7 +3008,7 @@
         ["exp"] = 67850,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "格斗攻击_绿_11级",
+        ["name"] = "Physical_attack_green_11level",
         ["tbxid"] = 90402011
     },
     [252] = {
@@ -3020,7 +3020,7 @@
         ["exp"] = 135200,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "格斗攻击_绿_12级",
+        ["name"] = "Physical_attack_green_12level",
         ["tbxid"] = 90402012
     },
     [253] = {
@@ -3032,7 +3032,7 @@
         ["exp"] = 269900,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "格斗攻击_绿_13级",
+        ["name"] = "Physical_attack_green_13level",
         ["tbxid"] = 90402013
     },
     [254] = {
@@ -3044,7 +3044,7 @@
         ["exp"] = 404525,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "格斗攻击_绿_14级",
+        ["name"] = "Physical_attack_green_14level",
         ["tbxid"] = 90402014
     },
     [255] = {
@@ -3056,7 +3056,7 @@
         ["exp"] = 539225,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "格斗攻击_绿_15级",
+        ["name"] = "Physical_attack_green_15level",
         ["tbxid"] = 90402015
     },
     [256] = {
@@ -3068,7 +3068,7 @@
         ["exp"] = 673850,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "格斗攻击_绿_16级",
+        ["name"] = "Physical_attack_green_16level",
         ["tbxid"] = 90402016
     },
     [257] = {
@@ -3080,7 +3080,7 @@
         ["exp"] = 808550,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "格斗攻击_绿_17级",
+        ["name"] = "Physical_attack_green_17level",
         ["tbxid"] = 90402017
     },
     [258] = {
@@ -3092,7 +3092,7 @@
         ["exp"] = 943175,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "格斗攻击_绿_18级",
+        ["name"] = "Physical_attack_green_18level",
         ["tbxid"] = 90402018
     },
     [259] = {
@@ -3104,7 +3104,7 @@
         ["exp"] = 1145150,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "格斗攻击_绿_19级",
+        ["name"] = "Physical_attack_green_19level",
         ["tbxid"] = 90402019
     },
     [260] = {
@@ -3116,7 +3116,7 @@
         ["exp"] = 1347200,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "格斗攻击_绿_20级",
+        ["name"] = "Physical_attack_green_20level",
         ["tbxid"] = 90402020
     },
     [261] = {
@@ -3128,7 +3128,7 @@
         ["exp"] = 500,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "气功攻击_绿_1级",
+        ["name"] = "Energy_attack_green_1level",
         ["tbxid"] = 90502001
     },
     [262] = {
@@ -3140,7 +3140,7 @@
         ["exp"] = 875,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "气功攻击_绿_2级",
+        ["name"] = "Energy_attack_green_2level",
         ["tbxid"] = 90502002
     },
     [263] = {
@@ -3152,7 +3152,7 @@
         ["exp"] = 1325,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "气功攻击_绿_3级",
+        ["name"] = "Energy_attack_green_3level",
         ["tbxid"] = 90502003
     },
     [264] = {
@@ -3164,7 +3164,7 @@
         ["exp"] = 2225,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "气功攻击_绿_4级",
+        ["name"] = "Energy_attack_green_4level",
         ["tbxid"] = 90502004
     },
     [265] = {
@@ -3176,7 +3176,7 @@
         ["exp"] = 3725,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "气功攻击_绿_5级",
+        ["name"] = "Energy_attack_green_5level",
         ["tbxid"] = 90502005
     },
     [266] = {
@@ -3188,7 +3188,7 @@
         ["exp"] = 5975,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "气功攻击_绿_6级",
+        ["name"] = "Energy_attack_green_6level",
         ["tbxid"] = 90502006
     },
     [267] = {
@@ -3200,7 +3200,7 @@
         ["exp"] = 8975,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "气功攻击_绿_7级",
+        ["name"] = "Energy_attack_green_7level",
         ["tbxid"] = 90502007
     },
     [268] = {
@@ -3212,7 +3212,7 @@
         ["exp"] = 13550,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "气功攻击_绿_8级",
+        ["name"] = "Energy_attack_green_8level",
         ["tbxid"] = 90502008
     },
     [269] = {
@@ -3224,7 +3224,7 @@
         ["exp"] = 20750,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "气功攻击_绿_9级",
+        ["name"] = "Energy_attack_green_9level",
         ["tbxid"] = 90502009
     },
     [270] = {
@@ -3236,7 +3236,7 @@
         ["exp"] = 40925,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "气功攻击_绿_10级",
+        ["name"] = "Energy_attack_green_10level",
         ["tbxid"] = 90502010
     },
     [271] = {
@@ -3248,7 +3248,7 @@
         ["exp"] = 67850,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "气功攻击_绿_11级",
+        ["name"] = "Energy_attack_green_11level",
         ["tbxid"] = 90502011
     },
     [272] = {
@@ -3260,7 +3260,7 @@
         ["exp"] = 135200,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "气功攻击_绿_12级",
+        ["name"] = "Energy_attack_green_12level",
         ["tbxid"] = 90502012
     },
     [273] = {
@@ -3272,7 +3272,7 @@
         ["exp"] = 269900,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "气功攻击_绿_13级",
+        ["name"] = "Energy_attack_green_13level",
         ["tbxid"] = 90502013
     },
     [274] = {
@@ -3284,7 +3284,7 @@
         ["exp"] = 404525,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "气功攻击_绿_14级",
+        ["name"] = "Energy_attack_green_14level",
         ["tbxid"] = 90502014
     },
     [275] = {
@@ -3296,7 +3296,7 @@
         ["exp"] = 539225,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "气功攻击_绿_15级",
+        ["name"] = "Energy_attack_green_15level",
         ["tbxid"] = 90502015
     },
     [276] = {
@@ -3308,7 +3308,7 @@
         ["exp"] = 673850,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "气功攻击_绿_16级",
+        ["name"] = "Energy_attack_green_16level",
         ["tbxid"] = 90502016
     },
     [277] = {
@@ -3320,7 +3320,7 @@
         ["exp"] = 808550,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "气功攻击_绿_17级",
+        ["name"] = "Energy_attack_green_17level",
         ["tbxid"] = 90502017
     },
     [278] = {
@@ -3332,7 +3332,7 @@
         ["exp"] = 943175,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "气功攻击_绿_18级",
+        ["name"] = "Energy_attack_green_18level",
         ["tbxid"] = 90502018
     },
     [279] = {
@@ -3344,7 +3344,7 @@
         ["exp"] = 1145150,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "气功攻击_绿_19级",
+        ["name"] = "Energy_attack_green_19level",
         ["tbxid"] = 90502019
     },
     [280] = {
@@ -3356,7 +3356,7 @@
         ["exp"] = 1347200,
         ["type"] = 2,
         ["quality"] = 2,
-        ["name"] = "气功攻击_绿_20级",
+        ["name"] = "Energy_attack_green_20level",
         ["tbxid"] = 90502020
     },
     [281] = {
@@ -3368,7 +3368,7 @@
         ["exp"] = 500,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "暴击等级_绿_1级",
+        ["name"] = "Critical_rate_green_1level",
         ["tbxid"] = 90602001
     },
     [282] = {
@@ -3380,7 +3380,7 @@
         ["exp"] = 875,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "暴击等级_绿_2级",
+        ["name"] = "Critical_rate_green_2level",
         ["tbxid"] = 90602002
     },
     [283] = {
@@ -3392,7 +3392,7 @@
         ["exp"] = 1325,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "暴击等级_绿_3级",
+        ["name"] = "Critical_rate_green_3level",
         ["tbxid"] = 90602003
     },
     [284] = {
@@ -3404,7 +3404,7 @@
         ["exp"] = 2225,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "暴击等级_绿_4级",
+        ["name"] = "Critical_rate_green_4level",
         ["tbxid"] = 90602004
     },
     [285] = {
@@ -3416,7 +3416,7 @@
         ["exp"] = 3725,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "暴击等级_绿_5级",
+        ["name"] = "Critical_rate_green_5level",
         ["tbxid"] = 90602005
     },
     [286] = {
@@ -3428,7 +3428,7 @@
         ["exp"] = 5975,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "暴击等级_绿_6级",
+        ["name"] = "Critical_rate_green_6level",
         ["tbxid"] = 90602006
     },
     [287] = {
@@ -3440,7 +3440,7 @@
         ["exp"] = 8975,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "暴击等级_绿_7级",
+        ["name"] = "Critical_rate_green_7level",
         ["tbxid"] = 90602007
     },
     [288] = {
@@ -3452,7 +3452,7 @@
         ["exp"] = 13550,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "暴击等级_绿_8级",
+        ["name"] = "Critical_rate_green_8level",
         ["tbxid"] = 90602008
     },
     [289] = {
@@ -3464,7 +3464,7 @@
         ["exp"] = 20750,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "暴击等级_绿_9级",
+        ["name"] = "Critical_rate_green_9level",
         ["tbxid"] = 90602009
     },
     [290] = {
@@ -3476,7 +3476,7 @@
         ["exp"] = 40925,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "暴击等级_绿_10级",
+        ["name"] = "Critical_rate_green_10level",
         ["tbxid"] = 90602010
     },
     [291] = {
@@ -3488,7 +3488,7 @@
         ["exp"] = 67850,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "暴击等级_绿_11级",
+        ["name"] = "Critical_rate_green_11level",
         ["tbxid"] = 90602011
     },
     [292] = {
@@ -3500,7 +3500,7 @@
         ["exp"] = 135200,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "暴击等级_绿_12级",
+        ["name"] = "Critical_rate_green_12level",
         ["tbxid"] = 90602012
     },
     [293] = {
@@ -3512,7 +3512,7 @@
         ["exp"] = 269900,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "暴击等级_绿_13级",
+        ["name"] = "Critical_rate_green_13level",
         ["tbxid"] = 90602013
     },
     [294] = {
@@ -3524,7 +3524,7 @@
         ["exp"] = 404525,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "暴击等级_绿_14级",
+        ["name"] = "Critical_rate_green_14level",
         ["tbxid"] = 90602014
     },
     [295] = {
@@ -3536,7 +3536,7 @@
         ["exp"] = 539225,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "暴击等级_绿_15级",
+        ["name"] = "Critical_rate_green_15level",
         ["tbxid"] = 90602015
     },
     [296] = {
@@ -3548,7 +3548,7 @@
         ["exp"] = 673850,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "暴击等级_绿_16级",
+        ["name"] = "Critical_rate_green_16level",
         ["tbxid"] = 90602016
     },
     [297] = {
@@ -3560,7 +3560,7 @@
         ["exp"] = 808550,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "暴击等级_绿_17级",
+        ["name"] = "Critical_rate_green_17level",
         ["tbxid"] = 90602017
     },
     [298] = {
@@ -3572,7 +3572,7 @@
         ["exp"] = 943175,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "暴击等级_绿_18级",
+        ["name"] = "Critical_rate_green_18level",
         ["tbxid"] = 90602018
     },
     [299] = {
@@ -3584,7 +3584,7 @@
         ["exp"] = 1145150,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "暴击等级_绿_19级",
+        ["name"] = "Critical_rate_green_19level",
         ["tbxid"] = 90602019
     },
     [300] = {
@@ -3596,7 +3596,7 @@
         ["exp"] = 1347200,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "暴击等级_绿_20级",
+        ["name"] = "Critical_rate_green_20level",
         ["tbxid"] = 90602020
     },
     [301] = {
@@ -3608,7 +3608,7 @@
         ["exp"] = 500,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "格挡等级_绿_1级",
+        ["name"] = "Block_level_green_1level",
         ["tbxid"] = 90702001
     },
     [302] = {
@@ -3620,7 +3620,7 @@
         ["exp"] = 875,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "格挡等级_绿_2级",
+        ["name"] = "Block_level_green_2level",
         ["tbxid"] = 90702002
     },
     [303] = {
@@ -3632,7 +3632,7 @@
         ["exp"] = 1325,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "格挡等级_绿_3级",
+        ["name"] = "Block_level_green_3level",
         ["tbxid"] = 90702003
     },
     [304] = {
@@ -3644,7 +3644,7 @@
         ["exp"] = 2225,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "格挡等级_绿_4级",
+        ["name"] = "Block_level_green_4level",
         ["tbxid"] = 90702004
     },
     [305] = {
@@ -3656,7 +3656,7 @@
         ["exp"] = 3725,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "格挡等级_绿_5级",
+        ["name"] = "Block_level_green_5level",
         ["tbxid"] = 90702005
     },
     [306] = {
@@ -3668,7 +3668,7 @@
         ["exp"] = 5975,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "格挡等级_绿_6级",
+        ["name"] = "Block_level_green_6level",
         ["tbxid"] = 90702006
     },
     [307] = {
@@ -3680,7 +3680,7 @@
         ["exp"] = 8975,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "格挡等级_绿_7级",
+        ["name"] = "Block_level_green_7level",
         ["tbxid"] = 90702007
     },
     [308] = {
@@ -3692,7 +3692,7 @@
         ["exp"] = 13550,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "格挡等级_绿_8级",
+        ["name"] = "Block_level_green_8level",
         ["tbxid"] = 90702008
     },
     [309] = {
@@ -3704,7 +3704,7 @@
         ["exp"] = 20750,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "格挡等级_绿_9级",
+        ["name"] = "Block_level_green_9level",
         ["tbxid"] = 90702009
     },
     [310] = {
@@ -3716,7 +3716,7 @@
         ["exp"] = 40925,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "格挡等级_绿_10级",
+        ["name"] = "Block_level_green_10level",
         ["tbxid"] = 90702010
     },
     [311] = {
@@ -3728,7 +3728,7 @@
         ["exp"] = 67850,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "格挡等级_绿_11级",
+        ["name"] = "Block_level_green_11level",
         ["tbxid"] = 90702011
     },
     [312] = {
@@ -3740,7 +3740,7 @@
         ["exp"] = 135200,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "格挡等级_绿_12级",
+        ["name"] = "Block_level_green_12level",
         ["tbxid"] = 90702012
     },
     [313] = {
@@ -3752,7 +3752,7 @@
         ["exp"] = 269900,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "格挡等级_绿_13级",
+        ["name"] = "Block_level_green_13level",
         ["tbxid"] = 90702013
     },
     [314] = {
@@ -3764,7 +3764,7 @@
         ["exp"] = 404525,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "格挡等级_绿_14级",
+        ["name"] = "Block_level_green_14level",
         ["tbxid"] = 90702014
     },
     [315] = {
@@ -3776,7 +3776,7 @@
         ["exp"] = 539225,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "格挡等级_绿_15级",
+        ["name"] = "Block_level_green_15level",
         ["tbxid"] = 90702015
     },
     [316] = {
@@ -3788,7 +3788,7 @@
         ["exp"] = 673850,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "格挡等级_绿_16级",
+        ["name"] = "Block_level_green_16level",
         ["tbxid"] = 90702016
     },
     [317] = {
@@ -3800,7 +3800,7 @@
         ["exp"] = 808550,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "格挡等级_绿_17级",
+        ["name"] = "Block_level_green_17level",
         ["tbxid"] = 90702017
     },
     [318] = {
@@ -3812,7 +3812,7 @@
         ["exp"] = 943175,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "格挡等级_绿_18级",
+        ["name"] = "Block_level_green_18level",
         ["tbxid"] = 90702018
     },
     [319] = {
@@ -3824,7 +3824,7 @@
         ["exp"] = 1145150,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "格挡等级_绿_19级",
+        ["name"] = "Block_level_green_19level",
         ["tbxid"] = 90702019
     },
     [320] = {
@@ -3836,7 +3836,7 @@
         ["exp"] = 1347200,
         ["type"] = 3,
         ["quality"] = 2,
-        ["name"] = "格挡等级_绿_20级",
+        ["name"] = "Block_level_green_20level",
         ["tbxid"] = 90702020
     },
     [321] = {
@@ -3848,7 +3848,7 @@
         ["exp"] = 500,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "韧性等级_绿_1级",
+        ["name"] = "Resilience_level_green_1level",
         ["tbxid"] = 90802001
     },
     [322] = {
@@ -3860,7 +3860,7 @@
         ["exp"] = 875,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "韧性等级_绿_2级",
+        ["name"] = "Resilience_level_green_2level",
         ["tbxid"] = 90802002
     },
     [323] = {
@@ -3872,7 +3872,7 @@
         ["exp"] = 1325,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "韧性等级_绿_3级",
+        ["name"] = "Resilience_level_green_3level",
         ["tbxid"] = 90802003
     },
     [324] = {
@@ -3884,7 +3884,7 @@
         ["exp"] = 2225,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "韧性等级_绿_4级",
+        ["name"] = "Resilience_level_green_4level",
         ["tbxid"] = 90802004
     },
     [325] = {
@@ -3896,7 +3896,7 @@
         ["exp"] = 3725,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "韧性等级_绿_5级",
+        ["name"] = "Resilience_level_green_5level",
         ["tbxid"] = 90802005
     },
     [326] = {
@@ -3908,7 +3908,7 @@
         ["exp"] = 5975,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "韧性等级_绿_6级",
+        ["name"] = "Resilience_level_green_6level",
         ["tbxid"] = 90802006
     },
     [327] = {
@@ -3920,7 +3920,7 @@
         ["exp"] = 8975,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "韧性等级_绿_7级",
+        ["name"] = "Resilience_level_green_7level",
         ["tbxid"] = 90802007
     },
     [328] = {
@@ -3932,7 +3932,7 @@
         ["exp"] = 13550,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "韧性等级_绿_8级",
+        ["name"] = "Resilience_level_green_8level",
         ["tbxid"] = 90802008
     },
     [329] = {
@@ -3944,7 +3944,7 @@
         ["exp"] = 20750,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "韧性等级_绿_9级",
+        ["name"] = "Resilience_level_green_9level",
         ["tbxid"] = 90802009
     },
     [330] = {
@@ -3956,7 +3956,7 @@
         ["exp"] = 40925,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "韧性等级_绿_10级",
+        ["name"] = "Resilience_level_green_10level",
         ["tbxid"] = 90802010
     },
     [331] = {
@@ -3968,7 +3968,7 @@
         ["exp"] = 67850,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "韧性等级_绿_11级",
+        ["name"] = "Resilience_level_green_11level",
         ["tbxid"] = 90802011
     },
     [332] = {
@@ -3980,7 +3980,7 @@
         ["exp"] = 135200,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "韧性等级_绿_12级",
+        ["name"] = "Resilience_level_green_12level",
         ["tbxid"] = 90802012
     },
     [333] = {
@@ -3992,7 +3992,7 @@
         ["exp"] = 269900,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "韧性等级_绿_13级",
+        ["name"] = "Resilience_level_green_13level",
         ["tbxid"] = 90802013
     },
     [334] = {
@@ -4004,7 +4004,7 @@
         ["exp"] = 404525,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "韧性等级_绿_14级",
+        ["name"] = "Resilience_level_green_14level",
         ["tbxid"] = 90802014
     },
     [335] = {
@@ -4016,7 +4016,7 @@
         ["exp"] = 539225,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "韧性等级_绿_15级",
+        ["name"] = "Resilience_level_green_15level",
         ["tbxid"] = 90802015
     },
     [336] = {
@@ -4028,7 +4028,7 @@
         ["exp"] = 673850,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "韧性等级_绿_16级",
+        ["name"] = "Resilience_level_green_16level",
         ["tbxid"] = 90802016
     },
     [337] = {
@@ -4040,7 +4040,7 @@
         ["exp"] = 808550,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "韧性等级_绿_17级",
+        ["name"] = "Resilience_level_green_17level",
         ["tbxid"] = 90802017
     },
     [338] = {
@@ -4052,7 +4052,7 @@
         ["exp"] = 943175,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "韧性等级_绿_18级",
+        ["name"] = "Resilience_level_green_18level",
         ["tbxid"] = 90802018
     },
     [339] = {
@@ -4064,7 +4064,7 @@
         ["exp"] = 1145150,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "韧性等级_绿_19级",
+        ["name"] = "Resilience_level_green_19level",
         ["tbxid"] = 90802019
     },
     [340] = {
@@ -4076,7 +4076,7 @@
         ["exp"] = 1347200,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "韧性等级_绿_20级",
+        ["name"] = "Resilience_level_green_20level",
         ["tbxid"] = 90802020
     },
     [341] = {
@@ -4088,7 +4088,7 @@
         ["exp"] = 500,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "穿透等级_绿_1级",
+        ["name"] = "Penetration_level_green_1level",
         ["tbxid"] = 90902001
     },
     [342] = {
@@ -4100,7 +4100,7 @@
         ["exp"] = 875,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "穿透等级_绿_2级",
+        ["name"] = "Penetration_level_green_2level",
         ["tbxid"] = 90902002
     },
     [343] = {
@@ -4112,7 +4112,7 @@
         ["exp"] = 1325,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "穿透等级_绿_3级",
+        ["name"] = "Penetration_level_green_3level",
         ["tbxid"] = 90902003
     },
     [344] = {
@@ -4124,7 +4124,7 @@
         ["exp"] = 2225,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "穿透等级_绿_4级",
+        ["name"] = "Penetration_level_green_4level",
         ["tbxid"] = 90902004
     },
     [345] = {
@@ -4136,7 +4136,7 @@
         ["exp"] = 3725,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "穿透等级_绿_5级",
+        ["name"] = "Penetration_level_green_5level",
         ["tbxid"] = 90902005
     },
     [346] = {
@@ -4148,7 +4148,7 @@
         ["exp"] = 5975,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "穿透等级_绿_6级",
+        ["name"] = "Penetration_level_green_6level",
         ["tbxid"] = 90902006
     },
     [347] = {
@@ -4160,7 +4160,7 @@
         ["exp"] = 8975,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "穿透等级_绿_7级",
+        ["name"] = "Penetration_level_green_7level",
         ["tbxid"] = 90902007
     },
     [348] = {
@@ -4172,7 +4172,7 @@
         ["exp"] = 13550,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "穿透等级_绿_8级",
+        ["name"] = "Penetration_level_green_8level",
         ["tbxid"] = 90902008
     },
     [349] = {
@@ -4184,7 +4184,7 @@
         ["exp"] = 20750,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "穿透等级_绿_9级",
+        ["name"] = "Penetration_level_green_9level",
         ["tbxid"] = 90902009
     },
     [350] = {
@@ -4196,7 +4196,7 @@
         ["exp"] = 40925,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "穿透等级_绿_10级",
+        ["name"] = "Penetration_level_green_10level",
         ["tbxid"] = 90902010
     },
     [351] = {
@@ -4208,7 +4208,7 @@
         ["exp"] = 67850,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "穿透等级_绿_11级",
+        ["name"] = "Penetration_level_green_11level",
         ["tbxid"] = 90902011
     },
     [352] = {
@@ -4220,7 +4220,7 @@
         ["exp"] = 135200,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "穿透等级_绿_12级",
+        ["name"] = "Penetration_level_green_12level",
         ["tbxid"] = 90902012
     },
     [353] = {
@@ -4232,7 +4232,7 @@
         ["exp"] = 269900,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "穿透等级_绿_13级",
+        ["name"] = "Penetration_level_green_13level",
         ["tbxid"] = 90902013
     },
     [354] = {
@@ -4244,7 +4244,7 @@
         ["exp"] = 404525,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "穿透等级_绿_14级",
+        ["name"] = "Penetration_level_green_14level",
         ["tbxid"] = 90902014
     },
     [355] = {
@@ -4256,7 +4256,7 @@
         ["exp"] = 539225,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "穿透等级_绿_15级",
+        ["name"] = "Penetration_level_green_15level",
         ["tbxid"] = 90902015
     },
     [356] = {
@@ -4268,7 +4268,7 @@
         ["exp"] = 673850,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "穿透等级_绿_16级",
+        ["name"] = "Penetration_level_green_16level",
         ["tbxid"] = 90902016
     },
     [357] = {
@@ -4280,7 +4280,7 @@
         ["exp"] = 808550,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "穿透等级_绿_17级",
+        ["name"] = "Penetration_level_green_17level",
         ["tbxid"] = 90902017
     },
     [358] = {
@@ -4292,7 +4292,7 @@
         ["exp"] = 943175,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "穿透等级_绿_18级",
+        ["name"] = "Penetration_level_green_18level",
         ["tbxid"] = 90902018
     },
     [359] = {
@@ -4304,7 +4304,7 @@
         ["exp"] = 1145150,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "穿透等级_绿_19级",
+        ["name"] = "Penetration_level_green_19level",
         ["tbxid"] = 90902019
     },
     [360] = {
@@ -4316,7 +4316,7 @@
         ["exp"] = 1347200,
         ["type"] = 4,
         ["quality"] = 2,
-        ["name"] = "穿透等级_绿_20级",
+        ["name"] = "Penetration_level_green_20level",
         ["tbxid"] = 90902020
     },
     [361] = {
@@ -4328,7 +4328,7 @@
         ["exp"] = 2500,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "生命上限_蓝_1级",
+        ["name"] = "生命上限_蓝_1level",
         ["tbxid"] = 90103001
     },
     [362] = {
@@ -4340,7 +4340,7 @@
         ["exp"] = 2875,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "生命上限_蓝_2级",
+        ["name"] = "生命上限_蓝_2level",
         ["tbxid"] = 90103002
     },
     [363] = {
@@ -4352,7 +4352,7 @@
         ["exp"] = 3325,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "生命上限_蓝_3级",
+        ["name"] = "生命上限_蓝_3level",
         ["tbxid"] = 90103003
     },
     [364] = {
@@ -4364,7 +4364,7 @@
         ["exp"] = 4225,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "生命上限_蓝_4级",
+        ["name"] = "生命上限_蓝_4level",
         ["tbxid"] = 90103004
     },
     [365] = {
@@ -4376,7 +4376,7 @@
         ["exp"] = 5725,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "生命上限_蓝_5级",
+        ["name"] = "生命上限_蓝_5level",
         ["tbxid"] = 90103005
     },
     [366] = {
@@ -4388,7 +4388,7 @@
         ["exp"] = 7975,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "生命上限_蓝_6级",
+        ["name"] = "生命上限_蓝_6level",
         ["tbxid"] = 90103006
     },
     [367] = {
@@ -4400,7 +4400,7 @@
         ["exp"] = 10975,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "生命上限_蓝_7级",
+        ["name"] = "生命上限_蓝_7level",
         ["tbxid"] = 90103007
     },
     [368] = {
@@ -4412,7 +4412,7 @@
         ["exp"] = 15550,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "生命上限_蓝_8级",
+        ["name"] = "生命上限_蓝_8level",
         ["tbxid"] = 90103008
     },
     [369] = {
@@ -4424,7 +4424,7 @@
         ["exp"] = 22750,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "生命上限_蓝_9级",
+        ["name"] = "生命上限_蓝_9level",
         ["tbxid"] = 90103009
     },
     [370] = {
@@ -4436,7 +4436,7 @@
         ["exp"] = 42925,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "生命上限_蓝_10级",
+        ["name"] = "生命上限_蓝_10level",
         ["tbxid"] = 90103010
     },
     [371] = {
@@ -4448,7 +4448,7 @@
         ["exp"] = 69850,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "生命上限_蓝_11级",
+        ["name"] = "生命上限_蓝_11level",
         ["tbxid"] = 90103011
     },
     [372] = {
@@ -4460,7 +4460,7 @@
         ["exp"] = 137200,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "生命上限_蓝_12级",
+        ["name"] = "生命上限_蓝_12level",
         ["tbxid"] = 90103012
     },
     [373] = {
@@ -4472,7 +4472,7 @@
         ["exp"] = 271900,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "生命上限_蓝_13级",
+        ["name"] = "生命上限_蓝_13level",
         ["tbxid"] = 90103013
     },
     [374] = {
@@ -4484,7 +4484,7 @@
         ["exp"] = 406525,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "生命上限_蓝_14级",
+        ["name"] = "生命上限_蓝_14level",
         ["tbxid"] = 90103014
     },
     [375] = {
@@ -4496,7 +4496,7 @@
         ["exp"] = 541225,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "生命上限_蓝_15级",
+        ["name"] = "生命上限_蓝_15level",
         ["tbxid"] = 90103015
     },
     [376] = {
@@ -4508,7 +4508,7 @@
         ["exp"] = 675850,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "生命上限_蓝_16级",
+        ["name"] = "生命上限_蓝_16level",
         ["tbxid"] = 90103016
     },
     [377] = {
@@ -4520,7 +4520,7 @@
         ["exp"] = 810550,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "生命上限_蓝_17级",
+        ["name"] = "生命上限_蓝_17level",
         ["tbxid"] = 90103017
     },
     [378] = {
@@ -4532,7 +4532,7 @@
         ["exp"] = 945175,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "生命上限_蓝_18级",
+        ["name"] = "生命上限_蓝_18level",
         ["tbxid"] = 90103018
     },
     [379] = {
@@ -4544,7 +4544,7 @@
         ["exp"] = 1147150,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "生命上限_蓝_19级",
+        ["name"] = "生命上限_蓝_19level",
         ["tbxid"] = 90103019
     },
     [380] = {
@@ -4556,7 +4556,7 @@
         ["exp"] = 1349200,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "生命上限_蓝_20级",
+        ["name"] = "生命上限_蓝_20level",
         ["tbxid"] = 90103020
     },
     [381] = {
@@ -4568,7 +4568,7 @@
         ["exp"] = 2500,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "格斗防御_蓝_1级",
+        ["name"] = "Physical_defense_蓝_1level",
         ["tbxid"] = 90203001
     },
     [382] = {
@@ -4580,7 +4580,7 @@
         ["exp"] = 2875,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "格斗防御_蓝_2级",
+        ["name"] = "Physical_defense_蓝_2level",
         ["tbxid"] = 90203002
     },
     [383] = {
@@ -4592,7 +4592,7 @@
         ["exp"] = 3325,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "格斗防御_蓝_3级",
+        ["name"] = "Physical_defense_蓝_3level",
         ["tbxid"] = 90203003
     },
     [384] = {
@@ -4604,7 +4604,7 @@
         ["exp"] = 4225,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "格斗防御_蓝_4级",
+        ["name"] = "Physical_defense_蓝_4level",
         ["tbxid"] = 90203004
     },
     [385] = {
@@ -4616,7 +4616,7 @@
         ["exp"] = 5725,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "格斗防御_蓝_5级",
+        ["name"] = "Physical_defense_蓝_5level",
         ["tbxid"] = 90203005
     },
     [386] = {
@@ -4628,7 +4628,7 @@
         ["exp"] = 7975,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "格斗防御_蓝_6级",
+        ["name"] = "Physical_defense_蓝_6level",
         ["tbxid"] = 90203006
     },
     [387] = {
@@ -4640,7 +4640,7 @@
         ["exp"] = 10975,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "格斗防御_蓝_7级",
+        ["name"] = "Physical_defense_蓝_7level",
         ["tbxid"] = 90203007
     },
     [388] = {
@@ -4652,7 +4652,7 @@
         ["exp"] = 15550,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "格斗防御_蓝_8级",
+        ["name"] = "Physical_defense_蓝_8level",
         ["tbxid"] = 90203008
     },
     [389] = {
@@ -4664,7 +4664,7 @@
         ["exp"] = 22750,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "格斗防御_蓝_9级",
+        ["name"] = "Physical_defense_蓝_9level",
         ["tbxid"] = 90203009
     },
     [390] = {
@@ -4676,7 +4676,7 @@
         ["exp"] = 42925,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "格斗防御_蓝_10级",
+        ["name"] = "Physical_defense_蓝_10level",
         ["tbxid"] = 90203010
     },
     [391] = {
@@ -4688,7 +4688,7 @@
         ["exp"] = 69850,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "格斗防御_蓝_11级",
+        ["name"] = "Physical_defense_蓝_11level",
         ["tbxid"] = 90203011
     },
     [392] = {
@@ -4700,7 +4700,7 @@
         ["exp"] = 137200,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "格斗防御_蓝_12级",
+        ["name"] = "Physical_defense_蓝_12level",
         ["tbxid"] = 90203012
     },
     [393] = {
@@ -4712,7 +4712,7 @@
         ["exp"] = 271900,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "格斗防御_蓝_13级",
+        ["name"] = "Physical_defense_蓝_13level",
         ["tbxid"] = 90203013
     },
     [394] = {
@@ -4724,7 +4724,7 @@
         ["exp"] = 406525,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "格斗防御_蓝_14级",
+        ["name"] = "Physical_defense_蓝_14level",
         ["tbxid"] = 90203014
     },
     [395] = {
@@ -4736,7 +4736,7 @@
         ["exp"] = 541225,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "格斗防御_蓝_15级",
+        ["name"] = "Physical_defense_蓝_15level",
         ["tbxid"] = 90203015
     },
     [396] = {
@@ -4748,7 +4748,7 @@
         ["exp"] = 675850,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "格斗防御_蓝_16级",
+        ["name"] = "Physical_defense_蓝_16level",
         ["tbxid"] = 90203016
     },
     [397] = {
@@ -4760,7 +4760,7 @@
         ["exp"] = 810550,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "格斗防御_蓝_17级",
+        ["name"] = "Physical_defense_蓝_17level",
         ["tbxid"] = 90203017
     },
     [398] = {
@@ -4772,7 +4772,7 @@
         ["exp"] = 945175,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "格斗防御_蓝_18级",
+        ["name"] = "Physical_defense_蓝_18level",
         ["tbxid"] = 90203018
     },
     [399] = {
@@ -4784,7 +4784,7 @@
         ["exp"] = 1147150,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "格斗防御_蓝_19级",
+        ["name"] = "Physical_defense_蓝_19level",
         ["tbxid"] = 90203019
     },
     [400] = {
@@ -4796,7 +4796,7 @@
         ["exp"] = 1349200,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "格斗防御_蓝_20级",
+        ["name"] = "Physical_defense_蓝_20level",
         ["tbxid"] = 90203020
     },
     [401] = {
@@ -4808,7 +4808,7 @@
         ["exp"] = 2500,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "气功防御_蓝_1级",
+        ["name"] = "Energy_defense_蓝_1level",
         ["tbxid"] = 90303001
     },
     [402] = {
@@ -4820,7 +4820,7 @@
         ["exp"] = 2875,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "气功防御_蓝_2级",
+        ["name"] = "Energy_defense_蓝_2level",
         ["tbxid"] = 90303002
     },
     [403] = {
@@ -4832,7 +4832,7 @@
         ["exp"] = 3325,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "气功防御_蓝_3级",
+        ["name"] = "Energy_defense_蓝_3level",
         ["tbxid"] = 90303003
     },
     [404] = {
@@ -4844,7 +4844,7 @@
         ["exp"] = 4225,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "气功防御_蓝_4级",
+        ["name"] = "Energy_defense_蓝_4level",
         ["tbxid"] = 90303004
     },
     [405] = {
@@ -4856,7 +4856,7 @@
         ["exp"] = 5725,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "气功防御_蓝_5级",
+        ["name"] = "Energy_defense_蓝_5level",
         ["tbxid"] = 90303005
     },
     [406] = {
@@ -4868,7 +4868,7 @@
         ["exp"] = 7975,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "气功防御_蓝_6级",
+        ["name"] = "Energy_defense_蓝_6level",
         ["tbxid"] = 90303006
     },
     [407] = {
@@ -4880,7 +4880,7 @@
         ["exp"] = 10975,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "气功防御_蓝_7级",
+        ["name"] = "Energy_defense_蓝_7level",
         ["tbxid"] = 90303007
     },
     [408] = {
@@ -4892,7 +4892,7 @@
         ["exp"] = 15550,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "气功防御_蓝_8级",
+        ["name"] = "Energy_defense_蓝_8level",
         ["tbxid"] = 90303008
     },
     [409] = {
@@ -4904,7 +4904,7 @@
         ["exp"] = 22750,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "气功防御_蓝_9级",
+        ["name"] = "Energy_defense_蓝_9level",
         ["tbxid"] = 90303009
     },
     [410] = {
@@ -4916,7 +4916,7 @@
         ["exp"] = 42925,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "气功防御_蓝_10级",
+        ["name"] = "Energy_defense_蓝_10level",
         ["tbxid"] = 90303010
     },
     [411] = {
@@ -4928,7 +4928,7 @@
         ["exp"] = 69850,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "气功防御_蓝_11级",
+        ["name"] = "Energy_defense_蓝_11level",
         ["tbxid"] = 90303011
     },
     [412] = {
@@ -4940,7 +4940,7 @@
         ["exp"] = 137200,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "气功防御_蓝_12级",
+        ["name"] = "Energy_defense_蓝_12level",
         ["tbxid"] = 90303012
     },
     [413] = {
@@ -4952,7 +4952,7 @@
         ["exp"] = 271900,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "气功防御_蓝_13级",
+        ["name"] = "Energy_defense_蓝_13level",
         ["tbxid"] = 90303013
     },
     [414] = {
@@ -4964,7 +4964,7 @@
         ["exp"] = 406525,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "气功防御_蓝_14级",
+        ["name"] = "Energy_defense_蓝_14level",
         ["tbxid"] = 90303014
     },
     [415] = {
@@ -4976,7 +4976,7 @@
         ["exp"] = 541225,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "气功防御_蓝_15级",
+        ["name"] = "Energy_defense_蓝_15level",
         ["tbxid"] = 90303015
     },
     [416] = {
@@ -4988,7 +4988,7 @@
         ["exp"] = 675850,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "气功防御_蓝_16级",
+        ["name"] = "Energy_defense_蓝_16level",
         ["tbxid"] = 90303016
     },
     [417] = {
@@ -5000,7 +5000,7 @@
         ["exp"] = 810550,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "气功防御_蓝_17级",
+        ["name"] = "Energy_defense_蓝_17level",
         ["tbxid"] = 90303017
     },
     [418] = {
@@ -5012,7 +5012,7 @@
         ["exp"] = 945175,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "气功防御_蓝_18级",
+        ["name"] = "Energy_defense_蓝_18level",
         ["tbxid"] = 90303018
     },
     [419] = {
@@ -5024,7 +5024,7 @@
         ["exp"] = 1147150,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "气功防御_蓝_19级",
+        ["name"] = "Energy_defense_蓝_19level",
         ["tbxid"] = 90303019
     },
     [420] = {
@@ -5036,7 +5036,7 @@
         ["exp"] = 1349200,
         ["type"] = 1,
         ["quality"] = 3,
-        ["name"] = "气功防御_蓝_20级",
+        ["name"] = "Energy_defense_蓝_20level",
         ["tbxid"] = 90303020
     },
     [421] = {
@@ -5048,7 +5048,7 @@
         ["exp"] = 2500,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "格斗攻击_蓝_1级",
+        ["name"] = "Physical_attack_蓝_1level",
         ["tbxid"] = 90403001
     },
     [422] = {
@@ -5060,7 +5060,7 @@
         ["exp"] = 2875,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "格斗攻击_蓝_2级",
+        ["name"] = "Physical_attack_蓝_2level",
         ["tbxid"] = 90403002
     },
     [423] = {
@@ -5072,7 +5072,7 @@
         ["exp"] = 3325,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "格斗攻击_蓝_3级",
+        ["name"] = "Physical_attack_蓝_3level",
         ["tbxid"] = 90403003
     },
     [424] = {
@@ -5084,7 +5084,7 @@
         ["exp"] = 4225,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "格斗攻击_蓝_4级",
+        ["name"] = "Physical_attack_蓝_4level",
         ["tbxid"] = 90403004
     },
     [425] = {
@@ -5096,7 +5096,7 @@
         ["exp"] = 5725,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "格斗攻击_蓝_5级",
+        ["name"] = "Physical_attack_蓝_5level",
         ["tbxid"] = 90403005
     },
     [426] = {
@@ -5108,7 +5108,7 @@
         ["exp"] = 7975,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "格斗攻击_蓝_6级",
+        ["name"] = "Physical_attack_蓝_6level",
         ["tbxid"] = 90403006
     },
     [427] = {
@@ -5120,7 +5120,7 @@
         ["exp"] = 10975,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "格斗攻击_蓝_7级",
+        ["name"] = "Physical_attack_蓝_7level",
         ["tbxid"] = 90403007
     },
     [428] = {
@@ -5132,7 +5132,7 @@
         ["exp"] = 15550,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "格斗攻击_蓝_8级",
+        ["name"] = "Physical_attack_蓝_8level",
         ["tbxid"] = 90403008
     },
     [429] = {
@@ -5144,7 +5144,7 @@
         ["exp"] = 22750,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "格斗攻击_蓝_9级",
+        ["name"] = "Physical_attack_蓝_9level",
         ["tbxid"] = 90403009
     },
     [430] = {
@@ -5156,7 +5156,7 @@
         ["exp"] = 42925,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "格斗攻击_蓝_10级",
+        ["name"] = "Physical_attack_蓝_10level",
         ["tbxid"] = 90403010
     },
     [431] = {
@@ -5168,7 +5168,7 @@
         ["exp"] = 69850,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "格斗攻击_蓝_11级",
+        ["name"] = "Physical_attack_蓝_11level",
         ["tbxid"] = 90403011
     },
     [432] = {
@@ -5180,7 +5180,7 @@
         ["exp"] = 137200,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "格斗攻击_蓝_12级",
+        ["name"] = "Physical_attack_蓝_12level",
         ["tbxid"] = 90403012
     },
     [433] = {
@@ -5192,7 +5192,7 @@
         ["exp"] = 271900,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "格斗攻击_蓝_13级",
+        ["name"] = "Physical_attack_蓝_13level",
         ["tbxid"] = 90403013
     },
     [434] = {
@@ -5204,7 +5204,7 @@
         ["exp"] = 406525,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "格斗攻击_蓝_14级",
+        ["name"] = "Physical_attack_蓝_14level",
         ["tbxid"] = 90403014
     },
     [435] = {
@@ -5216,7 +5216,7 @@
         ["exp"] = 541225,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "格斗攻击_蓝_15级",
+        ["name"] = "Physical_attack_蓝_15level",
         ["tbxid"] = 90403015
     },
     [436] = {
@@ -5228,7 +5228,7 @@
         ["exp"] = 675850,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "格斗攻击_蓝_16级",
+        ["name"] = "Physical_attack_蓝_16level",
         ["tbxid"] = 90403016
     },
     [437] = {
@@ -5240,7 +5240,7 @@
         ["exp"] = 810550,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "格斗攻击_蓝_17级",
+        ["name"] = "Physical_attack_蓝_17level",
         ["tbxid"] = 90403017
     },
     [438] = {
@@ -5252,7 +5252,7 @@
         ["exp"] = 945175,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "格斗攻击_蓝_18级",
+        ["name"] = "Physical_attack_蓝_18level",
         ["tbxid"] = 90403018
     },
     [439] = {
@@ -5264,7 +5264,7 @@
         ["exp"] = 1147150,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "格斗攻击_蓝_19级",
+        ["name"] = "Physical_attack_蓝_19level",
         ["tbxid"] = 90403019
     },
     [440] = {
@@ -5276,7 +5276,7 @@
         ["exp"] = 1349200,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "格斗攻击_蓝_20级",
+        ["name"] = "Physical_attack_蓝_20level",
         ["tbxid"] = 90403020
     },
     [441] = {
@@ -5288,7 +5288,7 @@
         ["exp"] = 2500,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "气功攻击_蓝_1级",
+        ["name"] = "Energy_attack_蓝_1level",
         ["tbxid"] = 90503001
     },
     [442] = {
@@ -5300,7 +5300,7 @@
         ["exp"] = 2875,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "气功攻击_蓝_2级",
+        ["name"] = "Energy_attack_蓝_2level",
         ["tbxid"] = 90503002
     },
     [443] = {
@@ -5312,7 +5312,7 @@
         ["exp"] = 3325,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "气功攻击_蓝_3级",
+        ["name"] = "Energy_attack_蓝_3level",
         ["tbxid"] = 90503003
     },
     [444] = {
@@ -5324,7 +5324,7 @@
         ["exp"] = 4225,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "气功攻击_蓝_4级",
+        ["name"] = "Energy_attack_蓝_4level",
         ["tbxid"] = 90503004
     },
     [445] = {
@@ -5336,7 +5336,7 @@
         ["exp"] = 5725,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "气功攻击_蓝_5级",
+        ["name"] = "Energy_attack_蓝_5level",
         ["tbxid"] = 90503005
     },
     [446] = {
@@ -5348,7 +5348,7 @@
         ["exp"] = 7975,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "气功攻击_蓝_6级",
+        ["name"] = "Energy_attack_蓝_6level",
         ["tbxid"] = 90503006
     },
     [447] = {
@@ -5360,7 +5360,7 @@
         ["exp"] = 10975,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "气功攻击_蓝_7级",
+        ["name"] = "Energy_attack_蓝_7level",
         ["tbxid"] = 90503007
     },
     [448] = {
@@ -5372,7 +5372,7 @@
         ["exp"] = 15550,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "气功攻击_蓝_8级",
+        ["name"] = "Energy_attack_蓝_8level",
         ["tbxid"] = 90503008
     },
     [449] = {
@@ -5384,7 +5384,7 @@
         ["exp"] = 22750,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "气功攻击_蓝_9级",
+        ["name"] = "Energy_attack_蓝_9level",
         ["tbxid"] = 90503009
     },
     [450] = {
@@ -5396,7 +5396,7 @@
         ["exp"] = 42925,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "气功攻击_蓝_10级",
+        ["name"] = "Energy_attack_蓝_10level",
         ["tbxid"] = 90503010
     },
     [451] = {
@@ -5408,7 +5408,7 @@
         ["exp"] = 69850,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "气功攻击_蓝_11级",
+        ["name"] = "Energy_attack_蓝_11level",
         ["tbxid"] = 90503011
     },
     [452] = {
@@ -5420,7 +5420,7 @@
         ["exp"] = 137200,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "气功攻击_蓝_12级",
+        ["name"] = "Energy_attack_蓝_12level",
         ["tbxid"] = 90503012
     },
     [453] = {
@@ -5432,7 +5432,7 @@
         ["exp"] = 271900,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "气功攻击_蓝_13级",
+        ["name"] = "Energy_attack_蓝_13level",
         ["tbxid"] = 90503013
     },
     [454] = {
@@ -5444,7 +5444,7 @@
         ["exp"] = 406525,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "气功攻击_蓝_14级",
+        ["name"] = "Energy_attack_蓝_14level",
         ["tbxid"] = 90503014
     },
     [455] = {
@@ -5456,7 +5456,7 @@
         ["exp"] = 541225,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "气功攻击_蓝_15级",
+        ["name"] = "Energy_attack_蓝_15level",
         ["tbxid"] = 90503015
     },
     [456] = {
@@ -5468,7 +5468,7 @@
         ["exp"] = 675850,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "气功攻击_蓝_16级",
+        ["name"] = "Energy_attack_蓝_16level",
         ["tbxid"] = 90503016
     },
     [457] = {
@@ -5480,7 +5480,7 @@
         ["exp"] = 810550,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "气功攻击_蓝_17级",
+        ["name"] = "Energy_attack_蓝_17level",
         ["tbxid"] = 90503017
     },
     [458] = {
@@ -5492,7 +5492,7 @@
         ["exp"] = 945175,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "气功攻击_蓝_18级",
+        ["name"] = "Energy_attack_蓝_18level",
         ["tbxid"] = 90503018
     },
     [459] = {
@@ -5504,7 +5504,7 @@
         ["exp"] = 1147150,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "气功攻击_蓝_19级",
+        ["name"] = "Energy_attack_蓝_19level",
         ["tbxid"] = 90503019
     },
     [460] = {
@@ -5516,7 +5516,7 @@
         ["exp"] = 1349200,
         ["type"] = 2,
         ["quality"] = 3,
-        ["name"] = "气功攻击_蓝_20级",
+        ["name"] = "Energy_attack_蓝_20level",
         ["tbxid"] = 90503020
     },
     [461] = {
@@ -5528,7 +5528,7 @@
         ["exp"] = 2500,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "暴击等级_蓝_1级",
+        ["name"] = "Critical_rate_蓝_1level",
         ["tbxid"] = 90603001
     },
     [462] = {
@@ -5540,7 +5540,7 @@
         ["exp"] = 2875,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "暴击等级_蓝_2级",
+        ["name"] = "Critical_rate_蓝_2level",
         ["tbxid"] = 90603002
     },
     [463] = {
@@ -5552,7 +5552,7 @@
         ["exp"] = 3325,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "暴击等级_蓝_3级",
+        ["name"] = "Critical_rate_蓝_3level",
         ["tbxid"] = 90603003
     },
     [464] = {
@@ -5564,7 +5564,7 @@
         ["exp"] = 4225,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "暴击等级_蓝_4级",
+        ["name"] = "Critical_rate_蓝_4level",
         ["tbxid"] = 90603004
     },
     [465] = {
@@ -5576,7 +5576,7 @@
         ["exp"] = 5725,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "暴击等级_蓝_5级",
+        ["name"] = "Critical_rate_蓝_5level",
         ["tbxid"] = 90603005
     },
     [466] = {
@@ -5588,7 +5588,7 @@
         ["exp"] = 7975,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "暴击等级_蓝_6级",
+        ["name"] = "Critical_rate_蓝_6level",
         ["tbxid"] = 90603006
     },
     [467] = {
@@ -5600,7 +5600,7 @@
         ["exp"] = 10975,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "暴击等级_蓝_7级",
+        ["name"] = "Critical_rate_蓝_7level",
         ["tbxid"] = 90603007
     },
     [468] = {
@@ -5612,7 +5612,7 @@
         ["exp"] = 15550,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "暴击等级_蓝_8级",
+        ["name"] = "Critical_rate_蓝_8level",
         ["tbxid"] = 90603008
     },
     [469] = {
@@ -5624,7 +5624,7 @@
         ["exp"] = 22750,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "暴击等级_蓝_9级",
+        ["name"] = "Critical_rate_蓝_9level",
         ["tbxid"] = 90603009
     },
     [470] = {
@@ -5636,7 +5636,7 @@
         ["exp"] = 42925,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "暴击等级_蓝_10级",
+        ["name"] = "Critical_rate_蓝_10level",
         ["tbxid"] = 90603010
     },
     [471] = {
@@ -5648,7 +5648,7 @@
         ["exp"] = 69850,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "暴击等级_蓝_11级",
+        ["name"] = "Critical_rate_蓝_11level",
         ["tbxid"] = 90603011
     },
     [472] = {
@@ -5660,7 +5660,7 @@
         ["exp"] = 137200,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "暴击等级_蓝_12级",
+        ["name"] = "Critical_rate_蓝_12level",
         ["tbxid"] = 90603012
     },
     [473] = {
@@ -5672,7 +5672,7 @@
         ["exp"] = 271900,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "暴击等级_蓝_13级",
+        ["name"] = "Critical_rate_蓝_13level",
         ["tbxid"] = 90603013
     },
     [474] = {
@@ -5684,7 +5684,7 @@
         ["exp"] = 406525,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "暴击等级_蓝_14级",
+        ["name"] = "Critical_rate_蓝_14level",
         ["tbxid"] = 90603014
     },
     [475] = {
@@ -5696,7 +5696,7 @@
         ["exp"] = 541225,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "暴击等级_蓝_15级",
+        ["name"] = "Critical_rate_蓝_15level",
         ["tbxid"] = 90603015
     },
     [476] = {
@@ -5708,7 +5708,7 @@
         ["exp"] = 675850,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "暴击等级_蓝_16级",
+        ["name"] = "Critical_rate_蓝_16level",
         ["tbxid"] = 90603016
     },
     [477] = {
@@ -5720,7 +5720,7 @@
         ["exp"] = 810550,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "暴击等级_蓝_17级",
+        ["name"] = "Critical_rate_蓝_17level",
         ["tbxid"] = 90603017
     },
     [478] = {
@@ -5732,7 +5732,7 @@
         ["exp"] = 945175,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "暴击等级_蓝_18级",
+        ["name"] = "Critical_rate_蓝_18level",
         ["tbxid"] = 90603018
     },
     [479] = {
@@ -5744,7 +5744,7 @@
         ["exp"] = 1147150,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "暴击等级_蓝_19级",
+        ["name"] = "Critical_rate_蓝_19level",
         ["tbxid"] = 90603019
     },
     [480] = {
@@ -5756,7 +5756,7 @@
         ["exp"] = 1349200,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "暴击等级_蓝_20级",
+        ["name"] = "Critical_rate_蓝_20level",
         ["tbxid"] = 90603020
     },
     [481] = {
@@ -5768,7 +5768,7 @@
         ["exp"] = 2500,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "格挡等级_蓝_1级",
+        ["name"] = "Block_level_蓝_1level",
         ["tbxid"] = 90703001
     },
     [482] = {
@@ -5780,7 +5780,7 @@
         ["exp"] = 2875,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "格挡等级_蓝_2级",
+        ["name"] = "Block_level_蓝_2level",
         ["tbxid"] = 90703002
     },
     [483] = {
@@ -5792,7 +5792,7 @@
         ["exp"] = 3325,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "格挡等级_蓝_3级",
+        ["name"] = "Block_level_蓝_3level",
         ["tbxid"] = 90703003
     },
     [484] = {
@@ -5804,7 +5804,7 @@
         ["exp"] = 4225,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "格挡等级_蓝_4级",
+        ["name"] = "Block_level_蓝_4level",
         ["tbxid"] = 90703004
     },
     [485] = {
@@ -5816,7 +5816,7 @@
         ["exp"] = 5725,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "格挡等级_蓝_5级",
+        ["name"] = "Block_level_蓝_5level",
         ["tbxid"] = 90703005
     },
     [486] = {
@@ -5828,7 +5828,7 @@
         ["exp"] = 7975,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "格挡等级_蓝_6级",
+        ["name"] = "Block_level_蓝_6level",
         ["tbxid"] = 90703006
     },
     [487] = {
@@ -5840,7 +5840,7 @@
         ["exp"] = 10975,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "格挡等级_蓝_7级",
+        ["name"] = "Block_level_蓝_7level",
         ["tbxid"] = 90703007
     },
     [488] = {
@@ -5852,7 +5852,7 @@
         ["exp"] = 15550,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "格挡等级_蓝_8级",
+        ["name"] = "Block_level_蓝_8level",
         ["tbxid"] = 90703008
     },
     [489] = {
@@ -5864,7 +5864,7 @@
         ["exp"] = 22750,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "格挡等级_蓝_9级",
+        ["name"] = "Block_level_蓝_9level",
         ["tbxid"] = 90703009
     },
     [490] = {
@@ -5876,7 +5876,7 @@
         ["exp"] = 42925,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "格挡等级_蓝_10级",
+        ["name"] = "Block_level_蓝_10level",
         ["tbxid"] = 90703010
     },
     [491] = {
@@ -5888,7 +5888,7 @@
         ["exp"] = 69850,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "格挡等级_蓝_11级",
+        ["name"] = "Block_level_蓝_11level",
         ["tbxid"] = 90703011
     },
     [492] = {
@@ -5900,7 +5900,7 @@
         ["exp"] = 137200,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "格挡等级_蓝_12级",
+        ["name"] = "Block_level_蓝_12level",
         ["tbxid"] = 90703012
     },
     [493] = {
@@ -5912,7 +5912,7 @@
         ["exp"] = 271900,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "格挡等级_蓝_13级",
+        ["name"] = "Block_level_蓝_13level",
         ["tbxid"] = 90703013
     },
     [494] = {
@@ -5924,7 +5924,7 @@
         ["exp"] = 406525,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "格挡等级_蓝_14级",
+        ["name"] = "Block_level_蓝_14level",
         ["tbxid"] = 90703014
     },
     [495] = {
@@ -5936,7 +5936,7 @@
         ["exp"] = 541225,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "格挡等级_蓝_15级",
+        ["name"] = "Block_level_蓝_15level",
         ["tbxid"] = 90703015
     },
     [496] = {
@@ -5948,7 +5948,7 @@
         ["exp"] = 675850,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "格挡等级_蓝_16级",
+        ["name"] = "Block_level_蓝_16level",
         ["tbxid"] = 90703016
     },
     [497] = {
@@ -5960,7 +5960,7 @@
         ["exp"] = 810550,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "格挡等级_蓝_17级",
+        ["name"] = "Block_level_蓝_17level",
         ["tbxid"] = 90703017
     },
     [498] = {
@@ -5972,7 +5972,7 @@
         ["exp"] = 945175,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "格挡等级_蓝_18级",
+        ["name"] = "Block_level_蓝_18level",
         ["tbxid"] = 90703018
     },
     [499] = {
@@ -5984,7 +5984,7 @@
         ["exp"] = 1147150,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "格挡等级_蓝_19级",
+        ["name"] = "Block_level_蓝_19level",
         ["tbxid"] = 90703019
     },
     [500] = {
@@ -5996,7 +5996,7 @@
         ["exp"] = 1349200,
         ["type"] = 3,
         ["quality"] = 3,
-        ["name"] = "格挡等级_蓝_20级",
+        ["name"] = "Block_level_蓝_20level",
         ["tbxid"] = 90703020
     },
     [501] = {
@@ -6008,7 +6008,7 @@
         ["exp"] = 2500,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "韧性等级_蓝_1级",
+        ["name"] = "Resilience_level_蓝_1level",
         ["tbxid"] = 90803001
     },
     [502] = {
@@ -6020,7 +6020,7 @@
         ["exp"] = 2875,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "韧性等级_蓝_2级",
+        ["name"] = "Resilience_level_蓝_2level",
         ["tbxid"] = 90803002
     },
     [503] = {
@@ -6032,7 +6032,7 @@
         ["exp"] = 3325,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "韧性等级_蓝_3级",
+        ["name"] = "Resilience_level_蓝_3level",
         ["tbxid"] = 90803003
     },
     [504] = {
@@ -6044,7 +6044,7 @@
         ["exp"] = 4225,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "韧性等级_蓝_4级",
+        ["name"] = "Resilience_level_蓝_4level",
         ["tbxid"] = 90803004
     },
     [505] = {
@@ -6056,7 +6056,7 @@
         ["exp"] = 5725,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "韧性等级_蓝_5级",
+        ["name"] = "Resilience_level_蓝_5level",
         ["tbxid"] = 90803005
     },
     [506] = {
@@ -6068,7 +6068,7 @@
         ["exp"] = 7975,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "韧性等级_蓝_6级",
+        ["name"] = "Resilience_level_蓝_6level",
         ["tbxid"] = 90803006
     },
     [507] = {
@@ -6080,7 +6080,7 @@
         ["exp"] = 10975,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "韧性等级_蓝_7级",
+        ["name"] = "Resilience_level_蓝_7level",
         ["tbxid"] = 90803007
     },
     [508] = {
@@ -6092,7 +6092,7 @@
         ["exp"] = 15550,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "韧性等级_蓝_8级",
+        ["name"] = "Resilience_level_蓝_8level",
         ["tbxid"] = 90803008
     },
     [509] = {
@@ -6104,7 +6104,7 @@
         ["exp"] = 22750,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "韧性等级_蓝_9级",
+        ["name"] = "Resilience_level_蓝_9level",
         ["tbxid"] = 90803009
     },
     [510] = {
@@ -6116,7 +6116,7 @@
         ["exp"] = 42925,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "韧性等级_蓝_10级",
+        ["name"] = "Resilience_level_蓝_10level",
         ["tbxid"] = 90803010
     },
     [511] = {
@@ -6128,7 +6128,7 @@
         ["exp"] = 69850,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "韧性等级_蓝_11级",
+        ["name"] = "Resilience_level_蓝_11level",
         ["tbxid"] = 90803011
     },
     [512] = {
@@ -6140,7 +6140,7 @@
         ["exp"] = 137200,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "韧性等级_蓝_12级",
+        ["name"] = "Resilience_level_蓝_12level",
         ["tbxid"] = 90803012
     },
     [513] = {
@@ -6152,7 +6152,7 @@
         ["exp"] = 271900,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "韧性等级_蓝_13级",
+        ["name"] = "Resilience_level_蓝_13level",
         ["tbxid"] = 90803013
     },
     [514] = {
@@ -6164,7 +6164,7 @@
         ["exp"] = 406525,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "韧性等级_蓝_14级",
+        ["name"] = "Resilience_level_蓝_14level",
         ["tbxid"] = 90803014
     },
     [515] = {
@@ -6176,7 +6176,7 @@
         ["exp"] = 541225,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "韧性等级_蓝_15级",
+        ["name"] = "Resilience_level_蓝_15level",
         ["tbxid"] = 90803015
     },
     [516] = {
@@ -6188,7 +6188,7 @@
         ["exp"] = 675850,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "韧性等级_蓝_16级",
+        ["name"] = "Resilience_level_蓝_16level",
         ["tbxid"] = 90803016
     },
     [517] = {
@@ -6200,7 +6200,7 @@
         ["exp"] = 810550,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "韧性等级_蓝_17级",
+        ["name"] = "Resilience_level_蓝_17level",
         ["tbxid"] = 90803017
     },
     [518] = {
@@ -6212,7 +6212,7 @@
         ["exp"] = 945175,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "韧性等级_蓝_18级",
+        ["name"] = "Resilience_level_蓝_18level",
         ["tbxid"] = 90803018
     },
     [519] = {
@@ -6224,7 +6224,7 @@
         ["exp"] = 1147150,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "韧性等级_蓝_19级",
+        ["name"] = "Resilience_level_蓝_19level",
         ["tbxid"] = 90803019
     },
     [520] = {
@@ -6236,7 +6236,7 @@
         ["exp"] = 1349200,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "韧性等级_蓝_20级",
+        ["name"] = "Resilience_level_蓝_20level",
         ["tbxid"] = 90803020
     },
     [521] = {
@@ -6248,7 +6248,7 @@
         ["exp"] = 2500,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "穿透等级_蓝_1级",
+        ["name"] = "Penetration_level_蓝_1level",
         ["tbxid"] = 90903001
     },
     [522] = {
@@ -6260,7 +6260,7 @@
         ["exp"] = 2875,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "穿透等级_蓝_2级",
+        ["name"] = "Penetration_level_蓝_2level",
         ["tbxid"] = 90903002
     },
     [523] = {
@@ -6272,7 +6272,7 @@
         ["exp"] = 3325,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "穿透等级_蓝_3级",
+        ["name"] = "Penetration_level_蓝_3level",
         ["tbxid"] = 90903003
     },
     [524] = {
@@ -6284,7 +6284,7 @@
         ["exp"] = 4225,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "穿透等级_蓝_4级",
+        ["name"] = "Penetration_level_蓝_4level",
         ["tbxid"] = 90903004
     },
     [525] = {
@@ -6296,7 +6296,7 @@
         ["exp"] = 5725,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "穿透等级_蓝_5级",
+        ["name"] = "Penetration_level_蓝_5level",
         ["tbxid"] = 90903005
     },
     [526] = {
@@ -6308,7 +6308,7 @@
         ["exp"] = 7975,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "穿透等级_蓝_6级",
+        ["name"] = "Penetration_level_蓝_6level",
         ["tbxid"] = 90903006
     },
     [527] = {
@@ -6320,7 +6320,7 @@
         ["exp"] = 10975,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "穿透等级_蓝_7级",
+        ["name"] = "Penetration_level_蓝_7level",
         ["tbxid"] = 90903007
     },
     [528] = {
@@ -6332,7 +6332,7 @@
         ["exp"] = 15550,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "穿透等级_蓝_8级",
+        ["name"] = "Penetration_level_蓝_8level",
         ["tbxid"] = 90903008
     },
     [529] = {
@@ -6344,7 +6344,7 @@
         ["exp"] = 22750,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "穿透等级_蓝_9级",
+        ["name"] = "Penetration_level_蓝_9level",
         ["tbxid"] = 90903009
     },
     [530] = {
@@ -6356,7 +6356,7 @@
         ["exp"] = 42925,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "穿透等级_蓝_10级",
+        ["name"] = "Penetration_level_蓝_10level",
         ["tbxid"] = 90903010
     },
     [531] = {
@@ -6368,7 +6368,7 @@
         ["exp"] = 69850,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "穿透等级_蓝_11级",
+        ["name"] = "Penetration_level_蓝_11level",
         ["tbxid"] = 90903011
     },
     [532] = {
@@ -6380,7 +6380,7 @@
         ["exp"] = 137200,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "穿透等级_蓝_12级",
+        ["name"] = "Penetration_level_蓝_12level",
         ["tbxid"] = 90903012
     },
     [533] = {
@@ -6392,7 +6392,7 @@
         ["exp"] = 271900,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "穿透等级_蓝_13级",
+        ["name"] = "Penetration_level_蓝_13level",
         ["tbxid"] = 90903013
     },
     [534] = {
@@ -6404,7 +6404,7 @@
         ["exp"] = 406525,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "穿透等级_蓝_14级",
+        ["name"] = "Penetration_level_蓝_14level",
         ["tbxid"] = 90903014
     },
     [535] = {
@@ -6416,7 +6416,7 @@
         ["exp"] = 541225,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "穿透等级_蓝_15级",
+        ["name"] = "Penetration_level_蓝_15level",
         ["tbxid"] = 90903015
     },
     [536] = {
@@ -6428,7 +6428,7 @@
         ["exp"] = 675850,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "穿透等级_蓝_16级",
+        ["name"] = "Penetration_level_蓝_16level",
         ["tbxid"] = 90903016
     },
     [537] = {
@@ -6440,7 +6440,7 @@
         ["exp"] = 810550,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "穿透等级_蓝_17级",
+        ["name"] = "Penetration_level_蓝_17level",
         ["tbxid"] = 90903017
     },
     [538] = {
@@ -6452,7 +6452,7 @@
         ["exp"] = 945175,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "穿透等级_蓝_18级",
+        ["name"] = "Penetration_level_蓝_18level",
         ["tbxid"] = 90903018
     },
     [539] = {
@@ -6464,7 +6464,7 @@
         ["exp"] = 1147150,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "穿透等级_蓝_19级",
+        ["name"] = "Penetration_level_蓝_19level",
         ["tbxid"] = 90903019
     },
     [540] = {
@@ -6476,7 +6476,7 @@
         ["exp"] = 1349200,
         ["type"] = 4,
         ["quality"] = 3,
-        ["name"] = "穿透等级_蓝_20级",
+        ["name"] = "Penetration_level_蓝_20level",
         ["tbxid"] = 90903020
     },
     [541] = {
@@ -6488,7 +6488,7 @@
         ["exp"] = 0,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "生命上限_紫_1级",
+        ["name"] = "生命上限_紫_1level",
         ["tbxid"] = 90104001
     },
     [542] = {
@@ -6500,7 +6500,7 @@
         ["exp"] = 375,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "生命上限_紫_2级",
+        ["name"] = "生命上限_紫_2level",
         ["tbxid"] = 90104002
     },
     [543] = {
@@ -6512,7 +6512,7 @@
         ["exp"] = 825,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "生命上限_紫_3级",
+        ["name"] = "生命上限_紫_3level",
         ["tbxid"] = 90104003
     },
     [544] = {
@@ -6524,7 +6524,7 @@
         ["exp"] = 1725,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "生命上限_紫_4级",
+        ["name"] = "生命上限_紫_4level",
         ["tbxid"] = 90104004
     },
     [545] = {
@@ -6536,7 +6536,7 @@
         ["exp"] = 3225,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "生命上限_紫_5级",
+        ["name"] = "生命上限_紫_5level",
         ["tbxid"] = 90104005
     },
     [546] = {
@@ -6548,7 +6548,7 @@
         ["exp"] = 5475,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "生命上限_紫_6级",
+        ["name"] = "生命上限_紫_6level",
         ["tbxid"] = 90104006
     },
     [547] = {
@@ -6560,7 +6560,7 @@
         ["exp"] = 8475,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "生命上限_紫_7级",
+        ["name"] = "生命上限_紫_7level",
         ["tbxid"] = 90104007
     },
     [548] = {
@@ -6572,7 +6572,7 @@
         ["exp"] = 13050,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "生命上限_紫_8级",
+        ["name"] = "生命上限_紫_8level",
         ["tbxid"] = 90104008
     },
     [549] = {
@@ -6584,7 +6584,7 @@
         ["exp"] = 20250,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "生命上限_紫_9级",
+        ["name"] = "生命上限_紫_9level",
         ["tbxid"] = 90104009
     },
     [550] = {
@@ -6596,7 +6596,7 @@
         ["exp"] = 40425,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "生命上限_紫_10级",
+        ["name"] = "生命上限_紫_10level",
         ["tbxid"] = 90104010
     },
     [551] = {
@@ -6608,7 +6608,7 @@
         ["exp"] = 67350,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "生命上限_紫_11级",
+        ["name"] = "生命上限_紫_11level",
         ["tbxid"] = 90104011
     },
     [552] = {
@@ -6620,7 +6620,7 @@
         ["exp"] = 134700,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "生命上限_紫_12级",
+        ["name"] = "生命上限_紫_12level",
         ["tbxid"] = 90104012
     },
     [553] = {
@@ -6632,7 +6632,7 @@
         ["exp"] = 269400,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "生命上限_紫_13级",
+        ["name"] = "生命上限_紫_13level",
         ["tbxid"] = 90104013
     },
     [554] = {
@@ -6644,7 +6644,7 @@
         ["exp"] = 404025,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "生命上限_紫_14级",
+        ["name"] = "生命上限_紫_14level",
         ["tbxid"] = 90104014
     },
     [555] = {
@@ -6656,7 +6656,7 @@
         ["exp"] = 538725,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "生命上限_紫_15级",
+        ["name"] = "生命上限_紫_15level",
         ["tbxid"] = 90104015
     },
     [556] = {
@@ -6668,7 +6668,7 @@
         ["exp"] = 673350,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "生命上限_紫_16级",
+        ["name"] = "生命上限_紫_16level",
         ["tbxid"] = 90104016
     },
     [557] = {
@@ -6680,7 +6680,7 @@
         ["exp"] = 808050,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "生命上限_紫_17级",
+        ["name"] = "生命上限_紫_17level",
         ["tbxid"] = 90104017
     },
     [558] = {
@@ -6692,7 +6692,7 @@
         ["exp"] = 942675,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "生命上限_紫_18级",
+        ["name"] = "生命上限_紫_18level",
         ["tbxid"] = 90104018
     },
     [559] = {
@@ -6704,7 +6704,7 @@
         ["exp"] = 1144650,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "生命上限_紫_19级",
+        ["name"] = "生命上限_紫_19level",
         ["tbxid"] = 90104019
     },
     [560] = {
@@ -6716,7 +6716,7 @@
         ["exp"] = 1346700,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "生命上限_紫_20级",
+        ["name"] = "生命上限_紫_20level",
         ["tbxid"] = 90104020
     },
     [561] = {
@@ -6728,7 +6728,7 @@
         ["exp"] = 0,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "格斗防御_紫_1级",
+        ["name"] = "Physical_defense_紫_1level",
         ["tbxid"] = 90204001
     },
     [562] = {
@@ -6740,7 +6740,7 @@
         ["exp"] = 375,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "格斗防御_紫_2级",
+        ["name"] = "Physical_defense_紫_2level",
         ["tbxid"] = 90204002
     },
     [563] = {
@@ -6752,7 +6752,7 @@
         ["exp"] = 825,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "格斗防御_紫_3级",
+        ["name"] = "Physical_defense_紫_3level",
         ["tbxid"] = 90204003
     },
     [564] = {
@@ -6764,7 +6764,7 @@
         ["exp"] = 1725,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "格斗防御_紫_4级",
+        ["name"] = "Physical_defense_紫_4level",
         ["tbxid"] = 90204004
     },
     [565] = {
@@ -6776,7 +6776,7 @@
         ["exp"] = 3225,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "格斗防御_紫_5级",
+        ["name"] = "Physical_defense_紫_5level",
         ["tbxid"] = 90204005
     },
     [566] = {
@@ -6788,7 +6788,7 @@
         ["exp"] = 5475,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "格斗防御_紫_6级",
+        ["name"] = "Physical_defense_紫_6level",
         ["tbxid"] = 90204006
     },
     [567] = {
@@ -6800,7 +6800,7 @@
         ["exp"] = 8475,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "格斗防御_紫_7级",
+        ["name"] = "Physical_defense_紫_7level",
         ["tbxid"] = 90204007
     },
     [568] = {
@@ -6812,7 +6812,7 @@
         ["exp"] = 13050,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "格斗防御_紫_8级",
+        ["name"] = "Physical_defense_紫_8level",
         ["tbxid"] = 90204008
     },
     [569] = {
@@ -6824,7 +6824,7 @@
         ["exp"] = 20250,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "格斗防御_紫_9级",
+        ["name"] = "Physical_defense_紫_9level",
         ["tbxid"] = 90204009
     },
     [570] = {
@@ -6836,7 +6836,7 @@
         ["exp"] = 40425,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "格斗防御_紫_10级",
+        ["name"] = "Physical_defense_紫_10level",
         ["tbxid"] = 90204010
     },
     [571] = {
@@ -6848,7 +6848,7 @@
         ["exp"] = 67350,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "格斗防御_紫_11级",
+        ["name"] = "Physical_defense_紫_11level",
         ["tbxid"] = 90204011
     },
     [572] = {
@@ -6860,7 +6860,7 @@
         ["exp"] = 134700,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "格斗防御_紫_12级",
+        ["name"] = "Physical_defense_紫_12level",
         ["tbxid"] = 90204012
     },
     [573] = {
@@ -6872,7 +6872,7 @@
         ["exp"] = 269400,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "格斗防御_紫_13级",
+        ["name"] = "Physical_defense_紫_13level",
         ["tbxid"] = 90204013
     },
     [574] = {
@@ -6884,7 +6884,7 @@
         ["exp"] = 404025,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "格斗防御_紫_14级",
+        ["name"] = "Physical_defense_紫_14level",
         ["tbxid"] = 90204014
     },
     [575] = {
@@ -6896,7 +6896,7 @@
         ["exp"] = 538725,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "格斗防御_紫_15级",
+        ["name"] = "Physical_defense_紫_15level",
         ["tbxid"] = 90204015
     },
     [576] = {
@@ -6908,7 +6908,7 @@
         ["exp"] = 673350,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "格斗防御_紫_16级",
+        ["name"] = "Physical_defense_紫_16level",
         ["tbxid"] = 90204016
     },
     [577] = {
@@ -6920,7 +6920,7 @@
         ["exp"] = 808050,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "格斗防御_紫_17级",
+        ["name"] = "Physical_defense_紫_17level",
         ["tbxid"] = 90204017
     },
     [578] = {
@@ -6932,7 +6932,7 @@
         ["exp"] = 942675,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "格斗防御_紫_18级",
+        ["name"] = "Physical_defense_紫_18level",
         ["tbxid"] = 90204018
     },
     [579] = {
@@ -6944,7 +6944,7 @@
         ["exp"] = 1144650,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "格斗防御_紫_19级",
+        ["name"] = "Physical_defense_紫_19level",
         ["tbxid"] = 90204019
     },
     [580] = {
@@ -6956,7 +6956,7 @@
         ["exp"] = 1346700,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "格斗防御_紫_20级",
+        ["name"] = "Physical_defense_紫_20level",
         ["tbxid"] = 90204020
     },
     [581] = {
@@ -6968,7 +6968,7 @@
         ["exp"] = 0,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "气功防御_紫_1级",
+        ["name"] = "Energy_defense_紫_1level",
         ["tbxid"] = 90304001
     },
     [582] = {
@@ -6980,7 +6980,7 @@
         ["exp"] = 375,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "气功防御_紫_2级",
+        ["name"] = "Energy_defense_紫_2level",
         ["tbxid"] = 90304002
     },
     [583] = {
@@ -6992,7 +6992,7 @@
         ["exp"] = 825,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "气功防御_紫_3级",
+        ["name"] = "Energy_defense_紫_3level",
         ["tbxid"] = 90304003
     },
     [584] = {
@@ -7004,7 +7004,7 @@
         ["exp"] = 1725,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "气功防御_紫_4级",
+        ["name"] = "Energy_defense_紫_4level",
         ["tbxid"] = 90304004
     },
     [585] = {
@@ -7016,7 +7016,7 @@
         ["exp"] = 3225,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "气功防御_紫_5级",
+        ["name"] = "Energy_defense_紫_5level",
         ["tbxid"] = 90304005
     },
     [586] = {
@@ -7028,7 +7028,7 @@
         ["exp"] = 5475,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "气功防御_紫_6级",
+        ["name"] = "Energy_defense_紫_6level",
         ["tbxid"] = 90304006
     },
     [587] = {
@@ -7040,7 +7040,7 @@
         ["exp"] = 8475,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "气功防御_紫_7级",
+        ["name"] = "Energy_defense_紫_7level",
         ["tbxid"] = 90304007
     },
     [588] = {
@@ -7052,7 +7052,7 @@
         ["exp"] = 13050,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "气功防御_紫_8级",
+        ["name"] = "Energy_defense_紫_8level",
         ["tbxid"] = 90304008
     },
     [589] = {
@@ -7064,7 +7064,7 @@
         ["exp"] = 20250,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "气功防御_紫_9级",
+        ["name"] = "Energy_defense_紫_9level",
         ["tbxid"] = 90304009
     },
     [590] = {
@@ -7076,7 +7076,7 @@
         ["exp"] = 40425,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "气功防御_紫_10级",
+        ["name"] = "Energy_defense_紫_10level",
         ["tbxid"] = 90304010
     },
     [591] = {
@@ -7088,7 +7088,7 @@
         ["exp"] = 67350,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "气功防御_紫_11级",
+        ["name"] = "Energy_defense_紫_11level",
         ["tbxid"] = 90304011
     },
     [592] = {
@@ -7100,7 +7100,7 @@
         ["exp"] = 134700,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "气功防御_紫_12级",
+        ["name"] = "Energy_defense_紫_12level",
         ["tbxid"] = 90304012
     },
     [593] = {
@@ -7112,7 +7112,7 @@
         ["exp"] = 269400,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "气功防御_紫_13级",
+        ["name"] = "Energy_defense_紫_13level",
         ["tbxid"] = 90304013
     },
     [594] = {
@@ -7124,7 +7124,7 @@
         ["exp"] = 404025,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "气功防御_紫_14级",
+        ["name"] = "Energy_defense_紫_14level",
         ["tbxid"] = 90304014
     },
     [595] = {
@@ -7136,7 +7136,7 @@
         ["exp"] = 538725,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "气功防御_紫_15级",
+        ["name"] = "Energy_defense_紫_15level",
         ["tbxid"] = 90304015
     },
     [596] = {
@@ -7148,7 +7148,7 @@
         ["exp"] = 673350,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "气功防御_紫_16级",
+        ["name"] = "Energy_defense_紫_16level",
         ["tbxid"] = 90304016
     },
     [597] = {
@@ -7160,7 +7160,7 @@
         ["exp"] = 808050,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "气功防御_紫_17级",
+        ["name"] = "Energy_defense_紫_17level",
         ["tbxid"] = 90304017
     },
     [598] = {
@@ -7172,7 +7172,7 @@
         ["exp"] = 942675,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "气功防御_紫_18级",
+        ["name"] = "Energy_defense_紫_18level",
         ["tbxid"] = 90304018
     },
     [599] = {
@@ -7184,7 +7184,7 @@
         ["exp"] = 1144650,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "气功防御_紫_19级",
+        ["name"] = "Energy_defense_紫_19level",
         ["tbxid"] = 90304019
     },
     [600] = {
@@ -7196,7 +7196,7 @@
         ["exp"] = 1346700,
         ["type"] = 1,
         ["quality"] = 4,
-        ["name"] = "气功防御_紫_20级",
+        ["name"] = "Energy_defense_紫_20level",
         ["tbxid"] = 90304020
     },
     [601] = {
@@ -7208,7 +7208,7 @@
         ["exp"] = 0,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "格斗攻击_紫_1级",
+        ["name"] = "Physical_attack_紫_1level",
         ["tbxid"] = 90404001
     },
     [602] = {
@@ -7220,7 +7220,7 @@
         ["exp"] = 375,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "格斗攻击_紫_2级",
+        ["name"] = "Physical_attack_紫_2level",
         ["tbxid"] = 90404002
     },
     [603] = {
@@ -7232,7 +7232,7 @@
         ["exp"] = 825,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "格斗攻击_紫_3级",
+        ["name"] = "Physical_attack_紫_3level",
         ["tbxid"] = 90404003
     },
     [604] = {
@@ -7244,7 +7244,7 @@
         ["exp"] = 1725,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "格斗攻击_紫_4级",
+        ["name"] = "Physical_attack_紫_4level",
         ["tbxid"] = 90404004
     },
     [605] = {
@@ -7256,7 +7256,7 @@
         ["exp"] = 3225,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "格斗攻击_紫_5级",
+        ["name"] = "Physical_attack_紫_5level",
         ["tbxid"] = 90404005
     },
     [606] = {
@@ -7268,7 +7268,7 @@
         ["exp"] = 5475,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "格斗攻击_紫_6级",
+        ["name"] = "Physical_attack_紫_6level",
         ["tbxid"] = 90404006
     },
     [607] = {
@@ -7280,7 +7280,7 @@
         ["exp"] = 8475,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "格斗攻击_紫_7级",
+        ["name"] = "Physical_attack_紫_7level",
         ["tbxid"] = 90404007
     },
     [608] = {
@@ -7292,7 +7292,7 @@
         ["exp"] = 13050,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "格斗攻击_紫_8级",
+        ["name"] = "Physical_attack_紫_8level",
         ["tbxid"] = 90404008
     },
     [609] = {
@@ -7304,7 +7304,7 @@
         ["exp"] = 20250,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "格斗攻击_紫_9级",
+        ["name"] = "Physical_attack_紫_9level",
         ["tbxid"] = 90404009
     },
     [610] = {
@@ -7316,7 +7316,7 @@
         ["exp"] = 40425,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "格斗攻击_紫_10级",
+        ["name"] = "Physical_attack_紫_10level",
         ["tbxid"] = 90404010
     },
     [611] = {
@@ -7328,7 +7328,7 @@
         ["exp"] = 67350,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "格斗攻击_紫_11级",
+        ["name"] = "Physical_attack_紫_11level",
         ["tbxid"] = 90404011
     },
     [612] = {
@@ -7340,7 +7340,7 @@
         ["exp"] = 134700,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "格斗攻击_紫_12级",
+        ["name"] = "Physical_attack_紫_12level",
         ["tbxid"] = 90404012
     },
     [613] = {
@@ -7352,7 +7352,7 @@
         ["exp"] = 269400,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "格斗攻击_紫_13级",
+        ["name"] = "Physical_attack_紫_13level",
         ["tbxid"] = 90404013
     },
     [614] = {
@@ -7364,7 +7364,7 @@
         ["exp"] = 404025,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "格斗攻击_紫_14级",
+        ["name"] = "Physical_attack_紫_14level",
         ["tbxid"] = 90404014
     },
     [615] = {
@@ -7376,7 +7376,7 @@
         ["exp"] = 538725,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "格斗攻击_紫_15级",
+        ["name"] = "Physical_attack_紫_15level",
         ["tbxid"] = 90404015
     },
     [616] = {
@@ -7388,7 +7388,7 @@
         ["exp"] = 673350,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "格斗攻击_紫_16级",
+        ["name"] = "Physical_attack_紫_16level",
         ["tbxid"] = 90404016
     },
     [617] = {
@@ -7400,7 +7400,7 @@
         ["exp"] = 808050,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "格斗攻击_紫_17级",
+        ["name"] = "Physical_attack_紫_17level",
         ["tbxid"] = 90404017
     },
     [618] = {
@@ -7412,7 +7412,7 @@
         ["exp"] = 942675,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "格斗攻击_紫_18级",
+        ["name"] = "Physical_attack_紫_18level",
         ["tbxid"] = 90404018
     },
     [619] = {
@@ -7424,7 +7424,7 @@
         ["exp"] = 1144650,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "格斗攻击_紫_19级",
+        ["name"] = "Physical_attack_紫_19level",
         ["tbxid"] = 90404019
     },
     [620] = {
@@ -7436,7 +7436,7 @@
         ["exp"] = 1346700,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "格斗攻击_紫_20级",
+        ["name"] = "Physical_attack_紫_20level",
         ["tbxid"] = 90404020
     },
     [621] = {
@@ -7448,7 +7448,7 @@
         ["exp"] = 0,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "气功攻击_紫_1级",
+        ["name"] = "Energy_attack_紫_1level",
         ["tbxid"] = 90504001
     },
     [622] = {
@@ -7460,7 +7460,7 @@
         ["exp"] = 375,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "气功攻击_紫_2级",
+        ["name"] = "Energy_attack_紫_2level",
         ["tbxid"] = 90504002
     },
     [623] = {
@@ -7472,7 +7472,7 @@
         ["exp"] = 825,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "气功攻击_紫_3级",
+        ["name"] = "Energy_attack_紫_3level",
         ["tbxid"] = 90504003
     },
     [624] = {
@@ -7484,7 +7484,7 @@
         ["exp"] = 1725,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "气功攻击_紫_4级",
+        ["name"] = "Energy_attack_紫_4level",
         ["tbxid"] = 90504004
     },
     [625] = {
@@ -7496,7 +7496,7 @@
         ["exp"] = 3225,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "气功攻击_紫_5级",
+        ["name"] = "Energy_attack_紫_5level",
         ["tbxid"] = 90504005
     },
     [626] = {
@@ -7508,7 +7508,7 @@
         ["exp"] = 5475,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "气功攻击_紫_6级",
+        ["name"] = "Energy_attack_紫_6level",
         ["tbxid"] = 90504006
     },
     [627] = {
@@ -7520,7 +7520,7 @@
         ["exp"] = 8475,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "气功攻击_紫_7级",
+        ["name"] = "Energy_attack_紫_7level",
         ["tbxid"] = 90504007
     },
     [628] = {
@@ -7532,7 +7532,7 @@
         ["exp"] = 13050,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "气功攻击_紫_8级",
+        ["name"] = "Energy_attack_紫_8level",
         ["tbxid"] = 90504008
     },
     [629] = {
@@ -7544,7 +7544,7 @@
         ["exp"] = 20250,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "气功攻击_紫_9级",
+        ["name"] = "Energy_attack_紫_9level",
         ["tbxid"] = 90504009
     },
     [630] = {
@@ -7556,7 +7556,7 @@
         ["exp"] = 40425,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "气功攻击_紫_10级",
+        ["name"] = "Energy_attack_紫_10level",
         ["tbxid"] = 90504010
     },
     [631] = {
@@ -7568,7 +7568,7 @@
         ["exp"] = 67350,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "气功攻击_紫_11级",
+        ["name"] = "Energy_attack_紫_11level",
         ["tbxid"] = 90504011
     },
     [632] = {
@@ -7580,7 +7580,7 @@
         ["exp"] = 134700,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "气功攻击_紫_12级",
+        ["name"] = "Energy_attack_紫_12level",
         ["tbxid"] = 90504012
     },
     [633] = {
@@ -7592,7 +7592,7 @@
         ["exp"] = 269400,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "气功攻击_紫_13级",
+        ["name"] = "Energy_attack_紫_13level",
         ["tbxid"] = 90504013
     },
     [634] = {
@@ -7604,7 +7604,7 @@
         ["exp"] = 404025,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "气功攻击_紫_14级",
+        ["name"] = "Energy_attack_紫_14level",
         ["tbxid"] = 90504014
     },
     [635] = {
@@ -7616,7 +7616,7 @@
         ["exp"] = 538725,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "气功攻击_紫_15级",
+        ["name"] = "Energy_attack_紫_15level",
         ["tbxid"] = 90504015
     },
     [636] = {
@@ -7628,7 +7628,7 @@
         ["exp"] = 673350,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "气功攻击_紫_16级",
+        ["name"] = "Energy_attack_紫_16level",
         ["tbxid"] = 90504016
     },
     [637] = {
@@ -7640,7 +7640,7 @@
         ["exp"] = 808050,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "气功攻击_紫_17级",
+        ["name"] = "Energy_attack_紫_17level",
         ["tbxid"] = 90504017
     },
     [638] = {
@@ -7652,7 +7652,7 @@
         ["exp"] = 942675,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "气功攻击_紫_18级",
+        ["name"] = "Energy_attack_紫_18level",
         ["tbxid"] = 90504018
     },
     [639] = {
@@ -7664,7 +7664,7 @@
         ["exp"] = 1144650,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "气功攻击_紫_19级",
+        ["name"] = "Energy_attack_紫_19level",
         ["tbxid"] = 90504019
     },
     [640] = {
@@ -7676,7 +7676,7 @@
         ["exp"] = 1346700,
         ["type"] = 2,
         ["quality"] = 4,
-        ["name"] = "气功攻击_紫_20级",
+        ["name"] = "Energy_attack_紫_20level",
         ["tbxid"] = 90504020
     },
     [641] = {
@@ -7688,7 +7688,7 @@
         ["exp"] = 0,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "暴击等级_紫_1级",
+        ["name"] = "Critical_rate_紫_1level",
         ["tbxid"] = 90604001
     },
     [642] = {
@@ -7700,7 +7700,7 @@
         ["exp"] = 375,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "暴击等级_紫_2级",
+        ["name"] = "Critical_rate_紫_2level",
         ["tbxid"] = 90604002
     },
     [643] = {
@@ -7712,7 +7712,7 @@
         ["exp"] = 825,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "暴击等级_紫_3级",
+        ["name"] = "Critical_rate_紫_3level",
         ["tbxid"] = 90604003
     },
     [644] = {
@@ -7724,7 +7724,7 @@
         ["exp"] = 1725,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "暴击等级_紫_4级",
+        ["name"] = "Critical_rate_紫_4level",
         ["tbxid"] = 90604004
     },
     [645] = {
@@ -7736,7 +7736,7 @@
         ["exp"] = 3225,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "暴击等级_紫_5级",
+        ["name"] = "Critical_rate_紫_5level",
         ["tbxid"] = 90604005
     },
     [646] = {
@@ -7748,7 +7748,7 @@
         ["exp"] = 5475,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "暴击等级_紫_6级",
+        ["name"] = "Critical_rate_紫_6level",
         ["tbxid"] = 90604006
     },
     [647] = {
@@ -7760,7 +7760,7 @@
         ["exp"] = 8475,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "暴击等级_紫_7级",
+        ["name"] = "Critical_rate_紫_7level",
         ["tbxid"] = 90604007
     },
     [648] = {
@@ -7772,7 +7772,7 @@
         ["exp"] = 13050,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "暴击等级_紫_8级",
+        ["name"] = "Critical_rate_紫_8level",
         ["tbxid"] = 90604008
     },
     [649] = {
@@ -7784,7 +7784,7 @@
         ["exp"] = 20250,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "暴击等级_紫_9级",
+        ["name"] = "Critical_rate_紫_9level",
         ["tbxid"] = 90604009
     },
     [650] = {
@@ -7796,7 +7796,7 @@
         ["exp"] = 40425,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "暴击等级_紫_10级",
+        ["name"] = "Critical_rate_紫_10level",
         ["tbxid"] = 90604010
     },
     [651] = {
@@ -7808,7 +7808,7 @@
         ["exp"] = 67350,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "暴击等级_紫_11级",
+        ["name"] = "Critical_rate_紫_11level",
         ["tbxid"] = 90604011
     },
     [652] = {
@@ -7820,7 +7820,7 @@
         ["exp"] = 134700,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "暴击等级_紫_12级",
+        ["name"] = "Critical_rate_紫_12level",
         ["tbxid"] = 90604012
     },
     [653] = {
@@ -7832,7 +7832,7 @@
         ["exp"] = 269400,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "暴击等级_紫_13级",
+        ["name"] = "Critical_rate_紫_13level",
         ["tbxid"] = 90604013
     },
     [654] = {
@@ -7844,7 +7844,7 @@
         ["exp"] = 404025,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "暴击等级_紫_14级",
+        ["name"] = "Critical_rate_紫_14level",
         ["tbxid"] = 90604014
     },
     [655] = {
@@ -7856,7 +7856,7 @@
         ["exp"] = 538725,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "暴击等级_紫_15级",
+        ["name"] = "Critical_rate_紫_15level",
         ["tbxid"] = 90604015
     },
     [656] = {
@@ -7868,7 +7868,7 @@
         ["exp"] = 673350,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "暴击等级_紫_16级",
+        ["name"] = "Critical_rate_紫_16level",
         ["tbxid"] = 90604016
     },
     [657] = {
@@ -7880,7 +7880,7 @@
         ["exp"] = 808050,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "暴击等级_紫_17级",
+        ["name"] = "Critical_rate_紫_17level",
         ["tbxid"] = 90604017
     },
     [658] = {
@@ -7892,7 +7892,7 @@
         ["exp"] = 942675,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "暴击等级_紫_18级",
+        ["name"] = "Critical_rate_紫_18level",
         ["tbxid"] = 90604018
     },
     [659] = {
@@ -7904,7 +7904,7 @@
         ["exp"] = 1144650,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "暴击等级_紫_19级",
+        ["name"] = "Critical_rate_紫_19level",
         ["tbxid"] = 90604019
     },
     [660] = {
@@ -7916,7 +7916,7 @@
         ["exp"] = 1346700,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "暴击等级_紫_20级",
+        ["name"] = "Critical_rate_紫_20level",
         ["tbxid"] = 90604020
     },
     [661] = {
@@ -7928,7 +7928,7 @@
         ["exp"] = 0,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "格挡等级_紫_1级",
+        ["name"] = "Block_level_紫_1level",
         ["tbxid"] = 90704001
     },
     [662] = {
@@ -7940,7 +7940,7 @@
         ["exp"] = 375,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "格挡等级_紫_2级",
+        ["name"] = "Block_level_紫_2level",
         ["tbxid"] = 90704002
     },
     [663] = {
@@ -7952,7 +7952,7 @@
         ["exp"] = 825,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "格挡等级_紫_3级",
+        ["name"] = "Block_level_紫_3level",
         ["tbxid"] = 90704003
     },
     [664] = {
@@ -7964,7 +7964,7 @@
         ["exp"] = 1725,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "格挡等级_紫_4级",
+        ["name"] = "Block_level_紫_4level",
         ["tbxid"] = 90704004
     },
     [665] = {
@@ -7976,7 +7976,7 @@
         ["exp"] = 3225,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "格挡等级_紫_5级",
+        ["name"] = "Block_level_紫_5level",
         ["tbxid"] = 90704005
     },
     [666] = {
@@ -7988,7 +7988,7 @@
         ["exp"] = 5475,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "格挡等级_紫_6级",
+        ["name"] = "Block_level_紫_6level",
         ["tbxid"] = 90704006
     },
     [667] = {
@@ -8000,7 +8000,7 @@
         ["exp"] = 8475,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "格挡等级_紫_7级",
+        ["name"] = "Block_level_紫_7level",
         ["tbxid"] = 90704007
     },
     [668] = {
@@ -8012,7 +8012,7 @@
         ["exp"] = 13050,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "格挡等级_紫_8级",
+        ["name"] = "Block_level_紫_8level",
         ["tbxid"] = 90704008
     },
     [669] = {
@@ -8024,7 +8024,7 @@
         ["exp"] = 20250,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "格挡等级_紫_9级",
+        ["name"] = "Block_level_紫_9level",
         ["tbxid"] = 90704009
     },
     [670] = {
@@ -8036,7 +8036,7 @@
         ["exp"] = 40425,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "格挡等级_紫_10级",
+        ["name"] = "Block_level_紫_10level",
         ["tbxid"] = 90704010
     },
     [671] = {
@@ -8048,7 +8048,7 @@
         ["exp"] = 67350,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "格挡等级_紫_11级",
+        ["name"] = "Block_level_紫_11level",
         ["tbxid"] = 90704011
     },
     [672] = {
@@ -8060,7 +8060,7 @@
         ["exp"] = 134700,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "格挡等级_紫_12级",
+        ["name"] = "Block_level_紫_12level",
         ["tbxid"] = 90704012
     },
     [673] = {
@@ -8072,7 +8072,7 @@
         ["exp"] = 269400,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "格挡等级_紫_13级",
+        ["name"] = "Block_level_紫_13level",
         ["tbxid"] = 90704013
     },
     [674] = {
@@ -8084,7 +8084,7 @@
         ["exp"] = 404025,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "格挡等级_紫_14级",
+        ["name"] = "Block_level_紫_14level",
         ["tbxid"] = 90704014
     },
     [675] = {
@@ -8096,7 +8096,7 @@
         ["exp"] = 538725,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "格挡等级_紫_15级",
+        ["name"] = "Block_level_紫_15level",
         ["tbxid"] = 90704015
     },
     [676] = {
@@ -8108,7 +8108,7 @@
         ["exp"] = 673350,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "格挡等级_紫_16级",
+        ["name"] = "Block_level_紫_16level",
         ["tbxid"] = 90704016
     },
     [677] = {
@@ -8120,7 +8120,7 @@
         ["exp"] = 808050,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "格挡等级_紫_17级",
+        ["name"] = "Block_level_紫_17level",
         ["tbxid"] = 90704017
     },
     [678] = {
@@ -8132,7 +8132,7 @@
         ["exp"] = 942675,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "格挡等级_紫_18级",
+        ["name"] = "Block_level_紫_18level",
         ["tbxid"] = 90704018
     },
     [679] = {
@@ -8144,7 +8144,7 @@
         ["exp"] = 1144650,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "格挡等级_紫_19级",
+        ["name"] = "Block_level_紫_19level",
         ["tbxid"] = 90704019
     },
     [680] = {
@@ -8156,7 +8156,7 @@
         ["exp"] = 1346700,
         ["type"] = 3,
         ["quality"] = 4,
-        ["name"] = "格挡等级_紫_20级",
+        ["name"] = "Block_level_紫_20level",
         ["tbxid"] = 90704020
     },
     [681] = {
@@ -8168,7 +8168,7 @@
         ["exp"] = 0,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "韧性等级_紫_1级",
+        ["name"] = "Resilience_level_紫_1level",
         ["tbxid"] = 90804001
     },
     [682] = {
@@ -8180,7 +8180,7 @@
         ["exp"] = 375,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "韧性等级_紫_2级",
+        ["name"] = "Resilience_level_紫_2level",
         ["tbxid"] = 90804002
     },
     [683] = {
@@ -8192,7 +8192,7 @@
         ["exp"] = 825,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "韧性等级_紫_3级",
+        ["name"] = "Resilience_level_紫_3level",
         ["tbxid"] = 90804003
     },
     [684] = {
@@ -8204,7 +8204,7 @@
         ["exp"] = 1725,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "韧性等级_紫_4级",
+        ["name"] = "Resilience_level_紫_4level",
         ["tbxid"] = 90804004
     },
     [685] = {
@@ -8216,7 +8216,7 @@
         ["exp"] = 3225,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "韧性等级_紫_5级",
+        ["name"] = "Resilience_level_紫_5level",
         ["tbxid"] = 90804005
     },
     [686] = {
@@ -8228,7 +8228,7 @@
         ["exp"] = 5475,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "韧性等级_紫_6级",
+        ["name"] = "Resilience_level_紫_6level",
         ["tbxid"] = 90804006
     },
     [687] = {
@@ -8240,7 +8240,7 @@
         ["exp"] = 8475,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "韧性等级_紫_7级",
+        ["name"] = "Resilience_level_紫_7level",
         ["tbxid"] = 90804007
     },
     [688] = {
@@ -8252,7 +8252,7 @@
         ["exp"] = 13050,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "韧性等级_紫_8级",
+        ["name"] = "Resilience_level_紫_8level",
         ["tbxid"] = 90804008
     },
     [689] = {
@@ -8264,7 +8264,7 @@
         ["exp"] = 20250,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "韧性等级_紫_9级",
+        ["name"] = "Resilience_level_紫_9level",
         ["tbxid"] = 90804009
     },
     [690] = {
@@ -8276,7 +8276,7 @@
         ["exp"] = 40425,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "韧性等级_紫_10级",
+        ["name"] = "Resilience_level_紫_10level",
         ["tbxid"] = 90804010
     },
     [691] = {
@@ -8288,7 +8288,7 @@
         ["exp"] = 67350,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "韧性等级_紫_11级",
+        ["name"] = "Resilience_level_紫_11level",
         ["tbxid"] = 90804011
     },
     [692] = {
@@ -8300,7 +8300,7 @@
         ["exp"] = 134700,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "韧性等级_紫_12级",
+        ["name"] = "Resilience_level_紫_12level",
         ["tbxid"] = 90804012
     },
     [693] = {
@@ -8312,7 +8312,7 @@
         ["exp"] = 269400,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "韧性等级_紫_13级",
+        ["name"] = "Resilience_level_紫_13level",
         ["tbxid"] = 90804013
     },
     [694] = {
@@ -8324,7 +8324,7 @@
         ["exp"] = 404025,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "韧性等级_紫_14级",
+        ["name"] = "Resilience_level_紫_14level",
         ["tbxid"] = 90804014
     },
     [695] = {
@@ -8336,7 +8336,7 @@
         ["exp"] = 538725,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "韧性等级_紫_15级",
+        ["name"] = "Resilience_level_紫_15level",
         ["tbxid"] = 90804015
     },
     [696] = {
@@ -8348,7 +8348,7 @@
         ["exp"] = 673350,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "韧性等级_紫_16级",
+        ["name"] = "Resilience_level_紫_16level",
         ["tbxid"] = 90804016
     },
     [697] = {
@@ -8360,7 +8360,7 @@
         ["exp"] = 808050,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "韧性等级_紫_17级",
+        ["name"] = "Resilience_level_紫_17level",
         ["tbxid"] = 90804017
     },
     [698] = {
@@ -8372,7 +8372,7 @@
         ["exp"] = 942675,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "韧性等级_紫_18级",
+        ["name"] = "Resilience_level_紫_18level",
         ["tbxid"] = 90804018
     },
     [699] = {
@@ -8384,7 +8384,7 @@
         ["exp"] = 1144650,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "韧性等级_紫_19级",
+        ["name"] = "Resilience_level_紫_19level",
         ["tbxid"] = 90804019
     },
     [700] = {
@@ -8396,7 +8396,7 @@
         ["exp"] = 1346700,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "韧性等级_紫_20级",
+        ["name"] = "Resilience_level_紫_20level",
         ["tbxid"] = 90804020
     },
     [701] = {
@@ -8408,7 +8408,7 @@
         ["exp"] = 0,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "穿透等级_紫_1级",
+        ["name"] = "Penetration_level_紫_1level",
         ["tbxid"] = 90904001
     },
     [702] = {
@@ -8420,7 +8420,7 @@
         ["exp"] = 375,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "穿透等级_紫_2级",
+        ["name"] = "Penetration_level_紫_2level",
         ["tbxid"] = 90904002
     },
     [703] = {
@@ -8432,7 +8432,7 @@
         ["exp"] = 825,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "穿透等级_紫_3级",
+        ["name"] = "Penetration_level_紫_3level",
         ["tbxid"] = 90904003
     },
     [704] = {
@@ -8444,7 +8444,7 @@
         ["exp"] = 1725,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "穿透等级_紫_4级",
+        ["name"] = "Penetration_level_紫_4level",
         ["tbxid"] = 90904004
     },
     [705] = {
@@ -8456,7 +8456,7 @@
         ["exp"] = 3225,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "穿透等级_紫_5级",
+        ["name"] = "Penetration_level_紫_5level",
         ["tbxid"] = 90904005
     },
     [706] = {
@@ -8468,7 +8468,7 @@
         ["exp"] = 5475,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "穿透等级_紫_6级",
+        ["name"] = "Penetration_level_紫_6level",
         ["tbxid"] = 90904006
     },
     [707] = {
@@ -8480,7 +8480,7 @@
         ["exp"] = 8475,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "穿透等级_紫_7级",
+        ["name"] = "Penetration_level_紫_7level",
         ["tbxid"] = 90904007
     },
     [708] = {
@@ -8492,7 +8492,7 @@
         ["exp"] = 13050,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "穿透等级_紫_8级",
+        ["name"] = "Penetration_level_紫_8level",
         ["tbxid"] = 90904008
     },
     [709] = {
@@ -8504,7 +8504,7 @@
         ["exp"] = 20250,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "穿透等级_紫_9级",
+        ["name"] = "Penetration_level_紫_9level",
         ["tbxid"] = 90904009
     },
     [710] = {
@@ -8516,7 +8516,7 @@
         ["exp"] = 40425,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "穿透等级_紫_10级",
+        ["name"] = "Penetration_level_紫_10level",
         ["tbxid"] = 90904010
     },
     [711] = {
@@ -8528,7 +8528,7 @@
         ["exp"] = 67350,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "穿透等级_紫_11级",
+        ["name"] = "Penetration_level_紫_11level",
         ["tbxid"] = 90904011
     },
     [712] = {
@@ -8540,7 +8540,7 @@
         ["exp"] = 134700,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "穿透等级_紫_12级",
+        ["name"] = "Penetration_level_紫_12level",
         ["tbxid"] = 90904012
     },
     [713] = {
@@ -8552,7 +8552,7 @@
         ["exp"] = 269400,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "穿透等级_紫_13级",
+        ["name"] = "Penetration_level_紫_13level",
         ["tbxid"] = 90904013
     },
     [714] = {
@@ -8564,7 +8564,7 @@
         ["exp"] = 404025,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "穿透等级_紫_14级",
+        ["name"] = "Penetration_level_紫_14level",
         ["tbxid"] = 90904014
     },
     [715] = {
@@ -8576,7 +8576,7 @@
         ["exp"] = 538725,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "穿透等级_紫_15级",
+        ["name"] = "Penetration_level_紫_15level",
         ["tbxid"] = 90904015
     },
     [716] = {
@@ -8588,7 +8588,7 @@
         ["exp"] = 673350,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "穿透等级_紫_16级",
+        ["name"] = "Penetration_level_紫_16level",
         ["tbxid"] = 90904016
     },
     [717] = {
@@ -8600,7 +8600,7 @@
         ["exp"] = 808050,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "穿透等级_紫_17级",
+        ["name"] = "Penetration_level_紫_17level",
         ["tbxid"] = 90904017
     },
     [718] = {
@@ -8612,7 +8612,7 @@
         ["exp"] = 942675,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "穿透等级_紫_18级",
+        ["name"] = "Penetration_level_紫_18level",
         ["tbxid"] = 90904018
     },
     [719] = {
@@ -8624,7 +8624,7 @@
         ["exp"] = 1144650,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "穿透等级_紫_19级",
+        ["name"] = "Penetration_level_紫_19level",
         ["tbxid"] = 90904019
     },
     [720] = {
@@ -8636,7 +8636,7 @@
         ["exp"] = 1346700,
         ["type"] = 4,
         ["quality"] = 4,
-        ["name"] = "穿透等级_紫_20级",
+        ["name"] = "Penetration_level_紫_20level",
         ["tbxid"] = 90904020
     },
     [721] = {
@@ -8648,7 +8648,7 @@
         ["exp"] = 0,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "生命上限_紫+1_1级",
+        ["name"] = "生命上限_紫+1_1level",
         ["tbxid"] = 90105001
     },
     [722] = {
@@ -8660,7 +8660,7 @@
         ["exp"] = 375,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "生命上限_紫+1_2级",
+        ["name"] = "生命上限_紫+1_2level",
         ["tbxid"] = 90105002
     },
     [723] = {
@@ -8672,7 +8672,7 @@
         ["exp"] = 825,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "生命上限_紫+1_3级",
+        ["name"] = "生命上限_紫+1_3level",
         ["tbxid"] = 90105003
     },
     [724] = {
@@ -8684,7 +8684,7 @@
         ["exp"] = 1725,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "生命上限_紫+1_4级",
+        ["name"] = "生命上限_紫+1_4level",
         ["tbxid"] = 90105004
     },
     [725] = {
@@ -8696,7 +8696,7 @@
         ["exp"] = 3225,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "生命上限_紫+1_5级",
+        ["name"] = "生命上限_紫+1_5level",
         ["tbxid"] = 90105005
     },
     [726] = {
@@ -8708,7 +8708,7 @@
         ["exp"] = 5475,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "生命上限_紫+1_6级",
+        ["name"] = "生命上限_紫+1_6level",
         ["tbxid"] = 90105006
     },
     [727] = {
@@ -8720,7 +8720,7 @@
         ["exp"] = 8475,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "生命上限_紫+1_7级",
+        ["name"] = "生命上限_紫+1_7level",
         ["tbxid"] = 90105007
     },
     [728] = {
@@ -8732,7 +8732,7 @@
         ["exp"] = 13050,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "生命上限_紫+1_8级",
+        ["name"] = "生命上限_紫+1_8level",
         ["tbxid"] = 90105008
     },
     [729] = {
@@ -8744,7 +8744,7 @@
         ["exp"] = 20250,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "生命上限_紫+1_9级",
+        ["name"] = "生命上限_紫+1_9level",
         ["tbxid"] = 90105009
     },
     [730] = {
@@ -8756,7 +8756,7 @@
         ["exp"] = 40425,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "生命上限_紫+1_10级",
+        ["name"] = "生命上限_紫+1_10level",
         ["tbxid"] = 90105010
     },
     [731] = {
@@ -8768,7 +8768,7 @@
         ["exp"] = 67350,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "生命上限_紫+1_11级",
+        ["name"] = "生命上限_紫+1_11level",
         ["tbxid"] = 90105011
     },
     [732] = {
@@ -8780,7 +8780,7 @@
         ["exp"] = 134700,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "生命上限_紫+1_12级",
+        ["name"] = "生命上限_紫+1_12level",
         ["tbxid"] = 90105012
     },
     [733] = {
@@ -8792,7 +8792,7 @@
         ["exp"] = 269400,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "生命上限_紫+1_13级",
+        ["name"] = "生命上限_紫+1_13level",
         ["tbxid"] = 90105013
     },
     [734] = {
@@ -8804,7 +8804,7 @@
         ["exp"] = 404025,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "生命上限_紫+1_14级",
+        ["name"] = "生命上限_紫+1_14level",
         ["tbxid"] = 90105014
     },
     [735] = {
@@ -8816,7 +8816,7 @@
         ["exp"] = 538725,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "生命上限_紫+1_15级",
+        ["name"] = "生命上限_紫+1_15level",
         ["tbxid"] = 90105015
     },
     [736] = {
@@ -8828,7 +8828,7 @@
         ["exp"] = 673350,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "生命上限_紫+1_16级",
+        ["name"] = "生命上限_紫+1_16level",
         ["tbxid"] = 90105016
     },
     [737] = {
@@ -8840,7 +8840,7 @@
         ["exp"] = 808050,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "生命上限_紫+1_17级",
+        ["name"] = "生命上限_紫+1_17level",
         ["tbxid"] = 90105017
     },
     [738] = {
@@ -8852,7 +8852,7 @@
         ["exp"] = 942675,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "生命上限_紫+1_18级",
+        ["name"] = "生命上限_紫+1_18level",
         ["tbxid"] = 90105018
     },
     [739] = {
@@ -8864,7 +8864,7 @@
         ["exp"] = 1144650,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "生命上限_紫+1_19级",
+        ["name"] = "生命上限_紫+1_19level",
         ["tbxid"] = 90105019
     },
     [740] = {
@@ -8876,7 +8876,7 @@
         ["exp"] = 1346700,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "生命上限_紫+1_20级",
+        ["name"] = "生命上限_紫+1_20level",
         ["tbxid"] = 90105020
     },
     [741] = {
@@ -8888,7 +8888,7 @@
         ["exp"] = 0,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "格斗防御_紫+1_1级",
+        ["name"] = "Physical_defense_紫+1_1level",
         ["tbxid"] = 90205001
     },
     [742] = {
@@ -8900,7 +8900,7 @@
         ["exp"] = 375,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "格斗防御_紫+1_2级",
+        ["name"] = "Physical_defense_紫+1_2level",
         ["tbxid"] = 90205002
     },
     [743] = {
@@ -8912,7 +8912,7 @@
         ["exp"] = 825,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "格斗防御_紫+1_3级",
+        ["name"] = "Physical_defense_紫+1_3level",
         ["tbxid"] = 90205003
     },
     [744] = {
@@ -8924,7 +8924,7 @@
         ["exp"] = 1725,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "格斗防御_紫+1_4级",
+        ["name"] = "Physical_defense_紫+1_4level",
         ["tbxid"] = 90205004
     },
     [745] = {
@@ -8936,7 +8936,7 @@
         ["exp"] = 3225,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "格斗防御_紫+1_5级",
+        ["name"] = "Physical_defense_紫+1_5level",
         ["tbxid"] = 90205005
     },
     [746] = {
@@ -8948,7 +8948,7 @@
         ["exp"] = 5475,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "格斗防御_紫+1_6级",
+        ["name"] = "Physical_defense_紫+1_6level",
         ["tbxid"] = 90205006
     },
     [747] = {
@@ -8960,7 +8960,7 @@
         ["exp"] = 8475,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "格斗防御_紫+1_7级",
+        ["name"] = "Physical_defense_紫+1_7level",
         ["tbxid"] = 90205007
     },
     [748] = {
@@ -8972,7 +8972,7 @@
         ["exp"] = 13050,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "格斗防御_紫+1_8级",
+        ["name"] = "Physical_defense_紫+1_8level",
         ["tbxid"] = 90205008
     },
     [749] = {
@@ -8984,7 +8984,7 @@
         ["exp"] = 20250,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "格斗防御_紫+1_9级",
+        ["name"] = "Physical_defense_紫+1_9level",
         ["tbxid"] = 90205009
     },
     [750] = {
@@ -8996,7 +8996,7 @@
         ["exp"] = 40425,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "格斗防御_紫+1_10级",
+        ["name"] = "Physical_defense_紫+1_10level",
         ["tbxid"] = 90205010
     },
     [751] = {
@@ -9008,7 +9008,7 @@
         ["exp"] = 67350,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "格斗防御_紫+1_11级",
+        ["name"] = "Physical_defense_紫+1_11level",
         ["tbxid"] = 90205011
     },
     [752] = {
@@ -9020,7 +9020,7 @@
         ["exp"] = 134700,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "格斗防御_紫+1_12级",
+        ["name"] = "Physical_defense_紫+1_12level",
         ["tbxid"] = 90205012
     },
     [753] = {
@@ -9032,7 +9032,7 @@
         ["exp"] = 269400,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "格斗防御_紫+1_13级",
+        ["name"] = "Physical_defense_紫+1_13level",
         ["tbxid"] = 90205013
     },
     [754] = {
@@ -9044,7 +9044,7 @@
         ["exp"] = 404025,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "格斗防御_紫+1_14级",
+        ["name"] = "Physical_defense_紫+1_14level",
         ["tbxid"] = 90205014
     },
     [755] = {
@@ -9056,7 +9056,7 @@
         ["exp"] = 538725,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "格斗防御_紫+1_15级",
+        ["name"] = "Physical_defense_紫+1_15level",
         ["tbxid"] = 90205015
     },
     [756] = {
@@ -9068,7 +9068,7 @@
         ["exp"] = 673350,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "格斗防御_紫+1_16级",
+        ["name"] = "Physical_defense_紫+1_16level",
         ["tbxid"] = 90205016
     },
     [757] = {
@@ -9080,7 +9080,7 @@
         ["exp"] = 808050,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "格斗防御_紫+1_17级",
+        ["name"] = "Physical_defense_紫+1_17level",
         ["tbxid"] = 90205017
     },
     [758] = {
@@ -9092,7 +9092,7 @@
         ["exp"] = 942675,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "格斗防御_紫+1_18级",
+        ["name"] = "Physical_defense_紫+1_18level",
         ["tbxid"] = 90205018
     },
     [759] = {
@@ -9104,7 +9104,7 @@
         ["exp"] = 1144650,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "格斗防御_紫+1_19级",
+        ["name"] = "Physical_defense_紫+1_19level",
         ["tbxid"] = 90205019
     },
     [760] = {
@@ -9116,7 +9116,7 @@
         ["exp"] = 1346700,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "格斗防御_紫+1_20级",
+        ["name"] = "Physical_defense_紫+1_20level",
         ["tbxid"] = 90205020
     },
     [761] = {
@@ -9128,7 +9128,7 @@
         ["exp"] = 0,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "气功防御_紫+1_1级",
+        ["name"] = "Energy_defense_紫+1_1level",
         ["tbxid"] = 90305001
     },
     [762] = {
@@ -9140,7 +9140,7 @@
         ["exp"] = 375,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "气功防御_紫+1_2级",
+        ["name"] = "Energy_defense_紫+1_2level",
         ["tbxid"] = 90305002
     },
     [763] = {
@@ -9152,7 +9152,7 @@
         ["exp"] = 825,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "气功防御_紫+1_3级",
+        ["name"] = "Energy_defense_紫+1_3level",
         ["tbxid"] = 90305003
     },
     [764] = {
@@ -9164,7 +9164,7 @@
         ["exp"] = 1725,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "气功防御_紫+1_4级",
+        ["name"] = "Energy_defense_紫+1_4level",
         ["tbxid"] = 90305004
     },
     [765] = {
@@ -9176,7 +9176,7 @@
         ["exp"] = 3225,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "气功防御_紫+1_5级",
+        ["name"] = "Energy_defense_紫+1_5level",
         ["tbxid"] = 90305005
     },
     [766] = {
@@ -9188,7 +9188,7 @@
         ["exp"] = 5475,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "气功防御_紫+1_6级",
+        ["name"] = "Energy_defense_紫+1_6level",
         ["tbxid"] = 90305006
     },
     [767] = {
@@ -9200,7 +9200,7 @@
         ["exp"] = 8475,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "气功防御_紫+1_7级",
+        ["name"] = "Energy_defense_紫+1_7level",
         ["tbxid"] = 90305007
     },
     [768] = {
@@ -9212,7 +9212,7 @@
         ["exp"] = 13050,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "气功防御_紫+1_8级",
+        ["name"] = "Energy_defense_紫+1_8level",
         ["tbxid"] = 90305008
     },
     [769] = {
@@ -9224,7 +9224,7 @@
         ["exp"] = 20250,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "气功防御_紫+1_9级",
+        ["name"] = "Energy_defense_紫+1_9level",
         ["tbxid"] = 90305009
     },
     [770] = {
@@ -9236,7 +9236,7 @@
         ["exp"] = 40425,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "气功防御_紫+1_10级",
+        ["name"] = "Energy_defense_紫+1_10level",
         ["tbxid"] = 90305010
     },
     [771] = {
@@ -9248,7 +9248,7 @@
         ["exp"] = 67350,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "气功防御_紫+1_11级",
+        ["name"] = "Energy_defense_紫+1_11level",
         ["tbxid"] = 90305011
     },
     [772] = {
@@ -9260,7 +9260,7 @@
         ["exp"] = 134700,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "气功防御_紫+1_12级",
+        ["name"] = "Energy_defense_紫+1_12level",
         ["tbxid"] = 90305012
     },
     [773] = {
@@ -9272,7 +9272,7 @@
         ["exp"] = 269400,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "气功防御_紫+1_13级",
+        ["name"] = "Energy_defense_紫+1_13level",
         ["tbxid"] = 90305013
     },
     [774] = {
@@ -9284,7 +9284,7 @@
         ["exp"] = 404025,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "气功防御_紫+1_14级",
+        ["name"] = "Energy_defense_紫+1_14level",
         ["tbxid"] = 90305014
     },
     [775] = {
@@ -9296,7 +9296,7 @@
         ["exp"] = 538725,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "气功防御_紫+1_15级",
+        ["name"] = "Energy_defense_紫+1_15level",
         ["tbxid"] = 90305015
     },
     [776] = {
@@ -9308,7 +9308,7 @@
         ["exp"] = 673350,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "气功防御_紫+1_16级",
+        ["name"] = "Energy_defense_紫+1_16level",
         ["tbxid"] = 90305016
     },
     [777] = {
@@ -9320,7 +9320,7 @@
         ["exp"] = 808050,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "气功防御_紫+1_17级",
+        ["name"] = "Energy_defense_紫+1_17level",
         ["tbxid"] = 90305017
     },
     [778] = {
@@ -9332,7 +9332,7 @@
         ["exp"] = 942675,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "气功防御_紫+1_18级",
+        ["name"] = "Energy_defense_紫+1_18level",
         ["tbxid"] = 90305018
     },
     [779] = {
@@ -9344,7 +9344,7 @@
         ["exp"] = 1144650,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "气功防御_紫+1_19级",
+        ["name"] = "Energy_defense_紫+1_19level",
         ["tbxid"] = 90305019
     },
     [780] = {
@@ -9356,7 +9356,7 @@
         ["exp"] = 1346700,
         ["type"] = 1,
         ["quality"] = 5,
-        ["name"] = "气功防御_紫+1_20级",
+        ["name"] = "Energy_defense_紫+1_20level",
         ["tbxid"] = 90305020
     },
     [781] = {
@@ -9368,7 +9368,7 @@
         ["exp"] = 0,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "格斗攻击_紫+1_1级",
+        ["name"] = "Physical_attack_紫+1_1level",
         ["tbxid"] = 90405001
     },
     [782] = {
@@ -9380,7 +9380,7 @@
         ["exp"] = 375,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "格斗攻击_紫+1_2级",
+        ["name"] = "Physical_attack_紫+1_2level",
         ["tbxid"] = 90405002
     },
     [783] = {
@@ -9392,7 +9392,7 @@
         ["exp"] = 825,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "格斗攻击_紫+1_3级",
+        ["name"] = "Physical_attack_紫+1_3level",
         ["tbxid"] = 90405003
     },
     [784] = {
@@ -9404,7 +9404,7 @@
         ["exp"] = 1725,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "格斗攻击_紫+1_4级",
+        ["name"] = "Physical_attack_紫+1_4level",
         ["tbxid"] = 90405004
     },
     [785] = {
@@ -9416,7 +9416,7 @@
         ["exp"] = 3225,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "格斗攻击_紫+1_5级",
+        ["name"] = "Physical_attack_紫+1_5level",
         ["tbxid"] = 90405005
     },
     [786] = {
@@ -9428,7 +9428,7 @@
         ["exp"] = 5475,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "格斗攻击_紫+1_6级",
+        ["name"] = "Physical_attack_紫+1_6level",
         ["tbxid"] = 90405006
     },
     [787] = {
@@ -9440,7 +9440,7 @@
         ["exp"] = 8475,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "格斗攻击_紫+1_7级",
+        ["name"] = "Physical_attack_紫+1_7level",
         ["tbxid"] = 90405007
     },
     [788] = {
@@ -9452,7 +9452,7 @@
         ["exp"] = 13050,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "格斗攻击_紫+1_8级",
+        ["name"] = "Physical_attack_紫+1_8level",
         ["tbxid"] = 90405008
     },
     [789] = {
@@ -9464,7 +9464,7 @@
         ["exp"] = 20250,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "格斗攻击_紫+1_9级",
+        ["name"] = "Physical_attack_紫+1_9level",
         ["tbxid"] = 90405009
     },
     [790] = {
@@ -9476,7 +9476,7 @@
         ["exp"] = 40425,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "格斗攻击_紫+1_10级",
+        ["name"] = "Physical_attack_紫+1_10level",
         ["tbxid"] = 90405010
     },
     [791] = {
@@ -9488,7 +9488,7 @@
         ["exp"] = 67350,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "格斗攻击_紫+1_11级",
+        ["name"] = "Physical_attack_紫+1_11level",
         ["tbxid"] = 90405011
     },
     [792] = {
@@ -9500,7 +9500,7 @@
         ["exp"] = 134700,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "格斗攻击_紫+1_12级",
+        ["name"] = "Physical_attack_紫+1_12level",
         ["tbxid"] = 90405012
     },
     [793] = {
@@ -9512,7 +9512,7 @@
         ["exp"] = 269400,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "格斗攻击_紫+1_13级",
+        ["name"] = "Physical_attack_紫+1_13level",
         ["tbxid"] = 90405013
     },
     [794] = {
@@ -9524,7 +9524,7 @@
         ["exp"] = 404025,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "格斗攻击_紫+1_14级",
+        ["name"] = "Physical_attack_紫+1_14level",
         ["tbxid"] = 90405014
     },
     [795] = {
@@ -9536,7 +9536,7 @@
         ["exp"] = 538725,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "格斗攻击_紫+1_15级",
+        ["name"] = "Physical_attack_紫+1_15level",
         ["tbxid"] = 90405015
     },
     [796] = {
@@ -9548,7 +9548,7 @@
         ["exp"] = 673350,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "格斗攻击_紫+1_16级",
+        ["name"] = "Physical_attack_紫+1_16level",
         ["tbxid"] = 90405016
     },
     [797] = {
@@ -9560,7 +9560,7 @@
         ["exp"] = 808050,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "格斗攻击_紫+1_17级",
+        ["name"] = "Physical_attack_紫+1_17level",
         ["tbxid"] = 90405017
     },
     [798] = {
@@ -9572,7 +9572,7 @@
         ["exp"] = 942675,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "格斗攻击_紫+1_18级",
+        ["name"] = "Physical_attack_紫+1_18level",
         ["tbxid"] = 90405018
     },
     [799] = {
@@ -9584,7 +9584,7 @@
         ["exp"] = 1144650,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "格斗攻击_紫+1_19级",
+        ["name"] = "Physical_attack_紫+1_19level",
         ["tbxid"] = 90405019
     },
     [800] = {
@@ -9596,7 +9596,7 @@
         ["exp"] = 1346700,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "格斗攻击_紫+1_20级",
+        ["name"] = "Physical_attack_紫+1_20level",
         ["tbxid"] = 90405020
     },
     [801] = {
@@ -9608,7 +9608,7 @@
         ["exp"] = 0,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "气功攻击_紫+1_1级",
+        ["name"] = "Energy_attack_紫+1_1level",
         ["tbxid"] = 90505001
     },
     [802] = {
@@ -9620,7 +9620,7 @@
         ["exp"] = 375,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "气功攻击_紫+1_2级",
+        ["name"] = "Energy_attack_紫+1_2level",
         ["tbxid"] = 90505002
     },
     [803] = {
@@ -9632,7 +9632,7 @@
         ["exp"] = 825,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "气功攻击_紫+1_3级",
+        ["name"] = "Energy_attack_紫+1_3level",
         ["tbxid"] = 90505003
     },
     [804] = {
@@ -9644,7 +9644,7 @@
         ["exp"] = 1725,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "气功攻击_紫+1_4级",
+        ["name"] = "Energy_attack_紫+1_4level",
         ["tbxid"] = 90505004
     },
     [805] = {
@@ -9656,7 +9656,7 @@
         ["exp"] = 3225,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "气功攻击_紫+1_5级",
+        ["name"] = "Energy_attack_紫+1_5level",
         ["tbxid"] = 90505005
     },
     [806] = {
@@ -9668,7 +9668,7 @@
         ["exp"] = 5475,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "气功攻击_紫+1_6级",
+        ["name"] = "Energy_attack_紫+1_6level",
         ["tbxid"] = 90505006
     },
     [807] = {
@@ -9680,7 +9680,7 @@
         ["exp"] = 8475,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "气功攻击_紫+1_7级",
+        ["name"] = "Energy_attack_紫+1_7level",
         ["tbxid"] = 90505007
     },
     [808] = {
@@ -9692,7 +9692,7 @@
         ["exp"] = 13050,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "气功攻击_紫+1_8级",
+        ["name"] = "Energy_attack_紫+1_8level",
         ["tbxid"] = 90505008
     },
     [809] = {
@@ -9704,7 +9704,7 @@
         ["exp"] = 20250,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "气功攻击_紫+1_9级",
+        ["name"] = "Energy_attack_紫+1_9level",
         ["tbxid"] = 90505009
     },
     [810] = {
@@ -9716,7 +9716,7 @@
         ["exp"] = 40425,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "气功攻击_紫+1_10级",
+        ["name"] = "Energy_attack_紫+1_10level",
         ["tbxid"] = 90505010
     },
     [811] = {
@@ -9728,7 +9728,7 @@
         ["exp"] = 67350,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "气功攻击_紫+1_11级",
+        ["name"] = "Energy_attack_紫+1_11level",
         ["tbxid"] = 90505011
     },
     [812] = {
@@ -9740,7 +9740,7 @@
         ["exp"] = 134700,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "气功攻击_紫+1_12级",
+        ["name"] = "Energy_attack_紫+1_12level",
         ["tbxid"] = 90505012
     },
     [813] = {
@@ -9752,7 +9752,7 @@
         ["exp"] = 269400,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "气功攻击_紫+1_13级",
+        ["name"] = "Energy_attack_紫+1_13level",
         ["tbxid"] = 90505013
     },
     [814] = {
@@ -9764,7 +9764,7 @@
         ["exp"] = 404025,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "气功攻击_紫+1_14级",
+        ["name"] = "Energy_attack_紫+1_14level",
         ["tbxid"] = 90505014
     },
     [815] = {
@@ -9776,7 +9776,7 @@
         ["exp"] = 538725,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "气功攻击_紫+1_15级",
+        ["name"] = "Energy_attack_紫+1_15level",
         ["tbxid"] = 90505015
     },
     [816] = {
@@ -9788,7 +9788,7 @@
         ["exp"] = 673350,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "气功攻击_紫+1_16级",
+        ["name"] = "Energy_attack_紫+1_16level",
         ["tbxid"] = 90505016
     },
     [817] = {
@@ -9800,7 +9800,7 @@
         ["exp"] = 808050,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "气功攻击_紫+1_17级",
+        ["name"] = "Energy_attack_紫+1_17level",
         ["tbxid"] = 90505017
     },
     [818] = {
@@ -9812,7 +9812,7 @@
         ["exp"] = 942675,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "气功攻击_紫+1_18级",
+        ["name"] = "Energy_attack_紫+1_18level",
         ["tbxid"] = 90505018
     },
     [819] = {
@@ -9824,7 +9824,7 @@
         ["exp"] = 1144650,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "气功攻击_紫+1_19级",
+        ["name"] = "Energy_attack_紫+1_19level",
         ["tbxid"] = 90505019
     },
     [820] = {
@@ -9836,7 +9836,7 @@
         ["exp"] = 1346700,
         ["type"] = 2,
         ["quality"] = 5,
-        ["name"] = "气功攻击_紫+1_20级",
+        ["name"] = "Energy_attack_紫+1_20level",
         ["tbxid"] = 90505020
     },
     [821] = {
@@ -9848,7 +9848,7 @@
         ["exp"] = 0,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "暴击等级_紫+1_1级",
+        ["name"] = "Critical_rate_紫+1_1level",
         ["tbxid"] = 90605001
     },
     [822] = {
@@ -9860,7 +9860,7 @@
         ["exp"] = 375,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "暴击等级_紫+1_2级",
+        ["name"] = "Critical_rate_紫+1_2level",
         ["tbxid"] = 90605002
     },
     [823] = {
@@ -9872,7 +9872,7 @@
         ["exp"] = 825,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "暴击等级_紫+1_3级",
+        ["name"] = "Critical_rate_紫+1_3level",
         ["tbxid"] = 90605003
     },
     [824] = {
@@ -9884,7 +9884,7 @@
         ["exp"] = 1725,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "暴击等级_紫+1_4级",
+        ["name"] = "Critical_rate_紫+1_4level",
         ["tbxid"] = 90605004
     },
     [825] = {
@@ -9896,7 +9896,7 @@
         ["exp"] = 3225,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "暴击等级_紫+1_5级",
+        ["name"] = "Critical_rate_紫+1_5level",
         ["tbxid"] = 90605005
     },
     [826] = {
@@ -9908,7 +9908,7 @@
         ["exp"] = 5475,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "暴击等级_紫+1_6级",
+        ["name"] = "Critical_rate_紫+1_6level",
         ["tbxid"] = 90605006
     },
     [827] = {
@@ -9920,7 +9920,7 @@
         ["exp"] = 8475,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "暴击等级_紫+1_7级",
+        ["name"] = "Critical_rate_紫+1_7level",
         ["tbxid"] = 90605007
     },
     [828] = {
@@ -9932,7 +9932,7 @@
         ["exp"] = 13050,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "暴击等级_紫+1_8级",
+        ["name"] = "Critical_rate_紫+1_8level",
         ["tbxid"] = 90605008
     },
     [829] = {
@@ -9944,7 +9944,7 @@
         ["exp"] = 20250,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "暴击等级_紫+1_9级",
+        ["name"] = "Critical_rate_紫+1_9level",
         ["tbxid"] = 90605009
     },
     [830] = {
@@ -9956,7 +9956,7 @@
         ["exp"] = 40425,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "暴击等级_紫+1_10级",
+        ["name"] = "Critical_rate_紫+1_10level",
         ["tbxid"] = 90605010
     },
     [831] = {
@@ -9968,7 +9968,7 @@
         ["exp"] = 67350,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "暴击等级_紫+1_11级",
+        ["name"] = "Critical_rate_紫+1_11level",
         ["tbxid"] = 90605011
     },
     [832] = {
@@ -9980,7 +9980,7 @@
         ["exp"] = 134700,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "暴击等级_紫+1_12级",
+        ["name"] = "Critical_rate_紫+1_12level",
         ["tbxid"] = 90605012
     },
     [833] = {
@@ -9992,7 +9992,7 @@
         ["exp"] = 269400,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "暴击等级_紫+1_13级",
+        ["name"] = "Critical_rate_紫+1_13level",
         ["tbxid"] = 90605013
     },
     [834] = {
@@ -10004,7 +10004,7 @@
         ["exp"] = 404025,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "暴击等级_紫+1_14级",
+        ["name"] = "Critical_rate_紫+1_14level",
         ["tbxid"] = 90605014
     },
     [835] = {
@@ -10016,7 +10016,7 @@
         ["exp"] = 538725,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "暴击等级_紫+1_15级",
+        ["name"] = "Critical_rate_紫+1_15level",
         ["tbxid"] = 90605015
     },
     [836] = {
@@ -10028,7 +10028,7 @@
         ["exp"] = 673350,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "暴击等级_紫+1_16级",
+        ["name"] = "Critical_rate_紫+1_16level",
         ["tbxid"] = 90605016
     },
     [837] = {
@@ -10040,7 +10040,7 @@
         ["exp"] = 808050,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "暴击等级_紫+1_17级",
+        ["name"] = "Critical_rate_紫+1_17level",
         ["tbxid"] = 90605017
     },
     [838] = {
@@ -10052,7 +10052,7 @@
         ["exp"] = 942675,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "暴击等级_紫+1_18级",
+        ["name"] = "Critical_rate_紫+1_18level",
         ["tbxid"] = 90605018
     },
     [839] = {
@@ -10064,7 +10064,7 @@
         ["exp"] = 1144650,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "暴击等级_紫+1_19级",
+        ["name"] = "Critical_rate_紫+1_19level",
         ["tbxid"] = 90605019
     },
     [840] = {
@@ -10076,7 +10076,7 @@
         ["exp"] = 1346700,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "暴击等级_紫+1_20级",
+        ["name"] = "Critical_rate_紫+1_20level",
         ["tbxid"] = 90605020
     },
     [841] = {
@@ -10088,7 +10088,7 @@
         ["exp"] = 0,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "格挡等级_紫+1_1级",
+        ["name"] = "Block_level_紫+1_1level",
         ["tbxid"] = 90705001
     },
     [842] = {
@@ -10100,7 +10100,7 @@
         ["exp"] = 375,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "格挡等级_紫+1_2级",
+        ["name"] = "Block_level_紫+1_2level",
         ["tbxid"] = 90705002
     },
     [843] = {
@@ -10112,7 +10112,7 @@
         ["exp"] = 825,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "格挡等级_紫+1_3级",
+        ["name"] = "Block_level_紫+1_3level",
         ["tbxid"] = 90705003
     },
     [844] = {
@@ -10124,7 +10124,7 @@
         ["exp"] = 1725,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "格挡等级_紫+1_4级",
+        ["name"] = "Block_level_紫+1_4level",
         ["tbxid"] = 90705004
     },
     [845] = {
@@ -10136,7 +10136,7 @@
         ["exp"] = 3225,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "格挡等级_紫+1_5级",
+        ["name"] = "Block_level_紫+1_5level",
         ["tbxid"] = 90705005
     },
     [846] = {
@@ -10148,7 +10148,7 @@
         ["exp"] = 5475,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "格挡等级_紫+1_6级",
+        ["name"] = "Block_level_紫+1_6level",
         ["tbxid"] = 90705006
     },
     [847] = {
@@ -10160,7 +10160,7 @@
         ["exp"] = 8475,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "格挡等级_紫+1_7级",
+        ["name"] = "Block_level_紫+1_7level",
         ["tbxid"] = 90705007
     },
     [848] = {
@@ -10172,7 +10172,7 @@
         ["exp"] = 13050,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "格挡等级_紫+1_8级",
+        ["name"] = "Block_level_紫+1_8level",
         ["tbxid"] = 90705008
     },
     [849] = {
@@ -10184,7 +10184,7 @@
         ["exp"] = 20250,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "格挡等级_紫+1_9级",
+        ["name"] = "Block_level_紫+1_9level",
         ["tbxid"] = 90705009
     },
     [850] = {
@@ -10196,7 +10196,7 @@
         ["exp"] = 40425,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "格挡等级_紫+1_10级",
+        ["name"] = "Block_level_紫+1_10level",
         ["tbxid"] = 90705010
     },
     [851] = {
@@ -10208,7 +10208,7 @@
         ["exp"] = 67350,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "格挡等级_紫+1_11级",
+        ["name"] = "Block_level_紫+1_11level",
         ["tbxid"] = 90705011
     },
     [852] = {
@@ -10220,7 +10220,7 @@
         ["exp"] = 134700,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "格挡等级_紫+1_12级",
+        ["name"] = "Block_level_紫+1_12level",
         ["tbxid"] = 90705012
     },
     [853] = {
@@ -10232,7 +10232,7 @@
         ["exp"] = 269400,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "格挡等级_紫+1_13级",
+        ["name"] = "Block_level_紫+1_13level",
         ["tbxid"] = 90705013
     },
     [854] = {
@@ -10244,7 +10244,7 @@
         ["exp"] = 404025,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "格挡等级_紫+1_14级",
+        ["name"] = "Block_level_紫+1_14level",
         ["tbxid"] = 90705014
     },
     [855] = {
@@ -10256,7 +10256,7 @@
         ["exp"] = 538725,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "格挡等级_紫+1_15级",
+        ["name"] = "Block_level_紫+1_15level",
         ["tbxid"] = 90705015
     },
     [856] = {
@@ -10268,7 +10268,7 @@
         ["exp"] = 673350,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "格挡等级_紫+1_16级",
+        ["name"] = "Block_level_紫+1_16level",
         ["tbxid"] = 90705016
     },
     [857] = {
@@ -10280,7 +10280,7 @@
         ["exp"] = 808050,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "格挡等级_紫+1_17级",
+        ["name"] = "Block_level_紫+1_17level",
         ["tbxid"] = 90705017
     },
     [858] = {
@@ -10292,7 +10292,7 @@
         ["exp"] = 942675,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "格挡等级_紫+1_18级",
+        ["name"] = "Block_level_紫+1_18level",
         ["tbxid"] = 90705018
     },
     [859] = {
@@ -10304,7 +10304,7 @@
         ["exp"] = 1144650,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "格挡等级_紫+1_19级",
+        ["name"] = "Block_level_紫+1_19level",
         ["tbxid"] = 90705019
     },
     [860] = {
@@ -10316,7 +10316,7 @@
         ["exp"] = 1346700,
         ["type"] = 3,
         ["quality"] = 5,
-        ["name"] = "格挡等级_紫+1_20级",
+        ["name"] = "Block_level_紫+1_20level",
         ["tbxid"] = 90705020
     },
     [861] = {
@@ -10328,7 +10328,7 @@
         ["exp"] = 0,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "韧性等级_紫+1_1级",
+        ["name"] = "Resilience_level_紫+1_1level",
         ["tbxid"] = 90805001
     },
     [862] = {
@@ -10340,7 +10340,7 @@
         ["exp"] = 375,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "韧性等级_紫+1_2级",
+        ["name"] = "Resilience_level_紫+1_2level",
         ["tbxid"] = 90805002
     },
     [863] = {
@@ -10352,7 +10352,7 @@
         ["exp"] = 825,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "韧性等级_紫+1_3级",
+        ["name"] = "Resilience_level_紫+1_3level",
         ["tbxid"] = 90805003
     },
     [864] = {
@@ -10364,7 +10364,7 @@
         ["exp"] = 1725,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "韧性等级_紫+1_4级",
+        ["name"] = "Resilience_level_紫+1_4level",
         ["tbxid"] = 90805004
     },
     [865] = {
@@ -10376,7 +10376,7 @@
         ["exp"] = 3225,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "韧性等级_紫+1_5级",
+        ["name"] = "Resilience_level_紫+1_5level",
         ["tbxid"] = 90805005
     },
     [866] = {
@@ -10388,7 +10388,7 @@
         ["exp"] = 5475,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "韧性等级_紫+1_6级",
+        ["name"] = "Resilience_level_紫+1_6level",
         ["tbxid"] = 90805006
     },
     [867] = {
@@ -10400,7 +10400,7 @@
         ["exp"] = 8475,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "韧性等级_紫+1_7级",
+        ["name"] = "Resilience_level_紫+1_7level",
         ["tbxid"] = 90805007
     },
     [868] = {
@@ -10412,7 +10412,7 @@
         ["exp"] = 13050,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "韧性等级_紫+1_8级",
+        ["name"] = "Resilience_level_紫+1_8level",
         ["tbxid"] = 90805008
     },
     [869] = {
@@ -10424,7 +10424,7 @@
         ["exp"] = 20250,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "韧性等级_紫+1_9级",
+        ["name"] = "Resilience_level_紫+1_9level",
         ["tbxid"] = 90805009
     },
     [870] = {
@@ -10436,7 +10436,7 @@
         ["exp"] = 40425,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "韧性等级_紫+1_10级",
+        ["name"] = "Resilience_level_紫+1_10level",
         ["tbxid"] = 90805010
     },
     [871] = {
@@ -10448,7 +10448,7 @@
         ["exp"] = 67350,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "韧性等级_紫+1_11级",
+        ["name"] = "Resilience_level_紫+1_11level",
         ["tbxid"] = 90805011
     },
     [872] = {
@@ -10460,7 +10460,7 @@
         ["exp"] = 134700,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "韧性等级_紫+1_12级",
+        ["name"] = "Resilience_level_紫+1_12level",
         ["tbxid"] = 90805012
     },
     [873] = {
@@ -10472,7 +10472,7 @@
         ["exp"] = 269400,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "韧性等级_紫+1_13级",
+        ["name"] = "Resilience_level_紫+1_13level",
         ["tbxid"] = 90805013
     },
     [874] = {
@@ -10484,7 +10484,7 @@
         ["exp"] = 404025,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "韧性等级_紫+1_14级",
+        ["name"] = "Resilience_level_紫+1_14level",
         ["tbxid"] = 90805014
     },
     [875] = {
@@ -10496,7 +10496,7 @@
         ["exp"] = 538725,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "韧性等级_紫+1_15级",
+        ["name"] = "Resilience_level_紫+1_15level",
         ["tbxid"] = 90805015
     },
     [876] = {
@@ -10508,7 +10508,7 @@
         ["exp"] = 673350,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "韧性等级_紫+1_16级",
+        ["name"] = "Resilience_level_紫+1_16level",
         ["tbxid"] = 90805016
     },
     [877] = {
@@ -10520,7 +10520,7 @@
         ["exp"] = 808050,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "韧性等级_紫+1_17级",
+        ["name"] = "Resilience_level_紫+1_17level",
         ["tbxid"] = 90805017
     },
     [878] = {
@@ -10532,7 +10532,7 @@
         ["exp"] = 942675,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "韧性等级_紫+1_18级",
+        ["name"] = "Resilience_level_紫+1_18level",
         ["tbxid"] = 90805018
     },
     [879] = {
@@ -10544,7 +10544,7 @@
         ["exp"] = 1144650,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "韧性等级_紫+1_19级",
+        ["name"] = "Resilience_level_紫+1_19level",
         ["tbxid"] = 90805019
     },
     [880] = {
@@ -10556,7 +10556,7 @@
         ["exp"] = 1346700,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "韧性等级_紫+1_20级",
+        ["name"] = "Resilience_level_紫+1_20level",
         ["tbxid"] = 90805020
     },
     [881] = {
@@ -10568,7 +10568,7 @@
         ["exp"] = 0,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "穿透等级_紫+1_1级",
+        ["name"] = "Penetration_level_紫+1_1level",
         ["tbxid"] = 90905001
     },
     [882] = {
@@ -10580,7 +10580,7 @@
         ["exp"] = 375,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "穿透等级_紫+1_2级",
+        ["name"] = "Penetration_level_紫+1_2level",
         ["tbxid"] = 90905002
     },
     [883] = {
@@ -10592,7 +10592,7 @@
         ["exp"] = 825,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "穿透等级_紫+1_3级",
+        ["name"] = "Penetration_level_紫+1_3level",
         ["tbxid"] = 90905003
     },
     [884] = {
@@ -10604,7 +10604,7 @@
         ["exp"] = 1725,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "穿透等级_紫+1_4级",
+        ["name"] = "Penetration_level_紫+1_4level",
         ["tbxid"] = 90905004
     },
     [885] = {
@@ -10616,7 +10616,7 @@
         ["exp"] = 3225,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "穿透等级_紫+1_5级",
+        ["name"] = "Penetration_level_紫+1_5level",
         ["tbxid"] = 90905005
     },
     [886] = {
@@ -10628,7 +10628,7 @@
         ["exp"] = 5475,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "穿透等级_紫+1_6级",
+        ["name"] = "Penetration_level_紫+1_6level",
         ["tbxid"] = 90905006
     },
     [887] = {
@@ -10640,7 +10640,7 @@
         ["exp"] = 8475,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "穿透等级_紫+1_7级",
+        ["name"] = "Penetration_level_紫+1_7level",
         ["tbxid"] = 90905007
     },
     [888] = {
@@ -10652,7 +10652,7 @@
         ["exp"] = 13050,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "穿透等级_紫+1_8级",
+        ["name"] = "Penetration_level_紫+1_8level",
         ["tbxid"] = 90905008
     },
     [889] = {
@@ -10664,7 +10664,7 @@
         ["exp"] = 20250,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "穿透等级_紫+1_9级",
+        ["name"] = "Penetration_level_紫+1_9level",
         ["tbxid"] = 90905009
     },
     [890] = {
@@ -10676,7 +10676,7 @@
         ["exp"] = 40425,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "穿透等级_紫+1_10级",
+        ["name"] = "Penetration_level_紫+1_10level",
         ["tbxid"] = 90905010
     },
     [891] = {
@@ -10688,7 +10688,7 @@
         ["exp"] = 67350,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "穿透等级_紫+1_11级",
+        ["name"] = "Penetration_level_紫+1_11level",
         ["tbxid"] = 90905011
     },
     [892] = {
@@ -10700,7 +10700,7 @@
         ["exp"] = 134700,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "穿透等级_紫+1_12级",
+        ["name"] = "Penetration_level_紫+1_12level",
         ["tbxid"] = 90905012
     },
     [893] = {
@@ -10712,7 +10712,7 @@
         ["exp"] = 269400,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "穿透等级_紫+1_13级",
+        ["name"] = "Penetration_level_紫+1_13level",
         ["tbxid"] = 90905013
     },
     [894] = {
@@ -10724,7 +10724,7 @@
         ["exp"] = 404025,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "穿透等级_紫+1_14级",
+        ["name"] = "Penetration_level_紫+1_14level",
         ["tbxid"] = 90905014
     },
     [895] = {
@@ -10736,7 +10736,7 @@
         ["exp"] = 538725,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "穿透等级_紫+1_15级",
+        ["name"] = "Penetration_level_紫+1_15level",
         ["tbxid"] = 90905015
     },
     [896] = {
@@ -10748,7 +10748,7 @@
         ["exp"] = 673350,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "穿透等级_紫+1_16级",
+        ["name"] = "Penetration_level_紫+1_16level",
         ["tbxid"] = 90905016
     },
     [897] = {
@@ -10760,7 +10760,7 @@
         ["exp"] = 808050,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "穿透等级_紫+1_17级",
+        ["name"] = "Penetration_level_紫+1_17level",
         ["tbxid"] = 90905017
     },
     [898] = {
@@ -10772,7 +10772,7 @@
         ["exp"] = 942675,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "穿透等级_紫+1_18级",
+        ["name"] = "Penetration_level_紫+1_18level",
         ["tbxid"] = 90905018
     },
     [899] = {
@@ -10784,7 +10784,7 @@
         ["exp"] = 1144650,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "穿透等级_紫+1_19级",
+        ["name"] = "Penetration_level_紫+1_19level",
         ["tbxid"] = 90905019
     },
     [900] = {
@@ -10796,7 +10796,7 @@
         ["exp"] = 1346700,
         ["type"] = 4,
         ["quality"] = 5,
-        ["name"] = "穿透等级_紫+1_20级",
+        ["name"] = "Penetration_level_紫+1_20level",
         ["tbxid"] = 90905020
     },
     [901] = {
@@ -10808,7 +10808,7 @@
         ["exp"] = 0,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "生命上限_紫+2_1级",
+        ["name"] = "生命上限_紫+2_1level",
         ["tbxid"] = 90106001
     },
     [902] = {
@@ -10820,7 +10820,7 @@
         ["exp"] = 375,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "生命上限_紫+2_2级",
+        ["name"] = "生命上限_紫+2_2level",
         ["tbxid"] = 90106002
     },
     [903] = {
@@ -10832,7 +10832,7 @@
         ["exp"] = 825,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "生命上限_紫+2_3级",
+        ["name"] = "生命上限_紫+2_3level",
         ["tbxid"] = 90106003
     },
     [904] = {
@@ -10844,7 +10844,7 @@
         ["exp"] = 1725,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "生命上限_紫+2_4级",
+        ["name"] = "生命上限_紫+2_4level",
         ["tbxid"] = 90106004
     },
     [905] = {
@@ -10856,7 +10856,7 @@
         ["exp"] = 3225,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "生命上限_紫+2_5级",
+        ["name"] = "生命上限_紫+2_5level",
         ["tbxid"] = 90106005
     },
     [906] = {
@@ -10868,7 +10868,7 @@
         ["exp"] = 5475,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "生命上限_紫+2_6级",
+        ["name"] = "生命上限_紫+2_6level",
         ["tbxid"] = 90106006
     },
     [907] = {
@@ -10880,7 +10880,7 @@
         ["exp"] = 8475,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "生命上限_紫+2_7级",
+        ["name"] = "生命上限_紫+2_7level",
         ["tbxid"] = 90106007
     },
     [908] = {
@@ -10892,7 +10892,7 @@
         ["exp"] = 13050,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "生命上限_紫+2_8级",
+        ["name"] = "生命上限_紫+2_8level",
         ["tbxid"] = 90106008
     },
     [909] = {
@@ -10904,7 +10904,7 @@
         ["exp"] = 20250,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "生命上限_紫+2_9级",
+        ["name"] = "生命上限_紫+2_9level",
         ["tbxid"] = 90106009
     },
     [910] = {
@@ -10916,7 +10916,7 @@
         ["exp"] = 40425,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "生命上限_紫+2_10级",
+        ["name"] = "生命上限_紫+2_10level",
         ["tbxid"] = 90106010
     },
     [911] = {
@@ -10928,7 +10928,7 @@
         ["exp"] = 67350,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "生命上限_紫+2_11级",
+        ["name"] = "生命上限_紫+2_11level",
         ["tbxid"] = 90106011
     },
     [912] = {
@@ -10940,7 +10940,7 @@
         ["exp"] = 134700,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "生命上限_紫+2_12级",
+        ["name"] = "生命上限_紫+2_12level",
         ["tbxid"] = 90106012
     },
     [913] = {
@@ -10952,7 +10952,7 @@
         ["exp"] = 269400,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "生命上限_紫+2_13级",
+        ["name"] = "生命上限_紫+2_13level",
         ["tbxid"] = 90106013
     },
     [914] = {
@@ -10964,7 +10964,7 @@
         ["exp"] = 404025,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "生命上限_紫+2_14级",
+        ["name"] = "生命上限_紫+2_14level",
         ["tbxid"] = 90106014
     },
     [915] = {
@@ -10976,7 +10976,7 @@
         ["exp"] = 538725,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "生命上限_紫+2_15级",
+        ["name"] = "生命上限_紫+2_15level",
         ["tbxid"] = 90106015
     },
     [916] = {
@@ -10988,7 +10988,7 @@
         ["exp"] = 673350,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "生命上限_紫+2_16级",
+        ["name"] = "生命上限_紫+2_16level",
         ["tbxid"] = 90106016
     },
     [917] = {
@@ -11000,7 +11000,7 @@
         ["exp"] = 808050,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "生命上限_紫+2_17级",
+        ["name"] = "生命上限_紫+2_17level",
         ["tbxid"] = 90106017
     },
     [918] = {
@@ -11012,7 +11012,7 @@
         ["exp"] = 942675,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "生命上限_紫+2_18级",
+        ["name"] = "生命上限_紫+2_18level",
         ["tbxid"] = 90106018
     },
     [919] = {
@@ -11024,7 +11024,7 @@
         ["exp"] = 1144650,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "生命上限_紫+2_19级",
+        ["name"] = "生命上限_紫+2_19level",
         ["tbxid"] = 90106019
     },
     [920] = {
@@ -11036,7 +11036,7 @@
         ["exp"] = 1346700,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "生命上限_紫+2_20级",
+        ["name"] = "生命上限_紫+2_20level",
         ["tbxid"] = 90106020
     },
     [921] = {
@@ -11048,7 +11048,7 @@
         ["exp"] = 0,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "格斗防御_紫+2_1级",
+        ["name"] = "Physical_defense_紫+2_1level",
         ["tbxid"] = 90206001
     },
     [922] = {
@@ -11060,7 +11060,7 @@
         ["exp"] = 375,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "格斗防御_紫+2_2级",
+        ["name"] = "Physical_defense_紫+2_2level",
         ["tbxid"] = 90206002
     },
     [923] = {
@@ -11072,7 +11072,7 @@
         ["exp"] = 825,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "格斗防御_紫+2_3级",
+        ["name"] = "Physical_defense_紫+2_3level",
         ["tbxid"] = 90206003
     },
     [924] = {
@@ -11084,7 +11084,7 @@
         ["exp"] = 1725,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "格斗防御_紫+2_4级",
+        ["name"] = "Physical_defense_紫+2_4level",
         ["tbxid"] = 90206004
     },
     [925] = {
@@ -11096,7 +11096,7 @@
         ["exp"] = 3225,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "格斗防御_紫+2_5级",
+        ["name"] = "Physical_defense_紫+2_5level",
         ["tbxid"] = 90206005
     },
     [926] = {
@@ -11108,7 +11108,7 @@
         ["exp"] = 5475,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "格斗防御_紫+2_6级",
+        ["name"] = "Physical_defense_紫+2_6level",
         ["tbxid"] = 90206006
     },
     [927] = {
@@ -11120,7 +11120,7 @@
         ["exp"] = 8475,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "格斗防御_紫+2_7级",
+        ["name"] = "Physical_defense_紫+2_7level",
         ["tbxid"] = 90206007
     },
     [928] = {
@@ -11132,7 +11132,7 @@
         ["exp"] = 13050,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "格斗防御_紫+2_8级",
+        ["name"] = "Physical_defense_紫+2_8level",
         ["tbxid"] = 90206008
     },
     [929] = {
@@ -11144,7 +11144,7 @@
         ["exp"] = 20250,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "格斗防御_紫+2_9级",
+        ["name"] = "Physical_defense_紫+2_9level",
         ["tbxid"] = 90206009
     },
     [930] = {
@@ -11156,7 +11156,7 @@
         ["exp"] = 40425,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "格斗防御_紫+2_10级",
+        ["name"] = "Physical_defense_紫+2_10level",
         ["tbxid"] = 90206010
     },
     [931] = {
@@ -11168,7 +11168,7 @@
         ["exp"] = 67350,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "格斗防御_紫+2_11级",
+        ["name"] = "Physical_defense_紫+2_11level",
         ["tbxid"] = 90206011
     },
     [932] = {
@@ -11180,7 +11180,7 @@
         ["exp"] = 134700,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "格斗防御_紫+2_12级",
+        ["name"] = "Physical_defense_紫+2_12level",
         ["tbxid"] = 90206012
     },
     [933] = {
@@ -11192,7 +11192,7 @@
         ["exp"] = 269400,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "格斗防御_紫+2_13级",
+        ["name"] = "Physical_defense_紫+2_13level",
         ["tbxid"] = 90206013
     },
     [934] = {
@@ -11204,7 +11204,7 @@
         ["exp"] = 404025,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "格斗防御_紫+2_14级",
+        ["name"] = "Physical_defense_紫+2_14level",
         ["tbxid"] = 90206014
     },
     [935] = {
@@ -11216,7 +11216,7 @@
         ["exp"] = 538725,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "格斗防御_紫+2_15级",
+        ["name"] = "Physical_defense_紫+2_15level",
         ["tbxid"] = 90206015
     },
     [936] = {
@@ -11228,7 +11228,7 @@
         ["exp"] = 673350,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "格斗防御_紫+2_16级",
+        ["name"] = "Physical_defense_紫+2_16level",
         ["tbxid"] = 90206016
     },
     [937] = {
@@ -11240,7 +11240,7 @@
         ["exp"] = 808050,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "格斗防御_紫+2_17级",
+        ["name"] = "Physical_defense_紫+2_17level",
         ["tbxid"] = 90206017
     },
     [938] = {
@@ -11252,7 +11252,7 @@
         ["exp"] = 942675,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "格斗防御_紫+2_18级",
+        ["name"] = "Physical_defense_紫+2_18level",
         ["tbxid"] = 90206018
     },
     [939] = {
@@ -11264,7 +11264,7 @@
         ["exp"] = 1144650,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "格斗防御_紫+2_19级",
+        ["name"] = "Physical_defense_紫+2_19level",
         ["tbxid"] = 90206019
     },
     [940] = {
@@ -11276,7 +11276,7 @@
         ["exp"] = 1346700,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "格斗防御_紫+2_20级",
+        ["name"] = "Physical_defense_紫+2_20level",
         ["tbxid"] = 90206020
     },
     [941] = {
@@ -11288,7 +11288,7 @@
         ["exp"] = 0,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "气功防御_紫+2_1级",
+        ["name"] = "Energy_defense_紫+2_1level",
         ["tbxid"] = 90306001
     },
     [942] = {
@@ -11300,7 +11300,7 @@
         ["exp"] = 375,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "气功防御_紫+2_2级",
+        ["name"] = "Energy_defense_紫+2_2level",
         ["tbxid"] = 90306002
     },
     [943] = {
@@ -11312,7 +11312,7 @@
         ["exp"] = 825,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "气功防御_紫+2_3级",
+        ["name"] = "Energy_defense_紫+2_3level",
         ["tbxid"] = 90306003
     },
     [944] = {
@@ -11324,7 +11324,7 @@
         ["exp"] = 1725,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "气功防御_紫+2_4级",
+        ["name"] = "Energy_defense_紫+2_4level",
         ["tbxid"] = 90306004
     },
     [945] = {
@@ -11336,7 +11336,7 @@
         ["exp"] = 3225,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "气功防御_紫+2_5级",
+        ["name"] = "Energy_defense_紫+2_5level",
         ["tbxid"] = 90306005
     },
     [946] = {
@@ -11348,7 +11348,7 @@
         ["exp"] = 5475,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "气功防御_紫+2_6级",
+        ["name"] = "Energy_defense_紫+2_6level",
         ["tbxid"] = 90306006
     },
     [947] = {
@@ -11360,7 +11360,7 @@
         ["exp"] = 8475,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "气功防御_紫+2_7级",
+        ["name"] = "Energy_defense_紫+2_7level",
         ["tbxid"] = 90306007
     },
     [948] = {
@@ -11372,7 +11372,7 @@
         ["exp"] = 13050,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "气功防御_紫+2_8级",
+        ["name"] = "Energy_defense_紫+2_8level",
         ["tbxid"] = 90306008
     },
     [949] = {
@@ -11384,7 +11384,7 @@
         ["exp"] = 20250,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "气功防御_紫+2_9级",
+        ["name"] = "Energy_defense_紫+2_9level",
         ["tbxid"] = 90306009
     },
     [950] = {
@@ -11396,7 +11396,7 @@
         ["exp"] = 40425,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "气功防御_紫+2_10级",
+        ["name"] = "Energy_defense_紫+2_10level",
         ["tbxid"] = 90306010
     },
     [951] = {
@@ -11408,7 +11408,7 @@
         ["exp"] = 67350,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "气功防御_紫+2_11级",
+        ["name"] = "Energy_defense_紫+2_11level",
         ["tbxid"] = 90306011
     },
     [952] = {
@@ -11420,7 +11420,7 @@
         ["exp"] = 134700,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "气功防御_紫+2_12级",
+        ["name"] = "Energy_defense_紫+2_12level",
         ["tbxid"] = 90306012
     },
     [953] = {
@@ -11432,7 +11432,7 @@
         ["exp"] = 269400,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "气功防御_紫+2_13级",
+        ["name"] = "Energy_defense_紫+2_13level",
         ["tbxid"] = 90306013
     },
     [954] = {
@@ -11444,7 +11444,7 @@
         ["exp"] = 404025,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "气功防御_紫+2_14级",
+        ["name"] = "Energy_defense_紫+2_14level",
         ["tbxid"] = 90306014
     },
     [955] = {
@@ -11456,7 +11456,7 @@
         ["exp"] = 538725,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "气功防御_紫+2_15级",
+        ["name"] = "Energy_defense_紫+2_15level",
         ["tbxid"] = 90306015
     },
     [956] = {
@@ -11468,7 +11468,7 @@
         ["exp"] = 673350,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "气功防御_紫+2_16级",
+        ["name"] = "Energy_defense_紫+2_16level",
         ["tbxid"] = 90306016
     },
     [957] = {
@@ -11480,7 +11480,7 @@
         ["exp"] = 808050,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "气功防御_紫+2_17级",
+        ["name"] = "Energy_defense_紫+2_17level",
         ["tbxid"] = 90306017
     },
     [958] = {
@@ -11492,7 +11492,7 @@
         ["exp"] = 942675,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "气功防御_紫+2_18级",
+        ["name"] = "Energy_defense_紫+2_18level",
         ["tbxid"] = 90306018
     },
     [959] = {
@@ -11504,7 +11504,7 @@
         ["exp"] = 1144650,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "气功防御_紫+2_19级",
+        ["name"] = "Energy_defense_紫+2_19level",
         ["tbxid"] = 90306019
     },
     [960] = {
@@ -11516,7 +11516,7 @@
         ["exp"] = 1346700,
         ["type"] = 1,
         ["quality"] = 6,
-        ["name"] = "气功防御_紫+2_20级",
+        ["name"] = "Energy_defense_紫+2_20level",
         ["tbxid"] = 90306020
     },
     [961] = {
@@ -11528,7 +11528,7 @@
         ["exp"] = 0,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "格斗攻击_紫+2_1级",
+        ["name"] = "Physical_attack_紫+2_1level",
         ["tbxid"] = 90406001
     },
     [962] = {
@@ -11540,7 +11540,7 @@
         ["exp"] = 375,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "格斗攻击_紫+2_2级",
+        ["name"] = "Physical_attack_紫+2_2level",
         ["tbxid"] = 90406002
     },
     [963] = {
@@ -11552,7 +11552,7 @@
         ["exp"] = 825,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "格斗攻击_紫+2_3级",
+        ["name"] = "Physical_attack_紫+2_3level",
         ["tbxid"] = 90406003
     },
     [964] = {
@@ -11564,7 +11564,7 @@
         ["exp"] = 1725,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "格斗攻击_紫+2_4级",
+        ["name"] = "Physical_attack_紫+2_4level",
         ["tbxid"] = 90406004
     },
     [965] = {
@@ -11576,7 +11576,7 @@
         ["exp"] = 3225,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "格斗攻击_紫+2_5级",
+        ["name"] = "Physical_attack_紫+2_5level",
         ["tbxid"] = 90406005
     },
     [966] = {
@@ -11588,7 +11588,7 @@
         ["exp"] = 5475,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "格斗攻击_紫+2_6级",
+        ["name"] = "Physical_attack_紫+2_6level",
         ["tbxid"] = 90406006
     },
     [967] = {
@@ -11600,7 +11600,7 @@
         ["exp"] = 8475,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "格斗攻击_紫+2_7级",
+        ["name"] = "Physical_attack_紫+2_7level",
         ["tbxid"] = 90406007
     },
     [968] = {
@@ -11612,7 +11612,7 @@
         ["exp"] = 13050,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "格斗攻击_紫+2_8级",
+        ["name"] = "Physical_attack_紫+2_8level",
         ["tbxid"] = 90406008
     },
     [969] = {
@@ -11624,7 +11624,7 @@
         ["exp"] = 20250,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "格斗攻击_紫+2_9级",
+        ["name"] = "Physical_attack_紫+2_9level",
         ["tbxid"] = 90406009
     },
     [970] = {
@@ -11636,7 +11636,7 @@
         ["exp"] = 40425,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "格斗攻击_紫+2_10级",
+        ["name"] = "Physical_attack_紫+2_10level",
         ["tbxid"] = 90406010
     },
     [971] = {
@@ -11648,7 +11648,7 @@
         ["exp"] = 67350,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "格斗攻击_紫+2_11级",
+        ["name"] = "Physical_attack_紫+2_11level",
         ["tbxid"] = 90406011
     },
     [972] = {
@@ -11660,7 +11660,7 @@
         ["exp"] = 134700,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "格斗攻击_紫+2_12级",
+        ["name"] = "Physical_attack_紫+2_12level",
         ["tbxid"] = 90406012
     },
     [973] = {
@@ -11672,7 +11672,7 @@
         ["exp"] = 269400,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "格斗攻击_紫+2_13级",
+        ["name"] = "Physical_attack_紫+2_13level",
         ["tbxid"] = 90406013
     },
     [974] = {
@@ -11684,7 +11684,7 @@
         ["exp"] = 404025,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "格斗攻击_紫+2_14级",
+        ["name"] = "Physical_attack_紫+2_14level",
         ["tbxid"] = 90406014
     },
     [975] = {
@@ -11696,7 +11696,7 @@
         ["exp"] = 538725,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "格斗攻击_紫+2_15级",
+        ["name"] = "Physical_attack_紫+2_15level",
         ["tbxid"] = 90406015
     },
     [976] = {
@@ -11708,7 +11708,7 @@
         ["exp"] = 673350,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "格斗攻击_紫+2_16级",
+        ["name"] = "Physical_attack_紫+2_16level",
         ["tbxid"] = 90406016
     },
     [977] = {
@@ -11720,7 +11720,7 @@
         ["exp"] = 808050,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "格斗攻击_紫+2_17级",
+        ["name"] = "Physical_attack_紫+2_17level",
         ["tbxid"] = 90406017
     },
     [978] = {
@@ -11732,7 +11732,7 @@
         ["exp"] = 942675,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "格斗攻击_紫+2_18级",
+        ["name"] = "Physical_attack_紫+2_18level",
         ["tbxid"] = 90406018
     },
     [979] = {
@@ -11744,7 +11744,7 @@
         ["exp"] = 1144650,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "格斗攻击_紫+2_19级",
+        ["name"] = "Physical_attack_紫+2_19level",
         ["tbxid"] = 90406019
     },
     [980] = {
@@ -11756,7 +11756,7 @@
         ["exp"] = 1346700,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "格斗攻击_紫+2_20级",
+        ["name"] = "Physical_attack_紫+2_20level",
         ["tbxid"] = 90406020
     },
     [981] = {
@@ -11768,7 +11768,7 @@
         ["exp"] = 0,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "气功攻击_紫+2_1级",
+        ["name"] = "Energy_attack_紫+2_1level",
         ["tbxid"] = 90506001
     },
     [982] = {
@@ -11780,7 +11780,7 @@
         ["exp"] = 375,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "气功攻击_紫+2_2级",
+        ["name"] = "Energy_attack_紫+2_2level",
         ["tbxid"] = 90506002
     },
     [983] = {
@@ -11792,7 +11792,7 @@
         ["exp"] = 825,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "气功攻击_紫+2_3级",
+        ["name"] = "Energy_attack_紫+2_3level",
         ["tbxid"] = 90506003
     },
     [984] = {
@@ -11804,7 +11804,7 @@
         ["exp"] = 1725,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "气功攻击_紫+2_4级",
+        ["name"] = "Energy_attack_紫+2_4level",
         ["tbxid"] = 90506004
     },
     [985] = {
@@ -11816,7 +11816,7 @@
         ["exp"] = 3225,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "气功攻击_紫+2_5级",
+        ["name"] = "Energy_attack_紫+2_5level",
         ["tbxid"] = 90506005
     },
     [986] = {
@@ -11828,7 +11828,7 @@
         ["exp"] = 5475,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "气功攻击_紫+2_6级",
+        ["name"] = "Energy_attack_紫+2_6level",
         ["tbxid"] = 90506006
     },
     [987] = {
@@ -11840,7 +11840,7 @@
         ["exp"] = 8475,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "气功攻击_紫+2_7级",
+        ["name"] = "Energy_attack_紫+2_7level",
         ["tbxid"] = 90506007
     },
     [988] = {
@@ -11852,7 +11852,7 @@
         ["exp"] = 13050,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "气功攻击_紫+2_8级",
+        ["name"] = "Energy_attack_紫+2_8level",
         ["tbxid"] = 90506008
     },
     [989] = {
@@ -11864,7 +11864,7 @@
         ["exp"] = 20250,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "气功攻击_紫+2_9级",
+        ["name"] = "Energy_attack_紫+2_9level",
         ["tbxid"] = 90506009
     },
     [990] = {
@@ -11876,7 +11876,7 @@
         ["exp"] = 40425,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "气功攻击_紫+2_10级",
+        ["name"] = "Energy_attack_紫+2_10level",
         ["tbxid"] = 90506010
     },
     [991] = {
@@ -11888,7 +11888,7 @@
         ["exp"] = 67350,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "气功攻击_紫+2_11级",
+        ["name"] = "Energy_attack_紫+2_11level",
         ["tbxid"] = 90506011
     },
     [992] = {
@@ -11900,7 +11900,7 @@
         ["exp"] = 134700,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "气功攻击_紫+2_12级",
+        ["name"] = "Energy_attack_紫+2_12level",
         ["tbxid"] = 90506012
     },
     [993] = {
@@ -11912,7 +11912,7 @@
         ["exp"] = 269400,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "气功攻击_紫+2_13级",
+        ["name"] = "Energy_attack_紫+2_13level",
         ["tbxid"] = 90506013
     },
     [994] = {
@@ -11924,7 +11924,7 @@
         ["exp"] = 404025,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "气功攻击_紫+2_14级",
+        ["name"] = "Energy_attack_紫+2_14level",
         ["tbxid"] = 90506014
     },
     [995] = {
@@ -11936,7 +11936,7 @@
         ["exp"] = 538725,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "气功攻击_紫+2_15级",
+        ["name"] = "Energy_attack_紫+2_15level",
         ["tbxid"] = 90506015
     },
     [996] = {
@@ -11948,7 +11948,7 @@
         ["exp"] = 673350,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "气功攻击_紫+2_16级",
+        ["name"] = "Energy_attack_紫+2_16level",
         ["tbxid"] = 90506016
     },
     [997] = {
@@ -11960,7 +11960,7 @@
         ["exp"] = 808050,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "气功攻击_紫+2_17级",
+        ["name"] = "Energy_attack_紫+2_17level",
         ["tbxid"] = 90506017
     },
     [998] = {
@@ -11972,7 +11972,7 @@
         ["exp"] = 942675,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "气功攻击_紫+2_18级",
+        ["name"] = "Energy_attack_紫+2_18level",
         ["tbxid"] = 90506018
     },
     [999] = {
@@ -11984,7 +11984,7 @@
         ["exp"] = 1144650,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "气功攻击_紫+2_19级",
+        ["name"] = "Energy_attack_紫+2_19level",
         ["tbxid"] = 90506019
     },
     [1000] = {
@@ -11996,7 +11996,7 @@
         ["exp"] = 1346700,
         ["type"] = 2,
         ["quality"] = 6,
-        ["name"] = "气功攻击_紫+2_20级",
+        ["name"] = "Energy_attack_紫+2_20level",
         ["tbxid"] = 90506020
     },
     [1001] = {
@@ -12008,7 +12008,7 @@
         ["exp"] = 0,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "暴击等级_紫+2_1级",
+        ["name"] = "Critical_rate_紫+2_1level",
         ["tbxid"] = 90606001
     },
     [1002] = {
@@ -12020,7 +12020,7 @@
         ["exp"] = 375,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "暴击等级_紫+2_2级",
+        ["name"] = "Critical_rate_紫+2_2level",
         ["tbxid"] = 90606002
     },
     [1003] = {
@@ -12032,7 +12032,7 @@
         ["exp"] = 825,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "暴击等级_紫+2_3级",
+        ["name"] = "Critical_rate_紫+2_3level",
         ["tbxid"] = 90606003
     },
     [1004] = {
@@ -12044,7 +12044,7 @@
         ["exp"] = 1725,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "暴击等级_紫+2_4级",
+        ["name"] = "Critical_rate_紫+2_4level",
         ["tbxid"] = 90606004
     },
     [1005] = {
@@ -12056,7 +12056,7 @@
         ["exp"] = 3225,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "暴击等级_紫+2_5级",
+        ["name"] = "Critical_rate_紫+2_5level",
         ["tbxid"] = 90606005
     },
     [1006] = {
@@ -12068,7 +12068,7 @@
         ["exp"] = 5475,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "暴击等级_紫+2_6级",
+        ["name"] = "Critical_rate_紫+2_6level",
         ["tbxid"] = 90606006
     },
     [1007] = {
@@ -12080,7 +12080,7 @@
         ["exp"] = 8475,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "暴击等级_紫+2_7级",
+        ["name"] = "Critical_rate_紫+2_7level",
         ["tbxid"] = 90606007
     },
     [1008] = {
@@ -12092,7 +12092,7 @@
         ["exp"] = 13050,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "暴击等级_紫+2_8级",
+        ["name"] = "Critical_rate_紫+2_8level",
         ["tbxid"] = 90606008
     },
     [1009] = {
@@ -12104,7 +12104,7 @@
         ["exp"] = 20250,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "暴击等级_紫+2_9级",
+        ["name"] = "Critical_rate_紫+2_9level",
         ["tbxid"] = 90606009
     },
     [1010] = {
@@ -12116,7 +12116,7 @@
         ["exp"] = 40425,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "暴击等级_紫+2_10级",
+        ["name"] = "Critical_rate_紫+2_10level",
         ["tbxid"] = 90606010
     },
     [1011] = {
@@ -12128,7 +12128,7 @@
         ["exp"] = 67350,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "暴击等级_紫+2_11级",
+        ["name"] = "Critical_rate_紫+2_11level",
         ["tbxid"] = 90606011
     },
     [1012] = {
@@ -12140,7 +12140,7 @@
         ["exp"] = 134700,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "暴击等级_紫+2_12级",
+        ["name"] = "Critical_rate_紫+2_12level",
         ["tbxid"] = 90606012
     },
     [1013] = {
@@ -12152,7 +12152,7 @@
         ["exp"] = 269400,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "暴击等级_紫+2_13级",
+        ["name"] = "Critical_rate_紫+2_13level",
         ["tbxid"] = 90606013
     },
     [1014] = {
@@ -12164,7 +12164,7 @@
         ["exp"] = 404025,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "暴击等级_紫+2_14级",
+        ["name"] = "Critical_rate_紫+2_14level",
         ["tbxid"] = 90606014
     },
     [1015] = {
@@ -12176,7 +12176,7 @@
         ["exp"] = 538725,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "暴击等级_紫+2_15级",
+        ["name"] = "Critical_rate_紫+2_15level",
         ["tbxid"] = 90606015
     },
     [1016] = {
@@ -12188,7 +12188,7 @@
         ["exp"] = 673350,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "暴击等级_紫+2_16级",
+        ["name"] = "Critical_rate_紫+2_16level",
         ["tbxid"] = 90606016
     },
     [1017] = {
@@ -12200,7 +12200,7 @@
         ["exp"] = 808050,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "暴击等级_紫+2_17级",
+        ["name"] = "Critical_rate_紫+2_17level",
         ["tbxid"] = 90606017
     },
     [1018] = {
@@ -12212,7 +12212,7 @@
         ["exp"] = 942675,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "暴击等级_紫+2_18级",
+        ["name"] = "Critical_rate_紫+2_18level",
         ["tbxid"] = 90606018
     },
     [1019] = {
@@ -12224,7 +12224,7 @@
         ["exp"] = 1144650,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "暴击等级_紫+2_19级",
+        ["name"] = "Critical_rate_紫+2_19level",
         ["tbxid"] = 90606019
     },
     [1020] = {
@@ -12236,7 +12236,7 @@
         ["exp"] = 1346700,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "暴击等级_紫+2_20级",
+        ["name"] = "Critical_rate_紫+2_20level",
         ["tbxid"] = 90606020
     },
     [1021] = {
@@ -12248,7 +12248,7 @@
         ["exp"] = 0,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "格挡等级_紫+2_1级",
+        ["name"] = "Block_level_紫+2_1level",
         ["tbxid"] = 90706001
     },
     [1022] = {
@@ -12260,7 +12260,7 @@
         ["exp"] = 375,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "格挡等级_紫+2_2级",
+        ["name"] = "Block_level_紫+2_2level",
         ["tbxid"] = 90706002
     },
     [1023] = {
@@ -12272,7 +12272,7 @@
         ["exp"] = 825,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "格挡等级_紫+2_3级",
+        ["name"] = "Block_level_紫+2_3level",
         ["tbxid"] = 90706003
     },
     [1024] = {
@@ -12284,7 +12284,7 @@
         ["exp"] = 1725,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "格挡等级_紫+2_4级",
+        ["name"] = "Block_level_紫+2_4level",
         ["tbxid"] = 90706004
     },
     [1025] = {
@@ -12296,7 +12296,7 @@
         ["exp"] = 3225,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "格挡等级_紫+2_5级",
+        ["name"] = "Block_level_紫+2_5level",
         ["tbxid"] = 90706005
     },
     [1026] = {
@@ -12308,7 +12308,7 @@
         ["exp"] = 5475,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "格挡等级_紫+2_6级",
+        ["name"] = "Block_level_紫+2_6level",
         ["tbxid"] = 90706006
     },
     [1027] = {
@@ -12320,7 +12320,7 @@
         ["exp"] = 8475,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "格挡等级_紫+2_7级",
+        ["name"] = "Block_level_紫+2_7level",
         ["tbxid"] = 90706007
     },
     [1028] = {
@@ -12332,7 +12332,7 @@
         ["exp"] = 13050,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "格挡等级_紫+2_8级",
+        ["name"] = "Block_level_紫+2_8level",
         ["tbxid"] = 90706008
     },
     [1029] = {
@@ -12344,7 +12344,7 @@
         ["exp"] = 20250,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "格挡等级_紫+2_9级",
+        ["name"] = "Block_level_紫+2_9level",
         ["tbxid"] = 90706009
     },
     [1030] = {
@@ -12356,7 +12356,7 @@
         ["exp"] = 40425,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "格挡等级_紫+2_10级",
+        ["name"] = "Block_level_紫+2_10level",
         ["tbxid"] = 90706010
     },
     [1031] = {
@@ -12368,7 +12368,7 @@
         ["exp"] = 67350,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "格挡等级_紫+2_11级",
+        ["name"] = "Block_level_紫+2_11level",
         ["tbxid"] = 90706011
     },
     [1032] = {
@@ -12380,7 +12380,7 @@
         ["exp"] = 134700,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "格挡等级_紫+2_12级",
+        ["name"] = "Block_level_紫+2_12level",
         ["tbxid"] = 90706012
     },
     [1033] = {
@@ -12392,7 +12392,7 @@
         ["exp"] = 269400,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "格挡等级_紫+2_13级",
+        ["name"] = "Block_level_紫+2_13level",
         ["tbxid"] = 90706013
     },
     [1034] = {
@@ -12404,7 +12404,7 @@
         ["exp"] = 404025,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "格挡等级_紫+2_14级",
+        ["name"] = "Block_level_紫+2_14level",
         ["tbxid"] = 90706014
     },
     [1035] = {
@@ -12416,7 +12416,7 @@
         ["exp"] = 538725,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "格挡等级_紫+2_15级",
+        ["name"] = "Block_level_紫+2_15level",
         ["tbxid"] = 90706015
     },
     [1036] = {
@@ -12428,7 +12428,7 @@
         ["exp"] = 673350,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "格挡等级_紫+2_16级",
+        ["name"] = "Block_level_紫+2_16level",
         ["tbxid"] = 90706016
     },
     [1037] = {
@@ -12440,7 +12440,7 @@
         ["exp"] = 808050,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "格挡等级_紫+2_17级",
+        ["name"] = "Block_level_紫+2_17level",
         ["tbxid"] = 90706017
     },
     [1038] = {
@@ -12452,7 +12452,7 @@
         ["exp"] = 942675,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "格挡等级_紫+2_18级",
+        ["name"] = "Block_level_紫+2_18level",
         ["tbxid"] = 90706018
     },
     [1039] = {
@@ -12464,7 +12464,7 @@
         ["exp"] = 1144650,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "格挡等级_紫+2_19级",
+        ["name"] = "Block_level_紫+2_19level",
         ["tbxid"] = 90706019
     },
     [1040] = {
@@ -12476,7 +12476,7 @@
         ["exp"] = 1346700,
         ["type"] = 3,
         ["quality"] = 6,
-        ["name"] = "格挡等级_紫+2_20级",
+        ["name"] = "Block_level_紫+2_20level",
         ["tbxid"] = 90706020
     },
     [1041] = {
@@ -12488,7 +12488,7 @@
         ["exp"] = 0,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "韧性等级_紫+2_1级",
+        ["name"] = "Resilience_level_紫+2_1level",
         ["tbxid"] = 90806001
     },
     [1042] = {
@@ -12500,7 +12500,7 @@
         ["exp"] = 375,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "韧性等级_紫+2_2级",
+        ["name"] = "Resilience_level_紫+2_2level",
         ["tbxid"] = 90806002
     },
     [1043] = {
@@ -12512,7 +12512,7 @@
         ["exp"] = 825,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "韧性等级_紫+2_3级",
+        ["name"] = "Resilience_level_紫+2_3level",
         ["tbxid"] = 90806003
     },
     [1044] = {
@@ -12524,7 +12524,7 @@
         ["exp"] = 1725,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "韧性等级_紫+2_4级",
+        ["name"] = "Resilience_level_紫+2_4level",
         ["tbxid"] = 90806004
     },
     [1045] = {
@@ -12536,7 +12536,7 @@
         ["exp"] = 3225,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "韧性等级_紫+2_5级",
+        ["name"] = "Resilience_level_紫+2_5level",
         ["tbxid"] = 90806005
     },
     [1046] = {
@@ -12548,7 +12548,7 @@
         ["exp"] = 5475,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "韧性等级_紫+2_6级",
+        ["name"] = "Resilience_level_紫+2_6level",
         ["tbxid"] = 90806006
     },
     [1047] = {
@@ -12560,7 +12560,7 @@
         ["exp"] = 8475,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "韧性等级_紫+2_7级",
+        ["name"] = "Resilience_level_紫+2_7level",
         ["tbxid"] = 90806007
     },
     [1048] = {
@@ -12572,7 +12572,7 @@
         ["exp"] = 13050,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "韧性等级_紫+2_8级",
+        ["name"] = "Resilience_level_紫+2_8level",
         ["tbxid"] = 90806008
     },
     [1049] = {
@@ -12584,7 +12584,7 @@
         ["exp"] = 20250,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "韧性等级_紫+2_9级",
+        ["name"] = "Resilience_level_紫+2_9level",
         ["tbxid"] = 90806009
     },
     [1050] = {
@@ -12596,7 +12596,7 @@
         ["exp"] = 40425,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "韧性等级_紫+2_10级",
+        ["name"] = "Resilience_level_紫+2_10level",
         ["tbxid"] = 90806010
     },
     [1051] = {
@@ -12608,7 +12608,7 @@
         ["exp"] = 67350,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "韧性等级_紫+2_11级",
+        ["name"] = "Resilience_level_紫+2_11level",
         ["tbxid"] = 90806011
     },
     [1052] = {
@@ -12620,7 +12620,7 @@
         ["exp"] = 134700,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "韧性等级_紫+2_12级",
+        ["name"] = "Resilience_level_紫+2_12level",
         ["tbxid"] = 90806012
     },
     [1053] = {
@@ -12632,7 +12632,7 @@
         ["exp"] = 269400,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "韧性等级_紫+2_13级",
+        ["name"] = "Resilience_level_紫+2_13level",
         ["tbxid"] = 90806013
     },
     [1054] = {
@@ -12644,7 +12644,7 @@
         ["exp"] = 404025,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "韧性等级_紫+2_14级",
+        ["name"] = "Resilience_level_紫+2_14level",
         ["tbxid"] = 90806014
     },
     [1055] = {
@@ -12656,7 +12656,7 @@
         ["exp"] = 538725,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "韧性等级_紫+2_15级",
+        ["name"] = "Resilience_level_紫+2_15level",
         ["tbxid"] = 90806015
     },
     [1056] = {
@@ -12668,7 +12668,7 @@
         ["exp"] = 673350,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "韧性等级_紫+2_16级",
+        ["name"] = "Resilience_level_紫+2_16level",
         ["tbxid"] = 90806016
     },
     [1057] = {
@@ -12680,7 +12680,7 @@
         ["exp"] = 808050,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "韧性等级_紫+2_17级",
+        ["name"] = "Resilience_level_紫+2_17level",
         ["tbxid"] = 90806017
     },
     [1058] = {
@@ -12692,7 +12692,7 @@
         ["exp"] = 942675,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "韧性等级_紫+2_18级",
+        ["name"] = "Resilience_level_紫+2_18level",
         ["tbxid"] = 90806018
     },
     [1059] = {
@@ -12704,7 +12704,7 @@
         ["exp"] = 1144650,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "韧性等级_紫+2_19级",
+        ["name"] = "Resilience_level_紫+2_19level",
         ["tbxid"] = 90806019
     },
     [1060] = {
@@ -12716,7 +12716,7 @@
         ["exp"] = 1346700,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "韧性等级_紫+2_20级",
+        ["name"] = "Resilience_level_紫+2_20level",
         ["tbxid"] = 90806020
     },
     [1061] = {
@@ -12728,7 +12728,7 @@
         ["exp"] = 0,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "穿透等级_紫+2_1级",
+        ["name"] = "Penetration_level_紫+2_1level",
         ["tbxid"] = 90906001
     },
     [1062] = {
@@ -12740,7 +12740,7 @@
         ["exp"] = 375,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "穿透等级_紫+2_2级",
+        ["name"] = "Penetration_level_紫+2_2level",
         ["tbxid"] = 90906002
     },
     [1063] = {
@@ -12752,7 +12752,7 @@
         ["exp"] = 825,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "穿透等级_紫+2_3级",
+        ["name"] = "Penetration_level_紫+2_3level",
         ["tbxid"] = 90906003
     },
     [1064] = {
@@ -12764,7 +12764,7 @@
         ["exp"] = 1725,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "穿透等级_紫+2_4级",
+        ["name"] = "Penetration_level_紫+2_4level",
         ["tbxid"] = 90906004
     },
     [1065] = {
@@ -12776,7 +12776,7 @@
         ["exp"] = 3225,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "穿透等级_紫+2_5级",
+        ["name"] = "Penetration_level_紫+2_5level",
         ["tbxid"] = 90906005
     },
     [1066] = {
@@ -12788,7 +12788,7 @@
         ["exp"] = 5475,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "穿透等级_紫+2_6级",
+        ["name"] = "Penetration_level_紫+2_6level",
         ["tbxid"] = 90906006
     },
     [1067] = {
@@ -12800,7 +12800,7 @@
         ["exp"] = 8475,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "穿透等级_紫+2_7级",
+        ["name"] = "Penetration_level_紫+2_7level",
         ["tbxid"] = 90906007
     },
     [1068] = {
@@ -12812,7 +12812,7 @@
         ["exp"] = 13050,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "穿透等级_紫+2_8级",
+        ["name"] = "Penetration_level_紫+2_8level",
         ["tbxid"] = 90906008
     },
     [1069] = {
@@ -12824,7 +12824,7 @@
         ["exp"] = 20250,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "穿透等级_紫+2_9级",
+        ["name"] = "Penetration_level_紫+2_9level",
         ["tbxid"] = 90906009
     },
     [1070] = {
@@ -12836,7 +12836,7 @@
         ["exp"] = 40425,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "穿透等级_紫+2_10级",
+        ["name"] = "Penetration_level_紫+2_10level",
         ["tbxid"] = 90906010
     },
     [1071] = {
@@ -12848,7 +12848,7 @@
         ["exp"] = 67350,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "穿透等级_紫+2_11级",
+        ["name"] = "Penetration_level_紫+2_11level",
         ["tbxid"] = 90906011
     },
     [1072] = {
@@ -12860,7 +12860,7 @@
         ["exp"] = 134700,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "穿透等级_紫+2_12级",
+        ["name"] = "Penetration_level_紫+2_12level",
         ["tbxid"] = 90906012
     },
     [1073] = {
@@ -12872,7 +12872,7 @@
         ["exp"] = 269400,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "穿透等级_紫+2_13级",
+        ["name"] = "Penetration_level_紫+2_13level",
         ["tbxid"] = 90906013
     },
     [1074] = {
@@ -12884,7 +12884,7 @@
         ["exp"] = 404025,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "穿透等级_紫+2_14级",
+        ["name"] = "Penetration_level_紫+2_14level",
         ["tbxid"] = 90906014
     },
     [1075] = {
@@ -12896,7 +12896,7 @@
         ["exp"] = 538725,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "穿透等级_紫+2_15级",
+        ["name"] = "Penetration_level_紫+2_15level",
         ["tbxid"] = 90906015
     },
     [1076] = {
@@ -12908,7 +12908,7 @@
         ["exp"] = 673350,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "穿透等级_紫+2_16级",
+        ["name"] = "Penetration_level_紫+2_16level",
         ["tbxid"] = 90906016
     },
     [1077] = {
@@ -12920,7 +12920,7 @@
         ["exp"] = 808050,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "穿透等级_紫+2_17级",
+        ["name"] = "Penetration_level_紫+2_17level",
         ["tbxid"] = 90906017
     },
     [1078] = {
@@ -12932,7 +12932,7 @@
         ["exp"] = 942675,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "穿透等级_紫+2_18级",
+        ["name"] = "Penetration_level_紫+2_18level",
         ["tbxid"] = 90906018
     },
     [1079] = {
@@ -12944,7 +12944,7 @@
         ["exp"] = 1144650,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "穿透等级_紫+2_19级",
+        ["name"] = "Penetration_level_紫+2_19level",
         ["tbxid"] = 90906019
     },
     [1080] = {
@@ -12956,7 +12956,7 @@
         ["exp"] = 1346700,
         ["type"] = 4,
         ["quality"] = 6,
-        ["name"] = "穿透等级_紫+2_20级",
+        ["name"] = "Penetration_level_紫+2_20level",
         ["tbxid"] = 90906020
     },
     [1081] = {
@@ -12968,7 +12968,7 @@
         ["exp"] = 0,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "生命上限_紫+3_1级",
+        ["name"] = "生命上限_紫+3_1level",
         ["tbxid"] = 90107001
     },
     [1082] = {
@@ -12980,7 +12980,7 @@
         ["exp"] = 375,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "生命上限_紫+3_2级",
+        ["name"] = "生命上限_紫+3_2level",
         ["tbxid"] = 90107002
     },
     [1083] = {
@@ -12992,7 +12992,7 @@
         ["exp"] = 825,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "生命上限_紫+3_3级",
+        ["name"] = "生命上限_紫+3_3level",
         ["tbxid"] = 90107003
     },
     [1084] = {
@@ -13004,7 +13004,7 @@
         ["exp"] = 1725,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "生命上限_紫+3_4级",
+        ["name"] = "生命上限_紫+3_4level",
         ["tbxid"] = 90107004
     },
     [1085] = {
@@ -13016,7 +13016,7 @@
         ["exp"] = 3225,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "生命上限_紫+3_5级",
+        ["name"] = "生命上限_紫+3_5level",
         ["tbxid"] = 90107005
     },
     [1086] = {
@@ -13028,7 +13028,7 @@
         ["exp"] = 5475,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "生命上限_紫+3_6级",
+        ["name"] = "生命上限_紫+3_6level",
         ["tbxid"] = 90107006
     },
     [1087] = {
@@ -13040,7 +13040,7 @@
         ["exp"] = 8475,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "生命上限_紫+3_7级",
+        ["name"] = "生命上限_紫+3_7level",
         ["tbxid"] = 90107007
     },
     [1088] = {
@@ -13052,7 +13052,7 @@
         ["exp"] = 13050,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "生命上限_紫+3_8级",
+        ["name"] = "生命上限_紫+3_8level",
         ["tbxid"] = 90107008
     },
     [1089] = {
@@ -13064,7 +13064,7 @@
         ["exp"] = 20250,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "生命上限_紫+3_9级",
+        ["name"] = "生命上限_紫+3_9level",
         ["tbxid"] = 90107009
     },
     [1090] = {
@@ -13076,7 +13076,7 @@
         ["exp"] = 40425,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "生命上限_紫+3_10级",
+        ["name"] = "生命上限_紫+3_10level",
         ["tbxid"] = 90107010
     },
     [1091] = {
@@ -13088,7 +13088,7 @@
         ["exp"] = 67350,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "生命上限_紫+3_11级",
+        ["name"] = "生命上限_紫+3_11level",
         ["tbxid"] = 90107011
     },
     [1092] = {
@@ -13100,7 +13100,7 @@
         ["exp"] = 134700,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "生命上限_紫+3_12级",
+        ["name"] = "生命上限_紫+3_12level",
         ["tbxid"] = 90107012
     },
     [1093] = {
@@ -13112,7 +13112,7 @@
         ["exp"] = 269400,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "生命上限_紫+3_13级",
+        ["name"] = "生命上限_紫+3_13level",
         ["tbxid"] = 90107013
     },
     [1094] = {
@@ -13124,7 +13124,7 @@
         ["exp"] = 404025,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "生命上限_紫+3_14级",
+        ["name"] = "生命上限_紫+3_14level",
         ["tbxid"] = 90107014
     },
     [1095] = {
@@ -13136,7 +13136,7 @@
         ["exp"] = 538725,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "生命上限_紫+3_15级",
+        ["name"] = "生命上限_紫+3_15level",
         ["tbxid"] = 90107015
     },
     [1096] = {
@@ -13148,7 +13148,7 @@
         ["exp"] = 673350,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "生命上限_紫+3_16级",
+        ["name"] = "生命上限_紫+3_16level",
         ["tbxid"] = 90107016
     },
     [1097] = {
@@ -13160,7 +13160,7 @@
         ["exp"] = 808050,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "生命上限_紫+3_17级",
+        ["name"] = "生命上限_紫+3_17level",
         ["tbxid"] = 90107017
     },
     [1098] = {
@@ -13172,7 +13172,7 @@
         ["exp"] = 942675,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "生命上限_紫+3_18级",
+        ["name"] = "生命上限_紫+3_18level",
         ["tbxid"] = 90107018
     },
     [1099] = {
@@ -13184,7 +13184,7 @@
         ["exp"] = 1144650,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "生命上限_紫+3_19级",
+        ["name"] = "生命上限_紫+3_19level",
         ["tbxid"] = 90107019
     },
     [1100] = {
@@ -13196,7 +13196,7 @@
         ["exp"] = 1346700,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "生命上限_紫+3_20级",
+        ["name"] = "生命上限_紫+3_20level",
         ["tbxid"] = 90107020
     },
     [1101] = {
@@ -13208,7 +13208,7 @@
         ["exp"] = 0,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "格斗防御_紫+3_1级",
+        ["name"] = "Physical_defense_紫+3_1level",
         ["tbxid"] = 90207001
     },
     [1102] = {
@@ -13220,7 +13220,7 @@
         ["exp"] = 375,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "格斗防御_紫+3_2级",
+        ["name"] = "Physical_defense_紫+3_2level",
         ["tbxid"] = 90207002
     },
     [1103] = {
@@ -13232,7 +13232,7 @@
         ["exp"] = 825,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "格斗防御_紫+3_3级",
+        ["name"] = "Physical_defense_紫+3_3level",
         ["tbxid"] = 90207003
     },
     [1104] = {
@@ -13244,7 +13244,7 @@
         ["exp"] = 1725,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "格斗防御_紫+3_4级",
+        ["name"] = "Physical_defense_紫+3_4level",
         ["tbxid"] = 90207004
     },
     [1105] = {
@@ -13256,7 +13256,7 @@
         ["exp"] = 3225,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "格斗防御_紫+3_5级",
+        ["name"] = "Physical_defense_紫+3_5level",
         ["tbxid"] = 90207005
     },
     [1106] = {
@@ -13268,7 +13268,7 @@
         ["exp"] = 5475,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "格斗防御_紫+3_6级",
+        ["name"] = "Physical_defense_紫+3_6level",
         ["tbxid"] = 90207006
     },
     [1107] = {
@@ -13280,7 +13280,7 @@
         ["exp"] = 8475,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "格斗防御_紫+3_7级",
+        ["name"] = "Physical_defense_紫+3_7level",
         ["tbxid"] = 90207007
     },
     [1108] = {
@@ -13292,7 +13292,7 @@
         ["exp"] = 13050,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "格斗防御_紫+3_8级",
+        ["name"] = "Physical_defense_紫+3_8level",
         ["tbxid"] = 90207008
     },
     [1109] = {
@@ -13304,7 +13304,7 @@
         ["exp"] = 20250,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "格斗防御_紫+3_9级",
+        ["name"] = "Physical_defense_紫+3_9level",
         ["tbxid"] = 90207009
     },
     [1110] = {
@@ -13316,7 +13316,7 @@
         ["exp"] = 40425,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "格斗防御_紫+3_10级",
+        ["name"] = "Physical_defense_紫+3_10level",
         ["tbxid"] = 90207010
     },
     [1111] = {
@@ -13328,7 +13328,7 @@
         ["exp"] = 67350,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "格斗防御_紫+3_11级",
+        ["name"] = "Physical_defense_紫+3_11level",
         ["tbxid"] = 90207011
     },
     [1112] = {
@@ -13340,7 +13340,7 @@
         ["exp"] = 134700,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "格斗防御_紫+3_12级",
+        ["name"] = "Physical_defense_紫+3_12level",
         ["tbxid"] = 90207012
     },
     [1113] = {
@@ -13352,7 +13352,7 @@
         ["exp"] = 269400,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "格斗防御_紫+3_13级",
+        ["name"] = "Physical_defense_紫+3_13level",
         ["tbxid"] = 90207013
     },
     [1114] = {
@@ -13364,7 +13364,7 @@
         ["exp"] = 404025,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "格斗防御_紫+3_14级",
+        ["name"] = "Physical_defense_紫+3_14level",
         ["tbxid"] = 90207014
     },
     [1115] = {
@@ -13376,7 +13376,7 @@
         ["exp"] = 538725,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "格斗防御_紫+3_15级",
+        ["name"] = "Physical_defense_紫+3_15level",
         ["tbxid"] = 90207015
     },
     [1116] = {
@@ -13388,7 +13388,7 @@
         ["exp"] = 673350,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "格斗防御_紫+3_16级",
+        ["name"] = "Physical_defense_紫+3_16level",
         ["tbxid"] = 90207016
     },
     [1117] = {
@@ -13400,7 +13400,7 @@
         ["exp"] = 808050,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "格斗防御_紫+3_17级",
+        ["name"] = "Physical_defense_紫+3_17level",
         ["tbxid"] = 90207017
     },
     [1118] = {
@@ -13412,7 +13412,7 @@
         ["exp"] = 942675,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "格斗防御_紫+3_18级",
+        ["name"] = "Physical_defense_紫+3_18level",
         ["tbxid"] = 90207018
     },
     [1119] = {
@@ -13424,7 +13424,7 @@
         ["exp"] = 1144650,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "格斗防御_紫+3_19级",
+        ["name"] = "Physical_defense_紫+3_19level",
         ["tbxid"] = 90207019
     },
     [1120] = {
@@ -13436,7 +13436,7 @@
         ["exp"] = 1346700,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "格斗防御_紫+3_20级",
+        ["name"] = "Physical_defense_紫+3_20level",
         ["tbxid"] = 90207020
     },
     [1121] = {
@@ -13448,7 +13448,7 @@
         ["exp"] = 0,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "气功防御_紫+3_1级",
+        ["name"] = "Energy_defense_紫+3_1level",
         ["tbxid"] = 90307001
     },
     [1122] = {
@@ -13460,7 +13460,7 @@
         ["exp"] = 375,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "气功防御_紫+3_2级",
+        ["name"] = "Energy_defense_紫+3_2level",
         ["tbxid"] = 90307002
     },
     [1123] = {
@@ -13472,7 +13472,7 @@
         ["exp"] = 825,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "气功防御_紫+3_3级",
+        ["name"] = "Energy_defense_紫+3_3level",
         ["tbxid"] = 90307003
     },
     [1124] = {
@@ -13484,7 +13484,7 @@
         ["exp"] = 1725,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "气功防御_紫+3_4级",
+        ["name"] = "Energy_defense_紫+3_4level",
         ["tbxid"] = 90307004
     },
     [1125] = {
@@ -13496,7 +13496,7 @@
         ["exp"] = 3225,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "气功防御_紫+3_5级",
+        ["name"] = "Energy_defense_紫+3_5level",
         ["tbxid"] = 90307005
     },
     [1126] = {
@@ -13508,7 +13508,7 @@
         ["exp"] = 5475,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "气功防御_紫+3_6级",
+        ["name"] = "Energy_defense_紫+3_6level",
         ["tbxid"] = 90307006
     },
     [1127] = {
@@ -13520,7 +13520,7 @@
         ["exp"] = 8475,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "气功防御_紫+3_7级",
+        ["name"] = "Energy_defense_紫+3_7level",
         ["tbxid"] = 90307007
     },
     [1128] = {
@@ -13532,7 +13532,7 @@
         ["exp"] = 13050,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "气功防御_紫+3_8级",
+        ["name"] = "Energy_defense_紫+3_8level",
         ["tbxid"] = 90307008
     },
     [1129] = {
@@ -13544,7 +13544,7 @@
         ["exp"] = 20250,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "气功防御_紫+3_9级",
+        ["name"] = "Energy_defense_紫+3_9level",
         ["tbxid"] = 90307009
     },
     [1130] = {
@@ -13556,7 +13556,7 @@
         ["exp"] = 40425,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "气功防御_紫+3_10级",
+        ["name"] = "Energy_defense_紫+3_10level",
         ["tbxid"] = 90307010
     },
     [1131] = {
@@ -13568,7 +13568,7 @@
         ["exp"] = 67350,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "气功防御_紫+3_11级",
+        ["name"] = "Energy_defense_紫+3_11level",
         ["tbxid"] = 90307011
     },
     [1132] = {
@@ -13580,7 +13580,7 @@
         ["exp"] = 134700,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "气功防御_紫+3_12级",
+        ["name"] = "Energy_defense_紫+3_12level",
         ["tbxid"] = 90307012
     },
     [1133] = {
@@ -13592,7 +13592,7 @@
         ["exp"] = 269400,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "气功防御_紫+3_13级",
+        ["name"] = "Energy_defense_紫+3_13level",
         ["tbxid"] = 90307013
     },
     [1134] = {
@@ -13604,7 +13604,7 @@
         ["exp"] = 404025,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "气功防御_紫+3_14级",
+        ["name"] = "Energy_defense_紫+3_14level",
         ["tbxid"] = 90307014
     },
     [1135] = {
@@ -13616,7 +13616,7 @@
         ["exp"] = 538725,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "气功防御_紫+3_15级",
+        ["name"] = "Energy_defense_紫+3_15level",
         ["tbxid"] = 90307015
     },
     [1136] = {
@@ -13628,7 +13628,7 @@
         ["exp"] = 673350,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "气功防御_紫+3_16级",
+        ["name"] = "Energy_defense_紫+3_16level",
         ["tbxid"] = 90307016
     },
     [1137] = {
@@ -13640,7 +13640,7 @@
         ["exp"] = 808050,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "气功防御_紫+3_17级",
+        ["name"] = "Energy_defense_紫+3_17level",
         ["tbxid"] = 90307017
     },
     [1138] = {
@@ -13652,7 +13652,7 @@
         ["exp"] = 942675,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "气功防御_紫+3_18级",
+        ["name"] = "Energy_defense_紫+3_18level",
         ["tbxid"] = 90307018
     },
     [1139] = {
@@ -13664,7 +13664,7 @@
         ["exp"] = 1144650,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "气功防御_紫+3_19级",
+        ["name"] = "Energy_defense_紫+3_19level",
         ["tbxid"] = 90307019
     },
     [1140] = {
@@ -13676,7 +13676,7 @@
         ["exp"] = 1346700,
         ["type"] = 1,
         ["quality"] = 7,
-        ["name"] = "气功防御_紫+3_20级",
+        ["name"] = "Energy_defense_紫+3_20level",
         ["tbxid"] = 90307020
     },
     [1141] = {
@@ -13688,7 +13688,7 @@
         ["exp"] = 0,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "格斗攻击_紫+3_1级",
+        ["name"] = "Physical_attack_紫+3_1level",
         ["tbxid"] = 90407001
     },
     [1142] = {
@@ -13700,7 +13700,7 @@
         ["exp"] = 375,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "格斗攻击_紫+3_2级",
+        ["name"] = "Physical_attack_紫+3_2level",
         ["tbxid"] = 90407002
     },
     [1143] = {
@@ -13712,7 +13712,7 @@
         ["exp"] = 825,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "格斗攻击_紫+3_3级",
+        ["name"] = "Physical_attack_紫+3_3level",
         ["tbxid"] = 90407003
     },
     [1144] = {
@@ -13724,7 +13724,7 @@
         ["exp"] = 1725,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "格斗攻击_紫+3_4级",
+        ["name"] = "Physical_attack_紫+3_4level",
         ["tbxid"] = 90407004
     },
     [1145] = {
@@ -13736,7 +13736,7 @@
         ["exp"] = 3225,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "格斗攻击_紫+3_5级",
+        ["name"] = "Physical_attack_紫+3_5level",
         ["tbxid"] = 90407005
     },
     [1146] = {
@@ -13748,7 +13748,7 @@
         ["exp"] = 5475,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "格斗攻击_紫+3_6级",
+        ["name"] = "Physical_attack_紫+3_6level",
         ["tbxid"] = 90407006
     },
     [1147] = {
@@ -13760,7 +13760,7 @@
         ["exp"] = 8475,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "格斗攻击_紫+3_7级",
+        ["name"] = "Physical_attack_紫+3_7level",
         ["tbxid"] = 90407007
     },
     [1148] = {
@@ -13772,7 +13772,7 @@
         ["exp"] = 13050,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "格斗攻击_紫+3_8级",
+        ["name"] = "Physical_attack_紫+3_8level",
         ["tbxid"] = 90407008
     },
     [1149] = {
@@ -13784,7 +13784,7 @@
         ["exp"] = 20250,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "格斗攻击_紫+3_9级",
+        ["name"] = "Physical_attack_紫+3_9level",
         ["tbxid"] = 90407009
     },
     [1150] = {
@@ -13796,7 +13796,7 @@
         ["exp"] = 40425,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "格斗攻击_紫+3_10级",
+        ["name"] = "Physical_attack_紫+3_10level",
         ["tbxid"] = 90407010
     },
     [1151] = {
@@ -13808,7 +13808,7 @@
         ["exp"] = 67350,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "格斗攻击_紫+3_11级",
+        ["name"] = "Physical_attack_紫+3_11level",
         ["tbxid"] = 90407011
     },
     [1152] = {
@@ -13820,7 +13820,7 @@
         ["exp"] = 134700,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "格斗攻击_紫+3_12级",
+        ["name"] = "Physical_attack_紫+3_12level",
         ["tbxid"] = 90407012
     },
     [1153] = {
@@ -13832,7 +13832,7 @@
         ["exp"] = 269400,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "格斗攻击_紫+3_13级",
+        ["name"] = "Physical_attack_紫+3_13level",
         ["tbxid"] = 90407013
     },
     [1154] = {
@@ -13844,7 +13844,7 @@
         ["exp"] = 404025,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "格斗攻击_紫+3_14级",
+        ["name"] = "Physical_attack_紫+3_14level",
         ["tbxid"] = 90407014
     },
     [1155] = {
@@ -13856,7 +13856,7 @@
         ["exp"] = 538725,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "格斗攻击_紫+3_15级",
+        ["name"] = "Physical_attack_紫+3_15level",
         ["tbxid"] = 90407015
     },
     [1156] = {
@@ -13868,7 +13868,7 @@
         ["exp"] = 673350,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "格斗攻击_紫+3_16级",
+        ["name"] = "Physical_attack_紫+3_16level",
         ["tbxid"] = 90407016
     },
     [1157] = {
@@ -13880,7 +13880,7 @@
         ["exp"] = 808050,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "格斗攻击_紫+3_17级",
+        ["name"] = "Physical_attack_紫+3_17level",
         ["tbxid"] = 90407017
     },
     [1158] = {
@@ -13892,7 +13892,7 @@
         ["exp"] = 942675,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "格斗攻击_紫+3_18级",
+        ["name"] = "Physical_attack_紫+3_18level",
         ["tbxid"] = 90407018
     },
     [1159] = {
@@ -13904,7 +13904,7 @@
         ["exp"] = 1144650,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "格斗攻击_紫+3_19级",
+        ["name"] = "Physical_attack_紫+3_19level",
         ["tbxid"] = 90407019
     },
     [1160] = {
@@ -13916,7 +13916,7 @@
         ["exp"] = 1346700,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "格斗攻击_紫+3_20级",
+        ["name"] = "Physical_attack_紫+3_20level",
         ["tbxid"] = 90407020
     },
     [1161] = {
@@ -13928,7 +13928,7 @@
         ["exp"] = 0,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "气功攻击_紫+3_1级",
+        ["name"] = "Energy_attack_紫+3_1level",
         ["tbxid"] = 90507001
     },
     [1162] = {
@@ -13940,7 +13940,7 @@
         ["exp"] = 375,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "气功攻击_紫+3_2级",
+        ["name"] = "Energy_attack_紫+3_2level",
         ["tbxid"] = 90507002
     },
     [1163] = {
@@ -13952,7 +13952,7 @@
         ["exp"] = 825,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "气功攻击_紫+3_3级",
+        ["name"] = "Energy_attack_紫+3_3level",
         ["tbxid"] = 90507003
     },
     [1164] = {
@@ -13964,7 +13964,7 @@
         ["exp"] = 1725,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "气功攻击_紫+3_4级",
+        ["name"] = "Energy_attack_紫+3_4level",
         ["tbxid"] = 90507004
     },
     [1165] = {
@@ -13976,7 +13976,7 @@
         ["exp"] = 3225,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "气功攻击_紫+3_5级",
+        ["name"] = "Energy_attack_紫+3_5level",
         ["tbxid"] = 90507005
     },
     [1166] = {
@@ -13988,7 +13988,7 @@
         ["exp"] = 5475,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "气功攻击_紫+3_6级",
+        ["name"] = "Energy_attack_紫+3_6level",
         ["tbxid"] = 90507006
     },
     [1167] = {
@@ -14000,7 +14000,7 @@
         ["exp"] = 8475,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "气功攻击_紫+3_7级",
+        ["name"] = "Energy_attack_紫+3_7level",
         ["tbxid"] = 90507007
     },
     [1168] = {
@@ -14012,7 +14012,7 @@
         ["exp"] = 13050,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "气功攻击_紫+3_8级",
+        ["name"] = "Energy_attack_紫+3_8level",
         ["tbxid"] = 90507008
     },
     [1169] = {
@@ -14024,7 +14024,7 @@
         ["exp"] = 20250,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "气功攻击_紫+3_9级",
+        ["name"] = "Energy_attack_紫+3_9level",
         ["tbxid"] = 90507009
     },
     [1170] = {
@@ -14036,7 +14036,7 @@
         ["exp"] = 40425,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "气功攻击_紫+3_10级",
+        ["name"] = "Energy_attack_紫+3_10level",
         ["tbxid"] = 90507010
     },
     [1171] = {
@@ -14048,7 +14048,7 @@
         ["exp"] = 67350,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "气功攻击_紫+3_11级",
+        ["name"] = "Energy_attack_紫+3_11level",
         ["tbxid"] = 90507011
     },
     [1172] = {
@@ -14060,7 +14060,7 @@
         ["exp"] = 134700,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "气功攻击_紫+3_12级",
+        ["name"] = "Energy_attack_紫+3_12level",
         ["tbxid"] = 90507012
     },
     [1173] = {
@@ -14072,7 +14072,7 @@
         ["exp"] = 269400,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "气功攻击_紫+3_13级",
+        ["name"] = "Energy_attack_紫+3_13level",
         ["tbxid"] = 90507013
     },
     [1174] = {
@@ -14084,7 +14084,7 @@
         ["exp"] = 404025,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "气功攻击_紫+3_14级",
+        ["name"] = "Energy_attack_紫+3_14level",
         ["tbxid"] = 90507014
     },
     [1175] = {
@@ -14096,7 +14096,7 @@
         ["exp"] = 538725,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "气功攻击_紫+3_15级",
+        ["name"] = "Energy_attack_紫+3_15level",
         ["tbxid"] = 90507015
     },
     [1176] = {
@@ -14108,7 +14108,7 @@
         ["exp"] = 673350,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "气功攻击_紫+3_16级",
+        ["name"] = "Energy_attack_紫+3_16level",
         ["tbxid"] = 90507016
     },
     [1177] = {
@@ -14120,7 +14120,7 @@
         ["exp"] = 808050,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "气功攻击_紫+3_17级",
+        ["name"] = "Energy_attack_紫+3_17level",
         ["tbxid"] = 90507017
     },
     [1178] = {
@@ -14132,7 +14132,7 @@
         ["exp"] = 942675,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "气功攻击_紫+3_18级",
+        ["name"] = "Energy_attack_紫+3_18level",
         ["tbxid"] = 90507018
     },
     [1179] = {
@@ -14144,7 +14144,7 @@
         ["exp"] = 1144650,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "气功攻击_紫+3_19级",
+        ["name"] = "Energy_attack_紫+3_19level",
         ["tbxid"] = 90507019
     },
     [1180] = {
@@ -14156,7 +14156,7 @@
         ["exp"] = 1346700,
         ["type"] = 2,
         ["quality"] = 7,
-        ["name"] = "气功攻击_紫+3_20级",
+        ["name"] = "Energy_attack_紫+3_20level",
         ["tbxid"] = 90507020
     },
     [1181] = {
@@ -14168,7 +14168,7 @@
         ["exp"] = 0,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "暴击等级_紫+3_1级",
+        ["name"] = "Critical_rate_紫+3_1level",
         ["tbxid"] = 90607001
     },
     [1182] = {
@@ -14180,7 +14180,7 @@
         ["exp"] = 375,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "暴击等级_紫+3_2级",
+        ["name"] = "Critical_rate_紫+3_2level",
         ["tbxid"] = 90607002
     },
     [1183] = {
@@ -14192,7 +14192,7 @@
         ["exp"] = 825,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "暴击等级_紫+3_3级",
+        ["name"] = "Critical_rate_紫+3_3level",
         ["tbxid"] = 90607003
     },
     [1184] = {
@@ -14204,7 +14204,7 @@
         ["exp"] = 1725,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "暴击等级_紫+3_4级",
+        ["name"] = "Critical_rate_紫+3_4level",
         ["tbxid"] = 90607004
     },
     [1185] = {
@@ -14216,7 +14216,7 @@
         ["exp"] = 3225,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "暴击等级_紫+3_5级",
+        ["name"] = "Critical_rate_紫+3_5level",
         ["tbxid"] = 90607005
     },
     [1186] = {
@@ -14228,7 +14228,7 @@
         ["exp"] = 5475,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "暴击等级_紫+3_6级",
+        ["name"] = "Critical_rate_紫+3_6level",
         ["tbxid"] = 90607006
     },
     [1187] = {
@@ -14240,7 +14240,7 @@
         ["exp"] = 8475,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "暴击等级_紫+3_7级",
+        ["name"] = "Critical_rate_紫+3_7level",
         ["tbxid"] = 90607007
     },
     [1188] = {
@@ -14252,7 +14252,7 @@
         ["exp"] = 13050,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "暴击等级_紫+3_8级",
+        ["name"] = "Critical_rate_紫+3_8level",
         ["tbxid"] = 90607008
     },
     [1189] = {
@@ -14264,7 +14264,7 @@
         ["exp"] = 20250,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "暴击等级_紫+3_9级",
+        ["name"] = "Critical_rate_紫+3_9level",
         ["tbxid"] = 90607009
     },
     [1190] = {
@@ -14276,7 +14276,7 @@
         ["exp"] = 40425,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "暴击等级_紫+3_10级",
+        ["name"] = "Critical_rate_紫+3_10level",
         ["tbxid"] = 90607010
     },
     [1191] = {
@@ -14288,7 +14288,7 @@
         ["exp"] = 67350,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "暴击等级_紫+3_11级",
+        ["name"] = "Critical_rate_紫+3_11level",
         ["tbxid"] = 90607011
     },
     [1192] = {
@@ -14300,7 +14300,7 @@
         ["exp"] = 134700,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "暴击等级_紫+3_12级",
+        ["name"] = "Critical_rate_紫+3_12level",
         ["tbxid"] = 90607012
     },
     [1193] = {
@@ -14312,7 +14312,7 @@
         ["exp"] = 269400,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "暴击等级_紫+3_13级",
+        ["name"] = "Critical_rate_紫+3_13level",
         ["tbxid"] = 90607013
     },
     [1194] = {
@@ -14324,7 +14324,7 @@
         ["exp"] = 404025,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "暴击等级_紫+3_14级",
+        ["name"] = "Critical_rate_紫+3_14level",
         ["tbxid"] = 90607014
     },
     [1195] = {
@@ -14336,7 +14336,7 @@
         ["exp"] = 538725,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "暴击等级_紫+3_15级",
+        ["name"] = "Critical_rate_紫+3_15level",
         ["tbxid"] = 90607015
     },
     [1196] = {
@@ -14348,7 +14348,7 @@
         ["exp"] = 673350,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "暴击等级_紫+3_16级",
+        ["name"] = "Critical_rate_紫+3_16level",
         ["tbxid"] = 90607016
     },
     [1197] = {
@@ -14360,7 +14360,7 @@
         ["exp"] = 808050,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "暴击等级_紫+3_17级",
+        ["name"] = "Critical_rate_紫+3_17level",
         ["tbxid"] = 90607017
     },
     [1198] = {
@@ -14372,7 +14372,7 @@
         ["exp"] = 942675,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "暴击等级_紫+3_18级",
+        ["name"] = "Critical_rate_紫+3_18level",
         ["tbxid"] = 90607018
     },
     [1199] = {
@@ -14384,7 +14384,7 @@
         ["exp"] = 1144650,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "暴击等级_紫+3_19级",
+        ["name"] = "Critical_rate_紫+3_19level",
         ["tbxid"] = 90607019
     },
     [1200] = {
@@ -14396,7 +14396,7 @@
         ["exp"] = 1346700,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "暴击等级_紫+3_20级",
+        ["name"] = "Critical_rate_紫+3_20level",
         ["tbxid"] = 90607020
     },
     [1201] = {
@@ -14408,7 +14408,7 @@
         ["exp"] = 0,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "格挡等级_紫+3_1级",
+        ["name"] = "Block_level_紫+3_1level",
         ["tbxid"] = 90707001
     },
     [1202] = {
@@ -14420,7 +14420,7 @@
         ["exp"] = 375,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "格挡等级_紫+3_2级",
+        ["name"] = "Block_level_紫+3_2level",
         ["tbxid"] = 90707002
     },
     [1203] = {
@@ -14432,7 +14432,7 @@
         ["exp"] = 825,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "格挡等级_紫+3_3级",
+        ["name"] = "Block_level_紫+3_3level",
         ["tbxid"] = 90707003
     },
     [1204] = {
@@ -14444,7 +14444,7 @@
         ["exp"] = 1725,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "格挡等级_紫+3_4级",
+        ["name"] = "Block_level_紫+3_4level",
         ["tbxid"] = 90707004
     },
     [1205] = {
@@ -14456,7 +14456,7 @@
         ["exp"] = 3225,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "格挡等级_紫+3_5级",
+        ["name"] = "Block_level_紫+3_5level",
         ["tbxid"] = 90707005
     },
     [1206] = {
@@ -14468,7 +14468,7 @@
         ["exp"] = 5475,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "格挡等级_紫+3_6级",
+        ["name"] = "Block_level_紫+3_6level",
         ["tbxid"] = 90707006
     },
     [1207] = {
@@ -14480,7 +14480,7 @@
         ["exp"] = 8475,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "格挡等级_紫+3_7级",
+        ["name"] = "Block_level_紫+3_7level",
         ["tbxid"] = 90707007
     },
     [1208] = {
@@ -14492,7 +14492,7 @@
         ["exp"] = 13050,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "格挡等级_紫+3_8级",
+        ["name"] = "Block_level_紫+3_8level",
         ["tbxid"] = 90707008
     },
     [1209] = {
@@ -14504,7 +14504,7 @@
         ["exp"] = 20250,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "格挡等级_紫+3_9级",
+        ["name"] = "Block_level_紫+3_9level",
         ["tbxid"] = 90707009
     },
     [1210] = {
@@ -14516,7 +14516,7 @@
         ["exp"] = 40425,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "格挡等级_紫+3_10级",
+        ["name"] = "Block_level_紫+3_10level",
         ["tbxid"] = 90707010
     },
     [1211] = {
@@ -14528,7 +14528,7 @@
         ["exp"] = 67350,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "格挡等级_紫+3_11级",
+        ["name"] = "Block_level_紫+3_11level",
         ["tbxid"] = 90707011
     },
     [1212] = {
@@ -14540,7 +14540,7 @@
         ["exp"] = 134700,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "格挡等级_紫+3_12级",
+        ["name"] = "Block_level_紫+3_12level",
         ["tbxid"] = 90707012
     },
     [1213] = {
@@ -14552,7 +14552,7 @@
         ["exp"] = 269400,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "格挡等级_紫+3_13级",
+        ["name"] = "Block_level_紫+3_13level",
         ["tbxid"] = 90707013
     },
     [1214] = {
@@ -14564,7 +14564,7 @@
         ["exp"] = 404025,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "格挡等级_紫+3_14级",
+        ["name"] = "Block_level_紫+3_14level",
         ["tbxid"] = 90707014
     },
     [1215] = {
@@ -14576,7 +14576,7 @@
         ["exp"] = 538725,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "格挡等级_紫+3_15级",
+        ["name"] = "Block_level_紫+3_15level",
         ["tbxid"] = 90707015
     },
     [1216] = {
@@ -14588,7 +14588,7 @@
         ["exp"] = 673350,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "格挡等级_紫+3_16级",
+        ["name"] = "Block_level_紫+3_16level",
         ["tbxid"] = 90707016
     },
     [1217] = {
@@ -14600,7 +14600,7 @@
         ["exp"] = 808050,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "格挡等级_紫+3_17级",
+        ["name"] = "Block_level_紫+3_17level",
         ["tbxid"] = 90707017
     },
     [1218] = {
@@ -14612,7 +14612,7 @@
         ["exp"] = 942675,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "格挡等级_紫+3_18级",
+        ["name"] = "Block_level_紫+3_18level",
         ["tbxid"] = 90707018
     },
     [1219] = {
@@ -14624,7 +14624,7 @@
         ["exp"] = 1144650,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "格挡等级_紫+3_19级",
+        ["name"] = "Block_level_紫+3_19level",
         ["tbxid"] = 90707019
     },
     [1220] = {
@@ -14636,7 +14636,7 @@
         ["exp"] = 1346700,
         ["type"] = 3,
         ["quality"] = 7,
-        ["name"] = "格挡等级_紫+3_20级",
+        ["name"] = "Block_level_紫+3_20level",
         ["tbxid"] = 90707020
     },
     [1221] = {
@@ -14648,7 +14648,7 @@
         ["exp"] = 0,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "韧性等级_紫+3_1级",
+        ["name"] = "Resilience_level_紫+3_1level",
         ["tbxid"] = 90807001
     },
     [1222] = {
@@ -14660,7 +14660,7 @@
         ["exp"] = 375,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "韧性等级_紫+3_2级",
+        ["name"] = "Resilience_level_紫+3_2level",
         ["tbxid"] = 90807002
     },
     [1223] = {
@@ -14672,7 +14672,7 @@
         ["exp"] = 825,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "韧性等级_紫+3_3级",
+        ["name"] = "Resilience_level_紫+3_3level",
         ["tbxid"] = 90807003
     },
     [1224] = {
@@ -14684,7 +14684,7 @@
         ["exp"] = 1725,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "韧性等级_紫+3_4级",
+        ["name"] = "Resilience_level_紫+3_4level",
         ["tbxid"] = 90807004
     },
     [1225] = {
@@ -14696,7 +14696,7 @@
         ["exp"] = 3225,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "韧性等级_紫+3_5级",
+        ["name"] = "Resilience_level_紫+3_5level",
         ["tbxid"] = 90807005
     },
     [1226] = {
@@ -14708,7 +14708,7 @@
         ["exp"] = 5475,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "韧性等级_紫+3_6级",
+        ["name"] = "Resilience_level_紫+3_6level",
         ["tbxid"] = 90807006
     },
     [1227] = {
@@ -14720,7 +14720,7 @@
         ["exp"] = 8475,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "韧性等级_紫+3_7级",
+        ["name"] = "Resilience_level_紫+3_7level",
         ["tbxid"] = 90807007
     },
     [1228] = {
@@ -14732,7 +14732,7 @@
         ["exp"] = 13050,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "韧性等级_紫+3_8级",
+        ["name"] = "Resilience_level_紫+3_8level",
         ["tbxid"] = 90807008
     },
     [1229] = {
@@ -14744,7 +14744,7 @@
         ["exp"] = 20250,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "韧性等级_紫+3_9级",
+        ["name"] = "Resilience_level_紫+3_9level",
         ["tbxid"] = 90807009
     },
     [1230] = {
@@ -14756,7 +14756,7 @@
         ["exp"] = 40425,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "韧性等级_紫+3_10级",
+        ["name"] = "Resilience_level_紫+3_10level",
         ["tbxid"] = 90807010
     },
     [1231] = {
@@ -14768,7 +14768,7 @@
         ["exp"] = 67350,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "韧性等级_紫+3_11级",
+        ["name"] = "Resilience_level_紫+3_11level",
         ["tbxid"] = 90807011
     },
     [1232] = {
@@ -14780,7 +14780,7 @@
         ["exp"] = 134700,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "韧性等级_紫+3_12级",
+        ["name"] = "Resilience_level_紫+3_12level",
         ["tbxid"] = 90807012
     },
     [1233] = {
@@ -14792,7 +14792,7 @@
         ["exp"] = 269400,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "韧性等级_紫+3_13级",
+        ["name"] = "Resilience_level_紫+3_13level",
         ["tbxid"] = 90807013
     },
     [1234] = {
@@ -14804,7 +14804,7 @@
         ["exp"] = 404025,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "韧性等级_紫+3_14级",
+        ["name"] = "Resilience_level_紫+3_14level",
         ["tbxid"] = 90807014
     },
     [1235] = {
@@ -14816,7 +14816,7 @@
         ["exp"] = 538725,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "韧性等级_紫+3_15级",
+        ["name"] = "Resilience_level_紫+3_15level",
         ["tbxid"] = 90807015
     },
     [1236] = {
@@ -14828,7 +14828,7 @@
         ["exp"] = 673350,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "韧性等级_紫+3_16级",
+        ["name"] = "Resilience_level_紫+3_16level",
         ["tbxid"] = 90807016
     },
     [1237] = {
@@ -14840,7 +14840,7 @@
         ["exp"] = 808050,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "韧性等级_紫+3_17级",
+        ["name"] = "Resilience_level_紫+3_17level",
         ["tbxid"] = 90807017
     },
     [1238] = {
@@ -14852,7 +14852,7 @@
         ["exp"] = 942675,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "韧性等级_紫+3_18级",
+        ["name"] = "Resilience_level_紫+3_18level",
         ["tbxid"] = 90807018
     },
     [1239] = {
@@ -14864,7 +14864,7 @@
         ["exp"] = 1144650,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "韧性等级_紫+3_19级",
+        ["name"] = "Resilience_level_紫+3_19level",
         ["tbxid"] = 90807019
     },
     [1240] = {
@@ -14876,7 +14876,7 @@
         ["exp"] = 1346700,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "韧性等级_紫+3_20级",
+        ["name"] = "Resilience_level_紫+3_20level",
         ["tbxid"] = 90807020
     },
     [1241] = {
@@ -14888,7 +14888,7 @@
         ["exp"] = 0,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "穿透等级_紫+3_1级",
+        ["name"] = "Penetration_level_紫+3_1level",
         ["tbxid"] = 90907001
     },
     [1242] = {
@@ -14900,7 +14900,7 @@
         ["exp"] = 375,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "穿透等级_紫+3_2级",
+        ["name"] = "Penetration_level_紫+3_2level",
         ["tbxid"] = 90907002
     },
     [1243] = {
@@ -14912,7 +14912,7 @@
         ["exp"] = 825,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "穿透等级_紫+3_3级",
+        ["name"] = "Penetration_level_紫+3_3level",
         ["tbxid"] = 90907003
     },
     [1244] = {
@@ -14924,7 +14924,7 @@
         ["exp"] = 1725,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "穿透等级_紫+3_4级",
+        ["name"] = "Penetration_level_紫+3_4level",
         ["tbxid"] = 90907004
     },
     [1245] = {
@@ -14936,7 +14936,7 @@
         ["exp"] = 3225,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "穿透等级_紫+3_5级",
+        ["name"] = "Penetration_level_紫+3_5level",
         ["tbxid"] = 90907005
     },
     [1246] = {
@@ -14948,7 +14948,7 @@
         ["exp"] = 5475,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "穿透等级_紫+3_6级",
+        ["name"] = "Penetration_level_紫+3_6level",
         ["tbxid"] = 90907006
     },
     [1247] = {
@@ -14960,7 +14960,7 @@
         ["exp"] = 8475,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "穿透等级_紫+3_7级",
+        ["name"] = "Penetration_level_紫+3_7level",
         ["tbxid"] = 90907007
     },
     [1248] = {
@@ -14972,7 +14972,7 @@
         ["exp"] = 13050,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "穿透等级_紫+3_8级",
+        ["name"] = "Penetration_level_紫+3_8level",
         ["tbxid"] = 90907008
     },
     [1249] = {
@@ -14984,7 +14984,7 @@
         ["exp"] = 20250,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "穿透等级_紫+3_9级",
+        ["name"] = "Penetration_level_紫+3_9level",
         ["tbxid"] = 90907009
     },
     [1250] = {
@@ -14996,7 +14996,7 @@
         ["exp"] = 40425,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "穿透等级_紫+3_10级",
+        ["name"] = "Penetration_level_紫+3_10level",
         ["tbxid"] = 90907010
     },
     [1251] = {
@@ -15008,7 +15008,7 @@
         ["exp"] = 67350,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "穿透等级_紫+3_11级",
+        ["name"] = "Penetration_level_紫+3_11level",
         ["tbxid"] = 90907011
     },
     [1252] = {
@@ -15020,7 +15020,7 @@
         ["exp"] = 134700,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "穿透等级_紫+3_12级",
+        ["name"] = "Penetration_level_紫+3_12level",
         ["tbxid"] = 90907012
     },
     [1253] = {
@@ -15032,7 +15032,7 @@
         ["exp"] = 269400,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "穿透等级_紫+3_13级",
+        ["name"] = "Penetration_level_紫+3_13level",
         ["tbxid"] = 90907013
     },
     [1254] = {
@@ -15044,7 +15044,7 @@
         ["exp"] = 404025,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "穿透等级_紫+3_14级",
+        ["name"] = "Penetration_level_紫+3_14level",
         ["tbxid"] = 90907014
     },
     [1255] = {
@@ -15056,7 +15056,7 @@
         ["exp"] = 538725,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "穿透等级_紫+3_15级",
+        ["name"] = "Penetration_level_紫+3_15level",
         ["tbxid"] = 90907015
     },
     [1256] = {
@@ -15068,7 +15068,7 @@
         ["exp"] = 673350,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "穿透等级_紫+3_16级",
+        ["name"] = "Penetration_level_紫+3_16level",
         ["tbxid"] = 90907016
     },
     [1257] = {
@@ -15080,7 +15080,7 @@
         ["exp"] = 808050,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "穿透等级_紫+3_17级",
+        ["name"] = "Penetration_level_紫+3_17level",
         ["tbxid"] = 90907017
     },
     [1258] = {
@@ -15092,7 +15092,7 @@
         ["exp"] = 942675,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "穿透等级_紫+3_18级",
+        ["name"] = "Penetration_level_紫+3_18level",
         ["tbxid"] = 90907018
     },
     [1259] = {
@@ -15104,7 +15104,7 @@
         ["exp"] = 1144650,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "穿透等级_紫+3_19级",
+        ["name"] = "Penetration_level_紫+3_19level",
         ["tbxid"] = 90907019
     },
     [1260] = {
@@ -15116,7 +15116,7 @@
         ["exp"] = 1346700,
         ["type"] = 4,
         ["quality"] = 7,
-        ["name"] = "穿透等级_紫+3_20级",
+        ["name"] = "Penetration_level_紫+3_20level",
         ["tbxid"] = 90907020
     },
     [1261] = {
@@ -15128,7 +15128,7 @@
         ["exp"] = 0,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "生命上限_紫+4_1级",
+        ["name"] = "生命上限_紫+4_1level",
         ["tbxid"] = 90108001
     },
     [1262] = {
@@ -15140,7 +15140,7 @@
         ["exp"] = 375,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "生命上限_紫+4_2级",
+        ["name"] = "生命上限_紫+4_2level",
         ["tbxid"] = 90108002
     },
     [1263] = {
@@ -15152,7 +15152,7 @@
         ["exp"] = 825,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "生命上限_紫+4_3级",
+        ["name"] = "生命上限_紫+4_3level",
         ["tbxid"] = 90108003
     },
     [1264] = {
@@ -15164,7 +15164,7 @@
         ["exp"] = 1725,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "生命上限_紫+4_4级",
+        ["name"] = "生命上限_紫+4_4level",
         ["tbxid"] = 90108004
     },
     [1265] = {
@@ -15176,7 +15176,7 @@
         ["exp"] = 3225,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "生命上限_紫+4_5级",
+        ["name"] = "生命上限_紫+4_5level",
         ["tbxid"] = 90108005
     },
     [1266] = {
@@ -15188,7 +15188,7 @@
         ["exp"] = 5475,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "生命上限_紫+4_6级",
+        ["name"] = "生命上限_紫+4_6level",
         ["tbxid"] = 90108006
     },
     [1267] = {
@@ -15200,7 +15200,7 @@
         ["exp"] = 8475,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "生命上限_紫+4_7级",
+        ["name"] = "生命上限_紫+4_7level",
         ["tbxid"] = 90108007
     },
     [1268] = {
@@ -15212,7 +15212,7 @@
         ["exp"] = 13050,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "生命上限_紫+4_8级",
+        ["name"] = "生命上限_紫+4_8level",
         ["tbxid"] = 90108008
     },
     [1269] = {
@@ -15224,7 +15224,7 @@
         ["exp"] = 20250,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "生命上限_紫+4_9级",
+        ["name"] = "生命上限_紫+4_9level",
         ["tbxid"] = 90108009
     },
     [1270] = {
@@ -15236,7 +15236,7 @@
         ["exp"] = 40425,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "生命上限_紫+4_10级",
+        ["name"] = "生命上限_紫+4_10level",
         ["tbxid"] = 90108010
     },
     [1271] = {
@@ -15248,7 +15248,7 @@
         ["exp"] = 67350,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "生命上限_紫+4_11级",
+        ["name"] = "生命上限_紫+4_11level",
         ["tbxid"] = 90108011
     },
     [1272] = {
@@ -15260,7 +15260,7 @@
         ["exp"] = 134700,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "生命上限_紫+4_12级",
+        ["name"] = "生命上限_紫+4_12level",
         ["tbxid"] = 90108012
     },
     [1273] = {
@@ -15272,7 +15272,7 @@
         ["exp"] = 269400,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "生命上限_紫+4_13级",
+        ["name"] = "生命上限_紫+4_13level",
         ["tbxid"] = 90108013
     },
     [1274] = {
@@ -15284,7 +15284,7 @@
         ["exp"] = 404025,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "生命上限_紫+4_14级",
+        ["name"] = "生命上限_紫+4_14level",
         ["tbxid"] = 90108014
     },
     [1275] = {
@@ -15296,7 +15296,7 @@
         ["exp"] = 538725,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "生命上限_紫+4_15级",
+        ["name"] = "生命上限_紫+4_15level",
         ["tbxid"] = 90108015
     },
     [1276] = {
@@ -15308,7 +15308,7 @@
         ["exp"] = 673350,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "生命上限_紫+4_16级",
+        ["name"] = "生命上限_紫+4_16level",
         ["tbxid"] = 90108016
     },
     [1277] = {
@@ -15320,7 +15320,7 @@
         ["exp"] = 808050,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "生命上限_紫+4_17级",
+        ["name"] = "生命上限_紫+4_17level",
         ["tbxid"] = 90108017
     },
     [1278] = {
@@ -15332,7 +15332,7 @@
         ["exp"] = 942675,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "生命上限_紫+4_18级",
+        ["name"] = "生命上限_紫+4_18level",
         ["tbxid"] = 90108018
     },
     [1279] = {
@@ -15344,7 +15344,7 @@
         ["exp"] = 1144650,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "生命上限_紫+4_19级",
+        ["name"] = "生命上限_紫+4_19level",
         ["tbxid"] = 90108019
     },
     [1280] = {
@@ -15356,7 +15356,7 @@
         ["exp"] = 1346700,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "生命上限_紫+4_20级",
+        ["name"] = "生命上限_紫+4_20level",
         ["tbxid"] = 90108020
     },
     [1281] = {
@@ -15368,7 +15368,7 @@
         ["exp"] = 0,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "格斗防御_紫+4_1级",
+        ["name"] = "Physical_defense_紫+4_1level",
         ["tbxid"] = 90208001
     },
     [1282] = {
@@ -15380,7 +15380,7 @@
         ["exp"] = 375,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "格斗防御_紫+4_2级",
+        ["name"] = "Physical_defense_紫+4_2level",
         ["tbxid"] = 90208002
     },
     [1283] = {
@@ -15392,7 +15392,7 @@
         ["exp"] = 825,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "格斗防御_紫+4_3级",
+        ["name"] = "Physical_defense_紫+4_3level",
         ["tbxid"] = 90208003
     },
     [1284] = {
@@ -15404,7 +15404,7 @@
         ["exp"] = 1725,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "格斗防御_紫+4_4级",
+        ["name"] = "Physical_defense_紫+4_4level",
         ["tbxid"] = 90208004
     },
     [1285] = {
@@ -15416,7 +15416,7 @@
         ["exp"] = 3225,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "格斗防御_紫+4_5级",
+        ["name"] = "Physical_defense_紫+4_5level",
         ["tbxid"] = 90208005
     },
     [1286] = {
@@ -15428,7 +15428,7 @@
         ["exp"] = 5475,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "格斗防御_紫+4_6级",
+        ["name"] = "Physical_defense_紫+4_6level",
         ["tbxid"] = 90208006
     },
     [1287] = {
@@ -15440,7 +15440,7 @@
         ["exp"] = 8475,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "格斗防御_紫+4_7级",
+        ["name"] = "Physical_defense_紫+4_7level",
         ["tbxid"] = 90208007
     },
     [1288] = {
@@ -15452,7 +15452,7 @@
         ["exp"] = 13050,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "格斗防御_紫+4_8级",
+        ["name"] = "Physical_defense_紫+4_8level",
         ["tbxid"] = 90208008
     },
     [1289] = {
@@ -15464,7 +15464,7 @@
         ["exp"] = 20250,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "格斗防御_紫+4_9级",
+        ["name"] = "Physical_defense_紫+4_9level",
         ["tbxid"] = 90208009
     },
     [1290] = {
@@ -15476,7 +15476,7 @@
         ["exp"] = 40425,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "格斗防御_紫+4_10级",
+        ["name"] = "Physical_defense_紫+4_10level",
         ["tbxid"] = 90208010
     },
     [1291] = {
@@ -15488,7 +15488,7 @@
         ["exp"] = 67350,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "格斗防御_紫+4_11级",
+        ["name"] = "Physical_defense_紫+4_11level",
         ["tbxid"] = 90208011
     },
     [1292] = {
@@ -15500,7 +15500,7 @@
         ["exp"] = 134700,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "格斗防御_紫+4_12级",
+        ["name"] = "Physical_defense_紫+4_12level",
         ["tbxid"] = 90208012
     },
     [1293] = {
@@ -15512,7 +15512,7 @@
         ["exp"] = 269400,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "格斗防御_紫+4_13级",
+        ["name"] = "Physical_defense_紫+4_13level",
         ["tbxid"] = 90208013
     },
     [1294] = {
@@ -15524,7 +15524,7 @@
         ["exp"] = 404025,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "格斗防御_紫+4_14级",
+        ["name"] = "Physical_defense_紫+4_14level",
         ["tbxid"] = 90208014
     },
     [1295] = {
@@ -15536,7 +15536,7 @@
         ["exp"] = 538725,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "格斗防御_紫+4_15级",
+        ["name"] = "Physical_defense_紫+4_15level",
         ["tbxid"] = 90208015
     },
     [1296] = {
@@ -15548,7 +15548,7 @@
         ["exp"] = 673350,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "格斗防御_紫+4_16级",
+        ["name"] = "Physical_defense_紫+4_16level",
         ["tbxid"] = 90208016
     },
     [1297] = {
@@ -15560,7 +15560,7 @@
         ["exp"] = 808050,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "格斗防御_紫+4_17级",
+        ["name"] = "Physical_defense_紫+4_17level",
         ["tbxid"] = 90208017
     },
     [1298] = {
@@ -15572,7 +15572,7 @@
         ["exp"] = 942675,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "格斗防御_紫+4_18级",
+        ["name"] = "Physical_defense_紫+4_18level",
         ["tbxid"] = 90208018
     },
     [1299] = {
@@ -15584,7 +15584,7 @@
         ["exp"] = 1144650,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "格斗防御_紫+4_19级",
+        ["name"] = "Physical_defense_紫+4_19level",
         ["tbxid"] = 90208019
     },
     [1300] = {
@@ -15596,7 +15596,7 @@
         ["exp"] = 1346700,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "格斗防御_紫+4_20级",
+        ["name"] = "Physical_defense_紫+4_20level",
         ["tbxid"] = 90208020
     },
     [1301] = {
@@ -15608,7 +15608,7 @@
         ["exp"] = 0,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "气功防御_紫+4_1级",
+        ["name"] = "Energy_defense_紫+4_1level",
         ["tbxid"] = 90308001
     },
     [1302] = {
@@ -15620,7 +15620,7 @@
         ["exp"] = 375,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "气功防御_紫+4_2级",
+        ["name"] = "Energy_defense_紫+4_2level",
         ["tbxid"] = 90308002
     },
     [1303] = {
@@ -15632,7 +15632,7 @@
         ["exp"] = 825,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "气功防御_紫+4_3级",
+        ["name"] = "Energy_defense_紫+4_3level",
         ["tbxid"] = 90308003
     },
     [1304] = {
@@ -15644,7 +15644,7 @@
         ["exp"] = 1725,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "气功防御_紫+4_4级",
+        ["name"] = "Energy_defense_紫+4_4level",
         ["tbxid"] = 90308004
     },
     [1305] = {
@@ -15656,7 +15656,7 @@
         ["exp"] = 3225,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "气功防御_紫+4_5级",
+        ["name"] = "Energy_defense_紫+4_5level",
         ["tbxid"] = 90308005
     },
     [1306] = {
@@ -15668,7 +15668,7 @@
         ["exp"] = 5475,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "气功防御_紫+4_6级",
+        ["name"] = "Energy_defense_紫+4_6level",
         ["tbxid"] = 90308006
     },
     [1307] = {
@@ -15680,7 +15680,7 @@
         ["exp"] = 8475,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "气功防御_紫+4_7级",
+        ["name"] = "Energy_defense_紫+4_7level",
         ["tbxid"] = 90308007
     },
     [1308] = {
@@ -15692,7 +15692,7 @@
         ["exp"] = 13050,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "气功防御_紫+4_8级",
+        ["name"] = "Energy_defense_紫+4_8level",
         ["tbxid"] = 90308008
     },
     [1309] = {
@@ -15704,7 +15704,7 @@
         ["exp"] = 20250,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "气功防御_紫+4_9级",
+        ["name"] = "Energy_defense_紫+4_9level",
         ["tbxid"] = 90308009
     },
     [1310] = {
@@ -15716,7 +15716,7 @@
         ["exp"] = 40425,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "气功防御_紫+4_10级",
+        ["name"] = "Energy_defense_紫+4_10level",
         ["tbxid"] = 90308010
     },
     [1311] = {
@@ -15728,7 +15728,7 @@
         ["exp"] = 67350,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "气功防御_紫+4_11级",
+        ["name"] = "Energy_defense_紫+4_11level",
         ["tbxid"] = 90308011
     },
     [1312] = {
@@ -15740,7 +15740,7 @@
         ["exp"] = 134700,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "气功防御_紫+4_12级",
+        ["name"] = "Energy_defense_紫+4_12level",
         ["tbxid"] = 90308012
     },
     [1313] = {
@@ -15752,7 +15752,7 @@
         ["exp"] = 269400,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "气功防御_紫+4_13级",
+        ["name"] = "Energy_defense_紫+4_13level",
         ["tbxid"] = 90308013
     },
     [1314] = {
@@ -15764,7 +15764,7 @@
         ["exp"] = 404025,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "气功防御_紫+4_14级",
+        ["name"] = "Energy_defense_紫+4_14level",
         ["tbxid"] = 90308014
     },
     [1315] = {
@@ -15776,7 +15776,7 @@
         ["exp"] = 538725,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "气功防御_紫+4_15级",
+        ["name"] = "Energy_defense_紫+4_15level",
         ["tbxid"] = 90308015
     },
     [1316] = {
@@ -15788,7 +15788,7 @@
         ["exp"] = 673350,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "气功防御_紫+4_16级",
+        ["name"] = "Energy_defense_紫+4_16level",
         ["tbxid"] = 90308016
     },
     [1317] = {
@@ -15800,7 +15800,7 @@
         ["exp"] = 808050,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "气功防御_紫+4_17级",
+        ["name"] = "Energy_defense_紫+4_17level",
         ["tbxid"] = 90308017
     },
     [1318] = {
@@ -15812,7 +15812,7 @@
         ["exp"] = 942675,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "气功防御_紫+4_18级",
+        ["name"] = "Energy_defense_紫+4_18level",
         ["tbxid"] = 90308018
     },
     [1319] = {
@@ -15824,7 +15824,7 @@
         ["exp"] = 1144650,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "气功防御_紫+4_19级",
+        ["name"] = "Energy_defense_紫+4_19level",
         ["tbxid"] = 90308019
     },
     [1320] = {
@@ -15836,7 +15836,7 @@
         ["exp"] = 1346700,
         ["type"] = 1,
         ["quality"] = 8,
-        ["name"] = "气功防御_紫+4_20级",
+        ["name"] = "Energy_defense_紫+4_20level",
         ["tbxid"] = 90308020
     },
     [1321] = {
@@ -15848,7 +15848,7 @@
         ["exp"] = 0,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "格斗攻击_紫+4_1级",
+        ["name"] = "Physical_attack_紫+4_1level",
         ["tbxid"] = 90408001
     },
     [1322] = {
@@ -15860,7 +15860,7 @@
         ["exp"] = 375,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "格斗攻击_紫+4_2级",
+        ["name"] = "Physical_attack_紫+4_2level",
         ["tbxid"] = 90408002
     },
     [1323] = {
@@ -15872,7 +15872,7 @@
         ["exp"] = 825,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "格斗攻击_紫+4_3级",
+        ["name"] = "Physical_attack_紫+4_3level",
         ["tbxid"] = 90408003
     },
     [1324] = {
@@ -15884,7 +15884,7 @@
         ["exp"] = 1725,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "格斗攻击_紫+4_4级",
+        ["name"] = "Physical_attack_紫+4_4level",
         ["tbxid"] = 90408004
     },
     [1325] = {
@@ -15896,7 +15896,7 @@
         ["exp"] = 3225,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "格斗攻击_紫+4_5级",
+        ["name"] = "Physical_attack_紫+4_5level",
         ["tbxid"] = 90408005
     },
     [1326] = {
@@ -15908,7 +15908,7 @@
         ["exp"] = 5475,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "格斗攻击_紫+4_6级",
+        ["name"] = "Physical_attack_紫+4_6level",
         ["tbxid"] = 90408006
     },
     [1327] = {
@@ -15920,7 +15920,7 @@
         ["exp"] = 8475,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "格斗攻击_紫+4_7级",
+        ["name"] = "Physical_attack_紫+4_7level",
         ["tbxid"] = 90408007
     },
     [1328] = {
@@ -15932,7 +15932,7 @@
         ["exp"] = 13050,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "格斗攻击_紫+4_8级",
+        ["name"] = "Physical_attack_紫+4_8level",
         ["tbxid"] = 90408008
     },
     [1329] = {
@@ -15944,7 +15944,7 @@
         ["exp"] = 20250,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "格斗攻击_紫+4_9级",
+        ["name"] = "Physical_attack_紫+4_9level",
         ["tbxid"] = 90408009
     },
     [1330] = {
@@ -15956,7 +15956,7 @@
         ["exp"] = 40425,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "格斗攻击_紫+4_10级",
+        ["name"] = "Physical_attack_紫+4_10level",
         ["tbxid"] = 90408010
     },
     [1331] = {
@@ -15968,7 +15968,7 @@
         ["exp"] = 67350,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "格斗攻击_紫+4_11级",
+        ["name"] = "Physical_attack_紫+4_11level",
         ["tbxid"] = 90408011
     },
     [1332] = {
@@ -15980,7 +15980,7 @@
         ["exp"] = 134700,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "格斗攻击_紫+4_12级",
+        ["name"] = "Physical_attack_紫+4_12level",
         ["tbxid"] = 90408012
     },
     [1333] = {
@@ -15992,7 +15992,7 @@
         ["exp"] = 269400,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "格斗攻击_紫+4_13级",
+        ["name"] = "Physical_attack_紫+4_13level",
         ["tbxid"] = 90408013
     },
     [1334] = {
@@ -16004,7 +16004,7 @@
         ["exp"] = 404025,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "格斗攻击_紫+4_14级",
+        ["name"] = "Physical_attack_紫+4_14level",
         ["tbxid"] = 90408014
     },
     [1335] = {
@@ -16016,7 +16016,7 @@
         ["exp"] = 538725,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "格斗攻击_紫+4_15级",
+        ["name"] = "Physical_attack_紫+4_15level",
         ["tbxid"] = 90408015
     },
     [1336] = {
@@ -16028,7 +16028,7 @@
         ["exp"] = 673350,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "格斗攻击_紫+4_16级",
+        ["name"] = "Physical_attack_紫+4_16level",
         ["tbxid"] = 90408016
     },
     [1337] = {
@@ -16040,7 +16040,7 @@
         ["exp"] = 808050,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "格斗攻击_紫+4_17级",
+        ["name"] = "Physical_attack_紫+4_17level",
         ["tbxid"] = 90408017
     },
     [1338] = {
@@ -16052,7 +16052,7 @@
         ["exp"] = 942675,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "格斗攻击_紫+4_18级",
+        ["name"] = "Physical_attack_紫+4_18level",
         ["tbxid"] = 90408018
     },
     [1339] = {
@@ -16064,7 +16064,7 @@
         ["exp"] = 1144650,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "格斗攻击_紫+4_19级",
+        ["name"] = "Physical_attack_紫+4_19level",
         ["tbxid"] = 90408019
     },
     [1340] = {
@@ -16076,7 +16076,7 @@
         ["exp"] = 1346700,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "格斗攻击_紫+4_20级",
+        ["name"] = "Physical_attack_紫+4_20level",
         ["tbxid"] = 90408020
     },
     [1341] = {
@@ -16088,7 +16088,7 @@
         ["exp"] = 0,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "气功攻击_紫+4_1级",
+        ["name"] = "Energy_attack_紫+4_1level",
         ["tbxid"] = 90508001
     },
     [1342] = {
@@ -16100,7 +16100,7 @@
         ["exp"] = 375,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "气功攻击_紫+4_2级",
+        ["name"] = "Energy_attack_紫+4_2level",
         ["tbxid"] = 90508002
     },
     [1343] = {
@@ -16112,7 +16112,7 @@
         ["exp"] = 825,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "气功攻击_紫+4_3级",
+        ["name"] = "Energy_attack_紫+4_3level",
         ["tbxid"] = 90508003
     },
     [1344] = {
@@ -16124,7 +16124,7 @@
         ["exp"] = 1725,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "气功攻击_紫+4_4级",
+        ["name"] = "Energy_attack_紫+4_4level",
         ["tbxid"] = 90508004
     },
     [1345] = {
@@ -16136,7 +16136,7 @@
         ["exp"] = 3225,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "气功攻击_紫+4_5级",
+        ["name"] = "Energy_attack_紫+4_5level",
         ["tbxid"] = 90508005
     },
     [1346] = {
@@ -16148,7 +16148,7 @@
         ["exp"] = 5475,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "气功攻击_紫+4_6级",
+        ["name"] = "Energy_attack_紫+4_6level",
         ["tbxid"] = 90508006
     },
     [1347] = {
@@ -16160,7 +16160,7 @@
         ["exp"] = 8475,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "气功攻击_紫+4_7级",
+        ["name"] = "Energy_attack_紫+4_7level",
         ["tbxid"] = 90508007
     },
     [1348] = {
@@ -16172,7 +16172,7 @@
         ["exp"] = 13050,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "气功攻击_紫+4_8级",
+        ["name"] = "Energy_attack_紫+4_8level",
         ["tbxid"] = 90508008
     },
     [1349] = {
@@ -16184,7 +16184,7 @@
         ["exp"] = 20250,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "气功攻击_紫+4_9级",
+        ["name"] = "Energy_attack_紫+4_9level",
         ["tbxid"] = 90508009
     },
     [1350] = {
@@ -16196,7 +16196,7 @@
         ["exp"] = 40425,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "气功攻击_紫+4_10级",
+        ["name"] = "Energy_attack_紫+4_10level",
         ["tbxid"] = 90508010
     },
     [1351] = {
@@ -16208,7 +16208,7 @@
         ["exp"] = 67350,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "气功攻击_紫+4_11级",
+        ["name"] = "Energy_attack_紫+4_11level",
         ["tbxid"] = 90508011
     },
     [1352] = {
@@ -16220,7 +16220,7 @@
         ["exp"] = 134700,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "气功攻击_紫+4_12级",
+        ["name"] = "Energy_attack_紫+4_12level",
         ["tbxid"] = 90508012
     },
     [1353] = {
@@ -16232,7 +16232,7 @@
         ["exp"] = 269400,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "气功攻击_紫+4_13级",
+        ["name"] = "Energy_attack_紫+4_13level",
         ["tbxid"] = 90508013
     },
     [1354] = {
@@ -16244,7 +16244,7 @@
         ["exp"] = 404025,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "气功攻击_紫+4_14级",
+        ["name"] = "Energy_attack_紫+4_14level",
         ["tbxid"] = 90508014
     },
     [1355] = {
@@ -16256,7 +16256,7 @@
         ["exp"] = 538725,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "气功攻击_紫+4_15级",
+        ["name"] = "Energy_attack_紫+4_15level",
         ["tbxid"] = 90508015
     },
     [1356] = {
@@ -16268,7 +16268,7 @@
         ["exp"] = 673350,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "气功攻击_紫+4_16级",
+        ["name"] = "Energy_attack_紫+4_16level",
         ["tbxid"] = 90508016
     },
     [1357] = {
@@ -16280,7 +16280,7 @@
         ["exp"] = 808050,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "气功攻击_紫+4_17级",
+        ["name"] = "Energy_attack_紫+4_17level",
         ["tbxid"] = 90508017
     },
     [1358] = {
@@ -16292,7 +16292,7 @@
         ["exp"] = 942675,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "气功攻击_紫+4_18级",
+        ["name"] = "Energy_attack_紫+4_18level",
         ["tbxid"] = 90508018
     },
     [1359] = {
@@ -16304,7 +16304,7 @@
         ["exp"] = 1144650,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "气功攻击_紫+4_19级",
+        ["name"] = "Energy_attack_紫+4_19level",
         ["tbxid"] = 90508019
     },
     [1360] = {
@@ -16316,7 +16316,7 @@
         ["exp"] = 1346700,
         ["type"] = 2,
         ["quality"] = 8,
-        ["name"] = "气功攻击_紫+4_20级",
+        ["name"] = "Energy_attack_紫+4_20level",
         ["tbxid"] = 90508020
     },
     [1361] = {
@@ -16328,7 +16328,7 @@
         ["exp"] = 0,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "暴击等级_紫+4_1级",
+        ["name"] = "Critical_rate_紫+4_1level",
         ["tbxid"] = 90608001
     },
     [1362] = {
@@ -16340,7 +16340,7 @@
         ["exp"] = 375,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "暴击等级_紫+4_2级",
+        ["name"] = "Critical_rate_紫+4_2level",
         ["tbxid"] = 90608002
     },
     [1363] = {
@@ -16352,7 +16352,7 @@
         ["exp"] = 825,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "暴击等级_紫+4_3级",
+        ["name"] = "Critical_rate_紫+4_3level",
         ["tbxid"] = 90608003
     },
     [1364] = {
@@ -16364,7 +16364,7 @@
         ["exp"] = 1725,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "暴击等级_紫+4_4级",
+        ["name"] = "Critical_rate_紫+4_4level",
         ["tbxid"] = 90608004
     },
     [1365] = {
@@ -16376,7 +16376,7 @@
         ["exp"] = 3225,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "暴击等级_紫+4_5级",
+        ["name"] = "Critical_rate_紫+4_5level",
         ["tbxid"] = 90608005
     },
     [1366] = {
@@ -16388,7 +16388,7 @@
         ["exp"] = 5475,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "暴击等级_紫+4_6级",
+        ["name"] = "Critical_rate_紫+4_6level",
         ["tbxid"] = 90608006
     },
     [1367] = {
@@ -16400,7 +16400,7 @@
         ["exp"] = 8475,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "暴击等级_紫+4_7级",
+        ["name"] = "Critical_rate_紫+4_7level",
         ["tbxid"] = 90608007
     },
     [1368] = {
@@ -16412,7 +16412,7 @@
         ["exp"] = 13050,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "暴击等级_紫+4_8级",
+        ["name"] = "Critical_rate_紫+4_8level",
         ["tbxid"] = 90608008
     },
     [1369] = {
@@ -16424,7 +16424,7 @@
         ["exp"] = 20250,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "暴击等级_紫+4_9级",
+        ["name"] = "Critical_rate_紫+4_9level",
         ["tbxid"] = 90608009
     },
     [1370] = {
@@ -16436,7 +16436,7 @@
         ["exp"] = 40425,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "暴击等级_紫+4_10级",
+        ["name"] = "Critical_rate_紫+4_10level",
         ["tbxid"] = 90608010
     },
     [1371] = {
@@ -16448,7 +16448,7 @@
         ["exp"] = 67350,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "暴击等级_紫+4_11级",
+        ["name"] = "Critical_rate_紫+4_11level",
         ["tbxid"] = 90608011
     },
     [1372] = {
@@ -16460,7 +16460,7 @@
         ["exp"] = 134700,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "暴击等级_紫+4_12级",
+        ["name"] = "Critical_rate_紫+4_12level",
         ["tbxid"] = 90608012
     },
     [1373] = {
@@ -16472,7 +16472,7 @@
         ["exp"] = 269400,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "暴击等级_紫+4_13级",
+        ["name"] = "Critical_rate_紫+4_13level",
         ["tbxid"] = 90608013
     },
     [1374] = {
@@ -16484,7 +16484,7 @@
         ["exp"] = 404025,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "暴击等级_紫+4_14级",
+        ["name"] = "Critical_rate_紫+4_14level",
         ["tbxid"] = 90608014
     },
     [1375] = {
@@ -16496,7 +16496,7 @@
         ["exp"] = 538725,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "暴击等级_紫+4_15级",
+        ["name"] = "Critical_rate_紫+4_15level",
         ["tbxid"] = 90608015
     },
     [1376] = {
@@ -16508,7 +16508,7 @@
         ["exp"] = 673350,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "暴击等级_紫+4_16级",
+        ["name"] = "Critical_rate_紫+4_16level",
         ["tbxid"] = 90608016
     },
     [1377] = {
@@ -16520,7 +16520,7 @@
         ["exp"] = 808050,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "暴击等级_紫+4_17级",
+        ["name"] = "Critical_rate_紫+4_17level",
         ["tbxid"] = 90608017
     },
     [1378] = {
@@ -16532,7 +16532,7 @@
         ["exp"] = 942675,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "暴击等级_紫+4_18级",
+        ["name"] = "Critical_rate_紫+4_18level",
         ["tbxid"] = 90608018
     },
     [1379] = {
@@ -16544,7 +16544,7 @@
         ["exp"] = 1144650,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "暴击等级_紫+4_19级",
+        ["name"] = "Critical_rate_紫+4_19level",
         ["tbxid"] = 90608019
     },
     [1380] = {
@@ -16556,7 +16556,7 @@
         ["exp"] = 1346700,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "暴击等级_紫+4_20级",
+        ["name"] = "Critical_rate_紫+4_20level",
         ["tbxid"] = 90608020
     },
     [1381] = {
@@ -16568,7 +16568,7 @@
         ["exp"] = 0,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "格挡等级_紫+4_1级",
+        ["name"] = "Block_level_紫+4_1level",
         ["tbxid"] = 90708001
     },
     [1382] = {
@@ -16580,7 +16580,7 @@
         ["exp"] = 375,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "格挡等级_紫+4_2级",
+        ["name"] = "Block_level_紫+4_2level",
         ["tbxid"] = 90708002
     },
     [1383] = {
@@ -16592,7 +16592,7 @@
         ["exp"] = 825,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "格挡等级_紫+4_3级",
+        ["name"] = "Block_level_紫+4_3level",
         ["tbxid"] = 90708003
     },
     [1384] = {
@@ -16604,7 +16604,7 @@
         ["exp"] = 1725,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "格挡等级_紫+4_4级",
+        ["name"] = "Block_level_紫+4_4level",
         ["tbxid"] = 90708004
     },
     [1385] = {
@@ -16616,7 +16616,7 @@
         ["exp"] = 3225,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "格挡等级_紫+4_5级",
+        ["name"] = "Block_level_紫+4_5level",
         ["tbxid"] = 90708005
     },
     [1386] = {
@@ -16628,7 +16628,7 @@
         ["exp"] = 5475,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "格挡等级_紫+4_6级",
+        ["name"] = "Block_level_紫+4_6level",
         ["tbxid"] = 90708006
     },
     [1387] = {
@@ -16640,7 +16640,7 @@
         ["exp"] = 8475,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "格挡等级_紫+4_7级",
+        ["name"] = "Block_level_紫+4_7level",
         ["tbxid"] = 90708007
     },
     [1388] = {
@@ -16652,7 +16652,7 @@
         ["exp"] = 13050,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "格挡等级_紫+4_8级",
+        ["name"] = "Block_level_紫+4_8level",
         ["tbxid"] = 90708008
     },
     [1389] = {
@@ -16664,7 +16664,7 @@
         ["exp"] = 20250,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "格挡等级_紫+4_9级",
+        ["name"] = "Block_level_紫+4_9level",
         ["tbxid"] = 90708009
     },
     [1390] = {
@@ -16676,7 +16676,7 @@
         ["exp"] = 40425,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "格挡等级_紫+4_10级",
+        ["name"] = "Block_level_紫+4_10level",
         ["tbxid"] = 90708010
     },
     [1391] = {
@@ -16688,7 +16688,7 @@
         ["exp"] = 67350,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "格挡等级_紫+4_11级",
+        ["name"] = "Block_level_紫+4_11level",
         ["tbxid"] = 90708011
     },
     [1392] = {
@@ -16700,7 +16700,7 @@
         ["exp"] = 134700,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "格挡等级_紫+4_12级",
+        ["name"] = "Block_level_紫+4_12level",
         ["tbxid"] = 90708012
     },
     [1393] = {
@@ -16712,7 +16712,7 @@
         ["exp"] = 269400,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "格挡等级_紫+4_13级",
+        ["name"] = "Block_level_紫+4_13level",
         ["tbxid"] = 90708013
     },
     [1394] = {
@@ -16724,7 +16724,7 @@
         ["exp"] = 404025,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "格挡等级_紫+4_14级",
+        ["name"] = "Block_level_紫+4_14level",
         ["tbxid"] = 90708014
     },
     [1395] = {
@@ -16736,7 +16736,7 @@
         ["exp"] = 538725,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "格挡等级_紫+4_15级",
+        ["name"] = "Block_level_紫+4_15level",
         ["tbxid"] = 90708015
     },
     [1396] = {
@@ -16748,7 +16748,7 @@
         ["exp"] = 673350,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "格挡等级_紫+4_16级",
+        ["name"] = "Block_level_紫+4_16level",
         ["tbxid"] = 90708016
     },
     [1397] = {
@@ -16760,7 +16760,7 @@
         ["exp"] = 808050,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "格挡等级_紫+4_17级",
+        ["name"] = "Block_level_紫+4_17level",
         ["tbxid"] = 90708017
     },
     [1398] = {
@@ -16772,7 +16772,7 @@
         ["exp"] = 942675,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "格挡等级_紫+4_18级",
+        ["name"] = "Block_level_紫+4_18level",
         ["tbxid"] = 90708018
     },
     [1399] = {
@@ -16784,7 +16784,7 @@
         ["exp"] = 1144650,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "格挡等级_紫+4_19级",
+        ["name"] = "Block_level_紫+4_19level",
         ["tbxid"] = 90708019
     },
     [1400] = {
@@ -16796,7 +16796,7 @@
         ["exp"] = 1346700,
         ["type"] = 3,
         ["quality"] = 8,
-        ["name"] = "格挡等级_紫+4_20级",
+        ["name"] = "Block_level_紫+4_20level",
         ["tbxid"] = 90708020
     },
     [1401] = {
@@ -16808,7 +16808,7 @@
         ["exp"] = 0,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "韧性等级_紫+4_1级",
+        ["name"] = "Resilience_level_紫+4_1level",
         ["tbxid"] = 90808001
     },
     [1402] = {
@@ -16820,7 +16820,7 @@
         ["exp"] = 375,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "韧性等级_紫+4_2级",
+        ["name"] = "Resilience_level_紫+4_2level",
         ["tbxid"] = 90808002
     },
     [1403] = {
@@ -16832,7 +16832,7 @@
         ["exp"] = 825,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "韧性等级_紫+4_3级",
+        ["name"] = "Resilience_level_紫+4_3level",
         ["tbxid"] = 90808003
     },
     [1404] = {
@@ -16844,7 +16844,7 @@
         ["exp"] = 1725,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "韧性等级_紫+4_4级",
+        ["name"] = "Resilience_level_紫+4_4level",
         ["tbxid"] = 90808004
     },
     [1405] = {
@@ -16856,7 +16856,7 @@
         ["exp"] = 3225,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "韧性等级_紫+4_5级",
+        ["name"] = "Resilience_level_紫+4_5level",
         ["tbxid"] = 90808005
     },
     [1406] = {
@@ -16868,7 +16868,7 @@
         ["exp"] = 5475,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "韧性等级_紫+4_6级",
+        ["name"] = "Resilience_level_紫+4_6level",
         ["tbxid"] = 90808006
     },
     [1407] = {
@@ -16880,7 +16880,7 @@
         ["exp"] = 8475,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "韧性等级_紫+4_7级",
+        ["name"] = "Resilience_level_紫+4_7level",
         ["tbxid"] = 90808007
     },
     [1408] = {
@@ -16892,7 +16892,7 @@
         ["exp"] = 13050,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "韧性等级_紫+4_8级",
+        ["name"] = "Resilience_level_紫+4_8level",
         ["tbxid"] = 90808008
     },
     [1409] = {
@@ -16904,7 +16904,7 @@
         ["exp"] = 20250,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "韧性等级_紫+4_9级",
+        ["name"] = "Resilience_level_紫+4_9level",
         ["tbxid"] = 90808009
     },
     [1410] = {
@@ -16916,7 +16916,7 @@
         ["exp"] = 40425,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "韧性等级_紫+4_10级",
+        ["name"] = "Resilience_level_紫+4_10level",
         ["tbxid"] = 90808010
     },
     [1411] = {
@@ -16928,7 +16928,7 @@
         ["exp"] = 67350,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "韧性等级_紫+4_11级",
+        ["name"] = "Resilience_level_紫+4_11level",
         ["tbxid"] = 90808011
     },
     [1412] = {
@@ -16940,7 +16940,7 @@
         ["exp"] = 134700,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "韧性等级_紫+4_12级",
+        ["name"] = "Resilience_level_紫+4_12level",
         ["tbxid"] = 90808012
     },
     [1413] = {
@@ -16952,7 +16952,7 @@
         ["exp"] = 269400,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "韧性等级_紫+4_13级",
+        ["name"] = "Resilience_level_紫+4_13level",
         ["tbxid"] = 90808013
     },
     [1414] = {
@@ -16964,7 +16964,7 @@
         ["exp"] = 404025,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "韧性等级_紫+4_14级",
+        ["name"] = "Resilience_level_紫+4_14level",
         ["tbxid"] = 90808014
     },
     [1415] = {
@@ -16976,7 +16976,7 @@
         ["exp"] = 538725,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "韧性等级_紫+4_15级",
+        ["name"] = "Resilience_level_紫+4_15level",
         ["tbxid"] = 90808015
     },
     [1416] = {
@@ -16988,7 +16988,7 @@
         ["exp"] = 673350,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "韧性等级_紫+4_16级",
+        ["name"] = "Resilience_level_紫+4_16level",
         ["tbxid"] = 90808016
     },
     [1417] = {
@@ -17000,7 +17000,7 @@
         ["exp"] = 808050,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "韧性等级_紫+4_17级",
+        ["name"] = "Resilience_level_紫+4_17level",
         ["tbxid"] = 90808017
     },
     [1418] = {
@@ -17012,7 +17012,7 @@
         ["exp"] = 942675,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "韧性等级_紫+4_18级",
+        ["name"] = "Resilience_level_紫+4_18level",
         ["tbxid"] = 90808018
     },
     [1419] = {
@@ -17024,7 +17024,7 @@
         ["exp"] = 1144650,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "韧性等级_紫+4_19级",
+        ["name"] = "Resilience_level_紫+4_19level",
         ["tbxid"] = 90808019
     },
     [1420] = {
@@ -17036,7 +17036,7 @@
         ["exp"] = 1346700,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "韧性等级_紫+4_20级",
+        ["name"] = "Resilience_level_紫+4_20level",
         ["tbxid"] = 90808020
     },
     [1421] = {
@@ -17048,7 +17048,7 @@
         ["exp"] = 0,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "穿透等级_紫+4_1级",
+        ["name"] = "Penetration_level_紫+4_1level",
         ["tbxid"] = 90908001
     },
     [1422] = {
@@ -17060,7 +17060,7 @@
         ["exp"] = 375,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "穿透等级_紫+4_2级",
+        ["name"] = "Penetration_level_紫+4_2level",
         ["tbxid"] = 90908002
     },
     [1423] = {
@@ -17072,7 +17072,7 @@
         ["exp"] = 825,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "穿透等级_紫+4_3级",
+        ["name"] = "Penetration_level_紫+4_3level",
         ["tbxid"] = 90908003
     },
     [1424] = {
@@ -17084,7 +17084,7 @@
         ["exp"] = 1725,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "穿透等级_紫+4_4级",
+        ["name"] = "Penetration_level_紫+4_4level",
         ["tbxid"] = 90908004
     },
     [1425] = {
@@ -17096,7 +17096,7 @@
         ["exp"] = 3225,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "穿透等级_紫+4_5级",
+        ["name"] = "Penetration_level_紫+4_5level",
         ["tbxid"] = 90908005
     },
     [1426] = {
@@ -17108,7 +17108,7 @@
         ["exp"] = 5475,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "穿透等级_紫+4_6级",
+        ["name"] = "Penetration_level_紫+4_6level",
         ["tbxid"] = 90908006
     },
     [1427] = {
@@ -17120,7 +17120,7 @@
         ["exp"] = 8475,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "穿透等级_紫+4_7级",
+        ["name"] = "Penetration_level_紫+4_7level",
         ["tbxid"] = 90908007
     },
     [1428] = {
@@ -17132,7 +17132,7 @@
         ["exp"] = 13050,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "穿透等级_紫+4_8级",
+        ["name"] = "Penetration_level_紫+4_8level",
         ["tbxid"] = 90908008
     },
     [1429] = {
@@ -17144,7 +17144,7 @@
         ["exp"] = 20250,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "穿透等级_紫+4_9级",
+        ["name"] = "Penetration_level_紫+4_9level",
         ["tbxid"] = 90908009
     },
     [1430] = {
@@ -17156,7 +17156,7 @@
         ["exp"] = 40425,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "穿透等级_紫+4_10级",
+        ["name"] = "Penetration_level_紫+4_10level",
         ["tbxid"] = 90908010
     },
     [1431] = {
@@ -17168,7 +17168,7 @@
         ["exp"] = 67350,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "穿透等级_紫+4_11级",
+        ["name"] = "Penetration_level_紫+4_11level",
         ["tbxid"] = 90908011
     },
     [1432] = {
@@ -17180,7 +17180,7 @@
         ["exp"] = 134700,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "穿透等级_紫+4_12级",
+        ["name"] = "Penetration_level_紫+4_12level",
         ["tbxid"] = 90908012
     },
     [1433] = {
@@ -17192,7 +17192,7 @@
         ["exp"] = 269400,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "穿透等级_紫+4_13级",
+        ["name"] = "Penetration_level_紫+4_13level",
         ["tbxid"] = 90908013
     },
     [1434] = {
@@ -17204,7 +17204,7 @@
         ["exp"] = 404025,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "穿透等级_紫+4_14级",
+        ["name"] = "Penetration_level_紫+4_14level",
         ["tbxid"] = 90908014
     },
     [1435] = {
@@ -17216,7 +17216,7 @@
         ["exp"] = 538725,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "穿透等级_紫+4_15级",
+        ["name"] = "Penetration_level_紫+4_15level",
         ["tbxid"] = 90908015
     },
     [1436] = {
@@ -17228,7 +17228,7 @@
         ["exp"] = 673350,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "穿透等级_紫+4_16级",
+        ["name"] = "Penetration_level_紫+4_16level",
         ["tbxid"] = 90908016
     },
     [1437] = {
@@ -17240,7 +17240,7 @@
         ["exp"] = 808050,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "穿透等级_紫+4_17级",
+        ["name"] = "Penetration_level_紫+4_17level",
         ["tbxid"] = 90908017
     },
     [1438] = {
@@ -17252,7 +17252,7 @@
         ["exp"] = 942675,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "穿透等级_紫+4_18级",
+        ["name"] = "Penetration_level_紫+4_18level",
         ["tbxid"] = 90908018
     },
     [1439] = {
@@ -17264,7 +17264,7 @@
         ["exp"] = 1144650,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "穿透等级_紫+4_19级",
+        ["name"] = "Penetration_level_紫+4_19level",
         ["tbxid"] = 90908019
     },
     [1440] = {
@@ -17276,7 +17276,7 @@
         ["exp"] = 1346700,
         ["type"] = 4,
         ["quality"] = 8,
-        ["name"] = "穿透等级_紫+4_20级",
+        ["name"] = "Penetration_level_紫+4_20level",
         ["tbxid"] = 90908020
     },
     [1441] = {
@@ -17288,7 +17288,7 @@
         ["exp"] = 0,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "生命上限_紫+5_1级",
+        ["name"] = "生命上限_紫+5_1level",
         ["tbxid"] = 90109001
     },
     [1442] = {
@@ -17300,7 +17300,7 @@
         ["exp"] = 375,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "生命上限_紫+5_2级",
+        ["name"] = "生命上限_紫+5_2level",
         ["tbxid"] = 90109002
     },
     [1443] = {
@@ -17312,7 +17312,7 @@
         ["exp"] = 825,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "生命上限_紫+5_3级",
+        ["name"] = "生命上限_紫+5_3level",
         ["tbxid"] = 90109003
     },
     [1444] = {
@@ -17324,7 +17324,7 @@
         ["exp"] = 1725,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "生命上限_紫+5_4级",
+        ["name"] = "生命上限_紫+5_4level",
         ["tbxid"] = 90109004
     },
     [1445] = {
@@ -17336,7 +17336,7 @@
         ["exp"] = 3225,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "生命上限_紫+5_5级",
+        ["name"] = "生命上限_紫+5_5level",
         ["tbxid"] = 90109005
     },
     [1446] = {
@@ -17348,7 +17348,7 @@
         ["exp"] = 5475,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "生命上限_紫+5_6级",
+        ["name"] = "生命上限_紫+5_6level",
         ["tbxid"] = 90109006
     },
     [1447] = {
@@ -17360,7 +17360,7 @@
         ["exp"] = 8475,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "生命上限_紫+5_7级",
+        ["name"] = "生命上限_紫+5_7level",
         ["tbxid"] = 90109007
     },
     [1448] = {
@@ -17372,7 +17372,7 @@
         ["exp"] = 13050,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "生命上限_紫+5_8级",
+        ["name"] = "生命上限_紫+5_8level",
         ["tbxid"] = 90109008
     },
     [1449] = {
@@ -17384,7 +17384,7 @@
         ["exp"] = 20250,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "生命上限_紫+5_9级",
+        ["name"] = "生命上限_紫+5_9level",
         ["tbxid"] = 90109009
     },
     [1450] = {
@@ -17396,7 +17396,7 @@
         ["exp"] = 40425,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "生命上限_紫+5_10级",
+        ["name"] = "生命上限_紫+5_10level",
         ["tbxid"] = 90109010
     },
     [1451] = {
@@ -17408,7 +17408,7 @@
         ["exp"] = 67350,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "生命上限_紫+5_11级",
+        ["name"] = "生命上限_紫+5_11level",
         ["tbxid"] = 90109011
     },
     [1452] = {
@@ -17420,7 +17420,7 @@
         ["exp"] = 134700,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "生命上限_紫+5_12级",
+        ["name"] = "生命上限_紫+5_12level",
         ["tbxid"] = 90109012
     },
     [1453] = {
@@ -17432,7 +17432,7 @@
         ["exp"] = 269400,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "生命上限_紫+5_13级",
+        ["name"] = "生命上限_紫+5_13level",
         ["tbxid"] = 90109013
     },
     [1454] = {
@@ -17444,7 +17444,7 @@
         ["exp"] = 404025,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "生命上限_紫+5_14级",
+        ["name"] = "生命上限_紫+5_14level",
         ["tbxid"] = 90109014
     },
     [1455] = {
@@ -17456,7 +17456,7 @@
         ["exp"] = 538725,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "生命上限_紫+5_15级",
+        ["name"] = "生命上限_紫+5_15level",
         ["tbxid"] = 90109015
     },
     [1456] = {
@@ -17468,7 +17468,7 @@
         ["exp"] = 673350,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "生命上限_紫+5_16级",
+        ["name"] = "生命上限_紫+5_16level",
         ["tbxid"] = 90109016
     },
     [1457] = {
@@ -17480,7 +17480,7 @@
         ["exp"] = 808050,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "生命上限_紫+5_17级",
+        ["name"] = "生命上限_紫+5_17level",
         ["tbxid"] = 90109017
     },
     [1458] = {
@@ -17492,7 +17492,7 @@
         ["exp"] = 942675,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "生命上限_紫+5_18级",
+        ["name"] = "生命上限_紫+5_18level",
         ["tbxid"] = 90109018
     },
     [1459] = {
@@ -17504,7 +17504,7 @@
         ["exp"] = 1144650,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "生命上限_紫+5_19级",
+        ["name"] = "生命上限_紫+5_19level",
         ["tbxid"] = 90109019
     },
     [1460] = {
@@ -17516,7 +17516,7 @@
         ["exp"] = 1346700,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "生命上限_紫+5_20级",
+        ["name"] = "生命上限_紫+5_20level",
         ["tbxid"] = 90109020
     },
     [1461] = {
@@ -17528,7 +17528,7 @@
         ["exp"] = 0,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "格斗防御_紫+5_1级",
+        ["name"] = "Physical_defense_紫+5_1level",
         ["tbxid"] = 90209001
     },
     [1462] = {
@@ -17540,7 +17540,7 @@
         ["exp"] = 375,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "格斗防御_紫+5_2级",
+        ["name"] = "Physical_defense_紫+5_2level",
         ["tbxid"] = 90209002
     },
     [1463] = {
@@ -17552,7 +17552,7 @@
         ["exp"] = 825,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "格斗防御_紫+5_3级",
+        ["name"] = "Physical_defense_紫+5_3level",
         ["tbxid"] = 90209003
     },
     [1464] = {
@@ -17564,7 +17564,7 @@
         ["exp"] = 1725,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "格斗防御_紫+5_4级",
+        ["name"] = "Physical_defense_紫+5_4level",
         ["tbxid"] = 90209004
     },
     [1465] = {
@@ -17576,7 +17576,7 @@
         ["exp"] = 3225,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "格斗防御_紫+5_5级",
+        ["name"] = "Physical_defense_紫+5_5level",
         ["tbxid"] = 90209005
     },
     [1466] = {
@@ -17588,7 +17588,7 @@
         ["exp"] = 5475,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "格斗防御_紫+5_6级",
+        ["name"] = "Physical_defense_紫+5_6level",
         ["tbxid"] = 90209006
     },
     [1467] = {
@@ -17600,7 +17600,7 @@
         ["exp"] = 8475,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "格斗防御_紫+5_7级",
+        ["name"] = "Physical_defense_紫+5_7level",
         ["tbxid"] = 90209007
     },
     [1468] = {
@@ -17612,7 +17612,7 @@
         ["exp"] = 13050,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "格斗防御_紫+5_8级",
+        ["name"] = "Physical_defense_紫+5_8level",
         ["tbxid"] = 90209008
     },
     [1469] = {
@@ -17624,7 +17624,7 @@
         ["exp"] = 20250,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "格斗防御_紫+5_9级",
+        ["name"] = "Physical_defense_紫+5_9level",
         ["tbxid"] = 90209009
     },
     [1470] = {
@@ -17636,7 +17636,7 @@
         ["exp"] = 40425,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "格斗防御_紫+5_10级",
+        ["name"] = "Physical_defense_紫+5_10level",
         ["tbxid"] = 90209010
     },
     [1471] = {
@@ -17648,7 +17648,7 @@
         ["exp"] = 67350,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "格斗防御_紫+5_11级",
+        ["name"] = "Physical_defense_紫+5_11level",
         ["tbxid"] = 90209011
     },
     [1472] = {
@@ -17660,7 +17660,7 @@
         ["exp"] = 134700,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "格斗防御_紫+5_12级",
+        ["name"] = "Physical_defense_紫+5_12level",
         ["tbxid"] = 90209012
     },
     [1473] = {
@@ -17672,7 +17672,7 @@
         ["exp"] = 269400,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "格斗防御_紫+5_13级",
+        ["name"] = "Physical_defense_紫+5_13level",
         ["tbxid"] = 90209013
     },
     [1474] = {
@@ -17684,7 +17684,7 @@
         ["exp"] = 404025,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "格斗防御_紫+5_14级",
+        ["name"] = "Physical_defense_紫+5_14level",
         ["tbxid"] = 90209014
     },
     [1475] = {
@@ -17696,7 +17696,7 @@
         ["exp"] = 538725,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "格斗防御_紫+5_15级",
+        ["name"] = "Physical_defense_紫+5_15level",
         ["tbxid"] = 90209015
     },
     [1476] = {
@@ -17708,7 +17708,7 @@
         ["exp"] = 673350,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "格斗防御_紫+5_16级",
+        ["name"] = "Physical_defense_紫+5_16level",
         ["tbxid"] = 90209016
     },
     [1477] = {
@@ -17720,7 +17720,7 @@
         ["exp"] = 808050,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "格斗防御_紫+5_17级",
+        ["name"] = "Physical_defense_紫+5_17level",
         ["tbxid"] = 90209017
     },
     [1478] = {
@@ -17732,7 +17732,7 @@
         ["exp"] = 942675,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "格斗防御_紫+5_18级",
+        ["name"] = "Physical_defense_紫+5_18level",
         ["tbxid"] = 90209018
     },
     [1479] = {
@@ -17744,7 +17744,7 @@
         ["exp"] = 1144650,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "格斗防御_紫+5_19级",
+        ["name"] = "Physical_defense_紫+5_19level",
         ["tbxid"] = 90209019
     },
     [1480] = {
@@ -17756,7 +17756,7 @@
         ["exp"] = 1346700,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "格斗防御_紫+5_20级",
+        ["name"] = "Physical_defense_紫+5_20level",
         ["tbxid"] = 90209020
     },
     [1481] = {
@@ -17768,7 +17768,7 @@
         ["exp"] = 0,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "气功防御_紫+5_1级",
+        ["name"] = "Energy_defense_紫+5_1level",
         ["tbxid"] = 90309001
     },
     [1482] = {
@@ -17780,7 +17780,7 @@
         ["exp"] = 375,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "气功防御_紫+5_2级",
+        ["name"] = "Energy_defense_紫+5_2level",
         ["tbxid"] = 90309002
     },
     [1483] = {
@@ -17792,7 +17792,7 @@
         ["exp"] = 825,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "气功防御_紫+5_3级",
+        ["name"] = "Energy_defense_紫+5_3level",
         ["tbxid"] = 90309003
     },
     [1484] = {
@@ -17804,7 +17804,7 @@
         ["exp"] = 1725,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "气功防御_紫+5_4级",
+        ["name"] = "Energy_defense_紫+5_4level",
         ["tbxid"] = 90309004
     },
     [1485] = {
@@ -17816,7 +17816,7 @@
         ["exp"] = 3225,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "气功防御_紫+5_5级",
+        ["name"] = "Energy_defense_紫+5_5level",
         ["tbxid"] = 90309005
     },
     [1486] = {
@@ -17828,7 +17828,7 @@
         ["exp"] = 5475,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "气功防御_紫+5_6级",
+        ["name"] = "Energy_defense_紫+5_6level",
         ["tbxid"] = 90309006
     },
     [1487] = {
@@ -17840,7 +17840,7 @@
         ["exp"] = 8475,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "气功防御_紫+5_7级",
+        ["name"] = "Energy_defense_紫+5_7level",
         ["tbxid"] = 90309007
     },
     [1488] = {
@@ -17852,7 +17852,7 @@
         ["exp"] = 13050,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "气功防御_紫+5_8级",
+        ["name"] = "Energy_defense_紫+5_8level",
         ["tbxid"] = 90309008
     },
     [1489] = {
@@ -17864,7 +17864,7 @@
         ["exp"] = 20250,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "气功防御_紫+5_9级",
+        ["name"] = "Energy_defense_紫+5_9level",
         ["tbxid"] = 90309009
     },
     [1490] = {
@@ -17876,7 +17876,7 @@
         ["exp"] = 40425,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "气功防御_紫+5_10级",
+        ["name"] = "Energy_defense_紫+5_10level",
         ["tbxid"] = 90309010
     },
     [1491] = {
@@ -17888,7 +17888,7 @@
         ["exp"] = 67350,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "气功防御_紫+5_11级",
+        ["name"] = "Energy_defense_紫+5_11level",
         ["tbxid"] = 90309011
     },
     [1492] = {
@@ -17900,7 +17900,7 @@
         ["exp"] = 134700,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "气功防御_紫+5_12级",
+        ["name"] = "Energy_defense_紫+5_12level",
         ["tbxid"] = 90309012
     },
     [1493] = {
@@ -17912,7 +17912,7 @@
         ["exp"] = 269400,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "气功防御_紫+5_13级",
+        ["name"] = "Energy_defense_紫+5_13level",
         ["tbxid"] = 90309013
     },
     [1494] = {
@@ -17924,7 +17924,7 @@
         ["exp"] = 404025,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "气功防御_紫+5_14级",
+        ["name"] = "Energy_defense_紫+5_14level",
         ["tbxid"] = 90309014
     },
     [1495] = {
@@ -17936,7 +17936,7 @@
         ["exp"] = 538725,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "气功防御_紫+5_15级",
+        ["name"] = "Energy_defense_紫+5_15level",
         ["tbxid"] = 90309015
     },
     [1496] = {
@@ -17948,7 +17948,7 @@
         ["exp"] = 673350,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "气功防御_紫+5_16级",
+        ["name"] = "Energy_defense_紫+5_16level",
         ["tbxid"] = 90309016
     },
     [1497] = {
@@ -17960,7 +17960,7 @@
         ["exp"] = 808050,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "气功防御_紫+5_17级",
+        ["name"] = "Energy_defense_紫+5_17level",
         ["tbxid"] = 90309017
     },
     [1498] = {
@@ -17972,7 +17972,7 @@
         ["exp"] = 942675,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "气功防御_紫+5_18级",
+        ["name"] = "Energy_defense_紫+5_18level",
         ["tbxid"] = 90309018
     },
     [1499] = {
@@ -17984,7 +17984,7 @@
         ["exp"] = 1144650,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "气功防御_紫+5_19级",
+        ["name"] = "Energy_defense_紫+5_19level",
         ["tbxid"] = 90309019
     },
     [1500] = {
@@ -17996,7 +17996,7 @@
         ["exp"] = 1346700,
         ["type"] = 1,
         ["quality"] = 9,
-        ["name"] = "气功防御_紫+5_20级",
+        ["name"] = "Energy_defense_紫+5_20level",
         ["tbxid"] = 90309020
     },
     [1501] = {
@@ -18008,7 +18008,7 @@
         ["exp"] = 0,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "格斗攻击_紫+5_1级",
+        ["name"] = "Physical_attack_紫+5_1level",
         ["tbxid"] = 90409001
     },
     [1502] = {
@@ -18020,7 +18020,7 @@
         ["exp"] = 375,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "格斗攻击_紫+5_2级",
+        ["name"] = "Physical_attack_紫+5_2level",
         ["tbxid"] = 90409002
     },
     [1503] = {
@@ -18032,7 +18032,7 @@
         ["exp"] = 825,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "格斗攻击_紫+5_3级",
+        ["name"] = "Physical_attack_紫+5_3level",
         ["tbxid"] = 90409003
     },
     [1504] = {
@@ -18044,7 +18044,7 @@
         ["exp"] = 1725,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "格斗攻击_紫+5_4级",
+        ["name"] = "Physical_attack_紫+5_4level",
         ["tbxid"] = 90409004
     },
     [1505] = {
@@ -18056,7 +18056,7 @@
         ["exp"] = 3225,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "格斗攻击_紫+5_5级",
+        ["name"] = "Physical_attack_紫+5_5level",
         ["tbxid"] = 90409005
     },
     [1506] = {
@@ -18068,7 +18068,7 @@
         ["exp"] = 5475,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "格斗攻击_紫+5_6级",
+        ["name"] = "Physical_attack_紫+5_6level",
         ["tbxid"] = 90409006
     },
     [1507] = {
@@ -18080,7 +18080,7 @@
         ["exp"] = 8475,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "格斗攻击_紫+5_7级",
+        ["name"] = "Physical_attack_紫+5_7level",
         ["tbxid"] = 90409007
     },
     [1508] = {
@@ -18092,7 +18092,7 @@
         ["exp"] = 13050,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "格斗攻击_紫+5_8级",
+        ["name"] = "Physical_attack_紫+5_8level",
         ["tbxid"] = 90409008
     },
     [1509] = {
@@ -18104,7 +18104,7 @@
         ["exp"] = 20250,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "格斗攻击_紫+5_9级",
+        ["name"] = "Physical_attack_紫+5_9level",
         ["tbxid"] = 90409009
     },
     [1510] = {
@@ -18116,7 +18116,7 @@
         ["exp"] = 40425,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "格斗攻击_紫+5_10级",
+        ["name"] = "Physical_attack_紫+5_10level",
         ["tbxid"] = 90409010
     },
     [1511] = {
@@ -18128,7 +18128,7 @@
         ["exp"] = 67350,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "格斗攻击_紫+5_11级",
+        ["name"] = "Physical_attack_紫+5_11level",
         ["tbxid"] = 90409011
     },
     [1512] = {
@@ -18140,7 +18140,7 @@
         ["exp"] = 134700,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "格斗攻击_紫+5_12级",
+        ["name"] = "Physical_attack_紫+5_12level",
         ["tbxid"] = 90409012
     },
     [1513] = {
@@ -18152,7 +18152,7 @@
         ["exp"] = 269400,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "格斗攻击_紫+5_13级",
+        ["name"] = "Physical_attack_紫+5_13level",
         ["tbxid"] = 90409013
     },
     [1514] = {
@@ -18164,7 +18164,7 @@
         ["exp"] = 404025,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "格斗攻击_紫+5_14级",
+        ["name"] = "Physical_attack_紫+5_14level",
         ["tbxid"] = 90409014
     },
     [1515] = {
@@ -18176,7 +18176,7 @@
         ["exp"] = 538725,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "格斗攻击_紫+5_15级",
+        ["name"] = "Physical_attack_紫+5_15level",
         ["tbxid"] = 90409015
     },
     [1516] = {
@@ -18188,7 +18188,7 @@
         ["exp"] = 673350,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "格斗攻击_紫+5_16级",
+        ["name"] = "Physical_attack_紫+5_16level",
         ["tbxid"] = 90409016
     },
     [1517] = {
@@ -18200,7 +18200,7 @@
         ["exp"] = 808050,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "格斗攻击_紫+5_17级",
+        ["name"] = "Physical_attack_紫+5_17level",
         ["tbxid"] = 90409017
     },
     [1518] = {
@@ -18212,7 +18212,7 @@
         ["exp"] = 942675,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "格斗攻击_紫+5_18级",
+        ["name"] = "Physical_attack_紫+5_18level",
         ["tbxid"] = 90409018
     },
     [1519] = {
@@ -18224,7 +18224,7 @@
         ["exp"] = 1144650,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "格斗攻击_紫+5_19级",
+        ["name"] = "Physical_attack_紫+5_19level",
         ["tbxid"] = 90409019
     },
     [1520] = {
@@ -18236,7 +18236,7 @@
         ["exp"] = 1346700,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "格斗攻击_紫+5_20级",
+        ["name"] = "Physical_attack_紫+5_20level",
         ["tbxid"] = 90409020
     },
     [1521] = {
@@ -18248,7 +18248,7 @@
         ["exp"] = 0,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "气功攻击_紫+5_1级",
+        ["name"] = "Energy_attack_紫+5_1level",
         ["tbxid"] = 90509001
     },
     [1522] = {
@@ -18260,7 +18260,7 @@
         ["exp"] = 375,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "气功攻击_紫+5_2级",
+        ["name"] = "Energy_attack_紫+5_2level",
         ["tbxid"] = 90509002
     },
     [1523] = {
@@ -18272,7 +18272,7 @@
         ["exp"] = 825,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "气功攻击_紫+5_3级",
+        ["name"] = "Energy_attack_紫+5_3level",
         ["tbxid"] = 90509003
     },
     [1524] = {
@@ -18284,7 +18284,7 @@
         ["exp"] = 1725,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "气功攻击_紫+5_4级",
+        ["name"] = "Energy_attack_紫+5_4level",
         ["tbxid"] = 90509004
     },
     [1525] = {
@@ -18296,7 +18296,7 @@
         ["exp"] = 3225,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "气功攻击_紫+5_5级",
+        ["name"] = "Energy_attack_紫+5_5level",
         ["tbxid"] = 90509005
     },
     [1526] = {
@@ -18308,7 +18308,7 @@
         ["exp"] = 5475,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "气功攻击_紫+5_6级",
+        ["name"] = "Energy_attack_紫+5_6level",
         ["tbxid"] = 90509006
     },
     [1527] = {
@@ -18320,7 +18320,7 @@
         ["exp"] = 8475,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "气功攻击_紫+5_7级",
+        ["name"] = "Energy_attack_紫+5_7level",
         ["tbxid"] = 90509007
     },
     [1528] = {
@@ -18332,7 +18332,7 @@
         ["exp"] = 13050,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "气功攻击_紫+5_8级",
+        ["name"] = "Energy_attack_紫+5_8level",
         ["tbxid"] = 90509008
     },
     [1529] = {
@@ -18344,7 +18344,7 @@
         ["exp"] = 20250,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "气功攻击_紫+5_9级",
+        ["name"] = "Energy_attack_紫+5_9level",
         ["tbxid"] = 90509009
     },
     [1530] = {
@@ -18356,7 +18356,7 @@
         ["exp"] = 40425,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "气功攻击_紫+5_10级",
+        ["name"] = "Energy_attack_紫+5_10level",
         ["tbxid"] = 90509010
     },
     [1531] = {
@@ -18368,7 +18368,7 @@
         ["exp"] = 67350,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "气功攻击_紫+5_11级",
+        ["name"] = "Energy_attack_紫+5_11level",
         ["tbxid"] = 90509011
     },
     [1532] = {
@@ -18380,7 +18380,7 @@
         ["exp"] = 134700,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "气功攻击_紫+5_12级",
+        ["name"] = "Energy_attack_紫+5_12level",
         ["tbxid"] = 90509012
     },
     [1533] = {
@@ -18392,7 +18392,7 @@
         ["exp"] = 269400,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "气功攻击_紫+5_13级",
+        ["name"] = "Energy_attack_紫+5_13level",
         ["tbxid"] = 90509013
     },
     [1534] = {
@@ -18404,7 +18404,7 @@
         ["exp"] = 404025,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "气功攻击_紫+5_14级",
+        ["name"] = "Energy_attack_紫+5_14level",
         ["tbxid"] = 90509014
     },
     [1535] = {
@@ -18416,7 +18416,7 @@
         ["exp"] = 538725,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "气功攻击_紫+5_15级",
+        ["name"] = "Energy_attack_紫+5_15level",
         ["tbxid"] = 90509015
     },
     [1536] = {
@@ -18428,7 +18428,7 @@
         ["exp"] = 673350,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "气功攻击_紫+5_16级",
+        ["name"] = "Energy_attack_紫+5_16level",
         ["tbxid"] = 90509016
     },
     [1537] = {
@@ -18440,7 +18440,7 @@
         ["exp"] = 808050,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "气功攻击_紫+5_17级",
+        ["name"] = "Energy_attack_紫+5_17level",
         ["tbxid"] = 90509017
     },
     [1538] = {
@@ -18452,7 +18452,7 @@
         ["exp"] = 942675,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "气功攻击_紫+5_18级",
+        ["name"] = "Energy_attack_紫+5_18level",
         ["tbxid"] = 90509018
     },
     [1539] = {
@@ -18464,7 +18464,7 @@
         ["exp"] = 1144650,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "气功攻击_紫+5_19级",
+        ["name"] = "Energy_attack_紫+5_19level",
         ["tbxid"] = 90509019
     },
     [1540] = {
@@ -18476,7 +18476,7 @@
         ["exp"] = 1346700,
         ["type"] = 2,
         ["quality"] = 9,
-        ["name"] = "气功攻击_紫+5_20级",
+        ["name"] = "Energy_attack_紫+5_20level",
         ["tbxid"] = 90509020
     },
     [1541] = {
@@ -18488,7 +18488,7 @@
         ["exp"] = 0,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "暴击等级_紫+5_1级",
+        ["name"] = "Critical_rate_紫+5_1level",
         ["tbxid"] = 90609001
     },
     [1542] = {
@@ -18500,7 +18500,7 @@
         ["exp"] = 375,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "暴击等级_紫+5_2级",
+        ["name"] = "Critical_rate_紫+5_2level",
         ["tbxid"] = 90609002
     },
     [1543] = {
@@ -18512,7 +18512,7 @@
         ["exp"] = 825,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "暴击等级_紫+5_3级",
+        ["name"] = "Critical_rate_紫+5_3level",
         ["tbxid"] = 90609003
     },
     [1544] = {
@@ -18524,7 +18524,7 @@
         ["exp"] = 1725,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "暴击等级_紫+5_4级",
+        ["name"] = "Critical_rate_紫+5_4level",
         ["tbxid"] = 90609004
     },
     [1545] = {
@@ -18536,7 +18536,7 @@
         ["exp"] = 3225,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "暴击等级_紫+5_5级",
+        ["name"] = "Critical_rate_紫+5_5level",
         ["tbxid"] = 90609005
     },
     [1546] = {
@@ -18548,7 +18548,7 @@
         ["exp"] = 5475,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "暴击等级_紫+5_6级",
+        ["name"] = "Critical_rate_紫+5_6level",
         ["tbxid"] = 90609006
     },
     [1547] = {
@@ -18560,7 +18560,7 @@
         ["exp"] = 8475,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "暴击等级_紫+5_7级",
+        ["name"] = "Critical_rate_紫+5_7level",
         ["tbxid"] = 90609007
     },
     [1548] = {
@@ -18572,7 +18572,7 @@
         ["exp"] = 13050,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "暴击等级_紫+5_8级",
+        ["name"] = "Critical_rate_紫+5_8level",
         ["tbxid"] = 90609008
     },
     [1549] = {
@@ -18584,7 +18584,7 @@
         ["exp"] = 20250,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "暴击等级_紫+5_9级",
+        ["name"] = "Critical_rate_紫+5_9level",
         ["tbxid"] = 90609009
     },
     [1550] = {
@@ -18596,7 +18596,7 @@
         ["exp"] = 40425,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "暴击等级_紫+5_10级",
+        ["name"] = "Critical_rate_紫+5_10level",
         ["tbxid"] = 90609010
     },
     [1551] = {
@@ -18608,7 +18608,7 @@
         ["exp"] = 67350,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "暴击等级_紫+5_11级",
+        ["name"] = "Critical_rate_紫+5_11level",
         ["tbxid"] = 90609011
     },
     [1552] = {
@@ -18620,7 +18620,7 @@
         ["exp"] = 134700,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "暴击等级_紫+5_12级",
+        ["name"] = "Critical_rate_紫+5_12level",
         ["tbxid"] = 90609012
     },
     [1553] = {
@@ -18632,7 +18632,7 @@
         ["exp"] = 269400,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "暴击等级_紫+5_13级",
+        ["name"] = "Critical_rate_紫+5_13level",
         ["tbxid"] = 90609013
     },
     [1554] = {
@@ -18644,7 +18644,7 @@
         ["exp"] = 404025,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "暴击等级_紫+5_14级",
+        ["name"] = "Critical_rate_紫+5_14level",
         ["tbxid"] = 90609014
     },
     [1555] = {
@@ -18656,7 +18656,7 @@
         ["exp"] = 538725,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "暴击等级_紫+5_15级",
+        ["name"] = "Critical_rate_紫+5_15level",
         ["tbxid"] = 90609015
     },
     [1556] = {
@@ -18668,7 +18668,7 @@
         ["exp"] = 673350,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "暴击等级_紫+5_16级",
+        ["name"] = "Critical_rate_紫+5_16level",
         ["tbxid"] = 90609016
     },
     [1557] = {
@@ -18680,7 +18680,7 @@
         ["exp"] = 808050,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "暴击等级_紫+5_17级",
+        ["name"] = "Critical_rate_紫+5_17level",
         ["tbxid"] = 90609017
     },
     [1558] = {
@@ -18692,7 +18692,7 @@
         ["exp"] = 942675,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "暴击等级_紫+5_18级",
+        ["name"] = "Critical_rate_紫+5_18level",
         ["tbxid"] = 90609018
     },
     [1559] = {
@@ -18704,7 +18704,7 @@
         ["exp"] = 1144650,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "暴击等级_紫+5_19级",
+        ["name"] = "Critical_rate_紫+5_19level",
         ["tbxid"] = 90609019
     },
     [1560] = {
@@ -18716,7 +18716,7 @@
         ["exp"] = 1346700,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "暴击等级_紫+5_20级",
+        ["name"] = "Critical_rate_紫+5_20level",
         ["tbxid"] = 90609020
     },
     [1561] = {
@@ -18728,7 +18728,7 @@
         ["exp"] = 0,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "格挡等级_紫+5_1级",
+        ["name"] = "Block_level_紫+5_1level",
         ["tbxid"] = 90709001
     },
     [1562] = {
@@ -18740,7 +18740,7 @@
         ["exp"] = 375,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "格挡等级_紫+5_2级",
+        ["name"] = "Block_level_紫+5_2level",
         ["tbxid"] = 90709002
     },
     [1563] = {
@@ -18752,7 +18752,7 @@
         ["exp"] = 825,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "格挡等级_紫+5_3级",
+        ["name"] = "Block_level_紫+5_3level",
         ["tbxid"] = 90709003
     },
     [1564] = {
@@ -18764,7 +18764,7 @@
         ["exp"] = 1725,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "格挡等级_紫+5_4级",
+        ["name"] = "Block_level_紫+5_4level",
         ["tbxid"] = 90709004
     },
     [1565] = {
@@ -18776,7 +18776,7 @@
         ["exp"] = 3225,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "格挡等级_紫+5_5级",
+        ["name"] = "Block_level_紫+5_5level",
         ["tbxid"] = 90709005
     },
     [1566] = {
@@ -18788,7 +18788,7 @@
         ["exp"] = 5475,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "格挡等级_紫+5_6级",
+        ["name"] = "Block_level_紫+5_6level",
         ["tbxid"] = 90709006
     },
     [1567] = {
@@ -18800,7 +18800,7 @@
         ["exp"] = 8475,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "格挡等级_紫+5_7级",
+        ["name"] = "Block_level_紫+5_7level",
         ["tbxid"] = 90709007
     },
     [1568] = {
@@ -18812,7 +18812,7 @@
         ["exp"] = 13050,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "格挡等级_紫+5_8级",
+        ["name"] = "Block_level_紫+5_8level",
         ["tbxid"] = 90709008
     },
     [1569] = {
@@ -18824,7 +18824,7 @@
         ["exp"] = 20250,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "格挡等级_紫+5_9级",
+        ["name"] = "Block_level_紫+5_9level",
         ["tbxid"] = 90709009
     },
     [1570] = {
@@ -18836,7 +18836,7 @@
         ["exp"] = 40425,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "格挡等级_紫+5_10级",
+        ["name"] = "Block_level_紫+5_10level",
         ["tbxid"] = 90709010
     },
     [1571] = {
@@ -18848,7 +18848,7 @@
         ["exp"] = 67350,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "格挡等级_紫+5_11级",
+        ["name"] = "Block_level_紫+5_11level",
         ["tbxid"] = 90709011
     },
     [1572] = {
@@ -18860,7 +18860,7 @@
         ["exp"] = 134700,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "格挡等级_紫+5_12级",
+        ["name"] = "Block_level_紫+5_12level",
         ["tbxid"] = 90709012
     },
     [1573] = {
@@ -18872,7 +18872,7 @@
         ["exp"] = 269400,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "格挡等级_紫+5_13级",
+        ["name"] = "Block_level_紫+5_13level",
         ["tbxid"] = 90709013
     },
     [1574] = {
@@ -18884,7 +18884,7 @@
         ["exp"] = 404025,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "格挡等级_紫+5_14级",
+        ["name"] = "Block_level_紫+5_14level",
         ["tbxid"] = 90709014
     },
     [1575] = {
@@ -18896,7 +18896,7 @@
         ["exp"] = 538725,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "格挡等级_紫+5_15级",
+        ["name"] = "Block_level_紫+5_15level",
         ["tbxid"] = 90709015
     },
     [1576] = {
@@ -18908,7 +18908,7 @@
         ["exp"] = 673350,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "格挡等级_紫+5_16级",
+        ["name"] = "Block_level_紫+5_16level",
         ["tbxid"] = 90709016
     },
     [1577] = {
@@ -18920,7 +18920,7 @@
         ["exp"] = 808050,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "格挡等级_紫+5_17级",
+        ["name"] = "Block_level_紫+5_17level",
         ["tbxid"] = 90709017
     },
     [1578] = {
@@ -18932,7 +18932,7 @@
         ["exp"] = 942675,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "格挡等级_紫+5_18级",
+        ["name"] = "Block_level_紫+5_18level",
         ["tbxid"] = 90709018
     },
     [1579] = {
@@ -18944,7 +18944,7 @@
         ["exp"] = 1144650,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "格挡等级_紫+5_19级",
+        ["name"] = "Block_level_紫+5_19level",
         ["tbxid"] = 90709019
     },
     [1580] = {
@@ -18956,7 +18956,7 @@
         ["exp"] = 1346700,
         ["type"] = 3,
         ["quality"] = 9,
-        ["name"] = "格挡等级_紫+5_20级",
+        ["name"] = "Block_level_紫+5_20level",
         ["tbxid"] = 90709020
     },
     [1581] = {
@@ -18968,7 +18968,7 @@
         ["exp"] = 0,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "韧性等级_紫+5_1级",
+        ["name"] = "Resilience_level_紫+5_1level",
         ["tbxid"] = 90809001
     },
     [1582] = {
@@ -18980,7 +18980,7 @@
         ["exp"] = 375,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "韧性等级_紫+5_2级",
+        ["name"] = "Resilience_level_紫+5_2level",
         ["tbxid"] = 90809002
     },
     [1583] = {
@@ -18992,7 +18992,7 @@
         ["exp"] = 825,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "韧性等级_紫+5_3级",
+        ["name"] = "Resilience_level_紫+5_3level",
         ["tbxid"] = 90809003
     },
     [1584] = {
@@ -19004,7 +19004,7 @@
         ["exp"] = 1725,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "韧性等级_紫+5_4级",
+        ["name"] = "Resilience_level_紫+5_4level",
         ["tbxid"] = 90809004
     },
     [1585] = {
@@ -19016,7 +19016,7 @@
         ["exp"] = 3225,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "韧性等级_紫+5_5级",
+        ["name"] = "Resilience_level_紫+5_5level",
         ["tbxid"] = 90809005
     },
     [1586] = {
@@ -19028,7 +19028,7 @@
         ["exp"] = 5475,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "韧性等级_紫+5_6级",
+        ["name"] = "Resilience_level_紫+5_6level",
         ["tbxid"] = 90809006
     },
     [1587] = {
@@ -19040,7 +19040,7 @@
         ["exp"] = 8475,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "韧性等级_紫+5_7级",
+        ["name"] = "Resilience_level_紫+5_7level",
         ["tbxid"] = 90809007
     },
     [1588] = {
@@ -19052,7 +19052,7 @@
         ["exp"] = 13050,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "韧性等级_紫+5_8级",
+        ["name"] = "Resilience_level_紫+5_8level",
         ["tbxid"] = 90809008
     },
     [1589] = {
@@ -19064,7 +19064,7 @@
         ["exp"] = 20250,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "韧性等级_紫+5_9级",
+        ["name"] = "Resilience_level_紫+5_9level",
         ["tbxid"] = 90809009
     },
     [1590] = {
@@ -19076,7 +19076,7 @@
         ["exp"] = 40425,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "韧性等级_紫+5_10级",
+        ["name"] = "Resilience_level_紫+5_10level",
         ["tbxid"] = 90809010
     },
     [1591] = {
@@ -19088,7 +19088,7 @@
         ["exp"] = 67350,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "韧性等级_紫+5_11级",
+        ["name"] = "Resilience_level_紫+5_11level",
         ["tbxid"] = 90809011
     },
     [1592] = {
@@ -19100,7 +19100,7 @@
         ["exp"] = 134700,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "韧性等级_紫+5_12级",
+        ["name"] = "Resilience_level_紫+5_12level",
         ["tbxid"] = 90809012
     },
     [1593] = {
@@ -19112,7 +19112,7 @@
         ["exp"] = 269400,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "韧性等级_紫+5_13级",
+        ["name"] = "Resilience_level_紫+5_13level",
         ["tbxid"] = 90809013
     },
     [1594] = {
@@ -19124,7 +19124,7 @@
         ["exp"] = 404025,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "韧性等级_紫+5_14级",
+        ["name"] = "Resilience_level_紫+5_14level",
         ["tbxid"] = 90809014
     },
     [1595] = {
@@ -19136,7 +19136,7 @@
         ["exp"] = 538725,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "韧性等级_紫+5_15级",
+        ["name"] = "Resilience_level_紫+5_15level",
         ["tbxid"] = 90809015
     },
     [1596] = {
@@ -19148,7 +19148,7 @@
         ["exp"] = 673350,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "韧性等级_紫+5_16级",
+        ["name"] = "Resilience_level_紫+5_16level",
         ["tbxid"] = 90809016
     },
     [1597] = {
@@ -19160,7 +19160,7 @@
         ["exp"] = 808050,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "韧性等级_紫+5_17级",
+        ["name"] = "Resilience_level_紫+5_17level",
         ["tbxid"] = 90809017
     },
     [1598] = {
@@ -19172,7 +19172,7 @@
         ["exp"] = 942675,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "韧性等级_紫+5_18级",
+        ["name"] = "Resilience_level_紫+5_18level",
         ["tbxid"] = 90809018
     },
     [1599] = {
@@ -19184,7 +19184,7 @@
         ["exp"] = 1144650,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "韧性等级_紫+5_19级",
+        ["name"] = "Resilience_level_紫+5_19level",
         ["tbxid"] = 90809019
     },
     [1600] = {
@@ -19196,7 +19196,7 @@
         ["exp"] = 1346700,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "韧性等级_紫+5_20级",
+        ["name"] = "Resilience_level_紫+5_20level",
         ["tbxid"] = 90809020
     },
     [1601] = {
@@ -19208,7 +19208,7 @@
         ["exp"] = 0,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "穿透等级_紫+5_1级",
+        ["name"] = "Penetration_level_紫+5_1level",
         ["tbxid"] = 90909001
     },
     [1602] = {
@@ -19220,7 +19220,7 @@
         ["exp"] = 375,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "穿透等级_紫+5_2级",
+        ["name"] = "Penetration_level_紫+5_2level",
         ["tbxid"] = 90909002
     },
     [1603] = {
@@ -19232,7 +19232,7 @@
         ["exp"] = 825,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "穿透等级_紫+5_3级",
+        ["name"] = "Penetration_level_紫+5_3level",
         ["tbxid"] = 90909003
     },
     [1604] = {
@@ -19244,7 +19244,7 @@
         ["exp"] = 1725,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "穿透等级_紫+5_4级",
+        ["name"] = "Penetration_level_紫+5_4level",
         ["tbxid"] = 90909004
     },
     [1605] = {
@@ -19256,7 +19256,7 @@
         ["exp"] = 3225,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "穿透等级_紫+5_5级",
+        ["name"] = "Penetration_level_紫+5_5level",
         ["tbxid"] = 90909005
     },
     [1606] = {
@@ -19268,7 +19268,7 @@
         ["exp"] = 5475,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "穿透等级_紫+5_6级",
+        ["name"] = "Penetration_level_紫+5_6level",
         ["tbxid"] = 90909006
     },
     [1607] = {
@@ -19280,7 +19280,7 @@
         ["exp"] = 8475,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "穿透等级_紫+5_7级",
+        ["name"] = "Penetration_level_紫+5_7level",
         ["tbxid"] = 90909007
     },
     [1608] = {
@@ -19292,7 +19292,7 @@
         ["exp"] = 13050,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "穿透等级_紫+5_8级",
+        ["name"] = "Penetration_level_紫+5_8level",
         ["tbxid"] = 90909008
     },
     [1609] = {
@@ -19304,7 +19304,7 @@
         ["exp"] = 20250,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "穿透等级_紫+5_9级",
+        ["name"] = "Penetration_level_紫+5_9level",
         ["tbxid"] = 90909009
     },
     [1610] = {
@@ -19316,7 +19316,7 @@
         ["exp"] = 40425,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "穿透等级_紫+5_10级",
+        ["name"] = "Penetration_level_紫+5_10level",
         ["tbxid"] = 90909010
     },
     [1611] = {
@@ -19328,7 +19328,7 @@
         ["exp"] = 67350,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "穿透等级_紫+5_11级",
+        ["name"] = "Penetration_level_紫+5_11level",
         ["tbxid"] = 90909011
     },
     [1612] = {
@@ -19340,7 +19340,7 @@
         ["exp"] = 134700,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "穿透等级_紫+5_12级",
+        ["name"] = "Penetration_level_紫+5_12level",
         ["tbxid"] = 90909012
     },
     [1613] = {
@@ -19352,7 +19352,7 @@
         ["exp"] = 269400,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "穿透等级_紫+5_13级",
+        ["name"] = "Penetration_level_紫+5_13level",
         ["tbxid"] = 90909013
     },
     [1614] = {
@@ -19364,7 +19364,7 @@
         ["exp"] = 404025,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "穿透等级_紫+5_14级",
+        ["name"] = "Penetration_level_紫+5_14level",
         ["tbxid"] = 90909014
     },
     [1615] = {
@@ -19376,7 +19376,7 @@
         ["exp"] = 538725,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "穿透等级_紫+5_15级",
+        ["name"] = "Penetration_level_紫+5_15level",
         ["tbxid"] = 90909015
     },
     [1616] = {
@@ -19388,7 +19388,7 @@
         ["exp"] = 673350,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "穿透等级_紫+5_16级",
+        ["name"] = "Penetration_level_紫+5_16level",
         ["tbxid"] = 90909016
     },
     [1617] = {
@@ -19400,7 +19400,7 @@
         ["exp"] = 808050,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "穿透等级_紫+5_17级",
+        ["name"] = "Penetration_level_紫+5_17level",
         ["tbxid"] = 90909017
     },
     [1618] = {
@@ -19412,7 +19412,7 @@
         ["exp"] = 942675,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "穿透等级_紫+5_18级",
+        ["name"] = "Penetration_level_紫+5_18level",
         ["tbxid"] = 90909018
     },
     [1619] = {
@@ -19424,7 +19424,7 @@
         ["exp"] = 1144650,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "穿透等级_紫+5_19级",
+        ["name"] = "Penetration_level_紫+5_19level",
         ["tbxid"] = 90909019
     },
     [1620] = {
@@ -19436,7 +19436,7 @@
         ["exp"] = 1346700,
         ["type"] = 4,
         ["quality"] = 9,
-        ["name"] = "穿透等级_紫+5_20级",
+        ["name"] = "Penetration_level_紫+5_20level",
         ["tbxid"] = 90909020
     },
     [1621] = {
@@ -19448,7 +19448,7 @@
         ["exp"] = 0,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "生命上限_橙_1级",
+        ["name"] = "生命上限_Orange_1level",
         ["tbxid"] = 90110001
     },
     [1622] = {
@@ -19460,7 +19460,7 @@
         ["exp"] = 375,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "生命上限_橙_2级",
+        ["name"] = "生命上限_Orange_2level",
         ["tbxid"] = 90110002
     },
     [1623] = {
@@ -19472,7 +19472,7 @@
         ["exp"] = 825,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "生命上限_橙_3级",
+        ["name"] = "生命上限_Orange_3level",
         ["tbxid"] = 90110003
     },
     [1624] = {
@@ -19484,7 +19484,7 @@
         ["exp"] = 1725,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "生命上限_橙_4级",
+        ["name"] = "生命上限_Orange_4level",
         ["tbxid"] = 90110004
     },
     [1625] = {
@@ -19496,7 +19496,7 @@
         ["exp"] = 3225,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "生命上限_橙_5级",
+        ["name"] = "生命上限_Orange_5level",
         ["tbxid"] = 90110005
     },
     [1626] = {
@@ -19508,7 +19508,7 @@
         ["exp"] = 5475,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "生命上限_橙_6级",
+        ["name"] = "生命上限_Orange_6level",
         ["tbxid"] = 90110006
     },
     [1627] = {
@@ -19520,7 +19520,7 @@
         ["exp"] = 8475,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "生命上限_橙_7级",
+        ["name"] = "生命上限_Orange_7level",
         ["tbxid"] = 90110007
     },
     [1628] = {
@@ -19532,7 +19532,7 @@
         ["exp"] = 13050,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "生命上限_橙_8级",
+        ["name"] = "生命上限_Orange_8level",
         ["tbxid"] = 90110008
     },
     [1629] = {
@@ -19544,7 +19544,7 @@
         ["exp"] = 20250,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "生命上限_橙_9级",
+        ["name"] = "生命上限_Orange_9level",
         ["tbxid"] = 90110009
     },
     [1630] = {
@@ -19556,7 +19556,7 @@
         ["exp"] = 40425,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "生命上限_橙_10级",
+        ["name"] = "生命上限_Orange_10level",
         ["tbxid"] = 90110010
     },
     [1631] = {
@@ -19568,7 +19568,7 @@
         ["exp"] = 67350,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "生命上限_橙_11级",
+        ["name"] = "生命上限_Orange_11level",
         ["tbxid"] = 90110011
     },
     [1632] = {
@@ -19580,7 +19580,7 @@
         ["exp"] = 134700,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "生命上限_橙_12级",
+        ["name"] = "生命上限_Orange_12level",
         ["tbxid"] = 90110012
     },
     [1633] = {
@@ -19592,7 +19592,7 @@
         ["exp"] = 269400,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "生命上限_橙_13级",
+        ["name"] = "生命上限_Orange_13level",
         ["tbxid"] = 90110013
     },
     [1634] = {
@@ -19604,7 +19604,7 @@
         ["exp"] = 404025,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "生命上限_橙_14级",
+        ["name"] = "生命上限_Orange_14level",
         ["tbxid"] = 90110014
     },
     [1635] = {
@@ -19616,7 +19616,7 @@
         ["exp"] = 538725,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "生命上限_橙_15级",
+        ["name"] = "生命上限_Orange_15level",
         ["tbxid"] = 90110015
     },
     [1636] = {
@@ -19628,7 +19628,7 @@
         ["exp"] = 673350,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "生命上限_橙_16级",
+        ["name"] = "生命上限_Orange_16level",
         ["tbxid"] = 90110016
     },
     [1637] = {
@@ -19640,7 +19640,7 @@
         ["exp"] = 808050,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "生命上限_橙_17级",
+        ["name"] = "生命上限_Orange_17level",
         ["tbxid"] = 90110017
     },
     [1638] = {
@@ -19652,7 +19652,7 @@
         ["exp"] = 942675,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "生命上限_橙_18级",
+        ["name"] = "生命上限_Orange_18level",
         ["tbxid"] = 90110018
     },
     [1639] = {
@@ -19664,7 +19664,7 @@
         ["exp"] = 1144650,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "生命上限_橙_19级",
+        ["name"] = "生命上限_Orange_19level",
         ["tbxid"] = 90110019
     },
     [1640] = {
@@ -19676,7 +19676,7 @@
         ["exp"] = 1346700,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "生命上限_橙_20级",
+        ["name"] = "生命上限_Orange_20level",
         ["tbxid"] = 90110020
     },
     [1641] = {
@@ -19688,7 +19688,7 @@
         ["exp"] = 0,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "格斗防御_橙_1级",
+        ["name"] = "Physical_defense_Orange_1level",
         ["tbxid"] = 90210001
     },
     [1642] = {
@@ -19700,7 +19700,7 @@
         ["exp"] = 375,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "格斗防御_橙_2级",
+        ["name"] = "Physical_defense_Orange_2level",
         ["tbxid"] = 90210002
     },
     [1643] = {
@@ -19712,7 +19712,7 @@
         ["exp"] = 825,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "格斗防御_橙_3级",
+        ["name"] = "Physical_defense_Orange_3level",
         ["tbxid"] = 90210003
     },
     [1644] = {
@@ -19724,7 +19724,7 @@
         ["exp"] = 1725,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "格斗防御_橙_4级",
+        ["name"] = "Physical_defense_Orange_4level",
         ["tbxid"] = 90210004
     },
     [1645] = {
@@ -19736,7 +19736,7 @@
         ["exp"] = 3225,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "格斗防御_橙_5级",
+        ["name"] = "Physical_defense_Orange_5level",
         ["tbxid"] = 90210005
     },
     [1646] = {
@@ -19748,7 +19748,7 @@
         ["exp"] = 5475,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "格斗防御_橙_6级",
+        ["name"] = "Physical_defense_Orange_6level",
         ["tbxid"] = 90210006
     },
     [1647] = {
@@ -19760,7 +19760,7 @@
         ["exp"] = 8475,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "格斗防御_橙_7级",
+        ["name"] = "Physical_defense_Orange_7level",
         ["tbxid"] = 90210007
     },
     [1648] = {
@@ -19772,7 +19772,7 @@
         ["exp"] = 13050,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "格斗防御_橙_8级",
+        ["name"] = "Physical_defense_Orange_8level",
         ["tbxid"] = 90210008
     },
     [1649] = {
@@ -19784,7 +19784,7 @@
         ["exp"] = 20250,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "格斗防御_橙_9级",
+        ["name"] = "Physical_defense_Orange_9level",
         ["tbxid"] = 90210009
     },
     [1650] = {
@@ -19796,7 +19796,7 @@
         ["exp"] = 40425,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "格斗防御_橙_10级",
+        ["name"] = "Physical_defense_Orange_10level",
         ["tbxid"] = 90210010
     },
     [1651] = {
@@ -19808,7 +19808,7 @@
         ["exp"] = 67350,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "格斗防御_橙_11级",
+        ["name"] = "Physical_defense_Orange_11level",
         ["tbxid"] = 90210011
     },
     [1652] = {
@@ -19820,7 +19820,7 @@
         ["exp"] = 134700,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "格斗防御_橙_12级",
+        ["name"] = "Physical_defense_Orange_12level",
         ["tbxid"] = 90210012
     },
     [1653] = {
@@ -19832,7 +19832,7 @@
         ["exp"] = 269400,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "格斗防御_橙_13级",
+        ["name"] = "Physical_defense_Orange_13level",
         ["tbxid"] = 90210013
     },
     [1654] = {
@@ -19844,7 +19844,7 @@
         ["exp"] = 404025,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "格斗防御_橙_14级",
+        ["name"] = "Physical_defense_Orange_14level",
         ["tbxid"] = 90210014
     },
     [1655] = {
@@ -19856,7 +19856,7 @@
         ["exp"] = 538725,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "格斗防御_橙_15级",
+        ["name"] = "Physical_defense_Orange_15level",
         ["tbxid"] = 90210015
     },
     [1656] = {
@@ -19868,7 +19868,7 @@
         ["exp"] = 673350,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "格斗防御_橙_16级",
+        ["name"] = "Physical_defense_Orange_16level",
         ["tbxid"] = 90210016
     },
     [1657] = {
@@ -19880,7 +19880,7 @@
         ["exp"] = 808050,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "格斗防御_橙_17级",
+        ["name"] = "Physical_defense_Orange_17level",
         ["tbxid"] = 90210017
     },
     [1658] = {
@@ -19892,7 +19892,7 @@
         ["exp"] = 942675,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "格斗防御_橙_18级",
+        ["name"] = "Physical_defense_Orange_18level",
         ["tbxid"] = 90210018
     },
     [1659] = {
@@ -19904,7 +19904,7 @@
         ["exp"] = 1144650,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "格斗防御_橙_19级",
+        ["name"] = "Physical_defense_Orange_19level",
         ["tbxid"] = 90210019
     },
     [1660] = {
@@ -19916,7 +19916,7 @@
         ["exp"] = 1346700,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "格斗防御_橙_20级",
+        ["name"] = "Physical_defense_Orange_20level",
         ["tbxid"] = 90210020
     },
     [1661] = {
@@ -19928,7 +19928,7 @@
         ["exp"] = 0,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "气功防御_橙_1级",
+        ["name"] = "Energy_defense_Orange_1level",
         ["tbxid"] = 90310001
     },
     [1662] = {
@@ -19940,7 +19940,7 @@
         ["exp"] = 375,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "气功防御_橙_2级",
+        ["name"] = "Energy_defense_Orange_2level",
         ["tbxid"] = 90310002
     },
     [1663] = {
@@ -19952,7 +19952,7 @@
         ["exp"] = 825,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "气功防御_橙_3级",
+        ["name"] = "Energy_defense_Orange_3level",
         ["tbxid"] = 90310003
     },
     [1664] = {
@@ -19964,7 +19964,7 @@
         ["exp"] = 1725,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "气功防御_橙_4级",
+        ["name"] = "Energy_defense_Orange_4level",
         ["tbxid"] = 90310004
     },
     [1665] = {
@@ -19976,7 +19976,7 @@
         ["exp"] = 3225,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "气功防御_橙_5级",
+        ["name"] = "Energy_defense_Orange_5level",
         ["tbxid"] = 90310005
     },
     [1666] = {
@@ -19988,7 +19988,7 @@
         ["exp"] = 5475,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "气功防御_橙_6级",
+        ["name"] = "Energy_defense_Orange_6level",
         ["tbxid"] = 90310006
     },
     [1667] = {
@@ -20000,7 +20000,7 @@
         ["exp"] = 8475,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "气功防御_橙_7级",
+        ["name"] = "Energy_defense_Orange_7level",
         ["tbxid"] = 90310007
     },
     [1668] = {
@@ -20012,7 +20012,7 @@
         ["exp"] = 13050,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "气功防御_橙_8级",
+        ["name"] = "Energy_defense_Orange_8level",
         ["tbxid"] = 90310008
     },
     [1669] = {
@@ -20024,7 +20024,7 @@
         ["exp"] = 20250,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "气功防御_橙_9级",
+        ["name"] = "Energy_defense_Orange_9level",
         ["tbxid"] = 90310009
     },
     [1670] = {
@@ -20036,7 +20036,7 @@
         ["exp"] = 40425,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "气功防御_橙_10级",
+        ["name"] = "Energy_defense_Orange_10level",
         ["tbxid"] = 90310010
     },
     [1671] = {
@@ -20048,7 +20048,7 @@
         ["exp"] = 67350,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "气功防御_橙_11级",
+        ["name"] = "Energy_defense_Orange_11level",
         ["tbxid"] = 90310011
     },
     [1672] = {
@@ -20060,7 +20060,7 @@
         ["exp"] = 134700,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "气功防御_橙_12级",
+        ["name"] = "Energy_defense_Orange_12level",
         ["tbxid"] = 90310012
     },
     [1673] = {
@@ -20072,7 +20072,7 @@
         ["exp"] = 269400,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "气功防御_橙_13级",
+        ["name"] = "Energy_defense_Orange_13level",
         ["tbxid"] = 90310013
     },
     [1674] = {
@@ -20084,7 +20084,7 @@
         ["exp"] = 404025,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "气功防御_橙_14级",
+        ["name"] = "Energy_defense_Orange_14level",
         ["tbxid"] = 90310014
     },
     [1675] = {
@@ -20096,7 +20096,7 @@
         ["exp"] = 538725,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "气功防御_橙_15级",
+        ["name"] = "Energy_defense_Orange_15level",
         ["tbxid"] = 90310015
     },
     [1676] = {
@@ -20108,7 +20108,7 @@
         ["exp"] = 673350,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "气功防御_橙_16级",
+        ["name"] = "Energy_defense_Orange_16level",
         ["tbxid"] = 90310016
     },
     [1677] = {
@@ -20120,7 +20120,7 @@
         ["exp"] = 808050,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "气功防御_橙_17级",
+        ["name"] = "Energy_defense_Orange_17level",
         ["tbxid"] = 90310017
     },
     [1678] = {
@@ -20132,7 +20132,7 @@
         ["exp"] = 942675,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "气功防御_橙_18级",
+        ["name"] = "Energy_defense_Orange_18level",
         ["tbxid"] = 90310018
     },
     [1679] = {
@@ -20144,7 +20144,7 @@
         ["exp"] = 1144650,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "气功防御_橙_19级",
+        ["name"] = "Energy_defense_Orange_19level",
         ["tbxid"] = 90310019
     },
     [1680] = {
@@ -20156,7 +20156,7 @@
         ["exp"] = 1346700,
         ["type"] = 1,
         ["quality"] = 10,
-        ["name"] = "气功防御_橙_20级",
+        ["name"] = "Energy_defense_Orange_20level",
         ["tbxid"] = 90310020
     },
     [1681] = {
@@ -20168,7 +20168,7 @@
         ["exp"] = 0,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "格斗攻击_橙_1级",
+        ["name"] = "Physical_attack_Orange_1level",
         ["tbxid"] = 90410001
     },
     [1682] = {
@@ -20180,7 +20180,7 @@
         ["exp"] = 375,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "格斗攻击_橙_2级",
+        ["name"] = "Physical_attack_Orange_2level",
         ["tbxid"] = 90410002
     },
     [1683] = {
@@ -20192,7 +20192,7 @@
         ["exp"] = 825,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "格斗攻击_橙_3级",
+        ["name"] = "Physical_attack_Orange_3level",
         ["tbxid"] = 90410003
     },
     [1684] = {
@@ -20204,7 +20204,7 @@
         ["exp"] = 1725,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "格斗攻击_橙_4级",
+        ["name"] = "Physical_attack_Orange_4level",
         ["tbxid"] = 90410004
     },
     [1685] = {
@@ -20216,7 +20216,7 @@
         ["exp"] = 3225,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "格斗攻击_橙_5级",
+        ["name"] = "Physical_attack_Orange_5level",
         ["tbxid"] = 90410005
     },
     [1686] = {
@@ -20228,7 +20228,7 @@
         ["exp"] = 5475,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "格斗攻击_橙_6级",
+        ["name"] = "Physical_attack_Orange_6level",
         ["tbxid"] = 90410006
     },
     [1687] = {
@@ -20240,7 +20240,7 @@
         ["exp"] = 8475,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "格斗攻击_橙_7级",
+        ["name"] = "Physical_attack_Orange_7level",
         ["tbxid"] = 90410007
     },
     [1688] = {
@@ -20252,7 +20252,7 @@
         ["exp"] = 13050,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "格斗攻击_橙_8级",
+        ["name"] = "Physical_attack_Orange_8level",
         ["tbxid"] = 90410008
     },
     [1689] = {
@@ -20264,7 +20264,7 @@
         ["exp"] = 20250,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "格斗攻击_橙_9级",
+        ["name"] = "Physical_attack_Orange_9level",
         ["tbxid"] = 90410009
     },
     [1690] = {
@@ -20276,7 +20276,7 @@
         ["exp"] = 40425,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "格斗攻击_橙_10级",
+        ["name"] = "Physical_attack_Orange_10level",
         ["tbxid"] = 90410010
     },
     [1691] = {
@@ -20288,7 +20288,7 @@
         ["exp"] = 67350,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "格斗攻击_橙_11级",
+        ["name"] = "Physical_attack_Orange_11level",
         ["tbxid"] = 90410011
     },
     [1692] = {
@@ -20300,7 +20300,7 @@
         ["exp"] = 134700,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "格斗攻击_橙_12级",
+        ["name"] = "Physical_attack_Orange_12level",
         ["tbxid"] = 90410012
     },
     [1693] = {
@@ -20312,7 +20312,7 @@
         ["exp"] = 269400,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "格斗攻击_橙_13级",
+        ["name"] = "Physical_attack_Orange_13level",
         ["tbxid"] = 90410013
     },
     [1694] = {
@@ -20324,7 +20324,7 @@
         ["exp"] = 404025,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "格斗攻击_橙_14级",
+        ["name"] = "Physical_attack_Orange_14level",
         ["tbxid"] = 90410014
     },
     [1695] = {
@@ -20336,7 +20336,7 @@
         ["exp"] = 538725,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "格斗攻击_橙_15级",
+        ["name"] = "Physical_attack_Orange_15level",
         ["tbxid"] = 90410015
     },
     [1696] = {
@@ -20348,7 +20348,7 @@
         ["exp"] = 673350,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "格斗攻击_橙_16级",
+        ["name"] = "Physical_attack_Orange_16level",
         ["tbxid"] = 90410016
     },
     [1697] = {
@@ -20360,7 +20360,7 @@
         ["exp"] = 808050,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "格斗攻击_橙_17级",
+        ["name"] = "Physical_attack_Orange_17level",
         ["tbxid"] = 90410017
     },
     [1698] = {
@@ -20372,7 +20372,7 @@
         ["exp"] = 942675,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "格斗攻击_橙_18级",
+        ["name"] = "Physical_attack_Orange_18level",
         ["tbxid"] = 90410018
     },
     [1699] = {
@@ -20384,7 +20384,7 @@
         ["exp"] = 1144650,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "格斗攻击_橙_19级",
+        ["name"] = "Physical_attack_Orange_19level",
         ["tbxid"] = 90410019
     },
     [1700] = {
@@ -20396,7 +20396,7 @@
         ["exp"] = 1346700,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "格斗攻击_橙_20级",
+        ["name"] = "Physical_attack_Orange_20level",
         ["tbxid"] = 90410020
     },
     [1701] = {
@@ -20408,7 +20408,7 @@
         ["exp"] = 0,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "气功攻击_橙_1级",
+        ["name"] = "Energy_attack_Orange_1level",
         ["tbxid"] = 90510001
     },
     [1702] = {
@@ -20420,7 +20420,7 @@
         ["exp"] = 375,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "气功攻击_橙_2级",
+        ["name"] = "Energy_attack_Orange_2level",
         ["tbxid"] = 90510002
     },
     [1703] = {
@@ -20432,7 +20432,7 @@
         ["exp"] = 825,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "气功攻击_橙_3级",
+        ["name"] = "Energy_attack_Orange_3level",
         ["tbxid"] = 90510003
     },
     [1704] = {
@@ -20444,7 +20444,7 @@
         ["exp"] = 1725,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "气功攻击_橙_4级",
+        ["name"] = "Energy_attack_Orange_4level",
         ["tbxid"] = 90510004
     },
     [1705] = {
@@ -20456,7 +20456,7 @@
         ["exp"] = 3225,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "气功攻击_橙_5级",
+        ["name"] = "Energy_attack_Orange_5level",
         ["tbxid"] = 90510005
     },
     [1706] = {
@@ -20468,7 +20468,7 @@
         ["exp"] = 5475,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "气功攻击_橙_6级",
+        ["name"] = "Energy_attack_Orange_6level",
         ["tbxid"] = 90510006
     },
     [1707] = {
@@ -20480,7 +20480,7 @@
         ["exp"] = 8475,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "气功攻击_橙_7级",
+        ["name"] = "Energy_attack_Orange_7level",
         ["tbxid"] = 90510007
     },
     [1708] = {
@@ -20492,7 +20492,7 @@
         ["exp"] = 13050,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "气功攻击_橙_8级",
+        ["name"] = "Energy_attack_Orange_8level",
         ["tbxid"] = 90510008
     },
     [1709] = {
@@ -20504,7 +20504,7 @@
         ["exp"] = 20250,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "气功攻击_橙_9级",
+        ["name"] = "Energy_attack_Orange_9level",
         ["tbxid"] = 90510009
     },
     [1710] = {
@@ -20516,7 +20516,7 @@
         ["exp"] = 40425,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "气功攻击_橙_10级",
+        ["name"] = "Energy_attack_Orange_10level",
         ["tbxid"] = 90510010
     },
     [1711] = {
@@ -20528,7 +20528,7 @@
         ["exp"] = 67350,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "气功攻击_橙_11级",
+        ["name"] = "Energy_attack_Orange_11level",
         ["tbxid"] = 90510011
     },
     [1712] = {
@@ -20540,7 +20540,7 @@
         ["exp"] = 134700,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "气功攻击_橙_12级",
+        ["name"] = "Energy_attack_Orange_12level",
         ["tbxid"] = 90510012
     },
     [1713] = {
@@ -20552,7 +20552,7 @@
         ["exp"] = 269400,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "气功攻击_橙_13级",
+        ["name"] = "Energy_attack_Orange_13level",
         ["tbxid"] = 90510013
     },
     [1714] = {
@@ -20564,7 +20564,7 @@
         ["exp"] = 404025,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "气功攻击_橙_14级",
+        ["name"] = "Energy_attack_Orange_14level",
         ["tbxid"] = 90510014
     },
     [1715] = {
@@ -20576,7 +20576,7 @@
         ["exp"] = 538725,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "气功攻击_橙_15级",
+        ["name"] = "Energy_attack_Orange_15level",
         ["tbxid"] = 90510015
     },
     [1716] = {
@@ -20588,7 +20588,7 @@
         ["exp"] = 673350,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "气功攻击_橙_16级",
+        ["name"] = "Energy_attack_Orange_16level",
         ["tbxid"] = 90510016
     },
     [1717] = {
@@ -20600,7 +20600,7 @@
         ["exp"] = 808050,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "气功攻击_橙_17级",
+        ["name"] = "Energy_attack_Orange_17level",
         ["tbxid"] = 90510017
     },
     [1718] = {
@@ -20612,7 +20612,7 @@
         ["exp"] = 942675,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "气功攻击_橙_18级",
+        ["name"] = "Energy_attack_Orange_18level",
         ["tbxid"] = 90510018
     },
     [1719] = {
@@ -20624,7 +20624,7 @@
         ["exp"] = 1144650,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "气功攻击_橙_19级",
+        ["name"] = "Energy_attack_Orange_19level",
         ["tbxid"] = 90510019
     },
     [1720] = {
@@ -20636,7 +20636,7 @@
         ["exp"] = 1346700,
         ["type"] = 2,
         ["quality"] = 10,
-        ["name"] = "气功攻击_橙_20级",
+        ["name"] = "Energy_attack_Orange_20level",
         ["tbxid"] = 90510020
     },
     [1721] = {
@@ -20648,7 +20648,7 @@
         ["exp"] = 0,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "暴击等级_橙_1级",
+        ["name"] = "Critical_rate_Orange_1level",
         ["tbxid"] = 90610001
     },
     [1722] = {
@@ -20660,7 +20660,7 @@
         ["exp"] = 375,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "暴击等级_橙_2级",
+        ["name"] = "Critical_rate_Orange_2level",
         ["tbxid"] = 90610002
     },
     [1723] = {
@@ -20672,7 +20672,7 @@
         ["exp"] = 825,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "暴击等级_橙_3级",
+        ["name"] = "Critical_rate_Orange_3level",
         ["tbxid"] = 90610003
     },
     [1724] = {
@@ -20684,7 +20684,7 @@
         ["exp"] = 1725,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "暴击等级_橙_4级",
+        ["name"] = "Critical_rate_Orange_4level",
         ["tbxid"] = 90610004
     },
     [1725] = {
@@ -20696,7 +20696,7 @@
         ["exp"] = 3225,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "暴击等级_橙_5级",
+        ["name"] = "Critical_rate_Orange_5level",
         ["tbxid"] = 90610005
     },
     [1726] = {
@@ -20708,7 +20708,7 @@
         ["exp"] = 5475,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "暴击等级_橙_6级",
+        ["name"] = "Critical_rate_Orange_6level",
         ["tbxid"] = 90610006
     },
     [1727] = {
@@ -20720,7 +20720,7 @@
         ["exp"] = 8475,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "暴击等级_橙_7级",
+        ["name"] = "Critical_rate_Orange_7level",
         ["tbxid"] = 90610007
     },
     [1728] = {
@@ -20732,7 +20732,7 @@
         ["exp"] = 13050,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "暴击等级_橙_8级",
+        ["name"] = "Critical_rate_Orange_8level",
         ["tbxid"] = 90610008
     },
     [1729] = {
@@ -20744,7 +20744,7 @@
         ["exp"] = 20250,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "暴击等级_橙_9级",
+        ["name"] = "Critical_rate_Orange_9level",
         ["tbxid"] = 90610009
     },
     [1730] = {
@@ -20756,7 +20756,7 @@
         ["exp"] = 40425,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "暴击等级_橙_10级",
+        ["name"] = "Critical_rate_Orange_10level",
         ["tbxid"] = 90610010
     },
     [1731] = {
@@ -20768,7 +20768,7 @@
         ["exp"] = 67350,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "暴击等级_橙_11级",
+        ["name"] = "Critical_rate_Orange_11level",
         ["tbxid"] = 90610011
     },
     [1732] = {
@@ -20780,7 +20780,7 @@
         ["exp"] = 134700,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "暴击等级_橙_12级",
+        ["name"] = "Critical_rate_Orange_12level",
         ["tbxid"] = 90610012
     },
     [1733] = {
@@ -20792,7 +20792,7 @@
         ["exp"] = 269400,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "暴击等级_橙_13级",
+        ["name"] = "Critical_rate_Orange_13level",
         ["tbxid"] = 90610013
     },
     [1734] = {
@@ -20804,7 +20804,7 @@
         ["exp"] = 404025,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "暴击等级_橙_14级",
+        ["name"] = "Critical_rate_Orange_14level",
         ["tbxid"] = 90610014
     },
     [1735] = {
@@ -20816,7 +20816,7 @@
         ["exp"] = 538725,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "暴击等级_橙_15级",
+        ["name"] = "Critical_rate_Orange_15level",
         ["tbxid"] = 90610015
     },
     [1736] = {
@@ -20828,7 +20828,7 @@
         ["exp"] = 673350,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "暴击等级_橙_16级",
+        ["name"] = "Critical_rate_Orange_16level",
         ["tbxid"] = 90610016
     },
     [1737] = {
@@ -20840,7 +20840,7 @@
         ["exp"] = 808050,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "暴击等级_橙_17级",
+        ["name"] = "Critical_rate_Orange_17level",
         ["tbxid"] = 90610017
     },
     [1738] = {
@@ -20852,7 +20852,7 @@
         ["exp"] = 942675,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "暴击等级_橙_18级",
+        ["name"] = "Critical_rate_Orange_18level",
         ["tbxid"] = 90610018
     },
     [1739] = {
@@ -20864,7 +20864,7 @@
         ["exp"] = 1144650,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "暴击等级_橙_19级",
+        ["name"] = "Critical_rate_Orange_19level",
         ["tbxid"] = 90610019
     },
     [1740] = {
@@ -20876,7 +20876,7 @@
         ["exp"] = 1346700,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "暴击等级_橙_20级",
+        ["name"] = "Critical_rate_Orange_20level",
         ["tbxid"] = 90610020
     },
     [1741] = {
@@ -20888,7 +20888,7 @@
         ["exp"] = 0,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "格挡等级_橙_1级",
+        ["name"] = "Block_level_Orange_1level",
         ["tbxid"] = 90710001
     },
     [1742] = {
@@ -20900,7 +20900,7 @@
         ["exp"] = 375,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "格挡等级_橙_2级",
+        ["name"] = "Block_level_Orange_2level",
         ["tbxid"] = 90710002
     },
     [1743] = {
@@ -20912,7 +20912,7 @@
         ["exp"] = 825,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "格挡等级_橙_3级",
+        ["name"] = "Block_level_Orange_3level",
         ["tbxid"] = 90710003
     },
     [1744] = {
@@ -20924,7 +20924,7 @@
         ["exp"] = 1725,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "格挡等级_橙_4级",
+        ["name"] = "Block_level_Orange_4level",
         ["tbxid"] = 90710004
     },
     [1745] = {
@@ -20936,7 +20936,7 @@
         ["exp"] = 3225,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "格挡等级_橙_5级",
+        ["name"] = "Block_level_Orange_5level",
         ["tbxid"] = 90710005
     },
     [1746] = {
@@ -20948,7 +20948,7 @@
         ["exp"] = 5475,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "格挡等级_橙_6级",
+        ["name"] = "Block_level_Orange_6level",
         ["tbxid"] = 90710006
     },
     [1747] = {
@@ -20960,7 +20960,7 @@
         ["exp"] = 8475,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "格挡等级_橙_7级",
+        ["name"] = "Block_level_Orange_7level",
         ["tbxid"] = 90710007
     },
     [1748] = {
@@ -20972,7 +20972,7 @@
         ["exp"] = 13050,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "格挡等级_橙_8级",
+        ["name"] = "Block_level_Orange_8level",
         ["tbxid"] = 90710008
     },
     [1749] = {
@@ -20984,7 +20984,7 @@
         ["exp"] = 20250,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "格挡等级_橙_9级",
+        ["name"] = "Block_level_Orange_9level",
         ["tbxid"] = 90710009
     },
     [1750] = {
@@ -20996,7 +20996,7 @@
         ["exp"] = 40425,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "格挡等级_橙_10级",
+        ["name"] = "Block_level_Orange_10level",
         ["tbxid"] = 90710010
     },
     [1751] = {
@@ -21008,7 +21008,7 @@
         ["exp"] = 67350,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "格挡等级_橙_11级",
+        ["name"] = "Block_level_Orange_11level",
         ["tbxid"] = 90710011
     },
     [1752] = {
@@ -21020,7 +21020,7 @@
         ["exp"] = 134700,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "格挡等级_橙_12级",
+        ["name"] = "Block_level_Orange_12level",
         ["tbxid"] = 90710012
     },
     [1753] = {
@@ -21032,7 +21032,7 @@
         ["exp"] = 269400,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "格挡等级_橙_13级",
+        ["name"] = "Block_level_Orange_13level",
         ["tbxid"] = 90710013
     },
     [1754] = {
@@ -21044,7 +21044,7 @@
         ["exp"] = 404025,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "格挡等级_橙_14级",
+        ["name"] = "Block_level_Orange_14level",
         ["tbxid"] = 90710014
     },
     [1755] = {
@@ -21056,7 +21056,7 @@
         ["exp"] = 538725,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "格挡等级_橙_15级",
+        ["name"] = "Block_level_Orange_15level",
         ["tbxid"] = 90710015
     },
     [1756] = {
@@ -21068,7 +21068,7 @@
         ["exp"] = 673350,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "格挡等级_橙_16级",
+        ["name"] = "Block_level_Orange_16level",
         ["tbxid"] = 90710016
     },
     [1757] = {
@@ -21080,7 +21080,7 @@
         ["exp"] = 808050,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "格挡等级_橙_17级",
+        ["name"] = "Block_level_Orange_17level",
         ["tbxid"] = 90710017
     },
     [1758] = {
@@ -21092,7 +21092,7 @@
         ["exp"] = 942675,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "格挡等级_橙_18级",
+        ["name"] = "Block_level_Orange_18level",
         ["tbxid"] = 90710018
     },
     [1759] = {
@@ -21104,7 +21104,7 @@
         ["exp"] = 1144650,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "格挡等级_橙_19级",
+        ["name"] = "Block_level_Orange_19level",
         ["tbxid"] = 90710019
     },
     [1760] = {
@@ -21116,7 +21116,7 @@
         ["exp"] = 1346700,
         ["type"] = 3,
         ["quality"] = 10,
-        ["name"] = "格挡等级_橙_20级",
+        ["name"] = "Block_level_Orange_20level",
         ["tbxid"] = 90710020
     },
     [1761] = {
@@ -21128,7 +21128,7 @@
         ["exp"] = 0,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "韧性等级_橙_1级",
+        ["name"] = "Resilience_level_Orange_1level",
         ["tbxid"] = 90810001
     },
     [1762] = {
@@ -21140,7 +21140,7 @@
         ["exp"] = 375,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "韧性等级_橙_2级",
+        ["name"] = "Resilience_level_Orange_2level",
         ["tbxid"] = 90810002
     },
     [1763] = {
@@ -21152,7 +21152,7 @@
         ["exp"] = 825,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "韧性等级_橙_3级",
+        ["name"] = "Resilience_level_Orange_3level",
         ["tbxid"] = 90810003
     },
     [1764] = {
@@ -21164,7 +21164,7 @@
         ["exp"] = 1725,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "韧性等级_橙_4级",
+        ["name"] = "Resilience_level_Orange_4level",
         ["tbxid"] = 90810004
     },
     [1765] = {
@@ -21176,7 +21176,7 @@
         ["exp"] = 3225,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "韧性等级_橙_5级",
+        ["name"] = "Resilience_level_Orange_5level",
         ["tbxid"] = 90810005
     },
     [1766] = {
@@ -21188,7 +21188,7 @@
         ["exp"] = 5475,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "韧性等级_橙_6级",
+        ["name"] = "Resilience_level_Orange_6level",
         ["tbxid"] = 90810006
     },
     [1767] = {
@@ -21200,7 +21200,7 @@
         ["exp"] = 8475,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "韧性等级_橙_7级",
+        ["name"] = "Resilience_level_Orange_7level",
         ["tbxid"] = 90810007
     },
     [1768] = {
@@ -21212,7 +21212,7 @@
         ["exp"] = 13050,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "韧性等级_橙_8级",
+        ["name"] = "Resilience_level_Orange_8level",
         ["tbxid"] = 90810008
     },
     [1769] = {
@@ -21224,7 +21224,7 @@
         ["exp"] = 20250,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "韧性等级_橙_9级",
+        ["name"] = "Resilience_level_Orange_9level",
         ["tbxid"] = 90810009
     },
     [1770] = {
@@ -21236,7 +21236,7 @@
         ["exp"] = 40425,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "韧性等级_橙_10级",
+        ["name"] = "Resilience_level_Orange_10level",
         ["tbxid"] = 90810010
     },
     [1771] = {
@@ -21248,7 +21248,7 @@
         ["exp"] = 67350,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "韧性等级_橙_11级",
+        ["name"] = "Resilience_level_Orange_11level",
         ["tbxid"] = 90810011
     },
     [1772] = {
@@ -21260,7 +21260,7 @@
         ["exp"] = 134700,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "韧性等级_橙_12级",
+        ["name"] = "Resilience_level_Orange_12level",
         ["tbxid"] = 90810012
     },
     [1773] = {
@@ -21272,7 +21272,7 @@
         ["exp"] = 269400,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "韧性等级_橙_13级",
+        ["name"] = "Resilience_level_Orange_13level",
         ["tbxid"] = 90810013
     },
     [1774] = {
@@ -21284,7 +21284,7 @@
         ["exp"] = 404025,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "韧性等级_橙_14级",
+        ["name"] = "Resilience_level_Orange_14level",
         ["tbxid"] = 90810014
     },
     [1775] = {
@@ -21296,7 +21296,7 @@
         ["exp"] = 538725,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "韧性等级_橙_15级",
+        ["name"] = "Resilience_level_Orange_15level",
         ["tbxid"] = 90810015
     },
     [1776] = {
@@ -21308,7 +21308,7 @@
         ["exp"] = 673350,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "韧性等级_橙_16级",
+        ["name"] = "Resilience_level_Orange_16level",
         ["tbxid"] = 90810016
     },
     [1777] = {
@@ -21320,7 +21320,7 @@
         ["exp"] = 808050,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "韧性等级_橙_17级",
+        ["name"] = "Resilience_level_Orange_17level",
         ["tbxid"] = 90810017
     },
     [1778] = {
@@ -21332,7 +21332,7 @@
         ["exp"] = 942675,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "韧性等级_橙_18级",
+        ["name"] = "Resilience_level_Orange_18level",
         ["tbxid"] = 90810018
     },
     [1779] = {
@@ -21344,7 +21344,7 @@
         ["exp"] = 1144650,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "韧性等级_橙_19级",
+        ["name"] = "Resilience_level_Orange_19level",
         ["tbxid"] = 90810019
     },
     [1780] = {
@@ -21356,7 +21356,7 @@
         ["exp"] = 1346700,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "韧性等级_橙_20级",
+        ["name"] = "Resilience_level_Orange_20level",
         ["tbxid"] = 90810020
     },
     [1781] = {
@@ -21368,7 +21368,7 @@
         ["exp"] = 0,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "穿透等级_橙_1级",
+        ["name"] = "Penetration_level_Orange_1level",
         ["tbxid"] = 90910001
     },
     [1782] = {
@@ -21380,7 +21380,7 @@
         ["exp"] = 375,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "穿透等级_橙_2级",
+        ["name"] = "Penetration_level_Orange_2level",
         ["tbxid"] = 90910002
     },
     [1783] = {
@@ -21392,7 +21392,7 @@
         ["exp"] = 825,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "穿透等级_橙_3级",
+        ["name"] = "Penetration_level_Orange_3level",
         ["tbxid"] = 90910003
     },
     [1784] = {
@@ -21404,7 +21404,7 @@
         ["exp"] = 1725,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "穿透等级_橙_4级",
+        ["name"] = "Penetration_level_Orange_4level",
         ["tbxid"] = 90910004
     },
     [1785] = {
@@ -21416,7 +21416,7 @@
         ["exp"] = 3225,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "穿透等级_橙_5级",
+        ["name"] = "Penetration_level_Orange_5level",
         ["tbxid"] = 90910005
     },
     [1786] = {
@@ -21428,7 +21428,7 @@
         ["exp"] = 5475,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "穿透等级_橙_6级",
+        ["name"] = "Penetration_level_Orange_6level",
         ["tbxid"] = 90910006
     },
     [1787] = {
@@ -21440,7 +21440,7 @@
         ["exp"] = 8475,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "穿透等级_橙_7级",
+        ["name"] = "Penetration_level_Orange_7level",
         ["tbxid"] = 90910007
     },
     [1788] = {
@@ -21452,7 +21452,7 @@
         ["exp"] = 13050,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "穿透等级_橙_8级",
+        ["name"] = "Penetration_level_Orange_8level",
         ["tbxid"] = 90910008
     },
     [1789] = {
@@ -21464,7 +21464,7 @@
         ["exp"] = 20250,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "穿透等级_橙_9级",
+        ["name"] = "Penetration_level_Orange_9level",
         ["tbxid"] = 90910009
     },
     [1790] = {
@@ -21476,7 +21476,7 @@
         ["exp"] = 40425,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "穿透等级_橙_10级",
+        ["name"] = "Penetration_level_Orange_10level",
         ["tbxid"] = 90910010
     },
     [1791] = {
@@ -21488,7 +21488,7 @@
         ["exp"] = 67350,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "穿透等级_橙_11级",
+        ["name"] = "Penetration_level_Orange_11level",
         ["tbxid"] = 90910011
     },
     [1792] = {
@@ -21500,7 +21500,7 @@
         ["exp"] = 134700,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "穿透等级_橙_12级",
+        ["name"] = "Penetration_level_Orange_12level",
         ["tbxid"] = 90910012
     },
     [1793] = {
@@ -21512,7 +21512,7 @@
         ["exp"] = 269400,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "穿透等级_橙_13级",
+        ["name"] = "Penetration_level_Orange_13level",
         ["tbxid"] = 90910013
     },
     [1794] = {
@@ -21524,7 +21524,7 @@
         ["exp"] = 404025,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "穿透等级_橙_14级",
+        ["name"] = "Penetration_level_Orange_14level",
         ["tbxid"] = 90910014
     },
     [1795] = {
@@ -21536,7 +21536,7 @@
         ["exp"] = 538725,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "穿透等级_橙_15级",
+        ["name"] = "Penetration_level_Orange_15level",
         ["tbxid"] = 90910015
     },
     [1796] = {
@@ -21548,7 +21548,7 @@
         ["exp"] = 673350,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "穿透等级_橙_16级",
+        ["name"] = "Penetration_level_Orange_16level",
         ["tbxid"] = 90910016
     },
     [1797] = {
@@ -21560,7 +21560,7 @@
         ["exp"] = 808050,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "穿透等级_橙_17级",
+        ["name"] = "Penetration_level_Orange_17level",
         ["tbxid"] = 90910017
     },
     [1798] = {
@@ -21572,7 +21572,7 @@
         ["exp"] = 942675,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "穿透等级_橙_18级",
+        ["name"] = "Penetration_level_Orange_18level",
         ["tbxid"] = 90910018
     },
     [1799] = {
@@ -21584,7 +21584,7 @@
         ["exp"] = 1144650,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "穿透等级_橙_19级",
+        ["name"] = "Penetration_level_Orange_19level",
         ["tbxid"] = 90910019
     },
     [1800] = {
@@ -21596,7 +21596,7 @@
         ["exp"] = 1346700,
         ["type"] = 4,
         ["quality"] = 10,
-        ["name"] = "穿透等级_橙_20级",
+        ["name"] = "Penetration_level_Orange_20level",
         ["tbxid"] = 90910020
     }
 }

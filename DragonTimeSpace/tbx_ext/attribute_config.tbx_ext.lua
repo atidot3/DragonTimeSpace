@@ -4,7 +4,7 @@
         ["cui"] = 1,
         ["id"] = 1,
         ["tbxid"] = 1,
-        ["name"] = "最大生命",
+        ["name"] = "Max hp",
         ["type"] = 0
     },
     [2] = {
@@ -12,7 +12,7 @@
         ["cui"] = 1,
         ["id"] = 2,
         ["tbxid"] = 2,
-        ["name"] = "格斗攻击",
+        ["name"] = "Physical attack",
         ["type"] = 1
     },
     [3] = {
@@ -20,7 +20,7 @@
         ["cui"] = 1,
         ["id"] = 3,
         ["tbxid"] = 3,
-        ["name"] = "气功攻击",
+        ["name"] = "Energy attack",
         ["type"] = 1
     },
     [4] = {
@@ -28,7 +28,7 @@
         ["cui"] = 1,
         ["id"] = 4,
         ["tbxid"] = 4,
-        ["name"] = "格斗防御",
+        ["name"] = "Physical defense",
         ["type"] = 0
     },
     [5] = {
@@ -36,7 +36,7 @@
         ["cui"] = 1,
         ["id"] = 5,
         ["tbxid"] = 5,
-        ["name"] = "气功防御",
+        ["name"] = "Energy defense",
         ["type"] = 0
     },
     [6] = {
@@ -44,7 +44,7 @@
         ["cui"] = 1,
         ["id"] = 6,
         ["tbxid"] = 6,
-        ["name"] = "命中",
+        ["name"] = "Hit rate",
         ["type"] = 1
     },
     [7] = {
@@ -52,7 +52,7 @@
         ["cui"] = 1,
         ["id"] = 7,
         ["tbxid"] = 7,
-        ["name"] = "闪避",
+        ["name"] = "Dodge",
         ["type"] = 0
     },
     [8] = {
@@ -60,7 +60,7 @@
         ["cui"] = 1,
         ["id"] = 8,
         ["tbxid"] = 8,
-        ["name"] = "暴击",
+        ["name"] = "Critical rate",
         ["type"] = 1
     },
     [9] = {
@@ -68,7 +68,7 @@
         ["cui"] = 1,
         ["id"] = 9,
         ["tbxid"] = 9,
-        ["name"] = "韧性",
+        ["name"] = "Thoughtness",
         ["type"] = 0
     },
     [10] = {
@@ -76,7 +76,7 @@
         ["cui"] = 1,
         ["id"] = 10,
         ["tbxid"] = 10,
-        ["name"] = "穿透",
+        ["name"] = "Penetration",
         ["type"] = 1
     },
     [11] = {
@@ -84,7 +84,7 @@
         ["cui"] = 1,
         ["id"] = 11,
         ["tbxid"] = 11,
-        ["name"] = "格挡",
+        ["name"] = "Parry",
         ["type"] = 0
     },
     [12] = {
@@ -92,7 +92,7 @@
         ["cui"] = 1,
         ["id"] = 12,
         ["tbxid"] = 12,
-        ["name"] = "精准",
+        ["name"] = "Accuracy",
         ["type"] = 1
     },
     [13] = {
@@ -100,7 +100,7 @@
         ["cui"] = 1,
         ["id"] = 13,
         ["tbxid"] = 13,
-        ["name"] = "偏斜",
+        ["name"] = "Deflect damage",
         ["type"] = 0
     },
     [14] = {
@@ -108,7 +108,7 @@
         ["cui"] = 1,
         ["id"] = 14,
         ["tbxid"] = 14,
-        ["name"] = "暴击增伤",
+        ["name"] = "Critical rate severity",
         ["type"] = 1
     },
     [15] = {
@@ -116,7 +116,7 @@
         ["cui"] = 1,
         ["id"] = 15,
         ["tbxid"] = 15,
-        ["name"] = "抗暴减伤",
+        ["name"] = "Thoughtness damage reduction",
         ["type"] = 0
     },
     [16] = {
@@ -124,7 +124,7 @@
         ["cui"] = 1,
         ["id"] = 16,
         ["tbxid"] = 16,
-        ["name"] = "穿透增伤",
+        ["name"] = "Penetration severity",
         ["type"] = 1
     },
     [17] = {
@@ -132,7 +132,7 @@
         ["cui"] = 1,
         ["id"] = 17,
         ["tbxid"] = 17,
-        ["name"] = "格挡减伤",
+        ["name"] = "Parry damage reduction",
         ["type"] = 0
     },
     [18] = {
@@ -140,7 +140,7 @@
         ["cui"] = 1,
         ["id"] = 18,
         ["tbxid"] = 18,
-        ["name"] = "精准增伤",
+        ["name"] = "Accuracy severity",
         ["type"] = 1
     },
     [19] = {
@@ -148,7 +148,7 @@
         ["cui"] = 1,
         ["id"] = 19,
         ["tbxid"] = 19,
-        ["name"] = "偏斜减伤",
+        ["name"] = "Deflect damage reduction",
         ["type"] = 0
     },
     [20] = {
@@ -156,7 +156,7 @@
         ["cui"] = 0,
         ["id"] = 20,
         ["tbxid"] = 20,
-        ["name"] = "格斗攻击",
+        ["name"] = "Physical attack",
         ["type"] = 1
     },
     [21] = {
@@ -164,7 +164,7 @@
         ["cui"] = 0,
         ["id"] = 21,
         ["tbxid"] = 21,
-        ["name"] = "气功攻击",
+        ["name"] = "Energy attack",
         ["type"] = 1
     },
     [22] = {
@@ -172,7 +172,7 @@
         ["cui"] = 0,
         ["id"] = 22,
         ["tbxid"] = 22,
-        ["name"] = "格斗防御",
+        ["name"] = "Physical defense",
         ["type"] = 0
     },
     [23] = {
@@ -180,7 +180,7 @@
         ["cui"] = 0,
         ["id"] = 23,
         ["tbxid"] = 23,
-        ["name"] = "气功防御",
+        ["name"] = "Energy defense",
         ["type"] = 0
     },
     [24] = {
@@ -188,7 +188,7 @@
         ["cui"] = 0,
         ["id"] = 24,
         ["tbxid"] = 24,
-        ["name"] = "暴击增伤",
+        ["name"] = "Critical rate severity",
         ["type"] = 1
     },
     [25] = {
@@ -196,7 +196,7 @@
         ["cui"] = 0,
         ["id"] = 25,
         ["tbxid"] = 25,
-        ["name"] = "韧性减伤",
+        ["name"] = "Thoughtness damage reduction",
         ["type"] = 0
     },
     [26] = {
@@ -204,7 +204,7 @@
         ["cui"] = 0,
         ["id"] = 26,
         ["tbxid"] = 26,
-        ["name"] = "穿透增伤",
+        ["name"] = "Penetration severity",
         ["type"] = 1
     },
     [27] = {
@@ -212,7 +212,7 @@
         ["cui"] = 0,
         ["id"] = 27,
         ["tbxid"] = 27,
-        ["name"] = "格挡减伤",
+        ["name"] = "Parry damage reduction",
         ["type"] = 0
     },
     [28] = {
@@ -220,7 +220,7 @@
         ["cui"] = 0,
         ["id"] = 28,
         ["tbxid"] = 28,
-        ["name"] = "精准增伤",
+        ["name"] = "Accuracy severity",
         ["type"] = 1
     },
     [29] = {
@@ -228,7 +228,7 @@
         ["cui"] = 0,
         ["id"] = 29,
         ["tbxid"] = 29,
-        ["name"] = "偏斜减伤",
+        ["name"] = "Deflect damage reduction",
         ["type"] = 0
     }
 }

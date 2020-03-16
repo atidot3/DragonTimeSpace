@@ -7,7 +7,7 @@
         ["material"] = "6001-1,6002-2,6003-3,6004-4",
         ["tbxid"] = 1,
         ["vatality"] = 10,
-        ["name"] = "狂暴符文制造",
+        ["name"] = "Violent rune manufacture",
         ["currency"] = "2-100"
     },
     [2] = {
@@ -18,7 +18,7 @@
         ["material"] = "6001-1,6002-2,6003-3,6004-4",
         ["tbxid"] = 2,
         ["vatality"] = 20,
-        ["name"] = "意志符文制造",
+        ["name"] = "Will rune manufacture",
         ["currency"] = "3-110"
     },
     [3] = {
@@ -29,7 +29,7 @@
         ["material"] = "6001-1,6002-2,6003-3,6004-4",
         ["tbxid"] = 4,
         ["vatality"] = 10,
-        ["name"] = "破功符文制造",
+        ["name"] = "Break rune manufacture",
         ["currency"] = "4-100"
     },
     [4] = {
@@ -40,7 +40,7 @@
         ["material"] = "6001-1,6002-2,6003-3,6004-4",
         ["tbxid"] = 5,
         ["vatality"] = 20,
-        ["name"] = "抵御符文制造",
+        ["name"] = "Resistance rune manufacture",
         ["currency"] = "3-110"
     }
 }

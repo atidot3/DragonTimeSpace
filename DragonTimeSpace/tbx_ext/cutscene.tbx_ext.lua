@@ -1,6 +1,6 @@
 ["datas"] = {
     [1] = {
-        ["desc"] = "推石头",
+        ["desc"] = "Push the stone",
         ["show_type"] = 1,
         ["id"] = 1,
         ["tbxid"] = 1,
@@ -9,7 +9,7 @@
         ["mapip"] = 1048
     },
     [2] = {
-        ["desc"] = "特兰克斯许愿",
+        ["desc"] = "Trunks' wish",
         ["show_type"] = 1,
         ["id"] = 2,
         ["tbxid"] = 2,
@@ -18,7 +18,7 @@
         ["mapip"] = 695
     },
     [3] = {
-        ["desc"] = "小沙鲁现身",
+        ["desc"] = "Mini cell appeared",
         ["show_type"] = 0,
         ["id"] = 3,
         ["tbxid"] = 3,
@@ -27,7 +27,7 @@
         ["mapip"] = 1020
     },
     [4] = {
-        ["desc"] = "布尔玛介绍龙珠",
+        ["desc"] = "Bulma shows Dragon Ball",
         ["show_type"] = 1,
         ["id"] = 4,
         ["tbxid"] = 4,
@@ -36,7 +36,7 @@
         ["mapip"] = 1078
     },
     [5] = {
-        ["desc"] = "初见亚姆查",
+        ["desc"] = "The beginning of Yamcha",
         ["show_type"] = 1,
         ["id"] = 5,
         ["tbxid"] = 5,
@@ -45,7 +45,7 @@
         ["mapip"] = 1018
     },
     [6] = {
-        ["desc"] = "皮拉夫",
+        ["desc"] = "Pilaf",
         ["show_type"] = 1,
         ["id"] = 6,
         ["tbxid"] = 6,
@@ -54,7 +54,7 @@
         ["mapip"] = 1069
     },
     [7] = {
-        ["desc"] = "皮拉夫城堡展示",
+        ["desc"] = "Pilaf Castle Display",
         ["show_type"] = 1,
         ["id"] = 7,
         ["tbxid"] = 7,
@@ -63,7 +63,7 @@
         ["mapip"] = 1067
     },
     [8] = {
-        ["desc"] = "悟空到达国王的城堡",
+        ["desc"] = "Goku arrives at the King's Castle",
         ["show_type"] = 1,
         ["id"] = 8,
         ["tbxid"] = 8,
@@ -72,7 +72,7 @@
         ["mapip"] = 1070
     },
     [9] = {
-        ["desc"] = "卡林仙人的第三个罐子",
+        ["desc"] = "The third jar of Karin fairy god",
         ["show_type"] = 0,
         ["id"] = 9,
         ["tbxid"] = 9,
@@ -81,7 +81,7 @@
         ["mapip"] = 0
     },
     [10] = {
-        ["desc"] = "卡林仙人的第二个罐子",
+        ["desc"] = "The second jar of Karin fairy god",
         ["show_type"] = 0,
         ["id"] = 10,
         ["tbxid"] = 10,
@@ -90,7 +90,7 @@
         ["mapip"] = 0
     },
     [11] = {
-        ["desc"] = "赛亚人抵达地球",
+        ["desc"] = "The Saiyans have arrived on earth",
         ["show_type"] = 1,
         ["id"] = 11,
         ["tbxid"] = 11,
@@ -99,7 +99,7 @@
         ["mapip"] = 1047
     },
     [12] = {
-        ["desc"] = "贝吉塔变身巨猿",
+        ["desc"] = "Vegeta turned into a giant ape",
         ["show_type"] = 1,
         ["id"] = 12,
         ["tbxid"] = 12,
@@ -108,7 +108,7 @@
         ["mapip"] = 1047
     },
     [13] = {
-        ["desc"] = "界王星展示",
+        ["desc"] = "King kai's place",
         ["show_type"] = 1,
         ["id"] = 13,
         ["tbxid"] = 13,
@@ -117,7 +117,7 @@
         ["mapip"] = 692
     },
     [14] = {
-        ["desc"] = "播种栽培人",
+        ["desc"] = "Seeding Saibamen",
         ["show_type"] = 1,
         ["id"] = 14,
         ["tbxid"] = 14,
@@ -126,7 +126,7 @@
         ["mapip"] = 1047
     },
     [15] = {
-        ["desc"] = "沙鲁逃跑",
+        ["desc"] = "Cell escape",
         ["show_type"] = 1,
         ["id"] = 15,
         ["tbxid"] = 15,
@@ -135,7 +135,7 @@
         ["mapip"] = 1020
     },
     [16] = {
-        ["desc"] = "皮拉夫",
+        ["desc"] = "Pilaf",
         ["show_type"] = 1,
         ["id"] = 16,
         ["tbxid"] = 16,
@@ -144,7 +144,7 @@
         ["mapip"] = 1067
     },
     [17] = {
-        ["desc"] = "布尔玛介绍龙珠",
+        ["desc"] = "Bulma shows Dragon Ball",
         ["show_type"] = 1,
         ["id"] = 17,
         ["tbxid"] = 17,
@@ -153,7 +153,7 @@
         ["mapip"] = 1087
     },
     [18] = {
-        ["desc"] = "视频素材1",
+        ["desc"] = "1 Video footage",
         ["show_type"] = 1,
         ["id"] = 90,
         ["tbxid"] = 90,
@@ -162,7 +162,7 @@
         ["mapip"] = 702
     },
     [19] = {
-        ["desc"] = "视频素材2",
+        ["desc"] = "2 Video footage",
         ["show_type"] = 1,
         ["id"] = 91,
         ["tbxid"] = 91,
@@ -171,7 +171,7 @@
         ["mapip"] = 703
     },
     [20] = {
-        ["desc"] = "视频素材3",
+        ["desc"] = "3 Video Footage",
         ["show_type"] = 1,
         ["id"] = 92,
         ["tbxid"] = 92,
@@ -180,7 +180,7 @@
         ["mapip"] = 689
     },
     [21] = {
-        ["desc"] = "视频素材4",
+        ["desc"] = "4 Video Footage",
         ["show_type"] = 1,
         ["id"] = 93,
         ["tbxid"] = 93,
@@ -189,7 +189,7 @@
         ["mapip"] = 705
     },
     [22] = {
-        ["desc"] = "沙鲁逃跑",
+        ["desc"] = "Cell escape",
         ["show_type"] = 1,
         ["id"] = 94,
         ["tbxid"] = 94,
@@ -198,7 +198,7 @@
         ["mapip"] = 696
     },
     [23] = {
-        ["desc"] = "抵达地球",
+        ["desc"] = "Arrive on Earth",
         ["show_type"] = 1,
         ["id"] = 95,
         ["tbxid"] = 95,
@@ -207,7 +207,7 @@
         ["mapip"] = 707
     },
     [24] = {
-        ["desc"] = "播种栽培人",
+        ["desc"] = "Seeding Saibamen",
         ["show_type"] = 1,
         ["id"] = 96,
         ["tbxid"] = 96,
@@ -216,7 +216,7 @@
         ["mapip"] = 707
     },
     [25] = {
-        ["desc"] = "贝吉塔变身",
+        ["desc"] = "Vegeta transformed",
         ["show_type"] = 1,
         ["id"] = 97,
         ["tbxid"] = 97,
@@ -225,7 +225,7 @@
         ["mapip"] = 707
     },
     [26] = {
-        ["desc"] = "界王星展示",
+        ["desc"] = "King Kai's place",
         ["show_type"] = 1,
         ["id"] = 98,
         ["tbxid"] = 98,
@@ -234,7 +234,7 @@
         ["mapip"] = 692
     },
     [27] = {
-        ["desc"] = "登场",
+        ["desc"] = "Appear on the scene",
         ["show_type"] = 1,
         ["id"] = 99,
         ["tbxid"] = 99,

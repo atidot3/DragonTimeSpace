@@ -10,7 +10,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 10001,
         ["prop_1"] = 0,
-        ["name"] = "铁剑",
+        ["name"] = "Iron sword",
         ["basic_prop"] = 1010131
     },
     [2] = {
@@ -24,7 +24,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 10002,
         ["prop_1"] = 0,
-        ["name"] = "云风剑",
+        ["name"] = "Cloud wind sword",
         ["basic_prop"] = 1020131
     },
     [3] = {
@@ -38,7 +38,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 10004,
         ["prop_1"] = 0,
-        ["name"] = "御风剑",
+        ["name"] = "Royal wind sword",
         ["basic_prop"] = 1040131
     },
     [4] = {
@@ -52,7 +52,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 10005,
         ["prop_1"] = 0,
-        ["name"] = "无尽之刃",
+        ["name"] = "Endless blade",
         ["basic_prop"] = 1020131
     },
     [5] = {
@@ -66,7 +66,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 11001,
         ["prop_1"] = 0,
-        ["name"] = "匕首",
+        ["name"] = "Dagger",
         ["basic_prop"] = 1010131
     },
     [6] = {
@@ -80,7 +80,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 13001,
         ["prop_1"] = 0,
-        ["name"] = "浮游球",
+        ["name"] = "Floating ball",
         ["basic_prop"] = 1010131
     },
     [7] = {
@@ -94,7 +94,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 30001,
         ["prop_1"] = 0,
-        ["name"] = "新人头盔",
+        ["name"] = "Newbie helmet",
         ["basic_prop"] = 1012131
     },
     [8] = {
@@ -108,7 +108,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 30002,
         ["prop_1"] = 0,
-        ["name"] = "云鹿头盔",
+        ["name"] = "Deer cloud helmet",
         ["basic_prop"] = 1022131
     },
     [9] = {
@@ -122,7 +122,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 30004,
         ["prop_1"] = 0,
-        ["name"] = "战狼头盔",
+        ["name"] = "Warhound helmet",
         ["basic_prop"] = 1042131
     },
     [10] = {
@@ -136,7 +136,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 32001,
         ["prop_1"] = 0,
-        ["name"] = "衣服",
+        ["name"] = "Clothes",
         ["basic_prop"] = 1012431
     },
     [11] = {
@@ -150,7 +150,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 32002,
         ["prop_1"] = 0,
-        ["name"] = "刺客衣服",
+        ["name"] = "Assassin clothes",
         ["basic_prop"] = 1012431
     },
     [12] = {
@@ -164,7 +164,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 32003,
         ["prop_1"] = 0,
-        ["name"] = "新人衣服B",
+        ["name"] = "Newbie clothes B",
         ["basic_prop"] = 1022431
     },
     [13] = {
@@ -178,7 +178,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 33001,
         ["prop_1"] = 0,
-        ["name"] = "新人手套",
+        ["name"] = "Newbie gloves",
         ["basic_prop"] = 1012431
     },
     [14] = {
@@ -192,7 +192,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 33002,
         ["prop_1"] = 0,
-        ["name"] = "云鹿手套",
+        ["name"] = "Deer cloud gloves",
         ["basic_prop"] = 1022431
     },
     [15] = {
@@ -206,7 +206,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 33004,
         ["prop_1"] = 0,
-        ["name"] = "战狼手套",
+        ["name"] = "Warhound gloves",
         ["basic_prop"] = 1042431
     },
     [16] = {
@@ -220,7 +220,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 35001,
         ["prop_1"] = 0,
-        ["name"] = "新人皮裤",
+        ["name"] = "Newbie leather pants",
         ["basic_prop"] = 1012631
     },
     [17] = {
@@ -234,7 +234,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 35002,
         ["prop_1"] = 0,
-        ["name"] = "云鹿皮裤",
+        ["name"] = "Deer cloud leather pants",
         ["basic_prop"] = 1022631
     },
     [18] = {
@@ -248,7 +248,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 35004,
         ["prop_1"] = 0,
-        ["name"] = "战狼皮裤",
+        ["name"] = "Warhound leather pants",
         ["basic_prop"] = 1042631
     },
     [19] = {
@@ -262,7 +262,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 36001,
         ["prop_1"] = 0,
-        ["name"] = "新人靴子",
+        ["name"] = "Newbie boots",
         ["basic_prop"] = 1012731
     },
     [20] = {
@@ -276,7 +276,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 38001,
         ["prop_1"] = 0,
-        ["name"] = "附件装备1",
+        ["name"] = "Accessory set 1",
         ["basic_prop"] = 1010131
     },
     [21] = {
@@ -290,7 +290,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 38002,
         ["prop_1"] = 0,
-        ["name"] = "附件装备2",
+        ["name"] = "Accessory set 2",
         ["basic_prop"] = 1010131
     },
     [22] = {
@@ -304,7 +304,7 @@
         ["prop_2"] = 0,
         ["tbxid"] = 38003,
         ["prop_1"] = 0,
-        ["name"] = "附件装备3",
+        ["name"] = "Accessory set 3",
         ["basic_prop"] = 1010131
     }
 }

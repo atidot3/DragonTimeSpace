@@ -5,7 +5,7 @@
         ["id"] = 1,
         ["tbxid"] = 1,
         ["time"] = 604800,
-        ["name"] = "周卡",
+        ["name"] = "Weekly card",
         ["gemcost"] = 1575
     },
     [2] = {
@@ -14,7 +14,7 @@
         ["id"] = 2,
         ["tbxid"] = 2,
         ["time"] = 2592000,
-        ["name"] = "月卡",
+        ["name"] = "Monthly card",
         ["gemcost"] = 5985
     }
 }

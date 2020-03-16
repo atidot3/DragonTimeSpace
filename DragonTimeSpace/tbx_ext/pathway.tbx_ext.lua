@@ -8,8 +8,8 @@
         ["npcid"] = 4018,
         ["tbxid"] = 4018,
         ["coordinates"] = "81,354",
-        ["name"] = "干柴",
-        ["mapname"] = "新手野外"
+        ["name"] = "Firewood",
+        ["mapname"] = "Newbie map"
     },
     [2] = {
         ["propid"] = 0,
@@ -20,8 +20,8 @@
         ["npcid"] = 6406,
         ["tbxid"] = 6406,
         ["coordinates"] = "127,241",
-        ["name"] = "10008任务怪1",
-        ["mapname"] = "新手野外"
+        ["name"] = "10008 Weird quest 1",
+        ["mapname"] = "Newbie map"
     },
     [3] = {
         ["propid"] = 0,
@@ -32,8 +32,8 @@
         ["npcid"] = 6405,
         ["tbxid"] = 6405,
         ["coordinates"] = "126,320",
-        ["name"] = "10004任务怪",
-        ["mapname"] = "新手野外"
+        ["name"] = "10004 Weird quest",
+        ["mapname"] = "Newbie map"
     },
     [4] = {
         ["propid"] = 0,
@@ -44,8 +44,8 @@
         ["npcid"] = 2,
         ["tbxid"] = 100001,
         ["coordinates"] = "795,1089",
-        ["name"] = "神奇的传送师",
-        ["mapname"] = "时光城"
+        ["name"] = "Magic Teleporter",
+        ["mapname"] = "Time and Space City"
     },
     [5] = {
         ["propid"] = 0,
@@ -56,8 +56,8 @@
         ["npcid"] = 3,
         ["tbxid"] = 100002,
         ["coordinates"] = "2581,540",
-        ["name"] = "神奇的传送师",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Magic Teleporter",
+        ["mapname"] = "Master Roshi's island"
     },
     [6] = {
         ["propid"] = 0,
@@ -68,8 +68,8 @@
         ["npcid"] = 4,
         ["tbxid"] = 100003,
         ["coordinates"] = "2507,1515",
-        ["name"] = "神奇的传送师",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Magic Teleporter",
+        ["mapname"] = "Master Roshi's island"
     },
     [7] = {
         ["propid"] = 0,
@@ -80,8 +80,8 @@
         ["npcid"] = 5,
         ["tbxid"] = 100004,
         ["coordinates"] = "2330,1252",
-        ["name"] = "神奇的传送师",
-        ["mapname"] = "西都野外"
+        ["name"] = "Magic Teleporter",
+        ["mapname"] = "Outsite West City"
     },
     [8] = {
         ["propid"] = 0,
@@ -92,8 +92,8 @@
         ["npcid"] = 6,
         ["tbxid"] = 100005,
         ["coordinates"] = "199,20",
-        ["name"] = "神奇的传送师",
-        ["mapname"] = "神殿"
+        ["name"] = "Magic Teleporter",
+        ["mapname"] = "Shrine"
     },
     [9] = {
         ["propid"] = 0,
@@ -104,8 +104,8 @@
         ["npcid"] = 7,
         ["tbxid"] = 100006,
         ["coordinates"] = "617,895",
-        ["name"] = "神奇的传送师",
-        ["mapname"] = "水晶婆婆的宫殿"
+        ["name"] = "Magic Teleporter",
+        ["mapname"] = "Baba's palace"
     },
     [10] = {
         ["propid"] = 0,
@@ -116,8 +116,8 @@
         ["npcid"] = 8,
         ["tbxid"] = 100007,
         ["coordinates"] = "840,517",
-        ["name"] = "神奇的传送师",
-        ["mapname"] = "时光城"
+        ["name"] = "Magic Teleporter",
+        ["mapname"] = "Time and Space City"
     },
     [11] = {
         ["propid"] = 0,
@@ -128,8 +128,8 @@
         ["npcid"] = 9,
         ["tbxid"] = 100008,
         ["coordinates"] = "1373,727",
-        ["name"] = "神奇的传送师",
-        ["mapname"] = "时光城"
+        ["name"] = "Magic Teleporter",
+        ["mapname"] = "Time and Space City"
     },
     [12] = {
         ["propid"] = 0,
@@ -140,8 +140,8 @@
         ["npcid"] = 10,
         ["tbxid"] = 100009,
         ["coordinates"] = "846,878",
-        ["name"] = "神奇的传送师",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Magic Teleporter",
+        ["mapname"] = "Master Roshi's island"
     },
     [13] = {
         ["propid"] = 0,
@@ -152,8 +152,8 @@
         ["npcid"] = 11,
         ["tbxid"] = 100010,
         ["coordinates"] = "1150,1038",
-        ["name"] = "神奇的传送师",
-        ["mapname"] = "西都野外"
+        ["name"] = "Magic Teleporter",
+        ["mapname"] = "Outsite West City"
     },
     [14] = {
         ["propid"] = 0,
@@ -164,8 +164,8 @@
         ["npcid"] = 12,
         ["tbxid"] = 100011,
         ["coordinates"] = "948,692",
-        ["name"] = "神奇的传送师",
-        ["mapname"] = "新手村"
+        ["name"] = "Magic Teleporter",
+        ["mapname"] = "Novice village"
     },
     [15] = {
         ["propid"] = 0,
@@ -176,8 +176,8 @@
         ["npcid"] = 80,
         ["tbxid"] = 100211,
         ["coordinates"] = "827,843",
-        ["name"] = "特兰克斯",
-        ["mapname"] = "时光城"
+        ["name"] = "Trunks",
+        ["mapname"] = "Time and Space City"
     },
     [16] = {
         ["propid"] = 0,
@@ -188,8 +188,8 @@
         ["npcid"] = 9001,
         ["tbxid"] = 100221,
         ["coordinates"] = "838,825",
-        ["name"] = "特兰克斯",
-        ["mapname"] = "时光城—副本"
+        ["name"] = "Trunks",
+        ["mapname"] = "Time and Space City—copy"
     },
     [17] = {
         ["propid"] = 0,
@@ -200,8 +200,8 @@
         ["npcid"] = 81,
         ["tbxid"] = 100222,
         ["coordinates"] = "838,826",
-        ["name"] = "回到时光城",
-        ["mapname"] = "时光城—副本"
+        ["name"] = "Return to Time and Space City",
+        ["mapname"] = "Time and Space City—copy"
     },
     [18] = {
         ["propid"] = 0,
@@ -212,8 +212,8 @@
         ["npcid"] = 9002,
         ["tbxid"] = 100251,
         ["coordinates"] = "581,2425",
-        ["name"] = "沙鲁",
-        ["mapname"] = "副本"
+        ["name"] = "Cell",
+        ["mapname"] = "Copy"
     },
     [19] = {
         ["propid"] = 0,
@@ -224,8 +224,8 @@
         ["npcid"] = 9003,
         ["tbxid"] = 100261,
         ["coordinates"] = "581,2425",
-        ["name"] = "小沙鲁",
-        ["mapname"] = "副本"
+        ["name"] = "Mini Cell",
+        ["mapname"] = "Copy"
     },
     [20] = {
         ["propid"] = 0,
@@ -236,8 +236,8 @@
         ["npcid"] = 82,
         ["tbxid"] = 100262,
         ["coordinates"] = "780,2701",
-        ["name"] = "小悟空",
-        ["mapname"] = "副本"
+        ["name"] = "Kid Goku",
+        ["mapname"] = "Copy"
     },
     [21] = {
         ["propid"] = 0,
@@ -248,8 +248,8 @@
         ["npcid"] = 83,
         ["tbxid"] = 100271,
         ["coordinates"] = "755,2710",
-        ["name"] = "布尔玛",
-        ["mapname"] = "副本"
+        ["name"] = "Bulma",
+        ["mapname"] = "Copy"
     },
     [22] = {
         ["propid"] = 0,
@@ -260,8 +260,8 @@
         ["npcid"] = 68,
         ["tbxid"] = 100281,
         ["coordinates"] = "22,18",
-        ["name"] = "布尔玛",
-        ["mapname"] = "副本"
+        ["name"] = "Bulma",
+        ["mapname"] = "Copy"
     },
     [23] = {
         ["propid"] = 0,
@@ -272,8 +272,8 @@
         ["npcid"] = 84,
         ["tbxid"] = 101011,
         ["coordinates"] = "930,1051",
-        ["name"] = "活动区的玛洛",
-        ["mapname"] = "时光城"
+        ["name"] = "Marlow activity area",
+        ["mapname"] = "Time and Space City"
     },
     [24] = {
         ["propid"] = 0,
@@ -284,8 +284,8 @@
         ["npcid"] = 85,
         ["tbxid"] = 101012,
         ["coordinates"] = "444,1065",
-        ["name"] = "生产区的质检员郭乐迪",
-        ["mapname"] = "时光城"
+        ["name"] = "Quality inspector of the production area Ledi Guo",
+        ["mapname"] = "Time and Space City"
     },
     [25] = {
         ["propid"] = 0,
@@ -296,8 +296,8 @@
         ["npcid"] = 86,
         ["tbxid"] = 101013,
         ["coordinates"] = "269,863",
-        ["name"] = "存储机器人",
-        ["mapname"] = "时光城"
+        ["name"] = "Storage robot",
+        ["mapname"] = "Time and Space City"
     },
     [26] = {
         ["propid"] = 0,
@@ -308,8 +308,8 @@
         ["npcid"] = 87,
         ["tbxid"] = 101031,
         ["coordinates"] = "2620,578",
-        ["name"] = "龟仙人",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Master Roshi",
+        ["mapname"] = "Master Roshi's island"
     },
     [27] = {
         ["propid"] = 0,
@@ -320,8 +320,8 @@
         ["npcid"] = 88,
         ["tbxid"] = 101052,
         ["coordinates"] = "2605,1469",
-        ["name"] = "身材傲人的女性",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Proud female body",
+        ["mapname"] = "Master Roshi's island"
     },
     [28] = {
         ["propid"] = 0,
@@ -332,8 +332,8 @@
         ["npcid"] = 89,
         ["tbxid"] = 101053,
         ["coordinates"] = "2696,1457",
-        ["name"] = "居民万特",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Resident Wan Te",
+        ["mapname"] = "Master Roshi's island"
     },
     [29] = {
         ["propid"] = 0,
@@ -344,8 +344,8 @@
         ["npcid"] = 90,
         ["tbxid"] = 101054,
         ["coordinates"] = "2651,1477",
-        ["name"] = "身材傲人的女性",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Proud female body",
+        ["mapname"] = "Master Roshi's island"
     },
     [30] = {
         ["propid"] = 0,
@@ -356,8 +356,8 @@
         ["npcid"] = 79,
         ["tbxid"] = 101055,
         ["coordinates"] = "2244,1595",
-        ["name"] = "船夫",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Boatman",
+        ["mapname"] = "Master Roshi's island"
     },
     [31] = {
         ["propid"] = 0,
@@ -368,8 +368,8 @@
         ["npcid"] = 78,
         ["tbxid"] = 101056,
         ["coordinates"] = "1786,1764",
-        ["name"] = "船夫",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Boatman",
+        ["mapname"] = "Master Roshi's island"
     },
     [32] = {
         ["propid"] = 0,
@@ -380,8 +380,8 @@
         ["npcid"] = 91,
         ["tbxid"] = 101051,
         ["coordinates"] = "2624,607",
-        ["name"] = "船夫",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Boatman",
+        ["mapname"] = "Master Roshi's island"
     },
     [33] = {
         ["propid"] = 0,
@@ -392,8 +392,8 @@
         ["npcid"] = 9004,
         ["tbxid"] = 101061,
         ["coordinates"] = "2683,521",
-        ["name"] = "海边的小地痞",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Sneak beach tief",
+        ["mapname"] = "Master Roshi's island"
     },
     [34] = {
         ["propid"] = 0,
@@ -404,8 +404,8 @@
         ["npcid"] = 9005,
         ["tbxid"] = 101081,
         ["coordinates"] = "2635,521",
-        ["name"] = "居民布朗",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Resident Bulong",
+        ["mapname"] = "Master Roshi's island"
     },
     [35] = {
         ["propid"] = 0,
@@ -416,8 +416,8 @@
         ["npcid"] = 4025,
         ["tbxid"] = 101091,
         ["coordinates"] = "2651,566",
-        ["name"] = "鲜花",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Flowers",
+        ["mapname"] = "Master Roshi's island"
     },
     [36] = {
         ["propid"] = 0,
@@ -428,8 +428,8 @@
         ["npcid"] = 92,
         ["tbxid"] = 101121,
         ["coordinates"] = "1627,743",
-        ["name"] = "龟仙人",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Master Roshi",
+        ["mapname"] = "Master Roshi's island"
     },
     [37] = {
         ["propid"] = 0,
@@ -440,8 +440,8 @@
         ["npcid"] = 2092,
         ["tbxid"] = 101141,
         ["coordinates"] = "1504,512",
-        ["name"] = "龟仙人",
-        ["mapname"] = "龟仙岛跑步副本"
+        ["name"] = "Master Roshi",
+        ["mapname"] = "Master Roshi's island race copy"
     },
     [38] = {
         ["propid"] = 0,
@@ -452,8 +452,8 @@
         ["npcid"] = 4029,
         ["tbxid"] = 101151,
         ["coordinates"] = "992,562",
-        ["name"] = "石头",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Stone",
+        ["mapname"] = "Master Roshi's island"
     },
     [39] = {
         ["propid"] = 0,
@@ -463,9 +463,9 @@
         ["pathwaynull"] = 0,
         ["npcid"] = 93,
         ["tbxid"] = 101152,
-        ["coordinates"] = "1195,602  ",
-        ["name"] = "龟仙人",
-        ["mapname"] = "龟仙岛"
+        ["coordinates"] = "1195,602",
+        ["name"] = "Master Roshi",
+        ["mapname"] = "Master Roshi's island"
     },
     [40] = {
         ["propid"] = 0,
@@ -476,8 +476,8 @@
         ["npcid"] = 9243,
         ["tbxid"] = 101153,
         ["coordinates"] = "984,649",
-        ["name"] = "捣乱的黄松鼠",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Annoying yellow squirrels",
+        ["mapname"] = "Master Roshi's island"
     },
     [41] = {
         ["propid"] = 0,
@@ -488,8 +488,8 @@
         ["npcid"] = 2096,
         ["tbxid"] = 101161,
         ["coordinates"] = "1210,620",
-        ["name"] = "十斤的龟壳",
-        ["mapname"] = "龟仙岛跑步副本"
+        ["name"] = "Ten pounds of turtle shell",
+        ["mapname"] = "Master Roshi's island race copy"
     },
     [42] = {
         ["propid"] = 0,
@@ -500,8 +500,8 @@
         ["npcid"] = 94,
         ["tbxid"] = 101162,
         ["coordinates"] = "778,697",
-        ["name"] = "龟仙人",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Master Roshi",
+        ["mapname"] = "Master Roshi's island"
     },
     [43] = {
         ["propid"] = 0,
@@ -512,8 +512,8 @@
         ["npcid"] = 95,
         ["tbxid"] = 101171,
         ["coordinates"] = "768,961",
-        ["name"] = "居民葛莱迪",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Resident Ge laidi",
+        ["mapname"] = "Master Roshi's island"
     },
     [44] = {
         ["propid"] = 0,
@@ -524,8 +524,8 @@
         ["npcid"] = 96,
         ["tbxid"] = 101172,
         ["coordinates"] = "813,887",
-        ["name"] = "居民欧姆西娅",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Resident Omsia",
+        ["mapname"] = "Master Roshi's island"
     },
     [45] = {
         ["propid"] = 0,
@@ -536,8 +536,8 @@
         ["npcid"] = 97,
         ["tbxid"] = 101173,
         ["coordinates"] = "874,908",
-        ["name"] = "居民瑞德盼",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Resident Rui depan",
+        ["mapname"] = "Master Roshi's island"
     },
     [46] = {
         ["propid"] = 0,
@@ -548,8 +548,8 @@
         ["npcid"] = 4027,
         ["tbxid"] = 101181,
         ["coordinates"] = "125,720",
-        ["name"] = "松茸",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Matsutake",
+        ["mapname"] = "Master Roshi's island"
     },
     [47] = {
         ["propid"] = 0,
@@ -560,8 +560,8 @@
         ["npcid"] = 9006,
         ["tbxid"] = 101182,
         ["coordinates"] = "234,700",
-        ["name"] = "老虎",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Tiger",
+        ["mapname"] = "Master Roshi's island"
     },
     [48] = {
         ["propid"] = 0,
@@ -572,8 +572,8 @@
         ["npcid"] = 98,
         ["tbxid"] = 101183,
         ["coordinates"] = "373,1255",
-        ["name"] = "龟仙人",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Master Roshi",
+        ["mapname"] = "Master Roshi's island"
     },
     [49] = {
         ["propid"] = 0,
@@ -584,8 +584,8 @@
         ["npcid"] = 143,
         ["tbxid"] = 101191,
         ["coordinates"] = "1025,941",
-        ["name"] = "渔具",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Fishing gear",
+        ["mapname"] = "Master Roshi's island"
     },
     [50] = {
         ["propid"] = 0,
@@ -596,8 +596,8 @@
         ["npcid"] = 90,
         ["tbxid"] = 101192,
         ["coordinates"] = "1063,1008",
-        ["name"] = "龟仙人",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Master Roshi",
+        ["mapname"] = "Master Roshi's island"
     },
     [51] = {
         ["propid"] = 0,
@@ -608,8 +608,8 @@
         ["npcid"] = 99,
         ["tbxid"] = 101201,
         ["coordinates"] = "1015,994",
-        ["name"] = "居民珀斯",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Resident Perks",
+        ["mapname"] = "Master Roshi's island"
     },
     [52] = {
         ["propid"] = 0,
@@ -620,8 +620,8 @@
         ["npcid"] = 100,
         ["tbxid"] = 101202,
         ["coordinates"] = "1049,997",
-        ["name"] = "居民木木",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Resident Wood",
+        ["mapname"] = "Master Roshi's island"
     },
     [53] = {
         ["propid"] = 0,
@@ -632,8 +632,8 @@
         ["npcid"] = 108,
         ["tbxid"] = 101211,
         ["coordinates"] = "949,997",
-        ["name"] = "居民彻思",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Resident Chess",
+        ["mapname"] = "Master Roshi's island"
     },
     [54] = {
         ["propid"] = 0,
@@ -644,8 +644,8 @@
         ["npcid"] = 4028,
         ["tbxid"] = 101221,
         ["coordinates"] = "355,706",
-        ["name"] = "野菜",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Wild vegetables",
+        ["mapname"] = "Master Roshi's island"
     },
     [55] = {
         ["propid"] = 0,
@@ -656,8 +656,8 @@
         ["npcid"] = 9007,
         ["tbxid"] = 101222,
         ["coordinates"] = "280,728",
-        ["name"] = "红松鼠",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Red squirrel",
+        ["mapname"] = "Master Roshi's island"
     },
     [56] = {
         ["propid"] = 0,
@@ -668,8 +668,8 @@
         ["npcid"] = 101,
         ["tbxid"] = 101231,
         ["coordinates"] = "1071,1040",
-        ["name"] = "烧烤架",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Barbeque",
+        ["mapname"] = "Master Roshi's island"
     },
     [57] = {
         ["propid"] = 0,
@@ -680,8 +680,8 @@
         ["npcid"] = 109,
         ["tbxid"] = 101241,
         ["coordinates"] = "1419,676",
-        ["name"] = "特兰克斯",
-        ["mapname"] = "时光城"
+        ["name"] = "Trunks",
+        ["mapname"] = "Time and Space City"
     },
     [58] = {
         ["propid"] = 0,
@@ -692,8 +692,8 @@
         ["npcid"] = 102,
         ["tbxid"] = 101261,
         ["coordinates"] = "2630,1889",
-        ["name"] = "乌龙",
-        ["mapname"] = "副本沙漠"
+        ["name"] = "Oolong",
+        ["mapname"] = "Desert copy"
     },
     [59] = {
         ["propid"] = 0,
@@ -704,8 +704,8 @@
         ["npcid"] = 103,
         ["tbxid"] = 101262,
         ["coordinates"] = "2190,2373",
-        ["name"] = "旅人",
-        ["mapname"] = "副本沙漠"
+        ["name"] = "Traveler",
+        ["mapname"] = "Desert copy"
     },
     [60] = {
         ["propid"] = 0,
@@ -716,8 +716,8 @@
         ["npcid"] = 104,
         ["tbxid"] = 101263,
         ["coordinates"] = "2397,2573",
-        ["name"] = "被困的旅人",
-        ["mapname"] = "副本沙漠"
+        ["name"] = "Trapped Traveler",
+        ["mapname"] = "Desert copy"
     },
     [61] = {
         ["propid"] = 0,
@@ -728,8 +728,8 @@
         ["npcid"] = 106,
         ["tbxid"] = 101271,
         ["coordinates"] = "2334,1970",
-        ["name"] = "小悟空",
-        ["mapname"] = "副本沙漠"
+        ["name"] = "Kid Goku",
+        ["mapname"] = "Desert copy"
     },
     [62] = {
         ["propid"] = 0,
@@ -740,8 +740,8 @@
         ["npcid"] = 9009,
         ["tbxid"] = 101272,
         ["coordinates"] = "2369,1819",
-        ["name"] = "强盗",
-        ["mapname"] = "副本沙漠"
+        ["name"] = "Robber",
+        ["mapname"] = "Desert copy"
     },
     [63] = {
         ["propid"] = 0,
@@ -752,8 +752,8 @@
         ["npcid"] = 9009,
         ["tbxid"] = 101281,
         ["coordinates"] = "2304,1956",
-        ["name"] = "强盗",
-        ["mapname"] = "副本沙漠"
+        ["name"] = "Robber",
+        ["mapname"] = "Desert copy"
     },
     [64] = {
         ["propid"] = 0,
@@ -764,8 +764,8 @@
         ["npcid"] = 9010,
         ["tbxid"] = 101291,
         ["coordinates"] = "2261,1953",
-        ["name"] = "亚姆查",
-        ["mapname"] = "副本沙漠"
+        ["name"] = "Yamcha",
+        ["mapname"] = "Desert copy"
     },
     [65] = {
         ["propid"] = 0,
@@ -776,8 +776,8 @@
         ["npcid"] = 110,
         ["tbxid"] = 101301,
         ["coordinates"] = "375,1255",
-        ["name"] = "龟仙人",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Master Roshi",
+        ["mapname"] = "Master Roshi's island"
     },
     [66] = {
         ["propid"] = 0,
@@ -788,8 +788,8 @@
         ["npcid"] = 4030,
         ["tbxid"] = 101311,
         ["coordinates"] = "510,1282",
-        ["name"] = "垃圾",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Garbage",
+        ["mapname"] = "Master Roshi's island"
     },
     [67] = {
         ["propid"] = 0,
@@ -800,8 +800,8 @@
         ["npcid"] = 9245,
         ["tbxid"] = 101312,
         ["coordinates"] = "443,1638",
-        ["name"] = "海边的小年轻",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "The little kid from the coast",
+        ["mapname"] = "Master Roshi's island"
     },
     [68] = {
         ["propid"] = 0,
@@ -812,8 +812,8 @@
         ["npcid"] = 111,
         ["tbxid"] = 101321,
         ["coordinates"] = "270,1423",
-        ["name"] = "龟仙人",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Master Roshi",
+        ["mapname"] = "Master Roshi's island"
     },
     [69] = {
         ["propid"] = 0,
@@ -824,8 +824,8 @@
         ["npcid"] = 2104,
         ["tbxid"] = 101322,
         ["coordinates"] = "375,1255",
-        ["name"] = "龟仙人",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Master Roshi",
+        ["mapname"] = "Master Roshi's island"
     },
     [70] = {
         ["propid"] = 0,
@@ -837,7 +837,7 @@
         ["tbxid"] = 101331,
         ["coordinates"] = "290,1567",
         ["name"] = "",
-        ["mapname"] = "海边"
+        ["mapname"] = "Coast"
     },
     [71] = {
         ["propid"] = 0,
@@ -848,8 +848,8 @@
         ["npcid"] = 112,
         ["tbxid"] = 101332,
         ["coordinates"] = "940,945",
-        ["name"] = "居民布瑞利",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Resident Berry",
+        ["mapname"] = "Master Roshi's island"
     },
     [72] = {
         ["propid"] = 0,
@@ -860,8 +860,8 @@
         ["npcid"] = 113,
         ["tbxid"] = 101333,
         ["coordinates"] = "911,903",
-        ["name"] = "居民奎萨思蒙",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Resident Kui Sasmond",
+        ["mapname"] = "Master Roshi's island"
     },
     [73] = {
         ["propid"] = 0,
@@ -872,8 +872,8 @@
         ["npcid"] = 4031,
         ["tbxid"] = 101341,
         ["coordinates"] = "933,1341",
-        ["name"] = "木材",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Wood plank",
+        ["mapname"] = "Master Roshi's island"
     },
     [74] = {
         ["propid"] = 0,
@@ -884,8 +884,8 @@
         ["npcid"] = 114,
         ["tbxid"] = 101342,
         ["coordinates"] = "984,887",
-        ["name"] = "居民司利乌",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Resident Siliu",
+        ["mapname"] = "Master Roshi's island"
     },
     [75] = {
         ["propid"] = 0,
@@ -896,8 +896,8 @@
         ["npcid"] = 115,
         ["tbxid"] = 101343,
         ["coordinates"] = "879,954",
-        ["name"] = "居民菲尔博",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Resident Philbo",
+        ["mapname"] = "Master Roshi's island"
     },
     [76] = {
         ["propid"] = 0,
@@ -908,8 +908,8 @@
         ["npcid"] = 116,
         ["tbxid"] = 101351,
         ["coordinates"] = "1481,1448",
-        ["name"] = "船夫",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Boatman",
+        ["mapname"] = "Master Roshi's island"
     },
     [77] = {
         ["propid"] = 0,
@@ -920,8 +920,8 @@
         ["npcid"] = 117,
         ["tbxid"] = 101352,
         ["coordinates"] = "1573,1962",
-        ["name"] = "龟仙人",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Master Roshi",
+        ["mapname"] = "Master Roshi's island"
     },
     [78] = {
         ["propid"] = 0,
@@ -932,8 +932,8 @@
         ["npcid"] = 9011,
         ["tbxid"] = 101361,
         ["coordinates"] = "1310,2035",
-        ["name"] = "老虎",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Tiger",
+        ["mapname"] = "Master Roshi's island"
     },
     [79] = {
         ["propid"] = 0,
@@ -944,8 +944,8 @@
         ["npcid"] = 9012,
         ["tbxid"] = 101371,
         ["coordinates"] = "1115,2307",
-        ["name"] = "林中怪兽",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Forest monster",
+        ["mapname"] = "Master Roshi's island"
     },
     [80] = {
         ["propid"] = 0,
@@ -956,8 +956,8 @@
         ["npcid"] = 9013,
         ["tbxid"] = 101381,
         ["coordinates"] = "1075,2250",
-        ["name"] = "潜逃的匪徒",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Escaped gangster",
+        ["mapname"] = "Master Roshi's island"
     },
     [81] = {
         ["propid"] = 0,
@@ -968,8 +968,8 @@
         ["npcid"] = 118,
         ["tbxid"] = 101391,
         ["coordinates"] = "1561,2070",
-        ["name"] = "居民缪尔珂",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Resident Moe Ke",
+        ["mapname"] = "Master Roshi's island"
     },
     [82] = {
         ["propid"] = 0,
@@ -980,8 +980,8 @@
         ["npcid"] = 9014,
         ["tbxid"] = 101401,
         ["coordinates"] = "1455,2112",
-        ["name"] = "暴走的红松鼠",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Runaway Red squirrel",
+        ["mapname"] = "Master Roshi's island"
     },
     [83] = {
         ["propid"] = 0,
@@ -993,7 +993,7 @@
         ["tbxid"] = 101421,
         ["coordinates"] = "2226,2266",
         ["name"] = "",
-        ["mapname"] = "巨石附近"
+        ["mapname"] = "Near Stonehenge"
     },
     [84] = {
         ["propid"] = 0,
@@ -1004,8 +1004,8 @@
         ["npcid"] = 119,
         ["tbxid"] = 101422,
         ["coordinates"] = "2376,2194",
-        ["name"] = "时空巡逻队队员",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Time and space patrol team",
+        ["mapname"] = "Master Roshi's island"
     },
     [85] = {
         ["propid"] = 0,
@@ -1016,8 +1016,8 @@
         ["npcid"] = 121,
         ["tbxid"] = 101441,
         ["coordinates"] = "2335,2233",
-        ["name"] = "小悟空与小库林",
-        ["mapname"] = "副本龟岛"
+        ["name"] = "Kid Goku and kid Krillin",
+        ["mapname"] = "Turtle Island"
     },
     [86] = {
         ["propid"] = 0,
@@ -1028,8 +1028,8 @@
         ["npcid"] = 9015,
         ["tbxid"] = 101442,
         ["coordinates"] = "2270,2281",
-        ["name"] = "库林",
-        ["mapname"] = "副本龟岛"
+        ["name"] = "Krillin",
+        ["mapname"] = "Turtle Island"
     },
     [87] = {
         ["propid"] = 0,
@@ -1040,8 +1040,8 @@
         ["npcid"] = 120,
         ["tbxid"] = 101451,
         ["coordinates"] = "2336,2243",
-        ["name"] = "库林",
-        ["mapname"] = "副本龟岛"
+        ["name"] = "Krillin",
+        ["mapname"] = "Turtle Island"
     },
     [88] = {
         ["propid"] = 0,
@@ -1052,8 +1052,8 @@
         ["npcid"] = 123,
         ["tbxid"] = 101461,
         ["coordinates"] = "2345,2386",
-        ["name"] = "龟仙人",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Master Roshi",
+        ["mapname"] = "Master Roshi's island"
     },
     [89] = {
         ["propid"] = 0,
@@ -1064,8 +1064,8 @@
         ["npcid"] = 124,
         ["tbxid"] = 101471,
         ["coordinates"] = "1753,2380",
-        ["name"] = "奶牛场管理员",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Cow field administrator",
+        ["mapname"] = "Master Roshi's island"
     },
     [90] = {
         ["propid"] = 0,
@@ -1076,8 +1076,8 @@
         ["npcid"] = 125,
         ["tbxid"] = 101481,
         ["coordinates"] = "1703,2418",
-        ["name"] = "焦虑的奶牛",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Anxious cow",
+        ["mapname"] = "Master Roshi's island"
     },
     [91] = {
         ["propid"] = 0,
@@ -1088,8 +1088,8 @@
         ["npcid"] = 126,
         ["tbxid"] = 101482,
         ["coordinates"] = "1560,2440",
-        ["name"] = "奶牛",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Cow",
+        ["mapname"] = "Master Roshi's island"
     },
     [92] = {
         ["propid"] = 0,
@@ -1100,8 +1100,8 @@
         ["npcid"] = 9246,
         ["tbxid"] = 101491,
         ["coordinates"] = "1290,2234",
-        ["name"] = "野猪",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Wild boar",
+        ["mapname"] = "Master Roshi's island"
     },
     [93] = {
         ["propid"] = 0,
@@ -1112,8 +1112,8 @@
         ["npcid"] = 127,
         ["tbxid"] = 101511,
         ["coordinates"] = "1580,2445",
-        ["name"] = "愉悦的奶牛",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Happy Cow",
+        ["mapname"] = "Master Roshi's island"
     },
     [94] = {
         ["propid"] = 0,
@@ -1124,8 +1124,8 @@
         ["npcid"] = 128,
         ["tbxid"] = 101521,
         ["coordinates"] = "2559,1720",
-        ["name"] = "居民缪尔珂",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Resident Moe Ke",
+        ["mapname"] = "Master Roshi's island"
     },
     [95] = {
         ["propid"] = 0,
@@ -1137,7 +1137,7 @@
         ["tbxid"] = 101522,
         ["coordinates"] = "1338,2241",
         ["name"] = "USB",
-        ["mapname"] = "龟仙岛"
+        ["mapname"] = "Master Roshi's island"
     },
     [96] = {
         ["propid"] = 0,
@@ -1148,8 +1148,8 @@
         ["npcid"] = 130,
         ["tbxid"] = 101531,
         ["coordinates"] = "2618,2465",
-        ["name"] = "方丈",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Abbot",
+        ["mapname"] = "Master Roshi's island"
     },
     [97] = {
         ["propid"] = 0,
@@ -1160,8 +1160,8 @@
         ["npcid"] = 132,
         ["tbxid"] = 101541,
         ["coordinates"] = "2645,2191",
-        ["name"] = "小沙弥",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Kid buddist",
+        ["mapname"] = "Master Roshi's island"
     },
     [98] = {
         ["propid"] = 0,
@@ -1172,8 +1172,8 @@
         ["npcid"] = 4033,
         ["tbxid"] = 101542,
         ["coordinates"] = "2688,2367",
-        ["name"] = "小白花",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Little Samanera",
+        ["mapname"] = "Master Roshi's island"
     },
     [99] = {
         ["propid"] = 0,
@@ -1184,8 +1184,8 @@
         ["npcid"] = 131,
         ["tbxid"] = 101551,
         ["coordinates"] = "2728,1771",
-        ["name"] = "工头",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Foreman",
+        ["mapname"] = "Master Roshi's island"
     },
     [100] = {
         ["propid"] = 0,
@@ -1196,8 +1196,8 @@
         ["npcid"] = 4034,
         ["tbxid"] = 101561,
         ["coordinates"] = "2764,1706",
-        ["name"] = "砖",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Brick",
+        ["mapname"] = "Master Roshi's island"
     },
     [101] = {
         ["propid"] = 0,
@@ -1208,8 +1208,8 @@
         ["npcid"] = 133,
         ["tbxid"] = 101562,
         ["coordinates"] = "2620,1785",
-        ["name"] = "工人",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Worker",
+        ["mapname"] = "Master Roshi's island"
     },
     [102] = {
         ["propid"] = 0,
@@ -1221,7 +1221,7 @@
         ["tbxid"] = 101571,
         ["coordinates"] = "2714,1631",
         ["name"] = "",
-        ["mapname"] = "训练岛B沙堆前"
+        ["mapname"] = "Training island B former sand"
     },
     [103] = {
         ["propid"] = 0,
@@ -1232,8 +1232,8 @@
         ["npcid"] = 134,
         ["tbxid"] = 101572,
         ["coordinates"] = "2682,1720",
-        ["name"] = "工人史笛期",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Worker Shi Diqi",
+        ["mapname"] = "Master Roshi's island"
     },
     [104] = {
         ["propid"] = 0,
@@ -1244,8 +1244,8 @@
         ["npcid"] = 9016,
         ["tbxid"] = 101581,
         ["coordinates"] = "2713,1945",
-        ["name"] = "扛把子",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Kan Papsy",
+        ["mapname"] = "Master Roshi's island"
     },
     [105] = {
         ["propid"] = 0,
@@ -1256,8 +1256,8 @@
         ["npcid"] = 9017,
         ["tbxid"] = 101582,
         ["coordinates"] = "2657,1900",
-        ["name"] = "小混混",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Gangster",
+        ["mapname"] = "Master Roshi's island"
     },
     [106] = {
         ["propid"] = 0,
@@ -1268,8 +1268,8 @@
         ["npcid"] = 129,
         ["tbxid"] = 101591,
         ["coordinates"] = "2519,1457",
-        ["name"] = "居民斯卓汉特",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Resident Stuchant",
+        ["mapname"] = "Master Roshi's island"
     },
     [107] = {
         ["propid"] = 0,
@@ -1280,8 +1280,8 @@
         ["npcid"] = 135,
         ["tbxid"] = 101592,
         ["coordinates"] = "2423,1615",
-        ["name"] = "居民毕尔",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Resident Bill",
+        ["mapname"] = "Master Roshi's island"
     },
     [108] = {
         ["propid"] = 0,
@@ -1292,8 +1292,8 @@
         ["npcid"] = 136,
         ["tbxid"] = 101601,
         ["coordinates"] = "2330,1919",
-        ["name"] = "农民",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Farmer",
+        ["mapname"] = "Master Roshi's island"
     },
     [109] = {
         ["propid"] = 0,
@@ -1304,8 +1304,8 @@
         ["npcid"] = 4035,
         ["tbxid"] = 101611,
         ["coordinates"] = "2150,1930",
-        ["name"] = "杂草",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Weed",
+        ["mapname"] = "Master Roshi's island"
     },
     [110] = {
         ["propid"] = 0,
@@ -1316,8 +1316,8 @@
         ["npcid"] = 9018,
         ["tbxid"] = 101621,
         ["coordinates"] = "1800,1988",
-        ["name"] = "小喽啰",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Xiao Luoluo",
+        ["mapname"] = "Master Roshi's island"
     },
     [111] = {
         ["propid"] = 0,
@@ -1328,8 +1328,8 @@
         ["npcid"] = 9019,
         ["tbxid"] = 101631,
         ["coordinates"] = "1870,1895",
-        ["name"] = "小流氓",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Hooligans",
+        ["mapname"] = "Master Roshi's island"
     },
     [112] = {
         ["propid"] = 0,
@@ -1340,8 +1340,8 @@
         ["npcid"] = 9020,
         ["tbxid"] = 101632,
         ["coordinates"] = "1867,1986",
-        ["name"] = "流氓首领",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Rogue leader",
+        ["mapname"] = "Master Roshi's island"
     },
     [113] = {
         ["propid"] = 0,
@@ -1352,8 +1352,8 @@
         ["npcid"] = 9021,
         ["tbxid"] = 101641,
         ["coordinates"] = "2221,2459",
-        ["name"] = "龟仙人",
-        ["mapname"] = "副本训练岛B"
+        ["name"] = "Master Roshi",
+        ["mapname"] = "Training island B"
     },
     [114] = {
         ["propid"] = 0,
@@ -1364,8 +1364,8 @@
         ["npcid"] = 137,
         ["tbxid"] = 101642,
         ["coordinates"] = "829,353",
-        ["name"] = "武道会管理员",
-        ["mapname"] = "时光城"
+        ["name"] = "Budokai administrator",
+        ["mapname"] = "Time and Space City"
     },
     [115] = {
         ["propid"] = 0,
@@ -1376,8 +1376,8 @@
         ["npcid"] = 2099,
         ["tbxid"] = 100643,
         ["coordinates"] = "1367,377",
-        ["name"] = "家族管理员",
-        ["mapname"] = "时光城"
+        ["name"] = "Guild manager",
+        ["mapname"] = "Time and Space City"
     },
     [116] = {
         ["propid"] = 0,
@@ -1388,8 +1388,8 @@
         ["npcid"] = 2124,
         ["tbxid"] = 100644,
         ["coordinates"] = "1378,444",
-        ["name"] = "家族任务发布员",
-        ["mapname"] = "时光城"
+        ["name"] = "Guild quest manager",
+        ["mapname"] = "Time and Space City"
     },
     [117] = {
         ["propid"] = 0,
@@ -1400,8 +1400,8 @@
         ["npcid"] = 198,
         ["tbxid"] = 101651,
         ["coordinates"] = "804,188",
-        ["name"] = "武道会讲解员",
-        ["mapname"] = "时光城"
+        ["name"] = "Martial arts interpreter",
+        ["mapname"] = "Time and Space City"
     },
     [118] = {
         ["propid"] = 0,
@@ -1412,8 +1412,8 @@
         ["npcid"] = 2095,
         ["tbxid"] = 101701,
         ["coordinates"] = "1376,1809",
-        ["name"] = "龙珠宝盒",
-        ["mapname"] = "副本调换龙珠"
+        ["name"] = "Dragon ball treasure box",
+        ["mapname"] = "Dragon ball changer"
     },
     [119] = {
         ["propid"] = 0,
@@ -1425,7 +1425,7 @@
         ["tbxid"] = 101711,
         ["coordinates"] = "447,1688",
         ["name"] = "",
-        ["mapname"] = "离开这里前往城堡外面"
+        ["mapname"] = "Leave to outside castle"
     },
     [120] = {
         ["propid"] = 0,
@@ -1436,8 +1436,8 @@
         ["npcid"] = 138,
         ["tbxid"] = 101731,
         ["coordinates"] = "447,1690",
-        ["name"] = "乌龙",
-        ["mapname"] = "副本"
+        ["name"] = "Oolong",
+        ["mapname"] = "Copy"
     },
     [121] = {
         ["propid"] = 0,
@@ -1448,8 +1448,8 @@
         ["npcid"] = 139,
         ["tbxid"] = 101732,
         ["coordinates"] = "447,1691",
-        ["name"] = "普尔",
-        ["mapname"] = "副本"
+        ["name"] = "Poole",
+        ["mapname"] = "Copy"
     },
     [122] = {
         ["propid"] = 0,
@@ -1460,8 +1460,8 @@
         ["npcid"] = 141,
         ["tbxid"] = 101741,
         ["coordinates"] = "447,1692",
-        ["name"] = "亚姆查",
-        ["mapname"] = "副本"
+        ["name"] = "Yamcha",
+        ["mapname"] = "Copy"
     },
     [123] = {
         ["propid"] = 0,
@@ -1473,7 +1473,7 @@
         ["tbxid"] = 101742,
         ["coordinates"] = "447,1691",
         ["name"] = "",
-        ["mapname"] = "查看远处发生了什么"
+        ["mapname"] = "See what happened in the distance"
     },
     [124] = {
         ["propid"] = 0,
@@ -1484,8 +1484,8 @@
         ["npcid"] = 9025,
         ["tbxid"] = 101751,
         ["coordinates"] = "447,1693",
-        ["name"] = "巨猿",
-        ["mapname"] = "副本"
+        ["name"] = "Giant Gorilla",
+        ["mapname"] = "Copy"
     },
     [125] = {
         ["propid"] = 0,
@@ -1496,8 +1496,8 @@
         ["npcid"] = 5037,
         ["tbxid"] = 101761,
         ["coordinates"] = "1412,1807",
-        ["name"] = "神秘通道",
-        ["mapname"] = "副本调换龙珠"
+        ["name"] = "Mysterious passage",
+        ["mapname"] = "Dragon ball changer"
     },
     [126] = {
         ["propid"] = 0,
@@ -1508,8 +1508,8 @@
         ["npcid"] = 72,
         ["tbxid"] = 101791,
         ["coordinates"] = "2586,1710",
-        ["name"] = "居民花森娜",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Resident Hua Senna",
+        ["mapname"] = "Master Roshi's island"
     },
     [127] = {
         ["propid"] = 0,
@@ -1520,8 +1520,8 @@
         ["npcid"] = 73,
         ["tbxid"] = 101792,
         ["coordinates"] = "2541,1672",
-        ["name"] = "巴璐恩",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Bayon",
+        ["mapname"] = "Master Roshi's island"
     },
     [128] = {
         ["propid"] = 0,
@@ -1532,8 +1532,8 @@
         ["npcid"] = 74,
         ["tbxid"] = 101793,
         ["coordinates"] = "2635,1615",
-        ["name"] = "居民波尔",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Resident Bjorn",
+        ["mapname"] = "Master Roshi's island"
     },
     [129] = {
         ["propid"] = 0,
@@ -1544,8 +1544,8 @@
         ["npcid"] = 2090,
         ["tbxid"] = 300011,
         ["coordinates"] = "481,1589",
-        ["name"] = "活动龟仙人",
-        ["mapname"] = "新手野外"
+        ["name"] = "Event Master Roshi",
+        ["mapname"] = "Newbie map"
     },
     [130] = {
         ["propid"] = 0,
@@ -1556,8 +1556,8 @@
         ["npcid"] = 2091,
         ["tbxid"] = 300021,
         ["coordinates"] = "367,1187",
-        ["name"] = "龟仙人",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Master Roshi",
+        ["mapname"] = "Master Roshi's island"
     },
     [131] = {
         ["propid"] = 0,
@@ -1568,8 +1568,8 @@
         ["npcid"] = 172,
         ["tbxid"] = 102001,
         ["coordinates"] = "2234,845",
-        ["name"] = "卡林塔上",
-        ["mapname"] = "西都野外（去塔上）"
+        ["name"] = "Karin's top of the tower",
+        ["mapname"] = "Outsite West City (Go to top of the tower)"
     },
     [132] = {
         ["propid"] = 0,
@@ -1580,8 +1580,8 @@
         ["npcid"] = 171,
         ["tbxid"] = 102002,
         ["coordinates"] = "33,16",
-        ["name"] = "卡林塔下",
-        ["mapname"] = "卡林塔顶（去塔下）"
+        ["name"] = "Karin's down the tower",
+        ["mapname"] = "Karin's top of the tower (Go to down the tower)"
     },
     [133] = {
         ["propid"] = 0,
@@ -1592,8 +1592,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 102003,
         ["coordinates"] = "44,4",
-        ["name"] = "卡林塔内",
-        ["mapname"] = "卡林塔顶（去塔内）"
+        ["name"] = "Karin's Tower",
+        ["mapname"] = "Karin's top of the tower (Go to Karin's Tower)"
     },
     [134] = {
         ["propid"] = 0,
@@ -1604,8 +1604,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 102004,
         ["coordinates"] = "31,28",
-        ["name"] = "卡林塔内部",
-        ["mapname"] = "卡林塔内部，下面一层"
+        ["name"] = "Karin's Pilar tower",
+        ["mapname"] = "Karin's Pilar tower，Below layer"
     },
     [135] = {
         ["propid"] = 0,
@@ -1616,8 +1616,8 @@
         ["npcid"] = 172,
         ["tbxid"] = 102010,
         ["coordinates"] = "2234,845",
-        ["name"] = "亚奇洛贝",
-        ["mapname"] = "西都野外"
+        ["name"] = "Yarirobe",
+        ["mapname"] = "Outsite West City"
     },
     [136] = {
         ["propid"] = 0,
@@ -1628,8 +1628,8 @@
         ["npcid"] = 144,
         ["tbxid"] = 102011,
         ["coordinates"] = "32,49",
-        ["name"] = "卡林仙人",
-        ["mapname"] = "卡林塔顶"
+        ["name"] = "Karin's fairy",
+        ["mapname"] = "Karin's top of the tower"
     },
     [137] = {
         ["propid"] = 0,
@@ -1640,8 +1640,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 102012,
         ["coordinates"] = "47,11",
-        ["name"] = "卡林塔",
-        ["mapname"] = "卡林塔顶"
+        ["name"] = "Karin's Tower",
+        ["mapname"] = "Karin's top of the tower"
     },
     [138] = {
         ["propid"] = 0,
@@ -1652,8 +1652,8 @@
         ["npcid"] = 145,
         ["tbxid"] = 102021,
         ["coordinates"] = "41,17",
-        ["name"] = "卡林仙人的罐子1",
-        ["mapname"] = "卡林塔内"
+        ["name"] = "Karin's fairy jar 1",
+        ["mapname"] = "Karin's Tower"
     },
     [139] = {
         ["propid"] = 0,
@@ -1664,8 +1664,8 @@
         ["npcid"] = 146,
         ["tbxid"] = 102031,
         ["coordinates"] = "45,17",
-        ["name"] = "卡林仙人的罐子2",
-        ["mapname"] = "卡林塔内"
+        ["name"] = "Karin's fairy jar 2",
+        ["mapname"] = "Karin's Tower"
     },
     [140] = {
         ["propid"] = 0,
@@ -1676,8 +1676,8 @@
         ["npcid"] = 147,
         ["tbxid"] = 102041,
         ["coordinates"] = "49,17",
-        ["name"] = "卡林仙人的罐子3",
-        ["mapname"] = "卡林塔内"
+        ["name"] = "Karin's fairy jar 3",
+        ["mapname"] = "Karin's Tower"
     },
     [141] = {
         ["propid"] = 0,
@@ -1688,8 +1688,8 @@
         ["npcid"] = 167,
         ["tbxid"] = 102051,
         ["coordinates"] = "2226,1319",
-        ["name"] = "渔具",
-        ["mapname"] = "西都野外"
+        ["name"] = "Fishing gear",
+        ["mapname"] = "Outsite West City"
     },
     [142] = {
         ["propid"] = 0,
@@ -1700,8 +1700,8 @@
         ["npcid"] = 9027,
         ["tbxid"] = 102061,
         ["coordinates"] = "54,63",
-        ["name"] = "卡林仙人",
-        ["mapname"] = "副本卡林塔顶"
+        ["name"] = "Karin's fairy",
+        ["mapname"] = "Karin's top of the tower copy"
     },
     [143] = {
         ["propid"] = 0,
@@ -1712,8 +1712,8 @@
         ["npcid"] = 9029,
         ["tbxid"] = 102071,
         ["coordinates"] = "49,64",
-        ["name"] = "卡林仙人的本尊",
-        ["mapname"] = "副本卡林塔顶"
+        ["name"] = "Karin's fairy Deity",
+        ["mapname"] = "Karin's top of the tower copy"
     },
     [144] = {
         ["propid"] = 0,
@@ -1724,8 +1724,8 @@
         ["npcid"] = 9030,
         ["tbxid"] = 102081,
         ["coordinates"] = "54,63",
-        ["name"] = "卡林仙人",
-        ["mapname"] = "副本卡林塔顶"
+        ["name"] = "Karin's fairy",
+        ["mapname"] = "Karin's top of the tower copy"
     },
     [145] = {
         ["propid"] = 0,
@@ -1736,8 +1736,8 @@
         ["npcid"] = 148,
         ["tbxid"] = 102091,
         ["coordinates"] = "44,44",
-        ["name"] = "超圣水",
-        ["mapname"] = "卡林塔顶"
+        ["name"] = "Super holy water",
+        ["mapname"] = "Karin's top of the tower"
     },
     [146] = {
         ["propid"] = 0,
@@ -1748,8 +1748,8 @@
         ["npcid"] = 4038,
         ["tbxid"] = 102101,
         ["coordinates"] = "2194,1196",
-        ["name"] = "露水",
-        ["mapname"] = "西都野外"
+        ["name"] = "Dew",
+        ["mapname"] = "Outsite West City"
     },
     [147] = {
         ["propid"] = 0,
@@ -1760,8 +1760,8 @@
         ["npcid"] = 9031,
         ["tbxid"] = 102111,
         ["coordinates"] = "287,336",
-        ["name"] = "桃白白",
-        ["mapname"] = "副本"
+        ["name"] = "Tao Baibai",
+        ["mapname"] = "Copy"
     },
     [148] = {
         ["propid"] = 0,
@@ -1773,7 +1773,7 @@
         ["tbxid"] = 102121,
         ["coordinates"] = "429,566",
         ["name"] = "",
-        ["mapname"] = "副本-偷听红绸军中级士兵谈话区域"
+        ["mapname"] = "Copy - Red Ribbon Army Intermediate snitch Soldier"
     },
     [149] = {
         ["propid"] = 0,
@@ -1784,8 +1784,8 @@
         ["npcid"] = 9034,
         ["tbxid"] = 102122,
         ["coordinates"] = "332,532",
-        ["name"] = "金属上士",
-        ["mapname"] = "副本"
+        ["name"] = "Metal Sargeant",
+        ["mapname"] = "Copy"
     },
     [150] = {
         ["propid"] = 0,
@@ -1796,8 +1796,8 @@
         ["npcid"] = 9035,
         ["tbxid"] = 102123,
         ["coordinates"] = "342,486",
-        ["name"] = "忍士",
-        ["mapname"] = "副本"
+        ["name"] = "Ninja",
+        ["mapname"] = "Copy"
     },
     [151] = {
         ["propid"] = 0,
@@ -1808,8 +1808,8 @@
         ["npcid"] = 9036,
         ["tbxid"] = 102124,
         ["coordinates"] = "385,478",
-        ["name"] = "人造人8号",
-        ["mapname"] = "副本"
+        ["name"] = "Android 8",
+        ["mapname"] = "Copy"
     },
     [152] = {
         ["propid"] = 0,
@@ -1820,8 +1820,8 @@
         ["npcid"] = 9037,
         ["tbxid"] = 102125,
         ["coordinates"] = "359,457",
-        ["name"] = "怀特将军",
-        ["mapname"] = "副本"
+        ["name"] = "General White",
+        ["mapname"] = "Copy"
     },
     [153] = {
         ["propid"] = 0,
@@ -1832,8 +1832,8 @@
         ["npcid"] = 173,
         ["tbxid"] = 102126,
         ["coordinates"] = "1467,649",
-        ["name"] = "时空裂隙管理员",
-        ["mapname"] = "时光城"
+        ["name"] = "Time and Space chaos manager",
+        ["mapname"] = "Time and Space City"
     },
     [154] = {
         ["propid"] = 0,
@@ -1845,7 +1845,7 @@
         ["tbxid"] = 102141,
         ["coordinates"] = "615,882",
         ["name"] = "",
-        ["mapname"] = "水晶婆婆的宫殿"
+        ["mapname"] = "Baba's palace"
     },
     [155] = {
         ["propid"] = 0,
@@ -1856,8 +1856,8 @@
         ["npcid"] = 109,
         ["tbxid"] = 102142,
         ["coordinates"] = "1469,751",
-        ["name"] = "特兰克斯",
-        ["mapname"] = "时光城"
+        ["name"] = "Trunks",
+        ["mapname"] = "Time and Space City"
     },
     [156] = {
         ["propid"] = 0,
@@ -1868,8 +1868,8 @@
         ["npcid"] = 149,
         ["tbxid"] = 102151,
         ["coordinates"] = "522,757",
-        ["name"] = "幽灵仆人",
-        ["mapname"] = "水晶婆婆的宫殿"
+        ["name"] = "Ghost servant",
+        ["mapname"] = "Baba's palace"
     },
     [157] = {
         ["propid"] = 0,
@@ -1880,8 +1880,8 @@
         ["npcid"] = 9038,
         ["tbxid"] = 102171,
         ["coordinates"] = "473,758",
-        ["name"] = "武道家莱恩",
-        ["mapname"] = "水晶婆婆的宫殿"
+        ["name"] = "Buddhism Ryan",
+        ["mapname"] = "Baba's palace"
     },
     [158] = {
         ["propid"] = 0,
@@ -1892,8 +1892,8 @@
         ["npcid"] = 9039,
         ["tbxid"] = 102172,
         ["coordinates"] = "438,769",
-        ["name"] = "武道家奥朗",
-        ["mapname"] = "水晶婆婆的宫殿"
+        ["name"] = "Buddhism Orang",
+        ["mapname"] = "Baba's palace"
     },
     [159] = {
         ["propid"] = 0,
@@ -1904,8 +1904,8 @@
         ["npcid"] = 9040,
         ["tbxid"] = 102173,
         ["coordinates"] = "448,831",
-        ["name"] = "武道家古路",
-        ["mapname"] = "水晶婆婆的宫殿"
+        ["name"] = "Ancient road of the buddist",
+        ["mapname"] = "Baba's palace"
     },
     [160] = {
         ["propid"] = 0,
@@ -1916,8 +1916,8 @@
         ["npcid"] = 9041,
         ["tbxid"] = 102174,
         ["coordinates"] = "438,843",
-        ["name"] = "武道家那美克星人",
-        ["mapname"] = "水晶婆婆的宫殿"
+        ["name"] = "Buddist Namekian",
+        ["mapname"] = "Baba's palace"
     },
     [161] = {
         ["propid"] = 0,
@@ -1928,8 +1928,8 @@
         ["npcid"] = 9042,
         ["tbxid"] = 102175,
         ["coordinates"] = "477,885",
-        ["name"] = "武道家康百",
-        ["mapname"] = "水晶婆婆的宫殿"
+        ["name"] = "Buddist Kang Bai",
+        ["mapname"] = "Baba's palace"
     },
     [162] = {
         ["propid"] = 0,
@@ -1940,8 +1940,8 @@
         ["npcid"] = 150,
         ["tbxid"] = 102181,
         ["coordinates"] = "537,642",
-        ["name"] = "水晶婆婆",
-        ["mapname"] = "水晶婆婆的宫殿"
+        ["name"] = "Baba the witch",
+        ["mapname"] = "Baba's palace"
     },
     [163] = {
         ["propid"] = 0,
@@ -1952,8 +1952,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 102191,
         ["coordinates"] = "443,422",
-        ["name"] = "水晶婆婆的手下",
-        ["mapname"] = "副本-5个水晶婆婆的手下所在区域"
+        ["name"] = "Baba the witch's men",
+        ["mapname"] = "Copy - 5 Baba the witch's men current region"
     },
     [164] = {
         ["propid"] = 0,
@@ -1965,7 +1965,7 @@
         ["tbxid"] = 102211,
         ["coordinates"] = "474,435",
         ["name"] = "",
-        ["mapname"] = "新手野外"
+        ["mapname"] = "Newbie map"
     },
     [165] = {
         ["propid"] = 0,
@@ -1976,8 +1976,8 @@
         ["npcid"] = 4039,
         ["tbxid"] = 102221,
         ["coordinates"] = "256,54",
-        ["name"] = "羽毛",
-        ["mapname"] = "神殿"
+        ["name"] = "Feather",
+        ["mapname"] = "Shrine"
     },
     [166] = {
         ["propid"] = 0,
@@ -1988,8 +1988,8 @@
         ["npcid"] = 152,
         ["tbxid"] = 102231,
         ["coordinates"] = "146,51",
-        ["name"] = "小鸟",
-        ["mapname"] = "神殿"
+        ["name"] = "Little bird",
+        ["mapname"] = "Shrine"
     },
     [167] = {
         ["propid"] = 0,
@@ -2000,8 +2000,8 @@
         ["npcid"] = 151,
         ["tbxid"] = 102241,
         ["coordinates"] = "200,206",
-        ["name"] = "波波先生",
-        ["mapname"] = "神殿"
+        ["name"] = "Mr. Bobo",
+        ["mapname"] = "Shrine"
     },
     [168] = {
         ["propid"] = 0,
@@ -2012,8 +2012,8 @@
         ["npcid"] = 153,
         ["tbxid"] = 102291,
         ["coordinates"] = "1317,790",
-        ["name"] = "百合",
-        ["mapname"] = "西都野外"
+        ["name"] = "Lily",
+        ["mapname"] = "Outsite West City"
     },
     [169] = {
         ["propid"] = 0,
@@ -2024,8 +2024,8 @@
         ["npcid"] = 168,
         ["tbxid"] = 102292,
         ["coordinates"] = "1145,303",
-        ["name"] = "百合",
-        ["mapname"] = "西都野外"
+        ["name"] = "Lily",
+        ["mapname"] = "Outsite West City"
     },
     [170] = {
         ["propid"] = 0,
@@ -2036,8 +2036,8 @@
         ["npcid"] = 4042,
         ["tbxid"] = 102293,
         ["coordinates"] = "1126,888",
-        ["name"] = "小鸟",
-        ["mapname"] = "西都野外"
+        ["name"] = "Little bird",
+        ["mapname"] = "Outsite West City"
     },
     [171] = {
         ["propid"] = 0,
@@ -2049,7 +2049,7 @@
         ["tbxid"] = 102311,
         ["coordinates"] = "1033,226",
         ["name"] = "",
-        ["mapname"] = "西都野外（可洛山）"
+        ["mapname"] = "Outsite West City (Kolo Mountain)"
     },
     [172] = {
         ["propid"] = 0,
@@ -2060,8 +2060,8 @@
         ["npcid"] = 4040,
         ["tbxid"] = 102312,
         ["coordinates"] = "46,28",
-        ["name"] = "神圣之冠",
-        ["mapname"] = "可洛山顶"
+        ["name"] = "Sacred crown",
+        ["mapname"] = "Top of the Kolo Mountain"
     },
     [173] = {
         ["propid"] = 0,
@@ -2072,8 +2072,8 @@
         ["npcid"] = 154,
         ["tbxid"] = 102331,
         ["coordinates"] = "1442,2177",
-        ["name"] = "好心的居民",
-        ["mapname"] = "西都野外"
+        ["name"] = "Kind hearted Resident",
+        ["mapname"] = "Outsite West City"
     },
     [174] = {
         ["propid"] = 0,
@@ -2084,8 +2084,8 @@
         ["npcid"] = 155,
         ["tbxid"] = 102332,
         ["coordinates"] = "1351,2146",
-        ["name"] = "居民苏克",
-        ["mapname"] = "西都野外"
+        ["name"] = "Resident Sooke",
+        ["mapname"] = "Outsite West City"
     },
     [175] = {
         ["propid"] = 0,
@@ -2096,8 +2096,8 @@
         ["npcid"] = 156,
         ["tbxid"] = 102333,
         ["coordinates"] = "1459,2113",
-        ["name"] = "居民玉子",
-        ["mapname"] = "西都野外"
+        ["name"] = "Resident Yuzi",
+        ["mapname"] = "Outsite West City"
     },
     [176] = {
         ["propid"] = 0,
@@ -2108,8 +2108,8 @@
         ["npcid"] = 157,
         ["tbxid"] = 102341,
         ["coordinates"] = "165,2217",
-        ["name"] = "亚欧姆",
-        ["mapname"] = "西都野外"
+        ["name"] = "Spark plug",
+        ["mapname"] = "Outsite West City"
     },
     [177] = {
         ["propid"] = 0,
@@ -2120,8 +2120,8 @@
         ["npcid"] = 279,
         ["tbxid"] = 102342,
         ["coordinates"] = "276,2127",
-        ["name"] = "好心的居民",
-        ["mapname"] = "西都野外"
+        ["name"] = "Kind resident",
+        ["mapname"] = "Outise of West City"
     },
     [178] = {
         ["propid"] = 0,
@@ -2132,8 +2132,8 @@
         ["npcid"] = 280,
         ["tbxid"] = 102481,
         ["coordinates"] = "841,1928",
-        ["name"] = "好心的居民",
-        ["mapname"] = "西都野外"
+        ["name"] = "Kind resident",
+        ["mapname"] = "Outise of West City"
     },
     [179] = {
         ["propid"] = 0,
@@ -2145,7 +2145,7 @@
         ["tbxid"] = 102482,
         ["coordinates"] = "381,2074",
         ["name"] = "光头流氓",
-        ["mapname"] = "西都野外"
+        ["mapname"] = "Outise of West City"
     },
     [180] = {
         ["propid"] = 0,
@@ -2156,8 +2156,8 @@
         ["npcid"] = 281,
         ["tbxid"] = 102491,
         ["coordinates"] = "980,2287",
-        ["name"] = "好心的居民",
-        ["mapname"] = "西都野外"
+        ["name"] = "Kind resident",
+        ["mapname"] = "Outise of West City"
     },
     [181] = {
         ["propid"] = 0,
@@ -2169,7 +2169,7 @@
         ["tbxid"] = 102492,
         ["coordinates"] = "897,2025",
         ["name"] = "蓝背心",
-        ["mapname"] = "西都野外"
+        ["mapname"] = "Outise of West City"
     },
     [182] = {
         ["propid"] = 0,
@@ -2180,8 +2180,8 @@
         ["npcid"] = 282,
         ["tbxid"] = 102501,
         ["coordinates"] = "896,2192",
-        ["name"] = "好心的居民",
-        ["mapname"] = "西都野外"
+        ["name"] = "Kind resident",
+        ["mapname"] = "Outise of West City"
     },
     [183] = {
         ["propid"] = 0,
@@ -2192,8 +2192,8 @@
         ["npcid"] = 9252,
         ["tbxid"] = 102502,
         ["coordinates"] = "749,2398",
-        ["name"] = "强壮的流氓",
-        ["mapname"] = "西都野外"
+        ["name"] = "A quite strong thief",
+        ["mapname"] = "Outise of West City"
     },
     [184] = {
         ["propid"] = 0,
@@ -2204,8 +2204,8 @@
         ["npcid"] = 107,
         ["tbxid"] = 102351,
         ["coordinates"] = "850,2164",
-        ["name"] = "渔具",
-        ["mapname"] = "西都野外"
+        ["name"] = "Fishing gear",
+        ["mapname"] = "Outsite West City"
     },
     [185] = {
         ["propid"] = 0,
@@ -2216,8 +2216,8 @@
         ["npcid"] = 158,
         ["tbxid"] = 102352,
         ["coordinates"] = "858,2165",
-        ["name"] = "老爷爷",
-        ["mapname"] = "西都野外"
+        ["name"] = "Old Grandpa",
+        ["mapname"] = "Outsite West City"
     },
     [186] = {
         ["propid"] = 0,
@@ -2228,8 +2228,8 @@
         ["npcid"] = 159,
         ["tbxid"] = 102361,
         ["coordinates"] = "346,292",
-        ["name"] = "神殿东边",
-        ["mapname"] = "神殿"
+        ["name"] = "East side of the Shrine",
+        ["mapname"] = "Shrine"
     },
     [187] = {
         ["propid"] = 0,
@@ -2240,8 +2240,8 @@
         ["npcid"] = 203,
         ["tbxid"] = 102362,
         ["coordinates"] = "52,292",
-        ["name"] = "神殿西边",
-        ["mapname"] = "神殿"
+        ["name"] = "West side of the Shrine",
+        ["mapname"] = "Shrine"
     },
     [188] = {
         ["propid"] = 0,
@@ -2252,8 +2252,8 @@
         ["npcid"] = 9048,
         ["tbxid"] = 102391,
         ["coordinates"] = "743,470",
-        ["name"] = "用生命之水和黏土制作的人形",
-        ["mapname"] = "副本"
+        ["name"] = "Human form made of water and clay",
+        ["mapname"] = "Copy"
     },
     [189] = {
         ["propid"] = 0,
@@ -2264,8 +2264,8 @@
         ["npcid"] = 9049,
         ["tbxid"] = 102401,
         ["coordinates"] = "239,365",
-        ["name"] = "比克大魔王",
-        ["mapname"] = "副本"
+        ["name"] = "Evil Picolo",
+        ["mapname"] = "Copy"
     },
     [190] = {
         ["propid"] = 0,
@@ -2276,8 +2276,8 @@
         ["npcid"] = 9125,
         ["tbxid"] = 103011,
         ["coordinates"] = "240,2300",
-        ["name"] = "猴子",
-        ["mapname"] = "西都野外"
+        ["name"] = "Monkey",
+        ["mapname"] = "Outsite West City"
     },
     [191] = {
         ["propid"] = 0,
@@ -2288,8 +2288,8 @@
         ["npcid"] = 9126,
         ["tbxid"] = 103012,
         ["coordinates"] = "1200,1520",
-        ["name"] = "猴子",
-        ["mapname"] = "西都野外"
+        ["name"] = "Monkey",
+        ["mapname"] = "Outsite West City"
     },
     [192] = {
         ["propid"] = 0,
@@ -2300,8 +2300,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 103021,
         ["coordinates"] = "140,120",
-        ["name"] = "界王星",
-        ["mapname"] = "界王星"
+        ["name"] = "King Kai's planet",
+        ["mapname"] = "King Kai's planet"
     },
     [193] = {
         ["propid"] = 0,
@@ -2312,8 +2312,8 @@
         ["npcid"] = 174,
         ["tbxid"] = 103022,
         ["coordinates"] = "83,108",
-        ["name"] = "界王",
-        ["mapname"] = "界王星"
+        ["name"] = "King Kaio",
+        ["mapname"] = "King Kai's planet"
     },
     [194] = {
         ["propid"] = 0,
@@ -2324,8 +2324,8 @@
         ["npcid"] = 175,
         ["tbxid"] = 103031,
         ["coordinates"] = "32,104",
-        ["name"] = "巴布鲁斯",
-        ["mapname"] = "界王星"
+        ["name"] = "Bubbles",
+        ["mapname"] = "King Kai's planet"
     },
     [195] = {
         ["propid"] = 0,
@@ -2336,8 +2336,8 @@
         ["npcid"] = 9124,
         ["tbxid"] = 103041,
         ["coordinates"] = "1400,700",
-        ["name"] = "恶狼",
-        ["mapname"] = "西都野外"
+        ["name"] = "Evil wolf",
+        ["mapname"] = "Outsite West City"
     },
     [196] = {
         ["propid"] = 0,
@@ -2348,8 +2348,8 @@
         ["npcid"] = 4043,
         ["tbxid"] = 103081,
         ["coordinates"] = "98,139",
-        ["name"] = "树下",
-        ["mapname"] = "界王星"
+        ["name"] = "Under the tree",
+        ["mapname"] = "King Kai's planet"
     },
     [197] = {
         ["propid"] = 0,
@@ -2360,8 +2360,8 @@
         ["npcid"] = 4044,
         ["tbxid"] = 103082,
         ["coordinates"] = "146,67",
-        ["name"] = "草堆",
-        ["mapname"] = "界王星"
+        ["name"] = "Pile of haystacks",
+        ["mapname"] = "King Kai's planet"
     },
     [198] = {
         ["propid"] = 0,
@@ -2372,8 +2372,8 @@
         ["npcid"] = 4045,
         ["tbxid"] = 103083,
         ["coordinates"] = "149,97",
-        ["name"] = "车子底下",
-        ["mapname"] = "界王星"
+        ["name"] = "Under the car",
+        ["mapname"] = "King Kai's planet"
     },
     [199] = {
         ["propid"] = 0,
@@ -2384,8 +2384,8 @@
         ["npcid"] = 180,
         ["tbxid"] = 103091,
         ["coordinates"] = "73,94",
-        ["name"] = "接一小桶水",
-        ["mapname"] = "界王星"
+        ["name"] = "Pick up a small bucket of water",
+        ["mapname"] = "King Kai's planet"
     },
     [200] = {
         ["propid"] = 0,
@@ -2396,8 +2396,8 @@
         ["npcid"] = 176,
         ["tbxid"] = 103111,
         ["coordinates"] = "27,95",
-        ["name"] = "布雷哥利",
-        ["mapname"] = "界王星"
+        ["name"] = "Brigley",
+        ["mapname"] = "King Kai's planet"
     },
     [201] = {
         ["propid"] = 0,
@@ -2408,8 +2408,8 @@
         ["npcid"] = 163,
         ["tbxid"] = 103141,
         ["coordinates"] = "1669,1814",
-        ["name"] = "带鱼先生",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Mr. Dai Fisk",
+        ["mapname"] = "Master Roshi's island"
     },
     [202] = {
         ["propid"] = 0,
@@ -2420,8 +2420,8 @@
         ["npcid"] = 164,
         ["tbxid"] = 103142,
         ["coordinates"] = "559,1261",
-        ["name"] = "居民李基",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Resident Li Ji",
+        ["mapname"] = "Satan City"
     },
     [203] = {
         ["propid"] = 0,
@@ -2432,8 +2432,8 @@
         ["npcid"] = 4047,
         ["tbxid"] = 103211,
         ["coordinates"] = "121,70",
-        ["name"] = "巨石的碎片",
-        ["mapname"] = "界王星"
+        ["name"] = "Rock fragments",
+        ["mapname"] = "King Kai's planet"
     },
     [204] = {
         ["propid"] = 0,
@@ -2444,8 +2444,8 @@
         ["npcid"] = 4048,
         ["tbxid"] = 103221,
         ["coordinates"] = "120,50",
-        ["name"] = "坑洼",
-        ["mapname"] = "界王星"
+        ["name"] = "Pothole",
+        ["mapname"] = "King Kai's planet"
     },
     [205] = {
         ["propid"] = 0,
@@ -2456,8 +2456,8 @@
         ["npcid"] = 4036,
         ["tbxid"] = 103222,
         ["coordinates"] = "85,40",
-        ["name"] = "坑洼",
-        ["mapname"] = "界王星"
+        ["name"] = "Pothole",
+        ["mapname"] = "King Kai's planet"
     },
     [206] = {
         ["propid"] = 0,
@@ -2468,8 +2468,8 @@
         ["npcid"] = 4037,
         ["tbxid"] = 103223,
         ["coordinates"] = "110,94",
-        ["name"] = "坑洼",
-        ["mapname"] = "界王星"
+        ["name"] = "Pothole",
+        ["mapname"] = "King Kai's planet"
     },
     [207] = {
         ["propid"] = 0,
@@ -2480,8 +2480,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 103271,
         ["coordinates"] = "896,1166",
-        ["name"] = "指定地点的贝吉塔",
-        ["mapname"] = "副本"
+        ["name"] = "Designated location of Beggi Tower",
+        ["mapname"] = "Copy"
     },
     [208] = {
         ["propid"] = 0,
@@ -2492,8 +2492,8 @@
         ["npcid"] = 9064,
         ["tbxid"] = 103281,
         ["coordinates"] = "818,1155",
-        ["name"] = "贝吉塔",
-        ["mapname"] = "副本"
+        ["name"] = "Beggi Tower",
+        ["mapname"] = "Copy"
     },
     [209] = {
         ["propid"] = 0,
@@ -2504,8 +2504,8 @@
         ["npcid"] = 181,
         ["tbxid"] = 103321,
         ["coordinates"] = "1046,779",
-        ["name"] = "重伤的贝吉塔",
-        ["mapname"] = "副本"
+        ["name"] = "Seriously damaged Beggi Tower",
+        ["mapname"] = "Copy"
     },
     [210] = {
         ["propid"] = 0,
@@ -2516,8 +2516,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 103331,
         ["coordinates"] = "901,672",
-        ["name"] = "一边",
-        ["mapname"] = "副本"
+        ["name"] = "One side",
+        ["mapname"] = "Copy"
     },
     [211] = {
         ["propid"] = 0,
@@ -2528,8 +2528,8 @@
         ["npcid"] = 9069,
         ["tbxid"] = 103361,
         ["coordinates"] = "862,694",
-        ["name"] = "那巴",
-        ["mapname"] = "副本"
+        ["name"] = "Nappa",
+        ["mapname"] = "Copy"
     },
     [212] = {
         ["propid"] = 0,
@@ -2540,8 +2540,8 @@
         ["npcid"] = 9070,
         ["tbxid"] = 103371,
         ["coordinates"] = "651,738",
-        ["name"] = "贝吉塔",
-        ["mapname"] = "副本"
+        ["name"] = "Beggi Tower",
+        ["mapname"] = "Copy"
     },
     [213] = {
         ["propid"] = 0,
@@ -2552,8 +2552,8 @@
         ["npcid"] = 9192,
         ["tbxid"] = 103241,
         ["coordinates"] = "2111,748",
-        ["name"] = "被附身的时空巡逻队队员",
-        ["mapname"] = "中心都市"
+        ["name"] = "Acquired Time and space patrol team",
+        ["mapname"] = "Center of West City"
     },
     [214] = {
         ["propid"] = 0,
@@ -2564,8 +2564,8 @@
         ["npcid"] = 9193,
         ["tbxid"] = 103381,
         ["coordinates"] = "1408,953",
-        ["name"] = "被附身的时空巡逻队队员",
-        ["mapname"] = "中心都市"
+        ["name"] = "Acquired Time and space patrol team",
+        ["mapname"] = "Center of West City"
     },
     [215] = {
         ["propid"] = 0,
@@ -2576,8 +2576,8 @@
         ["npcid"] = 9194,
         ["tbxid"] = 103391,
         ["coordinates"] = "983,903",
-        ["name"] = "被附身的时空巡逻队队员",
-        ["mapname"] = "中心都市"
+        ["name"] = "Acquired Time and space patrol team",
+        ["mapname"] = "Center of West City"
     },
     [216] = {
         ["propid"] = 0,
@@ -2588,8 +2588,8 @@
         ["npcid"] = 182,
         ["tbxid"] = 104021,
         ["coordinates"] = "1670,1746",
-        ["name"] = "超重力室管理员",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Supergravity room manager",
+        ["mapname"] = "Satan City"
     },
     [217] = {
         ["propid"] = 0,
@@ -2600,8 +2600,8 @@
         ["npcid"] = 192,
         ["tbxid"] = 104331,
         ["coordinates"] = "2614,575",
-        ["name"] = "水晶婆婆",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Baba the witch",
+        ["mapname"] = "Master Roshi's island"
     },
     [218] = {
         ["propid"] = 0,
@@ -2612,8 +2612,8 @@
         ["npcid"] = 193,
         ["tbxid"] = 104351,
         ["coordinates"] = "2611,561",
-        ["name"] = "亚奇洛贝",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Yarirobe",
+        ["mapname"] = "Master Roshi's island"
     },
     [219] = {
         ["propid"] = 0,
@@ -2624,8 +2624,8 @@
         ["npcid"] = 211,
         ["tbxid"] = 202011,
         ["coordinates"] = "2229,1500",
-        ["name"] = "王叔",
-        ["mapname"] = "西都野外"
+        ["name"] = "Wang Shu",
+        ["mapname"] = "Outsite West City"
     },
     [220] = {
         ["propid"] = 0,
@@ -2636,8 +2636,8 @@
         ["npcid"] = 4057,
         ["tbxid"] = 202031,
         ["coordinates"] = "2119,1827",
-        ["name"] = "松茸",
-        ["mapname"] = "西都野外"
+        ["name"] = "Matsutake",
+        ["mapname"] = "Outsite West City"
     },
     [221] = {
         ["propid"] = 0,
@@ -2648,8 +2648,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 202051,
         ["coordinates"] = "2241,1301",
-        ["name"] = "河边",
-        ["mapname"] = "西都野外"
+        ["name"] = "Riverside",
+        ["mapname"] = "Outsite West City"
     },
     [222] = {
         ["propid"] = 0,
@@ -2660,8 +2660,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 202081,
         ["coordinates"] = "2143,2615",
-        ["name"] = "被困地点",
-        ["mapname"] = "西都野外"
+        ["name"] = "Trapped location",
+        ["mapname"] = "Outsite West City"
     },
     [223] = {
         ["propid"] = 0,
@@ -2672,8 +2672,8 @@
         ["npcid"] = 212,
         ["tbxid"] = 202121,
         ["coordinates"] = "2104,2695",
-        ["name"] = "被困村民",
-        ["mapname"] = "西都野外"
+        ["name"] = "Trapped villager",
+        ["mapname"] = "Outsite West City"
     },
     [224] = {
         ["propid"] = 0,
@@ -2684,8 +2684,8 @@
         ["npcid"] = 213,
         ["tbxid"] = 202131,
         ["coordinates"] = "1351,2150",
-        ["name"] = "村民",
-        ["mapname"] = "西都野外"
+        ["name"] = "Villager",
+        ["mapname"] = "Outsite West City"
     },
     [225] = {
         ["propid"] = 0,
@@ -2696,8 +2696,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 202151,
         ["coordinates"] = "913,2391",
-        ["name"] = "林子里",
-        ["mapname"] = "西都野外"
+        ["name"] = "In the woods",
+        ["mapname"] = "Outsite West City"
     },
     [226] = {
         ["propid"] = 0,
@@ -2708,8 +2708,8 @@
         ["npcid"] = 4061,
         ["tbxid"] = 202152,
         ["coordinates"] = "933,2433",
-        ["name"] = "小白花",
-        ["mapname"] = "西都野外"
+        ["name"] = "Little Samanera",
+        ["mapname"] = "Outsite West City"
     },
     [227] = {
         ["propid"] = 0,
@@ -2720,8 +2720,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 202171,
         ["coordinates"] = "2662,2906",
-        ["name"] = "雪地",
-        ["mapname"] = "西都野外"
+        ["name"] = "Snow",
+        ["mapname"] = "Outsite West City"
     },
     [228] = {
         ["propid"] = 0,
@@ -2732,8 +2732,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 202181,
         ["coordinates"] = "1552,2790",
-        ["name"] = "野外小坡",
-        ["mapname"] = "西都野外"
+        ["name"] = "Small slope field",
+        ["mapname"] = "Outsite West City"
     },
     [229] = {
         ["propid"] = 0,
@@ -2744,8 +2744,8 @@
         ["npcid"] = 4058,
         ["tbxid"] = 202182,
         ["coordinates"] = "1542,2615",
-        ["name"] = "小菌菇",
-        ["mapname"] = "西都野外"
+        ["name"] = "Small mushroom",
+        ["mapname"] = "Outsite West City"
     },
     [230] = {
         ["propid"] = 0,
@@ -2756,8 +2756,8 @@
         ["npcid"] = 214,
         ["tbxid"] = 202191,
         ["coordinates"] = "1354,2135",
-        ["name"] = "昏迷的村民",
-        ["mapname"] = "西都野外"
+        ["name"] = "Insensible Villager",
+        ["mapname"] = "Outsite West City"
     },
     [231] = {
         ["propid"] = 0,
@@ -2768,8 +2768,8 @@
         ["npcid"] = 215,
         ["tbxid"] = 202201,
         ["coordinates"] = "1354,2135",
-        ["name"] = "救醒的村民",
-        ["mapname"] = "西都野外"
+        ["name"] = "Rescued Villager",
+        ["mapname"] = "Outsite West City"
     },
     [232] = {
         ["propid"] = 0,
@@ -2780,8 +2780,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 202211,
         ["coordinates"] = "1261,2037",
-        ["name"] = "河边",
-        ["mapname"] = "西都野外"
+        ["name"] = "Riverside",
+        ["mapname"] = "Outsite West City"
     },
     [233] = {
         ["propid"] = 0,
@@ -2792,8 +2792,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 202012,
         ["coordinates"] = "2216,1510",
-        ["name"] = "农田",
-        ["mapname"] = "西都野外"
+        ["name"] = "Cultivation area",
+        ["mapname"] = "Outsite West City"
     },
     [234] = {
         ["propid"] = 0,
@@ -2804,8 +2804,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 202061,
         ["coordinates"] = "1380,2214",
-        ["name"] = "村子",
-        ["mapname"] = "西都野外"
+        ["name"] = "Chaozu",
+        ["mapname"] = "Outsite West City"
     },
     [235] = {
         ["propid"] = 0,
@@ -2816,8 +2816,8 @@
         ["npcid"] = 2098,
         ["tbxid"] = 500011,
         ["coordinates"] = "1015,1175",
-        ["name"] = "日常任务管理员",
-        ["mapname"] = "时光城"
+        ["name"] = "Daily Event Manager",
+        ["mapname"] = "Time and Space City"
     },
     [236] = {
         ["propid"] = 0,
@@ -2828,8 +2828,8 @@
         ["npcid"] = 4050,
         ["tbxid"] = 500012,
         ["coordinates"] = "696,474",
-        ["name"] = "鲜花",
-        ["mapname"] = "新手村"
+        ["name"] = "Flowers",
+        ["mapname"] = "Novice village"
     },
     [237] = {
         ["propid"] = 0,
@@ -2840,8 +2840,8 @@
         ["npcid"] = 6431,
         ["tbxid"] = 500021,
         ["coordinates"] = "1095,465",
-        ["name"] = "疯狂的恶狼",
-        ["mapname"] = "新手村"
+        ["name"] = "Crazy Evil wolf",
+        ["mapname"] = "Novice village"
     },
     [238] = {
         ["propid"] = 0,
@@ -2852,8 +2852,8 @@
         ["npcid"] = 4051,
         ["tbxid"] = 500031,
         ["coordinates"] = "707,858",
-        ["name"] = "木柴",
-        ["mapname"] = "新手村"
+        ["name"] = "Firewood",
+        ["mapname"] = "Novice village"
     },
     [239] = {
         ["propid"] = 0,
@@ -2864,8 +2864,8 @@
         ["npcid"] = 6433,
         ["tbxid"] = 500041,
         ["coordinates"] = "1300,597",
-        ["name"] = "训练有素的强盗",
-        ["mapname"] = "新手村"
+        ["name"] = "Well trained Robber",
+        ["mapname"] = "Novice village"
     },
     [240] = {
         ["propid"] = 0,
@@ -2876,8 +2876,8 @@
         ["npcid"] = 4052,
         ["tbxid"] = 500051,
         ["coordinates"] = "262,1517",
-        ["name"] = "神秘零件",
-        ["mapname"] = "新手村"
+        ["name"] = "Mysterious part",
+        ["mapname"] = "Novice village"
     },
     [241] = {
         ["propid"] = 0,
@@ -2888,8 +2888,8 @@
         ["npcid"] = 6432,
         ["tbxid"] = 500061,
         ["coordinates"] = "503,729",
-        ["name"] = "暴怒剑齿虎",
-        ["mapname"] = "新手村"
+        ["name"] = "Fury saber-toothed tiger",
+        ["mapname"] = "Novice village"
     },
     [242] = {
         ["propid"] = 0,
@@ -2900,8 +2900,8 @@
         ["npcid"] = 6430,
         ["tbxid"] = 500071,
         ["coordinates"] = "950,462",
-        ["name"] = "斗犬",
-        ["mapname"] = "新手村"
+        ["name"] = "Fighting dog",
+        ["mapname"] = "Novice village"
     },
     [243] = {
         ["propid"] = 0,
@@ -2912,8 +2912,8 @@
         ["npcid"] = 6435,
         ["tbxid"] = 500081,
         ["coordinates"] = "1053,1278",
-        ["name"] = "兔子强盗",
-        ["mapname"] = "新手村"
+        ["name"] = "Rabbit Robber",
+        ["mapname"] = "Novice village"
     },
     [244] = {
         ["propid"] = 0,
@@ -2924,8 +2924,8 @@
         ["npcid"] = 6434,
         ["tbxid"] = 500091,
         ["coordinates"] = "803,1295",
-        ["name"] = "训练有素的流氓",
-        ["mapname"] = "新手村"
+        ["name"] = "Well trained rogue",
+        ["mapname"] = "Novice village"
     },
     [245] = {
         ["propid"] = 0,
@@ -2936,8 +2936,8 @@
         ["npcid"] = 6436,
         ["tbxid"] = 500101,
         ["coordinates"] = "448,674",
-        ["name"] = "人狼",
-        ["mapname"] = "新手村"
+        ["name"] = "Werewolf",
+        ["mapname"] = "Novice village"
     },
     [246] = {
         ["propid"] = 0,
@@ -2948,8 +2948,8 @@
         ["npcid"] = 6439,
         ["tbxid"] = 500111,
         ["coordinates"] = "957,1149",
-        ["name"] = "林中怪兽",
-        ["mapname"] = "新手村"
+        ["name"] = "Forest monster",
+        ["mapname"] = "Novice village"
     },
     [247] = {
         ["propid"] = 0,
@@ -2960,8 +2960,8 @@
         ["npcid"] = 6440,
         ["tbxid"] = 500121,
         ["coordinates"] = "553,1466",
-        ["name"] = "强盗头头",
-        ["mapname"] = "新手村"
+        ["name"] = "Robber Ringleader",
+        ["mapname"] = "Novice village"
     },
     [248] = {
         ["propid"] = 0,
@@ -2972,8 +2972,8 @@
         ["npcid"] = 6441,
         ["tbxid"] = 500131,
         ["coordinates"] = "1068,1434",
-        ["name"] = "兔子头目",
-        ["mapname"] = "新手村"
+        ["name"] = "Rabbit Ringleader",
+        ["mapname"] = "Novice village"
     },
     [249] = {
         ["propid"] = 0,
@@ -2984,8 +2984,8 @@
         ["npcid"] = 6442,
         ["tbxid"] = 500141,
         ["coordinates"] = "889,1962",
-        ["name"] = "非常可怕的生物",
-        ["mapname"] = "新手村"
+        ["name"] = "Very scary creature",
+        ["mapname"] = "Novice village"
     },
     [250] = {
         ["propid"] = 0,
@@ -2996,8 +2996,8 @@
         ["npcid"] = 6443,
         ["tbxid"] = 500151,
         ["coordinates"] = "582,794",
-        ["name"] = "木桩之王",
-        ["mapname"] = "新手村"
+        ["name"] = "King of stakes",
+        ["mapname"] = "Novice village"
     },
     [251] = {
         ["propid"] = 0,
@@ -3008,8 +3008,8 @@
         ["npcid"] = 2006,
         ["tbxid"] = 510001,
         ["coordinates"] = "961,1229",
-        ["name"] = "环任务管理员",
-        ["mapname"] = "时光城"
+        ["name"] = "Central Quest Manager",
+        ["mapname"] = "Time and Space City"
     },
     [252] = {
         ["propid"] = 0,
@@ -3020,8 +3020,8 @@
         ["npcid"] = 4050,
         ["tbxid"] = 510011,
         ["coordinates"] = "707,450",
-        ["name"] = "鲜花",
-        ["mapname"] = "新手村"
+        ["name"] = "Flowers",
+        ["mapname"] = "Novice village"
     },
     [253] = {
         ["propid"] = 0,
@@ -3032,8 +3032,8 @@
         ["npcid"] = 6431,
         ["tbxid"] = 510021,
         ["coordinates"] = "1095,465",
-        ["name"] = "疯狂的恶狼",
-        ["mapname"] = "新手村"
+        ["name"] = "Crazy Evil wolf",
+        ["mapname"] = "Novice village"
     },
     [254] = {
         ["propid"] = 0,
@@ -3044,8 +3044,8 @@
         ["npcid"] = 6439,
         ["tbxid"] = 510031,
         ["coordinates"] = "957,1149",
-        ["name"] = "霸王龙",
-        ["mapname"] = "新手村"
+        ["name"] = "Tyrannosaurus Rex",
+        ["mapname"] = "Novice village"
     },
     [255] = {
         ["propid"] = 0,
@@ -3056,8 +3056,8 @@
         ["npcid"] = 2101,
         ["tbxid"] = 510041,
         ["coordinates"] = "935,741",
-        ["name"] = "派若特",
-        ["mapname"] = "新手村"
+        ["name"] = "Pyro",
+        ["mapname"] = "Novice village"
     },
     [256] = {
         ["propid"] = 0,
@@ -3068,8 +3068,8 @@
         ["npcid"] = 2102,
         ["tbxid"] = 510051,
         ["coordinates"] = "892,721",
-        ["name"] = "居民瑟特",
-        ["mapname"] = "新手村"
+        ["name"] = "Resident Sutter",
+        ["mapname"] = "Novice village"
     },
     [257] = {
         ["propid"] = 0,
@@ -3080,8 +3080,8 @@
         ["npcid"] = 2103,
         ["tbxid"] = 510061,
         ["coordinates"] = "1025,675",
-        ["name"] = "居民贝尔",
-        ["mapname"] = "新手村"
+        ["name"] = "Resident Bill",
+        ["mapname"] = "Novice village"
     },
     [258] = {
         ["propid"] = 0,
@@ -3092,8 +3092,8 @@
         ["npcid"] = 2117,
         ["tbxid"] = 520001,
         ["coordinates"] = "1020,1123",
-        ["name"] = "矿区头领",
-        ["mapname"] = "西都野外"
+        ["name"] = "Mine chieftain",
+        ["mapname"] = "Outsite West City"
     },
     [259] = {
         ["propid"] = 0,
@@ -3104,8 +3104,8 @@
         ["npcid"] = 4054,
         ["tbxid"] = 520011,
         ["coordinates"] = "803,1029",
-        ["name"] = "矿区矿石",
-        ["mapname"] = "西都野外"
+        ["name"] = "Mining area ore",
+        ["mapname"] = "Outsite West City"
     },
     [260] = {
         ["propid"] = 0,
@@ -3116,8 +3116,8 @@
         ["npcid"] = 6444,
         ["tbxid"] = 520021,
         ["coordinates"] = "791,977",
-        ["name"] = "矿区强盗",
-        ["mapname"] = "西都野外"
+        ["name"] = "Mining area Robber",
+        ["mapname"] = "Outsite West City"
     },
     [261] = {
         ["propid"] = 0,
@@ -3128,8 +3128,8 @@
         ["npcid"] = 2118,
         ["tbxid"] = 530001,
         ["coordinates"] = "1386,2096",
-        ["name"] = "赛亚超人",
-        ["mapname"] = "西都野外"
+        ["name"] = "Super Saiyan",
+        ["mapname"] = "Outsite West City"
     },
     [262] = {
         ["propid"] = 0,
@@ -3140,8 +3140,8 @@
         ["npcid"] = 6445,
         ["tbxid"] = 530011,
         ["coordinates"] = "798,1764",
-        ["name"] = "西都流氓",
-        ["mapname"] = "西都野外"
+        ["name"] = "West City rogue",
+        ["mapname"] = "Outsite West City"
     },
     [263] = {
         ["propid"] = 0,
@@ -3152,8 +3152,8 @@
         ["npcid"] = 6446,
         ["tbxid"] = 530021,
         ["coordinates"] = "510,2401",
-        ["name"] = "西都恶狼",
-        ["mapname"] = "西都野外"
+        ["name"] = "West City Evil wolf",
+        ["mapname"] = "Outsite West City"
     },
     [264] = {
         ["propid"] = 0,
@@ -3164,8 +3164,8 @@
         ["npcid"] = 2119,
         ["tbxid"] = 530031,
         ["coordinates"] = "499,2649",
-        ["name"] = "居民弗洛儿",
-        ["mapname"] = "西都野外"
+        ["name"] = "Resident Flore",
+        ["mapname"] = "Outsite West City"
     },
     [265] = {
         ["propid"] = 0,
@@ -3176,8 +3176,8 @@
         ["npcid"] = 4055,
         ["tbxid"] = 530041,
         ["coordinates"] = "1493,1397",
-        ["name"] = "罪证1",
-        ["mapname"] = "西都野外"
+        ["name"] = "Criminal certificate 1",
+        ["mapname"] = "Outsite West City"
     },
     [266] = {
         ["propid"] = 0,
@@ -3188,8 +3188,8 @@
         ["npcid"] = 4056,
         ["tbxid"] = 530051,
         ["coordinates"] = "1640,1222",
-        ["name"] = "罪证2",
-        ["mapname"] = "西都野外"
+        ["name"] = "Criminal certificate 2",
+        ["mapname"] = "Outsite West City"
     },
     [267] = {
         ["propid"] = 0,
@@ -3200,8 +3200,8 @@
         ["npcid"] = 2120,
         ["tbxid"] = 540001,
         ["coordinates"] = "1420,2076",
-        ["name"] = "西都居民",
-        ["mapname"] = "西都野外"
+        ["name"] = "West City Resident",
+        ["mapname"] = "Outsite West City"
     },
     [268] = {
         ["propid"] = 0,
@@ -3212,8 +3212,8 @@
         ["npcid"] = 6449,
         ["tbxid"] = 540011,
         ["coordinates"] = "2296,1381",
-        ["name"] = "撒旦的挑战者",
-        ["mapname"] = "西都野外"
+        ["name"] = "Satan's challenger",
+        ["mapname"] = "Outsite West City"
     },
     [269] = {
         ["propid"] = 0,
@@ -3224,8 +3224,8 @@
         ["npcid"] = 6450,
         ["tbxid"] = 540021,
         ["coordinates"] = "2033,1442",
-        ["name"] = "林中怪兽",
-        ["mapname"] = "西都野外"
+        ["name"] = "Forest monster",
+        ["mapname"] = "Outsite West City"
     },
     [270] = {
         ["propid"] = 0,
@@ -3236,8 +3236,8 @@
         ["npcid"] = 6451,
         ["tbxid"] = 540031,
         ["coordinates"] = "1925,1344",
-        ["name"] = "小松鼠",
-        ["mapname"] = "西都野外"
+        ["name"] = "Squirrel",
+        ["mapname"] = "Outsite West City"
     },
     [271] = {
         ["propid"] = 0,
@@ -3248,8 +3248,8 @@
         ["npcid"] = 2941,
         ["tbxid"] = 600021,
         ["coordinates"] = "1686,176",
-        ["name"] = "掠夺者矿井",
-        ["mapname"] = "西都野外"
+        ["name"] = "Predator mine",
+        ["mapname"] = "Outsite West City"
     },
     [272] = {
         ["propid"] = 0,
@@ -3260,8 +3260,8 @@
         ["npcid"] = 2924,
         ["tbxid"] = 600022,
         ["coordinates"] = "827,913",
-        ["name"] = "高傲的保镖",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Proud bodyguard",
+        ["mapname"] = "Satan City"
     },
     [273] = {
         ["propid"] = 0,
@@ -3272,8 +3272,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 104061,
         ["coordinates"] = "630,1049",
-        ["name"] = "山洞内",
-        ["mapname"] = "副本"
+        ["name"] = "Inside the cave",
+        ["mapname"] = "Copy"
     },
     [274] = {
         ["propid"] = 0,
@@ -3284,8 +3284,8 @@
         ["npcid"] = 186,
         ["tbxid"] = 104062,
         ["coordinates"] = "602,1209",
-        ["name"] = "多多利亚",
-        ["mapname"] = "副本"
+        ["name"] = "Dodoria",
+        ["mapname"] = "Copy"
     },
     [275] = {
         ["propid"] = 0,
@@ -3296,8 +3296,8 @@
         ["npcid"] = 9072,
         ["tbxid"] = 104071,
         ["coordinates"] = "847,1193",
-        ["name"] = "多多利亚",
-        ["mapname"] = "副本"
+        ["name"] = "Dodoria",
+        ["mapname"] = "Copy"
     },
     [276] = {
         ["propid"] = 0,
@@ -3308,8 +3308,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 104072,
         ["coordinates"] = "781,1177",
-        ["name"] = "前方",
-        ["mapname"] = "副本"
+        ["name"] = "Front",
+        ["mapname"] = "Copy"
     },
     [277] = {
         ["propid"] = 0,
@@ -3320,8 +3320,8 @@
         ["npcid"] = 187,
         ["tbxid"] = 104081,
         ["coordinates"] = "654,1014",
-        ["name"] = "布尔玛",
-        ["mapname"] = "副本"
+        ["name"] = "Bulma",
+        ["mapname"] = "Copy"
     },
     [278] = {
         ["propid"] = 0,
@@ -3332,8 +3332,8 @@
         ["npcid"] = 188,
         ["tbxid"] = 104141,
         ["coordinates"] = "1871,1091",
-        ["name"] = "贝吉塔",
-        ["mapname"] = "副本"
+        ["name"] = "Beggi Tower",
+        ["mapname"] = "Copy"
     },
     [279] = {
         ["propid"] = 0,
@@ -3344,8 +3344,8 @@
         ["npcid"] = 9074,
         ["tbxid"] = 104151,
         ["coordinates"] = "2194,1097",
-        ["name"] = "萨波的手下",
-        ["mapname"] = "副本"
+        ["name"] = "Zarbon's men",
+        ["mapname"] = "Copy"
     },
     [280] = {
         ["propid"] = 0,
@@ -3356,8 +3356,8 @@
         ["npcid"] = 9075,
         ["tbxid"] = 104152,
         ["coordinates"] = "2246,1121",
-        ["name"] = "萨波的手下",
-        ["mapname"] = "副本"
+        ["name"] = "Zarbon's men",
+        ["mapname"] = "Copy"
     },
     [281] = {
         ["propid"] = 0,
@@ -3368,8 +3368,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 104171,
         ["coordinates"] = "2037,846",
-        ["name"] = "不远处的坡上",
-        ["mapname"] = "副本"
+        ["name"] = "Not far from the slope",
+        ["mapname"] = "Copy"
     },
     [282] = {
         ["propid"] = 0,
@@ -3380,8 +3380,8 @@
         ["npcid"] = 9077,
         ["tbxid"] = 104181,
         ["coordinates"] = "2293,1010",
-        ["name"] = "萨波",
-        ["mapname"] = "副本"
+        ["name"] = "Zarbon",
+        ["mapname"] = "Copy"
     },
     [283] = {
         ["propid"] = 0,
@@ -3392,8 +3392,8 @@
         ["npcid"] = 190,
         ["tbxid"] = 104191,
         ["coordinates"] = "2200,1439",
-        ["name"] = "贝吉塔",
-        ["mapname"] = "副本"
+        ["name"] = "Beggi Tower",
+        ["mapname"] = "Copy"
     },
     [284] = {
         ["propid"] = 0,
@@ -3404,8 +3404,8 @@
         ["npcid"] = 9078,
         ["tbxid"] = 104201,
         ["coordinates"] = "2269,1432",
-        ["name"] = "虚弱的萨波",
-        ["mapname"] = "副本"
+        ["name"] = "Weak Zarbon",
+        ["mapname"] = "Copy"
     },
     [285] = {
         ["propid"] = 0,
@@ -3416,8 +3416,8 @@
         ["npcid"] = 191,
         ["tbxid"] = 104221,
         ["coordinates"] = "2515,907",
-        ["name"] = "弗利萨的手下",
-        ["mapname"] = "副本"
+        ["name"] = "Frieza's men",
+        ["mapname"] = "Copy"
     },
     [286] = {
         ["propid"] = 0,
@@ -3428,8 +3428,8 @@
         ["npcid"] = 9079,
         ["tbxid"] = 104281,
         ["coordinates"] = "835,2161",
-        ["name"] = "古尔多",
-        ["mapname"] = "副本"
+        ["name"] = "Guldo",
+        ["mapname"] = "Copy"
     },
     [287] = {
         ["propid"] = 0,
@@ -3440,8 +3440,8 @@
         ["npcid"] = 9080,
         ["tbxid"] = 104291,
         ["coordinates"] = "815,2109",
-        ["name"] = "利库姆",
-        ["mapname"] = "副本"
+        ["name"] = "Rikoom",
+        ["mapname"] = "Copy"
     },
     [288] = {
         ["propid"] = 0,
@@ -3452,8 +3452,8 @@
         ["npcid"] = 9081,
         ["tbxid"] = 104301,
         ["coordinates"] = "814,2079",
-        ["name"] = "巴特",
-        ["mapname"] = "副本"
+        ["name"] = "Burter",
+        ["mapname"] = "Copy"
     },
     [289] = {
         ["propid"] = 0,
@@ -3464,8 +3464,8 @@
         ["npcid"] = 9082,
         ["tbxid"] = 104302,
         ["coordinates"] = "779,2085",
-        ["name"] = "吉斯",
-        ["mapname"] = "副本"
+        ["name"] = "Guldo",
+        ["mapname"] = "Copy"
     },
     [290] = {
         ["propid"] = 0,
@@ -3476,8 +3476,8 @@
         ["npcid"] = 9083,
         ["tbxid"] = 104311,
         ["coordinates"] = "734,2088",
-        ["name"] = "基纽",
-        ["mapname"] = "副本"
+        ["name"] = "Ginyu",
+        ["mapname"] = "Copy"
     },
     [291] = {
         ["propid"] = 0,
@@ -3488,8 +3488,8 @@
         ["npcid"] = 9084,
         ["tbxid"] = 104321,
         ["coordinates"] = "734,2088",
-        ["name"] = "“你”",
-        ["mapname"] = "副本"
+        ["name"] = "“You”",
+        ["mapname"] = "Copy"
     },
     [292] = {
         ["propid"] = 0,
@@ -3500,8 +3500,8 @@
         ["npcid"] = 9185,
         ["tbxid"] = 104341,
         ["coordinates"] = "854,646",
-        ["name"] = "贝吉塔",
-        ["mapname"] = "副本"
+        ["name"] = "Beggi Tower",
+        ["mapname"] = "Copy"
     },
     [293] = {
         ["propid"] = 0,
@@ -3512,8 +3512,8 @@
         ["npcid"] = 9086,
         ["tbxid"] = 104391,
         ["coordinates"] = "2704,2612",
-        ["name"] = "弗利萨",
-        ["mapname"] = "副本"
+        ["name"] = "Frieza",
+        ["mapname"] = "Copy"
     },
     [294] = {
         ["propid"] = 0,
@@ -3524,8 +3524,8 @@
         ["npcid"] = 194,
         ["tbxid"] = 104381,
         ["coordinates"] = "2513,2261",
-        ["name"] = "悟空",
-        ["mapname"] = "副本"
+        ["name"] = "Goku",
+        ["mapname"] = "Copy"
     },
     [295] = {
         ["propid"] = 0,
@@ -3536,8 +3536,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 102013,
         ["coordinates"] = "840,902",
-        ["name"] = "时光城",
-        ["mapname"] = "时光城"
+        ["name"] = "Time and Space City",
+        ["mapname"] = "Time and Space City"
     },
     [296] = {
         ["propid"] = 0,
@@ -3548,8 +3548,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 102014,
         ["coordinates"] = "522,757",
-        ["name"] = "宫殿门口",
-        ["mapname"] = "水晶婆婆的宫殿"
+        ["name"] = "Palace entrance",
+        ["mapname"] = "Baba's palace"
     },
     [297] = {
         ["propid"] = 0,
@@ -3560,8 +3560,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 102015,
         ["coordinates"] = "537,642",
-        ["name"] = "宫殿里",
-        ["mapname"] = "水晶婆婆的宫殿"
+        ["name"] = "Inside the palace",
+        ["mapname"] = "Baba's palace"
     },
     [298] = {
         ["propid"] = 0,
@@ -3572,8 +3572,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 102016,
         ["coordinates"] = "200,200",
-        ["name"] = "神殿",
-        ["mapname"] = "神殿"
+        ["name"] = "Shrine",
+        ["mapname"] = "Shrine"
     },
     [299] = {
         ["propid"] = 0,
@@ -3584,8 +3584,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 102017,
         ["coordinates"] = "1315,786",
-        ["name"] = "可洛山",
-        ["mapname"] = "西都野外"
+        ["name"] = "Kolo Mountain",
+        ["mapname"] = "Outsite West City"
     },
     [300] = {
         ["propid"] = 0,
@@ -3596,8 +3596,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 102018,
         ["coordinates"] = "1197,2027",
-        ["name"] = "西都野外",
-        ["mapname"] = "西都野外"
+        ["name"] = "Outsite West City",
+        ["mapname"] = "Outsite West City"
     },
     [301] = {
         ["propid"] = 0,
@@ -3608,8 +3608,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 102019,
         ["coordinates"] = "751,2189",
-        ["name"] = "河边",
-        ["mapname"] = "西都野外"
+        ["name"] = "Riverside",
+        ["mapname"] = "Outsite West City"
     },
     [302] = {
         ["propid"] = 0,
@@ -3620,8 +3620,8 @@
         ["npcid"] = 9106,
         ["tbxid"] = 100111,
         ["coordinates"] = "2100,630",
-        ["name"] = "里欧",
-        ["mapname"] = "西都野外"
+        ["name"] = "Leo",
+        ["mapname"] = "Outsite West City"
     },
     [303] = {
         ["propid"] = 0,
@@ -3632,8 +3632,8 @@
         ["npcid"] = 9107,
         ["tbxid"] = 100112,
         ["coordinates"] = "2500,1000",
-        ["name"] = "里欧",
-        ["mapname"] = "西都野外"
+        ["name"] = "Leo",
+        ["mapname"] = "Outsite West City"
     },
     [304] = {
         ["propid"] = 0,
@@ -3644,8 +3644,8 @@
         ["npcid"] = 9108,
         ["tbxid"] = 100113,
         ["coordinates"] = "1856,2110",
-        ["name"] = "机智的土拨鼠",
-        ["mapname"] = "西都野外"
+        ["name"] = "Witty marmot",
+        ["mapname"] = "Outsite West City"
     },
     [305] = {
         ["propid"] = 0,
@@ -3656,8 +3656,8 @@
         ["npcid"] = 9109,
         ["tbxid"] = 100114,
         ["coordinates"] = "1760,2190",
-        ["name"] = "机智的土拨鼠",
-        ["mapname"] = "西都野外"
+        ["name"] = "Witty marmot",
+        ["mapname"] = "Outsite West City"
     },
     [306] = {
         ["propid"] = 0,
@@ -3668,8 +3668,8 @@
         ["npcid"] = 9110,
         ["tbxid"] = 100115,
         ["coordinates"] = "1850,2520",
-        ["name"] = "劫匪",
-        ["mapname"] = "西都野外"
+        ["name"] = "Robber",
+        ["mapname"] = "Outsite West City"
     },
     [307] = {
         ["propid"] = 0,
@@ -3680,8 +3680,8 @@
         ["npcid"] = 9111,
         ["tbxid"] = 100116,
         ["coordinates"] = "2020,2640",
-        ["name"] = "劫匪",
-        ["mapname"] = "西都野外"
+        ["name"] = "Robber",
+        ["mapname"] = "Outsite West City"
     },
     [308] = {
         ["propid"] = 0,
@@ -3692,8 +3692,8 @@
         ["npcid"] = 9112,
         ["tbxid"] = 100117,
         ["coordinates"] = "2360,2570",
-        ["name"] = "劫匪",
-        ["mapname"] = "西都野外"
+        ["name"] = "Robber",
+        ["mapname"] = "Outsite West City"
     },
     [309] = {
         ["propid"] = 0,
@@ -3704,8 +3704,8 @@
         ["npcid"] = 9113,
         ["tbxid"] = 100118,
         ["coordinates"] = "2650,2000",
-        ["name"] = "野山猪",
-        ["mapname"] = "西都野外"
+        ["name"] = "Wild mountain boar",
+        ["mapname"] = "Outsite West City"
     },
     [310] = {
         ["propid"] = 0,
@@ -3716,8 +3716,8 @@
         ["npcid"] = 9114,
         ["tbxid"] = 100119,
         ["coordinates"] = "2700,2230",
-        ["name"] = "野山猪",
-        ["mapname"] = "西都野外"
+        ["name"] = "Wild mountain boar",
+        ["mapname"] = "Outsite West City"
     },
     [311] = {
         ["propid"] = 0,
@@ -3728,8 +3728,8 @@
         ["npcid"] = 9115,
         ["tbxid"] = 100120,
         ["coordinates"] = "2410,2630",
-        ["name"] = "野山猪",
-        ["mapname"] = "西都野外"
+        ["name"] = "Wild mountain boar",
+        ["mapname"] = "Outsite West City"
     },
     [312] = {
         ["propid"] = 0,
@@ -3740,8 +3740,8 @@
         ["npcid"] = 9116,
         ["tbxid"] = 100121,
         ["coordinates"] = "500,2240",
-        ["name"] = "胆小的水獭",
-        ["mapname"] = "西都野外"
+        ["name"] = "Timid otter",
+        ["mapname"] = "Outsite West City"
     },
     [313] = {
         ["propid"] = 0,
@@ -3752,8 +3752,8 @@
         ["npcid"] = 9117,
         ["tbxid"] = 100122,
         ["coordinates"] = "960,2160",
-        ["name"] = "胆小的水獭",
-        ["mapname"] = "西都野外"
+        ["name"] = "Timid otter",
+        ["mapname"] = "Outsite West City"
     },
     [314] = {
         ["propid"] = 0,
@@ -3764,8 +3764,8 @@
         ["npcid"] = 9118,
         ["tbxid"] = 100123,
         ["coordinates"] = "470,2080",
-        ["name"] = "水獭",
-        ["mapname"] = "西都野外"
+        ["name"] = "Otter",
+        ["mapname"] = "Outsite West City"
     },
     [315] = {
         ["propid"] = 0,
@@ -3776,8 +3776,8 @@
         ["npcid"] = 9119,
         ["tbxid"] = 100124,
         ["coordinates"] = "600,2020",
-        ["name"] = "水獭",
-        ["mapname"] = "西都野外"
+        ["name"] = "Otter",
+        ["mapname"] = "Outsite West City"
     },
     [316] = {
         ["propid"] = 0,
@@ -3788,8 +3788,8 @@
         ["npcid"] = 9120,
         ["tbxid"] = 100125,
         ["coordinates"] = "630,900",
-        ["name"] = "剑齿虎",
-        ["mapname"] = "西都野外"
+        ["name"] = "Saber-toothed tiger",
+        ["mapname"] = "Outsite West City"
     },
     [317] = {
         ["propid"] = 0,
@@ -3800,8 +3800,8 @@
         ["npcid"] = 9121,
         ["tbxid"] = 100126,
         ["coordinates"] = "480,1050",
-        ["name"] = "剑齿虎",
-        ["mapname"] = "西都野外"
+        ["name"] = "Saber-toothed tiger",
+        ["mapname"] = "Outsite West City"
     },
     [318] = {
         ["propid"] = 0,
@@ -3812,8 +3812,8 @@
         ["npcid"] = 9122,
         ["tbxid"] = 100127,
         ["coordinates"] = "360,750",
-        ["name"] = "野狼",
-        ["mapname"] = "西都野外"
+        ["name"] = "Wild wolf",
+        ["mapname"] = "Outsite West City"
     },
     [319] = {
         ["propid"] = 0,
@@ -3824,8 +3824,8 @@
         ["npcid"] = 9123,
         ["tbxid"] = 100128,
         ["coordinates"] = "400,450",
-        ["name"] = "野狼",
-        ["mapname"] = "西都野外"
+        ["name"] = "Wild wolf",
+        ["mapname"] = "Outsite West City"
     },
     [320] = {
         ["propid"] = 0,
@@ -3836,8 +3836,8 @@
         ["npcid"] = 9124,
         ["tbxid"] = 100129,
         ["coordinates"] = "1400,700",
-        ["name"] = "恶狼",
-        ["mapname"] = "西都野外"
+        ["name"] = "Evil wolf",
+        ["mapname"] = "Outsite West City"
     },
     [321] = {
         ["propid"] = 0,
@@ -3848,8 +3848,8 @@
         ["npcid"] = 9125,
         ["tbxid"] = 100130,
         ["coordinates"] = "240,2300",
-        ["name"] = "猴子",
-        ["mapname"] = "西都野外"
+        ["name"] = "Monkey",
+        ["mapname"] = "Outsite West City"
     },
     [322] = {
         ["propid"] = 0,
@@ -3860,8 +3860,8 @@
         ["npcid"] = 9126,
         ["tbxid"] = 100131,
         ["coordinates"] = "1200,1520",
-        ["name"] = "猴子",
-        ["mapname"] = "西都野外"
+        ["name"] = "Monkey",
+        ["mapname"] = "Outsite West City"
     },
     [323] = {
         ["propid"] = 0,
@@ -3872,8 +3872,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 101032,
         ["coordinates"] = "2618,608",
-        ["name"] = "龟仙岛",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Master Roshi's island",
+        ["mapname"] = "Master Roshi's island"
     },
     [324] = {
         ["propid"] = 0,
@@ -3884,8 +3884,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 101033,
         ["coordinates"] = "1466,1458",
-        ["name"] = "训练岛",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Training island",
+        ["mapname"] = "Master Roshi's island"
     },
     [325] = {
         ["propid"] = 0,
@@ -3896,8 +3896,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 101034,
         ["coordinates"] = "327,1466",
-        ["name"] = "海边",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Coast",
+        ["mapname"] = "Master Roshi's island"
     },
     [326] = {
         ["propid"] = 0,
@@ -3908,8 +3908,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 101036,
         ["coordinates"] = "1792,1760",
-        ["name"] = "训练岛",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Training island",
+        ["mapname"] = "Master Roshi's island"
     },
     [327] = {
         ["propid"] = 0,
@@ -3920,8 +3920,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 101037,
         ["coordinates"] = "2216,1627",
-        ["name"] = "训练岛",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Training island",
+        ["mapname"] = "Master Roshi's island"
     },
     [328] = {
         ["propid"] = 0,
@@ -3932,8 +3932,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 101038,
         ["coordinates"] = "412,1260",
-        ["name"] = "小屋外",
-        ["mapname"] = "龟仙岛"
+        ["name"] = "Outside the cottage",
+        ["mapname"] = "Master Roshi's island"
     },
     [329] = {
         ["propid"] = 0,
@@ -3944,8 +3944,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 101039,
         ["coordinates"] = "1264,1553",
-        ["name"] = "皮拉夫城堡",
-        ["mapname"] = "副本"
+        ["name"] = "Pilaf Castle",
+        ["mapname"] = "Copy"
     },
     [330] = {
         ["propid"] = 0,
@@ -3956,8 +3956,8 @@
         ["npcid"] = 2907,
         ["tbxid"] = 700001,
         ["coordinates"] = "898,897",
-        ["name"] = "福利姐姐",
-        ["mapname"] = "时光城"
+        ["name"] = "Welfare elder sister",
+        ["mapname"] = "Time and Space City"
     },
     [331] = {
         ["propid"] = 0,
@@ -3968,8 +3968,8 @@
         ["npcid"] = 2900,
         ["tbxid"] = 900000,
         ["coordinates"] = "343,1031",
-        ["name"] = "基因改造",
-        ["mapname"] = "时光城"
+        ["name"] = "Genetic modification",
+        ["mapname"] = "Time and Space City"
     },
     [332] = {
         ["propid"] = 0,
@@ -3980,8 +3980,8 @@
         ["npcid"] = 2901,
         ["tbxid"] = 900001,
         ["coordinates"] = "309,554",
-        ["name"] = "交易所",
-        ["mapname"] = "时光城"
+        ["name"] = "Trader",
+        ["mapname"] = "Time and Space City"
     },
     [333] = {
         ["propid"] = 0,
@@ -3992,8 +3992,8 @@
         ["npcid"] = 2902,
         ["tbxid"] = 900002,
         ["coordinates"] = "463,1031",
-        ["name"] = "能力卡商人",
-        ["mapname"] = "时光城"
+        ["name"] = "Ability card merchant",
+        ["mapname"] = "Time and Space City"
     },
     [334] = {
         ["propid"] = 0,
@@ -4004,8 +4004,8 @@
         ["npcid"] = 2903,
         ["tbxid"] = 900003,
         ["coordinates"] = "417,1030",
-        ["name"] = "药水商人",
-        ["mapname"] = "时光城"
+        ["name"] = "Potion seller",
+        ["mapname"] = "Time and Space City"
     },
     [335] = {
         ["propid"] = 0,
@@ -4016,8 +4016,8 @@
         ["npcid"] = 2904,
         ["tbxid"] = 900004,
         ["coordinates"] = "484,1031",
-        ["name"] = "英雄碎片商人",
-        ["mapname"] = "时光城"
+        ["name"] = "Hero fragments merchant",
+        ["mapname"] = "Time and Space City"
     },
     [336] = {
         ["propid"] = 0,
@@ -4028,8 +4028,8 @@
         ["npcid"] = 2905,
         ["tbxid"] = 900005,
         ["coordinates"] = "369,1066",
-        ["name"] = "科学怪人",
-        ["mapname"] = "时光城"
+        ["name"] = "Frankenstein",
+        ["mapname"] = "Time and Space City"
     },
     [337] = {
         ["propid"] = 0,
@@ -4040,8 +4040,8 @@
         ["npcid"] = 2906,
         ["tbxid"] = 900006,
         ["coordinates"] = "942,1172",
-        ["name"] = "日常任务商人",
-        ["mapname"] = "时光城"
+        ["name"] = "Daily quest businessman",
+        ["mapname"] = "Time and Space City"
     },
     [338] = {
         ["propid"] = 0,
@@ -4052,8 +4052,8 @@
         ["npcid"] = 2907,
         ["tbxid"] = 900007,
         ["coordinates"] = "1046,840",
-        ["name"] = "礼物派送",
-        ["mapname"] = "时光城"
+        ["name"] = "Gift delivery",
+        ["mapname"] = "Time and Space City"
     },
     [339] = {
         ["propid"] = 0,
@@ -4064,8 +4064,8 @@
         ["npcid"] = 2100,
         ["tbxid"] = 900008,
         ["coordinates"] = "858,764",
-        ["name"] = "技能升级大师",
-        ["mapname"] = "时光城"
+        ["name"] = "Skill upgrade master",
+        ["mapname"] = "Time and Space City"
     },
     [340] = {
         ["propid"] = 0,
@@ -4076,8 +4076,8 @@
         ["npcid"] = 6416,
         ["tbxid"] = 900009,
         ["coordinates"] = "1155,314",
-        ["name"] = "木桩爸爸",
-        ["mapname"] = "时光城"
+        ["name"] = "Wooden pile Dad",
+        ["mapname"] = "Time and Space City"
     },
     [341] = {
         ["propid"] = 0,
@@ -4088,8 +4088,8 @@
         ["npcid"] = 6417,
         ["tbxid"] = 900010,
         ["coordinates"] = "1174,314",
-        ["name"] = "木桩儿子",
-        ["mapname"] = "时光城"
+        ["name"] = "Wooden pile Son",
+        ["mapname"] = "Time and Space City"
     },
     [342] = {
         ["propid"] = 0,
@@ -4100,8 +4100,8 @@
         ["npcid"] = 6418,
         ["tbxid"] = 900011,
         ["coordinates"] = "1136,314",
-        ["name"] = "木桩爷爷",
-        ["mapname"] = "时光城"
+        ["name"] = "Wooden pile Grandpa",
+        ["mapname"] = "Time and Space City"
     },
     [343] = {
         ["propid"] = 0,
@@ -4112,8 +4112,8 @@
         ["npcid"] = 6429,
         ["tbxid"] = 900012,
         ["coordinates"] = "1174,344",
-        ["name"] = "抽人爸爸",
-        ["mapname"] = "时光城"
+        ["name"] = "Ugly Dad",
+        ["mapname"] = "Time and Space City"
     },
     [344] = {
         ["propid"] = 0,
@@ -4124,8 +4124,8 @@
         ["npcid"] = 2121,
         ["tbxid"] = 900013,
         ["coordinates"] = "965,1217",
-        ["name"] = "撒旦",
-        ["mapname"] = "时光城"
+        ["name"] = "Mr. Satan",
+        ["mapname"] = "Time and Space City"
     },
     [345] = {
         ["propid"] = 0,
@@ -4136,8 +4136,8 @@
         ["npcid"] = 6426,
         ["tbxid"] = 900014,
         ["coordinates"] = "466,1373",
-        ["name"] = "20级木桩小怪模板",
-        ["mapname"] = "时光城"
+        ["name"] = "Lv. 20 Wooden pile group of mobs",
+        ["mapname"] = "Time and Space City"
     },
     [346] = {
         ["propid"] = 0,
@@ -4148,8 +4148,8 @@
         ["npcid"] = 6427,
         ["tbxid"] = 900015,
         ["coordinates"] = "480,1384",
-        ["name"] = "30级木桩小怪模板",
-        ["mapname"] = "时光城"
+        ["name"] = "Lv. 30 Wooden pile group of mobs",
+        ["mapname"] = "Time and Space City"
     },
     [347] = {
         ["propid"] = 0,
@@ -4160,8 +4160,8 @@
         ["npcid"] = 6428,
         ["tbxid"] = 900016,
         ["coordinates"] = "490,195",
-        ["name"] = "40级木桩小怪模板",
-        ["mapname"] = "时光城"
+        ["name"] = "Lv. 40 Wooden pile group of mobs",
+        ["mapname"] = "Time and Space City"
     },
     [348] = {
         ["propid"] = 0,
@@ -4172,8 +4172,8 @@
         ["npcid"] = 6429,
         ["tbxid"] = 900017,
         ["coordinates"] = "500,1405",
-        ["name"] = "50级木桩小怪模板",
-        ["mapname"] = "时光城"
+        ["name"] = "Lv. 50 Wooden pile group of mobs",
+        ["mapname"] = "Time and Space City"
     },
     [349] = {
         ["propid"] = 0,
@@ -4184,8 +4184,8 @@
         ["npcid"] = 217,
         ["tbxid"] = 900018,
         ["coordinates"] = "290,894",
-        ["name"] = "存储机器人",
-        ["mapname"] = "时光城"
+        ["name"] = "Storage robot",
+        ["mapname"] = "Time and Space City"
     },
     [350] = {
         ["propid"] = 0,
@@ -4196,8 +4196,8 @@
         ["npcid"] = 218,
         ["tbxid"] = 900019,
         ["coordinates"] = "323,871",
-        ["name"] = "存储机器人",
-        ["mapname"] = "时光城"
+        ["name"] = "Storage robot",
+        ["mapname"] = "Time and Space City"
     },
     [351] = {
         ["propid"] = 0,
@@ -4208,8 +4208,8 @@
         ["npcid"] = 224,
         ["tbxid"] = 900020,
         ["coordinates"] = "1525,2168",
-        ["name"] = "居民艾尔饭",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Resident Ayr",
+        ["mapname"] = "Satan City"
     },
     [352] = {
         ["propid"] = 0,
@@ -4220,8 +4220,8 @@
         ["npcid"] = 225,
         ["tbxid"] = 900021,
         ["coordinates"] = "1541,669",
-        ["name"] = "居民瑟乐锐",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Resident Sele rui",
+        ["mapname"] = "Satan City"
     },
     [353] = {
         ["propid"] = 0,
@@ -4232,8 +4232,8 @@
         ["npcid"] = 227,
         ["tbxid"] = 900022,
         ["coordinates"] = "347,1389",
-        ["name"] = "居民多利是",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Resident Dolly",
+        ["mapname"] = "Satan City"
     },
     [354] = {
         ["propid"] = 0,
@@ -4244,8 +4244,8 @@
         ["npcid"] = 228,
         ["tbxid"] = 900023,
         ["coordinates"] = "1700,1203",
-        ["name"] = "居民苏卡其",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Resident Sukaqi",
+        ["mapname"] = "Satan City"
     },
     [355] = {
         ["propid"] = 0,
@@ -4256,8 +4256,8 @@
         ["npcid"] = 229,
         ["tbxid"] = 900024,
         ["coordinates"] = "611,1286",
-        ["name"] = "居民比尔德",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Resident Bart",
+        ["mapname"] = "Satan City"
     },
     [356] = {
         ["propid"] = 0,
@@ -4268,8 +4268,8 @@
         ["npcid"] = 230,
         ["tbxid"] = 900025,
         ["coordinates"] = "1316,1952",
-        ["name"] = "居民全知道",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Well known resident",
+        ["mapname"] = "Satan City"
     },
     [357] = {
         ["propid"] = 0,
@@ -4280,8 +4280,8 @@
         ["npcid"] = 232,
         ["tbxid"] = 900026,
         ["coordinates"] = "1142,1861",
-        ["name"] = "居民郭老板",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Resident Boss Guo",
+        ["mapname"] = "Satan City"
     },
     [358] = {
         ["propid"] = 0,
@@ -4292,8 +4292,8 @@
         ["npcid"] = 233,
         ["tbxid"] = 900027,
         ["coordinates"] = "610,1725",
-        ["name"] = "居民茴香",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Resident Annise",
+        ["mapname"] = "Satan City"
     },
     [359] = {
         ["propid"] = 0,
@@ -4304,8 +4304,8 @@
         ["npcid"] = 234,
         ["tbxid"] = 900028,
         ["coordinates"] = "1716,1662",
-        ["name"] = "胶囊公司员工",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Capsule company employer",
+        ["mapname"] = "Satan City"
     },
     [360] = {
         ["propid"] = 0,
@@ -4316,8 +4316,8 @@
         ["npcid"] = 235,
         ["tbxid"] = 900029,
         ["coordinates"] = "1871,1528",
-        ["name"] = "胶囊公司员工",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Capsule company employer",
+        ["mapname"] = "Satan City"
     },
     [361] = {
         ["propid"] = 0,
@@ -4328,8 +4328,8 @@
         ["npcid"] = 236,
         ["tbxid"] = 900030,
         ["coordinates"] = "1804,1459",
-        ["name"] = "胶囊公司员工",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Capsule company employer",
+        ["mapname"] = "Satan City"
     },
     [362] = {
         ["propid"] = 0,
@@ -4340,8 +4340,8 @@
         ["npcid"] = 237,
         ["tbxid"] = 900031,
         ["coordinates"] = "1733,1526",
-        ["name"] = "胶囊公司员工",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Capsule company employer",
+        ["mapname"] = "Satan City"
     },
     [363] = {
         ["propid"] = 0,
@@ -4352,8 +4352,8 @@
         ["npcid"] = 238,
         ["tbxid"] = 900032,
         ["coordinates"] = "1803,1596",
-        ["name"] = "胶囊公司员工",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Capsule company employer",
+        ["mapname"] = "Satan City"
     },
     [364] = {
         ["propid"] = 0,
@@ -4364,8 +4364,8 @@
         ["npcid"] = 239,
         ["tbxid"] = 900033,
         ["coordinates"] = "1275,756",
-        ["name"] = "武道会管理员",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Budokai administrator",
+        ["mapname"] = "Satan City"
     },
     [365] = {
         ["propid"] = 0,
@@ -4376,8 +4376,8 @@
         ["npcid"] = 240,
         ["tbxid"] = 900034,
         ["coordinates"] = "780,848",
-        ["name"] = "存储机器人",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Storage robot",
+        ["mapname"] = "Satan City"
     },
     [366] = {
         ["propid"] = 0,
@@ -4388,8 +4388,8 @@
         ["npcid"] = 241,
         ["tbxid"] = 900035,
         ["coordinates"] = "806,846",
-        ["name"] = "存储机器人",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Storage robot",
+        ["mapname"] = "Satan City"
     },
     [367] = {
         ["propid"] = 0,
@@ -4400,8 +4400,8 @@
         ["npcid"] = 242,
         ["tbxid"] = 900036,
         ["coordinates"] = "1814,762",
-        ["name"] = "存储机器人",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Storage robot",
+        ["mapname"] = "Satan City"
     },
     [368] = {
         ["propid"] = 0,
@@ -4412,8 +4412,8 @@
         ["npcid"] = 243,
         ["tbxid"] = 900037,
         ["coordinates"] = "1831,762",
-        ["name"] = "存储机器人",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Storage robot",
+        ["mapname"] = "Satan City"
     },
     [369] = {
         ["propid"] = 0,
@@ -4424,8 +4424,8 @@
         ["npcid"] = 244,
         ["tbxid"] = 900038,
         ["coordinates"] = "1380,1427",
-        ["name"] = "比鲁斯",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Bills",
+        ["mapname"] = "Satan City"
     },
     [370] = {
         ["propid"] = 0,
@@ -4436,8 +4436,8 @@
         ["npcid"] = 245,
         ["tbxid"] = 900039,
         ["coordinates"] = "1372,1421",
-        ["name"] = "维斯",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Whis",
+        ["mapname"] = "Satan City"
     },
     [371] = {
         ["propid"] = 0,
@@ -4448,8 +4448,8 @@
         ["npcid"] = 249,
         ["tbxid"] = 900040,
         ["coordinates"] = "1753,1851",
-        ["name"] = "居民拉蒂",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Resident Ratti",
+        ["mapname"] = "Satan City"
     },
     [372] = {
         ["propid"] = 0,
@@ -4460,8 +4460,8 @@
         ["npcid"] = 2909,
         ["tbxid"] = 900041,
         ["coordinates"] = "856,1847",
-        ["name"] = "交易所",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Trader",
+        ["mapname"] = "Satan City"
     },
     [373] = {
         ["propid"] = 0,
@@ -4472,8 +4472,8 @@
         ["npcid"] = 2916,
         ["tbxid"] = 900042,
         ["coordinates"] = "610,1838",
-        ["name"] = "交易所",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Trader",
+        ["mapname"] = "Satan City"
     },
     [374] = {
         ["propid"] = 0,
@@ -4484,8 +4484,8 @@
         ["npcid"] = 2911,
         ["tbxid"] = 900043,
         ["coordinates"] = "694,1865",
-        ["name"] = "药剂商人",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Potion merchant",
+        ["mapname"] = "Satan City"
     },
     [375] = {
         ["propid"] = 0,
@@ -4496,8 +4496,8 @@
         ["npcid"] = 2918,
         ["tbxid"] = 900044,
         ["coordinates"] = "658,1923",
-        ["name"] = "药剂商人",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Potion merchant",
+        ["mapname"] = "Satan City"
     },
     [376] = {
         ["propid"] = 0,
@@ -4508,8 +4508,8 @@
         ["npcid"] = 2919,
         ["tbxid"] = 900045,
         ["coordinates"] = "796,1840",
-        ["name"] = "英雄碎片商人",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Hero fragment merchant",
+        ["mapname"] = "Satan City"
     },
     [377] = {
         ["propid"] = 0,
@@ -4520,8 +4520,8 @@
         ["npcid"] = 2912,
         ["tbxid"] = 900046,
         ["coordinates"] = "596,1955",
-        ["name"] = "英雄碎片商人",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Hero fragment merchant",
+        ["mapname"] = "Satan City"
     },
     [378] = {
         ["propid"] = 0,
@@ -4532,8 +4532,8 @@
         ["npcid"] = 2908,
         ["tbxid"] = 900047,
         ["coordinates"] = "852,1126",
-        ["name"] = "基因改造",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Genetic modification",
+        ["mapname"] = "Satan City"
     },
     [379] = {
         ["propid"] = 0,
@@ -4544,8 +4544,8 @@
         ["npcid"] = 2915,
         ["tbxid"] = 900048,
         ["coordinates"] = "923,1139",
-        ["name"] = "基因改造",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Genetic modification",
+        ["mapname"] = "Satan City"
     },
     [380] = {
         ["propid"] = 0,
@@ -4556,8 +4556,8 @@
         ["npcid"] = 2913,
         ["tbxid"] = 900049,
         ["coordinates"] = "984,1207",
-        ["name"] = "基因商人",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Genetic businessman",
+        ["mapname"] = "Satan City"
     },
     [381] = {
         ["propid"] = 0,
@@ -4568,8 +4568,8 @@
         ["npcid"] = 2920,
         ["tbxid"] = 900050,
         ["coordinates"] = "991,1207",
-        ["name"] = "基因商人",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Genetic businessman",
+        ["mapname"] = "Satan City"
     },
     [382] = {
         ["propid"] = 0,
@@ -4580,8 +4580,8 @@
         ["npcid"] = 2910,
         ["tbxid"] = 900051,
         ["coordinates"] = "919,1040",
-        ["name"] = "能力卡商人",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Ability card merchant",
+        ["mapname"] = "Satan City"
     },
     [383] = {
         ["propid"] = 0,
@@ -4592,8 +4592,8 @@
         ["npcid"] = 2917,
         ["tbxid"] = 900052,
         ["coordinates"] = "920,1012",
-        ["name"] = "能力卡商人",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Ability card merchant",
+        ["mapname"] = "Satan City"
     },
     [384] = {
         ["propid"] = 0,
@@ -4604,8 +4604,8 @@
         ["npcid"] = 2922,
         ["tbxid"] = 900053,
         ["coordinates"] = "998,1038",
-        ["name"] = "技能升级大师",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Skill upgrade master",
+        ["mapname"] = "Satan City"
     },
     [385] = {
         ["propid"] = 0,
@@ -4616,8 +4616,8 @@
         ["npcid"] = 2923,
         ["tbxid"] = 900054,
         ["coordinates"] = "983,1036",
-        ["name"] = "技能升级大师",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Skill upgrade master",
+        ["mapname"] = "Satan City"
     },
     [386] = {
         ["propid"] = 0,
@@ -4628,8 +4628,8 @@
         ["npcid"] = 2128,
         ["tbxid"] = 900055,
         ["coordinates"] = "1293,1640",
-        ["name"] = "日常任务管理员",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Daily event manager",
+        ["mapname"] = "Satan City"
     },
     [387] = {
         ["propid"] = 0,
@@ -4640,8 +4640,8 @@
         ["npcid"] = 2914,
         ["tbxid"] = 900056,
         ["coordinates"] = "1326,1640",
-        ["name"] = "日常任务商人",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Daily quest businessman",
+        ["mapname"] = "Satan City"
     },
     [388] = {
         ["propid"] = 0,
@@ -4652,8 +4652,8 @@
         ["npcid"] = 2921,
         ["tbxid"] = 900057,
         ["coordinates"] = "1148,1642",
-        ["name"] = "可替换的日常任务商人",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Replaceable Daily quest businessman",
+        ["mapname"] = "Satan City"
     },
     [389] = {
         ["propid"] = 0,
@@ -4664,8 +4664,8 @@
         ["npcid"] = 2127,
         ["tbxid"] = 900058,
         ["coordinates"] = "1553,1207",
-        ["name"] = "家族任务发布员",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Guild quest manager",
+        ["mapname"] = "Satan City"
     },
     [390] = {
         ["propid"] = 0,
@@ -4676,8 +4676,8 @@
         ["npcid"] = 2129,
         ["tbxid"] = 900059,
         ["coordinates"] = "1649,1167",
-        ["name"] = "家族管理员",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Guild manager",
+        ["mapname"] = "Satan City"
     },
     [391] = {
         ["propid"] = 0,
@@ -4688,8 +4688,8 @@
         ["npcid"] = 6419,
         ["tbxid"] = 900060,
         ["coordinates"] = "1474,706",
-        ["name"] = "木桩爸爸",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Wooden pile dad",
+        ["mapname"] = "Satan City"
     },
     [392] = {
         ["propid"] = 0,
@@ -4700,8 +4700,8 @@
         ["npcid"] = 6420,
         ["tbxid"] = 900061,
         ["coordinates"] = "1474,689",
-        ["name"] = "木桩儿子",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Wooden pile son",
+        ["mapname"] = "Satan City"
     },
     [393] = {
         ["propid"] = 0,
@@ -4712,8 +4712,8 @@
         ["npcid"] = 6421,
         ["tbxid"] = 900062,
         ["coordinates"] = "1474,672",
-        ["name"] = "木桩爷爷",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Wooden pile Grandpa",
+        ["mapname"] = "Satan City"
     },
     [394] = {
         ["propid"] = 0,
@@ -4724,8 +4724,8 @@
         ["npcid"] = 6422,
         ["tbxid"] = 900063,
         ["coordinates"] = "1474,806",
-        ["name"] = "木桩爸爸",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Wooden pile Dad",
+        ["mapname"] = "Satan City"
     },
     [395] = {
         ["propid"] = 0,
@@ -4736,8 +4736,8 @@
         ["npcid"] = 6423,
         ["tbxid"] = 900064,
         ["coordinates"] = "1474,789",
-        ["name"] = "木桩儿子",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Wooden pile Son",
+        ["mapname"] = "Satan City"
     },
     [396] = {
         ["propid"] = 0,
@@ -4748,8 +4748,8 @@
         ["npcid"] = 6424,
         ["tbxid"] = 900065,
         ["coordinates"] = "1474,772",
-        ["name"] = "木桩爷爷",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Wooden pile Grandpa",
+        ["mapname"] = "Satan City"
     },
     [397] = {
         ["propid"] = 0,
@@ -4760,8 +4760,8 @@
         ["npcid"] = 20,
         ["tbxid"] = 900066,
         ["coordinates"] = "1026,1579",
-        ["name"] = "神奇的传送师",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Magic Teleporter",
+        ["mapname"] = "Satan City"
     },
     [398] = {
         ["propid"] = 0,
@@ -4772,8 +4772,8 @@
         ["npcid"] = 21,
         ["tbxid"] = 900067,
         ["coordinates"] = "1074,958",
-        ["name"] = "神奇的传送师",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Magic Teleporter",
+        ["mapname"] = "Satan City"
     },
     [399] = {
         ["propid"] = 0,
@@ -4784,8 +4784,8 @@
         ["npcid"] = 22,
         ["tbxid"] = 900068,
         ["coordinates"] = "926,2009",
-        ["name"] = "神奇的传送师",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Magic Teleporter",
+        ["mapname"] = "Satan City"
     },
     [400] = {
         ["propid"] = 0,
@@ -4796,8 +4796,8 @@
         ["npcid"] = 23,
         ["tbxid"] = 900069,
         ["coordinates"] = "1407,1594",
-        ["name"] = "传送师学徒",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Apprentice Teleporter",
+        ["mapname"] = "Satan City"
     },
     [401] = {
         ["propid"] = 0,
@@ -4808,8 +4808,8 @@
         ["npcid"] = 24,
         ["tbxid"] = 900070,
         ["coordinates"] = "1074,946",
-        ["name"] = "传送师学徒",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Apprentice Teleporter",
+        ["mapname"] = "Satan City"
     },
     [402] = {
         ["propid"] = 0,
@@ -4820,8 +4820,8 @@
         ["npcid"] = 25,
         ["tbxid"] = 900071,
         ["coordinates"] = "1778,1271",
-        ["name"] = "传送师学徒",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Apprentice Teleporter",
+        ["mapname"] = "Satan City"
     },
     [403] = {
         ["propid"] = 0,
@@ -4832,8 +4832,8 @@
         ["npcid"] = 26,
         ["tbxid"] = 900072,
         ["coordinates"] = "1783,1702",
-        ["name"] = "传送师学徒",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Apprentice Teleporter",
+        ["mapname"] = "Satan City"
     },
     [404] = {
         ["propid"] = 0,
@@ -4844,8 +4844,8 @@
         ["npcid"] = 27,
         ["tbxid"] = 900073,
         ["coordinates"] = "971,2009",
-        ["name"] = "传送师学徒",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Apprentice Teleporter",
+        ["mapname"] = "Satan City"
     },
     [405] = {
         ["propid"] = 0,
@@ -4856,8 +4856,8 @@
         ["npcid"] = 0,
         ["tbxid"] = 900074,
         ["coordinates"] = "1106,1559",
-        ["name"] = "撒旦市",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Satan City",
+        ["mapname"] = "Satan City"
     },
     [406] = {
         ["propid"] = 0,
@@ -4868,8 +4868,8 @@
         ["npcid"] = 9182,
         ["tbxid"] = 900075,
         ["coordinates"] = "1536,1961",
-        ["name"] = "雷克莱斯",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Lessy Luke",
+        ["mapname"] = "Satan City"
     },
     [407] = {
         ["propid"] = 0,
@@ -4880,8 +4880,8 @@
         ["npcid"] = 9172,
         ["tbxid"] = 900076,
         ["coordinates"] = "2806,2726",
-        ["name"] = "虐狗团小队长",
-        ["mapname"] = "西都野外"
+        ["name"] = "Dog abuser team captain",
+        ["mapname"] = "Outsite West City"
     },
     [408] = {
         ["propid"] = 0,
@@ -4892,8 +4892,8 @@
         ["npcid"] = 9173,
         ["tbxid"] = 900077,
         ["coordinates"] = "2810,2663",
-        ["name"] = "虐狗团伙精英",
-        ["mapname"] = "西都野外"
+        ["name"] = "Dog abuser gang elite",
+        ["mapname"] = "Outsite West City"
     },
     [409] = {
         ["propid"] = 0,
@@ -4904,8 +4904,8 @@
         ["npcid"] = 9174,
         ["tbxid"] = 900078,
         ["coordinates"] = "2356,1853",
-        ["name"] = "丧狗",
-        ["mapname"] = "西都野外"
+        ["name"] = "Abused Dog",
+        ["mapname"] = "Outsite West City"
     },
     [410] = {
         ["propid"] = 0,
@@ -4916,8 +4916,8 @@
         ["npcid"] = 231,
         ["tbxid"] = 900079,
         ["coordinates"] = "2358,1784",
-        ["name"] = "朱古力",
-        ["mapname"] = "西都野外"
+        ["name"] = "Chocolate",
+        ["mapname"] = "Outsite West City"
     },
     [411] = {
         ["propid"] = 0,
@@ -4928,8 +4928,8 @@
         ["npcid"] = 4068,
         ["tbxid"] = 900080,
         ["coordinates"] = "2337,1731",
-        ["name"] = "狗粮",
-        ["mapname"] = "西都野外"
+        ["name"] = "Dog food",
+        ["mapname"] = "Outsite West City"
     },
     [412] = {
         ["propid"] = 0,
@@ -4940,8 +4940,8 @@
         ["npcid"] = 9169,
         ["tbxid"] = 900081,
         ["coordinates"] = "1297,1715",
-        ["name"] = "追求者葛林斯基",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Seeker Glinski",
+        ["mapname"] = "Satan City"
     },
     [413] = {
         ["propid"] = 0,
@@ -4952,8 +4952,8 @@
         ["npcid"] = 9170,
         ["tbxid"] = 900082,
         ["coordinates"] = "1608,1626",
-        ["name"] = "追求者格雷超舍",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Seeker Gray Chaoshe",
+        ["mapname"] = "Satan City"
     },
     [414] = {
         ["propid"] = 0,
@@ -4964,8 +4964,8 @@
         ["npcid"] = 9171,
         ["tbxid"] = 900083,
         ["coordinates"] = "1756,1376",
-        ["name"] = "追求者波鲁阿莫",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Seeker Poruamo",
+        ["mapname"] = "Satan City"
     },
     [415] = {
         ["propid"] = 0,
@@ -4976,8 +4976,8 @@
         ["npcid"] = 28,
         ["tbxid"] = 900084,
         ["coordinates"] = "421,1069",
-        ["name"] = "传送师学徒",
-        ["mapname"] = "时光城"
+        ["name"] = "Apprentice Teleporter",
+        ["mapname"] = "Time and Space City"
     },
     [416] = {
         ["propid"] = 0,
@@ -4988,8 +4988,8 @@
         ["npcid"] = 29,
         ["tbxid"] = 900085,
         ["coordinates"] = "865,480",
-        ["name"] = "传送师学徒",
-        ["mapname"] = "时光城"
+        ["name"] = "Apprentice Teleporter",
+        ["mapname"] = "Time and Space City"
     },
     [417] = {
         ["propid"] = 0,
@@ -5000,8 +5000,8 @@
         ["npcid"] = 30,
         ["tbxid"] = 900086,
         ["coordinates"] = "1309,490",
-        ["name"] = "传送师学徒",
-        ["mapname"] = "时光城"
+        ["name"] = "Apprentice Teleporter",
+        ["mapname"] = "Time and Space City"
     },
     [418] = {
         ["propid"] = 0,
@@ -5012,8 +5012,8 @@
         ["npcid"] = 31,
         ["tbxid"] = 900087,
         ["coordinates"] = "795,1106",
-        ["name"] = "传送师学徒",
-        ["mapname"] = "时光城"
+        ["name"] = "Apprentice Teleporter",
+        ["mapname"] = "Time and Space City"
     },
     [419] = {
         ["propid"] = 0,
@@ -5024,8 +5024,8 @@
         ["npcid"] = 32,
         ["tbxid"] = 900088,
         ["coordinates"] = "856,1583",
-        ["name"] = "时空城警卫",
-        ["mapname"] = "时光城"
+        ["name"] = "Time and Space City Protector",
+        ["mapname"] = "Time and Space City"
     },
     [420] = {
         ["propid"] = 0,
@@ -5036,8 +5036,8 @@
         ["npcid"] = 33,
         ["tbxid"] = 900089,
         ["coordinates"] = "824,1583",
-        ["name"] = "时空城警卫",
-        ["mapname"] = "时光城"
+        ["name"] = "Time and Space City Protector",
+        ["mapname"] = "Time and Space City"
     },
     [421] = {
         ["propid"] = 0,
@@ -5048,8 +5048,8 @@
         ["npcid"] = 34,
         ["tbxid"] = 900090,
         ["coordinates"] = "262,365",
-        ["name"] = "时空城警卫",
-        ["mapname"] = "时光城"
+        ["name"] = "Time and Space City Protector",
+        ["mapname"] = "Time and Space City"
     },
     [422] = {
         ["propid"] = 0,
@@ -5060,8 +5060,8 @@
         ["npcid"] = 35,
         ["tbxid"] = 900091,
         ["coordinates"] = "323,1392",
-        ["name"] = "时空城警卫",
-        ["mapname"] = "时光城"
+        ["name"] = "Time and Space City Protector",
+        ["mapname"] = "Time and Space City"
     },
     [423] = {
         ["propid"] = 0,
@@ -5072,8 +5072,8 @@
         ["npcid"] = 36,
         ["tbxid"] = 900092,
         ["coordinates"] = "1315,264",
-        ["name"] = "时空城警卫",
-        ["mapname"] = "时光城"
+        ["name"] = "Time and Space City Protector",
+        ["mapname"] = "Time and Space City"
     },
     [424] = {
         ["propid"] = 0,
@@ -5084,8 +5084,8 @@
         ["npcid"] = 37,
         ["tbxid"] = 900093,
         ["coordinates"] = "1434,1313",
-        ["name"] = "时空城警卫",
-        ["mapname"] = "时光城"
+        ["name"] = "Time and Space City Protector",
+        ["mapname"] = "Time and Space City"
     },
     [425] = {
         ["propid"] = 0,
@@ -5096,8 +5096,8 @@
         ["npcid"] = 251,
         ["tbxid"] = 900094,
         ["coordinates"] = "1142,976",
-        ["name"] = "厨师",
-        ["mapname"] = "时光城"
+        ["name"] = "Chef",
+        ["mapname"] = "Time and Space City"
     },
     [426] = {
         ["propid"] = 0,
@@ -5108,8 +5108,8 @@
         ["npcid"] = 252,
         ["tbxid"] = 900095,
         ["coordinates"] = "1011,1004",
-        ["name"] = "胶囊公司特派员",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Capsule company commissioner",
+        ["mapname"] = "Satan City"
     },
     [427] = {
         ["propid"] = 0,
@@ -5120,8 +5120,8 @@
         ["npcid"] = 253,
         ["tbxid"] = 900096,
         ["coordinates"] = "902,1677",
-        ["name"] = "警察",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Policeman",
+        ["mapname"] = "Satan City"
     },
     [428] = {
         ["propid"] = 0,
@@ -5132,8 +5132,8 @@
         ["npcid"] = 254,
         ["tbxid"] = 900097,
         ["coordinates"] = "1740,1202",
-        ["name"] = "警察",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Policeman",
+        ["mapname"] = "Satan City"
     },
     [429] = {
         ["propid"] = 0,
@@ -5144,8 +5144,8 @@
         ["npcid"] = 255,
         ["tbxid"] = 900093,
         ["coordinates"] = "542,1122",
-        ["name"] = "居民",
-        ["mapname"] = "时光城"
+        ["name"] = "Resident",
+        ["mapname"] = "Time and Space City"
     },
     [430] = {
         ["propid"] = 0,
@@ -5156,8 +5156,8 @@
         ["npcid"] = 256,
         ["tbxid"] = 900094,
         ["coordinates"] = "811,912",
-        ["name"] = "居民珀思",
-        ["mapname"] = "时光城"
+        ["name"] = "Resident Perth",
+        ["mapname"] = "Time and Space City"
     },
     [431] = {
         ["propid"] = 0,
@@ -5168,8 +5168,8 @@
         ["npcid"] = 257,
         ["tbxid"] = 900095,
         ["coordinates"] = "597,807",
-        ["name"] = "居民派内坡",
-        ["mapname"] = "时光城"
+        ["name"] = "Resident Penelope",
+        ["mapname"] = "Time and Space City"
     },
     [432] = {
         ["propid"] = 0,
@@ -5180,8 +5180,8 @@
         ["npcid"] = 258,
         ["tbxid"] = 900096,
         ["coordinates"] = "1168,853",
-        ["name"] = "居民阿卡都",
-        ["mapname"] = "时光城"
+        ["name"] = "Resident Akadu",
+        ["mapname"] = "Time and Space City"
     },
     [433] = {
         ["propid"] = 0,
@@ -5192,8 +5192,8 @@
         ["npcid"] = 259,
         ["tbxid"] = 900097,
         ["coordinates"] = "463,505",
-        ["name"] = "居民苏波鲁",
-        ["mapname"] = "时光城"
+        ["name"] = "Resident Suboru",
+        ["mapname"] = "Time and Space City"
     },
     [434] = {
         ["propid"] = 0,
@@ -5204,8 +5204,8 @@
         ["npcid"] = 260,
         ["tbxid"] = 900098,
         ["coordinates"] = "1128,662",
-        ["name"] = "居民葛莱迪",
-        ["mapname"] = "时光城"
+        ["name"] = "Resident Ge laidi",
+        ["mapname"] = "Time and Space City"
     },
     [435] = {
         ["propid"] = 0,
@@ -5216,8 +5216,8 @@
         ["npcid"] = 261,
         ["tbxid"] = 900099,
         ["coordinates"] = "408,1301",
-        ["name"] = "居民迪克奈",
-        ["mapname"] = "时光城"
+        ["name"] = "Resident Di Kenai",
+        ["mapname"] = "Time and Space City"
     },
     [436] = {
         ["propid"] = 0,
@@ -5228,8 +5228,8 @@
         ["npcid"] = 262,
         ["tbxid"] = 900100,
         ["coordinates"] = "1256,1248",
-        ["name"] = "居民赛瑟米",
-        ["mapname"] = "时光城"
+        ["name"] = "Resident Sesimi",
+        ["mapname"] = "Time and Space City"
     },
     [437] = {
         ["propid"] = 0,
@@ -5240,8 +5240,8 @@
         ["npcid"] = 263,
         ["tbxid"] = 900101,
         ["coordinates"] = "453,905",
-        ["name"] = "警察",
-        ["mapname"] = "时光城"
+        ["name"] = "Policeman",
+        ["mapname"] = "Time and Space City"
     },
     [438] = {
         ["propid"] = 0,
@@ -5252,8 +5252,8 @@
         ["npcid"] = 264,
         ["tbxid"] = 900102,
         ["coordinates"] = "947,887",
-        ["name"] = "居民凯迪",
-        ["mapname"] = "时光城"
+        ["name"] = "Resident Kaidi",
+        ["mapname"] = "Time and Space City"
     },
     [439] = {
         ["propid"] = 0,
@@ -5264,8 +5264,8 @@
         ["npcid"] = 265,
         ["tbxid"] = 900103,
         ["coordinates"] = "528,1426",
-        ["name"] = "居民芭藤",
-        ["mapname"] = "时光城"
+        ["name"] = "Resident Patten",
+        ["mapname"] = "Time and Space City"
     },
     [440] = {
         ["propid"] = 0,
@@ -5276,8 +5276,8 @@
         ["npcid"] = 266,
         ["tbxid"] = 900104,
         ["coordinates"] = "1029,767",
-        ["name"] = "居民海德赛",
-        ["mapname"] = "时光城"
+        ["name"] = "Resident Sanhyde",
+        ["mapname"] = "Time and Space City"
     },
     [441] = {
         ["propid"] = 0,
@@ -5288,8 +5288,8 @@
         ["npcid"] = 267,
         ["tbxid"] = 900105,
         ["coordinates"] = "192,678",
-        ["name"] = "居民芎茨",
-        ["mapname"] = "时光城"
+        ["name"] = "Resident Qiong Cii",
+        ["mapname"] = "Time and Space City"
     },
     [442] = {
         ["propid"] = 0,
@@ -5300,8 +5300,8 @@
         ["npcid"] = 268,
         ["tbxid"] = 900106,
         ["coordinates"] = "417,482",
-        ["name"] = "居民饼干",
-        ["mapname"] = "时光城"
+        ["name"] = "Resident Binggan",
+        ["mapname"] = "Time and Space City"
     },
     [443] = {
         ["propid"] = 0,
@@ -5312,8 +5312,8 @@
         ["npcid"] = 269,
         ["tbxid"] = 900107,
         ["coordinates"] = "688,624",
-        ["name"] = "小沙弥",
-        ["mapname"] = "时光城"
+        ["name"] = "Kid buddist",
+        ["mapname"] = "Time and Space City"
     },
     [444] = {
         ["propid"] = 0,
@@ -5324,8 +5324,8 @@
         ["npcid"] = 270,
         ["tbxid"] = 900108,
         ["coordinates"] = "1388,1059",
-        ["name"] = "胶囊公司员工",
-        ["mapname"] = "时光城"
+        ["name"] = "Capsule company employer",
+        ["mapname"] = "Time and Space City"
     },
     [445] = {
         ["propid"] = 0,
@@ -5336,8 +5336,8 @@
         ["npcid"] = 271,
         ["tbxid"] = 900109,
         ["coordinates"] = "686,481",
-        ["name"] = "居民斯库鲁",
-        ["mapname"] = "时光城"
+        ["name"] = "Resident Skuru",
+        ["mapname"] = "Time and Space City"
     },
     [446] = {
         ["propid"] = 0,
@@ -5348,8 +5348,8 @@
         ["npcid"] = 272,
         ["tbxid"] = 900110,
         ["coordinates"] = "638,1260",
-        ["name"] = "居民康乃信",
-        ["mapname"] = "时光城"
+        ["name"] = "Resident Connie",
+        ["mapname"] = "Time and Space City"
     },
     [447] = {
         ["propid"] = 0,
@@ -5360,8 +5360,8 @@
         ["npcid"] = 273,
         ["tbxid"] = 900111,
         ["coordinates"] = "1348,995",
-        ["name"] = "胶囊公司员工",
-        ["mapname"] = "时光城"
+        ["name"] = "Capsule company employer",
+        ["mapname"] = "Time and Space City"
     },
     [448] = {
         ["propid"] = 0,
@@ -5372,8 +5372,8 @@
         ["npcid"] = 274,
         ["tbxid"] = 900112,
         ["coordinates"] = "793,1300",
-        ["name"] = "居民韦德",
-        ["mapname"] = "时光城"
+        ["name"] = "Resident Wade",
+        ["mapname"] = "Time and Space City"
     },
     [449] = {
         ["propid"] = 0,
@@ -5384,8 +5384,8 @@
         ["npcid"] = 2131,
         ["tbxid"] = 900113,
         ["coordinates"] = "975,1162",
-        ["name"] = "活动任务管理员",
-        ["mapname"] = "时光城"
+        ["name"] = "Event quest manager",
+        ["mapname"] = "Time and Space City"
     },
     [450] = {
         ["propid"] = 0,
@@ -5396,8 +5396,8 @@
         ["npcid"] = 2121,
         ["tbxid"] = 900114,
         ["coordinates"] = "1995,1020",
-        ["name"] = "答题机器人",
-        ["mapname"] = "撒旦市"
+        ["name"] = "Quiz bot",
+        ["mapname"] = "Satan City"
     },
     [451] = {
         ["propid"] = 0,
@@ -5408,8 +5408,8 @@
         ["npcid"] = 2126,
         ["tbxid"] = 900115,
         ["coordinates"] = "1287,383",
-        ["name"] = "家族战管理员",
-        ["mapname"] = "时空城"
+        ["name"] = "Guild war manager",
+        ["mapname"] = "Time and space city"
     },
     [452] = {
         ["propid"] = 0,
@@ -5420,8 +5420,8 @@
         ["npcid"] = 2132,
         ["tbxid"] = 900116,
         ["coordinates"] = "875,770",
-        ["name"] = "技能升级大师",
-        ["mapname"] = "时空城"
+        ["name"] = "Skill upgrade master",
+        ["mapname"] = "Time and space city"
     }
 }
 

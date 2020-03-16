@@ -1,6 +1,6 @@
 ["datas"] = {
     [1] = {
-        ["showname"] = "角色",
+        ["showname"] = "Character",
         ["keycode"] = "C",
         ["id"] = 1,
         ["tbxid"] = 1,
@@ -9,7 +9,7 @@
         ["type"] = 1
     },
     [2] = {
-        ["showname"] = "技能",
+        ["showname"] = "Skill",
         ["keycode"] = "K",
         ["id"] = 2,
         ["tbxid"] = 2,
@@ -18,7 +18,7 @@
         ["type"] = 1
     },
     [3] = {
-        ["showname"] = "英雄",
+        ["showname"] = "Hero",
         ["keycode"] = "P",
         ["id"] = 3,
         ["tbxid"] = 3,
@@ -27,7 +27,7 @@
         ["type"] = 1
     },
     [4] = {
-        ["showname"] = "背包",
+        ["showname"] = "Inventory",
         ["keycode"] = "B",
         ["id"] = 4,
         ["tbxid"] = 4,
@@ -36,7 +36,7 @@
         ["type"] = 1
     },
     [5] = {
-        ["showname"] = "任务",
+        ["showname"] = "Quest",
         ["keycode"] = "L",
         ["id"] = 5,
         ["tbxid"] = 5,
@@ -45,7 +45,7 @@
         ["type"] = 1
     },
     [6] = {
-        ["showname"] = "基因",
+        ["showname"] = "Genetics",
         ["keycode"] = "G",
         ["id"] = 6,
         ["tbxid"] = 6,
@@ -54,7 +54,7 @@
         ["type"] = 1
     },
     [7] = {
-        ["showname"] = "比武",
+        ["showname"] = "Competition",
         ["keycode"] = "U",
         ["id"] = 7,
         ["tbxid"] = 7,
@@ -63,7 +63,7 @@
         ["type"] = 1
     },
     [8] = {
-        ["showname"] = "好友",
+        ["showname"] = "friend",
         ["keycode"] = "J",
         ["id"] = 8,
         ["tbxid"] = 8,
@@ -72,7 +72,7 @@
         ["type"] = 1
     },
     [9] = {
-        ["showname"] = "家族",
+        ["showname"] = "Guild",
         ["keycode"] = "O",
         ["id"] = 9,
         ["tbxid"] = 9,
@@ -81,7 +81,7 @@
         ["type"] = 1
     },
     [10] = {
-        ["showname"] = "地图",
+        ["showname"] = "Map",
         ["keycode"] = "M",
         ["id"] = 10,
         ["tbxid"] = 10,
@@ -90,7 +90,7 @@
         ["type"] = 1
     },
     [11] = {
-        ["showname"] = "自动战斗",
+        ["showname"] = "Auto Fight",
         ["keycode"] = "Z",
         ["id"] = 11,
         ["tbxid"] = 11,
@@ -99,7 +99,7 @@
         ["type"] = 1
     },
     [12] = {
-        ["showname"] = "邮件",
+        ["showname"] = "Mail",
         ["keycode"] = "E",
         ["id"] = 12,
         ["tbxid"] = 12,
@@ -108,7 +108,7 @@
         ["type"] = 1
     },
     [13] = {
-        ["showname"] = "向前移动",
+        ["showname"] = "Move forward",
         ["keycode"] = "W",
         ["id"] = 13,
         ["tbxid"] = 13,
@@ -117,7 +117,7 @@
         ["type"] = 2
     },
     [14] = {
-        ["showname"] = "向后移动",
+        ["showname"] = "Move backward",
         ["keycode"] = "S",
         ["id"] = 14,
         ["tbxid"] = 14,
@@ -126,7 +126,7 @@
         ["type"] = 2
     },
     [15] = {
-        ["showname"] = "向左移动",
+        ["showname"] = "Move left",
         ["keycode"] = "A",
         ["id"] = 15,
         ["tbxid"] = 15,
@@ -135,7 +135,7 @@
         ["type"] = 2
     },
     [16] = {
-        ["showname"] = "向右移动",
+        ["showname"] = "Move right",
         ["keycode"] = "D",
         ["id"] = 16,
         ["tbxid"] = 16,
@@ -144,7 +144,7 @@
         ["type"] = 2
     },
     [17] = {
-        ["showname"] = "跳跃",
+        ["showname"] = "Jump",
         ["keycode"] = "Space",
         ["id"] = 17,
         ["tbxid"] = 17,
@@ -153,7 +153,7 @@
         ["type"] = 2
     },
     [18] = {
-        ["showname"] = "切换目标",
+        ["showname"] = "Switch target",
         ["keycode"] = "Tab",
         ["id"] = 18,
         ["tbxid"] = 18,
@@ -162,7 +162,7 @@
         ["type"] = 2
     },
     [19] = {
-        ["showname"] = "选中队友1",
+        ["showname"] = "Select party member1",
         ["keycode"] = "LeftShift+Alpha1",
         ["id"] = 19,
         ["tbxid"] = 19,
@@ -171,7 +171,7 @@
         ["type"] = 2
     },
     [20] = {
-        ["showname"] = "选中队友2",
+        ["showname"] = "Select party member2",
         ["keycode"] = "LeftShift+Alpha2",
         ["id"] = 20,
         ["tbxid"] = 20,
@@ -180,7 +180,7 @@
         ["type"] = 2
     },
     [21] = {
-        ["showname"] = "选中队友3",
+        ["showname"] = "Select party member3",
         ["keycode"] = "LeftShift+Alpha3",
         ["id"] = 21,
         ["tbxid"] = 21,
@@ -189,7 +189,7 @@
         ["type"] = 2
     },
     [22] = {
-        ["showname"] = "选中队友4",
+        ["showname"] = "Select party member4",
         ["keycode"] = "LeftShift+Alpha4",
         ["id"] = 22,
         ["tbxid"] = 22,
@@ -198,7 +198,7 @@
         ["type"] = 2
     },
     [23] = {
-        ["showname"] = "拾取物品",
+        ["showname"] = "Pick up items",
         ["keycode"] = "BackQuote",
         ["id"] = 23,
         ["tbxid"] = 23,
@@ -207,7 +207,7 @@
         ["type"] = 2
     },
     [24] = {
-        ["showname"] = "技能快捷栏1",
+        ["showname"] = "Skill shortcut 1",
         ["keycode"] = "Alpha1",
         ["id"] = 24,
         ["tbxid"] = 24,
@@ -216,7 +216,7 @@
         ["type"] = 3
     },
     [25] = {
-        ["showname"] = "技能快捷栏2",
+        ["showname"] = "Skill shortcut 2",
         ["keycode"] = "Alpha2",
         ["id"] = 25,
         ["tbxid"] = 25,
@@ -225,7 +225,7 @@
         ["type"] = 3
     },
     [26] = {
-        ["showname"] = "技能快捷栏3",
+        ["showname"] = "Skill shortcut 3",
         ["keycode"] = "Alpha3",
         ["id"] = 26,
         ["tbxid"] = 26,
@@ -234,7 +234,7 @@
         ["type"] = 3
     },
     [27] = {
-        ["showname"] = "技能快捷栏4",
+        ["showname"] = "Skill shortcut 4",
         ["keycode"] = "Alpha4",
         ["id"] = 27,
         ["tbxid"] = 27,
@@ -243,7 +243,7 @@
         ["type"] = 3
     },
     [28] = {
-        ["showname"] = "技能快捷栏5",
+        ["showname"] = "Skill shortcut 5",
         ["keycode"] = "Alpha5",
         ["id"] = 28,
         ["tbxid"] = 28,
@@ -252,7 +252,7 @@
         ["type"] = 3
     },
     [29] = {
-        ["showname"] = "技能快捷栏6",
+        ["showname"] = "Skill shortcut 6",
         ["keycode"] = "Alpha6",
         ["id"] = 29,
         ["tbxid"] = 29,
@@ -261,7 +261,7 @@
         ["type"] = 3
     },
     [30] = {
-        ["showname"] = "技能快捷栏7",
+        ["showname"] = "Skill shortcut 7",
         ["keycode"] = "Alpha7",
         ["id"] = 30,
         ["tbxid"] = 30,
@@ -270,7 +270,7 @@
         ["type"] = 3
     },
     [31] = {
-        ["showname"] = "技能快捷栏8",
+        ["showname"] = "Skill shortcut 8",
         ["keycode"] = "Alpha8",
         ["id"] = 31,
         ["tbxid"] = 31,
@@ -279,7 +279,7 @@
         ["type"] = 3
     },
     [32] = {
-        ["showname"] = "技能快捷栏9",
+        ["showname"] = "Skill shortcut 9",
         ["keycode"] = "Alpha9",
         ["id"] = 32,
         ["tbxid"] = 32,
@@ -288,16 +288,16 @@
         ["type"] = 3
     },
     [33] = {
-        ["showname"] = "技能快捷栏10",
+        ["showname"] = "Skill shortcut 10",
         ["keycode"] = "Alpha0",
         ["id"] = 33,
-        ["tbxid"] = 33,
+        ["tbxid"] = 3,
         ["keytriggertype"] = 0,
         ["funname"] = "ExtendSkill_10",
         ["type"] = 3
     },
     [34] = {
-        ["showname"] = "技能快捷栏11",
+        ["showname"] = "Skill shortcut 11",
         ["keycode"] = "Minus",
         ["id"] = 34,
         ["tbxid"] = 34,
@@ -306,7 +306,7 @@
         ["type"] = 3
     },
     [35] = {
-        ["showname"] = "技能快捷栏12",
+        ["showname"] = "Skill shortcut 12",
         ["keycode"] = "Equals",
         ["id"] = 35,
         ["tbxid"] = 35,
@@ -315,7 +315,7 @@
         ["type"] = 3
     },
     [36] = {
-        ["showname"] = "物品快捷栏1-1",
+        ["showname"] = "Item shortcut1-1",
         ["keycode"] = "F1",
         ["id"] = 36,
         ["tbxid"] = 36,
@@ -324,7 +324,7 @@
         ["type"] = 4
     },
     [37] = {
-        ["showname"] = "物品快捷栏1-2",
+        ["showname"] = "Item shortcut1-2",
         ["keycode"] = "F2",
         ["id"] = 37,
         ["tbxid"] = 37,
@@ -333,7 +333,7 @@
         ["type"] = 4
     },
     [38] = {
-        ["showname"] = "物品快捷栏1-3",
+        ["showname"] = "Item shortcut1-3",
         ["keycode"] = "F3",
         ["id"] = 38,
         ["tbxid"] = 38,
@@ -342,7 +342,7 @@
         ["type"] = 4
     },
     [39] = {
-        ["showname"] = "物品快捷栏1-4",
+        ["showname"] = "Item shortcut1-4",
         ["keycode"] = "F4",
         ["id"] = 39,
         ["tbxid"] = 39,
@@ -351,7 +351,7 @@
         ["type"] = 4
     },
     [40] = {
-        ["showname"] = "物品快捷栏1-5",
+        ["showname"] = "Item shortcut1-5",
         ["keycode"] = "F5",
         ["id"] = 40,
         ["tbxid"] = 40,
@@ -360,7 +360,7 @@
         ["type"] = 4
     },
     [41] = {
-        ["showname"] = "物品快捷栏1-6",
+        ["showname"] = "Item shortcut1-6",
         ["keycode"] = "F6",
         ["id"] = 41,
         ["tbxid"] = 41,
@@ -369,7 +369,7 @@
         ["type"] = 4
     },
     [42] = {
-        ["showname"] = "物品快捷栏1-7",
+        ["showname"] = "Item shortcut1-7",
         ["keycode"] = "F7",
         ["id"] = 42,
         ["tbxid"] = 42,
@@ -378,7 +378,7 @@
         ["type"] = 4
     },
     [43] = {
-        ["showname"] = "物品快捷栏1-8",
+        ["showname"] = "Item shortcut1-8",
         ["keycode"] = "F8",
         ["id"] = 43,
         ["tbxid"] = 43,
@@ -387,7 +387,7 @@
         ["type"] = 4
     },
     [44] = {
-        ["showname"] = "物品快捷栏1-9",
+        ["showname"] = "Item shortcut1-9",
         ["keycode"] = "F9",
         ["id"] = 44,
         ["tbxid"] = 44,
@@ -396,7 +396,7 @@
         ["type"] = 4
     },
     [45] = {
-        ["showname"] = "物品快捷栏1-10",
+        ["showname"] = "Item shortcut1-10",
         ["keycode"] = "F10",
         ["id"] = 45,
         ["tbxid"] = 45,
@@ -405,7 +405,7 @@
         ["type"] = 4
     },
     [46] = {
-        ["showname"] = "物品快捷栏1-11",
+        ["showname"] = "Item shortcut1-11",
         ["keycode"] = "F11",
         ["id"] = 46,
         ["tbxid"] = 46,
@@ -414,7 +414,7 @@
         ["type"] = 4
     },
     [47] = {
-        ["showname"] = "物品快捷栏1-12",
+        ["showname"] = "Item shortcut1-12",
         ["keycode"] = "F12",
         ["id"] = 47,
         ["tbxid"] = 47,
@@ -423,7 +423,7 @@
         ["type"] = 4
     },
     [48] = {
-        ["showname"] = "物品快捷栏2-1",
+        ["showname"] = "Item shortcut2-1",
         ["keycode"] = "",
         ["id"] = 48,
         ["tbxid"] = 48,
@@ -432,7 +432,7 @@
         ["type"] = 4
     },
     [49] = {
-        ["showname"] = "物品快捷栏2-2",
+        ["showname"] = "Item shortcut2-2",
         ["keycode"] = "",
         ["id"] = 49,
         ["tbxid"] = 49,
@@ -441,7 +441,7 @@
         ["type"] = 4
     },
     [50] = {
-        ["showname"] = "物品快捷栏2-3",
+        ["showname"] = "Item shortcut2-3",
         ["keycode"] = "",
         ["id"] = 50,
         ["tbxid"] = 50,
@@ -450,7 +450,7 @@
         ["type"] = 4
     },
     [51] = {
-        ["showname"] = "物品快捷栏2-4",
+        ["showname"] = "Item shortcut2-4",
         ["keycode"] = "",
         ["id"] = 51,
         ["tbxid"] = 51,
@@ -459,7 +459,7 @@
         ["type"] = 4
     },
     [52] = {
-        ["showname"] = "物品快捷栏2-5",
+        ["showname"] = "Item shortcut2-5",
         ["keycode"] = "",
         ["id"] = 52,
         ["tbxid"] = 52,
@@ -468,7 +468,7 @@
         ["type"] = 4
     },
     [53] = {
-        ["showname"] = "物品快捷栏2-6",
+        ["showname"] = "Item shortcut2-6",
         ["keycode"] = "",
         ["id"] = 53,
         ["tbxid"] = 53,
@@ -477,7 +477,7 @@
         ["type"] = 4
     },
     [54] = {
-        ["showname"] = "物品快捷栏2-7",
+        ["showname"] = "Item shortcut2-7",
         ["keycode"] = "",
         ["id"] = 54,
         ["tbxid"] = 54,
@@ -486,7 +486,7 @@
         ["type"] = 4
     },
     [55] = {
-        ["showname"] = "物品快捷栏2-8",
+        ["showname"] = "Item shortcut2-8",
         ["keycode"] = "",
         ["id"] = 55,
         ["tbxid"] = 55,
@@ -495,7 +495,7 @@
         ["type"] = 4
     },
     [56] = {
-        ["showname"] = "物品快捷栏2-9",
+        ["showname"] = "Item shortcut2-9",
         ["keycode"] = "",
         ["id"] = 56,
         ["tbxid"] = 56,
@@ -504,7 +504,7 @@
         ["type"] = 4
     },
     [57] = {
-        ["showname"] = "物品快捷栏2-10",
+        ["showname"] = "Item shortcut2-10",
         ["keycode"] = "",
         ["id"] = 57,
         ["tbxid"] = 57,
@@ -513,7 +513,7 @@
         ["type"] = 4
     },
     [58] = {
-        ["showname"] = "物品快捷栏2-11",
+        ["showname"] = "Item shortcut2-11",
         ["keycode"] = "",
         ["id"] = 58,
         ["tbxid"] = 58,
@@ -522,7 +522,7 @@
         ["type"] = 4
     },
     [59] = {
-        ["showname"] = "物品快捷栏2-12",
+        ["showname"] = "Item shortcut2-12",
         ["keycode"] = "",
         ["id"] = 59,
         ["tbxid"] = 59,
@@ -531,7 +531,7 @@
         ["type"] = 4
     },
     [60] = {
-        ["showname"] = "物品快捷栏3-1",
+        ["showname"] = "Item shortcut3-1",
         ["keycode"] = "",
         ["id"] = 60,
         ["tbxid"] = 60,
@@ -540,7 +540,7 @@
         ["type"] = 4
     },
     [61] = {
-        ["showname"] = "物品快捷栏3-2",
+        ["showname"] = "Item shortcut3-2",
         ["keycode"] = "",
         ["id"] = 61,
         ["tbxid"] = 61,
@@ -549,7 +549,7 @@
         ["type"] = 4
     },
     [62] = {
-        ["showname"] = "物品快捷栏3-3",
+        ["showname"] = "Item shortcut3-3",
         ["keycode"] = "",
         ["id"] = 62,
         ["tbxid"] = 62,
@@ -558,7 +558,7 @@
         ["type"] = 4
     },
     [63] = {
-        ["showname"] = "物品快捷栏3-4",
+        ["showname"] = "Item shortcut3-4",
         ["keycode"] = "",
         ["id"] = 63,
         ["tbxid"] = 63,
@@ -567,7 +567,7 @@
         ["type"] = 4
     },
     [64] = {
-        ["showname"] = "物品快捷栏3-5",
+        ["showname"] = "Item shortcut3-5",
         ["keycode"] = "",
         ["id"] = 64,
         ["tbxid"] = 64,
@@ -576,7 +576,7 @@
         ["type"] = 4
     },
     [65] = {
-        ["showname"] = "物品快捷栏3-6",
+        ["showname"] = "Item shortcut3-6",
         ["keycode"] = "",
         ["id"] = 65,
         ["tbxid"] = 65,
@@ -585,7 +585,7 @@
         ["type"] = 4
     },
     [66] = {
-        ["showname"] = "物品快捷栏3-7",
+        ["showname"] = "Item shortcut3-7",
         ["keycode"] = "",
         ["id"] = 66,
         ["tbxid"] = 66,
@@ -594,7 +594,7 @@
         ["type"] = 4
     },
     [67] = {
-        ["showname"] = "物品快捷栏3-8",
+        ["showname"] = "Item shortcut3-8",
         ["keycode"] = "",
         ["id"] = 67,
         ["tbxid"] = 67,
@@ -603,7 +603,7 @@
         ["type"] = 4
     },
     [68] = {
-        ["showname"] = "物品快捷栏3-9",
+        ["showname"] = "Item shortcut3-9",
         ["keycode"] = "",
         ["id"] = 68,
         ["tbxid"] = 68,
@@ -612,7 +612,7 @@
         ["type"] = 4
     },
     [69] = {
-        ["showname"] = "物品快捷栏3-10",
+        ["showname"] = "Item shortcut3-10",
         ["keycode"] = "",
         ["id"] = 69,
         ["tbxid"] = 69,
@@ -621,7 +621,7 @@
         ["type"] = 4
     },
     [70] = {
-        ["showname"] = "物品快捷栏3-11",
+        ["showname"] = "Item shortcut3-11",
         ["keycode"] = "",
         ["id"] = 70,
         ["tbxid"] = 70,
@@ -630,7 +630,7 @@
         ["type"] = 4
     },
     [71] = {
-        ["showname"] = "物品快捷栏3-12",
+        ["showname"] = "Item shortcut3-12",
         ["keycode"] = "",
         ["id"] = 71,
         ["tbxid"] = 71,

@@ -8,7 +8,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 1,
-        ["notice"] = "{0}数量不足",
+        ["notice"] = "{0}Insufficient quantity",
         ["id"] = 1,
         ["tips"] = ""
     },
@@ -21,7 +21,7 @@
         ["rightsys"] = 1,
         ["showchat"] = 1,
         ["tbxid"] = 2,
-        ["notice"] = "获得：{0}",
+        ["notice"] = "Receive：{0}",
         ["id"] = 2,
         ["tips"] = ""
     },
@@ -34,7 +34,7 @@
         ["rightsys"] = 1,
         ["showchat"] = 1,
         ["tbxid"] = 3,
-        ["notice"] = "获得：{0}x{1}",
+        ["notice"] = "Receive：{0}x{1}",
         ["id"] = 3,
         ["tips"] = ""
     },
@@ -49,7 +49,7 @@
         ["tbxid"] = 4,
         ["notice"] = "",
         ["id"] = 4,
-        ["tips"] = "包裹已满，请尽快清理"
+        ["tips"] = "Your inventory is full, please clean it up as soon as possible"
     },
     [5] = {
         ["showtype"] = 3,
@@ -60,7 +60,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 5,
-        ["notice"] = "{0}数量已达上限，不能继续获得！",
+        ["notice"] = "{0}You've already reached the maximum limited and can't be continued!",
         ["id"] = 5,
         ["tips"] = ""
     },
@@ -75,7 +75,7 @@
         ["tbxid"] = 6,
         ["notice"] = "",
         ["id"] = 6,
-        ["tips"] = "无法寻路到该目标！"
+        ["tips"] = "Can't find a target!"
     },
     [7] = {
         ["showtype"] = 3,
@@ -88,7 +88,7 @@
         ["tbxid"] = 7,
         ["notice"] = "",
         ["id"] = 7,
-        ["tips"] = "本日经验获取已达上限！"
+        ["tips"] = "Today’s experience has reached the upper limit!"
     },
     [8] = {
         ["showtype"] = 3,
@@ -101,7 +101,7 @@
         ["tbxid"] = 8,
         ["notice"] = "",
         ["id"] = 8,
-        ["tips"] = "购买次数用完!"
+        ["tips"] = "The number of purchases run out!"
     },
     [9] = {
         ["showtype"] = 3,
@@ -112,7 +112,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 9,
-        ["notice"] = "每次最多购买{0}个",
+        ["notice"] = "Buy at most {0} each time",
         ["id"] = 9,
         ["tips"] = ""
     },
@@ -127,7 +127,7 @@
         ["tbxid"] = 10,
         ["notice"] = "",
         ["id"] = 10,
-        ["tips"] = "超过限购数量"
+        ["tips"] = "You've exceeded the quantity limit of purchases"
     },
     [11] = {
         ["showtype"] = 3,
@@ -140,7 +140,7 @@
         ["tbxid"] = 11,
         ["notice"] = "",
         ["id"] = 11,
-        ["tips"] = "等级不足！"
+        ["tips"] = "Not enough level!"
     },
     [12] = {
         ["showtype"] = 3,
@@ -153,7 +153,7 @@
         ["tbxid"] = 12,
         ["notice"] = "",
         ["id"] = 12,
-        ["tips"] = "已经达到最高等级！"
+        ["tips"] = "You've reached the highest level!"
     },
     [13] = {
         ["showtype"] = 2,
@@ -166,7 +166,7 @@
         ["tbxid"] = 13,
         ["notice"] = "",
         ["id"] = 13,
-        ["tips"] = "欢迎来到龙珠世界，获得英雄参加武道会吧"
+        ["tips"] = "Welcome to the world of Dragon Ball, pick a hero to participate in Budokai"
     },
     [14] = {
         ["showtype"] = 3,
@@ -179,7 +179,7 @@
         ["tbxid"] = 14,
         ["notice"] = "",
         ["id"] = 14,
-        ["tips"] = "未知错误"
+        ["tips"] = "Unknown error"
     },
     [15] = {
         ["showtype"] = 3,
@@ -192,7 +192,7 @@
         ["tbxid"] = 15,
         ["notice"] = "",
         ["id"] = 15,
-        ["tips"] = "该地点无法进行自动寻路"
+        ["tips"] = "The location cannot be automatically tracked"
     },
     [16] = {
         ["showtype"] = 3,
@@ -205,7 +205,7 @@
         ["tbxid"] = 16,
         ["notice"] = "",
         ["id"] = 16,
-        ["tips"] = "数量不足，不能合成"
+        ["tips"] = "Insufficient quantity, cannot be synthesized"
     },
     [17] = {
         ["showtype"] = 3,
@@ -218,7 +218,7 @@
         ["tbxid"] = 17,
         ["notice"] = "",
         ["id"] = 17,
-        ["tips"] = "固定视角不能调整视角"
+        ["tips"] = "The fixed viewing angle can't be adjusted"
     },
     [18] = {
         ["showtype"] = 3,
@@ -231,7 +231,7 @@
         ["tbxid"] = 18,
         ["notice"] = "",
         ["id"] = 18,
-        ["tips"] = "追踪目标时不能调整视角俯仰角和角度"
+        ["tips"] = "The angle of view can't be adjusted while tracking the target"
     },
     [19] = {
         ["showtype"] = 3,
@@ -244,7 +244,7 @@
         ["tbxid"] = 19,
         ["notice"] = "",
         ["id"] = 19,
-        ["tips"] = "已经是最小数量了"
+        ["tips"] = "That's already the minimum quantity"
     },
     [20] = {
         ["showtype"] = 3,
@@ -257,7 +257,7 @@
         ["tbxid"] = 20,
         ["notice"] = "",
         ["id"] = 20,
-        ["tips"] = "已经是最大数量了"
+        ["tips"] = "That's already the maximum quantity"
     },
     [21] = {
         ["showtype"] = 3,
@@ -270,7 +270,7 @@
         ["tbxid"] = 21,
         ["notice"] = "",
         ["id"] = 21,
-        ["tips"] = "该道具不可出售"
+        ["tips"] = "This item is not for sale."
     },
     [22] = {
         ["showtype"] = 2,
@@ -283,7 +283,7 @@
         ["tbxid"] = 22,
         ["notice"] = "",
         ["id"] = 22,
-        ["tips"] = "你要去的地方过于神秘，请找传送师帮忙！"
+        ["tips"] = "The place you're heading to is too mysterious, please ask the teleporter for some help!"
     },
     [23] = {
         ["showtype"] = 2,
@@ -296,7 +296,7 @@
         ["tbxid"] = 23,
         ["notice"] = "",
         ["id"] = 23,
-        ["tips"] = "请就近找传送师帮忙。"
+        ["tips"] = "Please, ask the teleporter for some help."
     },
     [24] = {
         ["showtype"] = 0,
@@ -307,9 +307,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 24,
-        ["notice"] = "在防沉迷阶段无法获取任务奖励，请尽快前往官网完善您的用户信息！",
+        ["notice"] = "You can't get the quest reward in the stage, please go to the official website to improve your user information as soon as possible!",
         ["id"] = 24,
-        ["tips"] = "在防沉迷阶段无法获取任务奖励，请尽快前往官网完善您的用户信息！"
+        ["tips"] = "You can't get the quest reward in the stage, please go to the official website to improve your user information as soon as possible!"
     },
     [25] = {
         ["showtype"] = 0,
@@ -320,9 +320,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 25,
-        ["notice"] = "每周四、周五的下午3:00将进行家族战，请广大玩家前往时空城的家族战管理员处报名参与！奖励丰厚！",
+        ["notice"] = "Every thursday and Friday the guild wars will start at 3 pm, please ask your guildmates to sign up from the guild warfare administrator in the Time and Space City and get wonderful rewards!",
         ["id"] = 25,
-        ["tips"] = "每周四、周五的下午3:00将进行家族战，请广大玩家前往时空城的家族战管理员处报名参与！奖励丰厚！"
+        ["tips"] = "Every thursday and Friday the guild wars will start at 3 pm, please ask your guildmates to sign up from the guild warfare administrator in the Time and Space City and get wonderful rewards!"
     },
     [26] = {
         ["showtype"] = 0,
@@ -333,9 +333,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 26,
-        ["notice"] = "每晚19:00至19:30可以在中心都市的答题机器人处进行答题活动，在周末的复试和终试中表现良好的玩家将获得丰厚的奖励！",
+        ["notice"] = "Every night from 19:00 to 19:30 Beijing time zone, you can answer questions at Mr. Satan's quiz bot. Players who perform well during the weeked will receive a generous reward!",
         ["id"] = 26,
-        ["tips"] = "每晚19:00至19:30可以在中心都市的答题机器人处进行答题活动，在周末的复试和终试中表现良好的玩家将获得丰厚的奖励！"
+        ["tips"] = "Every night from 19:00 to 19:30 Beijing time zone, you can answer questions at Mr. Satan's quiz bot. Players who perform well during the weeked will receive a generous reward!"
     },
     [27] = {
         ["showtype"] = 0,
@@ -346,9 +346,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 27,
-        ["notice"] = "家族战还有30分钟就可以报名了，请广大玩家做好准备！",
+        ["notice"] = "Guild wars can be registred in 30 min, please prepare your forces!",
         ["id"] = 27,
-        ["tips"] = "家族战还有30分钟就可以报名了，请广大玩家做好准备！"
+        ["tips"] = "Guild wars can be registred in 30 min, please prepare your forces!"
     },
     [28] = {
         ["showtype"] = 0,
@@ -359,9 +359,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 28,
-        ["notice"] = "每周四、周五的下午3:00将进行家族战，请广大玩家前往时空城的家族战管理员处报名参与！奖励丰厚！",
+        ["notice"] = "Every thursday and friday 3:00 PM will be the fight for the guild, please ask the guild members to sign up for the guild warfare administrator at Time and Space City! You'll get great rewards!",
         ["id"] = 28,
-        ["tips"] = "每周四、周五的下午3:00将进行家族战，请广大玩家前往时空城的家族战管理员处报名参与！奖励丰厚！"
+        ["tips"] = "Every thursday、and friday 3:00 PM will be the fight for the guild, please ask the guild members to sign up for the guild warfare administrator at Time and Space City! You'll get great rewards!"
     },
     [29] = {
         ["showtype"] = 3,
@@ -374,7 +374,7 @@
         ["tbxid"] = 301,
         ["notice"] = "",
         ["id"] = 301,
-        ["tips"] = "版本错误"
+        ["tips"] = "Version error"
     },
     [30] = {
         ["showtype"] = 3,
@@ -387,7 +387,7 @@
         ["tbxid"] = 302,
         ["notice"] = "",
         ["id"] = 302,
-        ["tips"] = "UUID登陆方式没有实现"
+        ["tips"] = "Smart UUID log in method has not been implemented"
     },
     [31] = {
         ["showtype"] = 3,
@@ -400,7 +400,7 @@
         ["tbxid"] = 303,
         ["notice"] = "",
         ["id"] = 303,
-        ["tips"] = "数据库出错"
+        ["tips"] = "Database error"
     },
     [32] = {
         ["showtype"] = 3,
@@ -413,7 +413,7 @@
         ["tbxid"] = 304,
         ["notice"] = "",
         ["id"] = 304,
-        ["tips"] = "账号密码错误"
+        ["tips"] = "Wrong user or password"
     },
     [33] = {
         ["showtype"] = 3,
@@ -426,7 +426,7 @@
         ["tbxid"] = 305,
         ["notice"] = "",
         ["id"] = 305,
-        ["tips"] = "修改密码成功"
+        ["tips"] = "Password has been updated"
     },
     [34] = {
         ["showtype"] = 3,
@@ -439,7 +439,7 @@
         ["tbxid"] = 306,
         ["notice"] = "",
         ["id"] = 306,
-        ["tips"] = "账号正在被使用中，请重新选择"
+        ["tips"] = "The account is being used, please refresh"
     },
     [35] = {
         ["showtype"] = 3,
@@ -452,7 +452,7 @@
         ["tbxid"] = 307,
         ["notice"] = "",
         ["id"] = 307,
-        ["tips"] = "账号被封"
+        ["tips"] = "Your account has been banned"
     },
     [36] = {
         ["showtype"] = 3,
@@ -465,7 +465,7 @@
         ["tbxid"] = 308,
         ["notice"] = "",
         ["id"] = 308,
-        ["tips"] = "网关服务器未开"
+        ["tips"] = "Gateway server is not open"
     },
     [37] = {
         ["showtype"] = 3,
@@ -478,7 +478,7 @@
         ["tbxid"] = 309,
         ["notice"] = "",
         ["id"] = 309,
-        ["tips"] = "用户满"
+        ["tips"] = "User is already full"
     },
     [38] = {
         ["showtype"] = 3,
@@ -491,7 +491,7 @@
         ["tbxid"] = 310,
         ["notice"] = "",
         ["id"] = 310,
-        ["tips"] = "账号已经存在"
+        ["tips"] = "Account is already in use"
     },
     [39] = {
         ["showtype"] = 3,
@@ -504,7 +504,7 @@
         ["tbxid"] = 311,
         ["notice"] = "",
         ["id"] = 311,
-        ["tips"] = "注册账号成功"
+        ["tips"] = "Account registration successful"
     },
     [40] = {
         ["showtype"] = 3,
@@ -517,7 +517,7 @@
         ["tbxid"] = 312,
         ["notice"] = "",
         ["id"] = 312,
-        ["tips"] = "角色名称重复"
+        ["tips"] = "This nickname is already in use"
     },
     [41] = {
         ["showtype"] = 3,
@@ -530,7 +530,7 @@
         ["tbxid"] = 313,
         ["notice"] = "",
         ["id"] = 313,
-        ["tips"] = "用户档案不存在"
+        ["tips"] = "User doesn't exist"
     },
     [42] = {
         ["showtype"] = 3,
@@ -543,7 +543,7 @@
         ["tbxid"] = 314,
         ["notice"] = "",
         ["id"] = 314,
-        ["tips"] = "用户名重复"
+        ["tips"] = "User's name duplicate"
     },
     [43] = {
         ["showtype"] = 3,
@@ -556,7 +556,7 @@
         ["tbxid"] = 315,
         ["notice"] = "",
         ["id"] = 315,
-        ["tips"] = "连接超时"
+        ["tips"] = "Connection timed out"
     },
     [44] = {
         ["showtype"] = 3,
@@ -569,7 +569,7 @@
         ["tbxid"] = 316,
         ["notice"] = "",
         ["id"] = 316,
-        ["tips"] = "计费失败"
+        ["tips"] = "Accounting failure"
     },
     [45] = {
         ["showtype"] = 3,
@@ -582,7 +582,7 @@
         ["tbxid"] = 317,
         ["notice"] = "",
         ["id"] = 317,
-        ["tips"] = "图形验证码输入错误"
+        ["tips"] = "Graphic verification code input error"
     },
     [46] = {
         ["showtype"] = 3,
@@ -595,7 +595,7 @@
         ["tbxid"] = 318,
         ["notice"] = "",
         ["id"] = 318,
-        ["tips"] = "账号被锁定"
+        ["tips"] = "Account is locked"
     },
     [47] = {
         ["showtype"] = 3,
@@ -608,7 +608,7 @@
         ["tbxid"] = 319,
         ["notice"] = "",
         ["id"] = 319,
-        ["tips"] = "账号待激活"
+        ["tips"] = "Account needs to be activated"
     },
     [48] = {
         ["showtype"] = 3,
@@ -621,7 +621,7 @@
         ["tbxid"] = 320,
         ["notice"] = "",
         ["id"] = 320,
-        ["tips"] = "新账号不允许登入旧的游戏区"
+        ["tips"] = "New accounts are not allowed to log in to the old game area"
     },
     [49] = {
         ["showtype"] = 3,
@@ -634,7 +634,7 @@
         ["tbxid"] = 321,
         ["notice"] = "",
         ["id"] = 321,
-        ["tips"] = "登录UUID错误"
+        ["tips"] = "UUID log in error"
     },
     [50] = {
         ["showtype"] = 3,
@@ -647,7 +647,7 @@
         ["tbxid"] = 322,
         ["notice"] = "",
         ["id"] = 322,
-        ["tips"] = "角色已登录战区,不允许创建角色"
+        ["tips"] = "This class is registred in the character selection, creation of this role is not allowed"
     },
     [51] = {
         ["showtype"] = 3,
@@ -660,7 +660,7 @@
         ["tbxid"] = 323,
         ["notice"] = "",
         ["id"] = 323,
-        ["tips"] = "跨区登陆验证失败"
+        ["tips"] = "Cross-region login verification failed"
     },
     [52] = {
         ["showtype"] = 3,
@@ -673,7 +673,7 @@
         ["tbxid"] = 324,
         ["notice"] = "",
         ["id"] = 324,
-        ["tips"] = "登录矩阵卡密码错误"
+        ["tips"] = "Log in error, please use the password card to log in"
     },
     [53] = {
         ["showtype"] = 3,
@@ -686,7 +686,7 @@
         ["tbxid"] = 325,
         ["notice"] = "",
         ["id"] = 325,
-        ["tips"] = "提示玩家需要输入矩阵卡密码"
+        ["tips"] = "Prompt players need to enter the code of the password card"
     },
     [54] = {
         ["showtype"] = 3,
@@ -699,7 +699,7 @@
         ["tbxid"] = 326,
         ["notice"] = "",
         ["id"] = 326,
-        ["tips"] = "提示玩家矩阵卡被锁（六个小时后解锁）"
+        ["tips"] = "Prompt player using wrong code from password card so it's locked (unlocked after six hours)"
     },
     [55] = {
         ["showtype"] = 3,
@@ -712,7 +712,7 @@
         ["tbxid"] = 327,
         ["notice"] = "",
         ["id"] = 327,
-        ["tips"] = "与矩阵卡验证服务器失去连接"
+        ["tips"] = "Verification with password card has lost the connection to the server"
     },
     [56] = {
         ["showtype"] = 3,
@@ -725,7 +725,7 @@
         ["tbxid"] = 328,
         ["notice"] = "",
         ["id"] = 328,
-        ["tips"] = "旧账号不允许登陆新区"
+        ["tips"] = "Old account is not allowed to log in to the new site"
     },
     [57] = {
         ["showtype"] = 3,
@@ -738,7 +738,7 @@
         ["tbxid"] = 329,
         ["notice"] = "",
         ["id"] = 329,
-        ["tips"] = "图形验证连续错误3次,角色被锁定"
+        ["tips"] = "Graphic verification got 3 consecutive errors, your character has been banned"
     },
     [58] = {
         ["showtype"] = 3,
@@ -751,7 +751,7 @@
         ["tbxid"] = 330,
         ["notice"] = "",
         ["id"] = 330,
-        ["tips"] = "无法登陆开启巨人密保的账号，请关闭巨人通行证的密保后再尝试"
+        ["tips"] = "Can't log in, please head to Giant's password management, unlock your account and try again"
     },
     [59] = {
         ["showtype"] = 3,
@@ -764,7 +764,7 @@
         ["tbxid"] = 331,
         ["notice"] = "",
         ["id"] = 331,
-        ["tips"] = "与密保服务器失去连接"
+        ["tips"] = "Lost connection to the server in fail-safe mode"
     },
     [60] = {
         ["showtype"] = 3,
@@ -777,7 +777,7 @@
         ["tbxid"] = 332,
         ["notice"] = "",
         ["id"] = 332,
-        ["tips"] = "服务器繁忙"
+        ["tips"] = "Server is busy"
     },
     [61] = {
         ["showtype"] = 3,
@@ -790,7 +790,7 @@
         ["tbxid"] = 333,
         ["notice"] = "",
         ["id"] = 333,
-        ["tips"] = "账号被封停"
+        ["tips"] = "Account blocked"
     },
     [62] = {
         ["showtype"] = 3,
@@ -803,7 +803,7 @@
         ["tbxid"] = 334,
         ["notice"] = "",
         ["id"] = 334,
-        ["tips"] = "图形验证连续错误9次，角色被锁定"
+        ["tips"] = "Graphic verification got 9 continous errors, your character has been locked"
     },
     [63] = {
         ["showtype"] = 3,
@@ -816,7 +816,7 @@
         ["tbxid"] = 335,
         ["notice"] = "",
         ["id"] = 335,
-        ["tips"] = "游戏区正常维护中"
+        ["tips"] = "Game region is under maintenance"
     },
     [64] = {
         ["showtype"] = 3,
@@ -829,7 +829,7 @@
         ["tbxid"] = 336,
         ["notice"] = "",
         ["id"] = 336,
-        ["tips"] = "获取二维码失败"
+        ["tips"] = "Failed to get QR code"
     },
     [65] = {
         ["showtype"] = 3,
@@ -842,7 +842,7 @@
         ["tbxid"] = 337,
         ["notice"] = "",
         ["id"] = 337,
-        ["tips"] = "二维码服务不可用,请输入账号密码登陆"
+        ["tips"] = "QR code service is not available, please enter the account password to login"
     },
     [66] = {
         ["showtype"] = 3,
@@ -855,7 +855,7 @@
         ["tbxid"] = 338,
         ["notice"] = "",
         ["id"] = 338,
-        ["tips"] = "token验证失败"
+        ["tips"] = "Token verification failed"
     },
     [67] = {
         ["showtype"] = 3,
@@ -868,7 +868,7 @@
         ["tbxid"] = 339,
         ["notice"] = "",
         ["id"] = 339,
-        ["tips"] = "TOKEN验证太快"
+        ["tips"] = "TOKEN redeem code entered too fast"
     },
     [68] = {
         ["showtype"] = 3,
@@ -881,7 +881,7 @@
         ["tbxid"] = 340,
         ["notice"] = "",
         ["id"] = 340,
-        ["tips"] = "TOKEN验证超时"
+        ["tips"] = "TOKEN verification timeout"
     },
     [69] = {
         ["showtype"] = 3,
@@ -894,7 +894,7 @@
         ["tbxid"] = 341,
         ["notice"] = "",
         ["id"] = 341,
-        ["tips"] = "显示后面的错误消息"
+        ["tips"] = "Show the following error message"
     },
     [70] = {
         ["showtype"] = 3,
@@ -907,7 +907,7 @@
         ["tbxid"] = 342,
         ["notice"] = "",
         ["id"] = 342,
-        ["tips"] = "用户已经登录"
+        ["tips"] = "User has already logged in"
     },
     [71] = {
         ["showtype"] = 3,
@@ -920,7 +920,7 @@
         ["tbxid"] = 343,
         ["notice"] = "",
         ["id"] = 343,
-        ["tips"] = "昵称含有敏感词汇"
+        ["tips"] = "Nickname contains sensitive words"
     },
     [72] = {
         ["showtype"] = 3,
@@ -933,7 +933,7 @@
         ["tbxid"] = 344,
         ["notice"] = "",
         ["id"] = 344,
-        ["tips"] = "网关不可用"
+        ["tips"] = "Gateway not available"
     },
     [73] = {
         ["showtype"] = 3,
@@ -946,7 +946,7 @@
         ["tbxid"] = 345,
         ["notice"] = "",
         ["id"] = 345,
-        ["tips"] = "昵称只能包含字符"
+        ["tips"] = "Nickname can't have special characters"
     },
     [74] = {
         ["showtype"] = 3,
@@ -959,7 +959,7 @@
         ["tbxid"] = 347,
         ["notice"] = "",
         ["id"] = 347,
-        ["tips"] = "该角色被封停"
+        ["tips"] = "Character has been suspended"
     },
     [75] = {
         ["showtype"] = 3,
@@ -972,7 +972,7 @@
         ["tbxid"] = 400,
         ["notice"] = "",
         ["id"] = 400,
-        ["tips"] = "角色名不能为空"
+        ["tips"] = "Color name cannot be empty"
     },
     [76] = {
         ["showtype"] = 3,
@@ -985,7 +985,7 @@
         ["tbxid"] = 401,
         ["notice"] = "",
         ["id"] = 401,
-        ["tips"] = "角色名不能超过14个英文字符或7个汉字"
+        ["tips"] = "Character name cannot exceed 14 English characters or 7 Chinese characters."
     },
     [77] = {
         ["showtype"] = 3,
@@ -998,7 +998,7 @@
         ["tbxid"] = 402,
         ["notice"] = "",
         ["id"] = 402,
-        ["tips"] = "角色名含有敏感字符"
+        ["tips"] = "Character name contains sensitive words"
     },
     [78] = {
         ["showtype"] = 1,
@@ -1011,7 +1011,7 @@
         ["tbxid"] = 403,
         ["notice"] = "",
         ["id"] = 403,
-        ["tips"] = "账号在其他地点登陆，被踢下线！"
+        ["tips"] = "The account is logged in at another location. You've been disconnected!"
     },
     [79] = {
         ["showtype"] = 2,
@@ -1022,7 +1022,7 @@
         ["rightsys"] = 1,
         ["showchat"] = 1,
         ["tbxid"] = 404,
-        ["notice"] = "[Tips1]人物等级提升到【{0}】级[/Tips1]",
+        ["notice"] = "[Tips1]The character level can be raised to [{0}] level[/Tips1]",
         ["id"] = 404,
         ["tips"] = ""
     },
@@ -1035,7 +1035,7 @@
         ["rightsys"] = 1,
         ["showchat"] = 1,
         ["tbxid"] = 405,
-        ["notice"] = "{0}经验增加:{1}",
+        ["notice"] = "{0}Gain experience:{1}",
         ["id"] = 405,
         ["tips"] = ""
     },
@@ -1050,7 +1050,7 @@
         ["tbxid"] = 406,
         ["notice"] = "",
         ["id"] = 406,
-        ["tips"] = "经验已满"
+        ["tips"] = "Exp is full"
     },
     [82] = {
         ["showtype"] = 3,
@@ -1063,7 +1063,7 @@
         ["tbxid"] = 407,
         ["notice"] = "",
         ["id"] = 407,
-        ["tips"] = "该昵称已被占用！"
+        ["tips"] = "The nickname is already occupied!"
     },
     [83] = {
         ["showtype"] = 3,
@@ -1076,7 +1076,7 @@
         ["tbxid"] = 408,
         ["notice"] = "",
         ["id"] = 408,
-        ["tips"] = "角色昵称含有非法字符"
+        ["tips"] = "Character nickname contains illegal words"
     },
     [84] = {
         ["showtype"] = 1,
@@ -1087,7 +1087,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 409,
-        ["notice"] = "你是否确定出售{0}x{1}，出售可获得{2}索尼币",
+        ["notice"] = "Are you sure to sell {0}x{1}, Sale for {2}Sony currency",
         ["id"] = 409,
         ["tips"] = ""
     },
@@ -1102,7 +1102,7 @@
         ["tbxid"] = 410,
         ["notice"] = "",
         ["id"] = 410,
-        ["tips"] = "回购超时，请重新打开商店！"
+        ["tips"] = "Repurchase timeout, please reopen the store!"
     },
     [86] = {
         ["showtype"] = 3,
@@ -1115,7 +1115,7 @@
         ["tbxid"] = 500,
         ["notice"] = "",
         ["id"] = 500,
-        ["tips"] = "抱歉，队伍名称最多11个字"
+        ["tips"] = "Sorry, Party name is up to 11 words."
     },
     [87] = {
         ["showtype"] = 3,
@@ -1128,7 +1128,7 @@
         ["tbxid"] = 501,
         ["notice"] = "",
         ["id"] = 501,
-        ["tips"] = "队伍人数已满"
+        ["tips"] = "Party is full"
     },
     [88] = {
         ["showtype"] = 3,
@@ -1141,7 +1141,7 @@
         ["tbxid"] = 502,
         ["notice"] = "",
         ["id"] = 502,
-        ["tips"] = "该玩家已在队伍中"
+        ["tips"] = "Player is already in party"
     },
     [89] = {
         ["showtype"] = 3,
@@ -1154,7 +1154,7 @@
         ["tbxid"] = 503,
         ["notice"] = "",
         ["id"] = 503,
-        ["tips"] = "请先选中想要加入的队伍"
+        ["tips"] = "Please select the party you want to join first."
     },
     [90] = {
         ["showtype"] = 3,
@@ -1167,7 +1167,7 @@
         ["tbxid"] = 504,
         ["notice"] = "",
         ["id"] = 504,
-        ["tips"] = "该队伍申请列表已满"
+        ["tips"] = "Party application list is full"
     },
     [91] = {
         ["showtype"] = 3,
@@ -1180,7 +1180,7 @@
         ["tbxid"] = 505,
         ["notice"] = "",
         ["id"] = 505,
-        ["tips"] = "您寻找的队伍不存在"
+        ["tips"] = "The party you are looking for doesn't exist"
     },
     [92] = {
         ["showtype"] = 3,
@@ -1191,7 +1191,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 506,
-        ["notice"] = "{0}离开了队伍",
+        ["notice"] = "{0} has left party",
         ["id"] = 506,
         ["tips"] = ""
     },
@@ -1204,7 +1204,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 507,
-        ["notice"] = "{0}加入了队伍",
+        ["notice"] = "{0} has joined the party",
         ["id"] = 507,
         ["tips"] = ""
     },
@@ -1217,7 +1217,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 508,
-        ["notice"] = "{0}成为队长",
+        ["notice"] = "{0} has become party leader",
         ["id"] = 508,
         ["tips"] = ""
     },
@@ -1230,7 +1230,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 509,
-        ["notice"] = "{0}被踢出队伍",
+        ["notice"] = "{0} has been expelled from the party",
         ["id"] = 509,
         ["tips"] = ""
     },
@@ -1245,7 +1245,7 @@
         ["tbxid"] = 510,
         ["notice"] = "",
         ["id"] = 510,
-        ["tips"] = "队伍ID由纯数字组成"
+        ["tips"] = "Party ID consists of pure numbers"
     },
     [97] = {
         ["showtype"] = 4,
@@ -1256,7 +1256,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 511,
-        ["notice"] = "{0}被票选留在队伍中",
+        ["notice"] = "{0} has voted in the party",
         ["id"] = 511,
         ["tips"] = ""
     },
@@ -1271,7 +1271,7 @@
         ["tbxid"] = 512,
         ["notice"] = "",
         ["id"] = 512,
-        ["tips"] = "申请成功,请耐心等待"
+        ["tips"] = "Please wait patiently for your application."
     },
     [99] = {
         ["showtype"] = 4,
@@ -1284,7 +1284,7 @@
         ["tbxid"] = 513,
         ["notice"] = "",
         ["id"] = 513,
-        ["tips"] = "邀请成功,请等候对方回应"
+        ["tips"] = "Invitation successful, please wait for the other party members response"
     },
     [100] = {
         ["showtype"] = 3,
@@ -1297,7 +1297,7 @@
         ["tbxid"] = 514,
         ["notice"] = "",
         ["id"] = 514,
-        ["tips"] = "请输入队伍ID进行搜索"
+        ["tips"] = "Please enter party ID to search"
     },
     [101] = {
         ["showtype"] = 3,
@@ -1310,7 +1310,7 @@
         ["tbxid"] = 515,
         ["notice"] = "",
         ["id"] = 515,
-        ["tips"] = "您退出了队伍"
+        ["tips"] = "You have left party"
     },
     [102] = {
         ["showtype"] = 4,
@@ -1323,7 +1323,7 @@
         ["tbxid"] = 516,
         ["notice"] = "",
         ["id"] = 516,
-        ["tips"] = "您加入了队伍"
+        ["tips"] = "You have joined party"
     },
     [103] = {
         ["showtype"] = 3,
@@ -1334,7 +1334,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 517,
-        ["notice"] = "{0} 被投票踢出队伍",
+        ["notice"] = "{0} has been voted to kick out the party",
         ["id"] = 517,
         ["tips"] = ""
     },
@@ -1349,7 +1349,7 @@
         ["tbxid"] = 518,
         ["notice"] = "",
         ["id"] = 518,
-        ["tips"] = "不能重复发起投票"
+        ["tips"] = "Cannot repeat voting"
     },
     [105] = {
         ["showtype"] = 3,
@@ -1362,7 +1362,7 @@
         ["tbxid"] = 519,
         ["notice"] = "",
         ["id"] = 519,
-        ["tips"] = "您被踢出队伍"
+        ["tips"] = "You have been kicked out of the party"
     },
     [106] = {
         ["showtype"] = 3,
@@ -1375,7 +1375,7 @@
         ["tbxid"] = 520,
         ["notice"] = "",
         ["id"] = 520,
-        ["tips"] = "队伍中队长无法参与个人活动"
+        ["tips"] = "Party leader can't participate in personal events"
     },
     [107] = {
         ["showtype"] = 3,
@@ -1388,7 +1388,7 @@
         ["tbxid"] = 521,
         ["notice"] = "",
         ["id"] = 521,
-        ["tips"] = "只有队长才能开启活动"
+        ["tips"] = "Only the party leader can start the event"
     },
     [108] = {
         ["showtype"] = 3,
@@ -1401,7 +1401,7 @@
         ["tbxid"] = 522,
         ["notice"] = "",
         ["id"] = 522,
-        ["tips"] = "队长无法移交给暂离玩家"
+        ["tips"] = "Party leader can't be handed over to a temporary player"
     },
     [109] = {
         ["showtype"] = 3,
@@ -1414,7 +1414,7 @@
         ["tbxid"] = 523,
         ["notice"] = "",
         ["id"] = 523,
-        ["tips"] = "已成功通知暂离队员尽快归队"
+        ["tips"] = "You've successfully notified party memeber about a temporary leaving, return to the party as soon as possible"
     },
     [110] = {
         ["showtype"] = 2,
@@ -1427,7 +1427,7 @@
         ["tbxid"] = 524,
         ["notice"] = "",
         ["id"] = 524,
-        ["tips"] = "队长提醒您尽快归队"
+        ["tips"] = "Party leader reminds you to return as soon as possible"
     },
     [111] = {
         ["showtype"] = 3,
@@ -1438,7 +1438,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 525,
-        ["notice"] = "{0}秒后可以再次使用",
+        ["notice"] = "{0} can be used again in a few seconds",
         ["id"] = 525,
         ["tips"] = ""
     },
@@ -1453,7 +1453,7 @@
         ["tbxid"] = 526,
         ["notice"] = "",
         ["id"] = 526,
-        ["tips"] = "只有组队才能进入该副本"
+        ["tips"] = "Only party members are allowed to enter"
     },
     [113] = {
         ["showtype"] = 3,
@@ -1466,7 +1466,7 @@
         ["tbxid"] = 527,
         ["notice"] = "",
         ["id"] = 527,
-        ["tips"] = "您已在队伍中"
+        ["tips"] = "You're already in a party"
     },
     [114] = {
         ["showtype"] = 3,
@@ -1477,7 +1477,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 528,
-        ["notice"] = "您已向{0}发出入队申请",
+        ["notice"] = "You have sent to {0} the enrollment application to the party members",
         ["id"] = 528,
         ["tips"] = ""
     },
@@ -1490,9 +1490,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 529,
-        ["notice"] = "你已获得邀请权限",
+        ["notice"] = "You have been invited",
         ["id"] = 529,
-        ["tips"] = "你已获得邀请权限"
+        ["tips"] = "You have been invited"
     },
     [116] = {
         ["showtype"] = 4,
@@ -1503,9 +1503,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 530,
-        ["notice"] = "你已失去邀请权限",
+        ["notice"] = "You have lost your invitation",
         ["id"] = 530,
-        ["tips"] = "你已失去邀请权限"
+        ["tips"] = "You have lost your invitation"
     },
     [117] = {
         ["showtype"] = 1,
@@ -1516,9 +1516,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 531,
-        ["notice"] = "[Tips1]{0}[/Tips1]邀请你加入他的队伍",
+        ["notice"] = "[Tips1]{0}[/Tips1]invites you to join his party",
         ["id"] = 531,
-        ["tips"] = "[Tips1]{0}[/Tips1]邀请你加入他的队伍"
+        ["tips"] = "[Tips1]{0}[/Tips1]invites you to join his party"
     },
     [118] = {
         ["showtype"] = 1,
@@ -1529,9 +1529,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 532,
-        ["notice"] = "[Tips1]{0}[/Tips1]申请加入你的队伍",
+        ["notice"] = "[Tips1]{0}[/Tips1]is applying to joing your party",
         ["id"] = 532,
-        ["tips"] = "[Tips1]{0}[/Tips1]申请加入你的队伍"
+        ["tips"] = "[Tips1]{0}[/Tips1]is applying to joing your party"
     },
     [119] = {
         ["showtype"] = 1,
@@ -1542,9 +1542,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 533,
-        ["notice"] = "是否将[Tips1]{0}[/Tips1]踢出你的队伍？",
+        ["notice"] = "Will you kick[Tips1]{0}[/Tips1]out of the party？",
         ["id"] = 533,
-        ["tips"] = "是否将[Tips1]{0}[/Tips1]踢出你的队伍？"
+        ["tips"] = "Will you kick[Tips1]{0}[/Tips1]out of the party？"
     },
     [120] = {
         ["showtype"] = 1,
@@ -1555,9 +1555,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 534,
-        ["notice"] = "是否离开队伍？",
+        ["notice"] = "Do you really want to leave party?",
         ["id"] = 534,
-        ["tips"] = "是否离开队伍？"
+        ["tips"] = "Do you really want to leave party?"
     },
     [121] = {
         ["showtype"] = 2,
@@ -1568,9 +1568,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 535,
-        ["notice"] = "队伍已解散",
+        ["notice"] = "Party has been disbanded",
         ["id"] = 535,
-        ["tips"] = "队伍已解散"
+        ["tips"] = "Party has been disbanded"
     },
     [122] = {
         ["showtype"] = 3,
@@ -1581,9 +1581,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 536,
-        ["notice"] = "该队伍已解散或邀请你的玩家已失去邀请权限",
+        ["notice"] = "Party has been disbanded or the players you invited have lost their invitations",
         ["id"] = 536,
-        ["tips"] = "该队伍已解散或邀请你的玩家已失去邀请权限"
+        ["tips"] = "Party has been disbanded or the players you invited have lost their invitations"
     },
     [123] = {
         ["showtype"] = 2,
@@ -1594,9 +1594,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 537,
-        ["notice"] = "[Tips1]{0}[/Tips1]被提升为队长",
+        ["notice"] = "[Tips1]{0}[/Tips1]has been promoted to party leader",
         ["id"] = 537,
-        ["tips"] = "[Tips1]{0}[/Tips1]被提升为队长"
+        ["tips"] = "[Tips1]{0}[/Tips1]has been promoted to party leader"
     },
     [124] = {
         ["showtype"] = 3,
@@ -1609,7 +1609,7 @@
         ["tbxid"] = 600,
         ["notice"] = "",
         ["id"] = 600,
-        ["tips"] = "您已经有家族了"
+        ["tips"] = "You already have a guild"
     },
     [125] = {
         ["showtype"] = 3,
@@ -1620,7 +1620,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 601,
-        ["notice"] = "创建家族需要{0}",
+        ["notice"] = "You need {0} for creating a guild",
         ["id"] = 601,
         ["tips"] = ""
     },
@@ -1635,7 +1635,7 @@
         ["tbxid"] = 602,
         ["notice"] = "",
         ["id"] = 602,
-        ["tips"] = "家族名称不符合要求"
+        ["tips"] = "Guild name does not meet the requirements"
     },
     [127] = {
         ["showtype"] = 4,
@@ -1648,7 +1648,7 @@
         ["tbxid"] = 603,
         ["notice"] = "",
         ["id"] = 603,
-        ["tips"] = "恭喜你！创建家族成功！"
+        ["tips"] = "Congratulations! You have successfully created a guild!"
     },
     [128] = {
         ["showtype"] = 2,
@@ -1659,9 +1659,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 604,
-        ["notice"] = "创建家族成功！",
+        ["notice"] = "You have successfully created a guild!",
         ["id"] = 604,
-        ["tips"] = "创建家族成功！"
+        ["tips"] = "You have successfully created a guild!"
     },
     [129] = {
         ["showtype"] = 3,
@@ -1674,7 +1674,7 @@
         ["tbxid"] = 605,
         ["notice"] = "",
         ["id"] = 605,
-        ["tips"] = "家族权限不足"
+        ["tips"] = "Not enough guild authority"
     },
     [130] = {
         ["showtype"] = 2,
@@ -1685,7 +1685,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 4,
         ["tbxid"] = 606,
-        ["notice"] = "{0}加入了家族",
+        ["notice"] = "{0} joined the guild",
         ["id"] = 606,
         ["tips"] = ""
     },
@@ -1700,7 +1700,7 @@
         ["tbxid"] = 607,
         ["notice"] = "",
         ["id"] = 607,
-        ["tips"] = "该玩家已经有家族了"
+        ["tips"] = "The player already has a guild"
     },
     [132] = {
         ["showtype"] = 3,
@@ -1713,7 +1713,7 @@
         ["tbxid"] = 608,
         ["notice"] = "",
         ["id"] = 608,
-        ["tips"] = "家族名称已被占用！"
+        ["tips"] = "Guild name is already occupied!"
     },
     [133] = {
         ["showtype"] = 3,
@@ -1726,7 +1726,7 @@
         ["tbxid"] = 609,
         ["notice"] = "",
         ["id"] = 609,
-        ["tips"] = "申请失败，家族人数已满"
+        ["tips"] = " Application failed, the guild member number is full."
     },
     [134] = {
         ["showtype"] = 3,
@@ -1739,7 +1739,7 @@
         ["tbxid"] = 610,
         ["notice"] = "",
         ["id"] = 610,
-        ["tips"] = "请不要重复申请"
+        ["tips"] = "Please do not repeat the application"
     },
     [135] = {
         ["showtype"] = 3,
@@ -1752,7 +1752,7 @@
         ["tbxid"] = 611,
         ["notice"] = "",
         ["id"] = 611,
-        ["tips"] = "请稍候再尝试申请"
+        ["tips"] = "Please try again later"
     },
     [136] = {
         ["showtype"] = 4,
@@ -1765,7 +1765,7 @@
         ["tbxid"] = 612,
         ["notice"] = "",
         ["id"] = 612,
-        ["tips"] = "申请成功，请耐心等待"
+        ["tips"] = "Please wait patiently for your application."
     },
     [137] = {
         ["showtype"] = 3,
@@ -1776,7 +1776,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 613,
-        ["notice"] = "最多同时申请{0}个家族，请耐心等待",
+        ["notice"] = "Application for {0} guilds at the same time, please be patient",
         ["id"] = 613,
         ["tips"] = ""
     },
@@ -1791,7 +1791,7 @@
         ["tbxid"] = 614,
         ["notice"] = "",
         ["id"] = 614,
-        ["tips"] = "家族人数已满"
+        ["tips"] = "The number of guilds is full"
     },
     [139] = {
         ["showtype"] = 2,
@@ -1804,7 +1804,7 @@
         ["tbxid"] = 615,
         ["notice"] = "",
         ["id"] = 615,
-        ["tips"] = "家族公告已变更，请各位成员及时查看"
+        ["tips"] = "Guild announcement has been changed. Please check the members in time."
     },
     [140] = {
         ["showtype"] = 3,
@@ -1817,7 +1817,7 @@
         ["tbxid"] = 616,
         ["notice"] = "",
         ["id"] = 616,
-        ["tips"] = "公告最多输入140个字符"
+        ["tips"] = "Announce cannot exceed 140 characters"
     },
     [141] = {
         ["showtype"] = 3,
@@ -1830,7 +1830,7 @@
         ["tbxid"] = 617,
         ["notice"] = "",
         ["id"] = 617,
-        ["tips"] = "你还没有加入阵营"
+        ["tips"] = "You have not joined the adventure yet."
     },
     [142] = {
         ["showtype"] = 3,
@@ -1843,7 +1843,7 @@
         ["tbxid"] = 618,
         ["notice"] = "",
         ["id"] = 618,
-        ["tips"] = "职务数量已达上限"
+        ["tips"] = "The position number has reached the upper limit"
     },
     [143] = {
         ["showtype"] = 3,
@@ -1856,7 +1856,7 @@
         ["tbxid"] = 619,
         ["notice"] = "",
         ["id"] = 619,
-        ["tips"] = "级别不能高于或低于系统预设职务"
+        ["tips"] = "Level cannot be higher or lower than the system default position"
     },
     [144] = {
         ["showtype"] = 3,
@@ -1867,7 +1867,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 620,
-        ["notice"] = "玩家设定的职务级别不能低于{0}",
+        ["notice"] = "The position level set by the player cannot be lower than {0}",
         ["id"] = 620,
         ["tips"] = ""
     },
@@ -1882,7 +1882,7 @@
         ["tbxid"] = 621,
         ["notice"] = "",
         ["id"] = 621,
-        ["tips"] = "不能删除系统预设的职务"
+        ["tips"] = "Default system can't be deleted"
     },
     [146] = {
         ["showtype"] = 3,
@@ -1895,7 +1895,7 @@
         ["tbxid"] = 622,
         ["notice"] = "",
         ["id"] = 622,
-        ["tips"] = "职务名称最少2个字，最多5个字，只能输入中文英文数字"
+        ["tips"] = "Titles can have at least 2 words up to 5 words, can only add Chinese or English words"
     },
     [147] = {
         ["showtype"] = 3,
@@ -1908,7 +1908,7 @@
         ["tbxid"] = 623,
         ["notice"] = "",
         ["id"] = 623,
-        ["tips"] = "输入的职务名称包含敏感字符"
+        ["tips"] = "The title you entered contains sensitive words"
     },
     [148] = {
         ["showtype"] = 3,
@@ -1921,7 +1921,7 @@
         ["tbxid"] = 624,
         ["notice"] = "",
         ["id"] = 624,
-        ["tips"] = "职务名称不能重复"
+        ["tips"] = "Job title cannot be repeated"
     },
     [149] = {
         ["showtype"] = 4,
@@ -1934,7 +1934,7 @@
         ["tbxid"] = 625,
         ["notice"] = "",
         ["id"] = 625,
-        ["tips"] = "职务名称修改成功！"
+        ["tips"] = "The title name has been successfully modified!"
     },
     [150] = {
         ["showtype"] = 4,
@@ -1947,7 +1947,7 @@
         ["tbxid"] = 626,
         ["notice"] = "",
         ["id"] = 626,
-        ["tips"] = "职务删除成功！"
+        ["tips"] = "Title has been successfully deleted!"
     },
     [151] = {
         ["showtype"] = 2,
@@ -1958,7 +1958,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 627,
-        ["notice"] = "{0}职务更名为{1}",
+        ["notice"] = "{0} rename the rank {1}",
         ["id"] = 627,
         ["tips"] = ""
     },
@@ -1973,7 +1973,7 @@
         ["tbxid"] = 628,
         ["notice"] = "",
         ["id"] = 628,
-        ["tips"] = "你没有权限对该玩家分配职务"
+        ["tips"] = "You do not have permission to assign a rank to the player."
     },
     [153] = {
         ["showtype"] = 4,
@@ -1986,7 +1986,7 @@
         ["tbxid"] = 629,
         ["notice"] = "",
         ["id"] = 629,
-        ["tips"] = "职务调整成功！"
+        ["tips"] = "Job adjustment success!"
     },
     [154] = {
         ["showtype"] = 3,
@@ -1997,7 +1997,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 4,
         ["tbxid"] = 630,
-        ["notice"] = "升级需要消耗{0}家族资金",
+        ["notice"] = "Guild upgrade requires consumption of {0} Guild funds",
         ["id"] = 630,
         ["tips"] = ""
     },
@@ -2010,7 +2010,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 4,
         ["tbxid"] = 631,
-        ["notice"] = "家族升级到[Tips1]{0}[/Tips1]级",
+        ["notice"] = "Guild upgrade to level[Tips1]{0}[/Tips1]",
         ["id"] = 631,
         ["tips"] = ""
     },
@@ -2025,7 +2025,7 @@
         ["tbxid"] = 632,
         ["notice"] = "",
         ["id"] = 632,
-        ["tips"] = "填写内容不符合格式"
+        ["tips"] = "Content can't be filled with the conforming format"
     },
     [157] = {
         ["showtype"] = 3,
@@ -2038,7 +2038,7 @@
         ["tbxid"] = 633,
         ["notice"] = "",
         ["id"] = 633,
-        ["tips"] = "只能填写4-20个数字或英文"
+        ["tips"] = "Can only fill in 4-20 Chinese or English characters"
     },
     [158] = {
         ["showtype"] = 2,
@@ -2049,7 +2049,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 4,
         ["tbxid"] = 634,
-        ["notice"] = "家族联系方式更新：{0}！",
+        ["notice"] = "Guild contact update: {0}!",
         ["id"] = 634,
         ["tips"] = ""
     },
@@ -2064,7 +2064,7 @@
         ["tbxid"] = 635,
         ["notice"] = "",
         ["id"] = 635,
-        ["tips"] = "每日福利领取成功"
+        ["tips"] = "You have successfully obtained the daily benefit"
     },
     [160] = {
         ["showtype"] = 3,
@@ -2077,7 +2077,7 @@
         ["tbxid"] = 636,
         ["notice"] = "",
         ["id"] = 636,
-        ["tips"] = "每日6点重置后可领取"
+        ["tips"] = "Benefit can be received after the daily reset at 6 am"
     },
     [161] = {
         ["showtype"] = 3,
@@ -2088,9 +2088,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 637,
-        ["notice"] = "服务器无法创建更多家族",
+        ["notice"] = "The server cannot create more guilds",
         ["id"] = 637,
-        ["tips"] = "服务器无法创建更多家族"
+        ["tips"] = "The server cannot create more guilds"
     },
     [162] = {
         ["showtype"] = 3,
@@ -2101,9 +2101,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 638,
-        ["notice"] = "最多只能输入7个汉字或14个字母",
+        ["notice"] = "You can only enter up to 7 Chinese characters or 14 letters",
         ["id"] = 638,
-        ["tips"] = "最多只能输入7个汉字或14个字母"
+        ["tips"] = "You can only enter up to 7 Chinese characters or 14 letters"
     },
     [163] = {
         ["showtype"] = 3,
@@ -2114,9 +2114,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 639,
-        ["notice"] = "最少需要输入2个汉字或4个字母",
+        ["notice"] = "A minimum of 2 Chinese characters or 4 letters are required.",
         ["id"] = 639,
-        ["tips"] = "最少需要输入2个汉字或4个字母"
+        ["tips"] = "A minimum of 2 Chinese characters or 4 letters are required."
     },
     [164] = {
         ["showtype"] = 3,
@@ -2127,9 +2127,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 640,
-        ["notice"] = "名称中含有敏感词汇",
+        ["notice"] = "The name contains sensitive words",
         ["id"] = 640,
-        ["tips"] = "名称中含有敏感词汇"
+        ["tips"] = "The name contains sensitive words"
     },
     [165] = {
         ["showtype"] = 3,
@@ -2140,9 +2140,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 641,
-        ["notice"] = "只能输入中文、英文和数字",
+        ["notice"] = "Can only enter Chinese, English and numbers",
         ["id"] = 641,
-        ["tips"] = "只能输入中文、英文和数字"
+        ["tips"] = "Can only enter Chinese, English and numbers"
     },
     [166] = {
         ["showtype"] = 3,
@@ -2153,9 +2153,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 642,
-        ["notice"] = "名称重复，无法使用",
+        ["notice"] = "Duplicate name, cannot be used",
         ["id"] = 642,
-        ["tips"] = "名称重复，无法使用"
+        ["tips"] = "Duplicate name, cannot be used"
     },
     [167] = {
         ["showtype"] = 3,
@@ -2166,9 +2166,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 643,
-        ["notice"] = "你的等级不足，无法创建",
+        ["notice"] = "Level too low to create it",
         ["id"] = 643,
-        ["tips"] = "你的等级不足，无法创建"
+        ["tips"] = "Level too low to create it"
     },
     [168] = {
         ["showtype"] = 3,
@@ -2179,9 +2179,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 644,
-        ["notice"] = "你的金钱不足，无法创建",
+        ["notice"] = "You're too poor to create it, go farm",
         ["id"] = 644,
-        ["tips"] = "你的金钱不足，无法创建"
+        ["tips"] = "You're too poor to create it, go farm"
     },
     [169] = {
         ["showtype"] = 3,
@@ -2192,9 +2192,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 645,
-        ["notice"] = "你的家族已满员，无法邀请更多玩家",
+        ["notice"] = "Your guild is full and cannot invite more players.",
         ["id"] = 645,
-        ["tips"] = "你的家族已满员，无法邀请更多玩家"
+        ["tips"] = "Your guild is full and cannot invite more players."
     },
     [170] = {
         ["showtype"] = 3,
@@ -2205,9 +2205,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 646,
-        ["notice"] = "对方已经加入了其他家族",
+        ["notice"] = "That party has joined other guild",
         ["id"] = 646,
-        ["tips"] = "对方已经加入了其他家族"
+        ["tips"] = "That party has joined other guild"
     },
     [171] = {
         ["showtype"] = 1,
@@ -2218,9 +2218,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 647,
-        ["notice"] = "[Tips1]{0}[/Tips1]邀请你加入[Tips1]{1}[/Tips1]家族，是否同意",
+        ["notice"] = "[Tips1]{0}[/Tips1]invites you to join[Tips1]{1}[/Tips1]guild, are you agree?",
         ["id"] = 647,
-        ["tips"] = "[Tips1]{0}[/Tips1]邀请你加入[Tips1]{1}[/Tips1]家族，是否同意"
+        ["tips"] = "[Tips1]{0}[/Tips1]invites you to join[Tips1]{1}[/Tips1]guild, are you agree?"
     },
     [172] = {
         ["showtype"] = 3,
@@ -2231,9 +2231,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 648,
-        ["notice"] = "对方家族的申请列表已满，暂时不能申请",
+        ["notice"] = "The application list of other guild parties are full, can't applied for a while",
         ["id"] = 648,
-        ["tips"] = "对方家族的申请列表已满，暂时不能申请"
+        ["tips"] = "The application list of other guild parties are full, can't applied for a while"
     },
     [173] = {
         ["showtype"] = 3,
@@ -2244,9 +2244,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 649,
-        ["notice"] = "你不能申请更多家族",
+        ["notice"] = "You can't apply for more guilds",
         ["id"] = 649,
-        ["tips"] = "你不能申请更多家族"
+        ["tips"] = "You can't apply for more guilds"
     },
     [174] = {
         ["showtype"] = 3,
@@ -2257,9 +2257,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 650,
-        ["notice"] = "你的申请被拒绝，{0}秒内请不要再发送申请",
+        ["notice"] = "Your application has been rejected, {0} please don't send more applications again.",
         ["id"] = 650,
-        ["tips"] = "你的申请被拒绝，{0}秒内请不要再发送申请"
+        ["tips"] = "Your application has been rejected, {0} please don't send more applications again."
     },
     [175] = {
         ["showtype"] = 3,
@@ -2270,9 +2270,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 651,
-        ["notice"] = "请不要反复点击",
+        ["notice"] = "Are you autist? Don't click repeatedly",
         ["id"] = 651,
-        ["tips"] = "请不要反复点击"
+        ["tips"] = "Are you autist? Don't click repeatedly"
     },
     [176] = {
         ["showtype"] = 3,
@@ -2283,9 +2283,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 652,
-        ["notice"] = "只能输入数字进行家族搜索",
+        ["notice"] = "Can only enter numbers for guild search",
         ["id"] = 652,
-        ["tips"] = "只能输入数字进行家族搜索"
+        ["tips"] = "Can only enter numbers for guild search"
     },
     [177] = {
         ["showtype"] = 3,
@@ -2296,9 +2296,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 653,
-        ["notice"] = "你的家族资金不足，即将在{0}天后自动解散，是否捐赠家族资金？",
+        ["notice"] = "Your guild is underfunded and will be automatically disbanded after {0} days. Do you want to donate some guild funds?",
         ["id"] = 653,
-        ["tips"] = "你的家族资金不足，即将在{0}天后自动解散，是否捐赠家族资金？"
+        ["tips"] = "Your guild is underfunded and will be automatically disbanded after {0} days. Do you want to donate some guild funds?"
     },
     [178] = {
         ["showtype"] = 3,
@@ -2309,9 +2309,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 654,
-        ["notice"] = "你输入的家族公告过长",
+        ["notice"] = "The guild announcement you entered is too long",
         ["id"] = 654,
-        ["tips"] = "你输入的家族公告过长"
+        ["tips"] = "The guild announcement you entered is too long"
     },
     [179] = {
         ["showtype"] = 3,
@@ -2322,9 +2322,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 655,
-        ["notice"] = "只能输入数字",
+        ["notice"] = "Only can enter numbers",
         ["id"] = 655,
-        ["tips"] = "只能输入数字"
+        ["tips"] = "Only can enter numbers"
     },
     [180] = {
         ["showtype"] = 3,
@@ -2335,9 +2335,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 656,
-        ["notice"] = "你身上的金钱不足",
+        ["notice"] = "You have insufficient money",
         ["id"] = 656,
-        ["tips"] = "你身上的金钱不足"
+        ["tips"] = "You have insufficient money"
     },
     [181] = {
         ["showtype"] = 4,
@@ -2348,9 +2348,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 657,
-        ["notice"] = "通过捐赠获得{0}点贡献度",
+        ["notice"] = "You get {0} contribution by your donation",
         ["id"] = 657,
-        ["tips"] = "通过捐赠获得{0}点贡献度"
+        ["tips"] = "You get {0} contribution by your donation"
     },
     [182] = {
         ["showtype"] = 3,
@@ -2361,9 +2361,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 658,
-        ["notice"] = "只有族长才能解散家族",
+        ["notice"] = "Only the Guild leader can disband the guild",
         ["id"] = 658,
-        ["tips"] = "只有族长才能解散家族"
+        ["tips"] = "Only the Guild leader can disband the guild"
     },
     [183] = {
         ["showtype"] = 3,
@@ -2374,9 +2374,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 659,
-        ["notice"] = "族长不能离开家族",
+        ["notice"] = "Guild leader cannot leave the Guild, obviously.",
         ["id"] = 659,
-        ["tips"] = "族长不能离开家族"
+        ["tips"] = "Guild leader cannot leave the Guild, obviously."
     },
     [184] = {
         ["showtype"] = 3,
@@ -2387,9 +2387,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 660,
-        ["notice"] = "是否解散家族",
+        ["notice"] = "Do you want to dissolve your guild?",
         ["id"] = 660,
-        ["tips"] = "是否解散家族"
+        ["tips"] = "Do you want to dissolve your guild?"
     },
     [185] = {
         ["showtype"] = 2,
@@ -2400,9 +2400,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 661,
-        ["notice"] = "是否离开家族",
+        ["notice"] = "Do you really want to leave guild?",
         ["id"] = 661,
-        ["tips"] = "是否离开家族"
+        ["tips"] = "Do you really want to leave guild?"
     },
     [186] = {
         ["showtype"] = 1,
@@ -2413,9 +2413,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 662,
-        ["notice"] = "是否将族长转移给[Tips1]{0}[/Tips1]？",
+        ["notice"] = "Do you really want to transfer the guild leadership to[Tips1]{0}[/Tips1]？",
         ["id"] = 662,
-        ["tips"] = "是否将族长转移给[Tips1]{0}[/Tips1]？"
+        ["tips"] = "Do you really want to transfer the guild leadership to[Tips1]{0}[/Tips1]？"
     },
     [187] = {
         ["showtype"] = 1,
@@ -2426,9 +2426,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 663,
-        ["notice"] = "是否将[Tips1]{0}[/Tips1]任命为[Tips1]{1}[/Tips1]？",
+        ["notice"] = "Do you really want to appoint[Tips1]{0}[/Tips1]as[Tips1]{1}[/Tips1]?",
         ["id"] = 663,
-        ["tips"] = "是否将[Tips1]{0}[/Tips1]任命为[Tips1]{1}[/Tips1]？"
+        ["tips"] = "Do you really want to appoint[Tips1]{0}[/Tips1]as[Tips1]{1}[/Tips1]?"
     },
     [188] = {
         ["showtype"] = 1,
@@ -2439,9 +2439,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 664,
-        ["notice"] = "是否将[Tips1]{0}[/Tips1]移除家族？",
+        ["notice"] = "Do you really want to remove [Tips1]{0}[/Tips1]out of the guild?",
         ["id"] = 664,
-        ["tips"] = "是否将[Tips1]{0}[/Tips1]移除家族？"
+        ["tips"] = "Do you really want to remove [Tips1]{0}[/Tips1]out of the guild?"
     },
     [189] = {
         ["showtype"] = 2,
@@ -2452,9 +2452,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 4,
         ["tbxid"] = 665,
-        ["notice"] = "[Tips1]{0}[/Tips1]离开家族",
+        ["notice"] = "[Tips1]{0}[/Tips1]has left the guild",
         ["id"] = 665,
-        ["tips"] = "[Tips1]{0}[/Tips1]离开家族"
+        ["tips"] = "[Tips1]{0}[/Tips1]has left the guild"
     },
     [190] = {
         ["showtype"] = 2,
@@ -2465,9 +2465,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 4,
         ["tbxid"] = 666,
-        ["notice"] = "[Tips1]{0}[/Tips1]成为新族长",
+        ["notice"] = "[Tips1]{0}[/Tips1]has become the new guild leader",
         ["id"] = 666,
-        ["tips"] = "[Tips1]{0}[/Tips1]成为新族长"
+        ["tips"] = "[Tips1]{0}[/Tips1]has become the new guild leader"
     },
     [191] = {
         ["showtype"] = 2,
@@ -2478,9 +2478,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 4,
         ["tbxid"] = 667,
-        ["notice"] = "[Tips1]{0}[/Tips1]已被任命为[Tips1]{1}[/Tips1]",
+        ["notice"] = "[Tips1]{0}[/Tips1]has been appointed as[Tips1]{1}[/Tips1]",
         ["id"] = 667,
-        ["tips"] = "[Tips1]{0}[/Tips1]已被任命为[Tips1]{1}[/Tips1]"
+        ["tips"] = "[Tips1]{0}[/Tips1]has been appointed as[Tips1]{1}[/Tips1]"
     },
     [192] = {
         ["showtype"] = 2,
@@ -2491,9 +2491,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 4,
         ["tbxid"] = 668,
-        ["notice"] = "[Tips1]{0}[/Tips1]的职位被移除",
+        ["notice"] = "[Tips1]{0}[/Tips1]'s rank removed",
         ["id"] = 668,
-        ["tips"] = "[Tips1]{0}[/Tips1]的职位被移除"
+        ["tips"] = "[Tips1]{0}[/Tips1]'s rank removed"
     },
     [193] = {
         ["showtype"] = 3,
@@ -2504,9 +2504,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 669,
-        ["notice"] = "不能删除更多职位",
+        ["notice"] = "You can't delete more ranks",
         ["id"] = 669,
-        ["tips"] = "不能删除更多职位"
+        ["tips"] = "You can't delete more ranks"
     },
     [194] = {
         ["showtype"] = 3,
@@ -2517,9 +2517,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 670,
-        ["notice"] = "不能新建更多职位",
+        ["notice"] = "You can't create more ranks",
         ["id"] = 670,
-        ["tips"] = "不能新建更多职位"
+        ["tips"] = "You can't create more ranks"
     },
     [195] = {
         ["showtype"] = 3,
@@ -2530,9 +2530,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 671,
-        ["notice"] = "你的家族成员已满，无法通过更多请求",
+        ["notice"] = "Your guild member list is full, can't accept more requests",
         ["id"] = 671,
-        ["tips"] = "你的家族成员已满，无法通过更多请求"
+        ["tips"] = "Your guild member list is full, can't accept more requests"
     },
     [196] = {
         ["showtype"] = 3,
@@ -2543,9 +2543,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 672,
-        ["notice"] = "该玩家已加入其他家族",
+        ["notice"] = "This player has joined other guild",
         ["id"] = 672,
-        ["tips"] = "该玩家已加入其他家族"
+        ["tips"] = "This player has joined other guild"
     },
     [197] = {
         ["showtype"] = 3,
@@ -2556,9 +2556,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 673,
-        ["notice"] = "对方玩家已取消申请，无法加入家族",
+        ["notice"] = "The player has cancelled the application and cannot join the guild.",
         ["id"] = 673,
-        ["tips"] = "对方玩家已取消申请，无法加入家族"
+        ["tips"] = "The player has cancelled the application and cannot join the guild."
     },
     [198] = {
         ["showtype"] = 3,
@@ -2569,9 +2569,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 674,
-        ["notice"] = "你已经拥有家族，无法创建",
+        ["notice"] = "You're already in a guild, can't create another one",
         ["id"] = 674,
-        ["tips"] = "你已经拥有家族，无法创建"
+        ["tips"] = "You're already in a guild, can't create another one"
     },
     [199] = {
         ["showtype"] = 3,
@@ -2582,9 +2582,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 675,
-        ["notice"] = "对方玩家等级不足",
+        ["notice"] = "Player has insufficient level",
         ["id"] = 675,
-        ["tips"] = "对方玩家等级不足"
+        ["tips"] = "Player has insufficient level"
     },
     [200] = {
         ["showtype"] = 3,
@@ -2595,9 +2595,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 676,
-        ["notice"] = "{0}级开启家族功能！",
+        ["notice"] = "{0} increased the guild level function!",
         ["id"] = 676,
-        ["tips"] = "{0}级开启家族功能！"
+        ["tips"] = "{0} increased the guild level function!"
     },
     [201] = {
         ["showtype"] = 2,
@@ -2608,9 +2608,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 4,
         ["tbxid"] = 677,
-        ["notice"] = "[Tips1]{0}[/Tips1]被移除家族！",
+        ["notice"] = "[Tips1]{0}[/Tips1]has been removed from the guild!",
         ["id"] = 677,
-        ["tips"] = "[Tips1]{0}[/Tips1]被移除家族！"
+        ["tips"] = "[Tips1]{0}[/Tips1]has been removed from the guild!"
     },
     [202] = {
         ["showtype"] = 2,
@@ -2621,9 +2621,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 678,
-        ["notice"] = "你已被移除家族！",
+        ["notice"] = "You have been removed from the guild!",
         ["id"] = 678,
-        ["tips"] = "你已被移除家族！"
+        ["tips"] = "You have been removed from the guild!"
     },
     [203] = {
         ["showtype"] = 4,
@@ -2634,9 +2634,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 679,
-        ["notice"] = "你已经离开家族！",
+        ["notice"] = "You have left the guild!",
         ["id"] = 679,
-        ["tips"] = "你已经离开家族！"
+        ["tips"] = "You have left the guild!"
     },
     [204] = {
         ["showtype"] = 3,
@@ -2647,9 +2647,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 680,
-        ["notice"] = "你没有处理申请的权限！",
+        ["notice"] = "You do not have permission to process the application!",
         ["id"] = 680,
-        ["tips"] = "你没有处理申请的权限！"
+        ["tips"] = "You do not have permission to process the application!"
     },
     [205] = {
         ["showtype"] = 3,
@@ -2660,9 +2660,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 681,
-        ["notice"] = "你暂时不能移交族长！",
+        ["notice"] = "You temporarily can't hand over the leadership!",
         ["id"] = 681,
-        ["tips"] = "你暂时不能移交族长！"
+        ["tips"] = "You temporarily can't hand over the leadership!"
     },
     [206] = {
         ["showtype"] = 2,
@@ -2673,9 +2673,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 4,
         ["tbxid"] = 682,
-        ["notice"] = "[Tips1]{0}[/Tips1]捐献了[Tips1]{0}[/Tips1]家族资金",
+        ["notice"] = "[Tips1]{0}[/Tips1]donated[Tips1]{0}[/Tips1]guild funds",
         ["id"] = 682,
-        ["tips"] = "[Tips1]{0}[/Tips1]捐献了[Tips1]{0}[/Tips1]家族资金"
+        ["tips"] = "[Tips1]{0}[/Tips1]donated[Tips1]{0}[/Tips1]guild funds"
     },
     [207] = {
         ["showtype"] = 3,
@@ -2686,9 +2686,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 683,
-        ["notice"] = "你获得的今日贡献度已满",
+        ["notice"] = "Your contribution for today is full",
         ["id"] = 683,
-        ["tips"] = "你获得的今日贡献度已满"
+        ["tips"] = "Your contribution for today is full"
     },
     [208] = {
         ["showtype"] = 3,
@@ -2699,9 +2699,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 684,
-        ["notice"] = "{0}分钟内不能加入家族",
+        ["notice"] = "You can't join any guild for {0} minutes",
         ["id"] = 684,
-        ["tips"] = "{0}分钟内不能加入家族"
+        ["tips"] = "You can't join any guild for {0} minutes"
     },
     [209] = {
         ["showtype"] = 3,
@@ -2712,9 +2712,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 685,
-        ["notice"] = "该角色为家族族长，无法删除",
+        ["notice"] = "This role is the guild leader and cannot be deleted.",
         ["id"] = 685,
-        ["tips"] = "该角色为家族族长，无法删除"
+        ["tips"] = "This role is the guild leader and cannot be deleted."
     },
     [210] = {
         ["showtype"] = 3,
@@ -2725,9 +2725,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 686,
-        ["notice"] = "家族等级不足，无法学习",
+        ["notice"] = "Insufficient Guild level, unable to learn",
         ["id"] = 686,
-        ["tips"] = "家族等级不足，无法学习"
+        ["tips"] = "Insufficient Guild level, unable to learn"
     },
     [211] = {
         ["showtype"] = 3,
@@ -2738,9 +2738,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 687,
-        ["notice"] = "家族资金不足，无法学习",
+        ["notice"] = "Insufficient Guild level, unable to learn",
         ["id"] = 687,
-        ["tips"] = "家族资金不足，无法学习"
+        ["tips"] = "Insufficient Guild level, unable to learn"
     },
     [212] = {
         ["showtype"] = 3,
@@ -2751,9 +2751,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 688,
-        ["notice"] = "物资发放等级不足，无法购买",
+        ["notice"] = "Insufficient distribution material level, unable to purchase",
         ["id"] = 688,
-        ["tips"] = "物资发放等级不足，无法购买"
+        ["tips"] = "Insufficient distribution material level, unable to purchase"
     },
     [213] = {
         ["showtype"] = 3,
@@ -2764,9 +2764,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 689,
-        ["notice"] = "家族贡献不足，无法购买",
+        ["notice"] = "Insufficient guild contribution, unable to buy",
         ["id"] = 689,
-        ["tips"] = "家族贡献不足，无法购买"
+        ["tips"] = "Insufficient guild contribution, unable to buy"
     },
     [214] = {
         ["showtype"] = 3,
@@ -2777,9 +2777,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 690,
-        ["notice"] = "已超过今日购买数量，无法购买",
+        ["notice"] = "Has exceed the number of purchases for today, can't be purchased",
         ["id"] = 690,
-        ["tips"] = "已超过今日购买数量，无法购买"
+        ["tips"] = "Has exceed the number of purchases for today, can't be purchased"
     },
     [215] = {
         ["showtype"] = 3,
@@ -2790,9 +2790,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 691,
-        ["notice"] = "只有加入才能打开家族商店",
+        ["notice"] = "Only joined guild members can open the guild store",
         ["id"] = 691,
-        ["tips"] = "只有加入才能打开家族商店"
+        ["tips"] = "Only joined guild members can open the guild store"
     },
     [216] = {
         ["showtype"] = 3,
@@ -2803,9 +2803,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 692,
-        ["notice"] = "只有原创角色能够进入该副本",
+        ["notice"] = "Only original characters can enter the copy",
         ["id"] = 692,
-        ["tips"] = "只有原创角色能够进入该副本"
+        ["tips"] = "Only original characters can enter the copy"
     },
     [217] = {
         ["showtype"] = 3,
@@ -2816,9 +2816,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 693,
-        ["notice"] = "该副本内无法切换英雄",
+        ["notice"] = "Unable to switch heroes in this copy",
         ["id"] = 693,
-        ["tips"] = "该副本内无法切换英雄"
+        ["tips"] = "Unable to switch heroes in this copy"
     },
     [218] = {
         ["showtype"] = 2,
@@ -2829,9 +2829,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 4,
         ["tbxid"] = 694,
-        ["notice"] = "你的家族在本次家族战中获得了第[Tips1]{0}[/Tips1]名，获得了[Tips1]{0}[/Tips1]家族经验。",
+        ["notice"] = "Your guild won the first in this guild battle.[Tips1]{0}[/Tips1], earned[Tips1]{0}[/Tips1]guild exp.",
         ["id"] = 694,
-        ["tips"] = "你的家族在本次家族战中获得了第[Tips1]{0}[/Tips1]名，获得了[Tips1]{0}[/Tips1]家族经验。"
+        ["tips"] = "Your guild won the first in this guild battle.[Tips1]{0}[/Tips1], earned[Tips1]{0}[/Tips1]guild exp."
     },
     [219] = {
         ["showtype"] = 0,
@@ -2842,9 +2842,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 695,
-        ["notice"] = "家族战报名已结束，无法更换或者加入队伍",
+        ["notice"] = "Guid battle registration has ended, cannot be replaced or joined to the team",
         ["id"] = 695,
-        ["tips"] = "家族战报名已结束，无法更换或者加入队伍"
+        ["tips"] = "Guid battle registration has ended, cannot be replaced or joined to the team"
     },
     [220] = {
         ["showtype"] = 0,
@@ -2855,9 +2855,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 696,
-        ["notice"] = "由于离开家族，你被从家族战的队伍中移除",
+        ["notice"] = "Since you've left the guild, you've been removed from the team of guild battles",
         ["id"] = 696,
-        ["tips"] = "由于离开家族，你被从家族战的队伍中移除"
+        ["tips"] = "Since you've left the guild, you've been removed from the team of guild battles"
     },
     [221] = {
         ["showtype"] = 3,
@@ -2870,7 +2870,7 @@
         ["tbxid"] = 700,
         ["notice"] = "",
         ["id"] = 700,
-        ["tips"] = "当前状态无法打开角色界面"
+        ["tips"] = "The current state cannot open the character interface"
     },
     [222] = {
         ["showtype"] = 3,
@@ -2883,7 +2883,7 @@
         ["tbxid"] = 701,
         ["notice"] = "",
         ["id"] = 701,
-        ["tips"] = "您刚刚整理过，请稍候再试"
+        ["tips"] = "You just sorted it out, please try again later"
     },
     [223] = {
         ["showtype"] = 3,
@@ -2896,7 +2896,7 @@
         ["tbxid"] = 702,
         ["notice"] = "",
         ["id"] = 702,
-        ["tips"] = "背包空间不足"
+        ["tips"] = "Your inventory is full"
     },
     [224] = {
         ["showtype"] = 3,
@@ -2920,7 +2920,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 704,
-        ["notice"] = "装备武器{0}",
+        ["notice"] = "equiped weapon{0}",
         ["id"] = 704,
         ["tips"] = ""
     },
@@ -2935,7 +2935,7 @@
         ["tbxid"] = 705,
         ["notice"] = "",
         ["id"] = 705,
-        ["tips"] = "没有装备武器无法使用职业技能"
+        ["tips"] = "Unequipped weapons can't use masterclass skills"
     },
     [227] = {
         ["showtype"] = 4,
@@ -2946,7 +2946,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 706,
-        ["notice"] = "职业切换为{0}",
+        ["notice"] = "Masterclass switched to{0}",
         ["id"] = 706,
         ["tips"] = ""
     },
@@ -2959,7 +2959,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 707,
-        ["notice"] = "{0}切换为[Tips1]{1}[/Tips1]",
+        ["notice"] = "{0} switched to[Tips1]{1}[/Tips1]",
         ["id"] = 707,
         ["tips"] = ""
     },
@@ -2972,7 +2972,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 708,
-        ["notice"] = "{0}技能正在冷却，还不能切换技能",
+        ["notice"] = "{0} skill is in cooldown, you can't use it right now",
         ["id"] = 708,
         ["tips"] = ""
     },
@@ -2985,7 +2985,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 709,
-        ["notice"] = "{0}级后才能穿戴该装备",
+        ["notice"] = "after reaching level{0}you can wear the equipment",
         ["id"] = 709,
         ["tips"] = ""
     },
@@ -3000,7 +3000,7 @@
         ["tbxid"] = 710,
         ["notice"] = "",
         ["id"] = 710,
-        ["tips"] = "战斗状态不能更换装备"
+        ["tips"] = "You're in combat, can't replace the equipment"
     },
     [232] = {
         ["showtype"] = 4,
@@ -3013,7 +3013,7 @@
         ["tbxid"] = 711,
         ["notice"] = "",
         ["id"] = 711,
-        ["tips"] = "已清理过期物品"
+        ["tips"] = "Cleaner has already organized items"
     },
     [233] = {
         ["showtype"] = 3,
@@ -3026,7 +3026,7 @@
         ["tbxid"] = 712,
         ["notice"] = "",
         ["id"] = 712,
-        ["tips"] = "职业不符，不能装备"
+        ["tips"] = "Profession doesn't match, can't be equipped"
     },
     [234] = {
         ["showtype"] = 3,
@@ -3039,7 +3039,7 @@
         ["tbxid"] = 713,
         ["notice"] = "",
         ["id"] = 713,
-        ["tips"] = "更换装备，隐身状态已解除"
+        ["tips"] = "You've replaced equipment, so stealth status has been lifted"
     },
     [235] = {
         ["showtype"] = 3,
@@ -3052,7 +3052,7 @@
         ["tbxid"] = 714,
         ["notice"] = "",
         ["id"] = 714,
-        ["tips"] = "等级不足，不能使用该道具"
+        ["tips"] = "Insufficient level, can't use this item"
     },
     [236] = {
         ["showtype"] = 3,
@@ -3065,7 +3065,7 @@
         ["tbxid"] = 715,
         ["notice"] = "",
         ["id"] = 715,
-        ["tips"] = "该道具不可删除"
+        ["tips"] = "This item cannot be deleted"
     },
     [237] = {
         ["showtype"] = 5,
@@ -3076,7 +3076,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 800,
-        ["notice"] = "接受任务：{0}！",
+        ["notice"] = "Quest {0}: accepted!",
         ["id"] = 800,
         ["tips"] = ""
     },
@@ -3089,7 +3089,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 801,
-        ["notice"] = "完成任务：{0}！",
+        ["notice"] = "Quest {0}: completed!",
         ["id"] = 801,
         ["tips"] = ""
     },
@@ -3117,7 +3117,7 @@
         ["tbxid"] = 803,
         ["notice"] = "",
         ["id"] = 803,
-        ["tips"] = "背包剩余空间不足！"
+        ["tips"] = "There is not enough space left in your inventory!"
     },
     [241] = {
         ["showtype"] = 3,
@@ -3130,7 +3130,7 @@
         ["tbxid"] = 804,
         ["notice"] = "",
         ["id"] = 804,
-        ["tips"] = "背包剩余空间不足，无法领取任务奖励！"
+        ["tips"] = "There is not enough space left in the inventory to receive the mission reward!"
     },
     [242] = {
         ["showtype"] = 2,
@@ -3143,7 +3143,7 @@
         ["tbxid"] = 805,
         ["notice"] = "",
         ["id"] = 805,
-        ["tips"] = "成功捉到一只害虫!"
+        ["tips"] = "You have successfully caught an insect!"
     },
     [243] = {
         ["showtype"] = 2,
@@ -3156,7 +3156,7 @@
         ["tbxid"] = 806,
         ["notice"] = "",
         ["id"] = 806,
-        ["tips"] = "没有黑胡椒！"
+        ["tips"] = "You don't have black pepper!"
     },
     [244] = {
         ["showtype"] = 2,
@@ -3169,7 +3169,7 @@
         ["tbxid"] = 807,
         ["notice"] = "",
         ["id"] = 807,
-        ["tips"] = "没有辣椒！"
+        ["tips"] = "You don't have black pepper!"
     },
     [245] = {
         ["showtype"] = 2,
@@ -3182,7 +3182,7 @@
         ["tbxid"] = 808,
         ["notice"] = "",
         ["id"] = 808,
-        ["tips"] = "没有孜然！"
+        ["tips"] = "You don't have cumin!"
     },
     [246] = {
         ["showtype"] = 2,
@@ -3195,7 +3195,7 @@
         ["tbxid"] = 809,
         ["notice"] = "",
         ["id"] = 809,
-        ["tips"] = "没有盐！"
+        ["tips"] = "You don't have salt!"
     },
     [247] = {
         ["showtype"] = 2,
@@ -3208,7 +3208,7 @@
         ["tbxid"] = 810,
         ["notice"] = "",
         ["id"] = 810,
-        ["tips"] = "没有香喷喷的烤鱼！"
+        ["tips"] = "You don't have seasoned grilled fish!"
     },
     [248] = {
         ["showtype"] = 2,
@@ -3221,7 +3221,7 @@
         ["tbxid"] = 811,
         ["notice"] = "",
         ["id"] = 811,
-        ["tips"] = "没有火辣辣的烤鱼！"
+        ["tips"] = "You don't have spicy grilled fish!"
     },
     [249] = {
         ["showtype"] = 2,
@@ -3234,7 +3234,7 @@
         ["tbxid"] = 812,
         ["notice"] = "",
         ["id"] = 812,
-        ["tips"] = "没有西域风味的鱼！"
+        ["tips"] = "You don't have western-style grilled fish!"
     },
     [250] = {
         ["showtype"] = 2,
@@ -3247,7 +3247,7 @@
         ["tbxid"] = 813,
         ["notice"] = "",
         ["id"] = 813,
-        ["tips"] = "没有咸鱼！"
+        ["tips"] = "You don't have salted fish!"
     },
     [251] = {
         ["showtype"] = 2,
@@ -3260,7 +3260,7 @@
         ["tbxid"] = 814,
         ["notice"] = "",
         ["id"] = 814,
-        ["tips"] = "朋友，稳一点，先把砖搬到水泥区的砖块堆放区。"
+        ["tips"] = "My friend, hold on, i need some bricks around the cement area."
     },
     [252] = {
         ["showtype"] = 2,
@@ -3273,7 +3273,7 @@
         ["tbxid"] = 815,
         ["notice"] = "",
         ["id"] = 815,
-        ["tips"] = "你的安抚似乎使它更焦虑了。还是让他静一静吧。"
+        ["tips"] = "You seem like fish it even more anxious than before. You still have to let the fish be relaxed."
     },
     [253] = {
         ["showtype"] = 2,
@@ -3286,7 +3286,7 @@
         ["tbxid"] = 816,
         ["notice"] = "",
         ["id"] = 816,
-        ["tips"] = "获得一条鱼，先看看是什么鱼吧！"
+        ["tips"] = "Go fish some fishes and see which fish you caught!"
     },
     [254] = {
         ["showtype"] = 2,
@@ -3299,7 +3299,7 @@
         ["tbxid"] = 817,
         ["notice"] = "",
         ["id"] = 817,
-        ["tips"] = "背包里已经有很多鱼了，还是先检查看看吧。万一就完成任务了呢！"
+        ["tips"] = "There're already caught a lot of fishes in your inventory, check it out before complete the quest!"
     },
     [255] = {
         ["showtype"] = 2,
@@ -3312,7 +3312,7 @@
         ["tbxid"] = 818,
         ["notice"] = "",
         ["id"] = 818,
-        ["tips"] = "不在指定的区域里，不能使用这个道具！"
+        ["tips"] = "This is not the designated area, you can't use this item here!"
     },
     [256] = {
         ["showtype"] = 2,
@@ -3325,7 +3325,7 @@
         ["tbxid"] = 819,
         ["notice"] = "",
         ["id"] = 819,
-        ["tips"] = "这只小鸟似乎还没吃饱。"
+        ["tips"] = "This little bird seems to be hungry."
     },
     [257] = {
         ["showtype"] = 2,
@@ -3338,7 +3338,7 @@
         ["tbxid"] = 820,
         ["notice"] = "",
         ["id"] = 820,
-        ["tips"] = "什么也没有钓到。"
+        ["tips"] = "Nothing caught."
     },
     [258] = {
         ["showtype"] = 2,
@@ -3351,7 +3351,7 @@
         ["tbxid"] = 821,
         ["notice"] = "",
         ["id"] = 821,
-        ["tips"] = "差一点，就差一点。"
+        ["tips"] = "You almost caught it."
     },
     [259] = {
         ["showtype"] = 2,
@@ -3364,7 +3364,7 @@
         ["tbxid"] = 822,
         ["notice"] = "",
         ["id"] = 822,
-        ["tips"] = "恭喜你，成功钓到了鱼！"
+        ["tips"] = "Congratulations, you caught a fish!"
     },
     [260] = {
         ["showtype"] = 2,
@@ -3377,7 +3377,7 @@
         ["tbxid"] = 823,
         ["notice"] = "",
         ["id"] = 823,
-        ["tips"] = "这边已经查看过了呢！"
+        ["tips"] = "You've alredy checked this!"
     },
     [261] = {
         ["showtype"] = 2,
@@ -3390,7 +3390,7 @@
         ["tbxid"] = 824,
         ["notice"] = "",
         ["id"] = 824,
-        ["tips"] = "似乎没有，再去别的地方找找吧！"
+        ["tips"] = "It doesn't have nothing there, go find somewhere else!"
     },
     [262] = {
         ["showtype"] = 2,
@@ -3403,7 +3403,7 @@
         ["tbxid"] = 825,
         ["notice"] = "",
         ["id"] = 825,
-        ["tips"] = "快从包里拿出布尔玛的衣服穿上到附近山洞内伪装成她吧。"
+        ["tips"] = "Bring Bulma's suit in order to become into Bulma for enter in the nearby cave."
     },
     [263] = {
         ["showtype"] = 2,
@@ -3416,7 +3416,7 @@
         ["tbxid"] = 826,
         ["notice"] = "",
         ["id"] = 826,
-        ["tips"] = "继续往前寻找萨波吧。"
+        ["tips"] = "Go ahead and look for Sapo."
     },
     [264] = {
         ["showtype"] = 2,
@@ -3429,7 +3429,7 @@
         ["tbxid"] = 827,
         ["notice"] = "",
         ["id"] = 827,
-        ["tips"] = "快找到逃跑的萨博的手下，不然给弗利萨报信了一切就都晚了。"
+        ["tips"] = "It's too late, we have to find the person who ran away from Zarbon, otherwise he'll report to Frieza."
     },
     [265] = {
         ["showtype"] = 2,
@@ -3442,7 +3442,7 @@
         ["tbxid"] = 828,
         ["notice"] = "",
         ["id"] = 828,
-        ["tips"] = "没有找到贝吉塔，但发现了萨博！机不可失，赶紧打败他！"
+        ["tips"] = "Can't find Vegeta, but you found Zarbon!, Don't let him flee, go to beat him!"
     },
     [266] = {
         ["showtype"] = 2,
@@ -3455,7 +3455,7 @@
         ["tbxid"] = 829,
         ["notice"] = "",
         ["id"] = 829,
-        ["tips"] = "小心古尔多的超能力，去打败他吧！"
+        ["tips"] = "Beware of Guldo's super powers, defeat him!"
     },
     [267] = {
         ["showtype"] = 2,
@@ -3468,7 +3468,7 @@
         ["tbxid"] = 830,
         ["notice"] = "",
         ["id"] = 830,
-        ["tips"] = "现在，该迎战利库姆了。"
+        ["tips"] = "Now, it's time to fight against Recoom."
     },
     [268] = {
         ["showtype"] = 2,
@@ -3481,7 +3481,7 @@
         ["tbxid"] = 831,
         ["notice"] = "",
         ["id"] = 831,
-        ["tips"] = "挡下巴特和吉斯的合力攻击虽然对于悟空来说是件轻松的事，但他现在还没赶到。现在就看你的了！"
+        ["tips"] = "Burter and Jeice have joined to fight against Goku, that's an easy task for Goku, but he hasn't arrived yet. They're looking at you now!"
     },
     [269] = {
         ["showtype"] = 2,
@@ -3494,7 +3494,7 @@
         ["tbxid"] = 832,
         ["notice"] = "",
         ["id"] = 832,
-        ["tips"] = "基纽作为基纽特战队队长，是最难对付的。但是现在只能上了，迎战基纽！"
+        ["tips"] = "As party leader, the party difficult to deal has been increased. But now you can only head back to the base!"
     },
     [270] = {
         ["showtype"] = 2,
@@ -3507,7 +3507,7 @@
         ["tbxid"] = 833,
         ["notice"] = "",
         ["id"] = 833,
-        ["tips"] = "有线索了！快打开背包，查看线索！！！"
+        ["tips"] = "You found some clues! Check in your inventory, there are new clues!!!"
     },
     [271] = {
         ["showtype"] = 0,
@@ -3520,7 +3520,7 @@
         ["tbxid"] = 834,
         ["notice"] = "",
         ["id"] = 834,
-        ["tips"] = "3,2,1,开始!"
+        ["tips"] = "3, 2, 1, GO!"
     },
     [272] = {
         ["showtype"] = 0,
@@ -3533,7 +3533,7 @@
         ["tbxid"] = 835,
         ["notice"] = "",
         ["id"] = 835,
-        ["tips"] = "任务失败"
+        ["tips"] = "Quest failed"
     },
     [273] = {
         ["showtype"] = 0,
@@ -3546,7 +3546,7 @@
         ["tbxid"] = 836,
         ["notice"] = "",
         ["id"] = 836,
-        ["tips"] = "任务开始"
+        ["tips"] = "Quest started"
     },
     [274] = {
         ["showtype"] = 2,
@@ -3559,7 +3559,7 @@
         ["tbxid"] = 837,
         ["notice"] = "",
         ["id"] = 837,
-        ["tips"] = "你已在此地图"
+        ["tips"] = "You are already on this map"
     },
     [275] = {
         ["showtype"] = 2,
@@ -3572,7 +3572,7 @@
         ["tbxid"] = 838,
         ["notice"] = "",
         ["id"] = 838,
-        ["tips"] = "小心！前方有什么东西过来了！"
+        ["tips"] = "Beware! Something is coming in front of you!"
     },
     [276] = {
         ["showtype"] = 2,
@@ -3585,7 +3585,7 @@
         ["tbxid"] = 839,
         ["notice"] = "",
         ["id"] = 839,
-        ["tips"] = "目标在副本中"
+        ["tips"] = "You already got a target"
     },
     [277] = {
         ["showtype"] = 2,
@@ -3598,7 +3598,7 @@
         ["tbxid"] = 840,
         ["notice"] = "",
         ["id"] = 840,
-        ["tips"] = "圆台边上的染色炸弹似乎有些用处"
+        ["tips"] = "These bombs located in the edge of the round table seem to be quite useful"
     },
     [278] = {
         ["showtype"] = 2,
@@ -3611,7 +3611,7 @@
         ["tbxid"] = 841,
         ["notice"] = "",
         ["id"] = 841,
-        ["tips"] = "在圆台内按下空格键可在脚下放置染色炸弹！"
+        ["tips"] = "Press the space bar near the round table to place the bomb under your feet!"
     },
     [279] = {
         ["showtype"] = 2,
@@ -3624,7 +3624,7 @@
         ["tbxid"] = 842,
         ["notice"] = "",
         ["id"] = 842,
-        ["tips"] = "圆台北侧似乎有动静"
+        ["tips"] = "There seems to be something around the round table's  north side."
     },
     [280] = {
         ["showtype"] = 2,
@@ -3637,7 +3637,7 @@
         ["tbxid"] = 843,
         ["notice"] = "",
         ["id"] = 843,
-        ["tips"] = "圆台南侧似乎有动静"
+        ["tips"] = "There seems to be something around the round table's south side."
     },
     [281] = {
         ["showtype"] = 2,
@@ -3650,7 +3650,7 @@
         ["tbxid"] = 844,
         ["notice"] = "",
         ["id"] = 844,
-        ["tips"] = "圆台西侧似乎有动静"
+        ["tips"] = "There seems to be something around the round table's  west side."
     },
     [282] = {
         ["showtype"] = 2,
@@ -3663,7 +3663,7 @@
         ["tbxid"] = 845,
         ["notice"] = "",
         ["id"] = 845,
-        ["tips"] = "圆台东侧似乎有动静"
+        ["tips"] = "There seems to be something around the round table's  east side."
     },
     [283] = {
         ["showtype"] = 2,
@@ -3676,7 +3676,7 @@
         ["tbxid"] = 846,
         ["notice"] = "",
         ["id"] = 846,
-        ["tips"] = "圆台东北侧似乎有动静"
+        ["tips"] = "There seems to be something around the round table's  mortheast side."
     },
     [284] = {
         ["showtype"] = 2,
@@ -3689,7 +3689,7 @@
         ["tbxid"] = 847,
         ["notice"] = "",
         ["id"] = 847,
-        ["tips"] = "圆台西北侧似乎有动静"
+        ["tips"] = "There seems to be something around the round table's  northwest side."
     },
     [285] = {
         ["showtype"] = 2,
@@ -3702,7 +3702,7 @@
         ["tbxid"] = 848,
         ["notice"] = "",
         ["id"] = 848,
-        ["tips"] = "圆台西南侧似乎有动静"
+        ["tips"] = "There seems to be something around the round table's  southwest side."
     },
     [286] = {
         ["showtype"] = 2,
@@ -3715,7 +3715,7 @@
         ["tbxid"] = 849,
         ["notice"] = "",
         ["id"] = 849,
-        ["tips"] = "圆台东南侧似乎有动静"
+        ["tips"] = "There seems to be something around the round table's  southeast side."
     },
     [287] = {
         ["showtype"] = 2,
@@ -3728,7 +3728,7 @@
         ["tbxid"] = 850,
         ["notice"] = "",
         ["id"] = 850,
-        ["tips"] = "快去捡起染色炸弹吧！"
+        ["tips"] = "快去捡起染色炸弹吧!"
     },
     [288] = {
         ["showtype"] = 2,
@@ -3741,7 +3741,7 @@
         ["tbxid"] = 851,
         ["notice"] = "",
         ["id"] = 851,
-        ["tips"] = "站在原地，听听他们在说什么！"
+        ["tips"] = "Stay quiet in this place and listen to what they are talking about!"
     },
     [289] = {
         ["showtype"] = 2,
@@ -3754,7 +3754,7 @@
         ["tbxid"] = 852,
         ["notice"] = "",
         ["id"] = 852,
-        ["tips"] = "请查看控制台！"
+        ["tips"] = "Please check the console!"
     },
     [290] = {
         ["showtype"] = 2,
@@ -3767,7 +3767,7 @@
         ["tbxid"] = 853,
         ["notice"] = "",
         ["id"] = 853,
-        ["tips"] = "糟糕！请注意躲避闪电！！"
+        ["tips"] = "Wrong! Please take care to avoid lightning!!"
     },
     [291] = {
         ["showtype"] = 2,
@@ -3780,7 +3780,7 @@
         ["tbxid"] = 854,
         ["notice"] = "",
         ["id"] = 854,
-        ["tips"] = "不光是用看的而是感觉去体会闪电在哪。"
+        ["tips"] = "Is not only to watch the lighting, but also you must to understand where the lighting is going to strike."
     },
     [292] = {
         ["showtype"] = 2,
@@ -3793,7 +3793,7 @@
         ["tbxid"] = 855,
         ["notice"] = "",
         ["id"] = 855,
-        ["tips"] = "请先通过楼梯前往下一层"
+        ["tips"] = "Please go up the stairs to the next floor."
     },
     [293] = {
         ["showtype"] = 2,
@@ -3806,7 +3806,7 @@
         ["tbxid"] = 856,
         ["notice"] = "",
         ["id"] = 856,
-        ["tips"] = "请先通过亚奇洛贝，前往卡林塔！"
+        ["tips"] = "Please, pass to Yajirobe and climb up to the tower!"
     },
     [294] = {
         ["showtype"] = 2,
@@ -3819,7 +3819,7 @@
         ["tbxid"] = 857,
         ["notice"] = "",
         ["id"] = 857,
-        ["tips"] = "请先通过楼梯前往卡林塔上层"
+        ["tips"] = "Please first take the stairs to the upper level of the tower"
     },
     [295] = {
         ["showtype"] = 2,
@@ -3832,7 +3832,7 @@
         ["tbxid"] = 858,
         ["notice"] = "",
         ["id"] = 858,
-        ["tips"] = "吃饱喝足，你获得了饱餐加成"
+        ["tips"] = "You've eat and drink enough, you got full meal bonus"
     },
     [296] = {
         ["showtype"] = 2,
@@ -3845,7 +3845,7 @@
         ["tbxid"] = 859,
         ["notice"] = "",
         ["id"] = 859,
-        ["tips"] = "此处松了松，但什么都没有发现。"
+        ["tips"] = "There're some loose things there, but nothing was found"
     },
     [297] = {
         ["showtype"] = 2,
@@ -3858,7 +3858,7 @@
         ["tbxid"] = 860,
         ["notice"] = "",
         ["id"] = 860,
-        ["tips"] = "发现了一个生锈的铁盒子！"
+        ["tips"] = "Found a rusty iron box!"
     },
     [298] = {
         ["showtype"] = 2,
@@ -3871,7 +3871,7 @@
         ["tbxid"] = 861,
         ["notice"] = "",
         ["id"] = 861,
-        ["tips"] = "感觉有点微醺，全身暖洋洋的。"
+        ["tips"] = "Feeling a little tipsy, the body warm."
     },
     [299] = {
         ["showtype"] = 2,
@@ -3884,7 +3884,7 @@
         ["tbxid"] = 862,
         ["notice"] = "",
         ["id"] = 862,
-        ["tips"] = "成功拾取第一个，还有2个，加油！"
+        ["tips"] = "Successfully picked the first one, there are still 2 left, cheers!"
     },
     [300] = {
         ["showtype"] = 2,
@@ -3897,7 +3897,7 @@
         ["tbxid"] = 863,
         ["notice"] = "",
         ["id"] = 863,
-        ["tips"] = "成功拾取第二个，还有1个，加油！"
+        ["tips"] = "Successfully pick the second one, there still got 1 left, cheers!"
     },
     [301] = {
         ["showtype"] = 2,
@@ -3910,7 +3910,7 @@
         ["tbxid"] = 864,
         ["notice"] = "",
         ["id"] = 864,
-        ["tips"] = "成功拾取所有盒子，快去找巴布鲁斯交道具！"
+        ["tips"] = "You've successfully picked up all the boxed, go to talk to Bubbles and hand over the props!"
     },
     [302] = {
         ["showtype"] = 2,
@@ -3923,7 +3923,7 @@
         ["tbxid"] = 865,
         ["notice"] = "",
         ["id"] = 865,
-        ["tips"] = "本次挑战有三次，一旦失败将从头再来！"
+        ["tips"] = "This challenge has 3 parts, if you fail in one of the 3 parts you'll have to come to me again!"
     },
     [303] = {
         ["showtype"] = 2,
@@ -3936,7 +3936,7 @@
         ["tbxid"] = 866,
         ["notice"] = "",
         ["id"] = 866,
-        ["tips"] = "成功，难度要增大咯！"
+        ["tips"] = "Success, the difficulty will be increased!"
     },
     [304] = {
         ["showtype"] = 2,
@@ -3949,7 +3949,7 @@
         ["tbxid"] = 867,
         ["notice"] = "",
         ["id"] = 867,
-        ["tips"] = "成功，还有一次更难的！"
+        ["tips"] = "Success, the difficulty will be increased even more!"
     },
     [305] = {
         ["showtype"] = 2,
@@ -3962,7 +3962,7 @@
         ["tbxid"] = 868,
         ["notice"] = "",
         ["id"] = 868,
-        ["tips"] = "挑战成功！"
+        ["tips"] = "Challenge completed!"
     },
     [306] = {
         ["showtype"] = 2,
@@ -3975,7 +3975,7 @@
         ["tbxid"] = 869,
         ["notice"] = "",
         ["id"] = 869,
-        ["tips"] = "躲避伤害球体，坚持30秒！！！"
+        ["tips"] = "You have to dodge the damage taken by the spheres, resist for 30 seconds!!!"
     },
     [307] = {
         ["showtype"] = 2,
@@ -3988,7 +3988,7 @@
         ["tbxid"] = 870,
         ["notice"] = "",
         ["id"] = 870,
-        ["tips"] = "任务失败！5秒后离开副本！"
+        ["tips"] = "Quest failed! you'll leave the place after 5 seconds!"
     },
     [308] = {
         ["showtype"] = 2,
@@ -4001,7 +4001,7 @@
         ["tbxid"] = 871,
         ["notice"] = "",
         ["id"] = 871,
-        ["tips"] = "本次挑战有二次，一旦失败将从头再来！"
+        ["tips"] = "There still have 2 challenge left, if you fail the next one you'll have to come back again!"
     },
     [309] = {
         ["showtype"] = 2,
@@ -4014,7 +4014,7 @@
         ["tbxid"] = 872,
         ["notice"] = "",
         ["id"] = 872,
-        ["tips"] = "长按空格键进行元气弹蓄力"
+        ["tips"] = "Keep pressing the space bar to carry out the power of the gas bomb"
     },
     [310] = {
         ["showtype"] = 2,
@@ -4027,7 +4027,7 @@
         ["tbxid"] = 873,
         ["notice"] = "",
         ["id"] = 873,
-        ["tips"] = "成功击破巨石！"
+        ["tips"] = "You've successfully broken the boulder!"
     },
     [311] = {
         ["showtype"] = 2,
@@ -4040,7 +4040,7 @@
         ["tbxid"] = 874,
         ["notice"] = "",
         ["id"] = 874,
-        ["tips"] = "失败！请重新正确蓄力！"
+        ["tips"] = "Failed! Please re-charge your powers!"
     },
     [312] = {
         ["showtype"] = 2,
@@ -4053,7 +4053,7 @@
         ["tbxid"] = 875,
         ["notice"] = "",
         ["id"] = 875,
-        ["tips"] = "10秒后离开副本！"
+        ["tips"] = "You'll leave the copy after 10 seconds!"
     },
     [313] = {
         ["showtype"] = 2,
@@ -4066,7 +4066,7 @@
         ["tbxid"] = 876,
         ["notice"] = "",
         ["id"] = 876,
-        ["tips"] = "5秒后开始挑战！"
+        ["tips"] = "The challenge will start in 5 seconds!"
     },
     [314] = {
         ["showtype"] = 2,
@@ -4079,7 +4079,7 @@
         ["tbxid"] = 877,
         ["notice"] = "",
         ["id"] = 877,
-        ["tips"] = "表现不错！最后30秒，坚持！"
+        ["tips"] = "Good performance! Last 30 seconds, stay alert!"
     },
     [315] = {
         ["showtype"] = 2,
@@ -4092,7 +4092,7 @@
         ["tbxid"] = 878,
         ["notice"] = "",
         ["id"] = 878,
-        ["tips"] = "只能在那美克星副本里多多利亚附近的山洞内使用哦！"
+        ["tips"] = "That namekian suit can only be used near the Dodorian cave!"
     },
     [316] = {
         ["showtype"] = 2,
@@ -4105,7 +4105,7 @@
         ["tbxid"] = 879,
         ["notice"] = "",
         ["id"] = 879,
-        ["tips"] = "成功拾取所有能量元素！"
+        ["tips"] = "You've successfully pick up all energy elements!"
     },
     [317] = {
         ["showtype"] = 2,
@@ -4118,7 +4118,7 @@
         ["tbxid"] = 880,
         ["notice"] = "",
         ["id"] = 880,
-        ["tips"] = "快伪装成萨博吧。"
+        ["tips"] = "Quickly disguise as Zaborn."
     },
     [318] = {
         ["showtype"] = 2,
@@ -4131,7 +4131,7 @@
         ["tbxid"] = 881,
         ["notice"] = "",
         ["id"] = 881,
-        ["tips"] = "只能在那美克星副本里贝吉塔的周围使用哦！"
+        ["tips"] = "Only Namekian can use the copy around Vegeta!"
     },
     [319] = {
         ["showtype"] = 2,
@@ -4144,7 +4144,7 @@
         ["tbxid"] = 882,
         ["notice"] = "",
         ["id"] = 882,
-        ["tips"] = "伪装成功，快去通知弗利萨的手下吧！"
+        ["tips"] = "Camouflage success, go and inform Frieza's men!"
     },
     [320] = {
         ["showtype"] = 2,
@@ -4157,7 +4157,7 @@
         ["tbxid"] = 883,
         ["notice"] = "",
         ["id"] = 883,
-        ["tips"] = "基纽施放大转换，跟与你转换了身体！与“你”对战！"
+        ["tips"] = "Ginyu has changed his body to yours! You've to fight against youself!"
     },
     [321] = {
         ["showtype"] = 2,
@@ -4170,7 +4170,7 @@
         ["tbxid"] = 884,
         ["notice"] = "",
         ["id"] = 884,
-        ["tips"] = "并没有发现什么有用的线索。"
+        ["tips"] = "You haven't found any useful clues."
     },
     [322] = {
         ["showtype"] = 2,
@@ -4183,7 +4183,7 @@
         ["tbxid"] = 885,
         ["notice"] = "",
         ["id"] = 885,
-        ["tips"] = "请躲到多多利亚附近的山洞内部使用哦！"
+        ["tips"] = "Please hide inside the cave near Dodorian!"
     },
     [323] = {
         ["showtype"] = 1,
@@ -4194,7 +4194,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 890,
-        ["notice"] = "[Tips1]{0}[/Tips1]共享给你[Tips1]{1}[/Tips1],是否接受？",
+        ["notice"] = "[Tips1]{0}[/Tips1]is sharing with you[Tips1]{1}[/Tips1], accept?",
         ["id"] = 890,
         ["tips"] = ""
     },
@@ -4209,7 +4209,7 @@
         ["tbxid"] = 891,
         ["notice"] = "",
         ["id"] = 891,
-        ["tips"] = "你无法共享该任务！"
+        ["tips"] = "You can't share this quest!"
     },
     [325] = {
         ["showtype"] = 1,
@@ -4220,7 +4220,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 892,
-        ["notice"] = "是否放弃[Tips1]{0}[/Tips1]？",
+        ["notice"] = "Do you want to give up[Tips1]{0}[/Tips1]?",
         ["id"] = 892,
         ["tips"] = ""
     },
@@ -4235,7 +4235,7 @@
         ["tbxid"] = 893,
         ["notice"] = "",
         ["id"] = 893,
-        ["tips"] = "你无法放弃该任务！"
+        ["tips"] = "You can't give up the quest!"
     },
     [327] = {
         ["showtype"] = 3,
@@ -4248,7 +4248,7 @@
         ["tbxid"] = 894,
         ["notice"] = "",
         ["id"] = 894,
-        ["tips"] = "你无法接取该任务！"
+        ["tips"] = "You can't take this quest!"
     },
     [328] = {
         ["showtype"] = 3,
@@ -4259,7 +4259,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 895,
-        ["notice"] = "[Tips1]{0}[/Tips1]分享的任务你已经接取！",
+        ["notice"] = "[Tips1]{0}[/Tips1]quest you shared has been already received!",
         ["id"] = 895,
         ["tips"] = ""
     },
@@ -4274,7 +4274,7 @@
         ["tbxid"] = 896,
         ["notice"] = "",
         ["id"] = 896,
-        ["tips"] = "不能同时追踪更多任务！"
+        ["tips"] = "You can't track more quest at the same time!"
     },
     [330] = {
         ["showtype"] = 3,
@@ -4287,7 +4287,7 @@
         ["tbxid"] = 897,
         ["notice"] = "",
         ["id"] = 897,
-        ["tips"] = "目标不在副本中！"
+        ["tips"] = "Target is not in the copy!"
     },
     [331] = {
         ["showtype"] = 3,
@@ -4298,9 +4298,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 898,
-        ["notice"] = "不能取消追踪主线任务！",
+        ["notice"] = "You can't cancel the main line quest!",
         ["id"] = 898,
-        ["tips"] = "不能取消追踪主线任务！"
+        ["tips"] = "You can't cancel the main line quest!"
     },
     [332] = {
         ["showtype"] = 2,
@@ -4311,7 +4311,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 900,
-        ["notice"] = "[Tips1]解锁新技能:{0}！[/Tips1]",
+        ["notice"] = "[Tips1]Unlocked new skill::{0}![/Tips1]",
         ["id"] = 900,
         ["tips"] = ""
     },
@@ -4324,7 +4324,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 901,
-        ["notice"] = "恭喜你已升至{0}{1}级",
+        ["notice"] = "Congratulations, you have increased to {0} lv{1}!",
         ["id"] = 901,
         ["tips"] = ""
     },
@@ -4339,7 +4339,7 @@
         ["tbxid"] = 902,
         ["notice"] = "",
         ["id"] = 902,
-        ["tips"] = "进入战斗"
+        ["tips"] = "You're in combat mode"
     },
     [335] = {
         ["showtype"] = 4,
@@ -4352,7 +4352,7 @@
         ["tbxid"] = 903,
         ["notice"] = "",
         ["id"] = 903,
-        ["tips"] = "离开战斗"
+        ["tips"] = "You've left combat mode"
     },
     [336] = {
         ["showtype"] = 3,
@@ -4365,7 +4365,7 @@
         ["tbxid"] = 904,
         ["notice"] = "",
         ["id"] = 904,
-        ["tips"] = "魔法值不足!"
+        ["tips"] = "Not enought energy points" 
     },
     [337] = {
         ["showtype"] = 3,
@@ -4378,7 +4378,7 @@
         ["tbxid"] = 905,
         ["notice"] = "",
         ["id"] = 905,
-        ["tips"] = "没有施放目标!"
+        ["tips"] = "No target has been selected!"
     },
     [338] = {
         ["showtype"] = 3,
@@ -4391,7 +4391,7 @@
         ["tbxid"] = 906,
         ["notice"] = "",
         ["id"] = 906,
-        ["tips"] = "复活次数达到上限!"
+        ["tips"] = "You've reached the resurrection limit!"
     },
     [339] = {
         ["showtype"] = 0,
@@ -4402,7 +4402,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 907,
-        ["notice"] = "[Tips1]{0}[/Tips1]击杀了[EnemyName]{1}[/EnemyName]",
+        ["notice"] = "[Tips1]{0}[/Tips1]you killed[EnemyName]{1}[/EnemyName]",
         ["id"] = 907,
         ["tips"] = ""
     },
@@ -4415,7 +4415,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 908,
-        ["notice"] = "[Tips1]{0}[/Tips1]刚刚完成了双杀",
+        ["notice"] = "[Tips1]{0}[/Tips1]you just completed a double kill",
         ["id"] = 908,
         ["tips"] = ""
     },
@@ -4428,7 +4428,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 909,
-        ["notice"] = "[Tips1]{0}[/Tips1]刚刚完成了三杀",
+        ["notice"] = "[Tips1]{0}[/Tips1]you just completed a triple kill",
         ["id"] = 909,
         ["tips"] = ""
     },
@@ -4441,7 +4441,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 910,
-        ["notice"] = "[Tips1]{0}[/Tips1]正在疯狂的杀戮",
+        ["notice"] = "[Tips1]{0}[/Tips1]You're a serial killer",
         ["id"] = 910,
         ["tips"] = ""
     },
@@ -4454,7 +4454,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 911,
-        ["notice"] = "[Tips1]{0}[/Tips1]正在暴走！！！",
+        ["notice"] = "[Tips1]{0}[/Tips1]runaway!!!",
         ["id"] = 911,
         ["tips"] = ""
     },
@@ -4467,7 +4467,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 912,
-        ["notice"] = "[Tips1]{0}[/Tips1]正在大杀特杀",
+        ["notice"] = "[Tips1]{0}[/Tips1]You completed a special killing",
         ["id"] = 912,
         ["tips"] = ""
     },
@@ -4480,7 +4480,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 913,
-        ["notice"] = "[Tips1]{0}[/Tips1]正在主宰比赛",
+        ["notice"] = "[Tips1]{0}[/Tips1]Domination tournament started",
         ["id"] = 913,
         ["tips"] = ""
     },
@@ -4493,7 +4493,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 914,
-        ["notice"] = "[Tips1]{0}[/Tips1]已经杀人如麻",
+        ["notice"] = "[Tips1]{0}[/Tips1]You already killed it",
         ["id"] = 914,
         ["tips"] = ""
     },
@@ -4506,7 +4506,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 915,
-        ["notice"] = "[Tips1]{0}[/Tips1]已经无人能挡",
+        ["notice"] = "[Tips1]{0}[/Tips1]nobody can stop you",
         ["id"] = 915,
         ["tips"] = ""
     },
@@ -4519,7 +4519,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 916,
-        ["notice"] = "[Tips1]{0}[/Tips1]正在变态杀戮",
+        ["notice"] = "[Tips1]{0}[/Tips1]abnormal killing",
         ["id"] = 916,
         ["tips"] = ""
     },
@@ -4532,7 +4532,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 917,
-        ["notice"] = "[Tips1]{0}[/Tips1]完成了妖怪般的杀戮",
+        ["notice"] = "[Tips1]{0}[/Tips1]you've completed the monster-like killing",
         ["id"] = 917,
         ["tips"] = ""
     },
@@ -4545,7 +4545,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 918,
-        ["notice"] = "[Tips1]{0}[/Tips1]完成了如同神一般的杀戮",
+        ["notice"] = "[Tips1]{0}[/Tips1]Completed a godlike killing",
         ["id"] = 918,
         ["tips"] = ""
     },
@@ -4558,7 +4558,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 919,
-        ["notice"] = "[Tips1]{0}[/Tips1]已经超神！快来人阻止他！",
+        ["notice"] = "[Tips1]{0}[/Tips1]Already have to defeat the super god! Come and stop him!",
         ["id"] = 919,
         ["tips"] = ""
     },
@@ -4571,7 +4571,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 920,
-        ["notice"] = "[Tips1]{0}[/Tips1]终结了[EnemyName]{1}[/EnemyName]的大杀特杀",
+        ["notice"] = "[Tips1]{0}[/Tips1]already finished[EnemyName]{1}[/EnemyName]carnage mode",
         ["id"] = 920,
         ["tips"] = ""
     },
@@ -4584,7 +4584,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 921,
-        ["notice"] = "[Tips1]{0}[/Tips1]终结了[EnemyName]{1}[/EnemyName]的主宰比赛",
+        ["notice"] = "[Tips1]{0}[/Tips1]already finished[EnemyName]{1}[/EnemyName]domination challenge",
         ["id"] = 921,
         ["tips"] = ""
     },
@@ -4597,7 +4597,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 922,
-        ["notice"] = "[Tips1]{0}[/Tips1]终结了[EnemyName]{1}[/EnemyName]的杀人如麻",
+        ["notice"] = "[Tips1]{0}[/Tips1]already finished the deadliest[EnemyName]{1}[/EnemyName]mode",
         ["id"] = 922,
         ["tips"] = ""
     },
@@ -4610,7 +4610,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 923,
-        ["notice"] = "[Tips1]{0}[/Tips1]终结了[EnemyName]{1}[/EnemyName]的无人能挡",
+        ["notice"] = "[Tips1]{0}[/Tips1]already finished the unstoppable[EnemyName]{1}[/EnemyName]mode",
         ["id"] = 923,
         ["tips"] = ""
     },
@@ -4623,7 +4623,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 924,
-        ["notice"] = "[Tips1]{0}[/Tips1]终结了[EnemyName]{1}[/EnemyName]的变态杀戮",
+        ["notice"] = "[Tips1]{0}[/Tips1]already finished[EnemyName]{1}[/EnemyName]abnormal killing mode",
         ["id"] = 924,
         ["tips"] = ""
     },
@@ -4636,7 +4636,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 925,
-        ["notice"] = "[Tips1]{0}[/Tips1]终结了[EnemyName]{1}[/EnemyName]的妖怪般的杀戮",
+        ["notice"] = "[Tips1]{0}[/Tips1]already finished[EnemyName]{1}[/EnemyName]Monster-like killing mode",
         ["id"] = 925,
         ["tips"] = ""
     },
@@ -4649,7 +4649,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 926,
-        ["notice"] = "[Tips1]{0}[/Tips1]终结了[EnemyName]{1}[/EnemyName]的如同神一般的杀戮",
+        ["notice"] = "[Tips1]{0}[/Tips1]already finished[EnemyName]{1}[/EnemyName]godlike killing mode",
         ["id"] = 926,
         ["tips"] = ""
     },
@@ -4662,7 +4662,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 927,
-        ["notice"] = "[Tips1]{0}[/Tips1]终结了[EnemyName]{1}[/EnemyName]的超神！！！",
+        ["notice"] = "[Tips1]{0}[/Tips1]already finished[EnemyName]{1}[/EnemyName]Super god mode!!!",
         ["id"] = 927,
         ["tips"] = ""
     },
@@ -4675,7 +4675,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 928,
-        ["notice"] = "{0}成功升级到Lv.{1}",
+        ["notice"] = "{0} You have successfully upgraded to Lv.{1}",
         ["id"] = 928,
         ["tips"] = ""
     },
@@ -4690,7 +4690,7 @@
         ["tbxid"] = 929,
         ["notice"] = "",
         ["id"] = 929,
-        ["tips"] = "触发生命保护机制"
+        ["tips"] = "Life protection mechanism has been triggered"
     },
     [362] = {
         ["showtype"] = 3,
@@ -4703,7 +4703,7 @@
         ["tbxid"] = 930,
         ["notice"] = "",
         ["id"] = 930,
-        ["tips"] = "我需要一个目标"
+        ["tips"] = "I need a goal"
     },
     [363] = {
         ["showtype"] = 3,
@@ -4716,7 +4716,7 @@
         ["tbxid"] = 931,
         ["notice"] = "",
         ["id"] = 931,
-        ["tips"] = "目标离我太远了"
+        ["tips"] = "The goal is too far away from me."
     },
     [364] = {
         ["showtype"] = 3,
@@ -4729,7 +4729,7 @@
         ["tbxid"] = 932,
         ["notice"] = "",
         ["id"] = 932,
-        ["tips"] = "战斗中不能升级技能扩展"
+        ["tips"] = "Unable to upgrade skill expansion during combat"
     },
     [365] = {
         ["showtype"] = 3,
@@ -4742,7 +4742,7 @@
         ["tbxid"] = 933,
         ["notice"] = "",
         ["id"] = 933,
-        ["tips"] = "技能冷却中不能升级技能扩展"
+        ["tips"] = "Skill expansion cannot be upgraded while in cooldown"
     },
     [366] = {
         ["showtype"] = 2,
@@ -4753,7 +4753,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 1011,
-        ["notice"] = "公告:{0}",
+        ["notice"] = "Announcement: {0}",
         ["id"] = 1011,
         ["tips"] = ""
     },
@@ -4766,7 +4766,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 1012,
-        ["notice"] = "重要公告:{0}",
+        ["notice"] = "Important announcement: {0}",
         ["id"] = 1012,
         ["tips"] = ""
     },
@@ -4779,7 +4779,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 1013,
-        ["notice"] = "停机公告:{0}",
+        ["notice"] = "Downtime announcement: {0}",
         ["id"] = 1013,
         ["tips"] = ""
     },
@@ -4807,7 +4807,7 @@
         ["tbxid"] = 1201,
         ["notice"] = "",
         ["id"] = 1201,
-        ["tips"] = "本日已设置过目标家族"
+        ["tips"] = "The target guild has been set up today"
     },
     [371] = {
         ["showtype"] = 3,
@@ -4820,7 +4820,7 @@
         ["tbxid"] = 1202,
         ["notice"] = "",
         ["id"] = 1202,
-        ["tips"] = "此家族被选择次数过多，请重新选择"
+        ["tips"] = "This guild has been selected too many times, please re-select"
     },
     [372] = {
         ["showtype"] = 3,
@@ -4833,7 +4833,7 @@
         ["tbxid"] = 1203,
         ["notice"] = "",
         ["id"] = 1203,
-        ["tips"] = "抱歉，您的队伍里有其他家族的成员"
+        ["tips"] = "Sorry, there are members of other guild in your party."
     },
     [373] = {
         ["showtype"] = 3,
@@ -4846,7 +4846,7 @@
         ["tbxid"] = 1204,
         ["notice"] = "",
         ["id"] = 1204,
-        ["tips"] = "粒子传送门对您即将失效，为保证生命安全，自动传回家族驻地"
+        ["tips"] = "Particle portal failure, you'll be automatically returned to the guild station to ensure your safety"
     },
     [374] = {
         ["showtype"] = 2,
@@ -4857,7 +4857,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 1205,
-        ["notice"] = "本日的情报目标家族为{0}",
+        ["notice"] = "Today’s intelligence targeted the guild called {0}",
         ["id"] = 1205,
         ["tips"] = ""
     },
@@ -4870,7 +4870,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 1206,
-        ["notice"] = "{0}成功驱逐了来自{1}的特务{2}！",
+        ["notice"] = "{0} successfully ousted the spy {2} from {1}!",
         ["id"] = 1206,
         ["tips"] = ""
     },
@@ -4883,7 +4883,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 1207,
-        ["notice"] = "{0}成功窃取{1}的建筑情报！",
+        ["notice"] = "{0} have successfully stolen {1} building information!",
         ["id"] = 1207,
         ["tips"] = ""
     },
@@ -4898,7 +4898,7 @@
         ["tbxid"] = 1208,
         ["notice"] = "",
         ["id"] = 1208,
-        ["tips"] = "您未选中任何目标家族"
+        ["tips"] = "You have not selected any guild"
     },
     [378] = {
         ["showtype"] = 3,
@@ -4911,7 +4911,7 @@
         ["tbxid"] = 1209,
         ["notice"] = "",
         ["id"] = 1209,
-        ["tips"] = "尚未设置目标家族，不能传送"
+        ["tips"] = "Guild target has not been set and cannot be transferred"
     },
     [379] = {
         ["showtype"] = 3,
@@ -4924,7 +4924,7 @@
         ["tbxid"] = 1210,
         ["notice"] = "",
         ["id"] = 1210,
-        ["tips"] = "当前不在空间传送器开放时间内"
+        ["tips"] = "Currently there's not space to open transmitter time"
     },
     [380] = {
         ["showtype"] = 3,
@@ -4937,7 +4937,7 @@
         ["tbxid"] = 1211,
         ["notice"] = "",
         ["id"] = 1211,
-        ["tips"] = "不在选择目标的时间内"
+        ["tips"] = "There's not time to selecting the guild target"
     },
     [381] = {
         ["showtype"] = 3,
@@ -4950,7 +4950,7 @@
         ["tbxid"] = 1212,
         ["notice"] = "",
         ["id"] = 1212,
-        ["tips"] = "您现在处于探查的秘密状态，请使用粒子传送门"
+        ["tips"] = "You're not in a secret exploration, please use the portal to start"
     },
     [382] = {
         ["showtype"] = 3,
@@ -4963,7 +4963,7 @@
         ["tbxid"] = 1300,
         ["notice"] = "",
         ["id"] = 1300,
-        ["tips"] = "不能发送空内容"
+        ["tips"] = "Cannot send empty content"
     },
     [383] = {
         ["showtype"] = 3,
@@ -4974,7 +4974,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 1301,
-        ["notice"] = "最多发送{0}个字符",
+        ["notice"] = "Send up to {0} characters",
         ["id"] = 1301,
         ["tips"] = ""
     },
@@ -4989,7 +4989,7 @@
         ["tbxid"] = 1302,
         ["notice"] = "",
         ["id"] = 1302,
-        ["tips"] = "您发言太快了，请稍等一会"
+        ["tips"] = "You're typing too fast, please wait a moment"
     },
     [385] = {
         ["showtype"] = 3,
@@ -5000,7 +5000,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 1303,
-        ["notice"] = "人物等级{0}级可以在{1}频道发言",
+        ["notice"] = "Character level {0} can speak on {1} channel",
         ["id"] = 1303,
         ["tips"] = ""
     },
@@ -5015,7 +5015,7 @@
         ["tbxid"] = 1304,
         ["notice"] = "",
         ["id"] = 1304,
-        ["tips"] = "请不要连续发送重复内容"
+        ["tips"] = "Please do not spam content continuously"
     },
     [387] = {
         ["showtype"] = 3,
@@ -5026,7 +5026,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 1305,
-        ["notice"] = "{0}频道发言需要消耗道具{1}{2}个",
+        ["notice"] = "{0} channel speech needs to consume {1}{2} items ",
         ["id"] = 1305,
         ["tips"] = ""
     },
@@ -5041,7 +5041,7 @@
         ["tbxid"] = 1306,
         ["notice"] = "",
         ["id"] = 1306,
-        ["tips"] = "您当前不在队伍中"
+        ["tips"] = "You are not currently in the party"
     },
     [389] = {
         ["showtype"] = 3,
@@ -5054,7 +5054,7 @@
         ["tbxid"] = 1307,
         ["notice"] = "",
         ["id"] = 1307,
-        ["tips"] = "您当前还没有加入家族"
+        ["tips"] = "You haven't joined any guild yet"
     },
     [390] = {
         ["showtype"] = 3,
@@ -5067,7 +5067,7 @@
         ["tbxid"] = 1308,
         ["notice"] = "",
         ["id"] = 1308,
-        ["tips"] = "您当前还没有选择阵营"
+        ["tips"] = "You have not chosen a camp yet."
     },
     [391] = {
         ["showtype"] = 0,
@@ -5078,7 +5078,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 1309,
-        ["notice"] = "消耗{0}{1}个",
+        ["notice"] = "Use {0}{1}",
         ["id"] = 1309,
         ["tips"] = ""
     },
@@ -5093,7 +5093,7 @@
         ["tbxid"] = 1310,
         ["notice"] = "",
         ["id"] = 1310,
-        ["tips"] = "您已向对方发送好友申请"
+        ["tips"] = "You have sent a friend request to the other party"
     },
     [393] = {
         ["showtype"] = 4,
@@ -5106,7 +5106,7 @@
         ["tbxid"] = 1311,
         ["notice"] = "",
         ["id"] = 1311,
-        ["tips"] = "您已拒绝对方的好友申请"
+        ["tips"] = "You have rejected the friend's request"
     },
     [394] = {
         ["showtype"] = 3,
@@ -5119,7 +5119,7 @@
         ["tbxid"] = 1312,
         ["notice"] = "",
         ["id"] = 1312,
-        ["tips"] = "您的好友数量已满，无法发送申请"
+        ["tips"] = "Your friends list is full and this request can't be applicated"
     },
     [395] = {
         ["showtype"] = 3,
@@ -5132,7 +5132,7 @@
         ["tbxid"] = 1313,
         ["notice"] = "",
         ["id"] = 1313,
-        ["tips"] = "很遗憾，对方好友数量已满"
+        ["tips"] = "Unfortunately, your friend list is full."
     },
     [396] = {
         ["showtype"] = 3,
@@ -5145,7 +5145,7 @@
         ["tbxid"] = 1314,
         ["notice"] = "",
         ["id"] = 1314,
-        ["tips"] = "您已向该玩家发出过申请，请耐心等待！"
+        ["tips"] = "You have already send it to this player, please be patient!!"
     },
     [397] = {
         ["showtype"] = 4,
@@ -5158,7 +5158,7 @@
         ["tbxid"] = 1315,
         ["notice"] = "",
         ["id"] = 1315,
-        ["tips"] = "您与对方已经解除好友关系"
+        ["tips"] = "You've dismissed your relationshop with the other party"
     },
     [398] = {
         ["showtype"] = 3,
@@ -5171,7 +5171,7 @@
         ["tbxid"] = 1316,
         ["notice"] = "",
         ["id"] = 1316,
-        ["tips"] = "抱歉，您搜索速度过快，请稍后再试！"
+        ["tips"] = "Sorry, you're searching it too fast, please try again later!"
     },
     [399] = {
         ["showtype"] = 3,
@@ -5184,7 +5184,7 @@
         ["tbxid"] = 1317,
         ["notice"] = "",
         ["id"] = 1317,
-        ["tips"] = "抱歉，您无需搜索自己"
+        ["tips"] = "Don't be such cocky, you don't need to search for yourself"
     },
     [400] = {
         ["showtype"] = 4,
@@ -5197,7 +5197,7 @@
         ["tbxid"] = 1318,
         ["notice"] = "",
         ["id"] = 1318,
-        ["tips"] = "恭喜，您已成功添加对方为好友！"
+        ["tips"] = "Congratulations, you have successfully added a new friend!"
     },
     [401] = {
         ["showtype"] = 0,
@@ -5208,7 +5208,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 1319,
-        ["notice"] = "您与{0}之间的好感度增加{1}",
+        ["notice"] = "The goodwill between you and {0}{1} has been increased",
         ["id"] = 1319,
         ["tips"] = ""
     },
@@ -5223,7 +5223,7 @@
         ["tbxid"] = 1320,
         ["notice"] = "",
         ["id"] = 1320,
-        ["tips"] = "对方已经通过了您的好友申请"
+        ["tips"] = "The other party has already send you a friend request"
     },
     [403] = {
         ["showtype"] = 1,
@@ -5236,7 +5236,7 @@
         ["tbxid"] = 1321,
         ["notice"] = "",
         ["id"] = 1321,
-        ["tips"] = "对方现在好友人数已满，无法成为好友"
+        ["tips"] = "The other party is now full of friends and cannot add you as friends."
     },
     [404] = {
         ["showtype"] = 1,
@@ -5249,7 +5249,7 @@
         ["tbxid"] = 1322,
         ["notice"] = "",
         ["id"] = 1322,
-        ["tips"] = "您当前好友人数已满，无法成为好友"
+        ["tips"] = "Your current number of friends is full and you can add him/her on your friendlist"
     },
     [405] = {
         ["showtype"] = 3,
@@ -5262,7 +5262,7 @@
         ["tbxid"] = 1323,
         ["notice"] = "",
         ["id"] = 1323,
-        ["tips"] = "您已被管理员禁言"
+        ["tips"] = "Oh, shit! You have been banned by the administrator"
     },
     [406] = {
         ["showtype"] = 3,
@@ -5275,7 +5275,7 @@
         ["tbxid"] = 1400,
         ["notice"] = "",
         ["id"] = 1400,
-        ["tips"] = "召唤兽栏已满，无法获得新的召唤兽"
+        ["tips"] = "Your summoning pets is full, unable to summon a new one"
     },
     [407] = {
         ["showtype"] = 0,
@@ -5286,7 +5286,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 1401,
-        ["notice"] = "{0}获得经验值{1}",
+        ["notice"] = "{0} get experience value {1}",
         ["id"] = 1401,
         ["tips"] = ""
     },
@@ -5299,7 +5299,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 1402,
-        ["notice"] = "[Tips1]召唤兽{0}等级提升到【{1}】级[/Tips1]",
+        ["notice"] = "[Tips1]Summoned pet {0} increased to [{1}] level[/Tips1]",
         ["id"] = 1402,
         ["tips"] = ""
     },
@@ -5314,7 +5314,7 @@
         ["tbxid"] = 1403,
         ["notice"] = "",
         ["id"] = 1403,
-        ["tips"] = "战斗中无法将休息状态切换为备战"
+        ["tips"] = "You can rest while you're in combat"
     },
     [410] = {
         ["showtype"] = 3,
@@ -5325,7 +5325,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 1404,
-        ["notice"] = "最多设置{0}个备战召唤兽",
+        ["notice"] = "Set up up to {0} prepared for summoning pets",
         ["id"] = 1404,
         ["tips"] = ""
     },
@@ -5340,7 +5340,7 @@
         ["tbxid"] = 1405,
         ["notice"] = "",
         ["id"] = 1405,
-        ["tips"] = "该召唤兽刚刚战死，无法再次出战"
+        ["tips"] = "The summoned beast has just died and can't play again."
     },
     [412] = {
         ["showtype"] = 3,
@@ -5353,7 +5353,7 @@
         ["tbxid"] = 1406,
         ["notice"] = "",
         ["id"] = 1406,
-        ["tips"] = "召唤兽状态切换冷却中，请稍候再试"
+        ["tips"] = "Summon pet in cooldown, please try again later"
     },
     [413] = {
         ["showtype"] = 3,
@@ -5366,7 +5366,7 @@
         ["tbxid"] = 1407,
         ["notice"] = "",
         ["id"] = 1407,
-        ["tips"] = "您正在副本过程中，请稍后再试"
+        ["tips"] = "You are in the process of copying, please try again later"
     },
     [414] = {
         ["showtype"] = 3,
@@ -5379,7 +5379,7 @@
         ["tbxid"] = 1408,
         ["notice"] = "",
         ["id"] = 1408,
-        ["tips"] = "此玩家正在副本过程中，请稍后再试"
+        ["tips"] = "This player is in the process of copying, please try again later"
     },
     [415] = {
         ["showtype"] = 3,
@@ -5392,7 +5392,7 @@
         ["tbxid"] = 1409,
         ["notice"] = "",
         ["id"] = 1409,
-        ["tips"] = "您的副本次数不足"
+        ["tips"] = "You don't have enough copies"
     },
     [416] = {
         ["showtype"] = 3,
@@ -5405,7 +5405,7 @@
         ["tbxid"] = 1410,
         ["notice"] = "",
         ["id"] = 1410,
-        ["tips"] = "需由队长发起进入副本请求"
+        ["tips"] = "The Party leader need to initiate to enter to the copye request"
     },
     [417] = {
         ["showtype"] = 3,
@@ -5418,7 +5418,7 @@
         ["tbxid"] = 1411,
         ["notice"] = "",
         ["id"] = 1411,
-        ["tips"] = "队长离线，集结失败"
+        ["tips"] = "Party leader is offline, assembly failure"
     },
     [418] = {
         ["showtype"] = 3,
@@ -5431,7 +5431,7 @@
         ["tbxid"] = 1412,
         ["notice"] = "",
         ["id"] = 1412,
-        ["tips"] = "当前状态无法切换出战召唤兽"
+        ["tips"] = "You can't summon pets at the current state"
     },
     [419] = {
         ["showtype"] = 3,
@@ -5442,7 +5442,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 1413,
-        ["notice"] = "该副本最高准入人数为{0}",
+        ["notice"] = "The maximum number of people allowed for this copy is {0}",
         ["id"] = 1413,
         ["tips"] = ""
     },
@@ -5455,7 +5455,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 1414,
-        ["notice"] = "该副本最低准入人数为{0}",
+        ["notice"] = "The minimum number of people allowed for this copy is {0}",
         ["id"] = 1414,
         ["tips"] = ""
     },
@@ -5468,7 +5468,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 4,
         ["tbxid"] = 1415,
-        ["notice"] = "{0}ROLL取{1}获得了{2}点",
+        ["notice"] = "{0} ROLL takes {1} and gets {2} points",
         ["id"] = 1415,
         ["tips"] = ""
     },
@@ -5481,7 +5481,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 4,
         ["tbxid"] = 1416,
-        ["notice"] = "{0}获得{1}X{2}",
+        ["notice"] = "{0} obtained {1}X{2}",
         ["id"] = 1416,
         ["tips"] = ""
     },
@@ -5496,7 +5496,7 @@
         ["tbxid"] = 1417,
         ["notice"] = "",
         ["id"] = 1417,
-        ["tips"] = "战斗中无法切换角色"
+        ["tips"] = "Unable to switch characters during battle"
     },
     [424] = {
         ["showtype"] = 3,
@@ -5509,7 +5509,7 @@
         ["tbxid"] = 1418,
         ["notice"] = "",
         ["id"] = 1418,
-        ["tips"] = "移动中无法切换角色"
+        ["tips"] = "Cannot switch characters while moving"
     },
     [425] = {
         ["showtype"] = 3,
@@ -5520,9 +5520,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 1419,
-        ["notice"] = "玩家不存在或不在线",
+        ["notice"] = "Player doesn't exist or is not online",
         ["id"] = 1419,
-        ["tips"] = "玩家不存在或不在线"
+        ["tips"] = "Player doesn't exist or is not online"
     },
     [426] = {
         ["showtype"] = 2,
@@ -5533,7 +5533,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 16,
         ["tbxid"] = 1500,
-        ["notice"] = "还有[Tips1]{0}[/Tips1]秒封闭区域。",
+        ["notice"] = "There is also a closed area for[Tips1]{0}[/Tips1] seconds.",
         ["id"] = 1500,
         ["tips"] = ""
     },
@@ -5548,7 +5548,7 @@
         ["tbxid"] = 1501,
         ["notice"] = "",
         ["id"] = 1501,
-        ["tips"] = "还未获得该英雄"
+        ["tips"] = "You've not obtaned a hero yet"
     },
     [428] = {
         ["showtype"] = 3,
@@ -5561,7 +5561,7 @@
         ["tbxid"] = 1600,
         ["notice"] = "",
         ["id"] = 1600,
-        ["tips"] = "机器不支持高效果，设置失败"
+        ["tips"] = "The machine does not support high effects, the setting failed"
     },
     [429] = {
         ["showtype"] = 4,
@@ -5574,7 +5574,7 @@
         ["tbxid"] = 1601,
         ["notice"] = "",
         ["id"] = 1601,
-        ["tips"] = "更改设置成功"
+        ["tips"] = "Change settings successfully"
     },
     [430] = {
         ["showtype"] = 3,
@@ -5587,7 +5587,7 @@
         ["tbxid"] = 1602,
         ["notice"] = "",
         ["id"] = 1602,
-        ["tips"] = "设备不支持"
+        ["tips"] = "Device does not supported"
     },
     [431] = {
         ["showtype"] = 1,
@@ -5598,7 +5598,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 1603,
-        ["notice"] = "你设置的按键与[Tips1]{0}[/Tips1]冲突，是否应用",
+        ["notice"] = "The button you set conflicts with [Tips1]{0}[/Tips1], whether it is applied",
         ["id"] = 1603,
         ["tips"] = ""
     },
@@ -5613,7 +5613,7 @@
         ["tbxid"] = 1604,
         ["notice"] = "",
         ["id"] = 1604,
-        ["tips"] = "战斗中无法返回角色选择界面！"
+        ["tips"] = "Can't return to the character selection interface during the battle!"
     },
     [433] = {
         ["showtype"] = 3,
@@ -5626,7 +5626,7 @@
         ["tbxid"] = 1605,
         ["notice"] = "",
         ["id"] = 1605,
-        ["tips"] = "战斗中无法退出游戏！"
+        ["tips"] = "Can't quit the game during the battle!"
     },
     [434] = {
         ["showtype"] = 3,
@@ -5639,7 +5639,7 @@
         ["tbxid"] = 1700,
         ["notice"] = "",
         ["id"] = 1700,
-        ["tips"] = "礼包使用数量已达上限"
+        ["tips"] = "You've reached the limit of the gift packs."
     },
     [435] = {
         ["showtype"] = 3,
@@ -5652,7 +5652,7 @@
         ["tbxid"] = 1701,
         ["notice"] = "",
         ["id"] = 1701,
-        ["tips"] = "尚未到礼包使用时间，请稍后使用"
+        ["tips"] = "You can't use the inventory yet, try it later"
     },
     [436] = {
         ["showtype"] = 3,
@@ -5665,7 +5665,7 @@
         ["tbxid"] = 1702,
         ["notice"] = "",
         ["id"] = 1702,
-        ["tips"] = "背包空间不足，不能打开礼包"
+        ["tips"] = "There is not enough space on the inventory to open the package."
     },
     [437] = {
         ["showtype"] = 3,
@@ -5678,7 +5678,7 @@
         ["tbxid"] = 1703,
         ["notice"] = "",
         ["id"] = 1703,
-        ["tips"] = "已达每日使用上限"
+        ["tips"] = "Has reached the daily use limit"
     },
     [438] = {
         ["showtype"] = 3,
@@ -5689,7 +5689,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 1800,
-        ["notice"] = "{0}级开启",
+        ["notice"] = "reached {0} level",
         ["id"] = 1800,
         ["tips"] = ""
     },
@@ -5704,7 +5704,7 @@
         ["tbxid"] = 1801,
         ["notice"] = "",
         ["id"] = 1801,
-        ["tips"] = "队伍中某一成员活动次数不足，无法进入副本"
+        ["tips"] = "A member of the team is AFK so you can't access the copy"
     },
     [440] = {
         ["showtype"] = 3,
@@ -5717,7 +5717,7 @@
         ["tbxid"] = 1802,
         ["notice"] = "",
         ["id"] = 1802,
-        ["tips"] = "很遗憾，当前不处于活动时间段，无法参加活动"
+        ["tips"] = "Unfortunately, I'm AFK and I can't participate in the event"
     },
     [441] = {
         ["showtype"] = 3,
@@ -5730,7 +5730,7 @@
         ["tbxid"] = 1900,
         ["notice"] = "",
         ["id"] = 1900,
-        ["tips"] = "您必须先选中一名师父"
+        ["tips"] = "You must first select a master"
     },
     [442] = {
         ["showtype"] = 3,
@@ -5743,7 +5743,7 @@
         ["tbxid"] = 1901,
         ["notice"] = "",
         ["id"] = 1901,
-        ["tips"] = "您的普通师父数量已经满员"
+        ["tips"] = "Your normal master limit is already full"
     },
     [443] = {
         ["showtype"] = 3,
@@ -5756,7 +5756,7 @@
         ["tbxid"] = 1902,
         ["notice"] = "",
         ["id"] = 1902,
-        ["tips"] = "该玩家的普通徒弟数量已满"
+        ["tips"] = "Player's apprentice is full"
     },
     [444] = {
         ["showtype"] = 3,
@@ -5769,7 +5769,7 @@
         ["tbxid"] = 1903,
         ["notice"] = "",
         ["id"] = 1903,
-        ["tips"] = "抱歉，该师父的实力尚不如您"
+        ["tips"] = "Sorry, the master’s strength is not as good as yours."
     },
     [445] = {
         ["showtype"] = 3,
@@ -5782,7 +5782,7 @@
         ["tbxid"] = 1904,
         ["notice"] = "",
         ["id"] = 1904,
-        ["tips"] = "抱歉，对方已下线暂不能收徒"
+        ["tips"] = "Sorry, the other party is offline."
     },
     [446] = {
         ["showtype"] = 3,
@@ -5795,7 +5795,7 @@
         ["tbxid"] = 1905,
         ["notice"] = "",
         ["id"] = 1905,
-        ["tips"] = "抱歉，对方是您的徒弟，不能拜师"
+        ["tips"] = "Sorry, the other person is your apprentice, can't be a mentor."
     },
     [447] = {
         ["showtype"] = 3,
@@ -5808,7 +5808,7 @@
         ["tbxid"] = 1906,
         ["notice"] = "",
         ["id"] = 1906,
-        ["tips"] = "抱歉，申请成为对方徒弟的玩家过多"
+        ["tips"] = "Sorry, too many players applying to become opponents"
     },
     [448] = {
         ["showtype"] = 3,
@@ -5821,7 +5821,7 @@
         ["tbxid"] = 1907,
         ["notice"] = "",
         ["id"] = 1907,
-        ["tips"] = "抱歉，您刚刚已发送拜师申请"
+        ["tips"] = "Sorry, you already send a mentor application"
     },
     [449] = {
         ["showtype"] = 3,
@@ -5834,7 +5834,7 @@
         ["tbxid"] = 1908,
         ["notice"] = "",
         ["id"] = 1908,
-        ["tips"] = "抱歉，您之前的申请对方尚未处理"
+        ["tips"] = "Sorry, your previous application hasn't been accepted yet"
     },
     [450] = {
         ["showtype"] = 4,
@@ -5847,7 +5847,7 @@
         ["tbxid"] = 1909,
         ["notice"] = "",
         ["id"] = 1909,
-        ["tips"] = "申请发送成功"
+        ["tips"] = "Successtully accepted"
     },
     [451] = {
         ["showtype"] = 3,
@@ -5858,7 +5858,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 1910,
-        ["notice"] = "您已与{0}建立了师徒关系",
+        ["notice"] = "You have established a mentoring relationship with {0}",
         ["id"] = 1910,
         ["tips"] = ""
     },
@@ -5871,7 +5871,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 1911,
-        ["notice"] = "{0}拒绝了您的拜师请求",
+        ["notice"] = "{0} rejected your apprentice request",
         ["id"] = 1911,
         ["tips"] = ""
     },
@@ -5886,7 +5886,7 @@
         ["tbxid"] = 1912,
         ["notice"] = "",
         ["id"] = 1912,
-        ["tips"] = "您的普通徒弟数量已经满员"
+        ["tips"] = "Your apprentice list is already full"
     },
     [454] = {
         ["showtype"] = 3,
@@ -5899,7 +5899,7 @@
         ["tbxid"] = 1913,
         ["notice"] = "",
         ["id"] = 1913,
-        ["tips"] = "该玩家的普通师父数量已满"
+        ["tips"] = "Player's mentor limit is full"
     },
     [455] = {
         ["showtype"] = 3,
@@ -5912,7 +5912,7 @@
         ["tbxid"] = 1914,
         ["notice"] = "",
         ["id"] = 1914,
-        ["tips"] = "抱歉，该玩家的实力比您更强"
+        ["tips"] = "Sorry, this player is stronger than you"
     },
     [456] = {
         ["showtype"] = 3,
@@ -5925,7 +5925,7 @@
         ["tbxid"] = 1915,
         ["notice"] = "",
         ["id"] = 1915,
-        ["tips"] = "抱歉对方已下线暂无法拜师"
+        ["tips"] = "Sorry, that other party is offline and can't be hired"
     },
     [457] = {
         ["showtype"] = 3,
@@ -5938,7 +5938,7 @@
         ["tbxid"] = 1916,
         ["notice"] = "",
         ["id"] = 1916,
-        ["tips"] = "抱歉，对方是您的师父，不能收徒"
+        ["tips"] = "Sorry, the other person is your mentor, can't accept to be your apprentice"
     },
     [458] = {
         ["showtype"] = 3,
@@ -5951,7 +5951,7 @@
         ["tbxid"] = 1917,
         ["notice"] = "",
         ["id"] = 1917,
-        ["tips"] = "您的诉求中有敏感字符，请调整"
+        ["tips"] = "There are sensitive words in your appeal, please adjust it"
     },
     [459] = {
         ["showtype"] = 3,
@@ -5962,7 +5962,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 1918,
-        ["notice"] = "抱歉，等级达到{0}级后才能收取徒弟",
+        ["notice"] = "Sorry, the apprentice can only be charged after reaching level {0}.",
         ["id"] = 1918,
         ["tips"] = ""
     },
@@ -5977,7 +5977,7 @@
         ["tbxid"] = 1919,
         ["notice"] = "",
         ["id"] = 1919,
-        ["tips"] = "抱歉，您发布拜师请求过于频繁，请稍后再试"
+        ["tips"] = "Sorry, your apprentice request is too frequent. Please try again later."
     },
     [461] = {
         ["showtype"] = 3,
@@ -5990,7 +5990,7 @@
         ["tbxid"] = 1920,
         ["notice"] = "",
         ["id"] = 1920,
-        ["tips"] = "请选择您希望的师父游戏时间及游戏方针"
+        ["tips"] = "Please choose the in-game mentor you want."
     },
     [462] = {
         ["showtype"] = 3,
@@ -6003,7 +6003,7 @@
         ["tbxid"] = 1921,
         ["notice"] = "",
         ["id"] = 1921,
-        ["tips"] = "您必须先选中一名徒弟"
+        ["tips"] = "You must first select an apprentice"
     },
     [463] = {
         ["showtype"] = 3,
@@ -6016,7 +6016,7 @@
         ["tbxid"] = 1922,
         ["notice"] = "",
         ["id"] = 1922,
-        ["tips"] = "抱歉，申请成为对方师父的玩家过多"
+        ["tips"] = "Sorry, too many players applying to become mentors of each other"
     },
     [464] = {
         ["showtype"] = 3,
@@ -6027,7 +6027,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 1923,
-        ["notice"] = "{0}拒绝了您的收徒请求",
+        ["notice"] = "{0} rejected your request",
         ["id"] = 1923,
         ["tips"] = ""
     },
@@ -6042,7 +6042,7 @@
         ["tbxid"] = 1924,
         ["notice"] = "",
         ["id"] = 1924,
-        ["tips"] = "抱歉，您发布收徒请求过于频繁，请稍后再试"
+        ["tips"] = "Sorry, your requested it too many times, please try ti again later"
     },
     [466] = {
         ["showtype"] = 3,
@@ -6055,7 +6055,7 @@
         ["tbxid"] = 1925,
         ["notice"] = "",
         ["id"] = 1925,
-        ["tips"] = "请选择您希望的徒弟游戏时间及游戏方针"
+        ["tips"] = "Please choose the apprentice game you want"
     },
     [467] = {
         ["showtype"] = 3,
@@ -6068,7 +6068,7 @@
         ["tbxid"] = 1926,
         ["notice"] = "",
         ["id"] = 1926,
-        ["tips"] = "对方是您的师父"
+        ["tips"] = "The other party is your mentor"
     },
     [468] = {
         ["showtype"] = 3,
@@ -6081,7 +6081,7 @@
         ["tbxid"] = 1927,
         ["notice"] = "",
         ["id"] = 1927,
-        ["tips"] = "对方是您的徒弟"
+        ["tips"] = "The other party is your apprentice"
     },
     [469] = {
         ["showtype"] = 3,
@@ -6094,7 +6094,7 @@
         ["tbxid"] = 1928,
         ["notice"] = "",
         ["id"] = 1928,
-        ["tips"] = "对方已经是你的师父"
+        ["tips"] = "The other party is already your mentor"
     },
     [470] = {
         ["showtype"] = 3,
@@ -6107,7 +6107,7 @@
         ["tbxid"] = 1929,
         ["notice"] = "",
         ["id"] = 1929,
-        ["tips"] = "对方已经是你的徒弟"
+        ["tips"] = "The other party is already your apprentice"
     },
     [471] = {
         ["showtype"] = 3,
@@ -6120,7 +6120,7 @@
         ["tbxid"] = 1930,
         ["notice"] = "",
         ["id"] = 1930,
-        ["tips"] = "信息发送成功"
+        ["tips"] = "You've successfully send a message"
     },
     [472] = {
         ["showtype"] = 3,
@@ -6131,7 +6131,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 1931,
-        ["notice"] = "由于您主动解除师徒关系的行为，正在接受师徒审查，剩余{0}",
+        ["notice"] = "Due your active dismissal being a mentor, you're undergoing to become a mentor, remainin{0}",
         ["id"] = 1931,
         ["tips"] = ""
     },
@@ -6146,7 +6146,7 @@
         ["tbxid"] = 1932,
         ["notice"] = "",
         ["id"] = 1932,
-        ["tips"] = "抱歉，对方存在主动解除师徒关系的行为，正在接受师徒审查，请稍后再试"
+        ["tips"] = "Sorry, the party has dimissed the mentoring relationship with yours. It is undergoing a mentoring review. Please try again later."
     },
     [474] = {
         ["showtype"] = 3,
@@ -6159,7 +6159,7 @@
         ["tbxid"] = 1933,
         ["notice"] = "",
         ["id"] = 1933,
-        ["tips"] = "抱歉，您没有接受师徒审查，不必使用"
+        ["tips"] = "Sorry, you didn't accept the mentoring review"
     },
     [475] = {
         ["showtype"] = 4,
@@ -6172,7 +6172,7 @@
         ["tbxid"] = 1934,
         ["notice"] = "",
         ["id"] = 1934,
-        ["tips"] = "您已成功消除师徒审查时间，可以收徒或拜师了"
+        ["tips"] = "You have successfully eliminated the mentoring relationship, you can accept a new apprentice or mentor"
     },
     [476] = {
         ["showtype"] = 3,
@@ -6185,7 +6185,7 @@
         ["tbxid"] = 1935,
         ["notice"] = "",
         ["id"] = 1935,
-        ["tips"] = "战斗状态无法切换英雄"
+        ["tips"] = "You can swith heroes in combat"
     },
     [477] = {
         ["showtype"] = 3,
@@ -6198,7 +6198,7 @@
         ["tbxid"] = 1936,
         ["notice"] = "",
         ["id"] = 1936,
-        ["tips"] = "该英雄已登场"
+        ["tips"] = "The hero has appeared"
     },
     [478] = {
         ["showtype"] = 3,
@@ -6211,7 +6211,7 @@
         ["tbxid"] = 1937,
         ["notice"] = "",
         ["id"] = 1937,
-        ["tips"] = "您在一个队伍中，请保持单人状态进入剧情副本"
+        ["tips"] = "You are in a party, please leave party in order to plot the copy"
     },
     [479] = {
         ["showtype"] = 3,
@@ -6224,7 +6224,7 @@
         ["tbxid"] = 1938,
         ["notice"] = "",
         ["id"] = 1938,
-        ["tips"] = "抱歉，您与该徒弟正处在师徒断交过程中，不能出师"
+        ["tips"] = "Sorry, you're in process to break the apprentice relationship with your mater"
     },
     [480] = {
         ["showtype"] = 4,
@@ -6235,7 +6235,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 1939,
-        ["notice"] = "您对徒弟{0}悉心栽培，获得教育点{1}",
+        ["notice"] = "Your apprentice {0} has improved a lot and obtained {1} education points",
         ["id"] = 1939,
         ["tips"] = ""
     },
@@ -6250,7 +6250,7 @@
         ["tbxid"] = 1940,
         ["notice"] = "",
         ["id"] = 1940,
-        ["tips"] = "死亡状态无法切换英雄"
+        ["tips"] = "You can't switch a hero while death"
     },
     [482] = {
         ["showtype"] = 3,
@@ -6263,7 +6263,7 @@
         ["tbxid"] = 2000,
         ["notice"] = "",
         ["id"] = 2000,
-        ["tips"] = "只有队长可以开始匹配！"
+        ["tips"] = "Only the party leader can start the match!"
     },
     [483] = {
         ["showtype"] = 4,
@@ -6276,7 +6276,7 @@
         ["tbxid"] = 2001,
         ["notice"] = "",
         ["id"] = 2001,
-        ["tips"] = "开始匹配,请耐心等待!"
+        ["tips"] = "The match will start soon, please, be patient!"
     },
     [484] = {
         ["showtype"] = 3,
@@ -6289,7 +6289,7 @@
         ["tbxid"] = 2002,
         ["notice"] = "",
         ["id"] = 2002,
-        ["tips"] = "您在战斗状态无法进行匹配！"
+        ["tips"] = "You can't match during combat mode!"
     },
     [485] = {
         ["showtype"] = 3,
@@ -6300,7 +6300,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 2,
         ["tbxid"] = 2003,
-        ["notice"] = "[Tips1]{0}[/Tips1]正在战斗状态，无法进行匹配！",
+        ["notice"] = "[Tips1]{0}[/Tips1] is in combat mode and cannot match!",
         ["id"] = 2003,
         ["tips"] = ""
     },
@@ -6315,7 +6315,7 @@
         ["tbxid"] = 2004,
         ["notice"] = "",
         ["id"] = 2004,
-        ["tips"] = "队伍中有离线成员，无法进行匹配！"
+        ["tips"] = "There are offline memeber in the party and it's impossible to match!"
     },
     [487] = {
         ["showtype"] = 3,
@@ -6328,7 +6328,7 @@
         ["tbxid"] = 2005,
         ["notice"] = "",
         ["id"] = 2005,
-        ["tips"] = "匹配中断，请重新开始匹配！"
+        ["tips"] = "Match failure, please start matching again!"
     },
     [488] = {
         ["showtype"] = 4,
@@ -6341,7 +6341,7 @@
         ["tbxid"] = 2006,
         ["notice"] = "",
         ["id"] = 2006,
-        ["tips"] = "已取消匹配！"
+        ["tips"] = "The match has been canceled!"
     },
     [489] = {
         ["showtype"] = 3,
@@ -6352,7 +6352,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 2,
         ["tbxid"] = 2007,
-        ["notice"] = "[Tips1]{0}[/Tips1]取消匹配！",
+        ["notice"] = "[Tips1]{0}[/Tips1] canceled the match!",
         ["id"] = 2007,
         ["tips"] = ""
     },
@@ -6367,7 +6367,7 @@
         ["tbxid"] = 2008,
         ["notice"] = "",
         ["id"] = 2008,
-        ["tips"] = "队伍成员段位相差过大，无法共同参与武道会！"
+        ["tips"] = "Party memeber power difference is too big and can't partiipate in budokai! "
     },
     [491] = {
         ["showtype"] = 3,
@@ -6378,7 +6378,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 2009,
-        ["notice"] = "{0}级可以参加武道会！",
+        ["notice"] = "Level {0} can participate in budokai!",
         ["id"] = 2009,
         ["tips"] = ""
     },
@@ -6393,7 +6393,7 @@
         ["tbxid"] = 2010,
         ["notice"] = "",
         ["id"] = 2010,
-        ["tips"] = "活动尚未开启"
+        ["tips"] = "Event hasn't started yet"
     },
     [493] = {
         ["showtype"] = 3,
@@ -6406,7 +6406,7 @@
         ["tbxid"] = 2011,
         ["notice"] = "",
         ["id"] = 2011,
-        ["tips"] = "队伍中有成员等级不足!"
+        ["tips"] = "There're not enough party memebers in your party!"
     },
     [494] = {
         ["showtype"] = 3,
@@ -6419,7 +6419,7 @@
         ["tbxid"] = 2012,
         ["notice"] = "",
         ["id"] = 2012,
-        ["tips"] = "队伍中有成员在战斗状态!"
+        ["tips"] = "Some party memebers are in combat!"
     },
     [495] = {
         ["showtype"] = 3,
@@ -6430,7 +6430,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 2100,
-        ["notice"] = "{0}级开放{1}玩法！",
+        ["notice"] = "level {0} opened {1} fight!",
         ["id"] = 2100,
         ["tips"] = ""
     },
@@ -6445,7 +6445,7 @@
         ["tbxid"] = 2101,
         ["notice"] = "",
         ["id"] = 2101,
-        ["tips"] = "没有出战英雄，无法切换"
+        ["tips"] = "Don't have a hero, unable to switch"
     },
     [497] = {
         ["showtype"] = 3,
@@ -6458,7 +6458,7 @@
         ["tbxid"] = 2200,
         ["notice"] = "",
         ["id"] = 2200,
-        ["tips"] = "名称不能为空！"
+        ["tips"] = "Name is required!"
     },
     [498] = {
         ["showtype"] = 3,
@@ -6471,7 +6471,7 @@
         ["tbxid"] = 2201,
         ["notice"] = "",
         ["id"] = 2201,
-        ["tips"] = "名称不能包含敏感字符！"
+        ["tips"] = "The name cannot contain sensitive words!"
     },
     [499] = {
         ["showtype"] = 3,
@@ -6484,7 +6484,7 @@
         ["tbxid"] = 2202,
         ["notice"] = "",
         ["id"] = 2202,
-        ["tips"] = "已经使用该名称！"
+        ["tips"] = "This name is already in use"
     },
     [500] = {
         ["showtype"] = 3,
@@ -6495,7 +6495,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 2203,
-        ["notice"] = "{0}级解锁！",
+        ["notice"] = "Unlocked at level {0}!",
         ["id"] = 2203,
         ["tips"] = ""
     },
@@ -6510,7 +6510,7 @@
         ["tbxid"] = 2204,
         ["notice"] = "",
         ["id"] = 2204,
-        ["tips"] = "没有可用符文槽位！"
+        ["tips"] = "No rune slots available!"
     },
     [502] = {
         ["showtype"] = 3,
@@ -6523,7 +6523,7 @@
         ["tbxid"] = 2205,
         ["notice"] = "",
         ["id"] = 2205,
-        ["tips"] = "已激活符文列表已满！"
+        ["tips"] = "The activated rune slot is full!"
     },
     [503] = {
         ["showtype"] = 3,
@@ -6536,7 +6536,7 @@
         ["tbxid"] = 2206,
         ["notice"] = "",
         ["id"] = 2206,
-        ["tips"] = "没有可消耗的未激活符文，请手动选择已激活符文！"
+        ["tips"] = "There aren't unused rune slots that can be used please select the activated runes manually!"
     },
     [504] = {
         ["showtype"] = 3,
@@ -6549,7 +6549,7 @@
         ["tbxid"] = 2207,
         ["notice"] = "",
         ["id"] = 2207,
-        ["tips"] = "名称不能超过14个英文，数字或7个汉字！"
+        ["tips"] = "The name cannot exceed 14 English or 7 Chinese characters!"
     },
     [505] = {
         ["showtype"] = 3,
@@ -6562,7 +6562,7 @@
         ["tbxid"] = 2208,
         ["notice"] = "",
         ["id"] = 2208,
-        ["tips"] = "符文等级已满！"
+        ["tips"] = "Rune slot is full!"
     },
     [506] = {
         ["showtype"] = 3,
@@ -6575,7 +6575,7 @@
         ["tbxid"] = 2209,
         ["notice"] = "",
         ["id"] = 2209,
-        ["tips"] = "请选择要升级的符文！"
+        ["tips"] = "Please select the rune you want to upgrade!"
     },
     [507] = {
         ["showtype"] = 3,
@@ -6588,7 +6588,7 @@
         ["tbxid"] = 2210,
         ["notice"] = "",
         ["id"] = 2210,
-        ["tips"] = "请先放入消耗符文！"
+        ["tips"] = "Please put the consumption rune first!"
     },
     [508] = {
         ["showtype"] = 4,
@@ -6601,7 +6601,7 @@
         ["tbxid"] = 2211,
         ["notice"] = "",
         ["id"] = 2211,
-        ["tips"] = "升级成功！"
+        ["tips"] = "Upgrade success!"
     },
     [509] = {
         ["showtype"] = 3,
@@ -6614,7 +6614,7 @@
         ["tbxid"] = 2212,
         ["notice"] = "",
         ["id"] = 2212,
-        ["tips"] = "未镶嵌任何符文！"
+        ["tips"] = "No runes have been set!"
     },
     [510] = {
         ["showtype"] = 2,
@@ -6625,7 +6625,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 2300,
-        ["notice"] = "{0}提升到{1}级！",
+        ["notice"] = "{0} is promoted to level {1}!",
         ["id"] = 2300,
         ["tips"] = ""
     },
@@ -6640,7 +6640,7 @@
         ["tbxid"] = 2301,
         ["notice"] = "",
         ["id"] = 2301,
-        ["tips"] = "神力觉醒无法超过人物等级！"
+        ["tips"] = "Awakening of power cannot exceed the level of characters!"
     },
     [512] = {
         ["showtype"] = 3,
@@ -6653,7 +6653,7 @@
         ["tbxid"] = 2302,
         ["notice"] = "",
         ["id"] = 2302,
-        ["tips"] = "原地复活次数到达上限"
+        ["tips"] = "In situ resurrection limit reached"
     },
     [513] = {
         ["showtype"] = 3,
@@ -6666,7 +6666,7 @@
         ["tbxid"] = 2303,
         ["notice"] = "",
         ["id"] = 2303,
-        ["tips"] = "家族环任务正在冷却中，请10分钟后再来接取任务。"
+        ["tips"] = "Guild ring mission is in cooldown, please come back to mission briefing after 10 minutes."
     },
     [514] = {
         ["showtype"] = 3,
@@ -6679,7 +6679,7 @@
         ["tbxid"] = 2401,
         ["notice"] = "",
         ["id"] = 2401,
-        ["tips"] = "队伍人数超过活动需求"
+        ["tips"] = "The number of parties has exceed the activity requirements"
     },
     [515] = {
         ["showtype"] = 3,
@@ -6692,7 +6692,7 @@
         ["tbxid"] = 2402,
         ["notice"] = "",
         ["id"] = 2402,
-        ["tips"] = "队伍成员等级过低无法参与该活动"
+        ["tips"] = "Paty member level is too low to participate in the event"
     },
     [516] = {
         ["showtype"] = 3,
@@ -6705,7 +6705,7 @@
         ["tbxid"] = 2403,
         ["notice"] = "",
         ["id"] = 2403,
-        ["tips"] = "只有队长或单人可发起队伍匹配"
+        ["tips"] = "Only party leader or single player can initiate party matching"
     },
     [517] = {
         ["showtype"] = 3,
@@ -6718,7 +6718,7 @@
         ["tbxid"] = 2404,
         ["notice"] = "",
         ["id"] = 2404,
-        ["tips"] = "请先设置您要匹配组队的活动"
+        ["tips"] = "Please set up the event you want to match."
     },
     [518] = {
         ["showtype"] = 4,
@@ -6731,7 +6731,7 @@
         ["tbxid"] = 2405,
         ["notice"] = "",
         ["id"] = 2405,
-        ["tips"] = "活动队伍匹配成功"
+        ["tips"] = "Active party match has been succeeded"
     },
     [519] = {
         ["showtype"] = 3,
@@ -6744,7 +6744,7 @@
         ["tbxid"] = 2406,
         ["notice"] = "",
         ["id"] = 2406,
-        ["tips"] = "个人活动匹配中，若要操作请先取消匹配"
+        ["tips"] = "Personal match event is already running, please cancel the match first"
     },
     [520] = {
         ["showtype"] = 3,
@@ -6757,7 +6757,7 @@
         ["tbxid"] = 2407,
         ["notice"] = "",
         ["id"] = 2407,
-        ["tips"] = "队伍活动匹配中，若要操作请先取消匹配"
+        ["tips"] = "Party matching event is already running, please cancel the match first"
     },
     [521] = {
         ["showtype"] = 3,
@@ -6770,7 +6770,7 @@
         ["tbxid"] = 2408,
         ["notice"] = "",
         ["id"] = 2408,
-        ["tips"] = "只有队长能够修改队伍活动目标"
+        ["tips"] = "Only the party leader can modify the party's event goals"
     },
     [522] = {
         ["showtype"] = 3,
@@ -6783,7 +6783,7 @@
         ["tbxid"] = 2409,
         ["notice"] = "",
         ["id"] = 2409,
-        ["tips"] = "该玩家等级过低，无法参与目标活动"
+        ["tips"] = "The player level is too low to participate in the selected event"
     },
     [523] = {
         ["showtype"] = 4,
@@ -6794,7 +6794,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 2500,
-        ["notice"] = "根据雷达显示，宝藏位置在{0}的某一区域!",
+        ["notice"] = "According to the radar, the treasure location is in a nearby area of {0}!",
         ["id"] = 2500,
         ["tips"] = ""
     },
@@ -6809,7 +6809,7 @@
         ["tbxid"] = 2501,
         ["notice"] = "",
         ["id"] = 2501,
-        ["tips"] = "发现宝藏！"
+        ["tips"] = "You've discovered a treasure!"
     },
     [525] = {
         ["showtype"] = 4,
@@ -6822,7 +6822,7 @@
         ["tbxid"] = 2502,
         ["notice"] = "",
         ["id"] = 2502,
-        ["tips"] = "冷却中无法使用！"
+        ["tips"] = "Can't be used while in cool down!"
     },
     [526] = {
         ["showtype"] = 4,
@@ -6835,7 +6835,7 @@
         ["tbxid"] = 2601,
         ["notice"] = "",
         ["id"] = 2601,
-        ["tips"] = "恭喜，巧克力球成功进入光圈，增加训练时间！"
+        ["tips"] = "Congratulations, the chocolate ball has successfully enter in square, training time increased!"
     },
     [527] = {
         ["showtype"] = 4,
@@ -6848,7 +6848,7 @@
         ["tbxid"] = 2602,
         ["notice"] = "",
         ["id"] = 2602,
-        ["tips"] = "本次训练事件结束，请等待下个训练事件"
+        ["tips"] = "Training event has finished, please wait for the next training event"
     },
     [528] = {
         ["showtype"] = 3,
@@ -6861,7 +6861,7 @@
         ["tbxid"] = 2603,
         ["notice"] = "",
         ["id"] = 2603,
-        ["tips"] = "您的队友该活动次数不足，无法进入精神时光小屋"
+        ["tips"] = "Your party members have reached the event limit to enter the spirit time chamber"
     },
     [529] = {
         ["showtype"] = 3,
@@ -6872,7 +6872,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 2604,
-        ["notice"] = "最多可制造{0}次！",
+        ["notice"] = "Can be manufactured up to {0} times!",
         ["id"] = 2604,
         ["tips"] = ""
     },
@@ -6885,7 +6885,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 2605,
-        ["notice"] = "挑战成功，开始下一次挑战",
+        ["notice"] = "Challenge succeeded, starting the next challenge",
         ["id"] = 2605,
         ["tips"] = ""
     },
@@ -6900,7 +6900,7 @@
         ["tbxid"] = 2606,
         ["notice"] = "",
         ["id"] = 2606,
-        ["tips"] = "携带英雄超过上限，通过邮件发送。"
+        ["tips"] = "You already reached the hero limit, alredy send it to your mail."
     },
     [532] = {
         ["showtype"] = 3,
@@ -6913,7 +6913,7 @@
         ["tbxid"] = 2607,
         ["notice"] = "",
         ["id"] = 2607,
-        ["tips"] = "切换英雄冷却中"
+        ["tips"] = "Hero switching in cool down"
     },
     [533] = {
         ["showtype"] = 3,
@@ -6926,7 +6926,7 @@
         ["tbxid"] = 2608,
         ["notice"] = "",
         ["id"] = 2608,
-        ["tips"] = "该英雄星级已达上限。"
+        ["tips"] = "Hero's rank reached the maximum limit."
     },
     [534] = {
         ["showtype"] = 3,
@@ -6939,7 +6939,7 @@
         ["tbxid"] = 2609,
         ["notice"] = "",
         ["id"] = 2609,
-        ["tips"] = "请在限定时间内完成任务。"
+        ["tips"] = "Complete the quest within the limited time."
     },
     [535] = {
         ["showtype"] = 3,
@@ -6952,7 +6952,7 @@
         ["tbxid"] = 2610,
         ["notice"] = "",
         ["id"] = 2610,
-        ["tips"] = "超过限定时间！"
+        ["tips"] = "Time limit exceeded!"
     },
     [536] = {
         ["showtype"] = 3,
@@ -6965,7 +6965,7 @@
         ["tbxid"] = 2701,
         ["notice"] = "",
         ["id"] = 2701,
-        ["tips"] = "抱歉，活动尚未开启"
+        ["tips"] = "Sorry, the event hasn't started yet"
     },
     [537] = {
         ["showtype"] = 3,
@@ -6978,7 +6978,7 @@
         ["tbxid"] = 2702,
         ["notice"] = "",
         ["id"] = 2702,
-        ["tips"] = "抱歉，您今日已完成该活动"
+        ["tips"] = "Sorry, you've completed the event for today"
     },
     [538] = {
         ["showtype"] = 3,
@@ -6991,7 +6991,7 @@
         ["tbxid"] = 2703,
         ["notice"] = "",
         ["id"] = 2703,
-        ["tips"] = "抱歉，您没能获取复试资格"
+        ["tips"] = "Sorry, you're not able to repeat it again"
     },
     [539] = {
         ["showtype"] = 3,
@@ -7004,7 +7004,7 @@
         ["tbxid"] = 2704,
         ["notice"] = "",
         ["id"] = 2704,
-        ["tips"] = "抱歉，您没能获取终试资格"
+        ["tips"] = "Sorry, you didn't reach the final test qualification."
     },
     [540] = {
         ["showtype"] = 4,
@@ -7017,7 +7017,7 @@
         ["tbxid"] = 2705,
         ["notice"] = "",
         ["id"] = 2705,
-        ["tips"] = "回答正确！"
+        ["tips"] = "Correct answer!"
     },
     [541] = {
         ["showtype"] = 3,
@@ -7030,7 +7030,7 @@
         ["tbxid"] = 2706,
         ["notice"] = "",
         ["id"] = 2706,
-        ["tips"] = "回答错误！"
+        ["tips"] = "Wrong answer!"
     },
     [542] = {
         ["showtype"] = 3,
@@ -7043,7 +7043,7 @@
         ["tbxid"] = 2707,
         ["notice"] = "",
         ["id"] = 2707,
-        ["tips"] = "抱歉您没有参加过初试和复试"
+        ["tips"] = "Sorry, you haven't participate in the initial test and you have to retest"
     },
     [543] = {
         ["showtype"] = 3,
@@ -7056,7 +7056,7 @@
         ["tbxid"] = 2801,
         ["notice"] = "",
         ["id"] = 2801,
-        ["tips"] = "等级不足，无法装配"
+        ["tips"] = "Level too low, unable to assemble"
     },
     [544] = {
         ["showtype"] = 3,
@@ -7069,7 +7069,7 @@
         ["tbxid"] = 2802,
         ["notice"] = "",
         ["id"] = 2802,
-        ["tips"] = "该卡片已存在，不能装配两张相同的卡片"
+        ["tips"] = "This card already exist, you can't equip two identical cards"
     },
     [545] = {
         ["showtype"] = 3,
@@ -7082,7 +7082,7 @@
         ["tbxid"] = 2803,
         ["notice"] = "",
         ["id"] = 2803,
-        ["tips"] = "耐久度为0，无法装配"
+        ["tips"] = "Your armor durability is 0, please unable to assemble it"
     },
     [546] = {
         ["showtype"] = 3,
@@ -7095,7 +7095,7 @@
         ["tbxid"] = 2804,
         ["notice"] = "",
         ["id"] = 2804,
-        ["tips"] = "金币不足，无法修理"
+        ["tips"] = "Not enough money, unable to repair"
     },
     [547] = {
         ["showtype"] = 1,
@@ -7106,7 +7106,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 2805,
-        ["notice"] = "修理所需金币{0},你确定修理吗？",
+        ["notice"] = "Repair requires {0} sony coins, are you sure to repair?",
         ["id"] = 2805,
         ["tips"] = ""
     },
@@ -7121,7 +7121,7 @@
         ["tbxid"] = 2901,
         ["notice"] = "",
         ["id"] = 2901,
-        ["tips"] = "槽位为空"
+        ["tips"] = "The slot is empty"
     },
     [549] = {
         ["showtype"] = 3,
@@ -7134,7 +7134,7 @@
         ["tbxid"] = 2902,
         ["notice"] = "",
         ["id"] = 2902,
-        ["tips"] = "槽位不合法"
+        ["tips"] = "Invalid slot"
     },
     [550] = {
         ["showtype"] = 3,
@@ -7147,7 +7147,7 @@
         ["tbxid"] = 2903,
         ["notice"] = "",
         ["id"] = 2903,
-        ["tips"] = "材料不足"
+        ["tips"] = "Lack of materials"
     },
     [551] = {
         ["showtype"] = 3,
@@ -7160,7 +7160,7 @@
         ["tbxid"] = 2904,
         ["notice"] = "",
         ["id"] = 2904,
-        ["tips"] = "重复强化页，不可操作"
+        ["tips"] = "Please repeat the strengthment, cant' be operate it now"
     },
     [552] = {
         ["showtype"] = 3,
@@ -7173,7 +7173,7 @@
         ["tbxid"] = 2905,
         ["notice"] = "",
         ["id"] = 2905,
-        ["tips"] = "名称不可为空，不可包含特殊字符"
+        ["tips"] = "You can switch an empty name, can't contain special characters"
     },
     [553] = {
         ["showtype"] = 3,
@@ -7186,7 +7186,7 @@
         ["tbxid"] = 2906,
         ["notice"] = "",
         ["id"] = 2906,
-        ["tips"] = "名称太长"
+        ["tips"] = "Name is too long"
     },
     [554] = {
         ["showtype"] = 3,
@@ -7199,7 +7199,7 @@
         ["tbxid"] = 2907,
         ["notice"] = "",
         ["id"] = 2907,
-        ["tips"] = "强化材料已达最高等级"
+        ["tips"] = "Reinforced materials have reached the highest level"
     },
     [555] = {
         ["showtype"] = 3,
@@ -7212,7 +7212,7 @@
         ["tbxid"] = 2908,
         ["notice"] = "",
         ["id"] = 2908,
-        ["tips"] = "强化材料植入已达上限"
+        ["tips"] = "Reinforced material implantation has reached the upper limit"
     },
     [556] = {
         ["showtype"] = 3,
@@ -7225,7 +7225,7 @@
         ["tbxid"] = 2909,
         ["notice"] = "",
         ["id"] = 2909,
-        ["tips"] = "战斗状态无法使用强化功能"
+        ["tips"] = "Unable to use while in combat"
     },
     [557] = {
         ["showtype"] = 1,
@@ -7238,7 +7238,7 @@
         ["tbxid"] = 2999,
         ["notice"] = "",
         ["id"] = 2999,
-        ["tips"] = "使用该道具后会绑定，是否使用？"
+        ["tips"] = "This item will be bound after using, are you sure to use it?"
     },
     [558] = {
         ["showtype"] = 3,
@@ -7251,7 +7251,7 @@
         ["tbxid"] = 3000,
         ["notice"] = "",
         ["id"] = 3000,
-        ["tips"] = "当前背包空间不足，无法拆分"
+        ["tips"] = "You don't have empty space in your inventory, can't be split"
     },
     [559] = {
         ["showtype"] = 3,
@@ -7264,7 +7264,7 @@
         ["tbxid"] = 3001,
         ["notice"] = "",
         ["id"] = 3001,
-        ["tips"] = "此类物品不能进行拆分"
+        ["tips"] = "This item can't be split"
     },
     [560] = {
         ["showtype"] = 3,
@@ -7277,7 +7277,7 @@
         ["tbxid"] = 3002,
         ["notice"] = "",
         ["id"] = 3002,
-        ["tips"] = "背包空间不足，请先整理背包再拾取！"
+        ["tips"] = "You don't have space in your inventory, please organize it before to pick it up!"
     },
     [561] = {
         ["showtype"] = 3,
@@ -7290,7 +7290,7 @@
         ["tbxid"] = 3003,
         ["notice"] = "",
         ["id"] = 3003,
-        ["tips"] = "线路人数已满，无法进入"
+        ["tips"] = "The number of words is full and can't be entered"
     },
     [562] = {
         ["showtype"] = 2,
@@ -7303,7 +7303,7 @@
         ["tbxid"] = 3004,
         ["notice"] = "",
         ["id"] = 3004,
-        ["tips"] = "合成成功"
+        ["tips"] = "Synthesis has been success"
     },
     [563] = {
         ["showtype"] = 2,
@@ -7316,7 +7316,7 @@
         ["tbxid"] = 3005,
         ["notice"] = "",
         ["id"] = 3005,
-        ["tips"] = "钻石不足"
+        ["tips"] = "You don't have enough diamonds"
     },
     [564] = {
         ["showtype"] = 2,
@@ -7329,7 +7329,7 @@
         ["tbxid"] = 3006,
         ["notice"] = "",
         ["id"] = 3006,
-        ["tips"] = "索尼币不足"
+        ["tips"] = "Not enough money"
     },
     [565] = {
         ["showtype"] = 2,
@@ -7342,7 +7342,7 @@
         ["tbxid"] = 3007,
         ["notice"] = "",
         ["id"] = 3007,
-        ["tips"] = "当前槽位已达上限"
+        ["tips"] = "The current slot has reached the upper limit."
     },
     [566] = {
         ["showtype"] = 2,
@@ -7355,7 +7355,7 @@
         ["tbxid"] = 3008,
         ["notice"] = "",
         ["id"] = 3008,
-        ["tips"] = "当前强化材料已是最高等级，无法合成"
+        ["tips"] = "The current reinforcement material is in the highest level and can't be synthesized"
     },
     [567] = {
         ["showtype"] = 1,
@@ -7366,7 +7366,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 3009,
-        ["notice"] = "是否花费{0}钻，开启新的强化槽？",
+        ["notice"] = "Are you sure to drill {0} in order to open a new enhancement slot?",
         ["id"] = 3009,
         ["tips"] = ""
     },
@@ -7381,7 +7381,7 @@
         ["tbxid"] = 3010,
         ["notice"] = "",
         ["id"] = 3010,
-        ["tips"] = "请先激活上一个槽位"
+        ["tips"] = "Please activate the previous slot first."
     },
     [569] = {
         ["showtype"] = 1,
@@ -7394,7 +7394,7 @@
         ["tbxid"] = 3100,
         ["notice"] = "",
         ["id"] = 3100,
-        ["tips"] = "已无更多交易物品，请稍后重试！"
+        ["tips"] = "There aren't tradeable items, please, try again later!"
     },
     [570] = {
         ["showtype"] = 3,
@@ -7407,7 +7407,7 @@
         ["tbxid"] = 3101,
         ["notice"] = "",
         ["id"] = 3101,
-        ["tips"] = "购买数量已达上限"
+        ["tips"] = "You've reached the maximum purchasing limit"
     },
     [571] = {
         ["showtype"] = 3,
@@ -7420,7 +7420,7 @@
         ["tbxid"] = 3102,
         ["notice"] = "",
         ["id"] = 3102,
-        ["tips"] = "购买数量已达下限"
+        ["tips"] = "You've reached the minimum purchasing limit"
     },
     [572] = {
         ["showtype"] = 1,
@@ -7433,7 +7433,7 @@
         ["tbxid"] = 3103,
         ["notice"] = "",
         ["id"] = 3103,
-        ["tips"] = "商品已经下架"
+        ["tips"] = "Items have been removed"
     },
     [573] = {
         ["showtype"] = 1,
@@ -7446,7 +7446,7 @@
         ["tbxid"] = 3104,
         ["notice"] = "",
         ["id"] = 3104,
-        ["tips"] = "已登场的英雄无法交易"
+        ["tips"] = "Can't trade debuted heroes"
     },
     [574] = {
         ["showtype"] = 1,
@@ -7459,7 +7459,7 @@
         ["tbxid"] = 3105,
         ["notice"] = "",
         ["id"] = 3105,
-        ["tips"] = "绑定的物品无法交易"
+        ["tips"] = "Bound items cannot be traded"
     },
     [575] = {
         ["showtype"] = 1,
@@ -7472,7 +7472,7 @@
         ["tbxid"] = 3106,
         ["notice"] = "",
         ["id"] = 3106,
-        ["tips"] = "锁定的英雄无法交易"
+        ["tips"] = "Locked hero can't trade"
     },
     [576] = {
         ["showtype"] = 1,
@@ -7483,7 +7483,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 3107,
-        ["notice"] = "禁市期的物品无法交易。截止日期{0}",
+        ["notice"] = "Forbidden items can't be traded, expires in {0}",
         ["id"] = 3107,
         ["tips"] = ""
     },
@@ -7498,7 +7498,7 @@
         ["tbxid"] = 3108,
         ["notice"] = "",
         ["id"] = 3108,
-        ["tips"] = "售价已达上限"
+        ["tips"] = "The price has reached the upper limit"
     },
     [578] = {
         ["showtype"] = 3,
@@ -7511,7 +7511,7 @@
         ["tbxid"] = 3109,
         ["notice"] = "",
         ["id"] = 3109,
-        ["tips"] = "售价已达下限"
+        ["tips"] = "The price has reached the lower limit"
     },
     [579] = {
         ["showtype"] = 3,
@@ -7524,7 +7524,7 @@
         ["tbxid"] = 3110,
         ["notice"] = "",
         ["id"] = 3110,
-        ["tips"] = "你的上架商品数已达上限"
+        ["tips"] = "You have reached the maximum number of items put in the shelf"
     },
     [580] = {
         ["showtype"] = 3,
@@ -7537,7 +7537,7 @@
         ["tbxid"] = 3111,
         ["notice"] = "",
         ["id"] = 3111,
-        ["tips"] = "你的钻石不足以支付上架税费"
+        ["tips"] = "you don't have enough diamons to buy it"
     },
     [581] = {
         ["showtype"] = 1,
@@ -7550,7 +7550,7 @@
         ["tbxid"] = 3112,
         ["notice"] = "",
         ["id"] = 3112,
-        ["tips"] = "你不能一次性上架多件商品"
+        ["tips"] = "You can't put multiple items at once."
     },
     [582] = {
         ["showtype"] = 1,
@@ -7563,7 +7563,7 @@
         ["tbxid"] = 3113,
         ["notice"] = "",
         ["id"] = 3113,
-        ["tips"] = "审核期还有多久"
+        ["tips"] = "You reviewed it long time ago"
     },
     [583] = {
         ["showtype"] = 1,
@@ -7576,7 +7576,7 @@
         ["tbxid"] = 3114,
         ["notice"] = "",
         ["id"] = 3114,
-        ["tips"] = "上架成功"
+        ["tips"] = "Shelf has been success"
     },
     [584] = {
         ["showtype"] = 1,
@@ -7589,7 +7589,7 @@
         ["tbxid"] = 3115,
         ["notice"] = "",
         ["id"] = 3115,
-        ["tips"] = "该道具只能在宇宙政府允许的价格范围内交易"
+        ["tips"] = "This item can only be traded within the price range allowed by the server."
     },
     [585] = {
         ["showtype"] = 3,
@@ -7602,7 +7602,7 @@
         ["tbxid"] = 3116,
         ["notice"] = "",
         ["id"] = 3116,
-        ["tips"] = "已经是第一页"
+        ["tips"] = "You're already on the first page"
     },
     [586] = {
         ["showtype"] = 3,
@@ -7615,7 +7615,7 @@
         ["tbxid"] = 3117,
         ["notice"] = "",
         ["id"] = 3117,
-        ["tips"] = "已经是最后一页"
+        ["tips"] = "You're already in the last page"
     },
     [587] = {
         ["showtype"] = 4,
@@ -7628,7 +7628,7 @@
         ["tbxid"] = 3118,
         ["notice"] = "",
         ["id"] = 3118,
-        ["tips"] = "安全密码设置成功"
+        ["tips"] = "Security password has been successfully set"
     },
     [588] = {
         ["showtype"] = 1,
@@ -7639,7 +7639,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 3130,
-        ["notice"] = "购买成功，特权持续时间增加:{0}天{1}时{2}分。",
+        ["notice"] = "Purchasing success, the privilege duration increases: {0} days {1} hours and {2} minutes.",
         ["id"] = 3130,
         ["tips"] = ""
     },
@@ -7654,7 +7654,7 @@
         ["tbxid"] = 3131,
         ["notice"] = "",
         ["id"] = 3131,
-        ["tips"] = "钻石不足，点击确定前往充值！"
+        ["tips"] = "Not enough diamonds, click ok to recharge!"
     },
     [590] = {
         ["showtype"] = 1,
@@ -7667,7 +7667,7 @@
         ["tbxid"] = 3132,
         ["notice"] = "",
         ["id"] = 3132,
-        ["tips"] = "本日抽奖次数已用完，请明天再来！"
+        ["tips"] = "You've reached the draw limit for today, please coe back tomorrow!"
     },
     [591] = {
         ["showtype"] = 3,
@@ -7680,7 +7680,7 @@
         ["tbxid"] = 3133,
         ["notice"] = "",
         ["id"] = 3133,
-        ["tips"] = "抽奖券不足，不能抽奖！"
+        ["tips"] = "You don't have enough lottery tickets, you can't draw it!"
     },
     [592] = {
         ["showtype"] = 2,
@@ -7691,7 +7691,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 3134,
-        ["notice"] = "恭喜玩家{0}，在抽奖时获得{1}",
+        ["notice"] = "Congratulations player {0}, draw {1} lottery ticket",
         ["id"] = 3134,
         ["tips"] = ""
     },
@@ -7704,7 +7704,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 3135,
-        ["notice"] = "恭喜你抽奖获得{0}x{1}，请尽快收取邮件！",
+        ["notice"] = "Congratulations on your draw for {0}x{1}, please check your email as soon as possible!",
         ["id"] = 3135,
         ["tips"] = ""
     },
@@ -7717,7 +7717,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 3136,
-        ["notice"] = "成功兑换{0}索尼币！",
+        ["notice"] = "You've successfully exchanged {0} Sony coins!",
         ["id"] = 3136,
         ["tips"] = ""
     },
@@ -7730,7 +7730,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 3137,
-        ["notice"] = "你已拥有英雄{0}，重复获取已转换为{1}x{2}，请查收邮件！",
+        ["notice"] = "You already have a {0} hero, the repeated hero has been converted to {1}x{2}, please check your email!",
         ["id"] = 3137,
         ["tips"] = ""
     },
@@ -7745,7 +7745,7 @@
         ["tbxid"] = 3138,
         ["notice"] = "",
         ["id"] = 3138,
-        ["tips"] = "今日抽奖券可用次数已达最大(每日可用50次)，请明天再来！"
+        ["tips"] = "You've reached the maximum lottery tickets avariable for today (50 per day), please, come back tomorrow!"
     },
     [597] = {
         ["showtype"] = 2,
@@ -7758,7 +7758,7 @@
         ["tbxid"] = 4000,
         ["notice"] = "",
         ["id"] = 4000,
-        ["tips"] = "比赛时间剩余30秒，即将进入加速模式。"
+        ["tips"] = "The match is about to finish in 30 seconds, you've entered in acceleration mode."
     },
     [598] = {
         ["showtype"] = 2,
@@ -7771,7 +7771,7 @@
         ["tbxid"] = 4001,
         ["notice"] = "",
         ["id"] = 4001,
-        ["tips"] = "比赛时间剩余20秒，即将进入加速模式。"
+        ["tips"] = "The match is about to finish in 20 seconds, you've entered in acceleration mode."
     },
     [599] = {
         ["showtype"] = 2,
@@ -7784,7 +7784,7 @@
         ["tbxid"] = 4002,
         ["notice"] = "",
         ["id"] = 4002,
-        ["tips"] = "比赛时间剩余10秒，即将进入加速模式。"
+        ["tips"] = "The match is about to finish in 10 seconds, you've entered in acceleration mode.。"
     },
     [600] = {
         ["showtype"] = 2,
@@ -7797,7 +7797,7 @@
         ["tbxid"] = 4003,
         ["notice"] = "",
         ["id"] = 4003,
-        ["tips"] = "进入加速模式，所有技能CD-50%！"
+        ["tips"] = "You've entered on acceleration mode, all your skills reduced the cooldown by 50%"
     },
     [601] = {
         ["showtype"] = 2,
@@ -7810,7 +7810,7 @@
         ["tbxid"] = 4004,
         ["notice"] = "",
         ["id"] = 4004,
-        ["tips"] = "无法准备，请先离开副本。"
+        ["tips"] = "Unable to prepare, please leave the copy first."
     },
     [602] = {
         ["showtype"] = 2,
@@ -7823,7 +7823,7 @@
         ["tbxid"] = 4005,
         ["notice"] = "",
         ["id"] = 4005,
-        ["tips"] = "正在匹配中，无法进入副本。"
+        ["tips"] = "You're in the middle of the match, so you can't enter another copy."
     },
     [603] = {
         ["showtype"] = 3,
@@ -7836,7 +7836,7 @@
         ["tbxid"] = 4006,
         ["notice"] = "",
         ["id"] = 4006,
-        ["tips"] = "无法在战斗中更换你的能力卡"
+        ["tips"] = "You can't change your ability card while in combat"
     },
     [604] = {
         ["showtype"] = 3,
@@ -7849,7 +7849,7 @@
         ["tbxid"] = 4007,
         ["notice"] = "",
         ["id"] = 4007,
-        ["tips"] = "无法在战斗中切换你的强化组"
+        ["tips"] = "You can't switch your strengthment while in combat"
     },
     [605] = {
         ["showtype"] = 2,
@@ -7860,7 +7860,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 4008,
-        ["notice"] = "您已在龙珠的世界里战斗了{0}小时，记得要适当休息一下哦",
+        ["notice"] = "You've been playing in Dragon ball Time and Space Legends for {0} hours, you should consider to take a rest",
         ["id"] = 4008,
         ["tips"] = ""
     },
@@ -7875,7 +7875,7 @@
         ["tbxid"] = 4009,
         ["notice"] = "",
         ["id"] = 4009,
-        ["tips"] = "现在是中午12点，午饭时间到啦，吃饱肚子才有力气继续战斗哦"
+        ["tips"] = "It's 12 pm, it's time to lunch, otherwise you won't have enought strength to continue playing"
     },
     [607] = {
         ["showtype"] = 2,
@@ -7888,7 +7888,7 @@
         ["tbxid"] = 4010,
         ["notice"] = "",
         ["id"] = 4010,
-        ["tips"] = "现在是下午5点，太阳就要落山咯，是时候想想晚上吃些什么啦"
+        ["tips"] = "It's 5 pm, the sun is falling down, it's time to think to dinner."
     },
     [608] = {
         ["showtype"] = 2,
@@ -7901,7 +7901,7 @@
         ["tbxid"] = 4011,
         ["notice"] = "",
         ["id"] = 4011,
-        ["tips"] = "现在是晚上8点，游戏世界充满乐趣，但也要记得陪伴您的家人哦"
+        ["tips"] = "It's 8 pm, the game server is full of fun, but remember to rest and talk with your family."
     },
     [609] = {
         ["showtype"] = 2,
@@ -7914,7 +7914,7 @@
         ["tbxid"] = 4012,
         ["notice"] = "",
         ["id"] = 4012,
-        ["tips"] = "现在是晚上11点，忙碌了一整天，记得早点休息哦"
+        ["tips"] = "It's 11 pm, it was a busy day, remember to go to bed early"
     },
     [610] = {
         ["showtype"] = 3,
@@ -7927,7 +7927,7 @@
         ["tbxid"] = 4013,
         ["notice"] = "",
         ["id"] = 4013,
-        ["tips"] = "背包已满"
+        ["tips"] = "Inventory is full"
     },
     [611] = {
         ["showtype"] = 3,
@@ -7940,7 +7940,7 @@
         ["tbxid"] = 4014,
         ["notice"] = "",
         ["id"] = 4014,
-        ["tips"] = "请输入角色名字"
+        ["tips"] = "Please, select a character name"
     },
     [612] = {
         ["showtype"] = 2,
@@ -7953,7 +7953,7 @@
         ["tbxid"] = 4015,
         ["notice"] = "",
         ["id"] = 4015,
-        ["tips"] = "您已被击败，现已进入观看模式。"
+        ["tips"] = "You've been defeated, you're now on view mode."
     },
     [613] = {
         ["showtype"] = 2,
@@ -7966,7 +7966,7 @@
         ["tbxid"] = 4016,
         ["notice"] = "",
         ["id"] = 4016,
-        ["tips"] = "我的位置 {0}-{1},{2}"
+        ["tips"] = "My current position {0}-{1},{2}"
     },
     [614] = {
         ["showtype"] = 3,
@@ -7979,7 +7979,7 @@
         ["tbxid"] = 4020,
         ["notice"] = "",
         ["id"] = 4020,
-        ["tips"] = "输入的文字中包含敏感词汇"
+        ["tips"] = "Your sentence contains sensitive words"
     },
     [615] = {
         ["showtype"] = 3,
@@ -7992,7 +7992,7 @@
         ["tbxid"] = 4017,
         ["notice"] = "",
         ["id"] = 4017,
-        ["tips"] = "目标距离太远"
+        ["tips"] = "Target is too far"
     },
     [616] = {
         ["showtype"] = 0,
@@ -8003,7 +8003,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 4018,
-        ["notice"] = "觉醒{0}状态后可以获得",
+        ["notice"] = "Can be obtained after reaching the {0} state",
         ["id"] = 4018,
         ["tips"] = ""
     },
@@ -8016,7 +8016,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 4019,
-        ["notice"] = "使用{0}道具后可以获得",
+        ["notice"] = "Available with {0} items",
         ["id"] = 4019,
         ["tips"] = ""
     },
@@ -8029,7 +8029,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 4021,
-        ["notice"] = "已获得",
+        ["notice"] = "Obtained",
         ["id"] = 4021,
         ["tips"] = ""
     },
@@ -8044,7 +8044,7 @@
         ["tbxid"] = 4022,
         ["notice"] = "",
         ["id"] = 4022,
-        ["tips"] = "仓库已满，无法存储物品"
+        ["tips"] = "Your warehouse is full, can't store more items"
     },
     [620] = {
         ["showtype"] = 0,
@@ -8055,7 +8055,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 4023,
-        ["notice"] = "觉醒后可以解锁{0}技能",
+        ["notice"] = "Unlocked {0} skills after awakening",
         ["id"] = 4023,
         ["tips"] = ""
     },
@@ -8068,7 +8068,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 4024,
-        ["notice"] = "觉醒后可以解锁{0}皮肤",
+        ["notice"] = "Unlock {0} dogi after awakening",
         ["id"] = 4024,
         ["tips"] = ""
     },
@@ -8081,7 +8081,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 4025,
-        ["notice"] = "龙珠被{0}拿起！",
+        ["notice"] = "Dragon Ball picked up by {0}!",
         ["id"] = 4025,
         ["tips"] = ""
     },
@@ -8094,7 +8094,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 4026,
-        ["notice"] = "龙珠被{0}放回基地！",
+        ["notice"] = "The dragon ball has been returned to the base by {0}!",
         ["id"] = 4026,
         ["tips"] = ""
     },
@@ -8107,7 +8107,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 1,
         ["tbxid"] = 4027,
-        ["notice"] = "龙珠被{0}成功交付！",
+        ["notice"] = "Dragon Ball has been successfully delivered by {0}!",
         ["id"] = 4027,
         ["tips"] = ""
     },
@@ -8122,7 +8122,7 @@
         ["tbxid"] = 4028,
         ["notice"] = "",
         ["id"] = 4028,
-        ["tips"] = "比赛时间剩余30秒。"
+        ["tips"] = "30 seconds remaining in the match time."
     },
     [626] = {
         ["showtype"] = 2,
@@ -8135,7 +8135,7 @@
         ["tbxid"] = 4029,
         ["notice"] = "",
         ["id"] = 4029,
-        ["tips"] = "比赛时间剩余20秒。"
+        ["tips"] = "20 seconds remaining in the match time."
     },
     [627] = {
         ["showtype"] = 2,
@@ -8148,7 +8148,7 @@
         ["tbxid"] = 4030,
         ["notice"] = "",
         ["id"] = 4030,
-        ["tips"] = "比赛时间剩余10秒。"
+        ["tips"] = "10 seconds remaining in the match time."
     },
     [628] = {
         ["showtype"] = 3,
@@ -8161,7 +8161,7 @@
         ["tbxid"] = 4031,
         ["notice"] = "",
         ["id"] = 4031,
-        ["tips"] = "无法在战斗中更换皮肤"
+        ["tips"] = "Unable to change dogi while in combat"
     },
     [629] = {
         ["showtype"] = 3,
@@ -8174,7 +8174,7 @@
         ["tbxid"] = 4032,
         ["notice"] = "",
         ["id"] = 4032,
-        ["tips"] = "无法在战斗中进行觉醒"
+        ["tips"] = "Unable to awake while in combat"
     },
     [630] = {
         ["showtype"] = 3,
@@ -8187,7 +8187,7 @@
         ["tbxid"] = 4033,
         ["notice"] = "",
         ["id"] = 4033,
-        ["tips"] = "任务物品无法删除"
+        ["tips"] = "Quest items cannot be deleted"
     },
     [631] = {
         ["showtype"] = 0,
@@ -8200,7 +8200,7 @@
         ["tbxid"] = 4034,
         ["notice"] = "",
         ["id"] = 4034,
-        ["tips"] = "需要觉醒{0}"
+        ["tips"] = "Need to awake {0}"
     },
     [632] = {
         ["showtype"] = 0,
@@ -8213,7 +8213,7 @@
         ["tbxid"] = 4035,
         ["notice"] = "",
         ["id"] = 4035,
-        ["tips"] = "需要角色达到{0}级"
+        ["tips"] = "Requires the character to reach the {0} level"
     },
     [633] = {
         ["showtype"] = 3,
@@ -8224,7 +8224,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 4036,
-        ["notice"] = "无法进入副本，角色等级需要达到{0}级。",
+        ["notice"] = "Unable to enter the copy, the character needs to reach level {0}.",
         ["id"] = 4036,
         ["tips"] = ""
     },
@@ -8239,7 +8239,7 @@
         ["tbxid"] = 4037,
         ["notice"] = "",
         ["id"] = 4037,
-        ["tips"] = "您有队伍，无法进入单人副本。"
+        ["tips"] = "You're in party, can't access to a single copy."
     },
     [635] = {
         ["showtype"] = 3,
@@ -8252,7 +8252,7 @@
         ["tbxid"] = 4038,
         ["notice"] = "",
         ["id"] = 4038,
-        ["tips"] = "无法进入副本，多人副本需要组队。"
+        ["tips"] = "Unable to enter the copy, you need to be in party in order use multiplayer copies"
     },
     [636] = {
         ["showtype"] = 4,
@@ -8265,7 +8265,7 @@
         ["tbxid"] = 4039,
         ["notice"] = "",
         ["id"] = 4039,
-        ["tips"] = "开始匹配，进入匹配队列。"
+        ["tips"] = "Match has been started, you already entered in the matching queue list."
     },
     [637] = {
         ["showtype"] = 3,
@@ -8278,7 +8278,7 @@
         ["tbxid"] = 4040,
         ["notice"] = "",
         ["id"] = 4040,
-        ["tips"] = "需要角色30级，角色等级不足，无法匹配。"
+        ["tips"] = "Character lv 30 required, Insufficient character level, unable to match。"
     },
     [638] = {
         ["showtype"] = 3,
@@ -8291,7 +8291,7 @@
         ["tbxid"] = 4041,
         ["notice"] = "",
         ["id"] = 4041,
-        ["tips"] = "无法匹配，请先离开副本。"
+        ["tips"] = "Unable to match, please leave the copy first."
     },
     [639] = {
         ["showtype"] = 3,
@@ -8304,7 +8304,7 @@
         ["tbxid"] = 4042,
         ["notice"] = "",
         ["id"] = 4042,
-        ["tips"] = "正在匹配中，无法再次进行匹配。"
+        ["tips"] = "Unable to match, please leave the copy first."
     },
     [640] = {
         ["showtype"] = 3,
@@ -8317,7 +8317,7 @@
         ["tbxid"] = 4043,
         ["notice"] = "",
         ["id"] = 4043,
-        ["tips"] = "队伍成员间等级差距过大，无法匹配。"
+        ["tips"] = "The level between the team members is too big to match."
     },
     [641] = {
         ["showtype"] = 3,
@@ -8330,7 +8330,7 @@
         ["tbxid"] = 4044,
         ["notice"] = "",
         ["id"] = 4044,
-        ["tips"] = "您不是队长，无法进行匹配。"
+        ["tips"] = "You're not the party leader, you can't start the match."
     },
     [642] = {
         ["showtype"] = 3,
@@ -8343,7 +8343,7 @@
         ["tbxid"] = 4045,
         ["notice"] = "",
         ["id"] = 4045,
-        ["tips"] = "无法匹配，队伍中有成员离线。"
+        ["tips"] = "Unable to match, there're offline members of the party."
     },
     [643] = {
         ["showtype"] = 3,
@@ -8356,7 +8356,7 @@
         ["tbxid"] = 4046,
         ["notice"] = "",
         ["id"] = 4046,
-        ["tips"] = "无法匹配，该模式不处于活动时间内。"
+        ["tips"] = "Unable to match, this mode is not active yet."
     },
     [644] = {
         ["showtype"] = 3,
@@ -8369,7 +8369,7 @@
         ["tbxid"] = 4047,
         ["notice"] = "",
         ["id"] = 4047,
-        ["tips"] = "取消匹配。"
+        ["tips"] = "Match has been canceled."
     },
     [645] = {
         ["showtype"] = 3,
@@ -8382,7 +8382,7 @@
         ["tbxid"] = 4048,
         ["notice"] = "",
         ["id"] = 4048,
-        ["tips"] = "您不是队长，无法取消匹配。"
+        ["tips"] = "You're not party leader, you can't cancel the match."
     },
     [646] = {
         ["showtype"] = 3,
@@ -8395,7 +8395,7 @@
         ["tbxid"] = 4049,
         ["notice"] = "",
         ["id"] = 4049,
-        ["tips"] = "尚未进行匹配，无法取消匹配。"
+        ["tips"] = "No match has been made yet, unable to cancel the match."
     },
     [647] = {
         ["showtype"] = 3,
@@ -8408,7 +8408,7 @@
         ["tbxid"] = 4050,
         ["notice"] = "",
         ["id"] = 4050,
-        ["tips"] = "匹配中断。"
+        ["tips"] = "Match has been interrupted."
     },
     [648] = {
         ["showtype"] = 3,
@@ -8421,7 +8421,7 @@
         ["tbxid"] = 4051,
         ["notice"] = "",
         ["id"] = 4051,
-        ["tips"] = "匹配已成功，无法取消匹配。"
+        ["tips"] = "The match has been successfully added, can't be canceled."
     },
     [649] = {
         ["showtype"] = 4,
@@ -8434,7 +8434,7 @@
         ["tbxid"] = 4052,
         ["notice"] = "",
         ["id"] = 4052,
-        ["tips"] = "成功进入战场。"
+        ["tips"] = "You have successfully entered the battlefield."
     },
     [650] = {
         ["showtype"] = 3,
@@ -8447,7 +8447,7 @@
         ["tbxid"] = 4053,
         ["notice"] = "",
         ["id"] = 4053,
-        ["tips"] = "无法进入战场，请先离开副本。"
+        ["tips"] = "Unable to enter the battlefield, please leave the copy first."
     },
     [651] = {
         ["showtype"] = 3,
@@ -8460,7 +8460,7 @@
         ["tbxid"] = 4054,
         ["notice"] = "",
         ["id"] = 4054,
-        ["tips"] = "进入战场失败。"
+        ["tips"] = "Failed to entering the battlefield."
     },
     [652] = {
         ["showtype"] = 3,
@@ -8473,7 +8473,7 @@
         ["tbxid"] = 4055,
         ["notice"] = "",
         ["id"] = 4055,
-        ["tips"] = "进入战场超时。"
+        ["tips"] = "Enter the battlefield timeout."
     },
     [653] = {
         ["showtype"] = 3,
@@ -8486,7 +8486,7 @@
         ["tbxid"] = 4056,
         ["notice"] = "",
         ["id"] = 4056,
-        ["tips"] = "进入失败，找不到该副本。"
+        ["tips"] = "Entry failed copy can't be found."
     },
     [654] = {
         ["showtype"] = 1,
@@ -8497,7 +8497,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 4057,
-        ["notice"] = "{0}秒后可复活",
+        ["notice"] = "{0} Resurrection in seconds",
         ["id"] = 4057,
         ["tips"] = ""
     },
@@ -8510,7 +8510,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 4058,
-        ["notice"] = "{0}秒后可复活",
+        ["notice"] = "Resurrection after {0} seconds",
         ["id"] = 4058,
         ["tips"] = ""
     },
@@ -8525,7 +8525,7 @@
         ["tbxid"] = 4059,
         ["notice"] = "",
         ["id"] = 4059,
-        ["tips"] = "距离您上次匹配成功时间过近，请稍后再试。"
+        ["tips"] = "You're about to start your last match. Please try again later."
     },
     [657] = {
         ["showtype"] = 1,
@@ -8536,7 +8536,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 4060,
-        ["notice"] = "{0}要复活你，是否要复活？",
+        ["notice"] = "{0} wants to resurrect you, do you want accept?",
         ["id"] = 4060,
         ["tips"] = ""
     },
@@ -8549,7 +8549,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 4061,
-        ["notice"] = "{0}秒之内可以复活",
+        ["notice"] = "Resurrection within {0} seconds",
         ["id"] = 4061,
         ["tips"] = ""
     },
@@ -8562,7 +8562,7 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 4062,
-        ["notice"] = "现在可以进入战场，进入时间剩余{0}秒",
+        ["notice"] = "You're about to enter the battlefield, remaining in{0} seconds",
         ["id"] = 4062,
         ["tips"] = ""
     },
@@ -8577,7 +8577,7 @@
         ["tbxid"] = 4063,
         ["notice"] = "",
         ["id"] = 4063,
-        ["tips"] = "进入战场超时，已离开匹配。"
+        ["tips"] = "Entering battlefield timeout, you've left the match."
     },
     [661] = {
         ["showtype"] = 1,
@@ -8590,7 +8590,7 @@
         ["tbxid"] = 4064,
         ["notice"] = "",
         ["id"] = 4064,
-        ["tips"] = "匹配失败。"
+        ["tips"] = "match failed."
     },
     [662] = {
         ["showtype"] = 2,
@@ -8603,7 +8603,7 @@
         ["tbxid"] = 4065,
         ["notice"] = "",
         ["id"] = 4065,
-        ["tips"] = "当前帧数过低，已为您隐藏其他玩家。使用快捷键Ctrl+F11即可恢复显示。"
+        ["tips"] = "The current number of players  is too low, there're some hidden players avariable for you。Use the shortcut Ctrl+F11 to resume the game."
     },
     [663] = {
         ["showtype"] = 2,
@@ -8616,7 +8616,7 @@
         ["tbxid"] = 4066,
         ["notice"] = "",
         ["id"] = 4066,
-        ["tips"] = "当前帧数已恢复正常，已为您显示其他玩家。使用快捷键Ctrl+F11可隐藏其他玩家。"
+        ["tips"] = "The current number of players  is normal, showing other players for you。Use the shortcut Ctrl+F11can recruit other players."
     },
     [664] = {
         ["showtype"] = 2,
@@ -8629,7 +8629,7 @@
         ["tbxid"] = 4067,
         ["notice"] = "",
         ["id"] = 4067,
-        ["tips"] = "副本已通关，将于1分钟后离开副本！"
+        ["tips"] = "Cleared stage, Will leave thedungeon after 1 minute!"
     },
     [665] = {
         ["showtype"] = 7,
@@ -8640,9 +8640,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 5000,
-        ["notice"] = "[Tips1]{0}[/Tips1]在[Tips1]{1}，{2}[/Tips1]处使用许愿星进行许愿！",
+        ["notice"] = "[Tips1]{0}[/Tips1] Make a wish at [Tips1]{1},{2}[/Tips1] to a wishing star!",
         ["id"] = 5000,
-        ["tips"] = "[Tips1]{0}[/Tips1]在[Tips1]{1}，{2}[/Tips1]处使用许愿星进行许愿！"
+        ["tips"] = "[Tips1]{0}[/Tips1] Make a wish at [Tips1]{1},{2}[/Tips1] to a wishing star!"
     },
     [666] = {
         ["showtype"] = 3,
@@ -8655,7 +8655,7 @@
         ["tbxid"] = 5001,
         ["notice"] = "",
         ["id"] = 5001,
-        ["tips"] = "角斗场内无法使用此功能！"
+        ["tips"] = "This feature is not available in the Arena!"
     },
     [667] = {
         ["showtype"] = 3,
@@ -8666,9 +8666,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 5002,
-        ["notice"] = "20级才可参加角斗场！",
+        ["notice"] = "Level 20 players can participate in the arena!",
         ["id"] = 5002,
-        ["tips"] = "20级才可参加角斗场！"
+        ["tips"] = "Level 20 players can participate in the arena!"
     },
     [668] = {
         ["showtype"] = 3,
@@ -8679,9 +8679,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 5003,
-        ["notice"] = "20级才可参加角斗场！",
+        ["notice"] = "Level 20 players can participate in the arena!",
         ["id"] = 5003,
-        ["tips"] = "20级才可参加角斗场！"
+        ["tips"] = "Level 20 players can participate in the arena!"
     },
     [669] = {
         ["showtype"] = 3,
@@ -8692,10 +8692,10 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 5004,
-        ["notice"] = "角斗场匹配完成，暂时无法切换场景",
+        ["notice"] = "This rank battle  has been successfully completed, and the scene cannot be switched temporarily.",
         ["id"] = 5004,
-        ["tips"] = "角斗场匹配完成，暂时无法切换场景"
-    },
+        ["tips"] = "This rank battle  has been successfully completed, and the scene cannot be switched temporarily."
+        },
     [670] = {
         ["showtype"] = 3,
         ["channeltext"] = "",
@@ -8705,9 +8705,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 5005,
-        ["notice"] = "角斗场匹配中，无法加入队伍",
+        ["notice"] = "Looking for rank battle match, unable to join the team",
         ["id"] = 5005,
-        ["tips"] = "角斗场匹配中，无法加入队伍"
+        ["tips"] = "Looking for rank battle match, unable to join the team"
     },
     [671] = {
         ["showtype"] = 3,
@@ -8718,9 +8718,9 @@
         ["rightsys"] = 0,
         ["showchat"] = 0,
         ["tbxid"] = 5006,
-        ["notice"] = "副本中无法进行角斗场匹配",
+        ["notice"] = "Can't join this match with this suit",
         ["id"] = 5006,
-        ["tips"] = "副本中无法进行角斗场匹配"
+        ["tips"] = "Can't join this match with this suit"
     },
     [672] = {
         ["showtype"] = 1,
@@ -8733,7 +8733,7 @@
         ["tbxid"] = 5020,
         ["notice"] = "",
         ["id"] = 5020,
-        ["tips"] = "你的账号已参与该次调查，不能重复领取奖励"
+        ["tips"] = "Your account has already participated to the survey, you can't receive rewards repeatedly"
     }
 }
 

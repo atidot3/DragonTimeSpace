@@ -1,6 +1,6 @@
 ["datas"] = {
     [1] = {
-        ["Desc"] = "前往时空城中央（索尼币）",
+        ["Desc"] = "Go to the center of Time and Space City (Zeni)",
         ["id"] = 1,
         ["npcid"] = 0,
         ["tbxid"] = 1,
@@ -9,7 +9,7 @@
         ["cost"] = "3-40"
     },
     [2] = {
-        ["Desc"] = "前往卡林塔顶（索尼币）",
+        ["Desc"] = "Go to the top of the Tower of Korin (Zeni)",
         ["id"] = 2,
         ["npcid"] = 0,
         ["tbxid"] = 2,
@@ -18,7 +18,7 @@
         ["cost"] = "3-50"
     },
     [3] = {
-        ["Desc"] = "前往时空城中央（钻石）",
+        ["Desc"] = "Go to the center of Time and Space City (Diamonds)",
         ["id"] = 3,
         ["npcid"] = 0,
         ["tbxid"] = 3,
@@ -27,7 +27,7 @@
         ["cost"] = "2-3"
     },
     [4] = {
-        ["Desc"] = "前往卡林塔顶（钻石）",
+        ["Desc"] = "Go to the top of the Tower of Korin (Diamond)",
         ["id"] = 4,
         ["npcid"] = 0,
         ["tbxid"] = 4,
@@ -36,7 +36,7 @@
         ["cost"] = "2-5"
     },
     [5] = {
-        ["Desc"] = "前往龟仙岛",
+        ["Desc"] = "Go to the Kame House",
         ["id"] = 5,
         ["npcid"] = 0,
         ["tbxid"] = 5,
@@ -45,7 +45,7 @@
         ["cost"] = "3-200"
     },
     [6] = {
-        ["Desc"] = "前往龟仙岛——居民岛",
+        ["Desc"] = "Go to Kame House - Resident Island",
         ["id"] = 6,
         ["npcid"] = 0,
         ["tbxid"] = 6,
@@ -54,7 +54,7 @@
         ["cost"] = "3-200"
     },
     [7] = {
-        ["Desc"] = "前往西都野外",
+        ["Desc"] = "Go to West City",
         ["id"] = 7,
         ["npcid"] = 0,
         ["tbxid"] = 7,
@@ -63,7 +63,7 @@
         ["cost"] = "3-430"
     },
     [8] = {
-        ["Desc"] = "前往神殿",
+        ["Desc"] = "Go to the temple",
         ["id"] = 8,
         ["npcid"] = 0,
         ["tbxid"] = 8,
@@ -72,7 +72,7 @@
         ["cost"] = "3-900"
     },
     [9] = {
-        ["Desc"] = "前往水晶婆婆的宫殿",
+        ["Desc"] = "Go the Baba's palace of Crystal",
         ["id"] = 9,
         ["npcid"] = 0,
         ["tbxid"] = 9,
@@ -81,7 +81,7 @@
         ["cost"] = "3-800"
     },
     [10] = {
-        ["Desc"] = "前往时空城",
+        ["Desc"] = "Travel to Time and Space City ",
         ["id"] = 10,
         ["npcid"] = 0,
         ["tbxid"] = 10,
@@ -90,7 +90,7 @@
         ["cost"] = "3-150"
     },
     [11] = {
-        ["Desc"] = "前往新手村",
+        ["Desc"] = "Go to Novice Village",
         ["id"] = 11,
         ["npcid"] = 0,
         ["tbxid"] = 11,
@@ -99,7 +99,7 @@
         ["cost"] = "3-200"
     },
     [12] = {
-        ["Desc"] = "前往界王星",
+        ["Desc"] = "Go King Star sector",
         ["id"] = 12,
         ["npcid"] = 0,
         ["tbxid"] = 12,
@@ -108,7 +108,7 @@
         ["cost"] = "3-1200"
     },
     [13] = {
-        ["Desc"] = "前往中心都市",
+        ["Desc"] = "Go to the Central city",
         ["id"] = 13,
         ["npcid"] = 0,
         ["tbxid"] = 13,
@@ -117,7 +117,7 @@
         ["cost"] = "3-1200"
     },
     [14] = {
-        ["Desc"] = "前往那美克星东",
+        ["Desc"] = "Go to namek East star",
         ["id"] = 14,
         ["npcid"] = 0,
         ["tbxid"] = 14,
@@ -126,7 +126,7 @@
         ["cost"] = "3-1200"
     },
     [15] = {
-        ["Desc"] = "前往那美克星西",
+        ["Desc"] = "Go to namek West star",
         ["id"] = 15,
         ["npcid"] = 0,
         ["tbxid"] = 15,
@@ -135,7 +135,7 @@
         ["cost"] = "3-1200"
     },
     [16] = {
-        ["Desc"] = "前往中心都市中央公园",
+        ["Desc"] = "Go to the Central city's central park",
         ["id"] = 20,
         ["npcid"] = 0,
         ["tbxid"] = 20,
@@ -144,7 +144,7 @@
         ["cost"] = "3-1000"
     },
     [17] = {
-        ["Desc"] = "前往中心都市东",
+        ["Desc"] = "Go to the Central city East",
         ["id"] = 21,
         ["npcid"] = 0,
         ["tbxid"] = 21,
@@ -153,7 +153,7 @@
         ["cost"] = "3-1000"
     },
     [18] = {
-        ["Desc"] = "前往武道会西",
+        ["Desc"] = "Go to Budokai West",
         ["id"] = 22,
         ["npcid"] = 0,
         ["tbxid"] = 22,
@@ -162,7 +162,7 @@
         ["cost"] = "3-1000"
     },
     [19] = {
-        ["Desc"] = "前往胶囊公司",
+        ["Desc"] = "Go to Capsule Corporation",
         ["id"] = 23,
         ["npcid"] = 0,
         ["tbxid"] = 23,
@@ -171,7 +171,7 @@
         ["cost"] = "3-1000"
     },
     [20] = {
-        ["Desc"] = "前往中心都市码头",
+        ["Desc"] = "Go to the Central city Docks",
         ["id"] = 24,
         ["npcid"] = 0,
         ["tbxid"] = 24,
@@ -180,7 +180,7 @@
         ["cost"] = "3-1000"
     },
     [21] = {
-        ["Desc"] = "前往时空城东",
+        ["Desc"] = "Travel to Time and Space City East",
         ["id"] = 25,
         ["npcid"] = 0,
         ["tbxid"] = 25,
@@ -189,7 +189,7 @@
         ["cost"] = "3-1000"
     },
     [22] = {
-        ["Desc"] = "前往时空城南",
+        ["Desc"] = "Travel to Time and space City South",
         ["id"] = 26,
         ["npcid"] = 0,
         ["tbxid"] = 26,
@@ -198,7 +198,7 @@
         ["cost"] = "3-1000"
     },
     [23] = {
-        ["Desc"] = "前往时空城西",
+        ["Desc"] = "Travel to Time and space City West",
         ["id"] = 27,
         ["npcid"] = 0,
         ["tbxid"] = 27,
@@ -207,7 +207,7 @@
         ["cost"] = "3-1000"
     },
     [24] = {
-        ["Desc"] = "前往时空城北",
+        ["Desc"] = "Travel to Time and space City North",
         ["id"] = 28,
         ["npcid"] = 0,
         ["tbxid"] = 28,
@@ -216,7 +216,7 @@
         ["cost"] = "3-1000"
     },
     [25] = {
-        ["Desc"] = "前往那美克星东北",
+        ["Desc"] = "Go to namek East star North",
         ["id"] = 29,
         ["npcid"] = 0,
         ["tbxid"] = 29,
@@ -225,7 +225,7 @@
         ["cost"] = "3-1000"
     },
     [26] = {
-        ["Desc"] = "前往那美克星西北",
+        ["Desc"] = "Go to namek West star North",
         ["id"] = 30,
         ["npcid"] = 0,
         ["tbxid"] = 30,
@@ -234,7 +234,7 @@
         ["cost"] = "3-1000"
     },
     [27] = {
-        ["Desc"] = "前往那美克星东南",
+        ["Desc"] = "Go to namek East star South",
         ["id"] = 31,
         ["npcid"] = 0,
         ["tbxid"] = 31,
@@ -243,7 +243,7 @@
         ["cost"] = "3-1000"
     },
     [28] = {
-        ["Desc"] = "前往那美克星西南",
+        ["Desc"] = "Go to namek West star South",
         ["id"] = 32,
         ["npcid"] = 0,
         ["tbxid"] = 32,
@@ -252,7 +252,7 @@
         ["cost"] = "3-1000"
     },
     [29] = {
-        ["Desc"] = "前往西都野外矿区",
+        ["Desc"] = "Deeper western region of the field mining area",
         ["id"] = 33,
         ["npcid"] = 0,
         ["tbxid"] = 33,

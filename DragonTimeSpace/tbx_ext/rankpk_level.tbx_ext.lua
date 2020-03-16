@@ -8,7 +8,7 @@
         ["continue_win_reward_star"] = 1,
         ["tbxid"] = 1,
         ["season_reward"] = "99004-1-1",
-        ["name"] = "武者1",
+        ["name"] = "Warrior1",
         ["max_star"] = 2
     },
     [2] = {
@@ -20,7 +20,7 @@
         ["continue_win_reward_star"] = 1,
         ["tbxid"] = 2,
         ["season_reward"] = "99004-1-1;210012-5-1",
-        ["name"] = "武者2",
+        ["name"] = "Warrior2",
         ["max_star"] = 2
     },
     [3] = {
@@ -32,7 +32,7 @@
         ["continue_win_reward_star"] = 1,
         ["tbxid"] = 3,
         ["season_reward"] = "99004-1-1;400050-5-1",
-        ["name"] = "武者3",
+        ["name"] = "Warrior3",
         ["max_star"] = 2
     },
     [4] = {
@@ -44,7 +44,7 @@
         ["continue_win_reward_star"] = 1,
         ["tbxid"] = 4,
         ["season_reward"] = "99004-1-1;400051-5-1",
-        ["name"] = "武者4",
+        ["name"] = "Warrior4",
         ["max_star"] = 2
     },
     [5] = {
@@ -56,7 +56,7 @@
         ["continue_win_reward_star"] = 1,
         ["tbxid"] = 5,
         ["season_reward"] = "99005-1-1;210014-5-1",
-        ["name"] = "武者5",
+        ["name"] = "Warrior5",
         ["max_star"] = 2
     },
     [6] = {
@@ -68,7 +68,7 @@
         ["continue_win_reward_star"] = 0,
         ["tbxid"] = 6,
         ["season_reward"] = "99005-1-1;400052-5-1",
-        ["name"] = "大师1",
+        ["name"] = "Grandmaster1",
         ["max_star"] = 4
     },
     [7] = {
@@ -80,7 +80,7 @@
         ["continue_win_reward_star"] = 0,
         ["tbxid"] = 7,
         ["season_reward"] = "99005-1-1;400053-5-1",
-        ["name"] = "大师2",
+        ["name"] = "Grandmaster2",
         ["max_star"] = 4
     },
     [8] = {
@@ -92,7 +92,7 @@
         ["continue_win_reward_star"] = 0,
         ["tbxid"] = 8,
         ["season_reward"] = "99005-1-1;400054-1-1",
-        ["name"] = "大师3",
+        ["name"] = "Grandmaster3",
         ["max_star"] = 4
     },
     [9] = {
@@ -104,7 +104,7 @@
         ["continue_win_reward_star"] = 0,
         ["tbxid"] = 9,
         ["season_reward"] = "99005-1-1;400055-1-1",
-        ["name"] = "大师4",
+        ["name"] = "Grandmaster4",
         ["max_star"] = 4
     },
     [10] = {
@@ -116,7 +116,7 @@
         ["continue_win_reward_star"] = 0,
         ["tbxid"] = 10,
         ["season_reward"] = "99005-1-1;210015-5-1",
-        ["name"] = "大师5",
+        ["name"] = "Grandmaster5",
         ["max_star"] = 4
     },
     [11] = {
@@ -128,7 +128,7 @@
         ["continue_win_reward_star"] = 0,
         ["tbxid"] = 11,
         ["season_reward"] = "99004-1-1;400056-1-1",
-        ["name"] = "宗师1",
+        ["name"] = "Guru1",
         ["max_star"] = 5
     },
     [12] = {
@@ -140,7 +140,7 @@
         ["continue_win_reward_star"] = 0,
         ["tbxid"] = 12,
         ["season_reward"] = "99004-1-1;400057-1-1",
-        ["name"] = "宗师2",
+        ["name"] = "Guru2",
         ["max_star"] = 5
     },
     [13] = {
@@ -152,7 +152,7 @@
         ["continue_win_reward_star"] = 0,
         ["tbxid"] = 13,
         ["season_reward"] = "99006-1-0;210016-5-1",
-        ["name"] = "宗师3",
+        ["name"] = "Guru3",
         ["max_star"] = 5
     },
     [14] = {
@@ -164,7 +164,7 @@
         ["continue_win_reward_star"] = 0,
         ["tbxid"] = 14,
         ["season_reward"] = "99006-1-0;210017-3-1",
-        ["name"] = "最强战士",
+        ["name"] = "Strongest warrior",
         ["max_star"] = 0
     }
 }

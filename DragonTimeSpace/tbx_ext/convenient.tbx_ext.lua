@@ -1,32 +1,32 @@
 ["datas"] = {
     [1] = {
         ["tbxid"] = 1,
-        ["content"] = "*#{0},,d2ccac,#*招募公会成员，小伙伴快来加入吧~，*#申请加入公会,lk,11e9d8,u#*",
+        ["content"] = "*#{0},,d2ccac,#*We're recruiting new guild members, come and join us~# apply to join the guild,lk,11e9d8,u#*",
         ["id"] = 1
     },
     [2] = {
         ["tbxid"] = 2,
-        ["content"] = "{0}招募队员，需求*#{1},,d2ccac,#*，*#申请加入团队,lk,11e9d8,u#*",
+        ["content"] = "{0} recruiting guild members, asking for *#{1},,d2ccac,#*，*#apply to join party,lk,11e9d8,u#*",
         ["id"] = 2
     },
     [3] = {
         ["tbxid"] = 3,
-        ["content"] = "{0}请求拜师，【*#{1},,d2ccac,#*】，【*#{2},,d2ccac,#*】，【*#{3},,d2ccac,#*】*#点击查看,lk,11e9d8,u#*",
+        ["content"] = "{0}'s mentor request 【*#{1},,d2ccac,#*】，【*#{2},,d2ccac,#*】，【*#{3},,d2ccac,#*】*#click to view,lk,11e9d8,u#*",
         ["id"] = 3
     },
     [4] = {
         ["tbxid"] = 4,
-        ["content"] = "{0}请求收徒，【*#{1},,d2ccac,#*】，【*#{2},,d2ccac,#*】，【*#{3},,d2ccac,#*】*#点击查看,lk,11e9d8,u#*",
+        ["content"] = "{0} apprentice request，【*#{1},,d2ccac,#*】，【*#{2},,d2ccac,#*】，【*#{3},,d2ccac,#*】*#click to view,lk,11e9d8,u#*",
         ["id"] = 4
     },
     [5] = {
         ["tbxid"] = 5,
-        ["content"] = "我想收你为徒，但你的好友列表已经满员啦，请整理后再与我联系吧",
+        ["content"] = "I want to accept you as disciple, but your friendlist is full, please organize it before to contact me again.",
         ["id"] = 5
     },
     [6] = {
         ["tbxid"] = 6,
-        ["content"] = "我想拜你为师，但你的好友列表已经满员啦，请整理后再与我联系吧",
+        ["content"] = "I want to accept you as mentor, but your friendlist is full, please organize it before to contact me again",
         ["id"] = 6
     }
 }

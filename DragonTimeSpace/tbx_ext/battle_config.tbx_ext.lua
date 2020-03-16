@@ -15,12 +15,12 @@
         ["daily_reward_display"] = "99004-1",
         ["lose_reward"] = "1-999|0|2000",
         ["matchinglevel"] = 30,
-        ["desc"] = "夺旗模式",
+        ["desc"] = "Capture the flag",
         ["copymasterid"] = 11,
         ["expandlevel"] = 5,
         ["expanddegree"] = 6,
         ["enabled"] = 1,
-        ["name"] = "夺取龙珠",
+        ["name"] = "Capture the Dragon Ball",
         ["readytime"] = 60
     }
 }

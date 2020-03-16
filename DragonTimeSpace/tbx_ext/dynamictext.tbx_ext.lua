@@ -1,17 +1,17 @@
 ["datas"] = {
     [1] = {
         ["tbxid"] = 1,
-        ["content"] = "系统提示",
+        ["content"] = "System prompt",
         ["id"] = 1
     },
     [2] = {
         ["tbxid"] = 2,
-        ["content"] = "提示",
+        ["content"] = "Prompt",
         ["id"] = 2
     },
     [3] = {
         ["tbxid"] = 3,
-        ["content"] = "系统通知",
+        ["content"] = "System notification",
         ["id"] = 3
     },
     [4] = {
@@ -21,32 +21,32 @@
     },
     [5] = {
         ["tbxid"] = 5,
-        ["content"] = "确定",
+        ["content"] = "Confirm",
         ["id"] = 5
     },
     [6] = {
         ["tbxid"] = 6,
-        ["content"] = "取消",
+        ["content"] = "Cancel",
         ["id"] = 6
     },
     [7] = {
         ["tbxid"] = 7,
-        ["content"] = "重新连接",
+        ["content"] = "Reconnect",
         ["id"] = 7
     },
     [8] = {
         ["tbxid"] = 8,
-        ["content"] = "创建",
+        ["content"] = "Create",
         ["id"] = 8
     },
     [9] = {
         ["tbxid"] = 9,
-        ["content"] = "重试",
+        ["content"] = "Retry",
         ["id"] = 9
     },
     [10] = {
         ["tbxid"] = 10,
-        ["content"] = "离开",
+        ["content"] = "Leave",
         ["id"] = 10
     },
     [11] = {
@@ -61,197 +61,197 @@
     },
     [13] = {
         ["tbxid"] = 13,
-        ["content"] = "坚持解除",
+        ["content"] = "Logging off",
         ["id"] = 13
     },
     [14] = {
         ["tbxid"] = 14,
-        ["content"] = "重新考虑",
+        ["content"] = "Reconsider",
         ["id"] = 14
     },
     [15] = {
         ["tbxid"] = 15,
-        ["content"] = "是",
+        ["content"] = "Yes",
         ["id"] = 15
     },
     [16] = {
         ["tbxid"] = 16,
-        ["content"] = "否",
+        ["content"] = "No",
         ["id"] = 16
     },
     [17] = {
         ["tbxid"] = 17,
-        ["content"] = "整理好友",
+        ["content"] = "Sort out friends",
         ["id"] = 17
     },
     [18] = {
         ["tbxid"] = 18,
-        ["content"] = "继续使用",
+        ["content"] = "Keep using",
         ["id"] = 18
     },
     [19] = {
         ["tbxid"] = 50,
-        ["content"] = "账号在其他地点登陆，被踢下线！",
+        ["content"] = "The account is logged in at another location, You've been logged out!",
         ["id"] = 50
     },
     [20] = {
         ["tbxid"] = 51,
-        ["content"] = "连接服务器失败，请稍后重试",
+        ["content"] = "Connection to the server failed, please wait and Retry",
         ["id"] = 51
     },
     [21] = {
         ["tbxid"] = 52,
-        ["content"] = "警告，该账号正在别处试图登陆，为确保账号安全，请您及时修改账号密码",
+        ["content"] = "Warning, your account is trying to log in in other location. To ensure the security of your account, we recommend you to change your password in time.",
         ["id"] = 52
     },
     [22] = {
         ["tbxid"] = 1000,
-        ["content"] = "是否解除与{0}的好友关系？",
+        ["content"] = "Do you really want to remove {0} from your friend list?",
         ["id"] = 1000
     },
     [23] = {
         ["tbxid"] = 1001,
-        ["content"] = "确定传送回自己公会？",
+        ["content"] = "Do you want to go back to your guild HQ?",
         ["id"] = 1001
     },
     [24] = {
         ["tbxid"] = 1002,
-        ["content"] = "您现在没有队伍，是否创建队伍？",
+        ["content"] = "You don't have a party right now, do you want to create a party?",
         ["id"] = 1002
     },
     [25] = {
         ["tbxid"] = 1003,
-        ["content"] = "确定加入选择的[Tips1]阵营[/Tips1]？",
+        ["content"] = "Do you want to join the selected [Tips1]camp[/Tips1]?",
         ["id"] = 1003
     },
     [26] = {
         ["tbxid"] = 1004,
-        ["content"] = "是否确定通过空间传送器传往目标公会?",
+        ["content"] = "Do you want to move to the selected guild?",
         ["id"] = 1004
     },
     [27] = {
         ["tbxid"] = 1005,
-        ["content"] = "确定要放弃任务？",
+        ["content"] = "Do you really want to forfeit this quest?",
         ["id"] = 1005
     },
     [28] = {
         ["tbxid"] = 1006,
-        ["content"] = "是否要将{0}作为空间传送目标，本日不可更改",
+        ["content"] = "Do you really want to use {0} as your respawning site? it won't be changed after 1 day",
         ["id"] = 1006
     },
     [29] = {
         ["tbxid"] = 1007,
-        ["content"] = "是否确定离开？副本进度将被清空！",
+        ["content"] = "Do you rally want to quit? The copy progress will be erased!",
         ["id"] = 1007
     },
     [30] = {
         ["tbxid"] = 1008,
-        ["content"] = "确定离开副本及队伍？副本进度将被清除",
+        ["content"] = "Do you really want to leave party? The copy progress will be erased",
         ["id"] = 1008
     },
     [31] = {
         ["tbxid"] = 1009,
-        ["content"] = "确定离开副本？副本进度将被清除，次数已经扣除",
+        ["content"] = "Accept leave副本？The copy progress will be erased，the number has been deducted",
         ["id"] = 1009
     },
     [32] = {
         ["tbxid"] = 1010,
-        ["content"] = "确定离开副本及队伍？副本进度将被清除，次数已经扣除",
+        ["content"] = "Do you really want to leave party? The copy progress will be erased，the number has been deducted",
         ["id"] = 1010
     },
     [33] = {
         ["tbxid"] = 1011,
-        ["content"] = "是否跳过本段剧情？",
+        ["content"] = "Do you really want to skip the story line?",
         ["id"] = 1011
     },
     [34] = {
         ["tbxid"] = 1012,
-        ["content"] = "抱歉，您的好友列表已满，不能拜师",
+        ["content"] = "Sorry, Your friendlist is full， can't be mentor",
         ["id"] = 1012
     },
     [35] = {
         ["tbxid"] = 1013,
-        ["content"] = "抱歉，您的好友列表已满，不能收徒",
+        ["content"] = "Sorry, Your friendlist is full， can't be apprentice",
         ["id"] = 1013
     },
     [36] = {
         ["tbxid"] = 1014,
-        ["content"] = "是否要收回您已发布的拜师信息？其他师父将不会在寻找徒弟页面看到您的身影",
+        ["content"] = "Do you really want to remove your mentoring information? Other apprentices won't be able to find your figure on the apprentice page",
         ["id"] = 1014
     },
     [37] = {
         ["tbxid"] = 1015,
-        ["content"] = "是否要收回您已发布的收徒信息？其他师父将不会在寻找师父页面看到您的身影",
+        ["content"] = "Do you really want to remove your apprentice information? Other masters won't be able to find your figure on the apprentice page",
         ["id"] = 1015
     },
     [38] = {
         ["tbxid"] = 1016,
-        ["content"] = "您正在申请解除与{0}的师徒关系，需{1}小时处理，成功后{2}小时不能寻找新的师父或徒弟",
+        ["content"] = "You're about to end your mentoring relationship with{0}. It takes {1} hours to process. Once it's finished, you cannot find a new Master or apprentice after {2} hours.",
         ["id"] = 1016
     },
     [39] = {
         ["tbxid"] = 1017,
-        ["content"] = "您正在申请解除与{0}的师徒关系，由于对方超过{1}天未上线，将立即解除，不受惩罚",
+        ["content"] = "Your {0}'s mentoring relationship is about to end. Since the other party hasn't been online for more than {1} days, it will be lifted immediately and it won't be punished.",
         ["id"] = 1017
     },
     [40] = {
         ["tbxid"] = 1018,
-        ["content"] = "对方正在申请解除与您的师徒关系，如确认则立即解除，您不会受到惩罚",
+        ["content"] = "The other party want end the relationship with your mentoring. If confirmed, it will be lifted immediately. It won't be punished.",
         ["id"] = 1018
     },
     [41] = {
         ["tbxid"] = 1019,
-        ["content"] = "您是否让徒弟玩家{0}出师，出师后双方邮箱将收到出师奖励",
+        ["content"] = "Do you want to let your apprentice player{0}leave your mentoring? after leaving the mentoring, both mailboxes will recieve the mentoring rewards",
         ["id"] = 1019
     },
     [42] = {
         ["tbxid"] = 1020,
-        ["content"] = "在副本期间您将暂时处于暂离状态，无法参与队伍活动匹配，是否仍要进入副本？",
+        ["content"] = "During the usage of the copu, you'll be temporarily out of the party, you won't be able to participate in party or guild activity matches. Do you still want to use the copy？",
         ["id"] = 1020
     },
     [43] = {
         ["tbxid"] = 1021,
-        ["content"] = "确定拆卸当前符文页所有符文吗？",
+        ["content"] = "Do you really want to disassemble all the runes on the current rune slot?",
         ["id"] = 1021
     },
     [44] = {
         ["tbxid"] = 1022,
-        ["content"] = "确认激活并镶嵌当前符文吗？激活之后不可交易！",
+        ["content"] = "Do you really want to activate the current rune slot? You won't be able to trade it after the usage!",
         ["id"] = 1022
     },
     [45] = {
         ["tbxid"] = 1023,
-        ["content"] = "你将进入队长所在分线",
+        ["content"] = "You'll join once party leader is online",
         ["id"] = 1023
     },
     [46] = {
         ["tbxid"] = 1024,
-        ["content"] = "该符文被消耗后，会清空所有镶嵌该符文的符文槽！",
+        ["content"] = "Once you use the rune, all the rune slots which has been embedded will be erased!",
         ["id"] = 1024
     },
     [47] = {
         ["tbxid"] = 1025,
-        ["content"] = "使用后活力将达上限{0}，无法继续增长。是否继续使用？",
+        ["content"] = "After use it, the vitality will be increased by {0}, and it won't be able to increase again. Do you really want to use it anyways？",
         ["id"] = 1025
     },
     [48] = {
         ["tbxid"] = 1026,
-        ["content"] = "升星的英雄为绑定状态，升星后的英雄仍然绑定，无法交易。是否继续？",
+        ["content"] = "The hero is about to increase it's quality rank, it won't be able to trade it after rising the quality, Do you want to continue?",
         ["id"] = 1026
     },
     [49] = {
         ["tbxid"] = 1027,
-        ["content"] = "消耗的英雄为绑定状态，升星后的英雄将会绑定，无法交易。是否继续？",
+        ["content"] = "You're about to bound your hero, After increasing the hero quality it won't be tradeable. Do you want to continue?",
         ["id"] = 1027
     },
     [50] = {
         ["tbxid"] = 1028,
-        ["content"] = "升星英雄和消耗英雄均为绑定状态，升星过后仍然绑定，无法交易。是否继续？",
+        ["content"] = "The hero is about to increase its quality rank, it won't be able to trade it after rising the quality, Do you want to continue?",
         ["id"] = 1028
     },
     [51] = {
         ["tbxid"] = 1029,
-        ["content"] = "{0}开启了{1}，队伍成员准备进入。",
+        ["content"] = "{0} opened {1}， party members are ready to enter.",
         ["id"] = 1029
     }
 }
