@@ -46,6 +46,7 @@ private:
 	bool onReceiveOperateDatasReq(const Packet& packet);
 	bool onReceiveImportantBroadcast(const Packet& packet);
 	bool onReceiveTeamMemberReq(const Packet& packet);
+	bool onSelectCharToLogin(const Packet& packet);
 
 	bool onReceiveProtobuf(const Packet& packet);
 };
