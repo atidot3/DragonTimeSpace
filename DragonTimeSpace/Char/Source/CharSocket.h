@@ -40,8 +40,13 @@ protected:
 private:
 	bool onCheckGatewayVer(const Packet& packet);
 	bool onReceiveUserInfo(const Packet& packet);
+	bool onReceiveCharCreate(const Packet& packet);
 	bool onReceiveMainHero(const Packet& packet);
 	bool onSceneLoaded(const Packet& packet);
-	
+	bool onReceiveOperateDatasReq(const Packet& packet);
+	bool onReceiveImportantBroadcast(const Packet& packet);
+	bool onReceiveTeamMemberReq(const Packet& packet);
+	bool onSelectCharToLogin(const Packet& packet);
+
 	bool onReceiveProtobuf(const Packet& packet);
 };
