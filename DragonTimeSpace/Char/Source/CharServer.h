@@ -3,7 +3,6 @@
 #include "CharSocket.h"
 
 #include <Network/Listener.h>
-#include <Network/WebRequestSocket.h>
 #include <Network\io_context_pool.h>
 
 #include <Configuration\Configuration.h>
@@ -41,7 +40,6 @@ private:
 	void ping();
 private:
 	Listener<CharSocket>	network;
-//	Listener<WebSocketRequest>	test;
 	boost::asio::io_context::strand strandPing;
 	boost::asio::deadline_timer ping_timer;
 };
