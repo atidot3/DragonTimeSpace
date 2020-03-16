@@ -264,7 +264,7 @@ bool CharSocket::onReceiveCharCreate(const Packet& packet)
 		mapdata.get_protobuff().set_level(10);
 
 		mapdata.get_protobuff().set_allocated_pos(&pos);
-		mapdata.get_protobuff().set_movespeed(10);
+		mapdata.get_protobuff().set_movespeed(80);
 		mapdata.get_protobuff().set_country(1);
 		
 
@@ -511,7 +511,7 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 		mapdata.get_protobuff().set_maxhp(100);
 		mapdata.get_protobuff().set_level(10);
 		mapdata.get_protobuff().set_allocated_pos(&pos);
-		mapdata.get_protobuff().set_movespeed(10);
+		mapdata.get_protobuff().set_movespeed(80);
 		mapdata.get_protobuff().set_country(1);
 		mapdata.get_protobuff().set_dir(0);
 
@@ -584,56 +584,75 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 	pktMain.get_protobuff().release_data();
 
 
+	//msg::MSG_Ret_MapScreenBatchRefreshNpc_SC refresh;
+	//auto npc = refresh.add_data();
+	//npc->set
 	ProtobufPacket<msg::MSG_Ret_MapScreenRefreshNpc_SC> npc_info(CommandID::Ret_MapScreenRefreshNpc_SC);
+
+	msg::MapNpcData npcs;
+
+	msg::MasterData master;
 	{
-		auto npcs = npc_info.get_protobuff().data();
-
-		msg::MasterData master;
-		{
-			master.set_country(0);
-			master.set_guildid(0);
-			master.set_idtype(msg::EntryIDType::id);
-			master.set_name(std::move(std::string("Atidote")));
-			master.set_teamid(0);
-		}
-		msg::FloatMovePos pos;
-		{
-			pos.set_fx(795);
-			pos.set_fy(1089);
-		}
-		msg::CharacterMapShow cmshow;
-		{
-		}
-		msg::NPC_HatredList list;
-		{
-			list.set_npctempid(2);
-		}
-
-		npcs.set_tempid(2);
-		npcs.set_allocated_hatredlist(&list);
-		npcs.set_allocated_master(&master);
-		npcs.set_allocated_pos(&pos);
-		npcs.set_allocated_showdata(&cmshow);
-		npcs.set_attspeed(0);
-		npcs.set_baseid(0);
-		npcs.set_birth(false);
-		npcs.set_dir(0);
-		npcs.set_hp(10);
-		npcs.set_maxhp(10);
-		npcs.set_movespeed(0);
-		npcs.set_name(std::move(std::string("Atidote")));
-		npcs.set_titlename(std::move(std::string("Atidote")));
-		npcs.set_visit(0);
-
-		npc_info.compute();
-
-		npcs.release_hatredlist();
-		npcs.release_master();
-		npcs.release_pos();
-		npcs.release_showdata();
+		master.set_country(1);
+		master.set_guildid(1);
+		master.set_idtype(msg::EntryIDType::id);
+		master.set_name(std::move(std::string("Atidote")));
+		master.set_teamid(1);
 	}
 
+	{
+		pos.set_fx(827);
+		pos.set_fy(843);
+	}
+	msg::CharacterMapShow cmshow;
+	{
+		cmshow.set_antenna(0);
+		cmshow.set_avatarid(0);
+		cmshow.set_bodystyle(0);
+		cmshow.set_coat(0);
+		cmshow.set_face(0);
+		cmshow.set_facestyle(0);
+		cmshow.set_haircolor(0);
+		cmshow.set_hairstyle(0);
+		cmshow.set_heroid(0);
+		cmshow.set_occupation(0);
+		cmshow.set_weapon(0);
+	}
+	msg::NPC_HatredList list;
+	{
+		list.set_npctempid(80);
+	}
+
+	npcs.set_tempid(80);
+	npcs.set_allocated_hatredlist(&list);
+	npcs.set_allocated_master(&master);
+	npcs.set_allocated_pos(&pos);
+	npcs.set_allocated_showdata(&cmshow);
+	npcs.set_attspeed(0);
+	npcs.set_baseid(80);
+	npcs.set_birth(true);
+	npcs.set_dir(0);
+	npcs.set_hp(10);
+	npcs.set_maxhp(10);
+	npcs.set_movespeed(80);
+	npcs.set_name(std::move(std::string("Atidote")));
+	npcs.set_titlename(std::move(std::string("Atidote")));
+	npcs.set_visit(0);
+
+	npc_info.get_protobuff().set_allocated_data(&npcs);
+	npc_info.compute();
+
+	LOG_DEBUG << "MSG_Ret_MapScreenRefreshNpc_SC HEX: ";
+	npc_info.log_data();
+
 	ms_Write(npc_info.get_buffer());
+
+	npc_info.get_protobuff().release_data();
+	npcs.release_hatredlist();
+	npcs.release_master();
+	npcs.release_pos();
+	npcs.release_showdata();
+
 	return true;
 }
 
