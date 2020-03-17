@@ -28,7 +28,7 @@ CharSocket::CharSocket(boost::asio::io_context &service)
 	methodList.emplace_back(CommandID::Create_Role_CS, std::bind(&CharSocket::onReceiveCharCreate, this, std::placeholders::_1));
 	methodList.emplace_back(CommandID::TeamMemeberList_CS, std::bind(&CharSocket::onReceiveTeamMemberReq, this, std::placeholders::_1));
 	methodList.emplace_back(CommandID::Req_SelectCharToLogin_CS, std::bind(&CharSocket::onSelectCharToLogin, this, std::placeholders::_1));
-
+	methodList.emplace_back(CommandID::Req_Chat_CS, std::bind(&CharSocket::onRecieveChat, this, std::placeholders::_1));
 	// debug test
 	//methodList.emplace_back(2273, std::bind(&CharSocket::onReceiveProtobuf, this, std::placeholders::_1));
 }
@@ -264,7 +264,7 @@ bool CharSocket::onReceiveCharCreate(const Packet& packet)
 		mapdata.get_protobuff().set_level(10);
 
 		mapdata.get_protobuff().set_allocated_pos(&pos);
-		mapdata.get_protobuff().set_movespeed(10);
+		mapdata.get_protobuff().set_movespeed(90);
 		mapdata.get_protobuff().set_country(1);
 		
 
@@ -511,7 +511,7 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 		mapdata.get_protobuff().set_maxhp(100);
 		mapdata.get_protobuff().set_level(10);
 		mapdata.get_protobuff().set_allocated_pos(&pos);
-		mapdata.get_protobuff().set_movespeed(10);
+		mapdata.get_protobuff().set_movespeed(90);
 		mapdata.get_protobuff().set_country(1);
 		mapdata.get_protobuff().set_dir(0);
 
@@ -584,15 +584,24 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 	pktMain.get_protobuff().release_data();
 
 
-	ProtobufPacket<msg::MSG_Ret_MapScreenRefreshNpc_SC> npc_info(CommandID::Ret_MapScreenRefreshNpc_SC);
+	ProtobufPacket<msg::MSG_Ret_MapScreenBatchRefreshNpc_SC> npc_info(CommandID::Ret_MapScreenBatchRefreshNpc_SC);
 	{
-		auto npcs = npc_info.get_protobuff().data();
+		
+		//msg::MapNpcData npcs;
 
+		msg::EntryIDType myType;
+		{
+			myType.set_id(100);
+			myType.set_type(0);
+		}
 		msg::MasterData master;
 		{
-			master.set_country(0);
-			master.set_guildid(0);
-			master.set_idtype(msg::EntryIDType::id);
+			master.set_country(1);
+			//todo: Fix Idtype. It did not like being protoc as a type. One is supposed to be Uint64, the other is supposed to be uint32
+			LOG_DEBUG << "Fix this shit dumbass doggo";
+
+			
+			master.set_allocated_idtype(&myType);
 			master.set_name(std::move(std::string("Atidote")));
 			master.set_teamid(0);
 		}
@@ -603,34 +612,41 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 		}
 		msg::CharacterMapShow cmshow;
 		{
+			cmshow.set_avatarid(80);
+			cmshow.set_heroid(80);
+			cmshow.set_occupation(1);
 		}
 		msg::NPC_HatredList list;
 		{
 			list.set_npctempid(2);
 		}
 
-		npcs.set_tempid(2);
-		npcs.set_allocated_hatredlist(&list);
-		npcs.set_allocated_master(&master);
-		npcs.set_allocated_pos(&pos);
-		npcs.set_allocated_showdata(&cmshow);
-		npcs.set_attspeed(0);
-		npcs.set_baseid(0);
-		npcs.set_birth(false);
-		npcs.set_dir(0);
-		npcs.set_hp(10);
-		npcs.set_maxhp(10);
-		npcs.set_movespeed(0);
-		npcs.set_name(std::move(std::string("Atidote")));
-		npcs.set_titlename(std::move(std::string("Atidote")));
-		npcs.set_visit(0);
 
+		auto npcs = npc_info.get_protobuff().add_data();
+		npcs->set_tempid(2);
+		npcs->set_allocated_hatredlist(&list);
+		npcs->set_allocated_master(&master);
+		npcs->set_allocated_pos(&pos);
+		npcs->set_allocated_showdata(&cmshow);
+		npcs->set_attspeed(0);
+		npcs->set_baseid(80);
+		npcs->set_birth(false);
+		npcs->set_dir(0);
+		npcs->set_hp(10);
+		npcs->set_maxhp(10);
+		npcs->set_movespeed(90);
+		npcs->set_name(std::move(std::string("Atidote")));
+		npcs->set_titlename(std::move(std::string("Atidote")));
+		npcs->set_visit(0);
+		
 		npc_info.compute();
 
-		npcs.release_hatredlist();
-		npcs.release_master();
-		npcs.release_pos();
-		npcs.release_showdata();
+		npcs->release_master()->release_idtype();
+		npcs->release_hatredlist();
+		npcs->release_master();
+		npcs->release_pos();
+		npcs->release_showdata();
+
 	}
 
 	ms_Write(npc_info.get_buffer());
@@ -669,5 +685,32 @@ bool CharSocket::onReceiveProtobuf(const Packet& packet)
 	LOG_DEBUG << "lineid " << mapInfo.lineid();
 	LOG_DEBUG << "mapInfo ByteSizeLong: " << mapInfo.ByteSizeLong();
 	
+	return true;
+}
+
+bool CharSocket::onRecieveChat(const Packet& packet)
+{
+	Chat::MSG_Req_Chat_CS _chat;
+	msg::FloatMovePos pos;
+
+	fill_my_data(_chat, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
+	LOG_DEBUG << _chat.DebugString();
+	ProtobufPacket<Chat::MSG_Ret_ChannelChat_SC> chat(CommandID::Ret_ChannelChat_SC);
+	
+	
+	
+	chat.get_protobuff().set_channel_type(Chat::ChannelType::ChannelType_World);
+	chat.get_protobuff().set_str_chat(_chat.data().content());
+	chat.get_protobuff().set_src_name(_chat.data().charname());
+	chat.get_protobuff().set_textid(1);
+
+
+	chat.compute();
+
+	LOG_DEBUG << "MSG_Ret_ChannelChat_SC HEX:";
+	chat.log_data();
+
+	ms_Write(chat.get_buffer());
+
 	return true;
 }

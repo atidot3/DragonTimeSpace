@@ -180,6 +180,7 @@
     <ClCompile Include="libjson\json_writer.cpp" />
     <ClCompile Include="Network\io_context_pool.cpp" />
     <ClCompile Include="Network\Messages\avatar.pb.cc" />
+    <ClCompile Include="Network\Messages\chat.pb.cc" />
     <ClCompile Include="Network\Messages\CommandID.cpp" />
     <ClCompile Include="Network\Messages\hero.pb.cc" />
     <ClCompile Include="Network\Messages\message.pb.cc" />
@@ -187,6 +188,7 @@
     <ClCompile Include="Network\Messages\ParseProto.cpp" />
     <ClCompile Include="Network\Messages\team.pb.cc" />
     <ClCompile Include="Network\Socket.cpp" />
+    <ClCompile Include="Tables\TableContainer.cpp" />
     <ClCompile Include="Utils\BitFlag\BitFlagManager.cpp" />
     <ClCompile Include="Utils\Logger\Logger.cpp" />
     <ClCompile Include="Utils\Time\Time.cpp" />
@@ -213,6 +215,7 @@
     <ClInclude Include="Network\io_context_pool.h" />
     <ClInclude Include="Network\Listener.h" />
     <ClInclude Include="Network\Messages\avatar.pb.h" />
+    <ClInclude Include="Network\Messages\chat.pb.h" />
     <ClInclude Include="Network\Messages\CommandID.h" />
     <ClInclude Include="Network\Messages\hero.pb.h" />
     <ClInclude Include="Network\Messages\message.pb.h" />
@@ -225,6 +228,7 @@
     <ClInclude Include="Network\Packet\ProtobufPacket.h" />
     <ClInclude Include="Network\Socket.h" />
     <ClInclude Include="Network\SocketManager.h" />
+    <ClInclude Include="Tables\TableContainer.h" />
     <ClInclude Include="Utils\BitFlag\BitFlagManager.h" />
     <ClInclude Include="Utils\Define.h" />
     <ClInclude Include="Utils\Logger\consoleColor.h" />

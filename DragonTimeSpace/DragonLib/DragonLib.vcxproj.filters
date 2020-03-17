@@ -58,6 +58,9 @@
     <Filter Include="Network\Packet\Auth">
       <UniqueIdentifier>{3c0eec42-844c-4790-b925-69c6943d68bd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tables">
+      <UniqueIdentifier>{755228fe-c09b-4e07-9839-451c9959a36d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Configuration\Configuration.cpp">
@@ -125,6 +128,12 @@
     </ClCompile>
     <ClCompile Include="Network\Messages\team.pb.cc">
       <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\chat.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\TableContainer.cpp">
+      <Filter>Tables</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -250,6 +259,12 @@
     </ClInclude>
     <ClInclude Include="Network\Packet\ProtobufPacket.h">
       <Filter>Network\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\chat.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\TableContainer.h">
+      <Filter>Tables</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

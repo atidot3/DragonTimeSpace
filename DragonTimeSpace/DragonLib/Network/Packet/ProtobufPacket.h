@@ -9,6 +9,7 @@
 #include <Network\Messages\object.pb.h>
 #include <Network\Messages\hero.pb.h>
 #include <Network\Messages\team.pb.h>
+#include <Network\Messages\chat.pb.h>
 
 // -- Protobuf packet:
 // -- HEADER_SIZE + 8 + protobuff->bytesizelong()
