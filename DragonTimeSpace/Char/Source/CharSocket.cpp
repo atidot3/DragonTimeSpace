@@ -591,36 +591,31 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 
 		msg::EntryIDType myType;
 		{
-			myType.set_id(100);
-			myType.set_type(0);
+			//myType.set_id(100);
+			//myType.set_type(0);
 		}
 		msg::MasterData master;
 		{
-			master.set_country(1);
-			//todo: Fix Idtype. It did not like being protoc as a type. One is supposed to be Uint64, the other is supposed to be uint32
-			LOG_DEBUG << "Fix this shit dumbass doggo";
-
-			
-			master.set_allocated_idtype(&myType);
-			master.set_name(std::move(std::string("Atidote")));
-			master.set_teamid(0);
+			//master.set_country(1);
+			//master.set_allocated_idtype(&myType);
+			//master.set_name(std::move(std::string("Atidote")));
+			//master.set_teamid(0);
 		}
 		msg::FloatMovePos pos;
 		{
-			pos.set_fx(795);
-			pos.set_fy(1089);
+			pos.set_fx(827);
+			pos.set_fy(843);
 		}
 		msg::CharacterMapShow cmshow;
 		{
-			cmshow.set_avatarid(80);
-			cmshow.set_heroid(80);
-			cmshow.set_occupation(1);
+			//cmshow.set_avatarid(80);
+			//cmshow.set_heroid(80);
+			//cmshow.set_occupation(1);
 		}
 		msg::NPC_HatredList list;
 		{
-			list.set_npctempid(2);
+			//list.set_npctempid(2);
 		}
-
 
 		auto npcs = npc_info.get_protobuff().add_data();
 		npcs->set_tempid(2);
