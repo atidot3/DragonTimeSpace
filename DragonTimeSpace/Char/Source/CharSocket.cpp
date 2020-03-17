@@ -29,6 +29,12 @@ CharSocket::CharSocket(boost::asio::io_context &service)
 	methodList.emplace_back(CommandID::TeamMemeberList_CS, std::bind(&CharSocket::onReceiveTeamMemberReq, this, std::placeholders::_1));
 	methodList.emplace_back(CommandID::Req_SelectCharToLogin_CS, std::bind(&CharSocket::onSelectCharToLogin, this, std::placeholders::_1));
 	methodList.emplace_back(CommandID::Req_Chat_CS, std::bind(&CharSocket::onRecieveChat, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::ReqCardPackInfo_CS, std::bind(&CharSocket::onReceiveCardPackInfo, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::ReqHeroAttributeData_CS, std::bind(&CharSocket::onReceiveMyHeroAttrData, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::DnaBagInfo_CSC, std::bind(&CharSocket::onReceiveDNABagInfo, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::AllDnaPageInfo_CSC, std::bind(&CharSocket::onReceiveAllDNAPageInfo, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::Req_VisitNpcTrade_CS, std::bind(&CharSocket::onReceiveVisitNpcTrade, this, std::placeholders::_1));
+	//
 	// debug test
 	//methodList.emplace_back(2273, std::bind(&CharSocket::onReceiveProtobuf, this, std::placeholders::_1));
 }
@@ -53,7 +59,9 @@ void CharSocket::OnConnected()
 bool CharSocket::ProcessIncomingData(const Packet& packet)
 {
 	char_packet* p = (char_packet*)packet.GetPacketData();
+	if(p->CMD != 2279)
 	LOG_WARNING << "Get packet: command type [" << GetPacketName(p->CMD) << "]";
+
 	for (const auto& method : methodList)
 	{
 		if (std::get<0>(method) == p->CMD)
@@ -63,7 +71,9 @@ bool CharSocket::ProcessIncomingData(const Packet& packet)
 			return true;
 		}
 	}
+	if (p->CMD != 2279)
 	LOG_WARNING << "Get an unexpected packet: [" << GetPacketName(p->CMD) << "]";
+
 	internalError = 1000;
 	return false;
 }
@@ -268,7 +278,7 @@ bool CharSocket::onReceiveCharCreate(const Packet& packet)
 		mapdata.get_protobuff().set_country(1);
 		
 
-		mapdata.get_protobuff().set_dir(0);
+		mapdata.get_protobuff().set_dir(180);
 	}
 	ProtobufPacket<msg::CharacterMapShow> mapshow(CommandID::RetCommonError_SC);
 	{
@@ -342,8 +352,8 @@ bool CharSocket::onReceiveMainHero(const Packet& packet)
 	LOG_DEBUG << _hero.DebugString();
 	
 	hero.get_protobuff().set_errorcode(0);
-	hero.get_protobuff().set_opcode(1);
-	hero.get_protobuff().set_herothisid(_hero.herothisid());
+	hero.get_protobuff().set_opcode(2);
+	hero.get_protobuff().set_herothisid(71014);
 
 	hero.compute();
 
@@ -382,38 +392,48 @@ bool CharSocket::onReceiveTeamMemberReq(const Packet& packet)
 	return true;
 }
 
-bool CharSocket::onSelectCharToLogin(const Packet& packet)
+
+
+bool CharSocket::onReceiveCardPackInfo(const Packet& packet)
 {
-	LOG_DEBUG << "on Select Char to Login";
-	msg::MSG_Req_SelectCharToLogin_CS _hero;
-	msg::FloatMovePos pos;
+	
+	Obj::MSG_ReqCardPackInfo_CS req;
 
-	fill_my_data(_hero, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
-	LOG_DEBUG << _hero.DebugString();
+	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
+	LOG_DEBUG << req.DebugString();
 
-	pos.set_fx(795.f);
-	pos.set_fy(1089.f);
-
-	ProtobufPacket<msg::MSG_Ret_UserMapInfo_SC> mapInfo(CommandID::Ret_UserMapInfo_SC);
+	ProtobufPacket<Obj::CardPackInfo> pack(CommandID::RetCommonError_SC);
 	{
-		mapInfo.get_protobuff().set_mapid(695);
-		mapInfo.get_protobuff().set_filename(std::move(std::string("Pc_sgc")));
-		mapInfo.get_protobuff().set_mapname(std::move(std::string("Time and space city")));
-		mapInfo.get_protobuff().set_lineid(0);
-		mapInfo.get_protobuff().set_sceneid(0);
-		mapInfo.get_protobuff().set_allocated_pos(&pos);
-		mapInfo.get_protobuff().set_copymapidx(0);
-		mapInfo.get_protobuff().set_subcopymapidx(0);
+		pack.get_protobuff().set_earth_opened_num(0);
+		pack.get_protobuff().set_fire_opened_num(0);
+		pack.get_protobuff().set_gold_opened_num(0);
+		pack.get_protobuff().set_hero_baseid(70022);
+		pack.get_protobuff().set_water_opened_num(0);
+		pack.get_protobuff().set_wood_opened_num(0);
 
-		mapInfo.compute();
-
-		LOG_DEBUG << "Protobuff packet to send HEX: ";
-		mapInfo.log_data();
-
-		ms_Write(mapInfo.get_buffer());
+		pack.compute();
 	}
 
-	//Set Main Char
+
+	ProtobufPacket<Obj::MSG_RetCardPackInfo_SC > res(CommandID::ReqCardPackInfo_CS);
+	{
+		res.get_protobuff().set_allocated_data(&pack.get_protobuff());
+	}
+	res.compute();
+	ms_Write(res.get_buffer());
+
+	res.get_protobuff().release_data();
+	return true;
+}
+
+bool CharSocket::onReceiveMyHeroAttrData(const Packet& packet)
+{
+	
+	msg::MSG_ReqHeroAttributeData_CS req;
+	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
+
+	LOG_DEBUG << req.DebugString();
+
 	ProtobufPacket<msg::AttributeData> attrData(CommandID::RetCommonError_SC);
 	{
 		attrData.get_protobuff().set_hp(10);
@@ -477,29 +497,214 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 
 		attrData.compute();
 	}
+
+
+	ProtobufPacket<msg::MSG_RetHeroAttributeData_SC> attr(CommandID::RetHeroAttributeData_SC);
+	{
+
+		attr.get_protobuff().set_allocated_data(&attrData.get_protobuff());
+		attr.get_protobuff().set_fightvalue(10000);
+	}
+
+	attr.compute();
+	ms_Write(attr.get_buffer());
+
+	attr.get_protobuff().release_data();
+
+
+	return true;
+}
+
+bool CharSocket::onReceiveDNABagInfo(const Packet& packet)
+{
+	hero::MSG_AllDnaPageInfo_CSC req;
+	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
+
+	LOG_DEBUG << req.DebugString();
+	ProtobufPacket<hero::MSG_AllDnaPageInfo_CSC> res(CommandID::AllDnaPageInfo_CSC);
+	{
+		auto it = res.get_protobuff().add_pages();
+		it->set_page(hero::DNAPage::PAGE1);
+		auto attHoles = it->add_att_holes();
+		it->set_att_opened_num(0);
+		it->add_def_holes();
+		it->set_def_opened_num(0);
+	}
+
+	res.compute();
+	ms_Write(res.get_buffer());
+
+	return true;
+}
+
+bool CharSocket::onReceiveVisitNpcTrade(const Packet& packet)
+{
+	quest::MSG_Req_VisitNpcTrade_CS req;
+	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
+
+	LOG_DEBUG << req.DebugString();
+	ProtobufPacket<quest::MSG_Ret_VisitNpcTrade_SC> res(CommandID::Req_VisitNpcTrade_CS);
+	{		
+		
+		for (int i = 0; i < req.allcrc().size(); i++)
+		{
+			auto it = res.get_protobuff().add_allcrc();
+			it->set_branch_id(req.allcrc().Get(i).branch_id());
+			it->set_quest_id(req.allcrc().Get(i).quest_id());
+			it->set_crc(req.allcrc().Get(i).crc());
+		}
+		res.get_protobuff().set_action(0);
+		res.get_protobuff().set_type(11);
+		res.get_protobuff().set_npc_temp_id(req.npc_temp_id());
+		res.get_protobuff().set_show_type(1);
+			
+	}
+
+	res.compute();
+	ms_Write(res.get_buffer());
+
+	return true;
+}
+
+bool CharSocket::onReceiveAllDNAPageInfo(const Packet& packet)
+{
+	hero::MSG_DnaBagInfo_CSC req;
+	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
+
+	LOG_DEBUG << req.DebugString();
+	ProtobufPacket<hero::MSG_DnaBagInfo_CSC> res(CommandID::DnaBagInfo_CSC);
+	{
+		auto it = res.get_protobuff().add_datas();
+		it->set_id(100101);
+		it->set_level(1);
+		it->set_num(1);
+		res.get_protobuff().set_cur_page(hero::DNAPage::PAGE1);
+	}
+
+	res.compute();
+	ms_Write(res.get_buffer());
+
+	return true;
+}
+
+bool CharSocket::onSelectCharToLogin(const Packet& packet)
+{
+	LOG_DEBUG << "on Select Char to Login";
+	msg::MSG_Req_SelectCharToLogin_CS _hero;
+	msg::FloatMovePos pos;
+
+	fill_my_data(_hero, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
+	LOG_DEBUG << _hero.DebugString();
+
+	pos.set_fx(795.f);
+	pos.set_fy(1089.f);
+
+	ProtobufPacket<msg::MSG_Ret_UserMapInfo_SC> mapInfo(CommandID::Ret_UserMapInfo_SC);
+	{
+		mapInfo.get_protobuff().set_mapid(695);
+		mapInfo.get_protobuff().set_filename(std::move(std::string("Pc_sgc")));
+		mapInfo.get_protobuff().set_mapname(std::move(std::string("Time and space city")));
+		mapInfo.get_protobuff().set_lineid(0);
+		mapInfo.get_protobuff().set_sceneid(0);
+		mapInfo.get_protobuff().set_allocated_pos(&pos);
+		mapInfo.get_protobuff().set_copymapidx(0);
+		mapInfo.get_protobuff().set_subcopymapidx(0);
+
+		mapInfo.compute();
+
+		LOG_DEBUG << "Protobuff packet to send HEX: ";
+		mapInfo.log_data();
+
+		ms_Write(mapInfo.get_buffer());
+	}
+
+	//Set Main Char
+	ProtobufPacket<msg::AttributeData> attrData(CommandID::RetCommonError_SC);
+	{
+		attrData.get_protobuff().set_hp(1000);
+		attrData.get_protobuff().set_maxhp(1000);
+		attrData.get_protobuff().set_mp(1000);
+		attrData.get_protobuff().set_maxmp(1000);
+		attrData.get_protobuff().set_str(1000);
+		attrData.get_protobuff().set_dex(1000);
+		attrData.get_protobuff().set_intel(1000);
+		attrData.get_protobuff().set_phy(1000);
+		attrData.get_protobuff().set_matt(1000);
+		attrData.get_protobuff().set_patt(1000);
+		attrData.get_protobuff().set_mdef(1000);
+		attrData.get_protobuff().set_pdef(1000);
+		attrData.get_protobuff().set_bang(1000);
+		attrData.get_protobuff().set_bangextradamage(1000);
+		attrData.get_protobuff().set_toughness(1000);
+		attrData.get_protobuff().set_toughnessreducedamage(1000);
+		attrData.get_protobuff().set_penetrate(1000);
+		attrData.get_protobuff().set_hit(1000);
+		attrData.get_protobuff().set_penetrateextradamage(1000);
+		attrData.get_protobuff().set_block(1000);
+		attrData.get_protobuff().set_blockreducedamage(1000);
+		attrData.get_protobuff().set_accurate(1000);
+		attrData.get_protobuff().set_accurateextradamage(1000);
+		attrData.get_protobuff().set_hold(1000);
+		attrData.get_protobuff().set_holdreducedamage(1000);
+		attrData.get_protobuff().set_deflect(1000);
+		attrData.get_protobuff().set_deflectreducedamage(100);
+		attrData.get_protobuff().set_dodge(1000);
+		attrData.get_protobuff().set_weaponatt(1000);
+		attrData.get_protobuff().set_firemastery(1000);
+		attrData.get_protobuff().set_icemastery(1000);
+		attrData.get_protobuff().set_lightningmastery(1000);
+		attrData.get_protobuff().set_brightmastery(1000);
+		attrData.get_protobuff().set_darkmastery(1000);
+		attrData.get_protobuff().set_fireresist(1000);
+		attrData.get_protobuff().set_iceresist(1000);
+		attrData.get_protobuff().set_lightningresist(1000);
+		attrData.get_protobuff().set_brightresist(1000);
+		attrData.get_protobuff().set_darkresist(1000);
+		attrData.get_protobuff().set_firepen(1000);
+		attrData.get_protobuff().set_icepen(1000);
+		attrData.get_protobuff().set_lightningpen(1000);
+		attrData.get_protobuff().set_brightpen(1000);
+		attrData.get_protobuff().set_darkpen(1000);
+		attrData.get_protobuff().set_blowint(1000);
+		attrData.get_protobuff().set_knockint(1000);
+		attrData.get_protobuff().set_floatint(1000);
+		attrData.get_protobuff().set_superhitint(1000);
+		attrData.get_protobuff().set_blowresist(1000);
+		attrData.get_protobuff().set_knockresist(1000);
+		attrData.get_protobuff().set_floatresist(1000);
+		attrData.get_protobuff().set_superhitresist(1000);
+		attrData.get_protobuff().set_blowdectime(1000);
+		attrData.get_protobuff().set_knockdectime(1000);
+		attrData.get_protobuff().set_floatdectime(1000);
+		attrData.get_protobuff().set_superhitdectime(1000);
+		attrData.get_protobuff().set_stiffaddtime(1000);
+		attrData.get_protobuff().set_stiffdectime(1000);
+
+		attrData.compute();
+	}
 	ProtobufPacket<msg::CharacterBaseData> charBase(CommandID::RetCommonError_SC);
 	{
-		charBase.get_protobuff().set_exp(1);
-		charBase.get_protobuff().set_welpoint(1);
-		charBase.get_protobuff().set_money(1);
-		charBase.get_protobuff().set_stone(1);
-		charBase.get_protobuff().set_tilizhi(1);
+		charBase.get_protobuff().set_exp(1000);
+		charBase.get_protobuff().set_welpoint(1000);
+		charBase.get_protobuff().set_money(1000);
+		charBase.get_protobuff().set_stone(1000);
+		charBase.get_protobuff().set_tilizhi(1000);
 		charBase.get_protobuff().set_type(1);
-		charBase.get_protobuff().set_famelevel(1);
+		charBase.get_protobuff().set_famelevel(100);
 		charBase.get_protobuff().set_position(0);
 		charBase.get_protobuff().set_viplevel(1);
 		charBase.get_protobuff().set_port(0);
 		charBase.get_protobuff().set_laststage(1);
 		charBase.get_protobuff().set_nextexp(1000);
 		charBase.get_protobuff().set_pkmode(0);
-		charBase.get_protobuff().set_edupoint(1);
-		charBase.get_protobuff().set_cooppoint(1);
-		charBase.get_protobuff().set_bluecrystal(1);
-		charBase.get_protobuff().set_purplecrystal(1);
-		charBase.get_protobuff().set_vigourpoint(1);
-		charBase.get_protobuff().set_doublepoint(1);
-		charBase.get_protobuff().set_bluecrystalincnum(1);
-		charBase.get_protobuff().set_purplecrystalincnum(1);
+		charBase.get_protobuff().set_edupoint(1000);
+		charBase.get_protobuff().set_cooppoint(1000);
+		charBase.get_protobuff().set_bluecrystal(1000);
+		charBase.get_protobuff().set_purplecrystal(1000);
+		charBase.get_protobuff().set_vigourpoint(1000);
+		charBase.get_protobuff().set_doublepoint(1000);
+		charBase.get_protobuff().set_bluecrystalincnum(1000);
+		charBase.get_protobuff().set_purplecrystalincnum(1000);
 		charBase.get_protobuff().set_familyatt(0);
 		charBase.get_protobuff().set_herothisid((std::string)"70022");
 
@@ -507,13 +712,15 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 	}
 	ProtobufPacket<msg::CharacterMapData> mapdata(CommandID::RetCommonError_SC);
 	{
-		mapdata.get_protobuff().set_hp(100);
-		mapdata.get_protobuff().set_maxhp(100);
-		mapdata.get_protobuff().set_level(10);
+		mapdata.get_protobuff().set_hp(1000);
+		mapdata.get_protobuff().set_maxhp(1000);
+		mapdata.get_protobuff().set_level(100);
 		mapdata.get_protobuff().set_allocated_pos(&pos);
 		mapdata.get_protobuff().set_movespeed(90);
 		mapdata.get_protobuff().set_country(1);
 		mapdata.get_protobuff().set_dir(0);
+		mapdata.get_protobuff().set_teamid(0);
+		mapdata.get_protobuff().set_guildid(0);
 
 		mapdata.compute();
 	}
@@ -522,7 +729,7 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 		mapshow.get_protobuff().set_weapon(0);
 		mapshow.get_protobuff().set_heroid(70022);
 		mapshow.get_protobuff().set_avatarid(70022);
-		mapshow.get_protobuff().set_occupation(0);
+		mapshow.get_protobuff().set_occupation(1);
 		mapshow.get_protobuff().set_hairstyle(43);
 		mapshow.get_protobuff().set_haircolor(86);
 		mapshow.get_protobuff().set_facestyle(49);
@@ -532,7 +739,7 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 	}
 	ProtobufPacket<msg::CharacterFightData> fightBase(CommandID::RetCommonError_SC);
 	{
-		fightBase.get_protobuff().set_curfightvalue(0);
+		fightBase.get_protobuff().set_curfightvalue(1000);
 
 		fightBase.compute();
 	}
@@ -540,7 +747,7 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 	{
 		mapBase.get_protobuff().set_charid(70022);
 		mapBase.get_protobuff().set_name(std::string("SanGawku"));
-
+		
 		mapBase.get_protobuff().set_allocated_mapdata(&mapdata.get_protobuff());
 		mapBase.get_protobuff().set_allocated_mapshow(&mapshow.get_protobuff());
 		mapBase.get_protobuff().set_allocated_bakhero(&mapshow.get_protobuff());
@@ -553,7 +760,7 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 		charMain.get_protobuff().set_allocated_basedata(&charBase.get_protobuff());
 		charMain.get_protobuff().set_allocated_fightdata(&fightBase.get_protobuff());
 		charMain.get_protobuff().set_allocated_mapdata(&mapBase.get_protobuff());
-
+		
 		charMain.compute();
 	}
 	ProtobufPacket<msg::MSG_DataCharacterMain_SC> pktMain(CommandID::DataCharacterMain_SC);

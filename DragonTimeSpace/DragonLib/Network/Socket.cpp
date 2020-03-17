@@ -198,7 +198,7 @@ bool Socket::ProcessBuffer(const size_t& sizeInc)
 	MessageBuffer& packet = _recvBuffer;
 	Packet p;
 
-	LOG_DEBUG << "Received: " << sizeInc;
+	//LOG_DEBUG << "Received: " << sizeInc;
 
 	// -- Did our header buffer can contain more data ?
 	if (_headerBuffer.GetRemainingSpace() > 0)

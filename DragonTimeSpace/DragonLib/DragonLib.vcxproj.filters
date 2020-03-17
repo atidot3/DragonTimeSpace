@@ -135,6 +135,9 @@
     <ClCompile Include="Tables\TableContainer.cpp">
       <Filter>Tables</Filter>
     </ClCompile>
+    <ClCompile Include="Network\Messages\quest.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Configuration\Configuration.h">
@@ -265,6 +268,9 @@
     </ClInclude>
     <ClInclude Include="Tables\TableContainer.h">
       <Filter>Tables</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\quest.pb.h">
+      <Filter>Network\Messages</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

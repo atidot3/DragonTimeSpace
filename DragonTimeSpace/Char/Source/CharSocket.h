@@ -46,6 +46,13 @@ private:
 	bool onReceiveOperateDatasReq(const Packet& packet);
 	bool onReceiveImportantBroadcast(const Packet& packet);
 	bool onReceiveTeamMemberReq(const Packet& packet);
+	bool onReceiveCardPackInfo(const Packet& packet);
+	bool onReceiveMyHeroAttrData(const Packet& packet);
+	bool onReceiveDNABagInfo(const Packet& packet);
+	bool onReceiveVisitNpcTrade(const Packet& packet);
+
+	bool onReceiveAllDNAPageInfo(const Packet& packet);
+
 	bool onSelectCharToLogin(const Packet& packet);
 	bool onRecieveChat(const Packet& packet);
 	bool onReceiveProtobuf(const Packet& packet);

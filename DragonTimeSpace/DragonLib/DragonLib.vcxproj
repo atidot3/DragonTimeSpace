@@ -186,6 +186,7 @@
     <ClCompile Include="Network\Messages\message.pb.cc" />
     <ClCompile Include="Network\Messages\object.pb.cc" />
     <ClCompile Include="Network\Messages\ParseProto.cpp" />
+    <ClCompile Include="Network\Messages\quest.pb.cc" />
     <ClCompile Include="Network\Messages\team.pb.cc" />
     <ClCompile Include="Network\Socket.cpp" />
     <ClCompile Include="Tables\TableContainer.cpp" />
@@ -221,6 +222,7 @@
     <ClInclude Include="Network\Messages\message.pb.h" />
     <ClInclude Include="Network\Messages\object.pb.h" />
     <ClInclude Include="Network\Messages\ParseProto.h" />
+    <ClInclude Include="Network\Messages\quest.pb.h" />
     <ClInclude Include="Network\Messages\team.pb.h" />
     <ClInclude Include="Network\Packet\Auth\Auth.h" />
     <ClInclude Include="Network\Packet\Char\Char.h" />
