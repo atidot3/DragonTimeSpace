@@ -16,6 +16,8 @@
 
 #include <Tables/TableContainer.h>
 
+constexpr int MAP_ID = 28;
+
 //----------------------------------------
 //	Called when we open the socket
 //----------------------------------------
@@ -147,14 +149,21 @@ bool CharSocket::onReceiveCharCreate(const Packet& packet)
 	msg::FloatMovePos pos;
 
 	fill_my_data(_hero, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
-	pos.set_fx(801.f);
-	pos.set_fy(908.f);
+
+	auto map_teleport = sTBL.get_table<pb::teleport>();
+	auto map_val = map_teleport.datas().at(MAP_ID);
+	
+	std::vector<std::string> coordinate;
+	boost::split(coordinate, map_val.coordinate(), boost::is_any_of(","));
+	
+	pos.set_fx(std::atof(coordinate.at(0).c_str()));
+	pos.set_fy(std::atof(coordinate.at(1).c_str()));
 
 	ProtobufPacket<msg::MSG_Ret_UserMapInfo_SC> mapInfo(CommandID::Ret_UserMapInfo_SC);
 	{
-		mapInfo.get_protobuff().set_mapid(695);
-		mapInfo.get_protobuff().set_filename(std::move(std::string("Pc_sgc")));
-		mapInfo.get_protobuff().set_mapname(std::move(std::string("Time and space city")));
+		mapInfo.get_protobuff().set_mapid(map_val.mapid());
+		//mapInfo.get_protobuff().set_filename(std::move(std::string("Pc_sgc")));
+		//mapInfo.get_protobuff().set_mapname(std::move(std::string("Time and space city")));
 		mapInfo.get_protobuff().set_lineid(0);
 		mapInfo.get_protobuff().set_sceneid(0);
 		mapInfo.get_protobuff().set_allocated_pos(&pos);
@@ -596,16 +605,21 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 	msg::FloatMovePos pos;
 
 	fill_my_data(_hero, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
-	LOG_DEBUG << _hero.DebugString();
 
-	pos.set_fx(795.f);
-	pos.set_fy(1089.f);
+	auto map_teleport = sTBL.get_table<pb::teleport>();
+	auto map_val = map_teleport.datas().at(MAP_ID);
+
+	std::vector<std::string> coordinate;
+	boost::split(coordinate, map_val.coordinate(), boost::is_any_of(","));
+	
+	pos.set_fx(std::atof(coordinate.at(0).c_str()));
+	pos.set_fy(std::atof(coordinate.at(1).c_str()));
 
 	ProtobufPacket<msg::MSG_Ret_UserMapInfo_SC> mapInfo(CommandID::Ret_UserMapInfo_SC);
 	{
-		mapInfo.get_protobuff().set_mapid(695);
-		mapInfo.get_protobuff().set_filename(std::move(std::string("Pc_sgc")));
-		mapInfo.get_protobuff().set_mapname(std::move(std::string("Time and space city")));
+		mapInfo.get_protobuff().set_mapid(map_val.mapid());
+		//mapInfo.get_protobuff().set_filename(std::move(std::string("Pc_sgc")));
+		//mapInfo.get_protobuff().set_mapname(std::move(std::string("Time and space city")));
 		mapInfo.get_protobuff().set_lineid(0);
 		mapInfo.get_protobuff().set_sceneid(0);
 		mapInfo.get_protobuff().set_allocated_pos(&pos);
@@ -795,33 +809,10 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 
 	ProtobufPacket<msg::MSG_Ret_MapScreenBatchRefreshNpc_SC> npc_info(CommandID::Ret_MapScreenBatchRefreshNpc_SC);
 	{
-		
-		msg::EntryIDType myType;
+		auto npc = sTBL.get_table<pb::npc_data>();
+		for (auto &c : sTBL.get_table<pb::pathway>().datas())
 		{
-			//myType.set_id(100);
-			//myType.set_type(0);
-		}
-		msg::MasterData master;
-		{
-			//master.set_country(1);
-			//master.set_allocated_idtype(&myType);
-			//master.set_name(std::move(std::string("Atidote")));
-			//master.set_teamid(0);
-		}
-		msg::CharacterMapShow cmshow;
-		{
-			//cmshow.set_avatarid(80);
-			//cmshow.set_heroid(80);
-			//cmshow.set_occupation(1);
-		}
-		msg::NPC_HatredList list;
-		{
-			//list.set_npctempid(2);
-		}
-
-		for (auto c : sTBL.get_table<pb::pathway>().datas())
-		{
-			if (c.mapid() == 695)
+			if (c.mapid() == map_val.mapid())
 			{
 				std::vector<std::string> coordinate;
 				boost::split(coordinate, c.coordinates(), boost::is_any_of(","));
@@ -831,11 +822,41 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 					pos->set_fy(std::atof(coordinate.at(1).c_str()));
 				}
 
-				auto npc = sTBL.get_table<pb::npc_data>();
-				for (auto is_ou_npc : npc.datas())
+				for (auto &is_ou_npc : npc.datas())
 				{
 					if (c.npcid() == is_ou_npc.tbxid())
 					{
+						msg::EntryIDType myType;
+						{
+							//myType.set_id(100);
+							//myType.set_type(0);
+						}
+						msg::MasterData master;
+						{
+							//master.set_country(1);
+							//master.set_allocated_idtype(&myType);
+							//master.set_name(std::move(std::string("Atidote")));
+							//master.set_teamid(0);
+						}
+						msg::CharacterMapShow cmshow;
+						{
+							//cmshow.set_avatarid(80);
+							//cmshow.set_heroid(80);
+							//cmshow.set_occupation(1);
+						}
+						msg::NPC_HatredList list;
+						{
+							 // -- what am i doing
+							if (is_ou_npc.hatred_distance() > 0)
+							{
+								list.add_enemytempid(is_ou_npc.id());
+							}
+							else
+							{
+								list.set_npctempid(is_ou_npc.id());
+							}
+						}
+
 						auto npcs = npc_info.get_protobuff().add_data();
 						npcs->set_tempid(c.npcid());
 						npcs->set_allocated_hatredlist(&list);
@@ -845,7 +866,7 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 						npcs->set_attspeed(0);
 						npcs->set_baseid(c.npcid());
 						npcs->set_birth(false);
-						npcs->set_dir(0);
+						npcs->set_dir(is_ou_npc.uimodelrotation());
 						npcs->set_hp(is_ou_npc.maxhp());
 						npcs->set_maxhp(is_ou_npc.maxhp());
 						npcs->set_movespeed(0);
