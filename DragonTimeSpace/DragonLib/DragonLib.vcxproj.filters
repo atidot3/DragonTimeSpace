@@ -61,6 +61,9 @@
     <Filter Include="Tables">
       <UniqueIdentifier>{755228fe-c09b-4e07-9839-451c9959a36d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tables\Definitions">
+      <UniqueIdentifier>{ef53a629-ef4e-46ad-ac23-7839df4f492b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Configuration\Configuration.cpp">
@@ -137,6 +140,204 @@
     </ClCompile>
     <ClCompile Include="Network\Messages\quest.pb.cc">
       <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\attribute_config.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\avatar_config.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\battle_config.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\building_data.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\carddata_config.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\cardeffect_config.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\careerLv.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\charstate.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\chatchannel.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\convenient.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\coordinates_arena_config.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\copymapEvent.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\copymapinfo.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\copymapmaster.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\cutscene.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\devicesetting.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\dialogueconfig.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\dnachip_config.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\dnaslot_config.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\dynamictext.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\entanglement_config.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\equip_suffix.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\equips.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\esc_config.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\event_config.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\evolution_config.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\faceconfig.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\gene_remake.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\growtarget_config.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\guide.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\heropanel_maximum.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\heros.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\illegalword.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\key.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\levelconfig.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\loadingtips.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\looksconfig.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\manufacture.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\namepool.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\newUser.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\npc_data.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\objects.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\pathway.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\player_level_config.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\questconfig.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\quizdataConfig.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\rankpk_level.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\relation_tbx.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\reward_level.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\runeConfig.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\screensetting.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\seventarget_config.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\skill_data.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\skill_guild.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\skill_stage.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\skillshow.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\summonpet.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\summonpetLevelUp.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\survey_config.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\teleport.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\textconfig.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\uimapinfo.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\unlock_config.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\vipcard_config.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\adventure_copymap.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Tables\Definitions\allaction.pb.cc">
+      <Filter>Tables\Definitions</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -271,6 +472,204 @@
     </ClInclude>
     <ClInclude Include="Network\Messages\quest.pb.h">
       <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\attribute_config.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\avatar_config.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\battle_config.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\building_data.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\carddata_config.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\cardeffect_config.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\careerLv.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\charstate.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\chatchannel.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\convenient.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\coordinates_arena_config.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\copymapEvent.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\copymapinfo.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\copymapmaster.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\cutscene.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\devicesetting.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\dialogueconfig.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\dnachip_config.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\dnaslot_config.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\dynamictext.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\entanglement_config.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\equip_suffix.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\equips.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\esc_config.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\event_config.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\evolution_config.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\faceconfig.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\gene_remake.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\growtarget_config.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\guide.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\heropanel_maximum.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\heros.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\illegalword.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\key.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\levelconfig.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\loadingtips.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\looksconfig.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\manufacture.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\namepool.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\newUser.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\npc_data.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\objects.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\pathway.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\player_level_config.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\questconfig.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\quizdataConfig.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\rankpk_level.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\relation_tbx.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\reward_level.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\runeConfig.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\screensetting.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\seventarget_config.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\skill_data.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\skill_guild.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\skill_stage.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\skillshow.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\summonpet.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\summonpetLevelUp.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\survey_config.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\teleport.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\textconfig.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\uimapinfo.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\unlock_config.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\vipcard_config.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\adventure_copymap.pb.h">
+      <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\allaction.pb.h">
+      <Filter>Tables\Definitions</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
