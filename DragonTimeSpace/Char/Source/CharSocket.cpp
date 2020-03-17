@@ -14,6 +14,8 @@
 
 #include <Network/Messages/ParseProto.h>
 
+#include <Tables/TableContainer.h>
+
 //----------------------------------------
 //	Called when we open the socket
 //----------------------------------------
@@ -794,8 +796,6 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 	ProtobufPacket<msg::MSG_Ret_MapScreenBatchRefreshNpc_SC> npc_info(CommandID::Ret_MapScreenBatchRefreshNpc_SC);
 	{
 		
-		//msg::MapNpcData npcs;
-
 		msg::EntryIDType myType;
 		{
 			//myType.set_id(100);
@@ -808,11 +808,6 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 			//master.set_name(std::move(std::string("Atidote")));
 			//master.set_teamid(0);
 		}
-		msg::FloatMovePos pos;
-		{
-			pos.set_fx(827);
-			pos.set_fy(843);
-		}
 		msg::CharacterMapShow cmshow;
 		{
 			//cmshow.set_avatarid(80);
@@ -824,30 +819,54 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 			//list.set_npctempid(2);
 		}
 
-		auto npcs = npc_info.get_protobuff().add_data();
-		npcs->set_tempid(2);
-		npcs->set_allocated_hatredlist(&list);
-		npcs->set_allocated_master(&master);
-		npcs->set_allocated_pos(&pos);
-		npcs->set_allocated_showdata(&cmshow);
-		npcs->set_attspeed(0);
-		npcs->set_baseid(80);
-		npcs->set_birth(false);
-		npcs->set_dir(0);
-		npcs->set_hp(10);
-		npcs->set_maxhp(10);
-		npcs->set_movespeed(90);
-		npcs->set_name(std::move(std::string("Atidote")));
-		npcs->set_titlename(std::move(std::string("Atidote")));
-		npcs->set_visit(0);
-		
+		for (auto c : sTBL.get_table<pb::pathway>().datas())
+		{
+			if (c.mapid() == 695)
+			{
+				std::vector<std::string> coordinate;
+				boost::split(coordinate, c.coordinates(), boost::is_any_of(","));
+				msg::FloatMovePos *pos = new msg::FloatMovePos();
+				{
+					pos->set_fx(std::atof(coordinate.at(0).c_str()));
+					pos->set_fy(std::atof(coordinate.at(1).c_str()));
+				}
+
+				auto npc = sTBL.get_table<pb::npc_data>();
+				for (auto is_ou_npc : npc.datas())
+				{
+					if (c.npcid() == is_ou_npc.tbxid())
+					{
+						auto npcs = npc_info.get_protobuff().add_data();
+						npcs->set_tempid(c.npcid());
+						npcs->set_allocated_hatredlist(&list);
+						npcs->set_allocated_master(&master);
+						npcs->set_allocated_pos(pos);
+						npcs->set_allocated_showdata(&cmshow);
+						npcs->set_attspeed(0);
+						npcs->set_baseid(c.npcid());
+						npcs->set_birth(false);
+						npcs->set_dir(0);
+						npcs->set_hp(is_ou_npc.maxhp());
+						npcs->set_maxhp(is_ou_npc.maxhp());
+						npcs->set_movespeed(0);
+						npcs->set_name(std::move(std::string(c.name())));
+						//npcs->set_titlename();
+						npcs->set_visit(0);
+
+						LOG_DEBUG << "Spawn: " << npcs->baseid() << " at: " << npcs->pos().fx() << " : " << npcs->pos().fy();
+					}
+				}
+			}
+		}
 		npc_info.compute();
 
-		npcs->release_master()->release_idtype();
-		npcs->release_hatredlist();
-		npcs->release_master();
-		npcs->release_pos();
-		npcs->release_showdata();
+		for (auto npcs = npc_info.get_protobuff().mutable_data()->begin(); npcs != npc_info.get_protobuff().mutable_data()->end(); ++npcs)
+		{
+			npcs->release_hatredlist();
+			npcs->release_master();
+			//npcs->release_pos();
+			npcs->release_showdata();
+		}
 
 	}
 

@@ -1,8 +1,8 @@
 #include "CharServer.h"
 
-
 #include <Utils/Logger/Logger.h>
 #include <Database\MySQLWrapper.h>
+#include <Tables/TableContainer.h>
 
 #include <boost/exception/all.hpp>
 
@@ -35,6 +35,7 @@ void CharServer::Init(io_context_pool& pool)
 
 	//connectToDatabase();
 	sConfig.loadGameServerCharList();
+	sTBL.load(sConfig.GetServerData());
 
 	ping_timer.async_wait(strandPing.wrap(boost::bind(&CharServer::ping, this)));
 }

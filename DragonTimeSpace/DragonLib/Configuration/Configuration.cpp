@@ -151,29 +151,9 @@ double Configuration::GetQuestExpRate() const
 {
 	return rates.QuestExpAmount;
 }
-//TS File Load Directory
-void Configuration::loadGameServerData()
+//TBX File Load Directory
+std::string Configuration::GetServerData()
 {
-	const Json::Value& data = obj["DataFiles"];
-
-	if (data["TriggerDir"].asString() == "")
-	{
-		throw std::runtime_error("Error while loading config file, TriggerDir can't be empty value");
-	}
-	else if (data["WorldDataDir"].asString() == "")
-	{
-		throw std::runtime_error("Error while loading config file, WorldDataDir can't be empty value");
-	}
-}
-std::string Configuration::GetWorldDataDir() const
-{
-	const Json::Value& data = obj["DataFiles"];
-
-	return data["WorldDataDir"].asString();
-}
-std::string Configuration::GetTriggerDir() const
-{
-	const Json::Value& data = obj["DataFiles"];
-
-	return data["TriggerDir"].asString();
+	const Json::Value& data = obj["DataFile"];
+	return obj["DataFile"].asString();
 }

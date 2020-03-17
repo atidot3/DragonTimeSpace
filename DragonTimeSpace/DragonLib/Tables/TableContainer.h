@@ -1,110 +1,100 @@
 #pragma once
+
+#include <Tables/Definitions/adventure_copymap.pb.h>
+#include <Tables/Definitions/allaction.pb.h>
+#include <Tables/Definitions/attribute_config.pb.h>
+#include <Tables/Definitions/avatar_config.pb.h>
+#include <Tables/Definitions/battle_config.pb.h>
+#include <Tables/Definitions/building_data.pb.h>
+#include <Tables/Definitions/carddata_config.pb.h>
+#include <Tables/Definitions/cardeffect_config.pb.h>
+#include <Tables/Definitions/careerLv.pb.h>
+#include <Tables/Definitions/charstate.pb.h>
+#include <Tables/Definitions/chatchannel.pb.h>
+#include <Tables/Definitions/convenient.pb.h>
+#include <Tables/Definitions/coordinates_arena_config.pb.h>
+#include <Tables/Definitions/copymapEvent.pb.h>
+#include <Tables/Definitions/copymapinfo.pb.h>
+#include <Tables/Definitions/copymapmaster.pb.h>
+#include <Tables/Definitions/cutscene.pb.h>
+#include <Tables/Definitions/devicesetting.pb.h>
+#include <Tables/Definitions/dialogueconfig.pb.h>
+#include <Tables/Definitions/dnachip_config.pb.h>
+#include <Tables/Definitions/dnaslot_config.pb.h>
+#include <Tables/Definitions/dynamictext.pb.h>
+#include <Tables/Definitions/entanglement_config.pb.h>
+#include <Tables/Definitions/equips.pb.h>
+#include <Tables/Definitions/equip_suffix.pb.h>
+#include <Tables/Definitions/esc_config.pb.h>
+#include <Tables/Definitions/event_config.pb.h>
+#include <Tables/Definitions/evolution_config.pb.h>
+#include <Tables/Definitions/faceconfig.pb.h>
+#include <Tables/Definitions/gene_remake.pb.h>
+#include <Tables/Definitions/growtarget_config.pb.h>
+#include <Tables/Definitions/guide.pb.h>
+#include <Tables/Definitions/heropanel_maximum.pb.h>
+#include <Tables/Definitions/heros.pb.h>
+#include <Tables/Definitions/illegalword.pb.h>
+#include <Tables/Definitions/key.pb.h>
+#include <Tables/Definitions/levelconfig.pb.h>
+#include <Tables/Definitions/loadingtips.pb.h>
+#include <Tables/Definitions/looksconfig.pb.h>
+#include <Tables/Definitions/manufacture.pb.h>
+#include <Tables/Definitions/namepool.pb.h>
+#include <Tables/Definitions/newUser.pb.h>
+#include <Tables/Definitions/npc_data.pb.h>
+#include <Tables/Definitions/objects.pb.h>
+#include <Tables/Definitions/pathway.pb.h>
+#include <Tables/Definitions/player_level_config.pb.h>
+#include <Tables/Definitions/questconfig.pb.h>
+#include <Tables/Definitions/quizdataConfig.pb.h>
+#include <Tables/Definitions/rankpk_level.pb.h>
+#include <Tables/Definitions/relation_tbx.pb.h>
+#include <Tables/Definitions/reward_level.pb.h>
+#include <Tables/Definitions/runeConfig.pb.h>
+#include <Tables/Definitions/screensetting.pb.h>
+#include <Tables/Definitions/seventarget_config.pb.h>
+#include <Tables/Definitions/skillshow.pb.h>
+#include <Tables/Definitions/skill_data.pb.h>
+#include <Tables/Definitions/skill_guild.pb.h>
+#include <Tables/Definitions/skill_stage.pb.h>
+#include <Tables/Definitions/summonpet.pb.h>
+#include <Tables/Definitions/summonpetLevelUp.pb.h>
+#include <Tables/Definitions/survey_config.pb.h>
+#include <Tables/Definitions/teleport.pb.h>
+#include <Tables/Definitions/textconfig.pb.h>
+#include <Tables/Definitions/uimapinfo.pb.h>
+#include <Tables/Definitions/unlock_config.pb.h>
+#include <Tables/Definitions/vipcard_config.pb.h>
+
 class TableContainer
 {
-
-public:
-	enum eTABLE
+private:
+	~TableContainer()
 	{
-		// Character
-		TABLE_ADVENTURE_COPYMAP = 0,
-		TABLE_ATTRIBUTE_CONFIG,
-		TABLE_AVATAR_CONFIG,
-		TABLE_BATTLE_CONFIG,
-		TABLE_BUILDING_DATA,
-		TABLE_CARDDATA_CONFIG,
-		TABLE_CARDEFFECT_CONFIG,
-		TABLE_CAREERLV,
-		TABLE_CHARSTATE,
-		TABLE_CHAT_CHANNEL,
-		TABLE_CONVENIENT,
-
-		// Item
-		TABLE_COORDS_ARENA_CONFIG,
-		TABLE_COPYMAP_EVENT,
-		TABLE_COPYMAP_INFO,
-		TABLE_COPYMAP_MASTER,
-		TABLE_CUTSCENE,
-		TABLE_DEVICE_SETTING,
-		TABLE_DIALOGUE_CONFIG,
-		TABLE_DNACHIP_CONFIG,
-		TABLE_DNASLOT_CONFIG,
-		TABLE_DYAMIC_TEXT,
-
-		// Misc
-		TABLE_ENTANGLEMENT_CONFIG,
-		TABLE_EQUIP_SUFFIX,
-		TABLE_EQUIPS,
-		TABLE_ESC_CONF,
-		TABLE_EVENT_CONFIG,
-
-		// Party
-		TABLE_EVOLUTION_CONFIG,
-
-		// Quest
-		TABLE_FACE_CONFIG,
-		TABLE_GENE_REMAKE,
-		TABLE_GROWTARGET_CONFIG,
-		TABLE_GUIDE,
-		TABLE_HEROPANEL_MAXIMUM,
-
-		// Rule
-		TABLE_HEROES,
-		TABLE_ILLEGAL_WORDS,
-		TABLE_KEY,
-
-		// Skill
-		TABLE_LEVEL_CONFIG,
-		TABLE_LOADING_TIPS,
-		TABLE_LOOKS_CONFIG,
-
-		// Text
-		TABLE_MANUFACTURE,
-		TABLE_NAMEPOOL,
-		TABLE_NEW_USER,
-		TABLE_NPC_DATA,
-
-		// World
-		TABLE_OBJECTS,
-		TABLE_PATHWAY, //NPC Spawns
-		TABLE_PLAYER_LEVEL_CONFIG,
-		TABLE_QUEST_CONFIG,
-		TABLE_QUIZDATA_CONFIG,
-		TABLE_RANKPK_LEVEL,
-		TABLE_RELATION,
-
-		// GraphicData
-		TABLE_REWARD_LEVEL,
-		TABLE_RUNE_CONFIG,
-
-		// World Data
-		TABLE_SCREENSETTING,
-
-		// Portal Data
-		TABLE_SEVENTARGET_CONFIG, //7 Day login Shits
-
-		TABLE_SKILL_DATA,
-
-		TABLE_SKILL_GUILD,
-		TABLE_SKILL_STAGE,
-
-		TABLE_SKILL_SHOW,
-		TABLE_SUMMON_PET,
-		TABLE_SUMMON_PET_LEVELUP,
-
-		TABLE_TELEPORT,
-
-		TABLE_TEXT_CONFIG,
-		TABLE_UI_MAP_INFO,
-		TABLE_UNLOCK_CONFIG,
-		TABLE_VIPCARD_CONFIG,
-
-		TABLE_COUNT
-	};
+		for (auto c : _vect)
+		{
+			delete c;
+			c = nullptr;
+		}
+	}
+public:
 	static TableContainer& instance();
+	void load(const std::string& path);
 
-	//void Load(const eTABLE table, const std::string_view file);
-	//const TableNPC* GetNpcTable() const;
-
+	template<typename T>
+	const T& get_table() const
+	{
+		for (auto c : _vect)
+		{
+			if (typeid(T) == typeid(*c))
+			{
+				return (const T&)*c;
+			}
+		}
+	}
+private:
+	std::vector<google::protobuf::Message*> _vect;
 };
 
 #define sTBL TableContainer::instance()

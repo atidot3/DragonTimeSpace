@@ -58,9 +58,7 @@ public:
 	int GetMobDropAmountRate() const;
 	double GetQuestExpRate() const;
 	double GetQuestRwdRate() const;
-	void loadGameServerData();
-	std::string GetTriggerDir() const;
-	std::string GetWorldDataDir() const;
+	std::string GetServerData();
 protected:
 	Json::Reader reader;
 	Json::Value obj;

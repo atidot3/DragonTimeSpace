@@ -2,6 +2,7 @@
   "serverworker": 6,
   "loglevel": 0,
   "logFile": "./Log/Char.log",
+  "DataFile": "../Data/tbx/",
   "server":
   {
     "ID": 1,
