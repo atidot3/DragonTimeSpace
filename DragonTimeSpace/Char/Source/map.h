@@ -10,98 +10,62 @@
 #include <vector>
 #include <map>
 
-struct map_info
-{
-	struct npc
-	{
-		int32_t id;
-		int32_t x;
-		int32_t y;
-		int32_t num;
-		int32_t interval;
-		int32_t dir;
-	};
-	struct on_zone_script
-	{
-		int32_t questid;
-		int32_t zoneid;
-		int32_t x;
-		int32_t y;
-		int32_t width;
-		int32_t height;
-		int32_t zonecheckquest;
-	};
-	struct zonedef
-	{
-		int32_t width;
-		int32_t height;
-		int32_t x;
-		int32_t y;
-		int32_t type;
-		int32_t UniqueID;
-		int32_t id;
-		int32_t num;
-		int32_t userdir;
-	};
-	struct other
-	{
-		int32_t default_pkmode;
-	};
-
-	std::vector<npc> _npc;
-	std::vector<on_zone_script> _on_zone_script;
-	std::vector<zonedef> _zonedef;
-	std::vector<other> _other;
-};
-
 class Map
 {
-public:
-	Map(const std::string& json_file)
+	struct map_info
 	{
+		struct npc
+		{
+			int32_t id;
+			int32_t x;
+			int32_t y;
+			int32_t num;
+			int32_t interval;
+			int32_t dir;
+		};
+		struct on_zone_script
+		{
+			int32_t questid;
+			int32_t zoneid;
+			int32_t x;
+			int32_t y;
+			int32_t width;
+			int32_t height;
+			int32_t zonecheckquest;
+		};
+		struct zonedef
+		{
+			int32_t width;
+			int32_t height;
+			int32_t x;
+			int32_t y;
+			int32_t type;
+			int32_t UniqueID;
+			int32_t id;
+			int32_t num;
+			int32_t userdir;
+		};
+		struct other
+		{
+			int32_t default_pkmode;
+		};
 
+		std::vector<npc> _npc;
+		std::vector<on_zone_script> _on_zone_script;
+		std::vector<zonedef> _zonedef;
+		std::vector<other> _other;
+	};
+public:
+	Map(const std::string& json_file, const uint32_t& mapid)
+		: _mapid{ mapid }
+	{
+		load_maps(json_file);
+		LOG_DEBUG << json_file << " Map id: " << _mapid << " laoded, npc: " << info._npc.size();
 	}
 	~Map()
 	{
 
 	}
-
-private:
-	uint32_t _mapid;
-};
-
-class MapManager
-{
-public:
-	MapManager()
-	{
-		// -- Load master json from devin that contains maps id + filename
-		// -- This file is called mapinfo.json in the root data directory. 
-		// -- I have added to the gateway json config file to find it from GetMapConfigJsonData
-		// -- this is only for preparing struct and read code for each map
-		boost::filesystem::path p(sConfig.GetServerMapJsonData());
-
-		if (boost::filesystem::is_directory(p))
-		{
-			std::vector<boost::filesystem::directory_entry> v; // To save the file names in a vector.
-			std::copy(boost::filesystem::directory_iterator(p), boost::filesystem::directory_iterator(), std::back_inserter(v));
-			std::cout << p << " is a directory containing:\n";
-
-			for (std::vector<boost::filesystem::directory_entry>::const_iterator it = v.begin(); it != v.end(); ++it)
-			{
-				if ((*it).path().extension().string() == ".json")
-					load_maps((*it).path().string());
-			}
-		}
-		//This will eventually need reworked for all configs - San
-		//load_mapconfig(sConfig.GetMapConfigJsonData());
-		LOG_DEBUG << "All map_json loaded.";
-	}
-	~MapManager()
-	{
-
-	}
-
 	void fill_npc(const Json::Value& npc, map_info& info)
 	{
 		if (npc.isNull())
@@ -196,10 +160,62 @@ public:
 
 		fill_npc(npc, info);
 		fill_on_zone_script(on_zone_script, info);
-
-		LOG_DEBUG << "ok";
 	}
 private:
+	const uint32_t _mapid;
 	map_info info;
+};
+
+class MapManager
+{
+public:
+	MapManager()
+	{
+		std::ifstream ifs(sConfig.GetMapConfigJsonData());
+		if (!ifs.is_open())
+		{
+			throw std::runtime_error("Unable to load: " + sConfig.GetMapConfigJsonData() + "\n");
+		}
+		Json::Reader reader;
+		Json::Value obj;
+		reader.parse(ifs, obj); // reader can also read strings
+
+		Json::Value& maplabel = obj["maplabel"];
+		for (auto it = maplabel.begin(); it != maplabel.end(); ++it)
+		{
+		}
+		Json::Value& mapinfo = obj["mapinfo"];
+		for (auto it = mapinfo.begin(); it != mapinfo.end(); ++it)
+		{
+			Json::Value &map = *it;
+			{
+				if (map["fileName"].asString() != "")
+				{
+					try
+					{
+						const std::string filename(sConfig.GetServerMapJsonData() + map["fileName"].asString() + ".xml.json");
+						const uint32_t mapid = std::stoul(map["mapID"].asString());
+						_maps.emplace(mapid, std::move(Map(filename, mapid)));
+					}
+					catch (std::exception & e)
+					{
+						// -- file not found
+						//LOG_DEBUG << e.what();
+					}
+				}
+				else
+				{
+					//LOG_DEBUG << "Mapid: " << map["mapID"].asString() << " dont contain json file";
+				}
+			}
+		}
+	}
+	~MapManager()
+	{
+
+	}
+
+	
+private:
 	std::map<uint32_t, Map> _maps;
 };
