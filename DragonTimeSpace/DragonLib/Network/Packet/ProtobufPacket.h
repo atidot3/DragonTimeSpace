@@ -11,6 +11,12 @@
 #include <Network\Messages\team.pb.h>
 #include <Network\Messages\chat.pb.h>
 #include <Network\Messages\quest.pb.h>
+#include <Network\Messages\battle.pb.h>
+#include <Network\Messages\basic.pb.h>
+#include <Network\Messages\market.pb.h>
+#include <Network\Messages\massive.pb.h>
+#include <Network\Messages\mobapk.pb.h>
+#include <Network\Messages\relation.pb.h>
 
 // -- Protobuf packet:
 // -- HEADER_SIZE + 8 + protobuff->bytesizelong()

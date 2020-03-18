@@ -339,6 +339,24 @@
     <ClCompile Include="Tables\Definitions\allaction.pb.cc">
       <Filter>Tables\Definitions</Filter>
     </ClCompile>
+    <ClCompile Include="Network\Messages\battle.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\market.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\massive.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\mobapk.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\relation.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\basic.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Configuration\Configuration.h">
@@ -670,6 +688,24 @@
     </ClInclude>
     <ClInclude Include="Tables\Definitions\allaction.pb.h">
       <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\battle.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\market.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\massive.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\mobapk.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\relation.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\basic.pb.h">
+      <Filter>Network\Messages</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
