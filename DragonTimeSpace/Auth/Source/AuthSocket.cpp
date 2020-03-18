@@ -3,8 +3,8 @@
 #include <Network/Packet/Packet.h>
 #include <Network\Packet\Auth\Auth.h>
 
-//#include <Utils/Opcodes.h>
-//#include <Utils/ResultCode.h>
+#include <Network/ResultCodes.h>
+
 #include <Utils/Logger/Logger.h>
 #include <Utils\Utils.h>
 
@@ -33,17 +33,6 @@ AuthSocket::~AuthSocket()
 void AuthSocket::OnConnected()
 {
 	LOG_DEBUG << "New Connection from: " << this->GetAddress();
-
-	/*
-			On connected received :
-
-			opcode : (104 ? 120)
-			version should be 2000
-
-			uint_32 reserve;
-			uint_32 version;
-
-	*/
 }
 
 //----------------------------------------
@@ -98,28 +87,53 @@ bool AuthSocket::OnLoginReq(const Packet& packet)
 	LOG_DEBUG << "Received login data";
 
 	real_login* real_data = (real_login*)packet.GetPacketData();
-	login_accept login_ok;
+	
+	if (memcmp(real_data->password, "password", strlen("password")) == 0)
+	// -- On login ok
 	{
-		memset(login_ok.ip, '\0', 16);
-		memset(login_ok.key, '\0', 256);
+		LOG_DEBUG << "password ok";
+
+		login_accept login_ok;
+		{
+			memset(login_ok.ip, '\0', 16);
+			memset(login_ok.key, '\0', 256);
+		}
+		login_ok.size = sizeof(login_accept) - 4;
+		login_ok.CMD = 104;
+		login_ok.CMD_PARAM = 4;
+		login_ok.timestamp = 0;
+		login_ok.compress = 0;
+		login_ok.encrypt = 0;
+
+		login_ok.dwUserID = 14578;
+		login_ok.loginTempID = 421;
+		login_ok.state = BYTE(1);
+		login_ok.wdPort = WORD(50300);
+
+		std::string ip = "192.168.1.6";
+		memcpy(login_ok.ip, ip.c_str(), strlen("192.168.1.6"));
+		memcpy(login_ok.key, "coucou", strlen("coucou"));
+
+		st_Write(login_ok);
 	}
+	// NEVER WORK ON THE CLIENT
+	else
+	LOG_FATAL << "SAN BOI CHECK ME HERE !";
+	// -- On login failed
+	{
+		LOG_DEBUG << "password ko";
+		login_failed failed;
 
-	login_ok.size = sizeof(login_accept) - 4;
-	login_ok.CMD = 104;
-	login_ok.CMD_PARAM = 4;
-	login_ok.timestamp = 0;
-	login_ok.compress = 0;
-	login_ok.encrypt = 0;
+		failed.size = sizeof(login_failed) - 4;
+		failed.CMD = 104;
+		failed.CMD_PARAM = 3;
+		failed.timestamp = 0;
+		failed.compress = 0;
+		failed.encrypt = 0;
 
-	login_ok.dwUserID = 14578;
-	login_ok.loginTempID = 421;
-	login_ok.state = BYTE(1);
-	login_ok.wdPort = WORD(50300);
+		failed.error_code = ResultCode::CREDENTIALS_FAILED;
 
-	std::string ip = "192.168.1.6";
-	memcpy(login_ok.ip, ip.c_str(), strlen("192.168.1.6"));
-	memcpy(login_ok.key, "coucou", strlen("coucou"));
-
-	st_Write(login_ok);
+		st_Write(failed);
+	}
 	return true;
 }

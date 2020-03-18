@@ -34,6 +34,10 @@ struct login_accept : public PACKETDATA, auth_packet
 	BYTE		key[256];
 	DWORD		state;
 };
+struct login_failed : public PACKETDATA, auth_packet
+{
+	BYTE error_code;
+};
 #pragma pack()
 
 

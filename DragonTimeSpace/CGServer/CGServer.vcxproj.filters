@@ -36,6 +36,9 @@
     <ClCompile Include="Source\Network\CGSocket.cpp">
       <Filter>Source\Network</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Game\World\WorldSession.cpp">
+      <Filter>Source\Game\World</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Game\World\Map\map.h">
@@ -46,6 +49,9 @@
     </ClInclude>
     <ClInclude Include="Source\Network\CGSocket.h">
       <Filter>Source\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\World\WorldSession.h">
+      <Filter>Source\Game\World</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

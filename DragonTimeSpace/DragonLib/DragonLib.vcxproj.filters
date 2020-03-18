@@ -707,6 +707,9 @@
     <ClInclude Include="Network\Messages\basic.pb.h">
       <Filter>Network\Messages</Filter>
     </ClInclude>
+    <ClInclude Include="Network\ResultCodes.h">
+      <Filter>Network</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="libjson\json_internalarray.inl">

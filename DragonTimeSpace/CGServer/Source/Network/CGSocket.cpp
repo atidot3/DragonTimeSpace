@@ -1,5 +1,6 @@
 ﻿#include "CGSocket.h"
 
+#include "../Game/World/WorldSession.h"
 #include "../Game/World/Map/map.h"
 
 #include <Network/Packet/Packet.h>
@@ -18,6 +19,7 @@
 #include <Tables/TableContainer.h>
 
 constexpr int MAP_ID = 2;
+static uint32_t heroid;
 
 //----------------------------------------
 //	Called when we open the socket
@@ -25,15 +27,16 @@ constexpr int MAP_ID = 2;
 CGSocket::CGSocket(boost::asio::io_context &service)
 	: Socket{ service }
 {
+	// -- Process character server
 	methodList.emplace_back(CommandID::UserVerifyVerCmd_CS, std::bind(&CGSocket::onCheckGatewayVer, this, std::placeholders::_1));
 	methodList.emplace_back(CommandID::IphoneLoginUserCmd_CS, std::bind(&CGSocket::onReceiveUserInfo, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::Create_Role_CS, std::bind(&CGSocket::onReceiveCharCreate, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::Req_SelectCharToLogin_CS, std::bind(&CGSocket::onSelectCharToLogin, this, std::placeholders::_1));
 
+	// -- Process game server packet
 	methodList.emplace_back(CommandID::SetMainHero_CSC, std::bind(&CGSocket::onReceiveMainHero, this, std::placeholders::_1));
 	methodList.emplace_back(CommandID::Notify_SceneLoaded_CS, std::bind(&CGSocket::onSceneLoaded, this, std::placeholders::_1));
-	methodList.emplace_back(CommandID::Create_Role_CS, std::bind(&CGSocket::onReceiveCharCreate, this, std::placeholders::_1));
 	methodList.emplace_back(CommandID::TeamMemeberList_CS, std::bind(&CGSocket::onReceiveTeamMemberReq, this, std::placeholders::_1));
-	methodList.emplace_back(CommandID::Req_SelectCharToLogin_CS, std::bind(&CGSocket::onSelectCharToLogin, this, std::placeholders::_1));
-	methodList.emplace_back(CommandID::Req_Chat_CS, std::bind(&CGSocket::onRecieveChat, this, std::placeholders::_1));
 	methodList.emplace_back(CommandID::ReqCardPackInfo_CS, std::bind(&CGSocket::onReceiveCardPackInfo, this, std::placeholders::_1));
 	methodList.emplace_back(CommandID::ReqHeroAttributeData_CS, std::bind(&CGSocket::onReceiveMyHeroAttrData, this, std::placeholders::_1));
 	methodList.emplace_back(CommandID::DnaBagInfo_CSC, std::bind(&CGSocket::onReceiveDNABagInfo, this, std::placeholders::_1));
@@ -43,9 +46,10 @@ CGSocket::CGSocket(boost::asio::io_context &service)
 	methodList.emplace_back(CommandID::ReqMapQuestInfo_CS, std::bind(&CGSocket::onReceiveRefreshMapQuestInfo, this, std::placeholders::_1));
 	methodList.emplace_back(CommandID::ReqEntrySelectState_CS, std::bind(&CGSocket::onReceiveEntrySelectState, this, std::placeholders::_1));
 	methodList.emplace_back(CommandID::SetChooseTarget_CS, std::bind(&CGSocket::onReceiveSetChooseTarget, this, std::placeholders::_1));
-	
-	//
-	//
+
+	// -- Chat
+	methodList.emplace_back(CommandID::Req_Chat_CS, std::bind(&CGSocket::onRecieveChat, this, std::placeholders::_1));
+
 
 	// debug test
 	//methodList.emplace_back(2273, std::bind(&CGSocket::onReceiveProtobuf, this, std::placeholders::_1));
@@ -72,7 +76,18 @@ bool CGSocket::ProcessIncomingData(const Packet& packet)
 {
 	char_packet* p = (char_packet*)packet.GetPacketData();
 	if(p->CMD != 2279)
-	LOG_WARNING << "Get packet: command type [" << GetPacketName(p->CMD) << "]";
+		LOG_WARNING << "Get packet: command type [" << GetPacketName(p->CMD) << "]";
+
+	// -- Process character packet
+	if (p->CMD == CommandID::UserVerifyVerCmd_CS || p->CMD == CommandID::IphoneLoginUserCmd_CS || p->CMD == CommandID::Create_Role_CS || p->CMD == CommandID::Req_SelectCharToLogin_CS)
+	{
+
+	}
+	// -- Process game packet
+	else
+	{
+		// _session->process_packet(std::move(packet));
+	}
 
 	for (const auto& method : methodList)
 	{
@@ -92,7 +107,7 @@ bool CGSocket::ProcessIncomingData(const Packet& packet)
 
 bool CGSocket::onCheckGatewayVer(const Packet& packet)
 {
-	LOG_DEBUG << "Received gateway check version";
+	LOG_DEBUG << "onCheckGatewayVer";
 
 	gateway_version* data = (gateway_version*)packet.GetPacketData();
 	LOG_DEBUG << "version : " << data->version;
@@ -123,16 +138,16 @@ void log_data(const unsigned char* data, const int32_t& size)
 
 bool CGSocket::onReceiveUserInfo(const Packet& packet)
 {
-	LOG_DEBUG << "MSG_Ret_LoginOnReturnCharList_SC";
+	LOG_DEBUG << "onReceiveUserInfo";
 
 	ProtobufPacket<msg::MSG_Ret_LoginOnReturnCharList_SC> characterList(CommandID::Ret_LoginOnReturnCharList_SC);
 
 	auto it = characterList.get_protobuff().add_charlist();
-	it->set_charid(70022);
+	it->set_charid(1);
 	it->set_level(1);
 	it->set_sex(msg::SEX::FEMALE);
-	it->set_heroid(70022);
-	it->set_curheroid(70022);
+	it->set_heroid(heroid);
+	it->set_curheroid(heroid);
 	it->set_facestyle(49);
 	it->set_haircolor(116);
 	it->set_hairstyle(45);
@@ -141,8 +156,6 @@ bool CGSocket::onReceiveUserInfo(const Packet& packet)
 	it->set_name(std::move(std::string("Sangawku")));
 
 	characterList.compute();
-	LOG_DEBUG << "MSG_Ret_LoginOnReturnCharList_SC packet to send HEX: ";
-	characterList.log_data();
 
 	ms_Write(characterList.get_buffer());
 
@@ -151,12 +164,61 @@ bool CGSocket::onReceiveUserInfo(const Packet& packet)
 
 bool CGSocket::onReceiveCharCreate(const Packet& packet)
 {
-	LOG_DEBUG << "NEW_ROLE_CUTSCENE_SCS";
+	LOG_DEBUG << "onReceiveCharCreate";
 
 	msg::MSG_Create_Role_CS _hero;
 	msg::FloatMovePos pos;
 
+	auto hero_table = sTBL.get_table<pb::heros>();
+	auto avatar_table = sTBL.get_table<pb::avatar_config>();
+	auto evolution_table = sTBL.get_table<pb::evolution_config>();
+	auto level_table = sTBL.get_table<pb::levelconfig>();
+
+	const pb::heros_t_hero_config* hero = nullptr;
+	const pb::evolution_config_t_evolution_config* evolution = nullptr;
+	const pb::avatar_config_t_avatar_config* avatar = nullptr;
+	const pb::levelconfig_t_level_config* level = nullptr;
+
 	fill_my_data(_hero, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
+
+	for (auto it = hero_table.datas().begin(); it != hero_table.datas().end(); ++it)
+	{
+		if (it->id() == _hero.heroid())
+		{
+			hero = &(*it);
+		}
+	}
+	if (hero != nullptr)
+	{
+		for (auto it = avatar_table.datas().begin(); it != avatar_table.datas().end(); ++it)
+			if (it->id() == hero->newavatar())
+			{
+				avatar = &(*it);
+				break;
+			}
+
+		for (auto it = evolution_table.datas().begin(); it != evolution_table.datas().end(); ++it)
+		{
+			if (it->avatar() == hero->newavatar() || std::abs(int(it->avatar() - hero->newavatar())) <= 3)
+			{
+				evolution = &(*it);
+				break;
+			}
+		}
+
+		for (auto it = level_table.datas().begin(); it != level_table.datas().end(); ++it)
+			if (it->level() == 1)
+			{
+				level = &(*it);
+				break;
+			}
+	}
+
+	if (hero == nullptr || evolution == nullptr || avatar == nullptr || level == nullptr)
+	{
+		LOG_FATAL << "One table were null";
+		return false;
+	}
 
 	auto map_teleport = sTBL.get_table<pb::teleport>();
 	auto map_val = map_teleport.datas().at(MAP_ID);
@@ -170,8 +232,6 @@ bool CGSocket::onReceiveCharCreate(const Packet& packet)
 	ProtobufPacket<msg::MSG_Ret_UserMapInfo_SC> mapInfo(CommandID::Ret_UserMapInfo_SC);
 	{
 		mapInfo.get_protobuff().set_mapid(map_val.mapid());
-		//mapInfo.get_protobuff().set_filename(std::move(std::string("Pc_sgc")));
-		//mapInfo.get_protobuff().set_mapname(std::move(std::string("Time and space city")));
 		mapInfo.get_protobuff().set_lineid(0);
 		mapInfo.get_protobuff().set_sceneid(0);
 		mapInfo.get_protobuff().set_allocated_pos(&pos);
@@ -180,57 +240,50 @@ bool CGSocket::onReceiveCharCreate(const Packet& packet)
 
 		mapInfo.compute();
 
-		LOG_DEBUG << "Protobuff packet to send HEX: ";
-		mapInfo.log_data();
-
 		ms_Write(mapInfo.get_buffer());
 	}
 
 	ProtobufPacket<msg::MSG_START_CUTSCENE_SC> cutscene(CommandID::NEW_ROLE_CUTSCENE_SCS);
 	{
 		cutscene.get_protobuff().set_cutsceneid(2);
-
 		cutscene.compute();
-
-		LOG_DEBUG << "Protobuff packet to send HEX: ";
-		cutscene.log_data();
-		
 		ms_Write(cutscene.get_buffer());
 	}
 
 	//Set Main Char
 	ProtobufPacket<msg::AttributeData> attrData(CommandID::RetCommonError_SC);
 	{
-		attrData.get_protobuff().set_hp(10);
-		attrData.get_protobuff().set_maxhp(10);
+		attrData.get_protobuff().set_hp(evolution->maxhp());
+		attrData.get_protobuff().set_maxhp(evolution->maxhp());
+		attrData.get_protobuff().set_mdef(evolution->mdef());
+		attrData.get_protobuff().set_pdef(evolution->pdef());
+		attrData.get_protobuff().set_bang(evolution->bang());
+		attrData.get_protobuff().set_bangextradamage(evolution->bangextradamage());
+		attrData.get_protobuff().set_toughness(evolution->toughness());
+		attrData.get_protobuff().set_toughnessreducedamage(evolution->toughnessreducedamage());
+		attrData.get_protobuff().set_penetrate(evolution->penetrate());
+		attrData.get_protobuff().set_hit(evolution->hit());
+		attrData.get_protobuff().set_penetrateextradamage(evolution->penetrateextradamage());
+		attrData.get_protobuff().set_block(evolution->block());
+		attrData.get_protobuff().set_blockreducedamage(evolution->blockreducedamage());
+		attrData.get_protobuff().set_accurate(evolution->accurate());
+		attrData.get_protobuff().set_accurateextradamage(evolution->accurateextradamage());
+		attrData.get_protobuff().set_hold(evolution->hold());
+		attrData.get_protobuff().set_holdreducedamage(evolution->holdreducedamage());
+		attrData.get_protobuff().set_deflect(evolution->deflect());
+		attrData.get_protobuff().set_deflectreducedamage(evolution->deflectreducedamage());
+
 		attrData.get_protobuff().set_mp(10);
 		attrData.get_protobuff().set_maxmp(10);
-		attrData.get_protobuff().set_str(10);
+		attrData.get_protobuff().set_str(0);
 		attrData.get_protobuff().set_dex(10);
 		attrData.get_protobuff().set_intel(10);
 		attrData.get_protobuff().set_phy(10);
 		attrData.get_protobuff().set_matt(10);
 		attrData.get_protobuff().set_patt(10);
-		attrData.get_protobuff().set_mdef(10);
-		attrData.get_protobuff().set_pdef(10);
-		attrData.get_protobuff().set_bang(10);
-		attrData.get_protobuff().set_bangextradamage(10);
-		attrData.get_protobuff().set_toughness(10);
-		attrData.get_protobuff().set_toughnessreducedamage(10);
-		attrData.get_protobuff().set_penetrate(10);
-		attrData.get_protobuff().set_hit(10);
-		attrData.get_protobuff().set_penetrateextradamage(10);
-		attrData.get_protobuff().set_block(10);
-		attrData.get_protobuff().set_blockreducedamage(10);
-		attrData.get_protobuff().set_accurate(10);
-		attrData.get_protobuff().set_accurateextradamage(10);
-		attrData.get_protobuff().set_hold(10);
-		attrData.get_protobuff().set_holdreducedamage(10);
-		attrData.get_protobuff().set_deflect(10);
-		attrData.get_protobuff().set_deflectreducedamage(10);
-		attrData.get_protobuff().set_dodge(10);
-		attrData.get_protobuff().set_weaponatt(10);
-		attrData.get_protobuff().set_firemastery(10);
+		attrData.get_protobuff().set_dodge(0);
+		attrData.get_protobuff().set_weaponatt(0);
+		attrData.get_protobuff().set_firemastery(0);
 		attrData.get_protobuff().set_icemastery(10);
 		attrData.get_protobuff().set_lightningmastery(10);
 		attrData.get_protobuff().set_brightmastery(10);
@@ -262,61 +315,61 @@ bool CGSocket::onReceiveCharCreate(const Packet& packet)
 	}
 	ProtobufPacket<msg::CharacterBaseData> charBase(CommandID::RetCommonError_SC);
 	{
-		charBase.get_protobuff().set_exp(1);
-		charBase.get_protobuff().set_welpoint(1);
-		charBase.get_protobuff().set_money(1);
-		charBase.get_protobuff().set_stone(1);
-		charBase.get_protobuff().set_tilizhi(1);
+		charBase.get_protobuff().set_exp(0);
+		charBase.get_protobuff().set_welpoint(0);
+		charBase.get_protobuff().set_money(0);
+		charBase.get_protobuff().set_stone(0);
+		charBase.get_protobuff().set_tilizhi(0);
 		charBase.get_protobuff().set_type(1);
-		charBase.get_protobuff().set_famelevel(1);
+		charBase.get_protobuff().set_famelevel(0);
 		charBase.get_protobuff().set_position(0);
-		charBase.get_protobuff().set_viplevel(1);
+		charBase.get_protobuff().set_viplevel(0);
 		charBase.get_protobuff().set_port(0);
-		charBase.get_protobuff().set_laststage(1);
-		charBase.get_protobuff().set_nextexp(1000);
+		charBase.get_protobuff().set_laststage(0);
+		charBase.get_protobuff().set_nextexp(level->levelupexp());
 		charBase.get_protobuff().set_pkmode(0);
-		charBase.get_protobuff().set_edupoint(1);
-		charBase.get_protobuff().set_cooppoint(1);
-		charBase.get_protobuff().set_bluecrystal(1);
-		charBase.get_protobuff().set_purplecrystal(1);
-		charBase.get_protobuff().set_vigourpoint(1);
-		charBase.get_protobuff().set_doublepoint(1);
-		charBase.get_protobuff().set_bluecrystalincnum(1);
-		charBase.get_protobuff().set_purplecrystalincnum(1);
+		charBase.get_protobuff().set_edupoint(0);
+		charBase.get_protobuff().set_cooppoint(0);
+		charBase.get_protobuff().set_bluecrystal(0);
+		charBase.get_protobuff().set_purplecrystal(0);
+		charBase.get_protobuff().set_vigourpoint(0);
+		charBase.get_protobuff().set_doublepoint(0);
+		charBase.get_protobuff().set_bluecrystalincnum(0);
+		charBase.get_protobuff().set_purplecrystalincnum(0);
 		charBase.get_protobuff().set_familyatt(0);
-		charBase.get_protobuff().set_herothisid((std::string)"70022");
+		charBase.get_protobuff().set_herothisid(std::to_string(hero->tbxid()));
 	}
 	ProtobufPacket<msg::CharacterMapData> mapdata(CommandID::RetCommonError_SC);
 	{
-		mapdata.get_protobuff().set_hp(100);
-		mapdata.get_protobuff().set_maxhp(100);
-		mapdata.get_protobuff().set_level(10);
+		mapdata.get_protobuff().set_hp(evolution->maxhp());
+		mapdata.get_protobuff().set_maxhp(evolution->maxhp());
+		mapdata.get_protobuff().set_level(1);
 
 		mapdata.get_protobuff().set_allocated_pos(&pos);
-		mapdata.get_protobuff().set_movespeed(90);
+		mapdata.get_protobuff().set_movespeed(100);
 		mapdata.get_protobuff().set_country(1);
-		
 
 		mapdata.get_protobuff().set_dir(180);
 	}
 	ProtobufPacket<msg::CharacterMapShow> mapshow(CommandID::RetCommonError_SC);
 	{
 		mapshow.get_protobuff().set_weapon(0);
-		mapshow.get_protobuff().set_heroid(70022);
-		mapshow.get_protobuff().set_avatarid(4001);
+		mapshow.get_protobuff().set_heroid(hero->tbxid());
+		mapshow.get_protobuff().set_avatarid(hero->newavatar());
 		mapshow.get_protobuff().set_occupation(0);
-		mapshow.get_protobuff().set_hairstyle(43);
-		mapshow.get_protobuff().set_haircolor(86);
-		mapshow.get_protobuff().set_facestyle(49);
+		mapshow.get_protobuff().set_hairstyle(_hero.hairstyle());
+		mapshow.get_protobuff().set_haircolor(_hero.haircolor());
+		mapshow.get_protobuff().set_facestyle(_hero.facestyle());
 		mapshow.get_protobuff().set_bodystyle(0);
+		mapshow.get_protobuff().set_antenna(_hero.antenna());
 	}
 	ProtobufPacket<msg::CharacterFightData> fightBase(CommandID::RetCommonError_SC);
 	{
-		fightBase.get_protobuff().set_curfightvalue(100000000);
+		fightBase.get_protobuff().set_curfightvalue(1000);
 	}
 	ProtobufPacket<msg::MapUserData> mapBase(CommandID::RetCommonError_SC);
 	{
-		mapBase.get_protobuff().set_charid(70022);
+		mapBase.get_protobuff().set_charid(1);
 		mapBase.get_protobuff().set_name(std::string("SanGawku"));
 
 		mapBase.get_protobuff().set_allocated_mapdata(&mapdata.get_protobuff());
@@ -335,9 +388,6 @@ bool CGSocket::onReceiveCharCreate(const Packet& packet)
 		pktMain.get_protobuff().set_allocated_data(&charMain.get_protobuff());
 
 		pktMain.compute();
-		
-		LOG_DEBUG << "MSG_DataCharacterMain_SC HEX:";
-		pktMain.log_data();
 
 		ms_Write(pktMain.get_buffer());
 	}
@@ -363,7 +413,8 @@ bool CGSocket::onReceiveCharCreate(const Packet& packet)
 
 bool CGSocket::onReceiveMainHero(const Packet& packet)
 {
-	LOG_DEBUG << "on main hero request received";
+	LOG_DEBUG << "onReceiveMainHero";
+
 	hero::MSG_SetMainHero_CSC _hero;
 	ProtobufPacket<hero::MSG_SetMainHero_CSC> hero(CommandID::SetMainHero_CSC);
 
@@ -375,9 +426,6 @@ bool CGSocket::onReceiveMainHero(const Packet& packet)
 	hero.get_protobuff().set_herothisid(71014);
 
 	hero.compute();
-
-	LOG_DEBUG << "MSG_SetMainHero_CSC HEX:";
-	hero.log_data();
 
 	ms_Write(hero.get_buffer());
 
@@ -392,6 +440,8 @@ bool CGSocket::onSceneLoaded(const Packet& packet)
 
 bool CGSocket::onReceiveTeamMemberReq(const Packet& packet)
 {
+	LOG_DEBUG << "onReceiveTeamMemberReq";
+
 	ProtobufPacket<Team::MSG_TeamMemeberList_SC> team(CommandID::TeamMemeberList_SC);
 	Team::MSG_TeamMemeberList_CS _team;
 
@@ -403,18 +453,14 @@ bool CGSocket::onReceiveTeamMemberReq(const Packet& packet)
 
 	team.compute();
 
-	LOG_DEBUG << "MSG_TeamMemeberList_SC HEX:";
-	team.log_data();
-
 	ms_Write(team.get_buffer());
 
 	return true;
 }
 
-
-
 bool CGSocket::onReceiveCardPackInfo(const Packet& packet)
 {
+	LOG_DEBUG << "onReceiveCardPackInfo";
 	
 	Obj::MSG_ReqCardPackInfo_CS req;
 
@@ -447,7 +493,8 @@ bool CGSocket::onReceiveCardPackInfo(const Packet& packet)
 
 bool CGSocket::onReceiveMyHeroAttrData(const Packet& packet)
 {
-	
+	LOG_DEBUG << "onReceiveMyHeroAttrData";
+
 	msg::MSG_ReqHeroAttributeData_CS req;
 	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
 
@@ -536,6 +583,8 @@ bool CGSocket::onReceiveMyHeroAttrData(const Packet& packet)
 
 bool CGSocket::onReceiveDNABagInfo(const Packet& packet)
 {
+	LOG_DEBUG << "onReceiveDNABagInfo";
+
 	hero::MSG_AllDnaPageInfo_CSC req;
 	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
 
@@ -558,6 +607,8 @@ bool CGSocket::onReceiveDNABagInfo(const Packet& packet)
 
 bool CGSocket::onReceiveVisitNpcTrade(const Packet& packet)
 {
+	LOG_DEBUG << "onReceiveVisitNpcTrade";
+
 	quest::MSG_Req_VisitNpcTrade_CS req;
 	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
 
@@ -587,6 +638,8 @@ bool CGSocket::onReceiveVisitNpcTrade(const Packet& packet)
 
 bool CGSocket::onReceiveAllDNAPageInfo(const Packet& packet)
 {
+	LOG_DEBUG << "onReceiveAllDNAPageInfo";
+
 	hero::MSG_DnaBagInfo_CSC req;
 	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
 
@@ -608,7 +661,11 @@ bool CGSocket::onReceiveAllDNAPageInfo(const Packet& packet)
 
 bool CGSocket::onSelectCharToLogin(const Packet& packet)
 {
-	LOG_DEBUG << "on Select Char to Login";
+	LOG_DEBUG << "onSelectCharToLogin";
+
+
+	_session = std::make_shared<WorldSession>(this, 1);
+
 	msg::MSG_Req_SelectCharToLogin_CS _hero;
 	msg::FloatMovePos pos;
 
@@ -636,13 +693,11 @@ bool CGSocket::onSelectCharToLogin(const Packet& packet)
 
 		mapInfo.compute();
 
-		LOG_DEBUG << "Protobuff packet to send HEX: ";
-		mapInfo.log_data();
-
 		ms_Write(mapInfo.get_buffer());
 	}
 
 	//Set Main Char
+	const auto attributes = sTBL.get_table<pb::attribute_config>();
 	ProtobufPacket<msg::AttributeData> attrData(CommandID::RetCommonError_SC);
 	{
 		attrData.get_protobuff().set_hp(1000);
@@ -740,7 +795,7 @@ bool CGSocket::onSelectCharToLogin(const Packet& packet)
 		mapdata.get_protobuff().set_maxhp(1000);
 		mapdata.get_protobuff().set_level(100);
 		mapdata.get_protobuff().set_allocated_pos(&pos);
-		mapdata.get_protobuff().set_movespeed(90);
+		mapdata.get_protobuff().set_movespeed(100);
 		mapdata.get_protobuff().set_country(1);
 		mapdata.get_protobuff().set_dir(0);
 		mapdata.get_protobuff().set_teamid(0);
@@ -769,7 +824,7 @@ bool CGSocket::onSelectCharToLogin(const Packet& packet)
 	}
 	ProtobufPacket<msg::MapUserData> mapBase(CommandID::RetCommonError_SC);
 	{
-		mapBase.get_protobuff().set_charid(70022);
+		mapBase.get_protobuff().set_charid(1);
 		mapBase.get_protobuff().set_name(std::string("SanGawku"));
 		
 		mapBase.get_protobuff().set_allocated_mapdata(&mapdata.get_protobuff());
@@ -792,9 +847,6 @@ bool CGSocket::onSelectCharToLogin(const Packet& packet)
 		pktMain.get_protobuff().set_allocated_data(&charMain.get_protobuff());
 
 		pktMain.compute();
-
-		LOG_DEBUG << "MSG_DataCharacterMain_SC HEX:";
-		pktMain.log_data();
 
 		ms_Write(pktMain.get_buffer());
 	}
@@ -937,6 +989,8 @@ bool CGSocket::onReceiveProtobuf(const Packet& packet)
 
 bool CGSocket::onRecieveChat(const Packet& packet)
 {
+	LOG_DEBUG << "onRecieveChat";
+
 	Chat::MSG_Req_Chat_CS _chat;
 	msg::FloatMovePos pos;
 
@@ -944,27 +998,22 @@ bool CGSocket::onRecieveChat(const Packet& packet)
 	LOG_DEBUG << _chat.DebugString();
 	ProtobufPacket<Chat::MSG_Ret_ChannelChat_SC> chat(CommandID::Ret_ChannelChat_SC);
 	
-	
-	
 	chat.get_protobuff().set_channel_type(Chat::ChannelType::ChannelType_World);
 	chat.get_protobuff().set_str_chat(_chat.data().content());
 	chat.get_protobuff().set_src_name(_chat.data().charname());
 	chat.get_protobuff().set_textid(1);
 
-
 	chat.compute();
 
-	LOG_DEBUG << "MSG_Ret_ChannelChat_SC HEX:";
-	chat.log_data();
-
 	ms_Write(chat.get_buffer());
-
 	return true;
 }
 
 
 bool CGSocket::onReceiveRefreshRadar(const Packet& packet)
 {
+	LOG_DEBUG << "onReceiveRefreshRadar";
+
 	mobapk::MSG_RefreshRadarPos_CSC req;
 	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
 
@@ -980,13 +1029,12 @@ bool CGSocket::onReceiveRefreshRadar(const Packet& packet)
 
 	res.compute();
 	ms_Write(res.get_buffer());
-	
 	return true;
 }
 
 bool CGSocket::onReceiveRefreshMapQuestInfo(const Packet& packet)
 {
-
+	LOG_DEBUG << "onReceiveRefreshMapQuestInfo";
 
 	quest::MSG_ReqMapQuestInfo_CS req;
 	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
@@ -997,7 +1045,6 @@ bool CGSocket::onReceiveRefreshMapQuestInfo(const Packet& packet)
 		auto it = res.get_protobuff().add_npclists();
 	}
 
-
 	res.compute();
 	ms_Write(res.get_buffer());
 		return true;
@@ -1006,6 +1053,8 @@ bool CGSocket::onReceiveRefreshMapQuestInfo(const Packet& packet)
 
 bool CGSocket::onReceiveEntrySelectState(const Packet& packet)
 {
+	LOG_DEBUG << "onReceiveEntrySelectState";
+
 	msg::MSG_ReqEntrySelectState_CS req;
 	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
 
@@ -1015,7 +1064,6 @@ bool CGSocket::onReceiveEntrySelectState(const Packet& packet)
 		auto it = res.get_protobuff().add_states();
 	}
 
-
 	res.compute();
 	ms_Write(res.get_buffer());
 	return true;
@@ -1023,6 +1071,8 @@ bool CGSocket::onReceiveEntrySelectState(const Packet& packet)
 
 bool CGSocket::onReceiveSetChooseTarget(const Packet& packet)
 {
+	LOG_DEBUG << "onReceiveSetChooseTarget";
+
 	msg::MSG_SetChooseTarget_CS req;
 	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
 
@@ -1032,7 +1082,6 @@ bool CGSocket::onReceiveSetChooseTarget(const Packet& packet)
 		res.get_protobuff().set_choosetype(req.choosetype());
 		res.get_protobuff().set_charid(req.charid());
 	}
-
 
 	res.compute();
 	ms_Write(res.get_buffer());

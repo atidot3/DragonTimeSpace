@@ -5,6 +5,7 @@
 #include <Utils/Logger/Logger.h>
 #include <Database/Query/QueryResult.h>
 
+class WorldSession;
 class CGSocket : public Socket
 {
 public:
@@ -22,6 +23,7 @@ private:
 	std::string userName;
 	std::string userPassword;
 	std::string macAddress;
+	std::shared_ptr<WorldSession> _session;
 
 	using Method = std::function<bool(const Packet& packet)>;
 	using TupleMethod = std::tuple<unsigned short, Method>;
