@@ -61,6 +61,7 @@ public:
 
 	std::string GetServerTbxData();
 	std::string GetServerMapJsonData();
+	std::string GetMapConfigJsonData();
 protected:
 	Json::Reader reader;
 	Json::Value obj;

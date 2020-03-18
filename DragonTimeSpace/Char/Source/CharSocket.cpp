@@ -16,7 +16,7 @@
 
 #include <Tables/TableContainer.h>
 
-constexpr int MAP_ID = 28;
+constexpr int MAP_ID = 4;
 
 //----------------------------------------
 //	Called when we open the socket

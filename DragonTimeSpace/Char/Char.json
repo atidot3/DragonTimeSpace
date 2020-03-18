@@ -4,6 +4,7 @@
   "logFile": "./Log/Char.log",
   "TbxFile": "../Data/tbx/",
   "MapJsonFile": "../Data/map_data_json/",
+  "MapConfigJsonFile": "../Data/mapconfig.json",
   "server":
   {
     "ID": 1,

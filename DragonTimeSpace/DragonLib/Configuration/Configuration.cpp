@@ -162,3 +162,9 @@ std::string Configuration::GetServerMapJsonData()
 	const Json::Value& data = obj["MapJsonFile"];
 	return obj["MapJsonFile"].asString();
 }
+
+std::string Configuration::GetMapConfigJsonData()
+{
+	const Json::Value& data = obj["MapConfigJsonFile"];
+	return obj["MapConfigJsonFile"].asString();
+}

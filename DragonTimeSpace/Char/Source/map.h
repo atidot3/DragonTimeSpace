@@ -76,7 +76,8 @@ public:
 	MapManager()
 	{
 		// -- Load master json from devin that contains maps id + filename
-
+		// -- This file is called mapinfo.json in the root data directory. 
+		// -- I have added to the gateway json config file to find it from GetMapConfigJsonData
 		// -- this is only for preparing struct and read code for each map
 		boost::filesystem::path p(sConfig.GetServerMapJsonData());
 
@@ -92,6 +93,8 @@ public:
 					load_maps((*it).path().string());
 			}
 		}
+		//This will eventually need reworked for all configs - San
+		//load_mapconfig(sConfig.GetMapConfigJsonData());
 		LOG_DEBUG << "All map_json loaded.";
 	}
 	~MapManager()
