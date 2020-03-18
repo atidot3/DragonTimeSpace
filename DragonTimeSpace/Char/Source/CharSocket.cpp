@@ -1,5 +1,7 @@
 ﻿#include "CharSocket.h"
 
+#include "map.h"
+
 #include <Network/Packet/Packet.h>
 #include <Network/Packet/ProtobufPacket.h>
 #include <Network\Packet\Char\Char.h>
@@ -816,76 +818,74 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 
 	ProtobufPacket<msg::MSG_Ret_MapScreenBatchRefreshNpc_SC> npc_info(CommandID::Ret_MapScreenBatchRefreshNpc_SC);
 	{
+		auto const_map = sMapMgr.get_map(map_val.mapid());
+		auto const_map_info = const_map.get_map_info();
+
 		auto npc = sTBL.get_table<pb::npc_data>();
-		for (auto &c : sTBL.get_table<pb::pathway>().datas())
+		for (auto& is_ou_npc : npc.datas())
 		{
-			if (c.mapid() == map_val.mapid())
+			for (auto& const_npc : const_map_info._npc)
 			{
-				std::vector<std::string> coordinate;
-				boost::split(coordinate, c.coordinates(), boost::is_any_of(","));
-				msg::FloatMovePos *pos = new msg::FloatMovePos();
+				if (is_ou_npc.tbxid() == const_npc.id)
 				{
-					pos->set_fx(std::atof(coordinate.at(0).c_str()));
-					pos->set_fy(std::atof(coordinate.at(1).c_str()));
-				}
-
-				for (auto &is_ou_npc : npc.datas())
-				{
-					if (c.npcid() == is_ou_npc.tbxid())
+					msg::FloatMovePos* pos = new msg::FloatMovePos();
 					{
-						msg::EntryIDType myType;
-						{
-							//myType.set_id(100);
-							//myType.set_type(0);
-						}
-						msg::MasterData master;
-						{
-							//master.set_country(1);
-							//master.set_allocated_idtype(&myType);
-							//master.set_name(std::move(std::string("Atidote")));
-							//master.set_teamid(0);
-						}
-						msg::CharacterMapShow cmshow;
-						{
-							//cmshow.set_avatarid(80);
-							//cmshow.set_heroid(80);
-							//cmshow.set_occupation(1);
-						}
-						msg::NPC_HatredList list;
-						{
-							 // -- what am i doing
-							if (is_ou_npc.hatred_distance() > 0)
-							{
-								list.add_enemytempid(is_ou_npc.id());
-							}
-							else
-							{
-								list.set_npctempid(is_ou_npc.id());
-							}
-						}
-
-						auto npcs = npc_info.get_protobuff().add_data();
-						npcs->set_tempid(c.npcid());
-						npcs->set_allocated_hatredlist(&list);
-						npcs->set_allocated_master(&master);
-						npcs->set_allocated_pos(pos);
-						npcs->set_allocated_showdata(&cmshow);
-						npcs->set_attspeed(0);
-						npcs->set_baseid(c.npcid());
-						npcs->set_birth(false);
-						npcs->set_dir(is_ou_npc.uimodelrotation());
-						npcs->set_hp(is_ou_npc.maxhp());
-						npcs->set_maxhp(is_ou_npc.maxhp());
-						npcs->set_movespeed(0);
-						npcs->set_name(std::move(std::string(c.name())));
-						//npcs->set_titlename();
-						npcs->set_visit(0);
-
-						LOG_DEBUG << "Spawn: " << npcs->baseid() << " at: " << npcs->pos().fx() << " : " << npcs->pos().fy();
+						pos->set_fx(const_npc.x);
+						pos->set_fy(const_npc.y);
 					}
+					msg::EntryIDType myType;
+					{
+						//myType.set_id(100);
+						//myType.set_type(0);
+					}
+					msg::MasterData master;
+					{
+						//master.set_country(1);
+						//master.set_allocated_idtype(&myType);
+						//master.set_name(std::move(std::string("Atidote")));
+						//master.set_teamid(0);
+					}
+					msg::CharacterMapShow cmshow;
+					{
+						//cmshow.set_avatarid(80);
+						//cmshow.set_heroid(80);
+						//cmshow.set_occupation(1);
+					}
+					msg::NPC_HatredList list;
+					{
+						// -- what am i doing
+						if (is_ou_npc.hatred_distance() > 0)
+						{
+							list.add_enemytempid(is_ou_npc.id());
+						}
+						else
+						{
+							list.set_npctempid(is_ou_npc.id());
+						}
+					}
+
+					auto npcs = npc_info.get_protobuff().add_data();
+					npcs->set_tempid(const_npc.id);
+					npcs->set_allocated_hatredlist(&list);
+					npcs->set_allocated_master(&master);
+					npcs->set_allocated_pos(pos);
+					npcs->set_allocated_showdata(&cmshow);
+					npcs->set_attspeed(0);
+					npcs->set_baseid(const_npc.id);
+					npcs->set_birth(false);
+					npcs->set_dir(const_npc.dir);
+					npcs->set_hp(is_ou_npc.maxhp());
+					npcs->set_maxhp(is_ou_npc.maxhp());
+					npcs->set_movespeed(0);
+					npcs->set_name(std::move(std::string(is_ou_npc.name())));
+					//npcs->set_titlename();
+					npcs->set_visit(0);
+
+					LOG_DEBUG << "Spawn: " << npcs->baseid() << " at: " << npcs->pos().fx() << " : " << npcs->pos().fy();
 				}
 			}
 		}
+
 		npc_info.compute();
 
 		for (auto npcs = npc_info.get_protobuff().mutable_data()->begin(); npcs != npc_info.get_protobuff().mutable_data()->end(); ++npcs)
@@ -895,7 +895,6 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 			//npcs->release_pos();
 			npcs->release_showdata();
 		}
-
 	}
 
 	ms_Write(npc_info.get_buffer());

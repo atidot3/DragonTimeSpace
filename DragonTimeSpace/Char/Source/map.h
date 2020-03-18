@@ -2,6 +2,9 @@
 
 #include <Utils/Define.h>
 #include <Utils/Logger/Logger.h>
+
+#include <Network/io_context_pool.h>
+
 #include <Configuration/Configuration.h>
 
 #include <boost/filesystem.hpp>
@@ -161,6 +164,9 @@ public:
 		fill_npc(npc, info);
 		fill_on_zone_script(on_zone_script, info);
 	}
+
+	const map_info& get_map_info() { return info; }
+	const uint32_t& get_map_id() { return _mapid; }
 private:
 	const uint32_t _mapid;
 	map_info info;
@@ -168,54 +174,23 @@ private:
 
 class MapManager
 {
-public:
-	MapManager()
-	{
-		std::ifstream ifs(sConfig.GetMapConfigJsonData());
-		if (!ifs.is_open())
-		{
-			throw std::runtime_error("Unable to load: " + sConfig.GetMapConfigJsonData() + "\n");
-		}
-		Json::Reader reader;
-		Json::Value obj;
-		reader.parse(ifs, obj); // reader can also read strings
-
-		Json::Value& maplabel = obj["maplabel"];
-		for (auto it = maplabel.begin(); it != maplabel.end(); ++it)
-		{
-		}
-		Json::Value& mapinfo = obj["mapinfo"];
-		for (auto it = mapinfo.begin(); it != mapinfo.end(); ++it)
-		{
-			Json::Value &map = *it;
-			{
-				if (map["fileName"].asString() != "")
-				{
-					try
-					{
-						const std::string filename(sConfig.GetServerMapJsonData() + map["fileName"].asString() + ".xml.json");
-						const uint32_t mapid = std::stoul(map["mapID"].asString());
-						_maps.emplace(mapid, std::move(Map(filename, mapid)));
-					}
-					catch (std::exception & e)
-					{
-						// -- file not found
-						//LOG_DEBUG << e.what();
-					}
-				}
-				else
-				{
-					//LOG_DEBUG << "Mapid: " << map["mapID"].asString() << " dont contain json file";
-				}
-			}
-		}
-	}
-	~MapManager()
-	{
-
-	}
-
-	
 private:
+	MapManager(io_context_pool& pool);
+	~MapManager();
+
+	void load();
+public:
+	//----------------------------------------
+//	Map Manager Singleton
+//----------------------------------------
+	static MapManager& instance();
+	void Destruct();
+	void Initialize(io_context_pool& pool);
+
+	const Map& get_map(const uint32_t& id) const;
+private:
+	io_context_pool& _pool;
 	std::map<uint32_t, Map> _maps;
 };
+
+#define sMapMgr MapManager::instance()

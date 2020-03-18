@@ -1,4 +1,5 @@
 #include "CharServer.h"
+#include "map.h"
 
 #include <Utils/Logger/Logger.h>
 #include <Database\MySQLWrapper.h>
@@ -36,6 +37,8 @@ void CharServer::Init(io_context_pool& pool)
 	//connectToDatabase();
 	sConfig.loadGameServerCharList();
 	sTBL.load(sConfig.GetServerTbxData());
+
+	sMapMgr.Initialize(pool);
 
 	ping_timer.async_wait(strandPing.wrap(boost::bind(&CharServer::ping, this)));
 }

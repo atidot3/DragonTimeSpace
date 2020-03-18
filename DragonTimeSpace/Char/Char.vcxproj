@@ -170,6 +170,7 @@
     <ClCompile Include="Source\CharServer.cpp" />
     <ClCompile Include="Source\CharSocket.cpp" />
     <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\map.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\CharServer.h" />

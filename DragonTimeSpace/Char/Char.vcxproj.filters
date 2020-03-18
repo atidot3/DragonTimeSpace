@@ -18,6 +18,9 @@
     <ClCompile Include="Source\main.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="Source\map.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\CharServer.h">
