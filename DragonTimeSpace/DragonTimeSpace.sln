@@ -7,7 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DragonLib", "DragonLib\Drag
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Auth", "Auth\Auth.vcxproj", "{222FA54B-A652-4202-AA2E-431953BEDB00}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Char", "Char\Char.vcxproj", "{6C3E33E5-92AC-4C52-A97C-7333F0203DF1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CGServer", "CGServer\CGServer.vcxproj", "{6C3E33E5-92AC-4C52-A97C-7333F0203DF1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TSLLuaConverter", "TSLLuaConverter\TSLLuaConverter.csproj", "{D1DB237D-DAFF-4A68-817C-91680034BD41}"
 EndProject

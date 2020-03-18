@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{7fdfd60a-c61f-444c-b952-496f4a7e3055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network">
+      <UniqueIdentifier>{71bd6406-d9fc-4732-aa04-b337ee3a5bea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game">
+      <UniqueIdentifier>{ee3a3f51-4c23-404b-a795-9e25001ee5e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\World">
+      <UniqueIdentifier>{41e5c11b-9ae0-4346-bd5a-e11dc540db56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\World\Map">
+      <UniqueIdentifier>{996f58de-ca76-4c61-8230-ce3092ce4a89}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Network\CGServerCallback.cpp">
+      <Filter>Source\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\World\Map\map.cpp">
+      <Filter>Source\Game\World\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Network\CGServer.cpp">
+      <Filter>Source\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Network\CGSocket.cpp">
+      <Filter>Source\Network</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Game\World\Map\map.h">
+      <Filter>Source\Game\World\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Network\CGServer.h">
+      <Filter>Source\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Network\CGSocket.h">
+      <Filter>Source\Network</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

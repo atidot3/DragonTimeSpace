@@ -2,23 +2,21 @@
 
 #include <Network/Socket.h>
 #include <Network/Packet/Packet.h>
-//#include <Utils/Opcodes.h>
-//#include <Utils/ResultCode.h>
 #include <Utils/Logger/Logger.h>
-#include <Database\Query\QueryResult.h>
+#include <Database/Query/QueryResult.h>
 
-class CharSocket : public Socket
+class CGSocket : public Socket
 {
 public:
 	/**
 	*  Our socket constructor
 	*\	Parameters are boost::socket and callback for the socket destruction
 	*/
-	CharSocket(boost::asio::io_context &service);
+	CGSocket(boost::asio::io_context &service);
 	/**
 	*  Our socket destructor
 	*/
-	virtual ~CharSocket() override;
+	virtual ~CGSocket() override;
 	virtual void OnConnected() override;
 private:
 	std::string userName;

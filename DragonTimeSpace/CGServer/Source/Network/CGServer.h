@@ -1,26 +1,26 @@
 #pragma once
 
-#include "CharSocket.h"
+#include "CGSocket.h"
 
 #include <Network/Listener.h>
-#include <Network\io_context_pool.h>
+#include <Network/io_context_pool.h>
 
-#include <Configuration\Configuration.h>
+#include <Configuration/Configuration.h>
 
 #include <memory>
 
-class CharServer final
+class CGServer final
 {
 public:
 	/**
 	*  Our server constructor
 	*\	Parameters is the loaded configuration
 	*/
-	CharServer(io_context_pool& pool);
+	CGServer(io_context_pool& pool);
 	/**
 	*  Our server destructor
 	*/
-	~CharServer();
+	~CGServer();
 	/**
 	*  Init all server data
 	*/
@@ -39,7 +39,7 @@ private:
 	*/
 	void ping();
 private:
-	Listener<CharSocket>	network;
+	Listener<CGSocket>	network;
 	boost::asio::io_context::strand strandPing;
 	boost::asio::deadline_timer ping_timer;
 };

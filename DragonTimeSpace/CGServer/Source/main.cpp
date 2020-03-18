@@ -1,21 +1,21 @@
 ﻿#include <boost/exception/all.hpp>
-#include <boost\filesystem.hpp>
+#include <boost/filesystem.hpp>
 
 #include <iostream>
 #include <cstdio>
 
-#include <Network\Socket.h>
-#include <Network\io_context_pool.h>
+#include <Network/Socket.h>
+#include <Network/io_context_pool.h>
 
-#include <Database\MySQLWrapper.h>
+#include <Database/MySQLWrapper.h>
 
-#include "CharServer.h"
+#include "Network/CGServer.h"
 
 int main()
 {
 	try
 	{
-		sConfig.Load("./Char.json");
+		sConfig.Load("./CGServer.json");
 
 		io_context_pool pool(sConfig.GetWorker());
 		boost::asio::io_context& io = pool.get_io_context();
@@ -24,7 +24,7 @@ int main()
 
 		LOG_TRACE << "=========== Logger initialized ===========";
 
-		CharServer srv(pool);
+		CGServer srv(pool);
 		srv.Init(pool);
 
 		LOG_INFO << "\t     ____                              ____        _ _ ";

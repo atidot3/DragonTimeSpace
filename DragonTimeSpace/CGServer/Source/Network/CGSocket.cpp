@@ -1,12 +1,11 @@
-﻿#include "CharSocket.h"
+﻿#include "CGSocket.h"
 
-#include "map.h"
+#include "../Game/World/Map/map.h"
 
 #include <Network/Packet/Packet.h>
 #include <Network/Packet/ProtobufPacket.h>
 #include <Network\Packet\Char\Char.h>
-//#include <Utils/Opcodes.h>
-//#include <Utils/ResultCode.h>
+
 #include <Utils/Logger/Logger.h>
 #include <Utils\Utils.h>
 
@@ -23,43 +22,43 @@ constexpr int MAP_ID = 2;
 //----------------------------------------
 //	Called when we open the socket
 //----------------------------------------
-CharSocket::CharSocket(boost::asio::io_context &service)
+CGSocket::CGSocket(boost::asio::io_context &service)
 	: Socket{ service }
 {
-	methodList.emplace_back(CommandID::UserVerifyVerCmd_CS, std::bind(&CharSocket::onCheckGatewayVer, this, std::placeholders::_1));
-	methodList.emplace_back(CommandID::IphoneLoginUserCmd_CS, std::bind(&CharSocket::onReceiveUserInfo, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::UserVerifyVerCmd_CS, std::bind(&CGSocket::onCheckGatewayVer, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::IphoneLoginUserCmd_CS, std::bind(&CGSocket::onReceiveUserInfo, this, std::placeholders::_1));
 
-	methodList.emplace_back(CommandID::SetMainHero_CSC, std::bind(&CharSocket::onReceiveMainHero, this, std::placeholders::_1));
-	methodList.emplace_back(CommandID::Notify_SceneLoaded_CS, std::bind(&CharSocket::onSceneLoaded, this, std::placeholders::_1));
-	methodList.emplace_back(CommandID::Create_Role_CS, std::bind(&CharSocket::onReceiveCharCreate, this, std::placeholders::_1));
-	methodList.emplace_back(CommandID::TeamMemeberList_CS, std::bind(&CharSocket::onReceiveTeamMemberReq, this, std::placeholders::_1));
-	methodList.emplace_back(CommandID::Req_SelectCharToLogin_CS, std::bind(&CharSocket::onSelectCharToLogin, this, std::placeholders::_1));
-	methodList.emplace_back(CommandID::Req_Chat_CS, std::bind(&CharSocket::onRecieveChat, this, std::placeholders::_1));
-	methodList.emplace_back(CommandID::ReqCardPackInfo_CS, std::bind(&CharSocket::onReceiveCardPackInfo, this, std::placeholders::_1));
-	methodList.emplace_back(CommandID::ReqHeroAttributeData_CS, std::bind(&CharSocket::onReceiveMyHeroAttrData, this, std::placeholders::_1));
-	methodList.emplace_back(CommandID::DnaBagInfo_CSC, std::bind(&CharSocket::onReceiveDNABagInfo, this, std::placeholders::_1));
-	methodList.emplace_back(CommandID::AllDnaPageInfo_CSC, std::bind(&CharSocket::onReceiveAllDNAPageInfo, this, std::placeholders::_1));
-	methodList.emplace_back(CommandID::Req_VisitNpcTrade_CS, std::bind(&CharSocket::onReceiveVisitNpcTrade, this, std::placeholders::_1));
-	methodList.emplace_back(CommandID::RefreshRadarPos_CSC, std::bind(&CharSocket::onReceiveRefreshRadar, this, std::placeholders::_1));
-	methodList.emplace_back(CommandID::ReqMapQuestInfo_CS, std::bind(&CharSocket::onReceiveRefreshMapQuestInfo, this, std::placeholders::_1));
-	methodList.emplace_back(CommandID::ReqEntrySelectState_CS, std::bind(&CharSocket::onReceiveEntrySelectState, this, std::placeholders::_1));
-	methodList.emplace_back(CommandID::SetChooseTarget_CS, std::bind(&CharSocket::onReceiveSetChooseTarget, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::SetMainHero_CSC, std::bind(&CGSocket::onReceiveMainHero, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::Notify_SceneLoaded_CS, std::bind(&CGSocket::onSceneLoaded, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::Create_Role_CS, std::bind(&CGSocket::onReceiveCharCreate, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::TeamMemeberList_CS, std::bind(&CGSocket::onReceiveTeamMemberReq, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::Req_SelectCharToLogin_CS, std::bind(&CGSocket::onSelectCharToLogin, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::Req_Chat_CS, std::bind(&CGSocket::onRecieveChat, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::ReqCardPackInfo_CS, std::bind(&CGSocket::onReceiveCardPackInfo, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::ReqHeroAttributeData_CS, std::bind(&CGSocket::onReceiveMyHeroAttrData, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::DnaBagInfo_CSC, std::bind(&CGSocket::onReceiveDNABagInfo, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::AllDnaPageInfo_CSC, std::bind(&CGSocket::onReceiveAllDNAPageInfo, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::Req_VisitNpcTrade_CS, std::bind(&CGSocket::onReceiveVisitNpcTrade, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::RefreshRadarPos_CSC, std::bind(&CGSocket::onReceiveRefreshRadar, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::ReqMapQuestInfo_CS, std::bind(&CGSocket::onReceiveRefreshMapQuestInfo, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::ReqEntrySelectState_CS, std::bind(&CGSocket::onReceiveEntrySelectState, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::SetChooseTarget_CS, std::bind(&CGSocket::onReceiveSetChooseTarget, this, std::placeholders::_1));
 	
 	//
 	//
 
 	// debug test
-	//methodList.emplace_back(2273, std::bind(&CharSocket::onReceiveProtobuf, this, std::placeholders::_1));
+	//methodList.emplace_back(2273, std::bind(&CGSocket::onReceiveProtobuf, this, std::placeholders::_1));
 }
 
 //----------------------------------------
 //	Called when we open the socket
 //----------------------------------------
-CharSocket::~CharSocket()
+CGSocket::~CGSocket()
 {
-	LOG_TRACE << "CharSocket connection close: [" << GetRemoteEndPoint() << "]";
+	LOG_TRACE << "CGSocket connection close: [" << GetRemoteEndPoint() << "]";
 }
-void CharSocket::OnConnected()
+void CGSocket::OnConnected()
 {
 	LOG_DEBUG << "New Connection from: " << this->GetAddress();
 }
@@ -69,7 +68,7 @@ void CharSocket::OnConnected()
 //	Return false in case we was not able to parse data
 //	Set internalError = ResultCodes::RESULT_FAIL in case of something unexpected to kick the connection
 //----------------------------------------
-bool CharSocket::ProcessIncomingData(const Packet& packet)
+bool CGSocket::ProcessIncomingData(const Packet& packet)
 {
 	char_packet* p = (char_packet*)packet.GetPacketData();
 	if(p->CMD != 2279)
@@ -91,7 +90,7 @@ bool CharSocket::ProcessIncomingData(const Packet& packet)
 	return false;
 }
 
-bool CharSocket::onCheckGatewayVer(const Packet& packet)
+bool CGSocket::onCheckGatewayVer(const Packet& packet)
 {
 	LOG_DEBUG << "Received gateway check version";
 
@@ -122,7 +121,7 @@ void log_data(const unsigned char* data, const int32_t& size)
 	std::cout << std::endl;
 }
 
-bool CharSocket::onReceiveUserInfo(const Packet& packet)
+bool CGSocket::onReceiveUserInfo(const Packet& packet)
 {
 	LOG_DEBUG << "MSG_Ret_LoginOnReturnCharList_SC";
 
@@ -150,7 +149,7 @@ bool CharSocket::onReceiveUserInfo(const Packet& packet)
 	return true;
 }
 
-bool CharSocket::onReceiveCharCreate(const Packet& packet)
+bool CGSocket::onReceiveCharCreate(const Packet& packet)
 {
 	LOG_DEBUG << "NEW_ROLE_CUTSCENE_SCS";
 
@@ -362,7 +361,7 @@ bool CharSocket::onReceiveCharCreate(const Packet& packet)
 }
 
 
-bool CharSocket::onReceiveMainHero(const Packet& packet)
+bool CGSocket::onReceiveMainHero(const Packet& packet)
 {
 	LOG_DEBUG << "on main hero request received";
 	hero::MSG_SetMainHero_CSC _hero;
@@ -385,13 +384,13 @@ bool CharSocket::onReceiveMainHero(const Packet& packet)
 	return true;
 }
 
-bool CharSocket::onSceneLoaded(const Packet& packet)
+bool CGSocket::onSceneLoaded(const Packet& packet)
 {
 	LOG_DEBUG << "on scene loaded request received";
 	return true;
 }
 
-bool CharSocket::onReceiveTeamMemberReq(const Packet& packet)
+bool CGSocket::onReceiveTeamMemberReq(const Packet& packet)
 {
 	ProtobufPacket<Team::MSG_TeamMemeberList_SC> team(CommandID::TeamMemeberList_SC);
 	Team::MSG_TeamMemeberList_CS _team;
@@ -414,7 +413,7 @@ bool CharSocket::onReceiveTeamMemberReq(const Packet& packet)
 
 
 
-bool CharSocket::onReceiveCardPackInfo(const Packet& packet)
+bool CGSocket::onReceiveCardPackInfo(const Packet& packet)
 {
 	
 	Obj::MSG_ReqCardPackInfo_CS req;
@@ -446,7 +445,7 @@ bool CharSocket::onReceiveCardPackInfo(const Packet& packet)
 	return true;
 }
 
-bool CharSocket::onReceiveMyHeroAttrData(const Packet& packet)
+bool CGSocket::onReceiveMyHeroAttrData(const Packet& packet)
 {
 	
 	msg::MSG_ReqHeroAttributeData_CS req;
@@ -535,7 +534,7 @@ bool CharSocket::onReceiveMyHeroAttrData(const Packet& packet)
 	return true;
 }
 
-bool CharSocket::onReceiveDNABagInfo(const Packet& packet)
+bool CGSocket::onReceiveDNABagInfo(const Packet& packet)
 {
 	hero::MSG_AllDnaPageInfo_CSC req;
 	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
@@ -557,7 +556,7 @@ bool CharSocket::onReceiveDNABagInfo(const Packet& packet)
 	return true;
 }
 
-bool CharSocket::onReceiveVisitNpcTrade(const Packet& packet)
+bool CGSocket::onReceiveVisitNpcTrade(const Packet& packet)
 {
 	quest::MSG_Req_VisitNpcTrade_CS req;
 	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
@@ -586,7 +585,7 @@ bool CharSocket::onReceiveVisitNpcTrade(const Packet& packet)
 	return true;
 }
 
-bool CharSocket::onReceiveAllDNAPageInfo(const Packet& packet)
+bool CGSocket::onReceiveAllDNAPageInfo(const Packet& packet)
 {
 	hero::MSG_DnaBagInfo_CSC req;
 	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
@@ -607,7 +606,7 @@ bool CharSocket::onReceiveAllDNAPageInfo(const Packet& packet)
 	return true;
 }
 
-bool CharSocket::onSelectCharToLogin(const Packet& packet)
+bool CGSocket::onSelectCharToLogin(const Packet& packet)
 {
 	LOG_DEBUG << "on Select Char to Login";
 	msg::MSG_Req_SelectCharToLogin_CS _hero;
@@ -901,7 +900,7 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 	return true;
 }
 
-bool CharSocket::onReceiveProtobuf(const Packet& packet)
+bool CGSocket::onReceiveProtobuf(const Packet& packet)
 {
 	LOG_DEBUG << "on protobuf received";
 
@@ -936,7 +935,7 @@ bool CharSocket::onReceiveProtobuf(const Packet& packet)
 	return true;
 }
 
-bool CharSocket::onRecieveChat(const Packet& packet)
+bool CGSocket::onRecieveChat(const Packet& packet)
 {
 	Chat::MSG_Req_Chat_CS _chat;
 	msg::FloatMovePos pos;
@@ -964,7 +963,7 @@ bool CharSocket::onRecieveChat(const Packet& packet)
 }
 
 
-bool CharSocket::onReceiveRefreshRadar(const Packet& packet)
+bool CGSocket::onReceiveRefreshRadar(const Packet& packet)
 {
 	mobapk::MSG_RefreshRadarPos_CSC req;
 	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
@@ -985,7 +984,7 @@ bool CharSocket::onReceiveRefreshRadar(const Packet& packet)
 	return true;
 }
 
-bool CharSocket::onReceiveRefreshMapQuestInfo(const Packet& packet)
+bool CGSocket::onReceiveRefreshMapQuestInfo(const Packet& packet)
 {
 
 
@@ -1005,7 +1004,7 @@ bool CharSocket::onReceiveRefreshMapQuestInfo(const Packet& packet)
 }
 
 
-bool CharSocket::onReceiveEntrySelectState(const Packet& packet)
+bool CGSocket::onReceiveEntrySelectState(const Packet& packet)
 {
 	msg::MSG_ReqEntrySelectState_CS req;
 	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
@@ -1022,7 +1021,7 @@ bool CharSocket::onReceiveEntrySelectState(const Packet& packet)
 	return true;
 }
 
-bool CharSocket::onReceiveSetChooseTarget(const Packet& packet)
+bool CGSocket::onReceiveSetChooseTarget(const Packet& packet)
 {
 	msg::MSG_SetChooseTarget_CS req;
 	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);

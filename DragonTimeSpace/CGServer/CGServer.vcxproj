@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{6C3E33E5-92AC-4C52-A97C-7333F0203DF1}</ProjectGuid>
-    <RootNamespace>Char</RootNamespace>
+    <RootNamespace>CGServer</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -166,19 +166,19 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\CharCallback.cpp" />
-    <ClCompile Include="Source\CharServer.cpp" />
-    <ClCompile Include="Source\CharSocket.cpp" />
-    <ClCompile Include="Source\main.cpp" />
-    <ClCompile Include="Source\map.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Source\CharServer.h" />
-    <ClInclude Include="Source\CharSocket.h" />
-    <ClInclude Include="Source\map.h" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Game\World\Map\map.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\Network\CGServerCallback.cpp" />
+    <ClCompile Include="Source\Network\CGServer.cpp" />
+    <ClCompile Include="Source\Network\CGSocket.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Game\World\Map\map.h" />
+    <ClInclude Include="Source\Network\CGServer.h" />
+    <ClInclude Include="Source\Network\CGSocket.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

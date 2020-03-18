@@ -1,5 +1,6 @@
-#include "CharServer.h"
-#include "map.h"
+#include "CGServer.h"
+
+#include "../Game/World/Map/map.h"
 
 #include <Utils/Logger/Logger.h>
 #include <Database\MySQLWrapper.h>
@@ -10,9 +11,9 @@
 #include <exception>
 
 //----------------------------------------
-//	Charserver Constructor
+//	CGServer Constructor
 //----------------------------------------
-CharServer::CharServer(io_context_pool& pool)
+CGServer::CGServer(io_context_pool& pool)
 	: network{ pool, sConfig.GetPort(), sConfig.GetWorker() }
 	, strandPing{ pool.get_io_context() }
 	, ping_timer{ pool.get_io_context(), boost::posix_time::hours(1) }
@@ -20,9 +21,9 @@ CharServer::CharServer(io_context_pool& pool)
 }
 
 //----------------------------------------
-//	Charserver Destructor
+//	CGServer Destructor
 //----------------------------------------
-CharServer::~CharServer()
+CGServer::~CGServer()
 {
 	MySQLConnWrapper::Destruct();
 }
@@ -30,7 +31,7 @@ CharServer::~CharServer()
 //----------------------------------------
 //	Init all data
 //----------------------------------------
-void CharServer::Init(io_context_pool& pool)
+void CGServer::Init(io_context_pool& pool)
 {
 	MySQLConnWrapper::Initialize();
 
@@ -40,13 +41,13 @@ void CharServer::Init(io_context_pool& pool)
 
 	sMapMgr.Initialize(pool);
 
-	ping_timer.async_wait(strandPing.wrap(boost::bind(&CharServer::ping, this)));
+	ping_timer.async_wait(strandPing.wrap(boost::bind(&CGServer::ping, this)));
 }
 
 //----------------------------------------
 //	Connect this server to database
 //----------------------------------------
-void CharServer::connectToDatabase()
+void CGServer::connectToDatabase()
 {
 	//if (sDB.connect(sConfig.GetDatabaseHost(), sConfig.GetDatabaseUser(), sConfig.GetDatabasePassword(), sConfig.GetDatabaseName()) == false)
 		//throw std::runtime_error("Unable to connect to database: ");
@@ -54,17 +55,17 @@ void CharServer::connectToDatabase()
 //----------------------------------------
 //	Handle database ping
 //----------------------------------------
-void CharServer::ping()
+void CGServer::ping()
 {
 	//sDB.Ping();
 
 	ping_timer.expires_at(ping_timer.expires_at() + boost::posix_time::hours(1));
-	ping_timer.async_wait(strandPing.wrap(boost::bind(&CharServer::ping, this)));
+	ping_timer.async_wait(strandPing.wrap(boost::bind(&CGServer::ping, this)));
 }
 //----------------------------------------
 //	Start the listener
 //----------------------------------------
-void CharServer::run()
+void CGServer::run()
 {
 	network.run();
 }
