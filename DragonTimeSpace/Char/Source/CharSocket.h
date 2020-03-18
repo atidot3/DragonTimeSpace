@@ -55,5 +55,10 @@ private:
 
 	bool onSelectCharToLogin(const Packet& packet);
 	bool onRecieveChat(const Packet& packet);
+	bool onReceiveRefreshRadar(const Packet& packet);
+	bool onReceiveRefreshMapQuestInfo(const Packet& packet);
+	bool onReceiveEntrySelectState(const Packet& packet);
+	bool onReceiveSetChooseTarget(const Packet& packet);
+
 	bool onReceiveProtobuf(const Packet& packet);
 };

@@ -16,7 +16,7 @@
 
 #include <Tables/TableContainer.h>
 
-constexpr int MAP_ID = 4;
+constexpr int MAP_ID = 2;
 
 //----------------------------------------
 //	Called when we open the socket
@@ -38,7 +38,14 @@ CharSocket::CharSocket(boost::asio::io_context &service)
 	methodList.emplace_back(CommandID::DnaBagInfo_CSC, std::bind(&CharSocket::onReceiveDNABagInfo, this, std::placeholders::_1));
 	methodList.emplace_back(CommandID::AllDnaPageInfo_CSC, std::bind(&CharSocket::onReceiveAllDNAPageInfo, this, std::placeholders::_1));
 	methodList.emplace_back(CommandID::Req_VisitNpcTrade_CS, std::bind(&CharSocket::onReceiveVisitNpcTrade, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::RefreshRadarPos_CSC, std::bind(&CharSocket::onReceiveRefreshRadar, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::ReqMapQuestInfo_CS, std::bind(&CharSocket::onReceiveRefreshMapQuestInfo, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::ReqEntrySelectState_CS, std::bind(&CharSocket::onReceiveEntrySelectState, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::SetChooseTarget_CS, std::bind(&CharSocket::onReceiveSetChooseTarget, this, std::placeholders::_1));
+	
 	//
+	//
+
 	// debug test
 	//methodList.emplace_back(2273, std::bind(&CharSocket::onReceiveProtobuf, this, std::placeholders::_1));
 }
@@ -295,7 +302,7 @@ bool CharSocket::onReceiveCharCreate(const Packet& packet)
 	{
 		mapshow.get_protobuff().set_weapon(0);
 		mapshow.get_protobuff().set_heroid(70022);
-		mapshow.get_protobuff().set_avatarid(70022);
+		mapshow.get_protobuff().set_avatarid(4001);
 		mapshow.get_protobuff().set_occupation(0);
 		mapshow.get_protobuff().set_hairstyle(43);
 		mapshow.get_protobuff().set_haircolor(86);
@@ -304,7 +311,7 @@ bool CharSocket::onReceiveCharCreate(const Packet& packet)
 	}
 	ProtobufPacket<msg::CharacterFightData> fightBase(CommandID::RetCommonError_SC);
 	{
-		fightBase.get_protobuff().set_curfightvalue(0);
+		fightBase.get_protobuff().set_curfightvalue(100000000);
 	}
 	ProtobufPacket<msg::MapUserData> mapBase(CommandID::RetCommonError_SC);
 	{
@@ -426,7 +433,7 @@ bool CharSocket::onReceiveCardPackInfo(const Packet& packet)
 	}
 
 
-	ProtobufPacket<Obj::MSG_RetCardPackInfo_SC > res(CommandID::ReqCardPackInfo_CS);
+	ProtobufPacket<Obj::MSG_RetCardPackInfo_SC > res(CommandID::RetCardPackInfo_SC);
 	{
 		res.get_protobuff().set_allocated_data(&pack.get_protobuff());
 	}
@@ -554,7 +561,7 @@ bool CharSocket::onReceiveVisitNpcTrade(const Packet& packet)
 	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
 
 	LOG_DEBUG << req.DebugString();
-	ProtobufPacket<quest::MSG_Ret_VisitNpcTrade_SC> res(CommandID::Req_VisitNpcTrade_CS);
+	ProtobufPacket<quest::MSG_Ret_VisitNpcTrade_SC> res(CommandID::Ret_VisitNpcTrade_SC);
 	{		
 		
 		for (int i = 0; i < req.allcrc().size(); i++)
@@ -744,7 +751,7 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 	{
 		mapshow.get_protobuff().set_weapon(0);
 		mapshow.get_protobuff().set_heroid(70022);
-		mapshow.get_protobuff().set_avatarid(70022);
+		mapshow.get_protobuff().set_avatarid(4001);
 		mapshow.get_protobuff().set_occupation(1);
 		mapshow.get_protobuff().set_hairstyle(43);
 		mapshow.get_protobuff().set_haircolor(86);
@@ -755,7 +762,7 @@ bool CharSocket::onSelectCharToLogin(const Packet& packet)
 	}
 	ProtobufPacket<msg::CharacterFightData> fightBase(CommandID::RetCommonError_SC);
 	{
-		fightBase.get_protobuff().set_curfightvalue(1000);
+		fightBase.get_protobuff().set_curfightvalue(100000000);
 
 		fightBase.compute();
 	}
@@ -954,5 +961,82 @@ bool CharSocket::onRecieveChat(const Packet& packet)
 
 	ms_Write(chat.get_buffer());
 
+	return true;
+}
+
+
+bool CharSocket::onReceiveRefreshRadar(const Packet& packet)
+{
+	mobapk::MSG_RefreshRadarPos_CSC req;
+	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
+
+	LOG_DEBUG << req.DebugString();
+	ProtobufPacket<mobapk::MSG_RefreshRadarPos_CSC> res(CommandID::RefreshRadarPos_CSC);
+	{
+		auto it = res.get_protobuff().add_pos();
+		it->set_num(0);
+		it->set_uid(70022);
+		it->set_x(200);
+		it->set_y(200);
+	}
+
+	res.compute();
+	ms_Write(res.get_buffer());
+	
+	return true;
+}
+
+bool CharSocket::onReceiveRefreshMapQuestInfo(const Packet& packet)
+{
+
+
+	quest::MSG_ReqMapQuestInfo_CS req;
+	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
+
+	LOG_DEBUG << req.DebugString();
+	ProtobufPacket<quest::MSG_RetMapQuestInfo_SC> res(CommandID::RetMapQuestInfo_SC);
+	{
+		auto it = res.get_protobuff().add_npclists();
+	}
+
+
+	res.compute();
+	ms_Write(res.get_buffer());
+		return true;
+}
+
+
+bool CharSocket::onReceiveEntrySelectState(const Packet& packet)
+{
+	msg::MSG_ReqEntrySelectState_CS req;
+	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
+
+	LOG_DEBUG << req.DebugString();
+	ProtobufPacket<msg::MSG_RetEntrySelectState_SC> res(CommandID::RetEntrySelectState_SC);
+	{
+		auto it = res.get_protobuff().add_states();
+	}
+
+
+	res.compute();
+	ms_Write(res.get_buffer());
+	return true;
+}
+
+bool CharSocket::onReceiveSetChooseTarget(const Packet& packet)
+{
+	msg::MSG_SetChooseTarget_CS req;
+	fill_my_data(req, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
+
+	LOG_DEBUG << req.DebugString();
+	ProtobufPacket<msg::MSG_AttackTargetChange_SC> res(CommandID::AttackTargetChange_SC);
+	{
+		res.get_protobuff().set_choosetype(req.choosetype());
+		res.get_protobuff().set_charid(req.charid());
+	}
+
+
+	res.compute();
+	ms_Write(res.get_buffer());
 	return true;
 }
