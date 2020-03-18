@@ -2,7 +2,8 @@
   "serverworker": 6,
   "loglevel": 0,
   "logFile": "./Log/Char.log",
-  "DataFile": "../Data/tbx/",
+  "TbxFile": "../Data/tbx/",
+  "MapJsonFile": "../Data/map_data_json/",
   "server":
   {
     "ID": 1,

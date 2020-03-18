@@ -1,0 +1,1 @@
+{"map":{"zonedef":[{"width":"2","height":"2","x":"35","y":"35","type":"8","color":"255,0,255,0","name":"新手出生区","UniqueID":"150","id":"0","num":"4","userdir":"180"},{"width":"2","height":"2","x":"35","y":"35","type":"4","color":"255,0,255,0","name":"重生区","UniqueID":"150","id":"0","num":"4","userdir":"180"}],"other":{"default_pkmode":"4"}}}

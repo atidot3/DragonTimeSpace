@@ -152,8 +152,13 @@ double Configuration::GetQuestExpRate() const
 	return rates.QuestExpAmount;
 }
 //TBX File Load Directory
-std::string Configuration::GetServerData()
+std::string Configuration::GetServerTbxData()
 {
-	const Json::Value& data = obj["DataFile"];
-	return obj["DataFile"].asString();
+	const Json::Value& data = obj["TbxFile"];
+	return obj["TbxFile"].asString();
+}
+std::string Configuration::GetServerMapJsonData()
+{
+	const Json::Value& data = obj["MapJsonFile"];
+	return obj["MapJsonFile"].asString();
 }

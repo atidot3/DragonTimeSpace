@@ -58,7 +58,9 @@ public:
 	int GetMobDropAmountRate() const;
 	double GetQuestExpRate() const;
 	double GetQuestRwdRate() const;
-	std::string GetServerData();
+
+	std::string GetServerTbxData();
+	std::string GetServerMapJsonData();
 protected:
 	Json::Reader reader;
 	Json::Value obj;

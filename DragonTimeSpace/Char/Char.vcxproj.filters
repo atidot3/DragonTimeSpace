@@ -26,6 +26,9 @@
     <ClInclude Include="Source\CharSocket.h">
       <Filter>Source</Filter>
     </ClInclude>
+    <ClInclude Include="Source\map.h">
+      <Filter>Source</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

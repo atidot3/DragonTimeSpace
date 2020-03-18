@@ -35,7 +35,7 @@ void CharServer::Init(io_context_pool& pool)
 
 	//connectToDatabase();
 	sConfig.loadGameServerCharList();
-	sTBL.load(sConfig.GetServerData());
+	sTBL.load(sConfig.GetServerTbxData());
 
 	ping_timer.async_wait(strandPing.wrap(boost::bind(&CharServer::ping, this)));
 }

@@ -1,0 +1,1 @@
+{"map":{"zonedef":[{"width":"2","height":"2","x":"40","y":"84","type":"8","color":"255,0,255,0","name":"玩法起点","UniqueID":"150","id":"0","num":"4","userdir":"0"},{"width":"2","height":"2","x":"40","y":"84","type":"4","color":"255,0,255,0","name":"玩家复活区","UniqueID":"150","id":"0","num":"4","userdir":"0"}],"other":{"default_pkmode":"4"}}}
