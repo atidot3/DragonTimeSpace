@@ -50,7 +50,10 @@ private:
 	bool onReceiveMyHeroAttrData(const Packet& packet);
 	bool onReceiveDNABagInfo(const Packet& packet);
 	bool onReceiveVisitNpcTrade(const Packet& packet);
-
+	bool onReceiveOfflineChat(const Packet& packet);
+	bool onReceiveMailList(const Packet& packet);
+	bool onReceiveBlacklist(const Packet& packet);
+	bool onReceiveReturnToChar(const Packet& packet);
 	bool onReceiveAllDNAPageInfo(const Packet& packet);
 
 	bool onSelectCharToLogin(const Packet& packet);

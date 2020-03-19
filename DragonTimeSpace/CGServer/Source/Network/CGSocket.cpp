@@ -20,6 +20,7 @@
 
 constexpr int MAP_ID = 2;
 static uint32_t heroid;
+static uint32_t accoundID;
 
 //----------------------------------------
 //	Called when we open the socket
@@ -46,10 +47,21 @@ CGSocket::CGSocket(boost::asio::io_context &service)
 	methodList.emplace_back(CommandID::ReqMapQuestInfo_CS, std::bind(&CGSocket::onReceiveRefreshMapQuestInfo, this, std::placeholders::_1));
 	methodList.emplace_back(CommandID::ReqEntrySelectState_CS, std::bind(&CGSocket::onReceiveEntrySelectState, this, std::placeholders::_1));
 	methodList.emplace_back(CommandID::SetChooseTarget_CS, std::bind(&CGSocket::onReceiveSetChooseTarget, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::Req_OperateClientDatas_CS, std::bind(&CGSocket::onReceiveOperateDatasReq, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::BlackList_CSC, std::bind(&CGSocket::onReceiveBlacklist, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::Req_Back_to_Select_CS, std::bind(&CGSocket::onReceiveReturnToChar, this, std::placeholders::_1));
 
+	//
+	/*
+	
+	
+	Req_Back_to_Select_CS
+
+	*/
 	// -- Chat
 	methodList.emplace_back(CommandID::Req_Chat_CS, std::bind(&CGSocket::onRecieveChat, this, std::placeholders::_1));
-
+	methodList.emplace_back(CommandID::Req_OfflineChat_CS, std::bind(&CGSocket::onReceiveOfflineChat, this, std::placeholders::_1));
+	methodList.emplace_back(CommandID::Req_MailList_CS, std::bind(&CGSocket::onReceiveMailList, this, std::placeholders::_1));
 
 	// debug test
 	//methodList.emplace_back(2273, std::bind(&CGSocket::onReceiveProtobuf, this, std::placeholders::_1));
@@ -1090,16 +1102,14 @@ bool CGSocket::onRecieveChat(const Packet& packet)
 
 	fill_my_data(_chat, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
 	LOG_DEBUG << _chat.DebugString();
-	ProtobufPacket<Chat::MSG_Ret_ChannelChat_SC> chat(CommandID::Ret_ChannelChat_SC);
-	
-	chat.get_protobuff().set_channel_type(Chat::ChannelType::ChannelType_World);
-	chat.get_protobuff().set_str_chat(_chat.data().content());
-	chat.get_protobuff().set_src_name(_chat.data().charname());
-	chat.get_protobuff().set_textid(1);
+	ProtobufPacket<Chat::MSG_Ret_Chat_SC> chat(CommandID::Ret_Chat_SC);
+	Chat::ChatData data = _chat.data();
+	chat.get_protobuff().set_allocated_data(&data);
 
 	chat.compute();
 
 	ms_Write(chat.get_buffer());
+	chat.get_protobuff().release_data();
 	return true;
 }
 
@@ -1180,4 +1190,126 @@ bool CGSocket::onReceiveSetChooseTarget(const Packet& packet)
 	res.compute();
 	ms_Write(res.get_buffer());
 	return true;
+}
+
+bool CGSocket::onReceiveOfflineChat(const Packet& packet)
+{
+	//TODO: Make Offline Chat save handler and loader for this function	
+	ProtobufPacket<Chat::MSG_Ret_OfflineChat_SC> chat(CommandID::Ret_OfflineChat_SC);
+	
+	auto it = chat.get_protobuff().add_datas();
+	chat.compute();
+
+	ms_Write(chat.get_buffer());
+	return true;
+}
+
+
+bool CGSocket::onReceiveOperateDatasReq(const Packet& packet)
+{
+	ProtobufPacket<apprentice::MSG_Req_OperateClientDatas_CS> opdat(CommandID::Req_OperateClientDatas_CS);
+	//known keys for opdats
+	/*
+		storage_Shortcuts,
+        storage_ChatTab,
+        storage_CharacterBottom,
+        storage_UISkillIndex,
+        storage_GenePageName,
+        storage_SystemData,
+        storage_ShortKey_Config,
+        storage_SkillSlotSort,
+        storage_FRIEND_IDS,
+        storage_AbattoirShortcuts,
+        storage_AutoFight
+	*/
+	//Opcodes are as follows
+	/*
+		DeleteAll,
+		AddUpdate,
+		Delete,
+		Get
+	*/
+	opdat.get_protobuff().set_key("storage_ChatTab");
+	opdat.get_protobuff().set_op(3);
+	/*opdat.get_protobuff().set_retcode();*/
+	//opdat.get_protobuff().set_type();
+	//opdat.get_protobuff().set_value();
+	
+
+
+	opdat.compute();
+
+	ms_Write(opdat.get_buffer());
+	return true;
+}
+
+
+bool CGSocket::onReceiveMailList(const Packet& packet)
+{
+	mail::MSG_Req_MailList_CS _mail;
+	fill_my_data(_mail, (unsigned char*)packet.GetPacketData(), packet.GetPacketHeader().size);
+	LOG_DEBUG << _mail.DebugString();
+	ProtobufPacket<mail::MSG_Ret_MailList_SC> mail(CommandID::Ret_MailList_SC);
+	
+
+	auto it = mail.get_protobuff().add_items();
+	it->set_createtime("0");
+	it->set_deltime("9999999");
+	it->set_fromname("Jesus");
+	it->set_mailid("0");
+	it->set_state(0);
+	it->set_text("This is a gift to you atidot3");
+	it->set_title("To Ati from Jesus");
+
+
+	mail.compute();
+
+	ms_Write(mail.get_buffer());
+	return true;
+}
+
+
+bool CGSocket::onReceiveBlacklist(const Packet& packet)
+{
+	LOG_DEBUG << "Dont forget to do this one dumb doggo";
+	return true;
+}
+
+bool CGSocket::onReceiveReturnToChar(const Packet& packet)
+{
+
+
+	//Save Character when returning to char select
+
+	sQueryRepository.GetCGServerRepository().GetCharacterlistByAccountId(1, [this](std::shared_ptr<QueryResult> result)
+		{
+			if (!result)
+			{
+				LOG_FATAL << "Query result were null";
+				return;
+			}
+
+			ProtobufPacket<msg::MSG_Ret_LoginOnReturnCharList_SC> characterList(CommandID::Ret_LoginOnReturnCharList_SC);
+			while (result->next())
+			{
+				auto it = characterList.get_protobuff().add_charlist();
+				it->set_charid(result->getUInt("CharacterID"));
+				it->set_level(result->getUInt("CurrentLevel"));
+				it->set_sex((msg::SEX)result->getByte("Gender"));
+				it->set_heroid(result->getUInt("HeroID"));
+				it->set_curheroid(result->getUInt("HeroID"));
+				it->set_facestyle(result->getUInt("Facestyle"));
+				it->set_haircolor(result->getUInt("Hairstyle"));
+				it->set_hairstyle(result->getUInt("Haircolor"));
+				it->set_avatarid(result->getUInt("AvatarID"));
+				it->set_mapname(std::move(std::string("Time and space city")));
+				it->set_name(std::move(std::string(result->getString("Name"))));
+			}
+
+			characterList.compute();
+			ms_Write(characterList.get_buffer());
+		});
+
+	return true;
+
 }

@@ -369,6 +369,21 @@
     <ClCompile Include="Database\Repository\CGServer\CGServerQuery.cpp">
       <Filter>Database\Repository\CGServer</Filter>
     </ClCompile>
+    <ClCompile Include="Network\Messages\apprentice.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\country.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\chatset.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\copymap.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\mail_cmd.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Configuration\Configuration.h">
@@ -727,6 +742,21 @@
     </ClInclude>
     <ClInclude Include="Database\Repository\CGServer\CGServerQuery.h">
       <Filter>Database\Repository\CGServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\apprentice.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\copymap.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\country.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\chatset.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\mail_cmd.pb.h">
+      <Filter>Network\Messages</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

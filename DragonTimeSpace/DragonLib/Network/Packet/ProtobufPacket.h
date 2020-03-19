@@ -17,7 +17,11 @@
 #include <Network\Messages\massive.pb.h>
 #include <Network\Messages\mobapk.pb.h>
 #include <Network\Messages\relation.pb.h>
-
+#include <Network\Messages\apprentice.pb.h>
+#include <Network\Messages\chatset.pb.h>
+#include <Network\Messages\copymap.pb.h>
+#include <Network\Messages\country.pb.h>
+#include <Network\Messages\mail_cmd.pb.h>
 // -- Protobuf packet:
 // -- HEADER_SIZE + 8 + protobuff->bytesizelong()
 
