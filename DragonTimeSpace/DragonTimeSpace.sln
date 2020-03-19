@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CGServer", "CGServer\CGServ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TSLLuaConverter", "TSLLuaConverter\TSLLuaConverter.csproj", "{D1DB237D-DAFF-4A68-817C-91680034BD41}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KeyGenerator", "KeyGenerator\KeyGenerator.vcxproj", "{F13D2E3A-1280-469B-86C1-7F0631F595DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,16 @@ Global
 		{D1DB237D-DAFF-4A68-817C-91680034BD41}.Release|x64.Build.0 = Release|Any CPU
 		{D1DB237D-DAFF-4A68-817C-91680034BD41}.Release|x86.ActiveCfg = Release|Any CPU
 		{D1DB237D-DAFF-4A68-817C-91680034BD41}.Release|x86.Build.0 = Release|Any CPU
+		{F13D2E3A-1280-469B-86C1-7F0631F595DD}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{F13D2E3A-1280-469B-86C1-7F0631F595DD}.Debug|x64.ActiveCfg = Debug|x64
+		{F13D2E3A-1280-469B-86C1-7F0631F595DD}.Debug|x64.Build.0 = Debug|x64
+		{F13D2E3A-1280-469B-86C1-7F0631F595DD}.Debug|x86.ActiveCfg = Debug|Win32
+		{F13D2E3A-1280-469B-86C1-7F0631F595DD}.Debug|x86.Build.0 = Debug|Win32
+		{F13D2E3A-1280-469B-86C1-7F0631F595DD}.Release|Any CPU.ActiveCfg = Release|Win32
+		{F13D2E3A-1280-469B-86C1-7F0631F595DD}.Release|x64.ActiveCfg = Release|x64
+		{F13D2E3A-1280-469B-86C1-7F0631F595DD}.Release|x64.Build.0 = Release|x64
+		{F13D2E3A-1280-469B-86C1-7F0631F595DD}.Release|x86.ActiveCfg = Release|Win32
+		{F13D2E3A-1280-469B-86C1-7F0631F595DD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

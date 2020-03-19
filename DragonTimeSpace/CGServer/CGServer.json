@@ -1,7 +1,7 @@
 {
   "serverworker": 6,
   "loglevel": 0,
-  "logFile": "./Log/Char.log",
+  "logFile": "./Log/CGServer.log",
   "TbxFile": "../Data/tbx/",
   "MapJsonFile": "../Data/map_data_json/",
   "MapConfigJsonFile": "../Data/mapconfig.json",

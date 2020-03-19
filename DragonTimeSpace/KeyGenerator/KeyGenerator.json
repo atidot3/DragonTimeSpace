@@ -1,0 +1,10 @@
+{
+  "loglevel": 0,
+  "logFile": "./Log/CGServer.log",
+  "database": {
+    "Host": "127.0.0.1",
+    "DB": "dbo",
+    "User": "root",
+    "Password": "password"
+  }
+}
