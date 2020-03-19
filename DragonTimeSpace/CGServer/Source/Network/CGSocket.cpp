@@ -19,12 +19,6 @@
 
 #include <Tables/TableContainer.h>
 
-constexpr int MAP_ID = 2;
-constexpr int MOVE_SPEED = 120;
-
-static uint32_t heroid;
-static uint32_t accoundID;
-
 //----------------------------------------
 //	Called when we open the socket
 //----------------------------------------
@@ -93,7 +87,8 @@ bool CGSocket::onReceiveUserInfo(const Packet& packet)
 {
 	LOG_DEBUG << "onReceiveUserInfo";
 	stIphoneLoginUserCmd_CS* login_data = (stIphoneLoginUserCmd_CS*)packet.GetPacketData();
-	LOG_DEBUG << "LOGIN FOR: " << login_data->accid << " tmp: " << login_data->temp_user_id;
+
+	account_id = login_data->accid;
 
 	bool ret;
 	auto result = sQueryRepository.GetCGServerRepository().GetCharacterlistByAccountId(login_data->accid, ret);
@@ -145,11 +140,10 @@ bool CGSocket::onReceiveCharCreate(const Packet& packet)
 	if (hero != nullptr)
 	{
 		if (!_session)
-			_session = std::make_shared<WorldSession>(this, 0);
+			_session = std::make_shared<WorldSession>(this, account_id);
 
 		bool ret = false;
-		const uint32_t acc = 1;
-		auto result = sQueryRepository.GetCGServerRepository().InsertCharacterByAccountId(acc, _hero.get_protobuff().heroid(), hero->newavatar(), _hero.get_protobuff().sex(), _hero.get_protobuff().facestyle(),
+		auto result = sQueryRepository.GetCGServerRepository().InsertCharacterByAccountId(account_id, _hero.get_protobuff().heroid(), hero->newavatar(), _hero.get_protobuff().sex(), _hero.get_protobuff().facestyle(),
 			_hero.get_protobuff().hairstyle(), _hero.get_protobuff().haircolor(), _hero.get_protobuff().antenna(), _hero.get_protobuff().name(), ret);
 
 		if (!ret)

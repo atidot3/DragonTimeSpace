@@ -412,7 +412,7 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 	}
 	ProtobufPacket<msg::MapUserData> mapBase(CommandID::RetCommonError_SC);
 	{
-		mapBase.get_protobuff().set_charid(1);
+		mapBase.get_protobuff().set_charid(result->getUInt("CharacterID"));
 		mapBase.get_protobuff().set_name(result->getString("Name"));
 
 		mapBase.get_protobuff().set_allocated_mapdata(&mapdata.get_protobuff());

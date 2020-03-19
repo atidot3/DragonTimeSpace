@@ -23,6 +23,7 @@ private:
 	std::string userName;
 	std::string userPassword;
 	std::string macAddress;
+	uint32_t account_id;
 	std::shared_ptr<WorldSession> _session;
 
 	using Method = std::function<bool(const Packet& packet)>;
