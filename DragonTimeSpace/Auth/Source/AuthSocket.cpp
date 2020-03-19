@@ -133,11 +133,15 @@ bool AuthSocket::OnLoginReq(const Packet& packet)
 		login_ok.dwUserID = result->getUInt("AccountID");
 		login_ok.loginTempID = result->getUInt("AccountID");
 		login_ok.state = BYTE(1);
-		login_ok.wdPort = WORD(50300);
-
+		
+		/*
+			SELECT * FROM REALMLIST WHERE LOAD < MAX_PLAYER;
+		*/
+		LOG_INFO << "At send player to CGSERVER need to check on database LINEID";
 		std::string ip = "192.168.1.6";
 		memcpy(login_ok.ip, ip.c_str(), strlen("192.168.1.6"));
 		memcpy(login_ok.key, "coucou", strlen("coucou"));
+		login_ok.wdPort = WORD(50300);
 
 		st_Write(login_ok);
 		return true;

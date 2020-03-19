@@ -7,7 +7,7 @@
   "MapConfigJsonFile": "../Data/mapconfig.json",
   "server": 
   {
-    "ID": 1,
+    "ID": 0,
     "IP": "127.0.0.1",
     "Port": 50300
   },

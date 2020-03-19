@@ -282,7 +282,7 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 	ProtobufPacket<msg::MSG_Ret_UserMapInfo_SC> mapInfo(CommandID::Ret_UserMapInfo_SC);
 	{
 		mapInfo.get_protobuff().set_mapid(result->getUInt("MapID"));
-		mapInfo.get_protobuff().set_lineid(0);
+		mapInfo.get_protobuff().set_lineid(sConfig.GetGameServerServerId());
 		mapInfo.get_protobuff().set_sceneid(0);
 		mapInfo.get_protobuff().set_allocated_pos(&pos);
 		mapInfo.get_protobuff().set_copymapidx(0);
@@ -529,9 +529,27 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 			//npcs->release_pos();
 			npcs->release_showdata();
 		}
+		SendPacket(npc_info.get_buffer());
 	}
 
-	SendPacket(npc_info.get_buffer());
+	auto lines = ProtobufPacket<msg::MSG_NoticeClientAllLines_SC>(CommandID::NoticeClientAllLines_SC);
+	{
+		lines.get_protobuff().set_your_line(sConfig.GetGameServerServerId());
+
+		/*
+			SELECT * FROM REAMLIST;
+		for (int i = 0; i < 3; ++i)
+		{
+			auto other_lines = lines.get_protobuff().add_lines();
+			other_lines->set_index(i);
+			other_lines->set_user_num(0);
+
+		}
+		*/
+		lines.compute();
+		SendPacket(lines.get_buffer());
+	}
+
 	return true;
 }
 
@@ -546,10 +564,10 @@ bool WorldSession::onReceiveMainHero(const Packet& packet)
 
 	hero.get_protobuff().set_errorcode(0);
 	hero.get_protobuff().set_opcode(2);
-	hero.get_protobuff().set_herothisid(71014);
+	hero.get_protobuff().set_herothisid(71001);
 
 	hero.compute();
-
+	
 	SendPacket(hero.get_buffer());
 
 	return true;
@@ -558,6 +576,7 @@ bool WorldSession::onReceiveMainHero(const Packet& packet)
 bool WorldSession::onSceneLoaded(const Packet& packet)
 {
 	LOG_DEBUG << "on scene loaded request received";
+
 	return true;
 }
 
@@ -565,8 +584,7 @@ bool WorldSession::onNewRoleCutScene(const Packet& packet)
 {
 	LOG_DEBUG << "on new role scenecut request received";
 
-	auto req = ProtobufPacket<msg::MSG_START_CUTSCENE_SC>(packet);
-
+	auto req = ProtobufPacket<msg::MSG_Create_Role_CS>(packet);
 	// This make infinit looping cutscene
 	/*auto res = ProtobufPacket<msg::MSG_START_CUTSCENE_SC>(CommandID::NEW_ROLE_CUTSCENE_SCS);
 	{
@@ -914,8 +932,6 @@ bool WorldSession::onReceiveOperateDatasReq(const Packet& packet)
 	opdat.get_protobuff().set_retcode(req.get_protobuff().retcode());
 	opdat.get_protobuff().set_type(req.get_protobuff().type());
 	opdat.get_protobuff().set_value(req.get_protobuff().value());
-
-
 	opdat.compute();
 
 	SendPacket(opdat.get_buffer());
