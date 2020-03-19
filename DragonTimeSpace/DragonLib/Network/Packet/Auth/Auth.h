@@ -37,7 +37,6 @@ struct login_accept : public PACKETDATA, auth_packet
 struct login_failed : public PACKETDATA, auth_packet
 {
 	BYTE error_code;
-	short size;
 };
 
 // RECV

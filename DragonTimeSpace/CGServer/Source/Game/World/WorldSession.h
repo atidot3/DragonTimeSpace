@@ -31,10 +31,9 @@ public:
 	{
 		if (_socket && !_socket->IsClosed())
 		{
-			_socket->Write(t);
+			_socket->ms_Write(t);
 		}
 	}
-
 	const uint32_t& GetAccountID() const;
 	void			Kick();
 	bool			CreatePlayer(const uint32_t& char_id);
@@ -54,7 +53,27 @@ private:
 
 private:
 	void ProcessUnSafe();
-public:
+
+	// -- packet
+	bool onReceiveMainHero(const Packet& packet);
+	bool onSceneLoaded(const Packet& packet);
+	bool onNewRoleCutScene(const Packet& packet);
+	bool onReceiveOperateDatasReq(const Packet& packet);
+	bool onReceiveTeamMemberReq(const Packet& packet);
+	bool onReceiveCardPackInfo(const Packet& packet);
+	bool onReceiveMyHeroAttrData(const Packet& packet);
+	bool onReceiveDNABagInfo(const Packet& packet);
+	bool onReceiveVisitNpcTrade(const Packet& packet);
+	bool onReceiveOfflineChat(const Packet& packet);
+	bool onReceiveMailList(const Packet& packet);
+	bool onReceiveBlacklist(const Packet& packet);
+	bool onReceiveReturnToChar(const Packet& packet);
+	bool onReceiveAllDNAPageInfo(const Packet& packet);
+	bool onReceiveRefreshRadar(const Packet& packet);
+	bool onReceiveRefreshMapQuestInfo(const Packet& packet);
+	bool onReceiveEntrySelectState(const Packet& packet);
+	bool onReceiveSetChooseTarget(const Packet& packet);
+	bool onRecieveChat(const Packet& packet);
 };
 
 #endif /*_WORLDSESSION_H*/

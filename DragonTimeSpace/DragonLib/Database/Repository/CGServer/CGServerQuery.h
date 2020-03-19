@@ -13,11 +13,12 @@ public:
 	CCGServerQuery();
 	~CCGServerQuery();
 	//Get
-	void	GetCharacterByCharId(const uint32_t&  iCharId, boost::function<void(std::shared_ptr<QueryResult>)> callback) const;
-	void	GetCharacterCountByAccountId(const uint32_t&  iAccountId, boost::function<void(std::shared_ptr<QueryResult>)> callback) const;
-	void	GetCharacterlistByAccountId(const uint32_t&  iAccountId, boost::function<void(std::shared_ptr<QueryResult>)> callback) const;
+	std::unique_ptr<QueryResult>	GetCharacterByCharId(const uint32_t& iCharId, bool& ret) const;
+	std::unique_ptr<QueryResult>	GetCharacterCountByAccountId(const uint32_t& iAccountId, bool& ret) const;
+	std::unique_ptr<QueryResult>	GetCharacterlistByAccountId(const uint32_t&  iAccountId, bool& ret) const;
 	//Set
-	void   SaveCharacterByAccountId(const uint32_t& iAccountId, uint32_t& iCharId, uint32_t& iCurrentLevel, BYTE& Gender, uint32_t& iHeroID, uint32_t& facestyle, uint32_t& iHairStyle, uint32_t& iHairColor, uint32_t& iAvatarId, uint32_t& mapid, std::string& charname, boost::function<void(std::shared_ptr<QueryResult>)> callback) const;
+	std::unique_ptr<QueryResult>	InsertCharacterByAccountId(const uint32_t& iAccountId, const uint32_t& HeroID, const uint32_t& AvatarID, const BYTE& Gender, const uint32_t& Facestyle, const uint32_t& Hairstyle,
+		const uint32_t& Haircolor, const uint32_t& Antenna, const std::string& name, bool& ret) const;
 };
 
 #endif //_CHARQUERY_H_

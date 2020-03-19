@@ -27,7 +27,7 @@ class MySQLConnWrapper final
 		std::string _password;
 		std::string _database;
 	};
-	struct QueryToExecute
+	/*struct QueryToExecute
 	{
 	public:
 		QueryToExecute(){}
@@ -38,7 +38,7 @@ class MySQLConnWrapper final
 		}
 		std::string _query;
 		boost::function<void(std::shared_ptr<QueryResult>)> _callback;
-	};
+	};*/
 public:
 	static MySQLConnWrapper& instance();
 	static void Destruct();
@@ -49,25 +49,28 @@ public:
 	MySQLConnWrapper();
 	~MySQLConnWrapper();
 
-	bool manageException(uint32_t errNo, uint8_t attempts = 5);
-
-	void ExecuteQuery(const std::string sqlQuery, boost::function<void(std::shared_ptr<QueryResult>)> funct);
-	void ExecuteQuery(const std::string sqlQuery);
+	std::unique_ptr<QueryResult> ExecuteQuery(const std::string& sqlQuery, bool& ret);
 	void DirectExecute(const std::string sqlQuery);
-	char* EscapeString(const std::string& str);
-private:
-	void RealExecuteQuery(const std::string sqlQuery, boost::function<void(std::shared_ptr<QueryResult>)> funct);
 
-	void run();
-	void DoWork();
+private:
+	bool manageException(uint32_t errNo, uint8_t attempts = 5);
+	char* EscapeString(const std::string& str);
+
+	/* ASYNC REQUEST REMOVED */
+	//void ExecuteQuery(const std::string sqlQuery, boost::function<void(std::shared_ptr<QueryResult>)> funct);
+	//void ExecuteQuery(const std::string sqlQuery);
+	//void DirectExecute(const std::string sqlQuery);
+	//void RealExecuteQuery(const std::string sqlQuery, boost::function<void(std::shared_ptr<QueryResult>)> funct);
+	//void run();
+	//void DoWork();
 private:
 	MySQLInfo	_conInfo;
 	MYSQL*		_con;
 	bool		_reconnecting;
 
-	SafeQueue<QueryToExecute*> _queue;
-	std::thread _worker;
-	bool _running;
+	//SafeQueue<QueryToExecute*> _queue;
+	//std::thread _worker;
+	//bool _running;
 };
 
 #define sDB MySQLConnWrapper::instance()

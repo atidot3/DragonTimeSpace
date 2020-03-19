@@ -8,44 +8,43 @@ CCGServerQuery::~CCGServerQuery()
 {
 }
 
-void	CCGServerQuery::GetCharacterByCharId(const uint32_t&  iCharId, boost::function<void(std::shared_ptr<QueryResult>)> callback) const
+std::unique_ptr<QueryResult>	CCGServerQuery::GetCharacterByCharId(const uint32_t&  iCharId, bool& ret) const
 {
 	Query query("SELECT * FROM `characters` WHERE `CharacterID` = '?';");
 	query.setValue(iCharId);
 
-	sDB.ExecuteQuery(query.GetQuery(), callback);
+	return sDB.ExecuteQuery(query.GetQuery(), ret);
 }
 
-void	CCGServerQuery::GetCharacterlistByAccountId(const uint32_t&  iAccountId, boost::function<void(std::shared_ptr<QueryResult>)> callback) const
+std::unique_ptr<QueryResult>	CCGServerQuery::GetCharacterlistByAccountId(const uint32_t&  iAccountId, bool& ret) const
 {
 	Query query("SELECT * FROM `characters` WHERE `AccountID` = '?';");
 	query.setValue(iAccountId);
 
-	sDB.ExecuteQuery(query.GetQuery(), callback);
+	return sDB.ExecuteQuery(query.GetQuery(), ret);
 }
 
-void	CCGServerQuery::GetCharacterCountByAccountId(const uint32_t&  iAccountId, boost::function<void(std::shared_ptr<QueryResult>)> callback) const
+std::unique_ptr<QueryResult>	CCGServerQuery::GetCharacterCountByAccountId(const uint32_t&  iAccountId, bool& ret) const
 {
 	Query query("SELECT COUNT(*) as counter FROM `characters` WHERE `AccountID` = '?';");
 	query.setValue(iAccountId);
 	
-	sDB.ExecuteQuery(query.GetQuery(), callback);
+	return sDB.ExecuteQuery(query.GetQuery(), ret);
 }
 
-void	CCGServerQuery::SaveCharacterByAccountId(const uint32_t& iAccountId, uint32_t& iCharId, uint32_t& iCurrentLevel, BYTE& Gender, uint32_t& iHeroID, uint32_t& facestyle, uint32_t& iHairStyle, uint32_t& iHairColor, uint32_t& iAvatarId, uint32_t& mapid, std::string& charname, boost::function<void(std::shared_ptr<QueryResult>)> callback) const
+std::unique_ptr<QueryResult>	CCGServerQuery::InsertCharacterByAccountId(const uint32_t& iAccountId, const uint32_t& HeroID, const uint32_t& AvatarID, const BYTE& Gender, const uint32_t& Facestyle, const uint32_t& Hairstyle,
+const uint32_t& Haircolor, const uint32_t& Antenna, const std::string& name, bool& ret) const
 {
-	Query query("INSERT INTO `characters`(`AccountID`,`CurrentLevel`,`Gender`,`HeroID`,`Facestyle`,`Hairstyle`,`Haircolor`,`Haircolor`,`AvatarID`,`Name`, `MapID`)VALUES('?','?','?','?','?','?','?','?','?','?','?');");
+	Query query("INSERT INTO `characters`(`AccountID`,`HeroID`,`AvatarID`,`Gender`,`Facestyle`,`Hairstyle`,`Haircolor`,`Antenna`,`Name`) VALUES('?','?','?','?','?','?','?','?','?');");
 	query.setValue(iAccountId);
-	query.setValue(iCharId);
-	query.setValue(iCurrentLevel);
+	query.setValue(HeroID);
+	query.setValue(AvatarID);
 	query.setValue(Gender);
-	query.setValue(iHeroID);
-	query.setValue(facestyle);
-	query.setValue(iHairStyle);
-	query.setValue(iHairColor);
-	query.setValue(iAvatarId);
-	query.setValue(charname);
-	query.setValue(mapid);
+	query.setValue(Facestyle);
+	query.setValue(Hairstyle);
+	query.setValue(Haircolor);
+	query.setValue(Antenna);
+	query.setValue(name);
 
-	sDB.ExecuteQuery(query.GetQuery(), callback);
+	return sDB.ExecuteQuery(query.GetQuery(), ret);
 }

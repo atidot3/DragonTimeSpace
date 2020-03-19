@@ -1,0 +1,8 @@
+1)
+open struct stServerReturnLoginFailedCmd => remove this.data = os.marshal.
+
+2)
+open USocket OnReceive() => replace =>
+ - this.encryptremainsize = (this.encryptremainsize + num) % 8;
+by
+this.encryptremainsize = 0

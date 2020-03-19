@@ -64,7 +64,7 @@ void MapManager::load()
 					const uint32_t mapid = std::stoul(map["mapID"].asString());
 					_maps.emplace(mapid, std::move(Map(filename, mapid)));
 				}
-				catch (std::exception & e)
+				catch (std::exception & /*e*/)
 				{
 					// -- file not found
 					//LOG_DEBUG << e.what();

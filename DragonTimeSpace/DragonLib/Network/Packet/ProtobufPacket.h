@@ -22,6 +22,7 @@
 #include <Network\Messages\copymap.pb.h>
 #include <Network\Messages\country.pb.h>
 #include <Network\Messages\mail_cmd.pb.h>
+
 // -- Protobuf packet:
 // -- HEADER_SIZE + 8 + protobuff->bytesizelong()
 
@@ -46,6 +47,7 @@ class ProtobufPacket
 #pragma pack()
 	const int PROTOBUF_HEADER_SIZE = sizeof(responce) - HEADER_SIZE;
 public:
+	// -- Outbound proto message
 	ProtobufPacket<T>(const CommandID& cmd)
 		: res{ 0 }
 	{
@@ -60,6 +62,12 @@ public:
 		res.protobuff_length = 0;
 	}
 
+	// -- Inband proto message
+	ProtobufPacket<T>(const Packet& cmd)
+		: res{ 0 }
+	{
+		fill_my_data<T>(data, (unsigned char*)cmd.GetPacketData(), cmd.GetPacketHeader().size);
+	}
 	// -- Build the internal packet ready to send
 	void compute()
 	{
@@ -104,6 +112,15 @@ public:
 			std::cout << std::setw(2) << static_cast<unsigned>(*ptr) << " ";
 		}
 		std::cout << std::endl;
+	}
+	template<class T>
+	bool fill_my_data(T& t, const unsigned char* data, const WORD& size)
+	{
+		MessageBuffer buffer;
+		buffer.Resize(size - 8);
+		buffer.Write(&data[8], size - 8);
+
+		return ParseProtoMsg<T>((const char*)buffer.GetReadPointer(), (size - 8), t);
 	}
 
 private:

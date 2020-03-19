@@ -1,0 +1,26 @@
+AUTH:
+
+Now login is working with database, need to check if:
+
+- Account exist
+- Account credential fail
+- Account banned
+- Account need to be verify
+- Account locked
+- Account blocked
+
+- Game version is ok or ko
+
+CGSERVER:
+
+	- On login
+		- Check we got correct data through login server (auth token and such)
+
+	- Character create
+		- name already taken
+		- name contains invalid characters (must be only [a-z])
+		- invalid combinaison race - class and such
+		- already have characters list full
+
+	- Return to character screen
+		- Need to drop the WorldSession and set a 'socket state' between (CHAR - GAME) maybe ?

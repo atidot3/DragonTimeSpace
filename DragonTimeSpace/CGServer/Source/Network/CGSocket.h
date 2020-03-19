@@ -41,27 +41,5 @@ private:
 	bool onCheckGatewayVer(const Packet& packet);
 	bool onReceiveUserInfo(const Packet& packet);
 	bool onReceiveCharCreate(const Packet& packet);
-	bool onReceiveMainHero(const Packet& packet);
-	bool onSceneLoaded(const Packet& packet);
-	bool onReceiveOperateDatasReq(const Packet& packet);
-	bool onReceiveImportantBroadcast(const Packet& packet);
-	bool onReceiveTeamMemberReq(const Packet& packet);
-	bool onReceiveCardPackInfo(const Packet& packet);
-	bool onReceiveMyHeroAttrData(const Packet& packet);
-	bool onReceiveDNABagInfo(const Packet& packet);
-	bool onReceiveVisitNpcTrade(const Packet& packet);
-	bool onReceiveOfflineChat(const Packet& packet);
-	bool onReceiveMailList(const Packet& packet);
-	bool onReceiveBlacklist(const Packet& packet);
-	bool onReceiveReturnToChar(const Packet& packet);
-	bool onReceiveAllDNAPageInfo(const Packet& packet);
-
 	bool onSelectCharToLogin(const Packet& packet);
-	bool onRecieveChat(const Packet& packet);
-	bool onReceiveRefreshRadar(const Packet& packet);
-	bool onReceiveRefreshMapQuestInfo(const Packet& packet);
-	bool onReceiveEntrySelectState(const Packet& packet);
-	bool onReceiveSetChooseTarget(const Packet& packet);
-
-	bool onReceiveProtobuf(const Packet& packet);
 };

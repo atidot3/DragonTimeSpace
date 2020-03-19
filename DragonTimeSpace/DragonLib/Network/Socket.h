@@ -158,13 +158,13 @@ private:
 	boost::recursive_mutex mutex;
 	std::atomic<bool> _pendingClose;
 	std::atomic<bool> _closed;
+	SafeVector<MessageBuffer> _writeQueue;
 	/**
 	*	Handle the packet cutting etc in the internal storage
 	*/
 	MessageBuffer _recvBuffer;
 	MessageBuffer _headerBuffer;
 	MessageBuffer _packetBuffer;
-	SafeVector<MessageBuffer> _writeQueue;
 
 	size_t getSizeLeft() { return _recvBuffer.GetRemainingSpace(); }
 	size_t getActiveSize() { return _recvBuffer.GetActiveSize(); }

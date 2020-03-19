@@ -21,6 +21,7 @@ QueryResult::QueryResult(MYSQL_RES* res)
 		}
 	}
 }
+
 QueryResult::~QueryResult()
 {
 	if (_resultStorage != nullptr)

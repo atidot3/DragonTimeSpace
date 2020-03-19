@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS `characters` (
   `Direction_Y` float(11,6) NOT NULL DEFAULT 0.000000,
   `Money` INT(11) unsigned NOT NULL DEFAULT 0,
   `Welpoint` INT(11) unsigned NOT NULL DEFAULT 0,
-  `Stone` int(11) unsigned NOT NULL DEFAULT 255,
+  `Stone` int(11) unsigned NOT NULL DEFAULT 0,
   `Tilizhi` int(11) NOT NULL DEFAULT 0,
   `Edupoint` int(11) NOT NULL DEFAULT 0,
   `Cooppoint` int(11) NOT NULL DEFAULT 0,

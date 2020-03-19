@@ -10,13 +10,13 @@
 class CAuthQuery final
 {
 public:
-	void	GetIpBanned(const std::string& sAddress, boost::function<void(std::shared_ptr<QueryResult>)> callback);
-	void	GetMACBanned(const std::string&  MAC, boost::function<void(std::shared_ptr<QueryResult>)> callback);
-	void	GetAccountInfoByUsername(const std::string& sUsername, boost::function<void(std::shared_ptr<QueryResult>)> callback);
-	void	GetAccountInfoByAccountID(const uint32_t& iAccountId, boost::function<void(std::shared_ptr<QueryResult>)> callback);
-	void	UpdateAuthKeyByAccountID(const char *authKey, const uint32_t& iAccountId);
-	void	UpdateLastServerIDByAccountID(const int& iLastServerId, const uint32_t& iAccountId);
-	void	UpdateLastChannelIDByAccountID(const int& iLastChannelId, const uint32_t& iAccountId);
+	std::unique_ptr<QueryResult>	GetIpBanned(const std::string& sAddress, bool& ret) const;
+	std::unique_ptr<QueryResult>	GetMACBanned(const std::string&  MAC, bool& ret) const;
+	std::unique_ptr<QueryResult>	GetAccountInfoByUsername(const std::string& sUsername, bool& ret) const;
+	std::unique_ptr<QueryResult>	GetAccountInfoByAccountID(const uint32_t& iAccountId, bool& ret) const;
+	void	UpdateAuthKeyByAccountID(const char *authKey, const uint32_t& iAccountId) const;
+	void	UpdateLastServerIDByAccountID(const int& iLastServerId, const uint32_t& iAccountId) const;
+	void	UpdateLastChannelIDByAccountID(const int& iLastChannelId, const uint32_t& iAccountId) const;
 };
 
 #endif //_AUTHQUERY_H_

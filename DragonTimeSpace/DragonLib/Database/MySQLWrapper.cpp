@@ -32,10 +32,10 @@ MySQLConnWrapper::~MySQLConnWrapper()
 {
 	/* Execute all remaining query's*/
 	LOG_TRACE << "MySQL execute all remaining query's...";
-	while (_queue.size() > 0);
+	//while (_queue.size() > 0);
 
-	_running = false;
-	_worker.join();
+	//_running = false;
+	//_worker.join();
 
 	// -- Await everything to be done
 	std::this_thread::sleep_for(std::chrono::seconds(5));
@@ -46,8 +46,8 @@ MySQLConnWrapper::~MySQLConnWrapper()
 MySQLConnWrapper::MySQLConnWrapper()
 	: _con{nullptr}
 	, _reconnecting{ false }
-	, _queue{}
-	, _running{ false }
+	//, _queue{}
+	//, _running{ false }
 {
 	_con = mysql_init(NULL);
 	if (_con == nullptr)
@@ -66,7 +66,7 @@ MySQLConnWrapper::MySQLConnWrapper()
 			throw std::runtime_error("Unable to set mysql options.");
 		}
 	}
-	_worker = std::thread(&MySQLConnWrapper::run, this);
+	//_worker = std::thread(&MySQLConnWrapper::run, this);
 }
 bool MySQLConnWrapper::manageException(uint32_t errNo, uint8_t attempts /*= 5*/)
 {
@@ -202,7 +202,50 @@ char* MySQLConnWrapper::EscapeString(const std::string& str)
 	return to;
 }
 
-void MySQLConnWrapper::RealExecuteQuery(const std::string sqlQuery, boost::function<void(std::shared_ptr<QueryResult>)> callBack)
+std::unique_ptr<QueryResult> MySQLConnWrapper::ExecuteQuery(const std::string& query, bool& ret)
+{
+	if (!_con)
+	{
+		LOG_FATAL << "Connection not setup.";
+		ret = false;
+		return nullptr;
+	}
+	if (mysql_query(_con, query.c_str()))
+	{
+		LOG_ERROR << "SQL causing error: " << query;
+		// If it returns true, an error was handled successfully (i.e. reconnection)
+		uint32_t lErrno = mysql_errno(_con);
+		if (!manageException(lErrno))
+		{
+			ret = false;
+			return nullptr;
+		}
+	}
+	ret = true;
+	auto result = std::make_unique<QueryResult>(mysql_store_result(_con));
+	result->setInsertedID(mysql_insert_id(_con));
+
+	return result;
+}
+
+void MySQLConnWrapper::DirectExecute(const std::string query)
+{
+	if (!_con)
+	{
+		LOG_FATAL << "Connection not setup.";
+		return;
+	}
+	if (mysql_query(_con, query.c_str()))
+	{
+		LOG_ERROR << "SQL causing error: " << query;
+		// If it returns true, an error was handled successfully (i.e. reconnection)
+		uint32_t lErrno = mysql_errno(_con);
+		if (!manageException(lErrno))
+			return;
+	}
+}
+
+/*void MySQLConnWrapper::RealExecuteQuery(const std::string sqlQuery, boost::function<void(std::shared_ptr<QueryResult>)> callBack)
 {
 	if (!_con)
 	{
@@ -230,10 +273,6 @@ void MySQLConnWrapper::RealExecuteQuery(const std::string sqlQuery, boost::funct
 		callBack(result);
 }
 
-void MySQLConnWrapper::DirectExecute(const std::string sqlQuery)
-{
-	ExecuteQuery(sqlQuery);
-}
 void MySQLConnWrapper::ExecuteQuery(const std::string sqlQuery, boost::function<void(std::shared_ptr<QueryResult>)> callBack)
 {
 	if (!_con)
@@ -277,4 +316,4 @@ void MySQLConnWrapper::DoWork()
 			delete query;
 		}
 	}
-}
+}*/
