@@ -9,8 +9,9 @@
 #include <Utils\Utils.h>
 
 #include <Configuration\Configuration.h>
-#include <Database\Repository\RepositoryManager.h>
 #include <Configuration\Configuration.h>
+
+#include <Database\Repository\RepositoryManager.h>
 
 //----------------------------------------
 //	Called when we open the socket
@@ -88,52 +89,68 @@ bool AuthSocket::OnLoginReq(const Packet& packet)
 
 	real_login* real_data = (real_login*)packet.GetPacketData();
 	
-	if (memcmp(real_data->password, "password", strlen("password")) == 0)
-	// -- On login ok
+	sQueryRepository.GetAuthRepository().GetAccountInfoByUsername(real_data->user, [this](std::shared_ptr<QueryResult> result)
 	{
-		LOG_DEBUG << "password ok";
-
-		login_accept login_ok;
+		if (!result)
 		{
-			memset(login_ok.ip, '\0', 16);
-			memset(login_ok.key, '\0', 256);
+			LOG_FATAL << "Query result were null";
+			return;
 		}
-		login_ok.size = sizeof(login_accept) - 4;
-		login_ok.CMD = 104;
-		login_ok.CMD_PARAM = 4;
-		login_ok.timestamp = 0;
-		login_ok.compress = 0;
-		login_ok.encrypt = 0;
+		if (result->rowsCount() <= 0)
+		{
+			LOG_FATAL << "No record for account";
+			return;
+		}
+		result->next();
 
-		login_ok.dwUserID = 14578;
-		login_ok.loginTempID = 421;
-		login_ok.state = BYTE(1);
-		login_ok.wdPort = WORD(50300);
+		//if (memcmp(real_data->password, "password", strlen("password")) == 0)
+			// -- On login ok
+		{
+			LOG_DEBUG << "password ok";
 
-		std::string ip = "192.168.1.6";
-		memcpy(login_ok.ip, ip.c_str(), strlen("192.168.1.6"));
-		memcpy(login_ok.key, "coucou", strlen("coucou"));
+			login_accept login_ok;
+			{
+				memset(login_ok.ip, '\0', 16);
+				memset(login_ok.key, '\0', 256);
+			}
+			login_ok.size = sizeof(login_accept) - 4;
+			login_ok.CMD = 104;
+			login_ok.CMD_PARAM = 4;
+			login_ok.timestamp = 0;
+			login_ok.compress = 0;
+			login_ok.encrypt = 0;
 
-		st_Write(login_ok);
-	}
-	// NEVER WORK ON THE CLIENT
-	else
-	LOG_FATAL << "SAN BOI CHECK ME HERE !";
-	// -- On login failed
-	{
-		LOG_DEBUG << "password ko";
-		login_failed failed;
+			login_ok.dwUserID = result->getUInt("AccountID");
+			login_ok.loginTempID = result->getUInt("AccountID");
+			login_ok.state = BYTE(1);
+			login_ok.wdPort = WORD(50300);
 
-		failed.size = sizeof(login_failed) - 4;
-		failed.CMD = 104;
-		failed.CMD_PARAM = 3;
-		failed.timestamp = 0;
-		failed.compress = 0;
-		failed.encrypt = 0;
+			std::string ip = "192.168.1.6";
+			memcpy(login_ok.ip, ip.c_str(), strlen("192.168.1.6"));
+			memcpy(login_ok.key, "coucou", strlen("coucou"));
 
-		failed.error_code = ResultCode::CREDENTIALS_FAILED;
+			st_Write(login_ok);
+		}
+		// NEVER WORK ON THE CLIENT
+		/*else
+			LOG_FATAL << "SAN BOI CHECK ME HERE !";
+		// -- On login failed
+		{
+			LOG_DEBUG << "password ko";
+			login_failed failed;
 
-		st_Write(failed);
-	}
+			failed.size = sizeof(login_failed) - 4;
+			failed.CMD = 104;
+			failed.CMD_PARAM = 3;
+			failed.timestamp = 0;
+			failed.compress = 0;
+			failed.encrypt = 0;
+
+			failed.error_code = ResultCode::CREDENTIALS_FAILED;
+
+			st_Write(failed);
+		}*/
+	});
+
 	return true;
 }

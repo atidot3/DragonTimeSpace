@@ -139,25 +139,37 @@ void log_data(const unsigned char* data, const int32_t& size)
 bool CGSocket::onReceiveUserInfo(const Packet& packet)
 {
 	LOG_DEBUG << "onReceiveUserInfo";
+	stIphoneLoginUserCmd_CS* login_data = (stIphoneLoginUserCmd_CS*)packet.GetPacketData();
+	LOG_DEBUG << "LOGIN FOR: " << login_data->accid << " tmp: " << login_data->temp_user_id;
 
-	ProtobufPacket<msg::MSG_Ret_LoginOnReturnCharList_SC> characterList(CommandID::Ret_LoginOnReturnCharList_SC);
+	sQueryRepository.GetCGServerRepository().GetCharacterlistByAccountId(login_data->accid, [this](std::shared_ptr<QueryResult> result)
+	{
+		if (!result)
+		{
+			LOG_FATAL << "Query result were null";
+			return;
+		}
+		
+		ProtobufPacket<msg::MSG_Ret_LoginOnReturnCharList_SC> characterList(CommandID::Ret_LoginOnReturnCharList_SC);
+		while (result->next())
+		{
+			auto it = characterList.get_protobuff().add_charlist();
+			it->set_charid(result->getUInt("CharacterID"));
+			it->set_level(result->getUInt("CurrentLevel"));
+			it->set_sex((msg::SEX)result->getByte("Gender"));
+			it->set_heroid(result->getUInt("HeroID"));
+			it->set_curheroid(result->getUInt("HeroID"));
+			it->set_facestyle(result->getUInt("Facestyle"));
+			it->set_haircolor(result->getUInt("Hairstyle"));
+			it->set_hairstyle(result->getUInt("Haircolor"));
+			it->set_avatarid(result->getUInt("AvatarID"));
+			it->set_mapname(std::move(std::string("Time and space city")));
+			it->set_name(std::move(std::string(result->getString("Name"))));
+		}
 
-	auto it = characterList.get_protobuff().add_charlist();
-	it->set_charid(1);
-	it->set_level(1);
-	it->set_sex(msg::SEX::FEMALE);
-	it->set_heroid(heroid);
-	it->set_curheroid(heroid);
-	it->set_facestyle(49);
-	it->set_haircolor(116);
-	it->set_hairstyle(45);
-	it->set_avatarid(4001);
-	it->set_mapname(std::move(std::string("Time and space city")));
-	it->set_name(std::move(std::string("Sangawku")));
-
-	characterList.compute();
-
-	ms_Write(characterList.get_buffer());
+		characterList.compute();
+		ms_Write(characterList.get_buffer());
+	});
 
 	return true;
 }
@@ -406,7 +418,89 @@ bool CGSocket::onReceiveCharCreate(const Packet& packet)
 	mapdata.get_protobuff().release_pos();
 
 	pktMain.get_protobuff().release_data();
+	
+	ProtobufPacket<msg::MSG_Ret_MapScreenBatchRefreshNpc_SC> npc_info(CommandID::Ret_MapScreenBatchRefreshNpc_SC);
+	{
+		auto const_map = sMapMgr.get_map(map_val.mapid());
+		auto const_map_info = const_map.get_map_info();
 
+		auto npc = sTBL.get_table<pb::npc_data>();
+		for (auto& is_ou_npc : npc.datas())
+		{
+			for (auto& const_npc : const_map_info._npc)
+			{
+				if (is_ou_npc.tbxid() == const_npc.id)
+				{
+					msg::FloatMovePos* pos = new msg::FloatMovePos();
+					{
+						pos->set_fx(const_npc.x);
+						pos->set_fy(const_npc.y);
+					}
+					msg::EntryIDType myType;
+					{
+						//myType.set_id(100);
+						//myType.set_type(0);
+					}
+					msg::MasterData master;
+					{
+						//master.set_country(1);
+						//master.set_allocated_idtype(&myType);
+						//master.set_name(std::move(std::string("Atidote")));
+						//master.set_teamid(0);
+					}
+					msg::CharacterMapShow cmshow;
+					{
+						//cmshow.set_avatarid(80);
+						//cmshow.set_heroid(80);
+						//cmshow.set_occupation(1);
+					}
+					msg::NPC_HatredList list;
+					{
+						// -- what am i doing
+						if (is_ou_npc.hatred_distance() > 0)
+						{
+							list.add_enemytempid(is_ou_npc.id());
+						}
+						else
+						{
+							list.set_npctempid(is_ou_npc.id());
+						}
+					}
+
+					auto npcs = npc_info.get_protobuff().add_data();
+					npcs->set_tempid(const_npc.id);
+					npcs->set_allocated_hatredlist(&list);
+					npcs->set_allocated_master(&master);
+					npcs->set_allocated_pos(pos);
+					npcs->set_allocated_showdata(&cmshow);
+					npcs->set_attspeed(0);
+					npcs->set_baseid(const_npc.id);
+					npcs->set_birth(false);
+					npcs->set_dir(const_npc.dir);
+					npcs->set_hp(is_ou_npc.maxhp());
+					npcs->set_maxhp(is_ou_npc.maxhp());
+					npcs->set_movespeed(0);
+					npcs->set_name(std::move(std::string(is_ou_npc.name())));
+					//npcs->set_titlename();
+					npcs->set_visit(0);
+
+					LOG_DEBUG << "Spawn: " << npcs->baseid() << " at: " << npcs->pos().fx() << " : " << npcs->pos().fy();
+				}
+			}
+		}
+
+		npc_info.compute();
+
+		for (auto npcs = npc_info.get_protobuff().mutable_data()->begin(); npcs != npc_info.get_protobuff().mutable_data()->end(); ++npcs)
+		{
+			npcs->release_hatredlist();
+			npcs->release_master();
+			//npcs->release_pos();
+			npcs->release_showdata();
+		}
+	}
+
+	ms_Write(npc_info.get_buffer());
 	return true;
 }
 

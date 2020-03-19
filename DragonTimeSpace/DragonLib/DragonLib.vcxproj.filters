@@ -64,6 +64,12 @@
     <Filter Include="Tables\Definitions">
       <UniqueIdentifier>{ef53a629-ef4e-46ad-ac23-7839df4f492b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Database\Repository\Auth">
+      <UniqueIdentifier>{adeba802-951e-454a-bbff-cc55a7244f12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database\Repository\CGServer">
+      <UniqueIdentifier>{00ecafbd-bc12-4f5a-af31-51ce742cd497}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Configuration\Configuration.cpp">
@@ -356,6 +362,12 @@
     </ClCompile>
     <ClCompile Include="Network\Messages\basic.pb.cc">
       <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\Repository\Auth\AuthQuery.cpp">
+      <Filter>Database\Repository\Auth</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\Repository\CGServer\CGServerQuery.cpp">
+      <Filter>Database\Repository\CGServer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -709,6 +721,12 @@
     </ClInclude>
     <ClInclude Include="Network\ResultCodes.h">
       <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Database\Repository\Auth\AuthQuery.h">
+      <Filter>Database\Repository\Auth</Filter>
+    </ClInclude>
+    <ClInclude Include="Database\Repository\CGServer\CGServerQuery.h">
+      <Filter>Database\Repository\CGServer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

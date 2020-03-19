@@ -38,11 +38,9 @@ struct login_failed : public PACKETDATA, auth_packet
 {
 	BYTE error_code;
 };
-#pragma pack()
-
 
 // RECV
-struct real_login
+struct real_login : public auth_packet
 {
 	char user[48];
 	char password[33];
@@ -55,3 +53,4 @@ struct real_login
 	char pass_pod_password[9];
 	short user_type;
 };
+#pragma pack()

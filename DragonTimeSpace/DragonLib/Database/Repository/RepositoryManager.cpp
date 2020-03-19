@@ -1,22 +1,16 @@
 #include "RepositoryManager.h"
 
-/*CAuthQuery& RepositoryManager::GetAuthRepository()
+CAuthQuery& RepositoryManager::GetAuthRepository()
 {
 	static CAuthQuery authQuery;
 	return authQuery;
 }
 
-CCharQuery& RepositoryManager::GetCharRepository()
+CCGServerQuery& RepositoryManager::GetCGServerRepository()
 {
-	static CCharQuery charQuery;
-	return charQuery;
+	static CCGServerQuery server;
+	return server;
 }
-
-CGameQuery& RepositoryManager::GetGameRepository()
-{
-	static CGameQuery gameQuery;
-	return gameQuery;
-}*/
 
 RepositoryManager& RepositoryManager::instance()
 {

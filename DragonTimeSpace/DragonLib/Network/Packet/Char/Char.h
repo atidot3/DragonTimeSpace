@@ -27,6 +27,8 @@ struct PhoneInfo
 	char ram[100];
 	char os[100];
 };
+
+#pragma pack(1)
 struct stIphoneLoginUserCmd_CS : public char_packet
 {
 	uint32_t accid;
@@ -38,8 +40,6 @@ struct stIphoneLoginUserCmd_CS : public char_packet
 	BYTE szFlat[100];
 	PhoneInfo info;
 };
-
-#pragma pack(1)
 struct res_test
 {
 	WORD size;
