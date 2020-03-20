@@ -38,6 +38,12 @@ private:
 	*	Ping database to keep connection alive
 	*/
 	void ping();
+	/**
+	*	Register this server in lineid database
+	*/
+	void register_lineid();
+	void update_lineid(const ServerState& state);
+
 private:
 	Listener<CGSocket>	network;
 	boost::asio::io_context::strand strandPing;

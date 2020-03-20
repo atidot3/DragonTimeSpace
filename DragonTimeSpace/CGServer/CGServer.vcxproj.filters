@@ -39,6 +39,12 @@
     <ClCompile Include="Source\Game\World\WorldSession.cpp">
       <Filter>Source\Game\World</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Game\World\World.cpp">
+      <Filter>Source\Game\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\World\QueueManager.cpp">
+      <Filter>Source\Game\World</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Game\World\Map\map.h">
@@ -51,6 +57,12 @@
       <Filter>Source\Network</Filter>
     </ClInclude>
     <ClInclude Include="Source\Game\World\WorldSession.h">
+      <Filter>Source\Game\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\World\World.h">
+      <Filter>Source\Game\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\World\QueueManager.h">
       <Filter>Source\Game\World</Filter>
     </ClInclude>
   </ItemGroup>

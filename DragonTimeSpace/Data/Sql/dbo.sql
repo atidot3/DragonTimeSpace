@@ -62,3 +62,16 @@ CREATE TABLE IF NOT EXISTS `characters` (
   KEY `FKAccountID` (`AccountID`) USING BTREE,
   CONSTRAINT `fk_characters_account_1` FOREIGN KEY (`AccountID`) REFERENCES `account` (`AccountID`) ON DELETE CASCADE ON UPDATE NO ACTION
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+-- Data exporting was unselected.
+-- Dumping structure for table dbo.realmlist
+DROP TABLE IF EXISTS `realmlist`;
+CREATE TABLE IF NOT EXISTS `realmlist` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `LineID` int(11) unsigned NOT NULL DEFAULT 0,
+  `realmflags` tinyint(3) unsigned NOT NULL DEFAULT 2,
+  `population` float(10,0) unsigned NOT NULL DEFAULT 0,
+  `Ip` varchar(20) NOT NULL,
+  `Port` int(11) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Realm System';

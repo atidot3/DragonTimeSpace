@@ -17,10 +17,11 @@ private:
 		THREAD_UNSAFE
 	};
 public:
-	WorldSession(Socket* gameSock, const uint32_t& AccountID);
+	WorldSession(Socket* gameSock, std::function<void()> destruct_handler);
 	WorldSession() = default;
 	~WorldSession();
 	
+	void			SetAccountId(const uint32_t& accid) { _account_id = accid; }
 	bool			_ProcessGamePacket(const Packet& packet);
 	void			OnDisconnect();
 	//----------------------------------------
@@ -45,6 +46,7 @@ private:
 	bool				_firstLogging;
 	std::string			_ip;
 	SafeVector<Packet>	_packets;
+	std::function<void()> _destruct_handler;
 private:
 	using Method = std::function<bool(const Packet&)>;
 	using MapMethod = std::map<unsigned short, std::tuple<Method, THREAD_METHOD>>;

@@ -19,13 +19,14 @@
 //	WorldSession constructor
 //	This class handle all data related to the player
 //----------------------------------------
-WorldSession::WorldSession(Socket* gameSock, const uint32_t& AccountID)
-	: _account_id{ AccountID }
+WorldSession::WorldSession(Socket* gameSock, std::function<void()> destruct_handler)
+	: _account_id{ 0 }
 	, _socket{ gameSock }
 	//, _player{ nullptr }
 	, _firstLogging{ true }
 	, _ip{ "" }
 	, methodList{}
+	, _destruct_handler{ destruct_handler }
 {
 	// -- unsafe packet
 	{
@@ -63,7 +64,7 @@ WorldSession::WorldSession(Socket* gameSock, const uint32_t& AccountID)
 WorldSession::~WorldSession()
 {
 	_socket = nullptr;
-	//LOG_TRACE << "WorldSession destructed";
+	LOG_TRACE << "WorldSession destructed";
 }
 //----------------------------------------
 //	Trigger at socket close
@@ -215,9 +216,10 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 			error.get_protobuff().set_errorcode(ResultCode::DATABASE_ERROR);
 			error.compute();
 			SendPacket(error.get_buffer());
+			return false;
 		}
 	}
-	if (result->rowsCount() > 0)
+	if (result->rowsCount() <= 0)
 	{
 		LOG_FATAL << "Unable to retreive characterid: " << char_id;
 		auto error = ProtobufPacket<msg::MSG_Ret_Common_Error_SC>(CommandID::Ret_Common_Error_SC);
@@ -225,6 +227,7 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 			error.get_protobuff().set_errorcode(ResultCode::DATABASE_ERROR);
 			error.compute();
 			SendPacket(error.get_buffer());
+			return false;
 		}
 	}
 	result->next();
@@ -636,7 +639,6 @@ bool WorldSession::onReceiveCardPackInfo(const Packet& packet)
 		pack.compute();
 	}
 
-
 	ProtobufPacket<Obj::MSG_RetCardPackInfo_SC > res(CommandID::RetCardPackInfo_SC);
 	{
 		res.get_protobuff().set_allocated_data(&pack.get_protobuff());
@@ -719,7 +721,6 @@ bool WorldSession::onReceiveMyHeroAttrData(const Packet& packet)
 
 		attrData.compute();
 	}
-
 
 	ProtobufPacket<msg::MSG_RetHeroAttributeData_SC> attr(CommandID::RetHeroAttributeData_SC);
 	{
@@ -973,7 +974,7 @@ bool WorldSession::onReceiveReturnToChar(const Packet& packet)
 	//Save Character when returning to char select
 
 	bool ret;
-	auto result = sQueryRepository.GetCGServerRepository().GetCharacterlistByAccountId(1, ret);
+	auto result = sQueryRepository.GetCGServerRepository().GetCharacterlistByAccountId(_account_id, ret);
 	if (!ret)
 	{
 		LOG_FATAL << "Query error";
@@ -1000,6 +1001,9 @@ bool WorldSession::onReceiveReturnToChar(const Packet& packet)
 
 	characterList.compute();
 	SendPacket(characterList.get_buffer());
+
+	// -- call delete this
+	_destruct_handler();
 
 	return true;
 }

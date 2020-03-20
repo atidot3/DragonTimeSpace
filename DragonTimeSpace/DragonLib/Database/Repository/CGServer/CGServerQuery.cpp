@@ -48,3 +48,10 @@ const uint32_t& Haircolor, const uint32_t& Antenna, const std::string& name, boo
 
 	return sDB.ExecuteQuery(query.GetQuery(), ret);
 }
+
+std::unique_ptr<QueryResult>	CCGServerQuery::GetAllLineId(bool& ret) const
+{
+	Query query("SELECT * FROM `realmlist`;");
+
+	return sDB.ExecuteQuery(query.GetQuery(), ret);
+}

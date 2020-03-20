@@ -25,6 +25,7 @@ CGServer::CGServer(io_context_pool& pool)
 //----------------------------------------
 CGServer::~CGServer()
 {
+	update_lineid(ServerState::DOWN);
 	MySQLConnWrapper::Destruct();
 }
 
@@ -38,8 +39,8 @@ void CGServer::Init(io_context_pool& pool)
 	connectToDatabase();
 	sConfig.loadGameServerCharList();
 	sTBL.load(sConfig.GetServerTbxData());
-
 	sMapMgr.Initialize(pool);
+	register_lineid();
 
 	ping_timer.async_wait(strandPing.wrap(boost::bind(&CGServer::ping, this)));
 }
@@ -68,4 +69,69 @@ void CGServer::ping()
 void CGServer::run()
 {
 	network.run();
+}
+//----------------------------------------
+//	Update the server on lineid database
+//----------------------------------------
+void CGServer::update_lineid(const ServerState& state)
+{
+	bool ret = false;
+	Query query("UPDATE `realmlist` SET `realmflags` = '?', `population` = '?' WHERE `LineID` = '?';");
+	query.setValue((BYTE)state);
+	query.setValue(0);
+	query.setValue(sConfig.GetGameServerServerId());
+	auto result = sDB.ExecuteQuery(query.GetQuery(), ret);
+	// -- check wtf
+	if (!ret || !result)
+	{
+		throw std::runtime_error("Unable to update realmlist");
+	}
+	else if (ret && result)
+	{
+		LOG_INFO << "Server [" << sConfig.GetGameServerServerId() << "] updated to state: [" << state << "]" << std::endl;
+	}
+}
+//----------------------------------------
+//	Register the server on lineid database
+//----------------------------------------
+void CGServer::register_lineid()
+{
+	bool ret = false;
+	Query query("SELECT * FROM `realmlist` WHERE `LineID` = '?';");
+	query.setValue(sConfig.GetGameServerServerId());
+
+	auto result = sDB.ExecuteQuery(query.GetQuery(), ret);
+	if (!ret || !result)
+	{
+		// -- unable to request mysql
+		throw std::runtime_error("Unable to query database");
+	}
+	else
+	{
+		if (result->rowsCount() == 0)
+		{
+			// -- insert
+			query.setSQL("INSERT INTO `realmlist` (`LineID`, `realmflags`, `population`, `Ip`, `Port`) VALUES ('?', '?', '?', '?', '?');");
+			query.setValue(sConfig.GetGameServerServerId());
+			query.setValue(0);// todo enum
+			query.setValue(0);
+			query.setValue(sConfig.GetServerIp());
+			query.setValue(sConfig.GetPort());
+			result = sDB.ExecuteQuery(query.GetQuery(), ret);
+			// -- check wtf
+			if (!ret || !result)
+			{
+				throw std::runtime_error("Unable to add realmlist");
+			}
+			else if (ret && result)
+			{
+				LOG_INFO << "Server [" << sConfig.GetGameServerServerId() << "] registered" << std::endl;;
+			}
+		}
+		else
+		{
+			// -- update
+			update_lineid(ServerState::UP);
+		}
+	}
 }

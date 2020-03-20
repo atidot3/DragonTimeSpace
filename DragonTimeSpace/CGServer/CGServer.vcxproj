@@ -170,6 +170,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Game\World\Map\map.cpp" />
+    <ClCompile Include="Source\Game\World\QueueManager.cpp" />
+    <ClCompile Include="Source\Game\World\World.cpp" />
     <ClCompile Include="Source\Game\World\WorldSession.cpp" />
     <ClCompile Include="Source\main.cpp" />
     <ClCompile Include="Source\Network\CGServerCallback.cpp" />
@@ -178,6 +180,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Game\World\Map\map.h" />
+    <ClInclude Include="Source\Game\World\QueueManager.h" />
+    <ClInclude Include="Source\Game\World\World.h" />
     <ClInclude Include="Source\Game\World\WorldSession.h" />
     <ClInclude Include="Source\Network\CGServer.h" />
     <ClInclude Include="Source\Network\CGSocket.h" />

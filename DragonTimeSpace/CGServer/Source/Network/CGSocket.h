@@ -8,6 +8,11 @@
 class WorldSession;
 class CGSocket : public Socket
 {
+	enum SocketState
+	{
+		CHARACTER,
+		GAME
+	};
 public:
 	/**
 	*  Our socket constructor
@@ -25,11 +30,16 @@ private:
 	std::string macAddress;
 	uint32_t account_id;
 	std::shared_ptr<WorldSession> _session;
+	SocketState _socket_state;
 
 	using Method = std::function<bool(const Packet& packet)>;
 	using TupleMethod = std::tuple<unsigned short, Method>;
 	using MethodList = std::list<TupleMethod>;
 	MethodList methodList;
+
+private:
+	// -- Called only by on return to char screen
+	void release_worldsession();
 protected:
 	/**
 	*  We get incoming packets so process then

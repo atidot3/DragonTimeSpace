@@ -50,7 +50,7 @@ public:
 	~MySQLConnWrapper();
 
 	std::unique_ptr<QueryResult> ExecuteQuery(const std::string& sqlQuery, bool& ret);
-	void DirectExecute(const std::string sqlQuery);
+	void DirectExecute(const std::string& sqlQuery);
 
 private:
 	bool manageException(uint32_t errNo, uint8_t attempts = 5);

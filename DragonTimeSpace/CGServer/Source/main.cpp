@@ -41,12 +41,14 @@ int main()
 	catch (std::exception& e)
 	{
 		LOG_FATAL << "Exception catch: " << std::string(e.what());
+		system("PAUSE");
 	}
 	catch (boost::exception const& e)
 	{
 		LOG_FATAL << "Error on main: [" << boost::diagnostic_information(e) << "]";
+		system("PAUSE");
 	}
-	LOG_TRACE << "=========== Application exited. ===========";
 
+	LOG_TRACE << "=========== Application exited. ===========";
 	return EXIT_SUCCESS;
 }

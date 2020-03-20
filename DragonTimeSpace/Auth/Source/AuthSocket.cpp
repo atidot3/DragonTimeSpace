@@ -133,22 +133,61 @@ bool AuthSocket::OnLoginReq(const Packet& packet)
 		login_ok.dwUserID = result->getUInt("AccountID");
 		login_ok.loginTempID = result->getUInt("AccountID");
 		login_ok.state = BYTE(1);
-		
-		/*
-			SELECT * FROM REALMLIST WHERE LOAD < MAX_PLAYER;
-		*/
-		LOG_INFO << "At send player to CGSERVER need to check on database LINEID";
-		std::string ip = "192.168.1.6";
-		memcpy(login_ok.ip, ip.c_str(), strlen("192.168.1.6"));
-		memcpy(login_ok.key, "coucou", strlen("coucou"));
-		login_ok.wdPort = WORD(50300);
 
+		result = sQueryRepository.GetCGServerRepository().GetAllLineId(ret);
+		if (!ret)
+		{
+			LOG_FATAL << "Unable to retreive realmlist";
+			failed.error_code = ResultCode::DATABASE_ERROR;
+			st_Write(failed);
+			return false;
+		}
+		if (result->rowsCount() == 0)
+		{
+			LOG_FATAL << "No regristrated realmlist";
+			failed.error_code = ResultCode::DATABASE_ERROR;
+			st_Write(failed);
+			return false;
+		}
+
+		// -- Get all online server
+		struct _available_server
+		{
+			std::string ip;
+			WORD port;
+		};
+		std::map<uint32_t, _available_server> _servers;
+		while (result->next())
+		{
+			const ServerState server_state = (ServerState)result->getByte("realmflags");
+			if (server_state == ServerState::UP)
+			{
+				_available_server _server;
+				const uint32_t population = result->getUInt("population");
+				_server.ip = result->getString("Ip");
+				_server.port = (WORD)result->getUInt("Port");
+
+				_servers.emplace(population, std::move(_server));
+			}
+		}
+
+		if (_servers.size() == 0)
+		{
+			LOG_FATAL << "No up CGServer found";
+			failed.error_code = ResultCode::DATABASE_ERROR;
+			st_Write(failed);
+			return true;
+		}
+
+		// -- send player to the lowest populated
+		for (auto& c : _servers)
+		{
+			login_ok.wdPort = c.second.port;
+			memcpy(login_ok.ip, c.second.ip.c_str(), c.second.ip.size());
+			memcpy(login_ok.key, "coucou", strlen("coucou"));
+			break;
+		}
 		st_Write(login_ok);
-		return true;
 	}
-
-	failed.error_code = ResultCode::CREDENTIALS_FAILED;
-	st_Write(failed);
-
 	return true;
 }

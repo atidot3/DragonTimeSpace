@@ -10,5 +10,10 @@
 #define LINE(l)					LINE_IMP( l )
 #define TS_CODE_TRACE()			"[" __FILE__ "] [" __FUNCTION__ "] [" LINE( __LINE__ ) "]"
 
+enum ServerState
+{
+	DOWN = 0,
+	UP
+};
 
 #endif

@@ -1,5 +1,6 @@
 ﻿#include "CGSocket.h"
 
+#include "../Game/World/World.h"
 #include "../Game/World/WorldSession.h"
 #include "../Game/World/Map/map.h"
 
@@ -24,6 +25,8 @@
 //----------------------------------------
 CGSocket::CGSocket(boost::asio::io_context &service)
 	: Socket{ service }
+	, _session{ std::make_shared<WorldSession>(this, std::bind(&CGSocket::release_worldsession, this)) }
+	, _socket_state{ SocketState::CHARACTER }
 {
 	// -- Process character server
 	methodList.emplace_back(CommandID::UserVerifyVerCmd_CS, std::bind(&CGSocket::onCheckGatewayVer, this, std::placeholders::_1));
@@ -37,6 +40,9 @@ CGSocket::CGSocket(boost::asio::io_context &service)
 //----------------------------------------
 CGSocket::~CGSocket()
 {
+	sWorld.RemoveSession(_session, "");
+	sWorld.RemoveFromQueue(_session);
+
 	LOG_TRACE << "CGSocket connection close: [" << GetRemoteEndPoint() << "]";
 }
 void CGSocket::OnConnected()
@@ -53,21 +59,25 @@ bool CGSocket::ProcessIncomingData(const Packet& packet)
 {
 	char_packet* p = (char_packet*)packet.GetPacketData();
 
-	for (const auto& method : methodList)
+	switch (_socket_state)
 	{
-		if (std::get<0>(method) == p->CMD)
+		case SocketState::CHARACTER:
 		{
-			auto _method = std::get<1>(method);
-			_method(packet);
-			return true;
+			for (const auto& method : methodList)
+			{
+				if (std::get<0>(method) == p->CMD)
+				{
+					auto _method = std::get<1>(method);
+					_method(packet);
+					return true;
+				}
+			}
+		}
+		case SocketState::GAME:
+		{
+			return _session->_ProcessGamePacket(packet);
 		}
 	}
-
-	if (_session)
-	{
-		return _session->_ProcessGamePacket(packet);
-	}
-
 	LOG_WARNING << "Get an unexpected packet: [" << GetPacketName(p->CMD) << "]";
 	internalError = 1000;
 	return false;
@@ -87,8 +97,8 @@ bool CGSocket::onReceiveUserInfo(const Packet& packet)
 {
 	LOG_DEBUG << "onReceiveUserInfo";
 	stIphoneLoginUserCmd_CS* login_data = (stIphoneLoginUserCmd_CS*)packet.GetPacketData();
-
 	account_id = login_data->accid;
+	_session->SetAccountId(account_id);
 
 	bool ret;
 	auto result = sQueryRepository.GetCGServerRepository().GetCharacterlistByAccountId(login_data->accid, ret);
@@ -118,6 +128,23 @@ bool CGSocket::onReceiveUserInfo(const Packet& packet)
 
 	characterList.compute();
 	ms_Write(characterList.get_buffer());
+
+	/*if (!sWorld.IsFull())
+	{
+		sWorld.AddSession(_session);
+	}
+	// -- refuse to continue untill we got pushed in World list
+	else if (sWorld.IsFull() && result->rowsCount() > 0)
+	{
+		sWorld.AddToQueue(_session);
+		auto queue = ProtobufPacket<msg::MSG_Ret_QueueInfo_SC>(CommandID::Ret_QueueInfo_SC);
+		queue.get_protobuff().set_queue_user_num(sWorld.GetQueuePosition(_session));
+		queue.get_protobuff().set_queue_wait_time(sWorld.GetMyQueueEstimatedTime(_session));
+		queue.compute();
+		ms_Write(queue.get_buffer());
+		return true;
+	}*/
+
 	return true;
 }
 
@@ -139,9 +166,6 @@ bool CGSocket::onReceiveCharCreate(const Packet& packet)
 	}
 	if (hero != nullptr)
 	{
-		if (!_session)
-			_session = std::make_shared<WorldSession>(this, account_id);
-
 		bool ret = false;
 		auto result = sQueryRepository.GetCGServerRepository().InsertCharacterByAccountId(account_id, _hero.get_protobuff().heroid(), hero->newavatar(), _hero.get_protobuff().sex(), _hero.get_protobuff().facestyle(),
 			_hero.get_protobuff().hairstyle(), _hero.get_protobuff().haircolor(), _hero.get_protobuff().antenna(), _hero.get_protobuff().name(), ret);
@@ -157,7 +181,12 @@ bool CGSocket::onReceiveCharCreate(const Packet& packet)
 			ms_Write(res.get_buffer());
 			return false;
 		}
-		_session->CreatePlayer(result->getInsertedID());
+		if (!_session->CreatePlayer(result->getInsertedID()))
+		{
+			return true;
+		}
+		else
+			_socket_state = SocketState::GAME;
 
 		ProtobufPacket<msg::MSG_START_CUTSCENE_SC> cutscene(CommandID::NEW_ROLE_CUTSCENE_SCS);
 		{
@@ -184,10 +213,14 @@ bool CGSocket::onSelectCharToLogin(const Packet& packet)
 
 	auto _hero = ProtobufPacket<msg::MSG_Req_SelectCharToLogin_CS>(packet);
 
-	if (_session = std::make_shared<WorldSession>(this, 1))
+	if (_session->CreatePlayer(_hero.get_protobuff().charid()))
 	{
-		_session->CreatePlayer(_hero.get_protobuff().charid());
+		_socket_state = SocketState::GAME;
 	}
 
 	return true;
+}
+void CGSocket::release_worldsession()
+{
+	_socket_state = SocketState::CHARACTER;
 }

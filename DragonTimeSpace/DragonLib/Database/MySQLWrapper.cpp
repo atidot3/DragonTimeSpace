@@ -228,7 +228,7 @@ std::unique_ptr<QueryResult> MySQLConnWrapper::ExecuteQuery(const std::string& q
 	return result;
 }
 
-void MySQLConnWrapper::DirectExecute(const std::string query)
+void MySQLConnWrapper::DirectExecute(const std::string& query)
 {
 	if (!_con)
 	{
