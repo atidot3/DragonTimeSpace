@@ -33,6 +33,7 @@
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
+#include "msg_enum.pb.h"
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 #define PROTOBUF_INTERNAL_EXPORT_message_2eproto
@@ -48,7 +49,7 @@ struct TableStruct_message_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxillaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[100]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[99]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -74,9 +75,6 @@ extern CharacterMapDataDefaultTypeInternal _CharacterMapData_default_instance_;
 class CharacterMapShow;
 class CharacterMapShowDefaultTypeInternal;
 extern CharacterMapShowDefaultTypeInternal _CharacterMapShow_default_instance_;
-class EntryIDType;
-class EntryIDTypeDefaultTypeInternal;
-extern EntryIDTypeDefaultTypeInternal _EntryIDType_default_instance_;
 class FloatMovePos;
 class FloatMovePosDefaultTypeInternal;
 extern FloatMovePosDefaultTypeInternal _FloatMovePos_default_instance_;
@@ -364,7 +362,6 @@ template<> ::msg::CharacterFightData* Arena::CreateMaybeMessage<::msg::Character
 template<> ::msg::CharacterMainData* Arena::CreateMaybeMessage<::msg::CharacterMainData>(Arena*);
 template<> ::msg::CharacterMapData* Arena::CreateMaybeMessage<::msg::CharacterMapData>(Arena*);
 template<> ::msg::CharacterMapShow* Arena::CreateMaybeMessage<::msg::CharacterMapShow>(Arena*);
-template<> ::msg::EntryIDType* Arena::CreateMaybeMessage<::msg::EntryIDType>(Arena*);
 template<> ::msg::FloatMovePos* Arena::CreateMaybeMessage<::msg::FloatMovePos>(Arena*);
 template<> ::msg::FuncNpcData* Arena::CreateMaybeMessage<::msg::FuncNpcData>(Arena*);
 template<> ::msg::LineItem* Arena::CreateMaybeMessage<::msg::LineItem>(Arena*);
@@ -484,230 +481,7 @@ inline bool ChooseTargetType_Parse(
   return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<ChooseTargetType>(
     ChooseTargetType_descriptor(), name, value);
 }
-enum SEX : int {
-  Male = 1,
-  FEMALE = 2
-};
-bool SEX_IsValid(int value);
-constexpr SEX SEX_MIN = Male;
-constexpr SEX SEX_MAX = FEMALE;
-constexpr int SEX_ARRAYSIZE = SEX_MAX + 1;
-
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* SEX_descriptor();
-template<typename T>
-inline const std::string& SEX_Name(T enum_t_value) {
-  static_assert(::std::is_same<T, SEX>::value ||
-    ::std::is_integral<T>::value,
-    "Incorrect type passed to function SEX_Name.");
-  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
-    SEX_descriptor(), enum_t_value);
-}
-inline bool SEX_Parse(
-    const std::string& name, SEX* value) {
-  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<SEX>(
-    SEX_descriptor(), name, value);
-}
-enum ERechargeReturnCode : int {
-  BULLSHIT = 1
-};
-bool ERechargeReturnCode_IsValid(int value);
-constexpr ERechargeReturnCode ERechargeReturnCode_MIN = BULLSHIT;
-constexpr ERechargeReturnCode ERechargeReturnCode_MAX = BULLSHIT;
-constexpr int ERechargeReturnCode_ARRAYSIZE = ERechargeReturnCode_MAX + 1;
-
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ERechargeReturnCode_descriptor();
-template<typename T>
-inline const std::string& ERechargeReturnCode_Name(T enum_t_value) {
-  static_assert(::std::is_same<T, ERechargeReturnCode>::value ||
-    ::std::is_integral<T>::value,
-    "Incorrect type passed to function ERechargeReturnCode_Name.");
-  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
-    ERechargeReturnCode_descriptor(), enum_t_value);
-}
-inline bool ERechargeReturnCode_Parse(
-    const std::string& name, ERechargeReturnCode* value) {
-  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<ERechargeReturnCode>(
-    ERechargeReturnCode_descriptor(), name, value);
-}
-enum MapDataType : int {
-  MAP_DATATYPE_USER = 1,
-  MAP_DATATYPE_NPC = 2
-};
-bool MapDataType_IsValid(int value);
-constexpr MapDataType MapDataType_MIN = MAP_DATATYPE_USER;
-constexpr MapDataType MapDataType_MAX = MAP_DATATYPE_NPC;
-constexpr int MapDataType_ARRAYSIZE = MapDataType_MAX + 1;
-
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* MapDataType_descriptor();
-template<typename T>
-inline const std::string& MapDataType_Name(T enum_t_value) {
-  static_assert(::std::is_same<T, MapDataType>::value ||
-    ::std::is_integral<T>::value,
-    "Incorrect type passed to function MapDataType_Name.");
-  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
-    MapDataType_descriptor(), enum_t_value);
-}
-inline bool MapDataType_Parse(
-    const std::string& name, MapDataType* value) {
-  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<MapDataType>(
-    MapDataType_descriptor(), name, value);
-}
 // ===================================================================
-
-class EntryIDType :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:msg.EntryIDType) */ {
- public:
-  EntryIDType();
-  virtual ~EntryIDType();
-
-  EntryIDType(const EntryIDType& from);
-  EntryIDType(EntryIDType&& from) noexcept
-    : EntryIDType() {
-    *this = ::std::move(from);
-  }
-
-  inline EntryIDType& operator=(const EntryIDType& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline EntryIDType& operator=(EntryIDType&& from) noexcept {
-    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
-    return _internal_metadata_.unknown_fields();
-  }
-  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
-    return _internal_metadata_.mutable_unknown_fields();
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const EntryIDType& default_instance();
-
-  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const EntryIDType* internal_default_instance() {
-    return reinterpret_cast<const EntryIDType*>(
-               &_EntryIDType_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    0;
-
-  friend void swap(EntryIDType& a, EntryIDType& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(EntryIDType* other) {
-    if (other == this) return;
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline EntryIDType* New() const final {
-    return CreateMaybeMessage<EntryIDType>(nullptr);
-  }
-
-  EntryIDType* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<EntryIDType>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const EntryIDType& from);
-  void MergeFrom(const EntryIDType& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(EntryIDType* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "msg.EntryIDType";
-  }
-  private:
-  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
-    return nullptr;
-  }
-  inline void* MaybeArenaPtr() const {
-    return nullptr;
-  }
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_message_2eproto);
-    return ::descriptor_table_message_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kIdFieldNumber = 1,
-    kTypeFieldNumber = 2,
-  };
-  // optional uint64 id = 1;
-  bool has_id() const;
-  private:
-  bool _internal_has_id() const;
-  public:
-  void clear_id();
-  ::PROTOBUF_NAMESPACE_ID::uint64 id() const;
-  void set_id(::PROTOBUF_NAMESPACE_ID::uint64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::uint64 _internal_id() const;
-  void _internal_set_id(::PROTOBUF_NAMESPACE_ID::uint64 value);
-  public:
-
-  // optional uint32 type = 2;
-  bool has_type() const;
-  private:
-  bool _internal_has_type() const;
-  public:
-  void clear_type();
-  ::PROTOBUF_NAMESPACE_ID::uint32 type() const;
-  void set_type(::PROTOBUF_NAMESPACE_ID::uint32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::uint32 _internal_type() const;
-  void _internal_set_type(::PROTOBUF_NAMESPACE_ID::uint32 value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:msg.EntryIDType)
- private:
-  class _Internal;
-
-  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
-  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  ::PROTOBUF_NAMESPACE_ID::uint64 id_;
-  ::PROTOBUF_NAMESPACE_ID::uint32 type_;
-  friend struct ::TableStruct_message_2eproto;
-};
-// -------------------------------------------------------------------
 
 class CharacterBaseData :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:msg.CharacterBaseData) */ {
@@ -758,7 +532,7 @@ class CharacterBaseData :
                &_CharacterBaseData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    1;
+    0;
 
   friend void swap(CharacterBaseData& a, CharacterBaseData& b) {
     a.Swap(&b);
@@ -1250,7 +1024,7 @@ class AttributeData :
                &_AttributeData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    2;
+    1;
 
   friend void swap(AttributeData& a, AttributeData& b) {
     a.Swap(&b);
@@ -2245,7 +2019,7 @@ class CharacterFightData :
                &_CharacterFightData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    2;
 
   friend void swap(CharacterFightData& a, CharacterFightData& b) {
     a.Swap(&b);
@@ -2385,7 +2159,7 @@ class CharacterMainData :
                &_CharacterMainData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    4;
+    3;
 
   friend void swap(CharacterMainData& a, CharacterMainData& b) {
     a.Swap(&b);
@@ -2578,7 +2352,7 @@ class CharacterMapShow :
                &_CharacterMapShow_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    4;
 
   friend void swap(CharacterMapShow& a, CharacterMapShow& b) {
     a.Swap(&b);
@@ -2868,7 +2642,7 @@ class CharacterMapData :
                &_CharacterMapData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    5;
 
   friend void swap(CharacterMapData& a, CharacterMapData& b) {
     a.Swap(&b);
@@ -3172,7 +2946,7 @@ class StateItem :
                &_StateItem_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    6;
 
   friend void swap(StateItem& a, StateItem& b) {
     a.Swap(&b);
@@ -3411,7 +3185,7 @@ class MapUserData :
                &_MapUserData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    7;
 
   friend void swap(MapUserData& a, MapUserData& b) {
     a.Swap(&b);
@@ -3624,7 +3398,7 @@ class MasterData :
                &_MasterData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    8;
 
   friend void swap(MasterData& a, MasterData& b) {
     a.Swap(&b);
@@ -3833,7 +3607,7 @@ class MapNpcData :
                &_MapNpcData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    9;
 
   friend void swap(MapNpcData& a, MapNpcData& b) {
     a.Swap(&b);
@@ -4225,7 +3999,7 @@ class MSG_Create_Role_CS :
                &_MSG_Create_Role_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    10;
 
   friend void swap(MSG_Create_Role_CS& a, MSG_Create_Role_CS& b) {
     a.Swap(&b);
@@ -4477,7 +4251,7 @@ class MSG_ChangeName_CS :
                &_MSG_ChangeName_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    11;
 
   friend void swap(MSG_ChangeName_CS& a, MSG_ChangeName_CS& b) {
     a.Swap(&b);
@@ -4624,7 +4398,7 @@ class MSG_Ret_ChangeName_SC :
                &_MSG_Ret_ChangeName_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    12;
 
   friend void swap(MSG_Ret_ChangeName_SC& a, MSG_Ret_ChangeName_SC& b) {
     a.Swap(&b);
@@ -4786,7 +4560,7 @@ class MSG_DataCharacterMain_SC :
                &_MSG_DataCharacterMain_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    13;
 
   friend void swap(MSG_DataCharacterMain_SC& a, MSG_DataCharacterMain_SC& b) {
     a.Swap(&b);
@@ -4928,7 +4702,7 @@ class MSG_Req_Use_GM_CS :
                &_MSG_Req_Use_GM_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    14;
 
   friend void swap(MSG_Req_Use_GM_CS& a, MSG_Req_Use_GM_CS& b) {
     a.Swap(&b);
@@ -5075,7 +4849,7 @@ class MSG_Ret_Common_Error_SC :
                &_MSG_Ret_Common_Error_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    16;
+    15;
 
   friend void swap(MSG_Ret_Common_Error_SC& a, MSG_Ret_Common_Error_SC& b) {
     a.Swap(&b);
@@ -5215,7 +4989,7 @@ class MSG_Ret_Common_Tips_SC :
                &_MSG_Ret_Common_Tips_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    17;
+    16;
 
   friend void swap(MSG_Ret_Common_Tips_SC& a, MSG_Ret_Common_Tips_SC& b) {
     a.Swap(&b);
@@ -5362,7 +5136,7 @@ class MSG_Req_Main_Data_CS :
                &_MSG_Req_Main_Data_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    18;
+    17;
 
   friend void swap(MSG_Req_Main_Data_CS& a, MSG_Req_Main_Data_CS& b) {
     a.Swap(&b);
@@ -5485,7 +5259,7 @@ class MSG_Req_Test_Network_CS :
                &_MSG_Req_Test_Network_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    19;
+    18;
 
   friend void swap(MSG_Req_Test_Network_CS& a, MSG_Req_Test_Network_CS& b) {
     a.Swap(&b);
@@ -5671,7 +5445,7 @@ class MSG_Ret_GameTime_SC :
                &_MSG_Ret_GameTime_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    20;
+    19;
 
   friend void swap(MSG_Ret_GameTime_SC& a, MSG_Ret_GameTime_SC& b) {
     a.Swap(&b);
@@ -5811,7 +5585,7 @@ class MSG_Req_UserGameTime_SC :
                &_MSG_Req_UserGameTime_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    21;
+    20;
 
   friend void swap(MSG_Req_UserGameTime_SC& a, MSG_Req_UserGameTime_SC& b) {
     a.Swap(&b);
@@ -5934,7 +5708,7 @@ class MSG_Ret_UserGameTime_CS :
                &_MSG_Ret_UserGameTime_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    22;
+    21;
 
   friend void swap(MSG_Ret_UserGameTime_CS& a, MSG_Ret_UserGameTime_CS& b) {
     a.Swap(&b);
@@ -6089,7 +5863,7 @@ class MSG_Ret_ServerTime_SC :
                &_MSG_Ret_ServerTime_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    23;
+    22;
 
   friend void swap(MSG_Ret_ServerTime_SC& a, MSG_Ret_ServerTime_SC& b) {
     a.Swap(&b);
@@ -6229,7 +6003,7 @@ class MSG_Ret_NotifyUserKickout_SC :
                &_MSG_Ret_NotifyUserKickout_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    24;
+    23;
 
   friend void swap(MSG_Ret_NotifyUserKickout_SC& a, MSG_Ret_NotifyUserKickout_SC& b) {
     a.Swap(&b);
@@ -6352,7 +6126,7 @@ class MSG_Ret_ServerLoginFailed_SC :
                &_MSG_Ret_ServerLoginFailed_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    25;
+    24;
 
   friend void swap(MSG_Ret_ServerLoginFailed_SC& a, MSG_Ret_ServerLoginFailed_SC& b) {
     a.Swap(&b);
@@ -6492,7 +6266,7 @@ class MSG_Ret_QueueInfo_SC :
                &_MSG_Ret_QueueInfo_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    26;
+    25;
 
   friend void swap(MSG_Ret_QueueInfo_SC& a, MSG_Ret_QueueInfo_SC& b) {
     a.Swap(&b);
@@ -6647,7 +6421,7 @@ class MSG_Ret_UserMapInfo_SC :
                &_MSG_Ret_UserMapInfo_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    27;
+    26;
 
   friend void swap(MSG_Ret_UserMapInfo_SC& a, MSG_Ret_UserMapInfo_SC& b) {
     a.Swap(&b);
@@ -6908,7 +6682,7 @@ class MSG_Ret_NineScreenRefreshPlayer_SC :
                &_MSG_Ret_NineScreenRefreshPlayer_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    28;
+    27;
 
   friend void swap(MSG_Ret_NineScreenRefreshPlayer_SC& a, MSG_Ret_NineScreenRefreshPlayer_SC& b) {
     a.Swap(&b);
@@ -7053,7 +6827,7 @@ class MSG_Ret_MapScreenRefreshCharacter_SC :
                &_MSG_Ret_MapScreenRefreshCharacter_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    29;
+    28;
 
   friend void swap(MSG_Ret_MapScreenRefreshCharacter_SC& a, MSG_Ret_MapScreenRefreshCharacter_SC& b) {
     a.Swap(&b);
@@ -7195,7 +6969,7 @@ class MSG_Ret_MapScreenRemoveCharacter_SC :
                &_MSG_Ret_MapScreenRemoveCharacter_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    30;
+    29;
 
   friend void swap(MSG_Ret_MapScreenRemoveCharacter_SC& a, MSG_Ret_MapScreenRemoveCharacter_SC& b) {
     a.Swap(&b);
@@ -7335,7 +7109,7 @@ class MSG_Ret_MapScreenRemoveCharacterShowCorpse_SC :
                &_MSG_Ret_MapScreenRemoveCharacterShowCorpse_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    31;
+    30;
 
   friend void swap(MSG_Ret_MapScreenRemoveCharacterShowCorpse_SC& a, MSG_Ret_MapScreenRemoveCharacterShowCorpse_SC& b) {
     a.Swap(&b);
@@ -7475,7 +7249,7 @@ class MSG_Ret_MapScreenBatchRemoveCharacter_SC :
                &_MSG_Ret_MapScreenBatchRemoveCharacter_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    32;
+    31;
 
   friend void swap(MSG_Ret_MapScreenBatchRemoveCharacter_SC& a, MSG_Ret_MapScreenBatchRemoveCharacter_SC& b) {
     a.Swap(&b);
@@ -7624,7 +7398,7 @@ class MSG_Ret_StateList_SC :
                &_MSG_Ret_StateList_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    33;
+    32;
 
   friend void swap(MSG_Ret_StateList_SC& a, MSG_Ret_StateList_SC& b) {
     a.Swap(&b);
@@ -7769,7 +7543,7 @@ class FloatMovePos :
                &_FloatMovePos_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    34;
+    33;
 
   friend void swap(FloatMovePos& a, FloatMovePos& b) {
     a.Swap(&b);
@@ -7924,7 +7698,7 @@ class MoveData :
                &_MoveData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    35;
+    34;
 
   friend void swap(MoveData& a, MoveData& b) {
     a.Swap(&b);
@@ -8081,7 +7855,7 @@ class MSG_Req_Move_CS :
                &_MSG_Req_Move_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    36;
+    35;
 
   friend void swap(MSG_Req_Move_CS& a, MSG_Req_Move_CS& b) {
     a.Swap(&b);
@@ -8256,7 +8030,7 @@ class MSG_Ret_Move_SC :
                &_MSG_Ret_Move_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    37;
+    36;
 
   friend void swap(MSG_Ret_Move_SC& a, MSG_Ret_Move_SC& b) {
     a.Swap(&b);
@@ -8431,7 +8205,7 @@ class MSG_Req_TELE_PORT_CS :
                &_MSG_Req_TELE_PORT_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    38;
+    37;
 
   friend void swap(MSG_Req_TELE_PORT_CS& a, MSG_Req_TELE_PORT_CS& b) {
     a.Swap(&b);
@@ -8571,7 +8345,7 @@ class MSG_Server_Force_Move_SC :
                &_MSG_Server_Force_Move_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    39;
+    38;
 
   friend void swap(MSG_Server_Force_Move_SC& a, MSG_Server_Force_Move_SC& b) {
     a.Swap(&b);
@@ -8746,7 +8520,7 @@ class MSG_Ret_Move_Failed_SC :
                &_MSG_Ret_Move_Failed_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    40;
+    39;
 
   friend void swap(MSG_Ret_Move_Failed_SC& a, MSG_Ret_Move_Failed_SC& b) {
     a.Swap(&b);
@@ -8918,7 +8692,7 @@ class MSG_Ret_SetState_SC :
                &_MSG_Ret_SetState_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    41;
+    40;
 
   friend void swap(MSG_Ret_SetState_SC& a, MSG_Ret_SetState_SC& b) {
     a.Swap(&b);
@@ -9093,7 +8867,7 @@ class MSG_Ret_ClearState_SC :
                &_MSG_Ret_ClearState_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    42;
+    41;
 
   friend void swap(MSG_Ret_ClearState_SC& a, MSG_Ret_ClearState_SC& b) {
     a.Swap(&b);
@@ -9265,7 +9039,7 @@ class MSG_Ret_MapScreenBatchRefreshNpc_SC :
                &_MSG_Ret_MapScreenBatchRefreshNpc_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    43;
+    42;
 
   friend void swap(MSG_Ret_MapScreenBatchRefreshNpc_SC& a, MSG_Ret_MapScreenBatchRefreshNpc_SC& b) {
     a.Swap(&b);
@@ -9410,7 +9184,7 @@ class MSG_Ret_MapScreenBatchRemoveNpc_SC :
                &_MSG_Ret_MapScreenBatchRemoveNpc_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    44;
+    43;
 
   friend void swap(MSG_Ret_MapScreenBatchRemoveNpc_SC& a, MSG_Ret_MapScreenBatchRemoveNpc_SC& b) {
     a.Swap(&b);
@@ -9559,7 +9333,7 @@ class MSG_Ret_MapScreenRefreshNpc_SC :
                &_MSG_Ret_MapScreenRefreshNpc_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    45;
+    44;
 
   friend void swap(MSG_Ret_MapScreenRefreshNpc_SC& a, MSG_Ret_MapScreenRefreshNpc_SC& b) {
     a.Swap(&b);
@@ -9701,7 +9475,7 @@ class MSG_Ret_MapScreenRemoveNpc_SC :
                &_MSG_Ret_MapScreenRemoveNpc_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    46;
+    45;
 
   friend void swap(MSG_Ret_MapScreenRemoveNpc_SC& a, MSG_Ret_MapScreenRemoveNpc_SC& b) {
     a.Swap(&b);
@@ -9841,7 +9615,7 @@ class FuncNpcData :
                &_FuncNpcData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    47;
+    46;
 
   friend void swap(FuncNpcData& a, FuncNpcData& b) {
     a.Swap(&b);
@@ -10026,7 +9800,7 @@ class MSG_Ret_MapScreenFuncNpc_SC :
                &_MSG_Ret_MapScreenFuncNpc_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    48;
+    47;
 
   friend void swap(MSG_Ret_MapScreenFuncNpc_SC& a, MSG_Ret_MapScreenFuncNpc_SC& b) {
     a.Swap(&b);
@@ -10171,7 +9945,7 @@ class MSG_Ret_RetNpcMove_SC :
                &_MSG_Ret_RetNpcMove_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    49;
+    48;
 
   friend void swap(MSG_Ret_RetNpcMove_SC& a, MSG_Ret_RetNpcMove_SC& b) {
     a.Swap(&b);
@@ -10346,7 +10120,7 @@ class MSG_RetNpcWarpMove_SC :
                &_MSG_RetNpcWarpMove_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    50;
+    49;
 
   friend void swap(MSG_RetNpcWarpMove_SC& a, MSG_RetNpcWarpMove_SC& b) {
     a.Swap(&b);
@@ -10503,7 +10277,7 @@ class MSG_RetNpcDir_SC :
                &_MSG_RetNpcDir_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    51;
+    50;
 
   friend void swap(MSG_RetNpcDir_SC& a, MSG_RetNpcDir_SC& b) {
     a.Swap(&b);
@@ -10658,7 +10432,7 @@ class TempNpcInfo :
                &_TempNpcInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    52;
+    51;
 
   friend void swap(TempNpcInfo& a, TempNpcInfo& b) {
     a.Swap(&b);
@@ -10828,7 +10602,7 @@ class MSG_Req_Summon_Npc_CS :
                &_MSG_Req_Summon_Npc_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    53;
+    52;
 
   friend void swap(MSG_Req_Summon_Npc_CS& a, MSG_Req_Summon_Npc_CS& b) {
     a.Swap(&b);
@@ -10973,7 +10747,7 @@ class MSG_Ret_setTimeState_SC :
                &_MSG_Ret_setTimeState_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    54;
+    53;
 
   friend void swap(MSG_Ret_setTimeState_SC& a, MSG_Ret_setTimeState_SC& b) {
     a.Swap(&b);
@@ -11160,7 +10934,7 @@ class MSG_Req_Ping_CS :
                &_MSG_Req_Ping_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    55;
+    54;
 
   friend void swap(MSG_Req_Ping_CS& a, MSG_Req_Ping_CS& b) {
     a.Swap(&b);
@@ -11283,7 +11057,7 @@ class MSG_Ret_VisibleNpcList_SC :
                &_MSG_Ret_VisibleNpcList_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    56;
+    55;
 
   friend void swap(MSG_Ret_VisibleNpcList_SC& a, MSG_Ret_VisibleNpcList_SC& b) {
     a.Swap(&b);
@@ -11432,7 +11206,7 @@ class MSG_RetNinePlayerLevelUp_SC :
                &_MSG_RetNinePlayerLevelUp_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    57;
+    56;
 
   friend void swap(MSG_RetNinePlayerLevelUp_SC& a, MSG_RetNinePlayerLevelUp_SC& b) {
     a.Swap(&b);
@@ -11574,7 +11348,7 @@ class MSG_UpdateExpLevel_SC :
                &_MSG_UpdateExpLevel_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    58;
+    57;
 
   friend void swap(MSG_UpdateExpLevel_SC& a, MSG_UpdateExpLevel_SC& b) {
     a.Swap(&b);
@@ -11774,7 +11548,7 @@ class MSG_NotifyAntiAddict_SC :
                &_MSG_NotifyAntiAddict_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    59;
+    58;
 
   friend void swap(MSG_NotifyAntiAddict_SC& a, MSG_NotifyAntiAddict_SC& b) {
     a.Swap(&b);
@@ -11944,7 +11718,7 @@ class MSG_ReqUpdateAntiAddict_CS :
                &_MSG_ReqUpdateAntiAddict_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    60;
+    59;
 
   friend void swap(MSG_ReqUpdateAntiAddict_CS& a, MSG_ReqUpdateAntiAddict_CS& b) {
     a.Swap(&b);
@@ -12067,7 +11841,7 @@ class MSG_ReqEntrySelectState_CS :
                &_MSG_ReqEntrySelectState_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    61;
+    60;
 
   friend void swap(MSG_ReqEntrySelectState_CS& a, MSG_ReqEntrySelectState_CS& b) {
     a.Swap(&b);
@@ -12226,7 +12000,7 @@ class MSG_RetEntrySelectState_SC :
                &_MSG_RetEntrySelectState_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    62;
+    61;
 
   friend void swap(MSG_RetEntrySelectState_SC& a, MSG_RetEntrySelectState_SC& b) {
     a.Swap(&b);
@@ -12388,7 +12162,7 @@ class MSG_RetHpMpToSelects_SC :
                &_MSG_RetHpMpToSelects_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    63;
+    62;
 
   friend void swap(MSG_RetHpMpToSelects_SC& a, MSG_RetHpMpToSelects_SC& b) {
     a.Swap(&b);
@@ -12590,7 +12364,7 @@ class MSG_ReqHeroAttributeData_CS :
                &_MSG_ReqHeroAttributeData_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    64;
+    63;
 
   friend void swap(MSG_ReqHeroAttributeData_CS& a, MSG_ReqHeroAttributeData_CS& b) {
     a.Swap(&b);
@@ -12737,7 +12511,7 @@ class MSG_RetHeroAttributeData_SC :
                &_MSG_RetHeroAttributeData_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    65;
+    64;
 
   friend void swap(MSG_RetHeroAttributeData_SC& a, MSG_RetHeroAttributeData_SC& b) {
     a.Swap(&b);
@@ -12916,7 +12690,7 @@ class MSG_RetDiffLineOfLeader_SC :
                &_MSG_RetDiffLineOfLeader_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    66;
+    65;
 
   friend void swap(MSG_RetDiffLineOfLeader_SC& a, MSG_RetDiffLineOfLeader_SC& b) {
     a.Swap(&b);
@@ -13039,7 +12813,7 @@ class MSG_ReqJumptoLeaderLine_CS :
                &_MSG_ReqJumptoLeaderLine_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    67;
+    66;
 
   friend void swap(MSG_ReqJumptoLeaderLine_CS& a, MSG_ReqJumptoLeaderLine_CS& b) {
     a.Swap(&b);
@@ -13162,7 +12936,7 @@ class SelectUserInfo :
                &_SelectUserInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    68;
+    67;
 
   friend void swap(SelectUserInfo& a, SelectUserInfo& b) {
     a.Swap(&b);
@@ -13556,7 +13330,7 @@ class MSG_Ret_LoginOnReturnCharList_SC :
                &_MSG_Ret_LoginOnReturnCharList_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    69;
+    68;
 
   friend void swap(MSG_Ret_LoginOnReturnCharList_SC& a, MSG_Ret_LoginOnReturnCharList_SC& b) {
     a.Swap(&b);
@@ -13701,7 +13475,7 @@ class MSG_Req_SelectCharToLogin_CS :
                &_MSG_Req_SelectCharToLogin_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    70;
+    69;
 
   friend void swap(MSG_Req_SelectCharToLogin_CS& a, MSG_Req_SelectCharToLogin_CS& b) {
     a.Swap(&b);
@@ -13841,7 +13615,7 @@ class MSG_Req_IS_NICKNAME_REPEATED_CSC :
                &_MSG_Req_IS_NICKNAME_REPEATED_CSC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    71;
+    70;
 
   friend void swap(MSG_Req_IS_NICKNAME_REPEATED_CSC& a, MSG_Req_IS_NICKNAME_REPEATED_CSC& b) {
     a.Swap(&b);
@@ -14003,7 +13777,7 @@ class MSG_Req_Back_to_Select_CS :
                &_MSG_Req_Back_to_Select_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    72;
+    71;
 
   friend void swap(MSG_Req_Back_to_Select_CS& a, MSG_Req_Back_to_Select_CS& b) {
     a.Swap(&b);
@@ -14126,7 +13900,7 @@ class MSG_Req_Delete_Char_CSC :
                &_MSG_Req_Delete_Char_CSC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    73;
+    72;
 
   friend void swap(MSG_Req_Delete_Char_CSC& a, MSG_Req_Delete_Char_CSC& b) {
     a.Swap(&b);
@@ -14296,7 +14070,7 @@ class MSG_Req_Syn_MoveState_CS :
                &_MSG_Req_Syn_MoveState_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    74;
+    73;
 
   friend void swap(MSG_Req_Syn_MoveState_CS& a, MSG_Req_Syn_MoveState_CS& b) {
     a.Swap(&b);
@@ -14561,7 +14335,7 @@ class MSG_Ret_Find_Path_SC :
                &_MSG_Ret_Find_Path_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    75;
+    74;
 
   friend void swap(MSG_Ret_Find_Path_SC& a, MSG_Ret_Find_Path_SC& b) {
     a.Swap(&b);
@@ -14731,7 +14505,7 @@ class MSG_Ret_Rondom_Way_SC :
                &_MSG_Ret_Rondom_Way_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    76;
+    75;
 
   friend void swap(MSG_Ret_Rondom_Way_SC& a, MSG_Ret_Rondom_Way_SC& b) {
     a.Swap(&b);
@@ -14983,7 +14757,7 @@ class MSG_Ret_Find_Path_End_SC :
                &_MSG_Ret_Find_Path_End_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    77;
+    76;
 
   friend void swap(MSG_Ret_Find_Path_End_SC& a, MSG_Ret_Find_Path_End_SC& b) {
     a.Swap(&b);
@@ -15123,7 +14897,7 @@ class MSG_Show_Path_Way_End_CS :
                &_MSG_Show_Path_Way_End_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    78;
+    77;
 
   friend void swap(MSG_Show_Path_Way_End_CS& a, MSG_Show_Path_Way_End_CS& b) {
     a.Swap(&b);
@@ -15246,7 +15020,7 @@ class LineItem :
                &_LineItem_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    79;
+    78;
 
   friend void swap(LineItem& a, LineItem& b) {
     a.Swap(&b);
@@ -15401,7 +15175,7 @@ class MSG_NoticeClientAllLines_SC :
                &_MSG_NoticeClientAllLines_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    80;
+    79;
 
   friend void swap(MSG_NoticeClientAllLines_SC& a, MSG_NoticeClientAllLines_SC& b) {
     a.Swap(&b);
@@ -15561,7 +15335,7 @@ class MSG_UserReqChangeLine_CS :
                &_MSG_UserReqChangeLine_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    81;
+    80;
 
   friend void swap(MSG_UserReqChangeLine_CS& a, MSG_UserReqChangeLine_CS& b) {
     a.Swap(&b);
@@ -15701,7 +15475,7 @@ class MSG_OnUserJump_CSC :
                &_MSG_OnUserJump_CSC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    82;
+    81;
 
   friend void swap(MSG_OnUserJump_CSC& a, MSG_OnUserJump_CSC& b) {
     a.Swap(&b);
@@ -15858,7 +15632,7 @@ class MSG_NPCHatredList_SC :
                &_MSG_NPCHatredList_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    83;
+    82;
 
   friend void swap(MSG_NPCHatredList_SC& a, MSG_NPCHatredList_SC& b) {
     a.Swap(&b);
@@ -16022,7 +15796,7 @@ class NPC_HatredList :
                &_NPC_HatredList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    84;
+    83;
 
   friend void swap(NPC_HatredList& a, NPC_HatredList& b) {
     a.Swap(&b);
@@ -16186,7 +15960,7 @@ class MSG_ACCOUNT_SEC_PASSWD_SC :
                &_MSG_ACCOUNT_SEC_PASSWD_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    85;
+    84;
 
   friend void swap(MSG_ACCOUNT_SEC_PASSWD_SC& a, MSG_ACCOUNT_SEC_PASSWD_SC& b) {
     a.Swap(&b);
@@ -16348,7 +16122,7 @@ class MSG_USER_REQ_SETPASSWD_CS :
                &_MSG_USER_REQ_SETPASSWD_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    86;
+    85;
 
   friend void swap(MSG_USER_REQ_SETPASSWD_CS& a, MSG_USER_REQ_SETPASSWD_CS& b) {
     a.Swap(&b);
@@ -16517,7 +16291,7 @@ class MSG_NEW_ROLE_CUTSCENE_SCS :
                &_MSG_NEW_ROLE_CUTSCENE_SCS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    87;
+    86;
 
   friend void swap(MSG_NEW_ROLE_CUTSCENE_SCS& a, MSG_NEW_ROLE_CUTSCENE_SCS& b) {
     a.Swap(&b);
@@ -16640,7 +16414,7 @@ class MSG_User_Drop_SCS :
                &_MSG_User_Drop_SCS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    88;
+    87;
 
   friend void swap(MSG_User_Drop_SCS& a, MSG_User_Drop_SCS& b) {
     a.Swap(&b);
@@ -16780,7 +16554,7 @@ class MSG_START_CUTSCENE_SC :
                &_MSG_START_CUTSCENE_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    89;
+    88;
 
   friend void swap(MSG_START_CUTSCENE_SC& a, MSG_START_CUTSCENE_SC& b) {
     a.Swap(&b);
@@ -16942,7 +16716,7 @@ class MSG_UserLoadingOk_CS :
                &_MSG_UserLoadingOk_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    90;
+    89;
 
   friend void swap(MSG_UserLoadingOk_CS& a, MSG_UserLoadingOk_CS& b) {
     a.Swap(&b);
@@ -17065,7 +16839,7 @@ class MSG_ReqQueryBalance_CS :
                &_MSG_ReqQueryBalance_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    91;
+    90;
 
   friend void swap(MSG_ReqQueryBalance_CS& a, MSG_ReqQueryBalance_CS& b) {
     a.Swap(&b);
@@ -17188,7 +16962,7 @@ class MSG_RetQueryBalance_SC :
                &_MSG_RetQueryBalance_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    92;
+    91;
 
   friend void swap(MSG_RetQueryBalance_SC& a, MSG_RetQueryBalance_SC& b) {
     a.Swap(&b);
@@ -17252,12 +17026,25 @@ class MSG_RetQueryBalance_SC :
   // accessors -------------------------------------------------------
 
   enum : int {
+    kRetcodeFieldNumber = 1,
     kBalanceFieldNumber = 2,
     kBonusFieldNumber = 3,
     kHadfilledFieldNumber = 4,
     kPoint2ToneFieldNumber = 5,
-    kRetcodeFieldNumber = 1,
   };
+  // required .msg.ERechargeReturnCode retcode = 1;
+  bool has_retcode() const;
+  private:
+  bool _internal_has_retcode() const;
+  public:
+  void clear_retcode();
+  ::msg::ERechargeReturnCode retcode() const;
+  void set_retcode(::msg::ERechargeReturnCode value);
+  private:
+  ::msg::ERechargeReturnCode _internal_retcode() const;
+  void _internal_set_retcode(::msg::ERechargeReturnCode value);
+  public:
+
   // optional uint32 balance = 2;
   bool has_balance() const;
   private:
@@ -17310,19 +17097,6 @@ class MSG_RetQueryBalance_SC :
   void _internal_set_point2tone(::PROTOBUF_NAMESPACE_ID::uint32 value);
   public:
 
-  // required .msg.ERechargeReturnCode retcode = 1;
-  bool has_retcode() const;
-  private:
-  bool _internal_has_retcode() const;
-  public:
-  void clear_retcode();
-  ::msg::ERechargeReturnCode retcode() const;
-  void set_retcode(::msg::ERechargeReturnCode value);
-  private:
-  ::msg::ERechargeReturnCode _internal_retcode() const;
-  void _internal_set_retcode(::msg::ERechargeReturnCode value);
-  public:
-
   // @@protoc_insertion_point(class_scope:msg.MSG_RetQueryBalance_SC)
  private:
   class _Internal;
@@ -17330,11 +17104,11 @@ class MSG_RetQueryBalance_SC :
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
   ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  int retcode_;
   ::PROTOBUF_NAMESPACE_ID::uint32 balance_;
   ::PROTOBUF_NAMESPACE_ID::uint32 bonus_;
   ::PROTOBUF_NAMESPACE_ID::uint32 hadfilled_;
   ::PROTOBUF_NAMESPACE_ID::uint32 point2tone_;
-  int retcode_;
   friend struct ::TableStruct_message_2eproto;
 };
 // -------------------------------------------------------------------
@@ -17388,7 +17162,7 @@ class MSG_ReqRecharge_CS :
                &_MSG_ReqRecharge_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    93;
+    92;
 
   friend void swap(MSG_ReqRecharge_CS& a, MSG_ReqRecharge_CS& b) {
     a.Swap(&b);
@@ -17543,7 +17317,7 @@ class MSG_RetRecharge_SC :
                &_MSG_RetRecharge_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    94;
+    93;
 
   friend void swap(MSG_RetRecharge_SC& a, MSG_RetRecharge_SC& b) {
     a.Swap(&b);
@@ -17607,12 +17381,25 @@ class MSG_RetRecharge_SC :
   // accessors -------------------------------------------------------
 
   enum : int {
+    kRetcodeFieldNumber = 1,
     kPointFieldNumber = 2,
     kBalanceFieldNumber = 3,
     kBonusFieldNumber = 4,
     kHadfilledFieldNumber = 5,
-    kRetcodeFieldNumber = 1,
   };
+  // required .msg.ERechargeReturnCode retcode = 1;
+  bool has_retcode() const;
+  private:
+  bool _internal_has_retcode() const;
+  public:
+  void clear_retcode();
+  ::msg::ERechargeReturnCode retcode() const;
+  void set_retcode(::msg::ERechargeReturnCode value);
+  private:
+  ::msg::ERechargeReturnCode _internal_retcode() const;
+  void _internal_set_retcode(::msg::ERechargeReturnCode value);
+  public:
+
   // optional uint32 point = 2;
   bool has_point() const;
   private:
@@ -17665,19 +17452,6 @@ class MSG_RetRecharge_SC :
   void _internal_set_hadfilled(::PROTOBUF_NAMESPACE_ID::uint32 value);
   public:
 
-  // required .msg.ERechargeReturnCode retcode = 1;
-  bool has_retcode() const;
-  private:
-  bool _internal_has_retcode() const;
-  public:
-  void clear_retcode();
-  ::msg::ERechargeReturnCode retcode() const;
-  void set_retcode(::msg::ERechargeReturnCode value);
-  private:
-  ::msg::ERechargeReturnCode _internal_retcode() const;
-  void _internal_set_retcode(::msg::ERechargeReturnCode value);
-  public:
-
   // @@protoc_insertion_point(class_scope:msg.MSG_RetRecharge_SC)
  private:
   class _Internal;
@@ -17685,11 +17459,11 @@ class MSG_RetRecharge_SC :
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
   ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  int retcode_;
   ::PROTOBUF_NAMESPACE_ID::uint32 point_;
   ::PROTOBUF_NAMESPACE_ID::uint32 balance_;
   ::PROTOBUF_NAMESPACE_ID::uint32 bonus_;
   ::PROTOBUF_NAMESPACE_ID::uint32 hadfilled_;
-  int retcode_;
   friend struct ::TableStruct_message_2eproto;
 };
 // -------------------------------------------------------------------
@@ -17743,7 +17517,7 @@ class MSG_SetChooseTarget_CS :
                &_MSG_SetChooseTarget_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    95;
+    94;
 
   friend void swap(MSG_SetChooseTarget_CS& a, MSG_SetChooseTarget_CS& b) {
     a.Swap(&b);
@@ -17808,8 +17582,8 @@ class MSG_SetChooseTarget_CS :
 
   enum : int {
     kCharidFieldNumber = 1,
-    kChoosetypeFieldNumber = 2,
     kMapdatatypeFieldNumber = 3,
+    kChoosetypeFieldNumber = 2,
   };
   // optional uint64 charid = 1;
   bool has_charid() const;
@@ -17822,19 +17596,6 @@ class MSG_SetChooseTarget_CS :
   private:
   ::PROTOBUF_NAMESPACE_ID::uint64 _internal_charid() const;
   void _internal_set_charid(::PROTOBUF_NAMESPACE_ID::uint64 value);
-  public:
-
-  // optional .msg.ChooseTargetType choosetype = 2;
-  bool has_choosetype() const;
-  private:
-  bool _internal_has_choosetype() const;
-  public:
-  void clear_choosetype();
-  ::msg::ChooseTargetType choosetype() const;
-  void set_choosetype(::msg::ChooseTargetType value);
-  private:
-  ::msg::ChooseTargetType _internal_choosetype() const;
-  void _internal_set_choosetype(::msg::ChooseTargetType value);
   public:
 
   // required .msg.MapDataType mapdatatype = 3;
@@ -17850,6 +17611,19 @@ class MSG_SetChooseTarget_CS :
   void _internal_set_mapdatatype(::msg::MapDataType value);
   public:
 
+  // optional .msg.ChooseTargetType choosetype = 2;
+  bool has_choosetype() const;
+  private:
+  bool _internal_has_choosetype() const;
+  public:
+  void clear_choosetype();
+  ::msg::ChooseTargetType choosetype() const;
+  void set_choosetype(::msg::ChooseTargetType value);
+  private:
+  ::msg::ChooseTargetType _internal_choosetype() const;
+  void _internal_set_choosetype(::msg::ChooseTargetType value);
+  public:
+
   // @@protoc_insertion_point(class_scope:msg.MSG_SetChooseTarget_CS)
  private:
   class _Internal;
@@ -17858,8 +17632,8 @@ class MSG_SetChooseTarget_CS :
   ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   ::PROTOBUF_NAMESPACE_ID::uint64 charid_;
-  int choosetype_;
   int mapdatatype_;
+  int choosetype_;
   friend struct ::TableStruct_message_2eproto;
 };
 // -------------------------------------------------------------------
@@ -17913,7 +17687,7 @@ class MSG_AttackTargetChange_SC :
                &_MSG_AttackTargetChange_SC_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    96;
+    95;
 
   friend void swap(MSG_AttackTargetChange_SC& a, MSG_AttackTargetChange_SC& b) {
     a.Swap(&b);
@@ -18135,7 +17909,7 @@ class MSG_NotifyAccountReuse :
                &_MSG_NotifyAccountReuse_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    97;
+    96;
 
   friend void swap(MSG_NotifyAccountReuse& a, MSG_NotifyAccountReuse& b) {
     a.Swap(&b);
@@ -18258,7 +18032,7 @@ class MSG_Notify_SceneLoaded_CS :
                &_MSG_Notify_SceneLoaded_CS_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    98;
+    97;
 
   friend void swap(MSG_Notify_SceneLoaded_CS& a, MSG_Notify_SceneLoaded_CS& b) {
     a.Swap(&b);
@@ -18398,7 +18172,7 @@ class MSG_Upload_Crash_Info :
                &_MSG_Upload_Crash_Info_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    99;
+    98;
 
   friend void swap(MSG_Upload_Crash_Info& a, MSG_Upload_Crash_Info& b) {
     a.Swap(&b);
@@ -18496,66 +18270,6 @@ class MSG_Upload_Crash_Info :
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
-// EntryIDType
-
-// optional uint64 id = 1;
-inline bool EntryIDType::_internal_has_id() const {
-  bool value = (_has_bits_[0] & 0x00000001u) != 0;
-  return value;
-}
-inline bool EntryIDType::has_id() const {
-  return _internal_has_id();
-}
-inline void EntryIDType::clear_id() {
-  id_ = PROTOBUF_ULONGLONG(0);
-  _has_bits_[0] &= ~0x00000001u;
-}
-inline ::PROTOBUF_NAMESPACE_ID::uint64 EntryIDType::_internal_id() const {
-  return id_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::uint64 EntryIDType::id() const {
-  // @@protoc_insertion_point(field_get:msg.EntryIDType.id)
-  return _internal_id();
-}
-inline void EntryIDType::_internal_set_id(::PROTOBUF_NAMESPACE_ID::uint64 value) {
-  _has_bits_[0] |= 0x00000001u;
-  id_ = value;
-}
-inline void EntryIDType::set_id(::PROTOBUF_NAMESPACE_ID::uint64 value) {
-  _internal_set_id(value);
-  // @@protoc_insertion_point(field_set:msg.EntryIDType.id)
-}
-
-// optional uint32 type = 2;
-inline bool EntryIDType::_internal_has_type() const {
-  bool value = (_has_bits_[0] & 0x00000002u) != 0;
-  return value;
-}
-inline bool EntryIDType::has_type() const {
-  return _internal_has_type();
-}
-inline void EntryIDType::clear_type() {
-  type_ = 0u;
-  _has_bits_[0] &= ~0x00000002u;
-}
-inline ::PROTOBUF_NAMESPACE_ID::uint32 EntryIDType::_internal_type() const {
-  return type_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::uint32 EntryIDType::type() const {
-  // @@protoc_insertion_point(field_get:msg.EntryIDType.type)
-  return _internal_type();
-}
-inline void EntryIDType::_internal_set_type(::PROTOBUF_NAMESPACE_ID::uint32 value) {
-  _has_bits_[0] |= 0x00000002u;
-  type_ = value;
-}
-inline void EntryIDType::set_type(::PROTOBUF_NAMESPACE_ID::uint32 value) {
-  _internal_set_type(value);
-  // @@protoc_insertion_point(field_set:msg.EntryIDType.type)
-}
-
-// -------------------------------------------------------------------
-
 // CharacterBaseData
 
 // optional uint64 exp = 2;
@@ -22402,10 +22116,6 @@ inline bool MasterData::_internal_has_idtype() const {
 inline bool MasterData::has_idtype() const {
   return _internal_has_idtype();
 }
-inline void MasterData::clear_idtype() {
-  if (idtype_ != nullptr) idtype_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
-}
 inline const ::msg::EntryIDType& MasterData::_internal_idtype() const {
   const ::msg::EntryIDType* p = idtype_;
   return p != nullptr ? *p : *reinterpret_cast<const ::msg::EntryIDType*>(
@@ -22437,7 +22147,7 @@ inline ::msg::EntryIDType* MasterData::mutable_idtype() {
 inline void MasterData::set_allocated_idtype(::msg::EntryIDType* idtype) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
-    delete idtype_;
+    delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(idtype_);
   }
   if (idtype) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
@@ -26534,10 +26244,6 @@ inline bool MSG_Ret_setTimeState_SC::_internal_has_target() const {
 inline bool MSG_Ret_setTimeState_SC::has_target() const {
   return _internal_has_target();
 }
-inline void MSG_Ret_setTimeState_SC::clear_target() {
-  if (target_ != nullptr) target_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
-}
 inline const ::msg::EntryIDType& MSG_Ret_setTimeState_SC::_internal_target() const {
   const ::msg::EntryIDType* p = target_;
   return p != nullptr ? *p : *reinterpret_cast<const ::msg::EntryIDType*>(
@@ -26569,7 +26275,7 @@ inline ::msg::EntryIDType* MSG_Ret_setTimeState_SC::mutable_target() {
 inline void MSG_Ret_setTimeState_SC::set_allocated_target(::msg::EntryIDType* target) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
-    delete target_;
+    delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(target_);
   }
   if (target) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
@@ -26737,10 +26443,6 @@ inline bool MSG_RetNinePlayerLevelUp_SC::_internal_has_target() const {
 inline bool MSG_RetNinePlayerLevelUp_SC::has_target() const {
   return _internal_has_target();
 }
-inline void MSG_RetNinePlayerLevelUp_SC::clear_target() {
-  if (target_ != nullptr) target_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
-}
 inline const ::msg::EntryIDType& MSG_RetNinePlayerLevelUp_SC::_internal_target() const {
   const ::msg::EntryIDType* p = target_;
   return p != nullptr ? *p : *reinterpret_cast<const ::msg::EntryIDType*>(
@@ -26772,7 +26474,7 @@ inline ::msg::EntryIDType* MSG_RetNinePlayerLevelUp_SC::mutable_target() {
 inline void MSG_RetNinePlayerLevelUp_SC::set_allocated_target(::msg::EntryIDType* target) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
-    delete target_;
+    delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(target_);
   }
   if (target) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
@@ -27037,10 +26739,6 @@ inline bool MSG_ReqEntrySelectState_CS::_internal_has_oldone() const {
 inline bool MSG_ReqEntrySelectState_CS::has_oldone() const {
   return _internal_has_oldone();
 }
-inline void MSG_ReqEntrySelectState_CS::clear_oldone() {
-  if (oldone_ != nullptr) oldone_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
-}
 inline const ::msg::EntryIDType& MSG_ReqEntrySelectState_CS::_internal_oldone() const {
   const ::msg::EntryIDType* p = oldone_;
   return p != nullptr ? *p : *reinterpret_cast<const ::msg::EntryIDType*>(
@@ -27072,7 +26770,7 @@ inline ::msg::EntryIDType* MSG_ReqEntrySelectState_CS::mutable_oldone() {
 inline void MSG_ReqEntrySelectState_CS::set_allocated_oldone(::msg::EntryIDType* oldone) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
-    delete oldone_;
+    delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(oldone_);
   }
   if (oldone) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
@@ -27096,10 +26794,6 @@ inline bool MSG_ReqEntrySelectState_CS::_internal_has_newone() const {
 }
 inline bool MSG_ReqEntrySelectState_CS::has_newone() const {
   return _internal_has_newone();
-}
-inline void MSG_ReqEntrySelectState_CS::clear_newone() {
-  if (newone_ != nullptr) newone_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
 }
 inline const ::msg::EntryIDType& MSG_ReqEntrySelectState_CS::_internal_newone() const {
   const ::msg::EntryIDType* p = newone_;
@@ -27132,7 +26826,7 @@ inline ::msg::EntryIDType* MSG_ReqEntrySelectState_CS::mutable_newone() {
 inline void MSG_ReqEntrySelectState_CS::set_allocated_newone(::msg::EntryIDType* newone) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
-    delete newone_;
+    delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(newone_);
   }
   if (newone) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
@@ -27160,10 +26854,6 @@ inline bool MSG_RetEntrySelectState_SC::_internal_has_choosen() const {
 }
 inline bool MSG_RetEntrySelectState_SC::has_choosen() const {
   return _internal_has_choosen();
-}
-inline void MSG_RetEntrySelectState_SC::clear_choosen() {
-  if (choosen_ != nullptr) choosen_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
 }
 inline const ::msg::EntryIDType& MSG_RetEntrySelectState_SC::_internal_choosen() const {
   const ::msg::EntryIDType* p = choosen_;
@@ -27196,7 +26886,7 @@ inline ::msg::EntryIDType* MSG_RetEntrySelectState_SC::mutable_choosen() {
 inline void MSG_RetEntrySelectState_SC::set_allocated_choosen(::msg::EntryIDType* choosen) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
-    delete choosen_;
+    delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(choosen_);
   }
   if (choosen) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
@@ -27264,10 +26954,6 @@ inline bool MSG_RetHpMpToSelects_SC::_internal_has_choosen() const {
 inline bool MSG_RetHpMpToSelects_SC::has_choosen() const {
   return _internal_has_choosen();
 }
-inline void MSG_RetHpMpToSelects_SC::clear_choosen() {
-  if (choosen_ != nullptr) choosen_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
-}
 inline const ::msg::EntryIDType& MSG_RetHpMpToSelects_SC::_internal_choosen() const {
   const ::msg::EntryIDType* p = choosen_;
   return p != nullptr ? *p : *reinterpret_cast<const ::msg::EntryIDType*>(
@@ -27299,7 +26985,7 @@ inline ::msg::EntryIDType* MSG_RetHpMpToSelects_SC::mutable_choosen() {
 inline void MSG_RetHpMpToSelects_SC::set_allocated_choosen(::msg::EntryIDType* choosen) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
-    delete choosen_;
+    delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(choosen_);
   }
   if (choosen) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
@@ -29987,15 +29673,15 @@ inline void MSG_START_CUTSCENE_SC::set_allocated_onfinish(std::string* onfinish)
 
 // required .msg.ERechargeReturnCode retcode = 1;
 inline bool MSG_RetQueryBalance_SC::_internal_has_retcode() const {
-  bool value = (_has_bits_[0] & 0x00000010u) != 0;
+  bool value = (_has_bits_[0] & 0x00000001u) != 0;
   return value;
 }
 inline bool MSG_RetQueryBalance_SC::has_retcode() const {
   return _internal_has_retcode();
 }
 inline void MSG_RetQueryBalance_SC::clear_retcode() {
-  retcode_ = 1;
-  _has_bits_[0] &= ~0x00000010u;
+  retcode_ = 0;
+  _has_bits_[0] &= ~0x00000001u;
 }
 inline ::msg::ERechargeReturnCode MSG_RetQueryBalance_SC::_internal_retcode() const {
   return static_cast< ::msg::ERechargeReturnCode >(retcode_);
@@ -30006,7 +29692,7 @@ inline ::msg::ERechargeReturnCode MSG_RetQueryBalance_SC::retcode() const {
 }
 inline void MSG_RetQueryBalance_SC::_internal_set_retcode(::msg::ERechargeReturnCode value) {
   assert(::msg::ERechargeReturnCode_IsValid(value));
-  _has_bits_[0] |= 0x00000010u;
+  _has_bits_[0] |= 0x00000001u;
   retcode_ = value;
 }
 inline void MSG_RetQueryBalance_SC::set_retcode(::msg::ERechargeReturnCode value) {
@@ -30016,7 +29702,7 @@ inline void MSG_RetQueryBalance_SC::set_retcode(::msg::ERechargeReturnCode value
 
 // optional uint32 balance = 2;
 inline bool MSG_RetQueryBalance_SC::_internal_has_balance() const {
-  bool value = (_has_bits_[0] & 0x00000001u) != 0;
+  bool value = (_has_bits_[0] & 0x00000002u) != 0;
   return value;
 }
 inline bool MSG_RetQueryBalance_SC::has_balance() const {
@@ -30024,7 +29710,7 @@ inline bool MSG_RetQueryBalance_SC::has_balance() const {
 }
 inline void MSG_RetQueryBalance_SC::clear_balance() {
   balance_ = 0u;
-  _has_bits_[0] &= ~0x00000001u;
+  _has_bits_[0] &= ~0x00000002u;
 }
 inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_RetQueryBalance_SC::_internal_balance() const {
   return balance_;
@@ -30034,7 +29720,7 @@ inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_RetQueryBalance_SC::balance() const {
   return _internal_balance();
 }
 inline void MSG_RetQueryBalance_SC::_internal_set_balance(::PROTOBUF_NAMESPACE_ID::uint32 value) {
-  _has_bits_[0] |= 0x00000001u;
+  _has_bits_[0] |= 0x00000002u;
   balance_ = value;
 }
 inline void MSG_RetQueryBalance_SC::set_balance(::PROTOBUF_NAMESPACE_ID::uint32 value) {
@@ -30044,7 +29730,7 @@ inline void MSG_RetQueryBalance_SC::set_balance(::PROTOBUF_NAMESPACE_ID::uint32 
 
 // optional uint32 bonus = 3;
 inline bool MSG_RetQueryBalance_SC::_internal_has_bonus() const {
-  bool value = (_has_bits_[0] & 0x00000002u) != 0;
+  bool value = (_has_bits_[0] & 0x00000004u) != 0;
   return value;
 }
 inline bool MSG_RetQueryBalance_SC::has_bonus() const {
@@ -30052,7 +29738,7 @@ inline bool MSG_RetQueryBalance_SC::has_bonus() const {
 }
 inline void MSG_RetQueryBalance_SC::clear_bonus() {
   bonus_ = 0u;
-  _has_bits_[0] &= ~0x00000002u;
+  _has_bits_[0] &= ~0x00000004u;
 }
 inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_RetQueryBalance_SC::_internal_bonus() const {
   return bonus_;
@@ -30062,7 +29748,7 @@ inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_RetQueryBalance_SC::bonus() const {
   return _internal_bonus();
 }
 inline void MSG_RetQueryBalance_SC::_internal_set_bonus(::PROTOBUF_NAMESPACE_ID::uint32 value) {
-  _has_bits_[0] |= 0x00000002u;
+  _has_bits_[0] |= 0x00000004u;
   bonus_ = value;
 }
 inline void MSG_RetQueryBalance_SC::set_bonus(::PROTOBUF_NAMESPACE_ID::uint32 value) {
@@ -30072,7 +29758,7 @@ inline void MSG_RetQueryBalance_SC::set_bonus(::PROTOBUF_NAMESPACE_ID::uint32 va
 
 // optional uint32 hadfilled = 4;
 inline bool MSG_RetQueryBalance_SC::_internal_has_hadfilled() const {
-  bool value = (_has_bits_[0] & 0x00000004u) != 0;
+  bool value = (_has_bits_[0] & 0x00000008u) != 0;
   return value;
 }
 inline bool MSG_RetQueryBalance_SC::has_hadfilled() const {
@@ -30080,7 +29766,7 @@ inline bool MSG_RetQueryBalance_SC::has_hadfilled() const {
 }
 inline void MSG_RetQueryBalance_SC::clear_hadfilled() {
   hadfilled_ = 0u;
-  _has_bits_[0] &= ~0x00000004u;
+  _has_bits_[0] &= ~0x00000008u;
 }
 inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_RetQueryBalance_SC::_internal_hadfilled() const {
   return hadfilled_;
@@ -30090,7 +29776,7 @@ inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_RetQueryBalance_SC::hadfilled() const
   return _internal_hadfilled();
 }
 inline void MSG_RetQueryBalance_SC::_internal_set_hadfilled(::PROTOBUF_NAMESPACE_ID::uint32 value) {
-  _has_bits_[0] |= 0x00000004u;
+  _has_bits_[0] |= 0x00000008u;
   hadfilled_ = value;
 }
 inline void MSG_RetQueryBalance_SC::set_hadfilled(::PROTOBUF_NAMESPACE_ID::uint32 value) {
@@ -30100,7 +29786,7 @@ inline void MSG_RetQueryBalance_SC::set_hadfilled(::PROTOBUF_NAMESPACE_ID::uint3
 
 // optional uint32 point2tone = 5;
 inline bool MSG_RetQueryBalance_SC::_internal_has_point2tone() const {
-  bool value = (_has_bits_[0] & 0x00000008u) != 0;
+  bool value = (_has_bits_[0] & 0x00000010u) != 0;
   return value;
 }
 inline bool MSG_RetQueryBalance_SC::has_point2tone() const {
@@ -30108,7 +29794,7 @@ inline bool MSG_RetQueryBalance_SC::has_point2tone() const {
 }
 inline void MSG_RetQueryBalance_SC::clear_point2tone() {
   point2tone_ = 0u;
-  _has_bits_[0] &= ~0x00000008u;
+  _has_bits_[0] &= ~0x00000010u;
 }
 inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_RetQueryBalance_SC::_internal_point2tone() const {
   return point2tone_;
@@ -30118,7 +29804,7 @@ inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_RetQueryBalance_SC::point2tone() cons
   return _internal_point2tone();
 }
 inline void MSG_RetQueryBalance_SC::_internal_set_point2tone(::PROTOBUF_NAMESPACE_ID::uint32 value) {
-  _has_bits_[0] |= 0x00000008u;
+  _has_bits_[0] |= 0x00000010u;
   point2tone_ = value;
 }
 inline void MSG_RetQueryBalance_SC::set_point2tone(::PROTOBUF_NAMESPACE_ID::uint32 value) {
@@ -30192,15 +29878,15 @@ inline void MSG_ReqRecharge_CS::set_type(::PROTOBUF_NAMESPACE_ID::uint32 value) 
 
 // required .msg.ERechargeReturnCode retcode = 1;
 inline bool MSG_RetRecharge_SC::_internal_has_retcode() const {
-  bool value = (_has_bits_[0] & 0x00000010u) != 0;
+  bool value = (_has_bits_[0] & 0x00000001u) != 0;
   return value;
 }
 inline bool MSG_RetRecharge_SC::has_retcode() const {
   return _internal_has_retcode();
 }
 inline void MSG_RetRecharge_SC::clear_retcode() {
-  retcode_ = 1;
-  _has_bits_[0] &= ~0x00000010u;
+  retcode_ = 0;
+  _has_bits_[0] &= ~0x00000001u;
 }
 inline ::msg::ERechargeReturnCode MSG_RetRecharge_SC::_internal_retcode() const {
   return static_cast< ::msg::ERechargeReturnCode >(retcode_);
@@ -30211,7 +29897,7 @@ inline ::msg::ERechargeReturnCode MSG_RetRecharge_SC::retcode() const {
 }
 inline void MSG_RetRecharge_SC::_internal_set_retcode(::msg::ERechargeReturnCode value) {
   assert(::msg::ERechargeReturnCode_IsValid(value));
-  _has_bits_[0] |= 0x00000010u;
+  _has_bits_[0] |= 0x00000001u;
   retcode_ = value;
 }
 inline void MSG_RetRecharge_SC::set_retcode(::msg::ERechargeReturnCode value) {
@@ -30221,7 +29907,7 @@ inline void MSG_RetRecharge_SC::set_retcode(::msg::ERechargeReturnCode value) {
 
 // optional uint32 point = 2;
 inline bool MSG_RetRecharge_SC::_internal_has_point() const {
-  bool value = (_has_bits_[0] & 0x00000001u) != 0;
+  bool value = (_has_bits_[0] & 0x00000002u) != 0;
   return value;
 }
 inline bool MSG_RetRecharge_SC::has_point() const {
@@ -30229,7 +29915,7 @@ inline bool MSG_RetRecharge_SC::has_point() const {
 }
 inline void MSG_RetRecharge_SC::clear_point() {
   point_ = 0u;
-  _has_bits_[0] &= ~0x00000001u;
+  _has_bits_[0] &= ~0x00000002u;
 }
 inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_RetRecharge_SC::_internal_point() const {
   return point_;
@@ -30239,7 +29925,7 @@ inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_RetRecharge_SC::point() const {
   return _internal_point();
 }
 inline void MSG_RetRecharge_SC::_internal_set_point(::PROTOBUF_NAMESPACE_ID::uint32 value) {
-  _has_bits_[0] |= 0x00000001u;
+  _has_bits_[0] |= 0x00000002u;
   point_ = value;
 }
 inline void MSG_RetRecharge_SC::set_point(::PROTOBUF_NAMESPACE_ID::uint32 value) {
@@ -30249,7 +29935,7 @@ inline void MSG_RetRecharge_SC::set_point(::PROTOBUF_NAMESPACE_ID::uint32 value)
 
 // optional uint32 balance = 3;
 inline bool MSG_RetRecharge_SC::_internal_has_balance() const {
-  bool value = (_has_bits_[0] & 0x00000002u) != 0;
+  bool value = (_has_bits_[0] & 0x00000004u) != 0;
   return value;
 }
 inline bool MSG_RetRecharge_SC::has_balance() const {
@@ -30257,7 +29943,7 @@ inline bool MSG_RetRecharge_SC::has_balance() const {
 }
 inline void MSG_RetRecharge_SC::clear_balance() {
   balance_ = 0u;
-  _has_bits_[0] &= ~0x00000002u;
+  _has_bits_[0] &= ~0x00000004u;
 }
 inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_RetRecharge_SC::_internal_balance() const {
   return balance_;
@@ -30267,7 +29953,7 @@ inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_RetRecharge_SC::balance() const {
   return _internal_balance();
 }
 inline void MSG_RetRecharge_SC::_internal_set_balance(::PROTOBUF_NAMESPACE_ID::uint32 value) {
-  _has_bits_[0] |= 0x00000002u;
+  _has_bits_[0] |= 0x00000004u;
   balance_ = value;
 }
 inline void MSG_RetRecharge_SC::set_balance(::PROTOBUF_NAMESPACE_ID::uint32 value) {
@@ -30277,7 +29963,7 @@ inline void MSG_RetRecharge_SC::set_balance(::PROTOBUF_NAMESPACE_ID::uint32 valu
 
 // optional uint32 bonus = 4;
 inline bool MSG_RetRecharge_SC::_internal_has_bonus() const {
-  bool value = (_has_bits_[0] & 0x00000004u) != 0;
+  bool value = (_has_bits_[0] & 0x00000008u) != 0;
   return value;
 }
 inline bool MSG_RetRecharge_SC::has_bonus() const {
@@ -30285,7 +29971,7 @@ inline bool MSG_RetRecharge_SC::has_bonus() const {
 }
 inline void MSG_RetRecharge_SC::clear_bonus() {
   bonus_ = 0u;
-  _has_bits_[0] &= ~0x00000004u;
+  _has_bits_[0] &= ~0x00000008u;
 }
 inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_RetRecharge_SC::_internal_bonus() const {
   return bonus_;
@@ -30295,7 +29981,7 @@ inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_RetRecharge_SC::bonus() const {
   return _internal_bonus();
 }
 inline void MSG_RetRecharge_SC::_internal_set_bonus(::PROTOBUF_NAMESPACE_ID::uint32 value) {
-  _has_bits_[0] |= 0x00000004u;
+  _has_bits_[0] |= 0x00000008u;
   bonus_ = value;
 }
 inline void MSG_RetRecharge_SC::set_bonus(::PROTOBUF_NAMESPACE_ID::uint32 value) {
@@ -30305,7 +29991,7 @@ inline void MSG_RetRecharge_SC::set_bonus(::PROTOBUF_NAMESPACE_ID::uint32 value)
 
 // optional uint32 hadfilled = 5;
 inline bool MSG_RetRecharge_SC::_internal_has_hadfilled() const {
-  bool value = (_has_bits_[0] & 0x00000008u) != 0;
+  bool value = (_has_bits_[0] & 0x00000010u) != 0;
   return value;
 }
 inline bool MSG_RetRecharge_SC::has_hadfilled() const {
@@ -30313,7 +29999,7 @@ inline bool MSG_RetRecharge_SC::has_hadfilled() const {
 }
 inline void MSG_RetRecharge_SC::clear_hadfilled() {
   hadfilled_ = 0u;
-  _has_bits_[0] &= ~0x00000008u;
+  _has_bits_[0] &= ~0x00000010u;
 }
 inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_RetRecharge_SC::_internal_hadfilled() const {
   return hadfilled_;
@@ -30323,7 +30009,7 @@ inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_RetRecharge_SC::hadfilled() const {
   return _internal_hadfilled();
 }
 inline void MSG_RetRecharge_SC::_internal_set_hadfilled(::PROTOBUF_NAMESPACE_ID::uint32 value) {
-  _has_bits_[0] |= 0x00000008u;
+  _has_bits_[0] |= 0x00000010u;
   hadfilled_ = value;
 }
 inline void MSG_RetRecharge_SC::set_hadfilled(::PROTOBUF_NAMESPACE_ID::uint32 value) {
@@ -30365,7 +30051,7 @@ inline void MSG_SetChooseTarget_CS::set_charid(::PROTOBUF_NAMESPACE_ID::uint64 v
 
 // optional .msg.ChooseTargetType choosetype = 2;
 inline bool MSG_SetChooseTarget_CS::_internal_has_choosetype() const {
-  bool value = (_has_bits_[0] & 0x00000002u) != 0;
+  bool value = (_has_bits_[0] & 0x00000004u) != 0;
   return value;
 }
 inline bool MSG_SetChooseTarget_CS::has_choosetype() const {
@@ -30373,7 +30059,7 @@ inline bool MSG_SetChooseTarget_CS::has_choosetype() const {
 }
 inline void MSG_SetChooseTarget_CS::clear_choosetype() {
   choosetype_ = 1;
-  _has_bits_[0] &= ~0x00000002u;
+  _has_bits_[0] &= ~0x00000004u;
 }
 inline ::msg::ChooseTargetType MSG_SetChooseTarget_CS::_internal_choosetype() const {
   return static_cast< ::msg::ChooseTargetType >(choosetype_);
@@ -30384,7 +30070,7 @@ inline ::msg::ChooseTargetType MSG_SetChooseTarget_CS::choosetype() const {
 }
 inline void MSG_SetChooseTarget_CS::_internal_set_choosetype(::msg::ChooseTargetType value) {
   assert(::msg::ChooseTargetType_IsValid(value));
-  _has_bits_[0] |= 0x00000002u;
+  _has_bits_[0] |= 0x00000004u;
   choosetype_ = value;
 }
 inline void MSG_SetChooseTarget_CS::set_choosetype(::msg::ChooseTargetType value) {
@@ -30394,15 +30080,15 @@ inline void MSG_SetChooseTarget_CS::set_choosetype(::msg::ChooseTargetType value
 
 // required .msg.MapDataType mapdatatype = 3;
 inline bool MSG_SetChooseTarget_CS::_internal_has_mapdatatype() const {
-  bool value = (_has_bits_[0] & 0x00000004u) != 0;
+  bool value = (_has_bits_[0] & 0x00000002u) != 0;
   return value;
 }
 inline bool MSG_SetChooseTarget_CS::has_mapdatatype() const {
   return _internal_has_mapdatatype();
 }
 inline void MSG_SetChooseTarget_CS::clear_mapdatatype() {
-  mapdatatype_ = 1;
-  _has_bits_[0] &= ~0x00000004u;
+  mapdatatype_ = 0;
+  _has_bits_[0] &= ~0x00000002u;
 }
 inline ::msg::MapDataType MSG_SetChooseTarget_CS::_internal_mapdatatype() const {
   return static_cast< ::msg::MapDataType >(mapdatatype_);
@@ -30413,7 +30099,7 @@ inline ::msg::MapDataType MSG_SetChooseTarget_CS::mapdatatype() const {
 }
 inline void MSG_SetChooseTarget_CS::_internal_set_mapdatatype(::msg::MapDataType value) {
   assert(::msg::MapDataType_IsValid(value));
-  _has_bits_[0] |= 0x00000004u;
+  _has_bits_[0] |= 0x00000002u;
   mapdatatype_ = value;
 }
 inline void MSG_SetChooseTarget_CS::set_mapdatatype(::msg::MapDataType value) {
@@ -30904,8 +30590,6 @@ inline void MSG_Upload_Crash_Info::set_crashnum(::PROTOBUF_NAMESPACE_ID::uint32 
 
 // -------------------------------------------------------------------
 
-// -------------------------------------------------------------------
-
 
 // @@protoc_insertion_point(namespace_scope)
 
@@ -30917,21 +30601,6 @@ template <> struct is_proto_enum< ::msg::ChooseTargetType> : ::std::true_type {}
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::msg::ChooseTargetType>() {
   return ::msg::ChooseTargetType_descriptor();
-}
-template <> struct is_proto_enum< ::msg::SEX> : ::std::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::msg::SEX>() {
-  return ::msg::SEX_descriptor();
-}
-template <> struct is_proto_enum< ::msg::ERechargeReturnCode> : ::std::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::msg::ERechargeReturnCode>() {
-  return ::msg::ERechargeReturnCode_descriptor();
-}
-template <> struct is_proto_enum< ::msg::MapDataType> : ::std::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::msg::MapDataType>() {
-  return ::msg::MapDataType_descriptor();
 }
 
 PROTOBUF_NAMESPACE_CLOSE

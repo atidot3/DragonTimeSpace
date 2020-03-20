@@ -33,6 +33,7 @@
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
+#include "msg_enum.pb.h"
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 #define PROTOBUF_INTERNAL_EXPORT_team_2eproto
@@ -349,52 +350,6 @@ template<> ::Team::teamDropItem* Arena::CreateMaybeMessage<::Team::teamDropItem>
 PROTOBUF_NAMESPACE_CLOSE
 namespace Team {
 
-enum EntryIDType : int {
-  id = 1,
-  type = 2
-};
-bool EntryIDType_IsValid(int value);
-constexpr EntryIDType EntryIDType_MIN = id;
-constexpr EntryIDType EntryIDType_MAX = type;
-constexpr int EntryIDType_ARRAYSIZE = EntryIDType_MAX + 1;
-
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EntryIDType_descriptor();
-template<typename T>
-inline const std::string& EntryIDType_Name(T enum_t_value) {
-  static_assert(::std::is_same<T, EntryIDType>::value ||
-    ::std::is_integral<T>::value,
-    "Incorrect type passed to function EntryIDType_Name.");
-  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
-    EntryIDType_descriptor(), enum_t_value);
-}
-inline bool EntryIDType_Parse(
-    const std::string& name, EntryIDType* value) {
-  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<EntryIDType>(
-    EntryIDType_descriptor(), name, value);
-}
-enum Position : int {
-  x = 1,
-  y = 2
-};
-bool Position_IsValid(int value);
-constexpr Position Position_MIN = x;
-constexpr Position Position_MAX = y;
-constexpr int Position_ARRAYSIZE = Position_MAX + 1;
-
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* Position_descriptor();
-template<typename T>
-inline const std::string& Position_Name(T enum_t_value) {
-  static_assert(::std::is_same<T, Position>::value ||
-    ::std::is_integral<T>::value,
-    "Incorrect type passed to function Position_Name.");
-  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
-    Position_descriptor(), enum_t_value);
-}
-inline bool Position_Parse(
-    const std::string& name, Position* value) {
-  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<Position>(
-    Position_descriptor(), name, value);
-}
 enum CapacityType : int {
   Capacity_Small = 1,
   Capacity_Big = 2
@@ -10956,17 +10911,19 @@ class MSG_RetLeaderAttackTarget_SC :
   enum : int {
     kTargetFieldNumber = 1,
   };
-  // optional .Team.EntryIDType target = 1;
+  // optional .msg.EntryIDType target = 1;
   bool has_target() const;
   private:
   bool _internal_has_target() const;
   public:
   void clear_target();
-  ::Team::EntryIDType target() const;
-  void set_target(::Team::EntryIDType value);
+  const ::msg::EntryIDType& target() const;
+  ::msg::EntryIDType* release_target();
+  ::msg::EntryIDType* mutable_target();
+  void set_allocated_target(::msg::EntryIDType* target);
   private:
-  ::Team::EntryIDType _internal_target() const;
-  void _internal_set_target(::Team::EntryIDType value);
+  const ::msg::EntryIDType& _internal_target() const;
+  ::msg::EntryIDType* _internal_mutable_target();
   public:
 
   // @@protoc_insertion_point(class_scope:Team.MSG_RetLeaderAttackTarget_SC)
@@ -10976,7 +10933,7 @@ class MSG_RetLeaderAttackTarget_SC :
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
   ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  int target_;
+  ::msg::EntryIDType* target_;
   friend struct ::TableStruct_team_2eproto;
 };
 // -------------------------------------------------------------------
@@ -19010,33 +18967,60 @@ inline void MSG_RetChangeMapToLeader_SC::set_allocated_info(::Team::LeaderPosInf
 
 // MSG_RetLeaderAttackTarget_SC
 
-// optional .Team.EntryIDType target = 1;
+// optional .msg.EntryIDType target = 1;
 inline bool MSG_RetLeaderAttackTarget_SC::_internal_has_target() const {
   bool value = (_has_bits_[0] & 0x00000001u) != 0;
+  PROTOBUF_ASSUME(!value || target_ != nullptr);
   return value;
 }
 inline bool MSG_RetLeaderAttackTarget_SC::has_target() const {
   return _internal_has_target();
 }
-inline void MSG_RetLeaderAttackTarget_SC::clear_target() {
-  target_ = 1;
-  _has_bits_[0] &= ~0x00000001u;
+inline const ::msg::EntryIDType& MSG_RetLeaderAttackTarget_SC::_internal_target() const {
+  const ::msg::EntryIDType* p = target_;
+  return p != nullptr ? *p : *reinterpret_cast<const ::msg::EntryIDType*>(
+      &::msg::_EntryIDType_default_instance_);
 }
-inline ::Team::EntryIDType MSG_RetLeaderAttackTarget_SC::_internal_target() const {
-  return static_cast< ::Team::EntryIDType >(target_);
-}
-inline ::Team::EntryIDType MSG_RetLeaderAttackTarget_SC::target() const {
+inline const ::msg::EntryIDType& MSG_RetLeaderAttackTarget_SC::target() const {
   // @@protoc_insertion_point(field_get:Team.MSG_RetLeaderAttackTarget_SC.target)
   return _internal_target();
 }
-inline void MSG_RetLeaderAttackTarget_SC::_internal_set_target(::Team::EntryIDType value) {
-  assert(::Team::EntryIDType_IsValid(value));
-  _has_bits_[0] |= 0x00000001u;
-  target_ = value;
+inline ::msg::EntryIDType* MSG_RetLeaderAttackTarget_SC::release_target() {
+  // @@protoc_insertion_point(field_release:Team.MSG_RetLeaderAttackTarget_SC.target)
+  _has_bits_[0] &= ~0x00000001u;
+  ::msg::EntryIDType* temp = target_;
+  target_ = nullptr;
+  return temp;
 }
-inline void MSG_RetLeaderAttackTarget_SC::set_target(::Team::EntryIDType value) {
-  _internal_set_target(value);
-  // @@protoc_insertion_point(field_set:Team.MSG_RetLeaderAttackTarget_SC.target)
+inline ::msg::EntryIDType* MSG_RetLeaderAttackTarget_SC::_internal_mutable_target() {
+  _has_bits_[0] |= 0x00000001u;
+  if (target_ == nullptr) {
+    auto* p = CreateMaybeMessage<::msg::EntryIDType>(GetArenaNoVirtual());
+    target_ = p;
+  }
+  return target_;
+}
+inline ::msg::EntryIDType* MSG_RetLeaderAttackTarget_SC::mutable_target() {
+  // @@protoc_insertion_point(field_mutable:Team.MSG_RetLeaderAttackTarget_SC.target)
+  return _internal_mutable_target();
+}
+inline void MSG_RetLeaderAttackTarget_SC::set_allocated_target(::msg::EntryIDType* target) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == nullptr) {
+    delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(target_);
+  }
+  if (target) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
+    if (message_arena != submessage_arena) {
+      target = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, target, submessage_arena);
+    }
+    _has_bits_[0] |= 0x00000001u;
+  } else {
+    _has_bits_[0] &= ~0x00000001u;
+  }
+  target_ = target;
+  // @@protoc_insertion_point(field_set_allocated:Team.MSG_RetLeaderAttackTarget_SC.target)
 }
 
 // -------------------------------------------------------------------
@@ -19775,16 +19759,6 @@ inline void MSG_updateTeamMemberAvatar_SC::set_avatarid(::PROTOBUF_NAMESPACE_ID:
 
 PROTOBUF_NAMESPACE_OPEN
 
-template <> struct is_proto_enum< ::Team::EntryIDType> : ::std::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::Team::EntryIDType>() {
-  return ::Team::EntryIDType_descriptor();
-}
-template <> struct is_proto_enum< ::Team::Position> : ::std::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::Team::Position>() {
-  return ::Team::Position_descriptor();
-}
 template <> struct is_proto_enum< ::Team::CapacityType> : ::std::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::Team::CapacityType>() {

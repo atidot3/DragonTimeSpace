@@ -384,6 +384,60 @@
     <ClCompile Include="Network\Messages\mail_cmd.pb.cc">
       <Filter>Network\Messages</Filter>
     </ClCompile>
+    <ClCompile Include="Network\Messages\textmodel.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\trade.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\treasure.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\triggersounddata.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\career.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\evolution.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\guild.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\guildpk_msg.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\magic_msg.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\msg_enum.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\npc_msg.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\pet.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\pvpmatchfight.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\quiz.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\rankpk_msg.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\rune.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\subtitle.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Messages\test.pb.cc">
+      <Filter>Network\Messages</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Configuration\Configuration.h">
@@ -756,6 +810,60 @@
       <Filter>Network\Messages</Filter>
     </ClInclude>
     <ClInclude Include="Network\Messages\mail_cmd.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\textmodel.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\trade.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\treasure.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\triggersounddata.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\career.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\evolution.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\guild.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\guildpk_msg.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\magic_msg.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\msg_enum.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\npc_msg.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\pet.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\pvpmatchfight.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\quiz.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\rankpk_msg.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\rune.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\subtitle.pb.h">
+      <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Messages\test.pb.h">
       <Filter>Network\Messages</Filter>
     </ClInclude>
   </ItemGroup>

@@ -20,6 +20,7 @@ extern PROTOBUF_INTERNAL_EXPORT_team_2eproto ::PROTOBUF_NAMESPACE_ID::internal::
 extern PROTOBUF_INTERNAL_EXPORT_team_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MemberPos_team_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_team_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Memember_team_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_team_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_teamDropItem_team_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_msg_5fenum_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EntryIDType_msg_5fenum_2eproto;
 namespace Team {
 class MSG_CreateTeam_CSDefaultTypeInternal {
  public:
@@ -918,8 +919,9 @@ static void InitDefaultsscc_info_MSG_RetLeaderAttackTarget_SC_team_2eproto() {
   ::Team::MSG_RetLeaderAttackTarget_SC::InitAsDefaultInstance();
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MSG_RetLeaderAttackTarget_SC_team_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MSG_RetLeaderAttackTarget_SC_team_2eproto}, {}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MSG_RetLeaderAttackTarget_SC_team_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MSG_RetLeaderAttackTarget_SC_team_2eproto}, {
+      &scc_info_EntryIDType_msg_5fenum_2eproto.base,}};
 
 static void InitDefaultsscc_info_MSG_RetLeaderMapPos_SC_team_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -1335,7 +1337,7 @@ static void InitDefaultsscc_info_teamDropItem_team_2eproto() {
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_teamDropItem_team_2eproto}, {}};
 
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_team_2eproto[72];
-static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_team_2eproto[9];
+static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_team_2eproto[7];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_team_2eproto = nullptr;
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_team_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
@@ -2175,152 +2177,152 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 };
 
 const char descriptor_table_protodef_team_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\nteam.proto\022\004Team\"5\n\021MSG_CreateTeam_CS\022"
-  "\014\n\004name\030\001 \002(\t\022\022\n\nactivityid\030\002 \001(\r\"\361\002\n\010Me"
-  "member\022\014\n\004mark\030\001 \001(\r\022\014\n\004name\030\002 \001(\t\022\022\n\noc"
-  "cupation\030\003 \001(\r\022\r\n\005level\030\004 \001(\r\022\r\n\005skill\030\005"
-  " \003(\r\022\022\n\nmememberid\030\006 \001(\t\022\n\n\002hp\030\007 \001(\r\022\r\n\005"
-  "maxhp\030\010 \001(\r\022\027\n\017occupationlevel\030\t \001(\r\022\016\n\006"
-  "heroid\030\n \001(\r\022\r\n\005fight\030\013 \001(\r\022\017\n\007sceneid\030\014"
-  " \001(\t\022\035\n\005state\030\r \001(\0162\016.Team.MemState\022\021\n\tp"
-  "rivilege\030\016 \001(\r\022\021\n\thairstyle\030\017 \001(\r\022\021\n\thai"
-  "rcolor\030\020 \001(\r\022\021\n\theadstyle\030\021 \001(\r\022\021\n\tbodys"
-  "tyle\030\022 \001(\r\022\017\n\007antenna\030\023 \001(\r\022\020\n\010avatarid\030"
-  "\024 \001(\r\"\030\n\026MSG_TeamMemeberList_CS\"\357\001\n\026MSG_"
-  "TeamMemeberList_SC\022\n\n\002id\030\001 \001(\r\022\014\n\004name\030\002"
-  " \001(\t\022\020\n\010leaderid\030\003 \001(\t\022\033\n\003mem\030\004 \003(\0132\016.Te"
-  "am.Memember\022\036\n\004mode\030\005 \001(\0162\020.Team.RewardM"
-  "ode\022$\n\010cap_type\030\006 \001(\0162\022.Team.CapacityTyp"
-  "e\022\021\n\tmaxmember\030\007 \001(\r\022\014\n\004note\030\010 \001(\t\022\022\n\nac"
-  "tivityid\030\t \001(\r\022\021\n\tcurmember\030\n \001(\r\"q\n\007One"
-  "Team\022\n\n\002id\030\001 \001(\r\022\014\n\004name\030\002 \001(\t\022\014\n\004size\030\003"
-  " \001(\r\022\020\n\010capacity\030\004 \001(\r\022\036\n\004mode\030\005 \001(\0162\020.T"
-  "eam.RewardMode\022\014\n\004note\030\006 \001(\t\"\022\n\020MSG_Team"
-  "_List_CS\"A\n\020MSG_Team_List_SC\022-\n\007oneteam\030"
-  "\001 \003(\0132\034.Team.MSG_TeamMemeberList_SC\"\"\n\020M"
-  "SG_Join_Team_CS\022\016\n\006teamid\030\001 \002(\r\"#\n\020MSG_J"
-  "oin_Team_SC\022\017\n\007retcode\030\001 \001(\r\"L\n\036MSG_ReqJ"
-  "oinTeamNotifyLeader_SC\022\023\n\013requesterid\030\001 "
-  "\002(\t\022\025\n\rrequestername\030\002 \001(\t\"S\n\025MSG_Answer"
-  "JoinTeam_CS\022\023\n\013requesterid\030\001 \002(\t\022%\n\013answ"
-  "er_type\030\002 \002(\0162\020.Team.AnswerType\"\177\n\025MSG_A"
-  "nswerJoinTeam_SC\022\017\n\007errcode\030\001 \001(\r\022%\n\013ans"
-  "wer_type\030\002 \001(\0162\020.Team.AnswerType\022.\n\010team"
-  "info\030\003 \001(\0132\034.Team.MSG_TeamMemeberList_SC"
-  "\"\025\n\023MSG_ReqApplyList_CS\"H\n\023MSG_ReqApplyL"
-  "ist_SC\022\037\n\007applyer\030\001 \003(\0132\016.Team.Memember\022"
-  "\020\n\010leaderid\030\002 \001(\t\"\'\n\025MSG_ReqDelMemember_"
-  "CS\022\016\n\006charid\030\001 \002(\t\"U\n\025MSG_ReqDelMemember"
-  "_SC\022\016\n\006charid\030\001 \002(\t\022\036\n\007outtype\030\002 \002(\0162\r.T"
-  "eam.OutType\022\014\n\004name\030\003 \001(\t\"\'\n\026MSG_ReqLanc"
-  "hVoteOut_CS\022\r\n\005outid\030\001 \002(\t\"\212\001\n\026MSG_ReqLa"
-  "nchVoteOut_SC\022\022\n\007errcode\030\001 \002(\r:\0010\022\021\n\tlan"
-  "cherid\030\002 \001(\t\022\023\n\013lanchername\030\003 \002(\t\022\017\n\007out"
-  "erid\030\004 \001(\t\022\021\n\toutername\030\005 \002(\t\022\020\n\010duratio"
-  "n\030\006 \002(\t\"(\n\016MSG_ReqVote_CS\022\026\n\007yesorno\030\001 \002"
-  "(\010:\005false\"&\n\026MSG_ReqChangeLeader_CS\022\014\n\004t"
-  "oid\030\001 \002(\t\"8\n\026MSG_ReqChangeLeader_SC\022\r\n\005n"
-  "ewid\030\001 \002(\t\022\017\n\007newname\030\002 \001(\t\" \n\036MSG_ReqNe"
-  "arByUnteamedPlayer_CS\"=\n\036MSG_ReqNearByUn"
-  "teamedPlayer_SC\022\033\n\003mem\030\001 \003(\0132\016.Team.Meme"
-  "mber\"*\n\025MSG_InviteIntoTeam_CS\022\021\n\tinvitee"
-  "id\030\001 \001(\t\"+\n\025MSG_InviteIntoTeam_SC\022\022\n\007err"
-  "code\030\001 \001(\r:\0010\"g\n\027MSG_AnswerInviteTeam_CS"
-  "\022\026\n\007yesorno\030\001 \001(\010:\005false\022\021\n\tinviterid\030\002 "
-  "\001(\t\022\021\n\tinviteeid\030\003 \001(\t\022\016\n\006teamid\030\004 \001(\r\"1"
-  "\n\022MSG_AddMemember_SC\022\033\n\003mem\030\001 \001(\0132\016.Team"
-  ".Memember\"\033\n\031MSG_LeaderIgnoreNotice_CS\"^"
-  "\n\033MSG_updateTeamMememberHp_SC\022\r\n\005memid\030\001"
-  " \001(\t\022\n\n\002hp\030\002 \001(\r\022\r\n\005maxhp\030\003 \001(\r\022\025\n\006isdea"
-  "d\030\004 \001(\010:\005false\"Z\n\037MSG_updateTeamMemember"
-  "Career_SC\022\022\n\nmememberid\030\001 \001(\t\022\016\n\006career\030"
-  "\002 \001(\r\022\023\n\013careerlevel\030\003 \001(\r\"=\n\034MSG_update"
-  "TeamMemeberHero_SC\022\r\n\005memid\030\001 \001(\t\022\016\n\006her"
-  "oid\030\002 \001(\r\"W\n\036MSG_updateTeamMememberLevel"
-  "_SC\022\022\n\nmememberid\030\001 \001(\t\022\r\n\005level\030\002 \001(\r\022\022"
-  "\n\nmembername\030\003 \001(\t\"Q\n\034MSG_updateTeamMemb"
-  "erFight_SC\022\022\n\nmememberid\030\001 \001(\t\022\r\n\005fight\030"
-  "\002 \001(\r\022\016\n\006heroid\030\003 \001(\r\"\031\n\027MSG_ReqTeamMemb"
-  "erPos_CS\"D\n\tMemberPos\022\020\n\010memberid\030\001 \001(\t\022"
-  "\017\n\007sceneid\030\002 \001(\t\022\t\n\001x\030\003 \001(\r\022\t\n\001y\030\004 \001(\r\";"
-  "\n\027MSG_RetTeamMemberPos_SC\022 \n\007members\030\001 \003"
-  "(\0132\017.Team.MemberPos\"\263\001\n\036MSG_RetNearByUnt"
-  "eamedInvite_SC\022\037\n\007inviter\030\001 \001(\0132\016.Team.M"
-  "emember\022\023\n\013invitername\030\002 \001(\t\022\021\n\tinviteri"
-  "d\030\003 \001(\t\022\023\n\013inviteename\030\004 \001(\t\022\021\n\tinviteei"
-  "d\030\005 \001(\t\022\020\n\010teamname\030\006 \001(\t\022\016\n\006teamid\030\007 \001("
-  "\r\"#\n\022MSG_RetNewApply_SC\022\r\n\005count\030\001 \001(\r\"Y"
-  "\n\014teamDropItem\022\016\n\006thisid\030\001 \001(\t\022\r\n\005objid\030"
-  "\002 \001(\r\022\013\n\003num\030\003 \001(\r\022\014\n\004bind\030\004 \001(\r\022\017\n\007duet"
-  "ime\030\005 \001(\r\"\?\n\030MSG_RetTeamPublicDrop_SC\022#\n"
-  "\007oneitem\030\001 \003(\0132\022.Team.teamDropItem\"W\n\022Ch"
-  "ooseTeamDropItem\022\016\n\006thisid\030\001 \001(\t\022 \n\006choo"
-  "se\030\002 \001(\0162\020.Team.ChooseType\022\017\n\007errcode\030\003 "
-  "\001(\r\"B\n\030MSG_ReqChooseTeamDrop_CS\022&\n\004item\030"
-  "\001 \003(\0132\030.Team.ChooseTeamDropItem\"B\n\030MSG_R"
-  "etChooseTeamDrop_SC\022&\n\004item\030\001 \003(\0132\030.Team"
-  ".ChooseTeamDropItem\"J\n\024MSG_ReqSearchTeam"
-  "_CS\022\016\n\006teamid\030\001 \001(\r\022\022\n\nactivityid\030\002 \001(\r\022"
-  "\016\n\006nearby\030\003 \001(\010\":\n\032MSG_ReqSearchTeamByPa"
-  "ge_CS\022\014\n\004page\030\001 \001(\r\022\016\n\006nearby\030\002 \001(\010\"g\n\024M"
-  "SG_RetSearchTeam_SC\022\021\n\ttotalpage\030\001 \001(\r\022\014"
-  "\n\004page\030\002 \001(\r\022.\n\010teamlist\030\003 \003(\0132\034.Team.MS"
-  "G_TeamMemeberList_SC\"4\n\036MSG_ReqChangeAct"
-  "ivityTarget_CS\022\022\n\nactivityid\030\001 \001(\r\"E\n\036MS"
-  "G_RetChangeActivityTarget_SC\022\017\n\007retcode\030"
-  "\001 \001(\r\022\022\n\nactivityid\030\002 \001(\r\"I\n\017MSG_ReqMatc"
-  "h_CS\022\022\n\nactivityid\030\001 \001(\r\022\020\n\010minlevel\030\002 \001"
-  "(\r\022\020\n\010maxlevel\030\003 \001(\r\"G\n\017MSG_RetMatch_SC\022"
-  "\017\n\007retcode\030\001 \001(\r\022\020\n\010needtime\030\002 \001(\r\022\021\n\tst"
-  "arttime\030\003 \001(\r\"\023\n\021MSG_ReqUnmatch_CS\"$\n\021MS"
-  "G_RetUnmatch_SC\022\017\n\007retcode\030\001 \001(\r\"\036\n\034MSG_"
-  "RetNotifyMatchSuccess_SC\"\032\n\030MSG_ReqMembe"
-  "rBackTeam_CS\"+\n\030MSG_RetMemberBackTeam_SC"
-  "\022\017\n\007rettype\030\001 \001(\r\"\\\n\033MSG_updateMemStateT"
-  "oTeam_SC\022\r\n\005memid\030\001 \001(\t\022\017\n\007sceneid\030\002 \001(\t"
-  "\022\035\n\005state\030\003 \001(\0162\016.Team.MemState\"\030\n\026MSG_R"
-  "eqLeaderMapPos_CS\"K\n\026MSG_RetLeaderMapPos"
-  "_SC\022\017\n\007retcode\030\001 \001(\r\022 \n\003pos\030\002 \001(\0132\023.Team"
-  ".LeaderPosInfo\"T\n\rLeaderPosInfo\022\024\n\005valid"
-  "\030\001 \001(\010:\005false\022\017\n\007sceneid\030\002 \001(\t\022\034\n\003pos\030\003 "
-  "\001(\0132\017.Team.MemberPos\"R\n\033MSG_ReqChangeMap"
-  "ToLeader_CS\022\017\n\007sceneid\030\001 \001(\t\022\"\n\tleaderpo"
-  "s\030\002 \001(\0132\017.Team.MemberPos\"Q\n\033MSG_RetChang"
-  "eMapToLeader_SC\022\017\n\007retcode\030\001 \001(\r\022!\n\004info"
-  "\030\002 \001(\0132\023.Team.LeaderPosInfo\"\036\n\034MSG_ReqLe"
-  "aderAttackTarget_CS\"A\n\034MSG_RetLeaderAtta"
-  "ckTarget_SC\022!\n\006target\030\001 \001(\0162\021.Team.Entry"
-  "IDType\"%\n#MSG_notifyMemberLeaderIntoPubl"
-  "ic_SC\"#\n!MSG_notifyMemberOfflineHosting_"
-  "SC\"f\n\035MSG_Req_SetMemberPrivilege_CS\022\020\n\010m"
-  "emberid\030\001 \001(\004\022&\n\tprivilege\030\002 \001(\0162\023.Team."
-  "TeamPrivilege\022\013\n\003set\030\003 \001(\010\"G\n MSG_update"
-  "TeamMemberPrivilege_SC\022\020\n\010memberid\030\001 \001(\004"
-  "\022\021\n\tprivilege\030\002 \001(\r\"0\n\034MSG_Req_checkUser"
-  "TeamInfo_CS\022\020\n\010memberid\030\001 \001(\004\"P\n\034MSG_Ret"
-  "_checkUserTeamInfo_SC\022\020\n\010memberid\030\001 \001(\004\022"
-  "\016\n\006teamid\030\002 \001(\004\022\016\n\006online\030\003 \001(\010\"\030\n\026MSG_R"
-  "eq_DismissTeam_CS\"\'\n\030MSG_NotifyTeamDismi"
-  "ss_SC\022\013\n\003suc\030\001 \001(\010\"\260\001\n\035MSG_updateTeamMem"
-  "berAvatar_SC\022\022\n\nmememberid\030\001 \001(\t\022\021\n\thair"
-  "style\030\002 \001(\r\022\021\n\thaircolor\030\003 \001(\r\022\021\n\theadst"
-  "yle\030\004 \001(\r\022\021\n\tbodystyle\030\005 \001(\r\022\017\n\007antenna\030"
-  "\006 \001(\r\022\014\n\004coat\030\007 \001(\r\022\020\n\010avatarid\030\010 \001(\r*\037\n"
-  "\013EntryIDType\022\006\n\002id\020\001\022\010\n\004type\020\002*\030\n\010Positi"
-  "on\022\005\n\001x\020\001\022\005\n\001y\020\002*4\n\014CapacityType\022\022\n\016Capa"
-  "city_Small\020\001\022\020\n\014Capacity_Big\020\002*-\n\nReward"
-  "Mode\022\r\n\tMode_Roll\020\001\022\020\n\014Mode_Dispath\020\002*B\n"
-  "\007OutType\022\020\n\014OutType_Quit\020\001\022\020\n\014OutType_Fi"
-  "re\020\002\022\023\n\017OutType_VoteOut\020\003*I\n\rTeamPrivile"
-  "ge\022\030\n\024TeamPrivilege_Invite\020\001\022\036\n\032TeamPriv"
-  "ilege_RemoveMember\020\002*3\n\nAnswerType\022\022\n\016An"
-  "swerType_Yes\020\001\022\021\n\rAnswerType_No\020\002*N\n\nCho"
-  "oseType\022\023\n\017ChooseType_Need\020\001\022\024\n\020ChooseTy"
-  "pe_Greed\020\002\022\025\n\021ChooseType_Giveup\020\003*:\n\010Mem"
-  "State\022\n\n\006NORMAL\020\000\022\010\n\004AWAY\020\001\022\013\n\007OFFLINE\020\002"
-  "\022\013\n\007HOSTING\020\003"
+  "\n\nteam.proto\022\004Team\032\016msg_enum.proto\"5\n\021MS"
+  "G_CreateTeam_CS\022\014\n\004name\030\001 \002(\t\022\022\n\nactivit"
+  "yid\030\002 \001(\r\"\361\002\n\010Memember\022\014\n\004mark\030\001 \001(\r\022\014\n\004"
+  "name\030\002 \001(\t\022\022\n\noccupation\030\003 \001(\r\022\r\n\005level\030"
+  "\004 \001(\r\022\r\n\005skill\030\005 \003(\r\022\022\n\nmememberid\030\006 \001(\t"
+  "\022\n\n\002hp\030\007 \001(\r\022\r\n\005maxhp\030\010 \001(\r\022\027\n\017occupatio"
+  "nlevel\030\t \001(\r\022\016\n\006heroid\030\n \001(\r\022\r\n\005fight\030\013 "
+  "\001(\r\022\017\n\007sceneid\030\014 \001(\t\022\035\n\005state\030\r \001(\0162\016.Te"
+  "am.MemState\022\021\n\tprivilege\030\016 \001(\r\022\021\n\thairst"
+  "yle\030\017 \001(\r\022\021\n\thaircolor\030\020 \001(\r\022\021\n\theadstyl"
+  "e\030\021 \001(\r\022\021\n\tbodystyle\030\022 \001(\r\022\017\n\007antenna\030\023 "
+  "\001(\r\022\020\n\010avatarid\030\024 \001(\r\"\030\n\026MSG_TeamMemeber"
+  "List_CS\"\357\001\n\026MSG_TeamMemeberList_SC\022\n\n\002id"
+  "\030\001 \001(\r\022\014\n\004name\030\002 \001(\t\022\020\n\010leaderid\030\003 \001(\t\022\033"
+  "\n\003mem\030\004 \003(\0132\016.Team.Memember\022\036\n\004mode\030\005 \001("
+  "\0162\020.Team.RewardMode\022$\n\010cap_type\030\006 \001(\0162\022."
+  "Team.CapacityType\022\021\n\tmaxmember\030\007 \001(\r\022\014\n\004"
+  "note\030\010 \001(\t\022\022\n\nactivityid\030\t \001(\r\022\021\n\tcurmem"
+  "ber\030\n \001(\r\"q\n\007OneTeam\022\n\n\002id\030\001 \001(\r\022\014\n\004name"
+  "\030\002 \001(\t\022\014\n\004size\030\003 \001(\r\022\020\n\010capacity\030\004 \001(\r\022\036"
+  "\n\004mode\030\005 \001(\0162\020.Team.RewardMode\022\014\n\004note\030\006"
+  " \001(\t\"\022\n\020MSG_Team_List_CS\"A\n\020MSG_Team_Lis"
+  "t_SC\022-\n\007oneteam\030\001 \003(\0132\034.Team.MSG_TeamMem"
+  "eberList_SC\"\"\n\020MSG_Join_Team_CS\022\016\n\006teami"
+  "d\030\001 \002(\r\"#\n\020MSG_Join_Team_SC\022\017\n\007retcode\030\001"
+  " \001(\r\"L\n\036MSG_ReqJoinTeamNotifyLeader_SC\022\023"
+  "\n\013requesterid\030\001 \002(\t\022\025\n\rrequestername\030\002 \001"
+  "(\t\"S\n\025MSG_AnswerJoinTeam_CS\022\023\n\013requester"
+  "id\030\001 \002(\t\022%\n\013answer_type\030\002 \002(\0162\020.Team.Ans"
+  "werType\"\177\n\025MSG_AnswerJoinTeam_SC\022\017\n\007errc"
+  "ode\030\001 \001(\r\022%\n\013answer_type\030\002 \001(\0162\020.Team.An"
+  "swerType\022.\n\010teaminfo\030\003 \001(\0132\034.Team.MSG_Te"
+  "amMemeberList_SC\"\025\n\023MSG_ReqApplyList_CS\""
+  "H\n\023MSG_ReqApplyList_SC\022\037\n\007applyer\030\001 \003(\0132"
+  "\016.Team.Memember\022\020\n\010leaderid\030\002 \001(\t\"\'\n\025MSG"
+  "_ReqDelMemember_CS\022\016\n\006charid\030\001 \002(\t\"U\n\025MS"
+  "G_ReqDelMemember_SC\022\016\n\006charid\030\001 \002(\t\022\036\n\007o"
+  "uttype\030\002 \002(\0162\r.Team.OutType\022\014\n\004name\030\003 \001("
+  "\t\"\'\n\026MSG_ReqLanchVoteOut_CS\022\r\n\005outid\030\001 \002"
+  "(\t\"\212\001\n\026MSG_ReqLanchVoteOut_SC\022\022\n\007errcode"
+  "\030\001 \002(\r:\0010\022\021\n\tlancherid\030\002 \001(\t\022\023\n\013lanchern"
+  "ame\030\003 \002(\t\022\017\n\007outerid\030\004 \001(\t\022\021\n\toutername\030"
+  "\005 \002(\t\022\020\n\010duration\030\006 \002(\t\"(\n\016MSG_ReqVote_C"
+  "S\022\026\n\007yesorno\030\001 \002(\010:\005false\"&\n\026MSG_ReqChan"
+  "geLeader_CS\022\014\n\004toid\030\001 \002(\t\"8\n\026MSG_ReqChan"
+  "geLeader_SC\022\r\n\005newid\030\001 \002(\t\022\017\n\007newname\030\002 "
+  "\001(\t\" \n\036MSG_ReqNearByUnteamedPlayer_CS\"=\n"
+  "\036MSG_ReqNearByUnteamedPlayer_SC\022\033\n\003mem\030\001"
+  " \003(\0132\016.Team.Memember\"*\n\025MSG_InviteIntoTe"
+  "am_CS\022\021\n\tinviteeid\030\001 \001(\t\"+\n\025MSG_InviteIn"
+  "toTeam_SC\022\022\n\007errcode\030\001 \001(\r:\0010\"g\n\027MSG_Ans"
+  "werInviteTeam_CS\022\026\n\007yesorno\030\001 \001(\010:\005false"
+  "\022\021\n\tinviterid\030\002 \001(\t\022\021\n\tinviteeid\030\003 \001(\t\022\016"
+  "\n\006teamid\030\004 \001(\r\"1\n\022MSG_AddMemember_SC\022\033\n\003"
+  "mem\030\001 \001(\0132\016.Team.Memember\"\033\n\031MSG_LeaderI"
+  "gnoreNotice_CS\"^\n\033MSG_updateTeamMemember"
+  "Hp_SC\022\r\n\005memid\030\001 \001(\t\022\n\n\002hp\030\002 \001(\r\022\r\n\005maxh"
+  "p\030\003 \001(\r\022\025\n\006isdead\030\004 \001(\010:\005false\"Z\n\037MSG_up"
+  "dateTeamMememberCareer_SC\022\022\n\nmememberid\030"
+  "\001 \001(\t\022\016\n\006career\030\002 \001(\r\022\023\n\013careerlevel\030\003 \001"
+  "(\r\"=\n\034MSG_updateTeamMemeberHero_SC\022\r\n\005me"
+  "mid\030\001 \001(\t\022\016\n\006heroid\030\002 \001(\r\"W\n\036MSG_updateT"
+  "eamMememberLevel_SC\022\022\n\nmememberid\030\001 \001(\t\022"
+  "\r\n\005level\030\002 \001(\r\022\022\n\nmembername\030\003 \001(\t\"Q\n\034MS"
+  "G_updateTeamMemberFight_SC\022\022\n\nmememberid"
+  "\030\001 \001(\t\022\r\n\005fight\030\002 \001(\r\022\016\n\006heroid\030\003 \001(\r\"\031\n"
+  "\027MSG_ReqTeamMemberPos_CS\"D\n\tMemberPos\022\020\n"
+  "\010memberid\030\001 \001(\t\022\017\n\007sceneid\030\002 \001(\t\022\t\n\001x\030\003 "
+  "\001(\r\022\t\n\001y\030\004 \001(\r\";\n\027MSG_RetTeamMemberPos_S"
+  "C\022 \n\007members\030\001 \003(\0132\017.Team.MemberPos\"\263\001\n\036"
+  "MSG_RetNearByUnteamedInvite_SC\022\037\n\007invite"
+  "r\030\001 \001(\0132\016.Team.Memember\022\023\n\013invitername\030\002"
+  " \001(\t\022\021\n\tinviterid\030\003 \001(\t\022\023\n\013inviteename\030\004"
+  " \001(\t\022\021\n\tinviteeid\030\005 \001(\t\022\020\n\010teamname\030\006 \001("
+  "\t\022\016\n\006teamid\030\007 \001(\r\"#\n\022MSG_RetNewApply_SC\022"
+  "\r\n\005count\030\001 \001(\r\"Y\n\014teamDropItem\022\016\n\006thisid"
+  "\030\001 \001(\t\022\r\n\005objid\030\002 \001(\r\022\013\n\003num\030\003 \001(\r\022\014\n\004bi"
+  "nd\030\004 \001(\r\022\017\n\007duetime\030\005 \001(\r\"\?\n\030MSG_RetTeam"
+  "PublicDrop_SC\022#\n\007oneitem\030\001 \003(\0132\022.Team.te"
+  "amDropItem\"W\n\022ChooseTeamDropItem\022\016\n\006this"
+  "id\030\001 \001(\t\022 \n\006choose\030\002 \001(\0162\020.Team.ChooseTy"
+  "pe\022\017\n\007errcode\030\003 \001(\r\"B\n\030MSG_ReqChooseTeam"
+  "Drop_CS\022&\n\004item\030\001 \003(\0132\030.Team.ChooseTeamD"
+  "ropItem\"B\n\030MSG_RetChooseTeamDrop_SC\022&\n\004i"
+  "tem\030\001 \003(\0132\030.Team.ChooseTeamDropItem\"J\n\024M"
+  "SG_ReqSearchTeam_CS\022\016\n\006teamid\030\001 \001(\r\022\022\n\na"
+  "ctivityid\030\002 \001(\r\022\016\n\006nearby\030\003 \001(\010\":\n\032MSG_R"
+  "eqSearchTeamByPage_CS\022\014\n\004page\030\001 \001(\r\022\016\n\006n"
+  "earby\030\002 \001(\010\"g\n\024MSG_RetSearchTeam_SC\022\021\n\tt"
+  "otalpage\030\001 \001(\r\022\014\n\004page\030\002 \001(\r\022.\n\010teamlist"
+  "\030\003 \003(\0132\034.Team.MSG_TeamMemeberList_SC\"4\n\036"
+  "MSG_ReqChangeActivityTarget_CS\022\022\n\nactivi"
+  "tyid\030\001 \001(\r\"E\n\036MSG_RetChangeActivityTarge"
+  "t_SC\022\017\n\007retcode\030\001 \001(\r\022\022\n\nactivityid\030\002 \001("
+  "\r\"I\n\017MSG_ReqMatch_CS\022\022\n\nactivityid\030\001 \001(\r"
+  "\022\020\n\010minlevel\030\002 \001(\r\022\020\n\010maxlevel\030\003 \001(\r\"G\n\017"
+  "MSG_RetMatch_SC\022\017\n\007retcode\030\001 \001(\r\022\020\n\010need"
+  "time\030\002 \001(\r\022\021\n\tstarttime\030\003 \001(\r\"\023\n\021MSG_Req"
+  "Unmatch_CS\"$\n\021MSG_RetUnmatch_SC\022\017\n\007retco"
+  "de\030\001 \001(\r\"\036\n\034MSG_RetNotifyMatchSuccess_SC"
+  "\"\032\n\030MSG_ReqMemberBackTeam_CS\"+\n\030MSG_RetM"
+  "emberBackTeam_SC\022\017\n\007rettype\030\001 \001(\r\"\\\n\033MSG"
+  "_updateMemStateToTeam_SC\022\r\n\005memid\030\001 \001(\t\022"
+  "\017\n\007sceneid\030\002 \001(\t\022\035\n\005state\030\003 \001(\0162\016.Team.M"
+  "emState\"\030\n\026MSG_ReqLeaderMapPos_CS\"K\n\026MSG"
+  "_RetLeaderMapPos_SC\022\017\n\007retcode\030\001 \001(\r\022 \n\003"
+  "pos\030\002 \001(\0132\023.Team.LeaderPosInfo\"T\n\rLeader"
+  "PosInfo\022\024\n\005valid\030\001 \001(\010:\005false\022\017\n\007sceneid"
+  "\030\002 \001(\t\022\034\n\003pos\030\003 \001(\0132\017.Team.MemberPos\"R\n\033"
+  "MSG_ReqChangeMapToLeader_CS\022\017\n\007sceneid\030\001"
+  " \001(\t\022\"\n\tleaderpos\030\002 \001(\0132\017.Team.MemberPos"
+  "\"Q\n\033MSG_RetChangeMapToLeader_SC\022\017\n\007retco"
+  "de\030\001 \001(\r\022!\n\004info\030\002 \001(\0132\023.Team.LeaderPosI"
+  "nfo\"\036\n\034MSG_ReqLeaderAttackTarget_CS\"@\n\034M"
+  "SG_RetLeaderAttackTarget_SC\022 \n\006target\030\001 "
+  "\001(\0132\020.msg.EntryIDType\"%\n#MSG_notifyMembe"
+  "rLeaderIntoPublic_SC\"#\n!MSG_notifyMember"
+  "OfflineHosting_SC\"f\n\035MSG_Req_SetMemberPr"
+  "ivilege_CS\022\020\n\010memberid\030\001 \001(\004\022&\n\tprivileg"
+  "e\030\002 \001(\0162\023.Team.TeamPrivilege\022\013\n\003set\030\003 \001("
+  "\010\"G\n MSG_updateTeamMemberPrivilege_SC\022\020\n"
+  "\010memberid\030\001 \001(\004\022\021\n\tprivilege\030\002 \001(\r\"0\n\034MS"
+  "G_Req_checkUserTeamInfo_CS\022\020\n\010memberid\030\001"
+  " \001(\004\"P\n\034MSG_Ret_checkUserTeamInfo_SC\022\020\n\010"
+  "memberid\030\001 \001(\004\022\016\n\006teamid\030\002 \001(\004\022\016\n\006online"
+  "\030\003 \001(\010\"\030\n\026MSG_Req_DismissTeam_CS\"\'\n\030MSG_"
+  "NotifyTeamDismiss_SC\022\013\n\003suc\030\001 \001(\010\"\260\001\n\035MS"
+  "G_updateTeamMemberAvatar_SC\022\022\n\nmememberi"
+  "d\030\001 \001(\t\022\021\n\thairstyle\030\002 \001(\r\022\021\n\thaircolor\030"
+  "\003 \001(\r\022\021\n\theadstyle\030\004 \001(\r\022\021\n\tbodystyle\030\005 "
+  "\001(\r\022\017\n\007antenna\030\006 \001(\r\022\014\n\004coat\030\007 \001(\r\022\020\n\010av"
+  "atarid\030\010 \001(\r*4\n\014CapacityType\022\022\n\016Capacity"
+  "_Small\020\001\022\020\n\014Capacity_Big\020\002*-\n\nRewardMode"
+  "\022\r\n\tMode_Roll\020\001\022\020\n\014Mode_Dispath\020\002*B\n\007Out"
+  "Type\022\020\n\014OutType_Quit\020\001\022\020\n\014OutType_Fire\020\002"
+  "\022\023\n\017OutType_VoteOut\020\003*I\n\rTeamPrivilege\022\030"
+  "\n\024TeamPrivilege_Invite\020\001\022\036\n\032TeamPrivileg"
+  "e_RemoveMember\020\002*3\n\nAnswerType\022\022\n\016Answer"
+  "Type_Yes\020\001\022\021\n\rAnswerType_No\020\002*N\n\nChooseT"
+  "ype\022\023\n\017ChooseType_Need\020\001\022\024\n\020ChooseType_G"
+  "reed\020\002\022\025\n\021ChooseType_Giveup\020\003*:\n\010MemStat"
+  "e\022\n\n\006NORMAL\020\000\022\010\n\004AWAY\020\001\022\013\n\007OFFLINE\020\002\022\013\n\007"
+  "HOSTING\020\003"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_team_2eproto_deps[1] = {
+  &::descriptor_table_msg_5fenum_2eproto,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_team_2eproto_sccs[72] = {
   &scc_info_ChooseTeamDropItem_team_2eproto.base,
@@ -2399,8 +2401,8 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_tea
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_team_2eproto_once;
 static bool descriptor_table_team_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_team_2eproto = {
-  &descriptor_table_team_2eproto_initialized, descriptor_table_protodef_team_2eproto, "team.proto", 5733,
-  &descriptor_table_team_2eproto_once, descriptor_table_team_2eproto_sccs, descriptor_table_team_2eproto_deps, 72, 0,
+  &descriptor_table_team_2eproto_initialized, descriptor_table_protodef_team_2eproto, "team.proto", 5689,
+  &descriptor_table_team_2eproto_once, descriptor_table_team_2eproto_sccs, descriptor_table_team_2eproto_deps, 72, 1,
   schemas, file_default_instances, TableStruct_team_2eproto::offsets,
   file_level_metadata_team_2eproto, 72, file_level_enum_descriptors_team_2eproto, file_level_service_descriptors_team_2eproto,
 };
@@ -2408,37 +2410,9 @@ const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_team_2
 // Force running AddDescriptors() at dynamic initialization time.
 static bool dynamic_init_dummy_team_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_team_2eproto)), true);
 namespace Team {
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EntryIDType_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_team_2eproto);
-  return file_level_enum_descriptors_team_2eproto[0];
-}
-bool EntryIDType_IsValid(int value) {
-  switch (value) {
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* Position_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_team_2eproto);
-  return file_level_enum_descriptors_team_2eproto[1];
-}
-bool Position_IsValid(int value) {
-  switch (value) {
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CapacityType_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_team_2eproto);
-  return file_level_enum_descriptors_team_2eproto[2];
+  return file_level_enum_descriptors_team_2eproto[0];
 }
 bool CapacityType_IsValid(int value) {
   switch (value) {
@@ -2452,7 +2426,7 @@ bool CapacityType_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* RewardMode_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_team_2eproto);
-  return file_level_enum_descriptors_team_2eproto[3];
+  return file_level_enum_descriptors_team_2eproto[1];
 }
 bool RewardMode_IsValid(int value) {
   switch (value) {
@@ -2466,7 +2440,7 @@ bool RewardMode_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* OutType_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_team_2eproto);
-  return file_level_enum_descriptors_team_2eproto[4];
+  return file_level_enum_descriptors_team_2eproto[2];
 }
 bool OutType_IsValid(int value) {
   switch (value) {
@@ -2481,7 +2455,7 @@ bool OutType_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* TeamPrivilege_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_team_2eproto);
-  return file_level_enum_descriptors_team_2eproto[5];
+  return file_level_enum_descriptors_team_2eproto[3];
 }
 bool TeamPrivilege_IsValid(int value) {
   switch (value) {
@@ -2495,7 +2469,7 @@ bool TeamPrivilege_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* AnswerType_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_team_2eproto);
-  return file_level_enum_descriptors_team_2eproto[6];
+  return file_level_enum_descriptors_team_2eproto[4];
 }
 bool AnswerType_IsValid(int value) {
   switch (value) {
@@ -2509,7 +2483,7 @@ bool AnswerType_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ChooseType_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_team_2eproto);
-  return file_level_enum_descriptors_team_2eproto[7];
+  return file_level_enum_descriptors_team_2eproto[5];
 }
 bool ChooseType_IsValid(int value) {
   switch (value) {
@@ -2524,7 +2498,7 @@ bool ChooseType_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* MemState_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_team_2eproto);
-  return file_level_enum_descriptors_team_2eproto[8];
+  return file_level_enum_descriptors_team_2eproto[6];
 }
 bool MemState_IsValid(int value) {
   switch (value) {
@@ -18425,15 +18399,26 @@ void MSG_ReqLeaderAttackTarget_CS::InternalSwap(MSG_ReqLeaderAttackTarget_CS* ot
 // ===================================================================
 
 void MSG_RetLeaderAttackTarget_SC::InitAsDefaultInstance() {
+  ::Team::_MSG_RetLeaderAttackTarget_SC_default_instance_._instance.get_mutable()->target_ = const_cast< ::msg::EntryIDType*>(
+      ::msg::EntryIDType::internal_default_instance());
 }
 class MSG_RetLeaderAttackTarget_SC::_Internal {
  public:
   using HasBits = decltype(std::declval<MSG_RetLeaderAttackTarget_SC>()._has_bits_);
+  static const ::msg::EntryIDType& target(const MSG_RetLeaderAttackTarget_SC* msg);
   static void set_has_target(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
 };
 
+const ::msg::EntryIDType&
+MSG_RetLeaderAttackTarget_SC::_Internal::target(const MSG_RetLeaderAttackTarget_SC* msg) {
+  return *msg->target_;
+}
+void MSG_RetLeaderAttackTarget_SC::clear_target() {
+  if (target_ != nullptr) target_->Clear();
+  _has_bits_[0] &= ~0x00000001u;
+}
 MSG_RetLeaderAttackTarget_SC::MSG_RetLeaderAttackTarget_SC()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
@@ -18444,12 +18429,17 @@ MSG_RetLeaderAttackTarget_SC::MSG_RetLeaderAttackTarget_SC(const MSG_RetLeaderAt
       _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  target_ = from.target_;
+  if (from._internal_has_target()) {
+    target_ = new ::msg::EntryIDType(*from.target_);
+  } else {
+    target_ = nullptr;
+  }
   // @@protoc_insertion_point(copy_constructor:Team.MSG_RetLeaderAttackTarget_SC)
 }
 
 void MSG_RetLeaderAttackTarget_SC::SharedCtor() {
-  target_ = 1;
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MSG_RetLeaderAttackTarget_SC_team_2eproto.base);
+  target_ = nullptr;
 }
 
 MSG_RetLeaderAttackTarget_SC::~MSG_RetLeaderAttackTarget_SC() {
@@ -18458,6 +18448,7 @@ MSG_RetLeaderAttackTarget_SC::~MSG_RetLeaderAttackTarget_SC() {
 }
 
 void MSG_RetLeaderAttackTarget_SC::SharedDtor() {
+  if (this != internal_default_instance()) delete target_;
 }
 
 void MSG_RetLeaderAttackTarget_SC::SetCachedSize(int size) const {
@@ -18475,7 +18466,11 @@ void MSG_RetLeaderAttackTarget_SC::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  target_ = 1;
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
+    GOOGLE_DCHECK(target_ != nullptr);
+    target_->Clear();
+  }
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
@@ -18488,16 +18483,11 @@ const char* MSG_RetLeaderAttackTarget_SC::_InternalParse(const char* ptr, ::PROT
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // optional .Team.EntryIDType target = 1;
+      // optional .msg.EntryIDType target = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_target(), ptr);
           CHK_(ptr);
-          if (PROTOBUF_PREDICT_TRUE(::Team::EntryIDType_IsValid(val))) {
-            _internal_set_target(static_cast<::Team::EntryIDType>(val));
-          } else {
-            ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(1, val, mutable_unknown_fields());
-          }
         } else goto handle_unusual;
         continue;
       default: {
@@ -18528,11 +18518,12 @@ failure:
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  // optional .Team.EntryIDType target = 1;
+  // optional .msg.EntryIDType target = 1;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_internal_target(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        1, _Internal::target(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -18551,11 +18542,12 @@ size_t MSG_RetLeaderAttackTarget_SC::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // optional .Team.EntryIDType target = 1;
+  // optional .msg.EntryIDType target = 1;
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_target());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *target_);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -18590,7 +18582,7 @@ void MSG_RetLeaderAttackTarget_SC::MergeFrom(const MSG_RetLeaderAttackTarget_SC&
   (void) cached_has_bits;
 
   if (from._internal_has_target()) {
-    _internal_set_target(from._internal_target());
+    _internal_mutable_target()->::msg::EntryIDType::MergeFrom(from._internal_target());
   }
 }
 

@@ -77,7 +77,7 @@ bool AuthSocket::OnClientIp(const Packet& packet)
 	stru_ip.CMD = 104;
 	stru_ip.CMD_PARAM = 16;
 	stru_ip.timestamp = 0;
-	std::string ip = "192.168.1.6";//+ this->GetAddress();
+	std::string ip = "10.0.0.209";//+ this->GetAddress();
 	memcpy(stru_ip.ip, ip.c_str(), ip.size());
 
 	st_Write(stru_ip);
@@ -189,5 +189,9 @@ bool AuthSocket::OnLoginReq(const Packet& packet)
 		}
 		st_Write(login_ok);
 	}
+
+	failed.error_code = ResultCode::CREDENTIALS_FAILED;
+	st_Write(failed);
+
 	return true;
 }
