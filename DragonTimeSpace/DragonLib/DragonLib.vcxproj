@@ -356,7 +356,6 @@
     <ClInclude Include="Network\Packet\Char\Char.h" />
     <ClInclude Include="Network\Packet\Packet.h" />
     <ClInclude Include="Network\Packet\ProtobufPacket.h" />
-    <ClInclude Include="Network\ResultCodes.h" />
     <ClInclude Include="Network\Socket.h" />
     <ClInclude Include="Network\SocketManager.h" />
     <ClInclude Include="Tables\Definitions\adventure_copymap.pb.h" />

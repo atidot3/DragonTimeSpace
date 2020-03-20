@@ -8,7 +8,6 @@
 #include <Configuration/Configuration.h>
 
 #include <Network/Packet/Char/Char.h>
-#include <Network/ResultCodes.h>
 #include <Network/Messages/CommandID.h>
 #include <Network/Packet/ProtobufPacket.h>
 #include <Network/Messages/ParseProto.h>
@@ -213,7 +212,7 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		LOG_FATAL << "query were null: " << char_id;
 		auto error = ProtobufPacket<msg::MSG_Ret_Common_Error_SC>(CommandID::Ret_Common_Error_SC);
 		{
-			error.get_protobuff().set_errorcode(ResultCode::DATABASE_ERROR);
+			error.get_protobuff().set_errorcode(msg::LoginRetCode::LOGIN_RETURN_DB);
 			error.compute();
 			SendPacket(error.get_buffer());
 			return false;
@@ -224,7 +223,7 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		LOG_FATAL << "Unable to retreive characterid: " << char_id;
 		auto error = ProtobufPacket<msg::MSG_Ret_Common_Error_SC>(CommandID::Ret_Common_Error_SC);
 		{
-			error.get_protobuff().set_errorcode(ResultCode::DATABASE_ERROR);
+			error.get_protobuff().set_errorcode(msg::LoginRetCode::LOGIN_RETURN_DB);
 			error.compute();
 			SendPacket(error.get_buffer());
 			return false;
@@ -272,7 +271,7 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		LOG_FATAL << "One table were null";
 		auto error = ProtobufPacket<msg::MSG_Ret_Common_Error_SC>(CommandID::Ret_Common_Error_SC);
 		{
-			error.get_protobuff().set_errorcode(ResultCode::WRONG_CLASS_RACE_COMBINAISON);
+			error.get_protobuff().set_errorcode(msg::LoginRetCode::LOGIN_RETURN_DB);
 			error.compute();
 			SendPacket(error.get_buffer());
 		}
@@ -361,27 +360,27 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 	}
 	ProtobufPacket<msg::CharacterBaseData> charBase(CommandID::RetCommonError_SC);
 	{
-		charBase.get_protobuff().set_exp(0);
-		charBase.get_protobuff().set_welpoint(0);
-		charBase.get_protobuff().set_money(0);
-		charBase.get_protobuff().set_stone(0);
-		charBase.get_protobuff().set_tilizhi(0);
-		charBase.get_protobuff().set_type(1);
-		charBase.get_protobuff().set_famelevel(0);
+		charBase.get_protobuff().set_exp(result->getUInt("CurrentExp"));
+		charBase.get_protobuff().set_welpoint(result->getUInt("Welpoint"));
+		charBase.get_protobuff().set_money(result->getUInt("Money"));
+		charBase.get_protobuff().set_stone(result->getUInt("Stone"));
+		charBase.get_protobuff().set_tilizhi(result->getUInt("Tilizhi"));
+		charBase.get_protobuff().set_type(msg::MapDataType::MAP_DATATYPE_USER);
+		charBase.get_protobuff().set_famelevel(50);
 		charBase.get_protobuff().set_position(0);
-		charBase.get_protobuff().set_viplevel(0);
+		charBase.get_protobuff().set_viplevel(1);
 		charBase.get_protobuff().set_port(0);
 		charBase.get_protobuff().set_laststage(0);
 		charBase.get_protobuff().set_nextexp(level->levelupexp());
-		charBase.get_protobuff().set_pkmode(0);
-		charBase.get_protobuff().set_edupoint(0);
-		charBase.get_protobuff().set_cooppoint(0);
-		charBase.get_protobuff().set_bluecrystal(0);
-		charBase.get_protobuff().set_purplecrystal(0);
-		charBase.get_protobuff().set_vigourpoint(0);
-		charBase.get_protobuff().set_doublepoint(0);
-		charBase.get_protobuff().set_bluecrystalincnum(0);
-		charBase.get_protobuff().set_purplecrystalincnum(0);
+		charBase.get_protobuff().set_pkmode(msg::PKMode::PKMode_Normal);
+		charBase.get_protobuff().set_edupoint(result->getUInt("Edupoint"));
+		charBase.get_protobuff().set_cooppoint(result->getUInt("Cooppoint"));
+		charBase.get_protobuff().set_bluecrystal(result->getUInt("Bluecrystal"));
+		charBase.get_protobuff().set_purplecrystal(result->getUInt("Purplecrystal"));
+		charBase.get_protobuff().set_vigourpoint(result->getUInt("Vigourpoint"));
+		charBase.get_protobuff().set_doublepoint(result->getUInt("Doublepoint"));
+		charBase.get_protobuff().set_bluecrystalincnum(result->getUInt("Bluecrystalincnum"));
+		charBase.get_protobuff().set_purplecrystalincnum(result->getUInt("Purplecrystalincnum"));
 		charBase.get_protobuff().set_familyatt(0);
 		charBase.get_protobuff().set_herothisid(std::to_string(hero->tbxid()));
 	}
@@ -389,7 +388,7 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 	{
 		mapdata.get_protobuff().set_hp(evolution->maxhp());
 		mapdata.get_protobuff().set_maxhp(evolution->maxhp());
-		mapdata.get_protobuff().set_level(1);
+		mapdata.get_protobuff().set_level(result->getUInt("CurrentLevel"));
 
 		mapdata.get_protobuff().set_allocated_pos(&pos);
 		mapdata.get_protobuff().set_movespeed(120);
@@ -402,7 +401,7 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		mapshow.get_protobuff().set_weapon(0);
 		mapshow.get_protobuff().set_heroid(hero->tbxid());
 		mapshow.get_protobuff().set_avatarid(hero->newavatar());
-		mapshow.get_protobuff().set_occupation(0);
+		mapshow.get_protobuff().set_occupation(msg::Occupation::Occu_Yaohu);
 		mapshow.get_protobuff().set_hairstyle(result->getUInt("Hairstyle"));
 		mapshow.get_protobuff().set_haircolor(result->getUInt("Haircolor"));
 		mapshow.get_protobuff().set_facestyle(result->getUInt("Facestyle"));
@@ -439,19 +438,37 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 	}
 
 	// -- do_fucking_matter
-	mapBase.get_protobuff().release_bakhero();
-	mapBase.get_protobuff().release_mapdata();
-	mapBase.get_protobuff().release_mapshow();
+	{
+		mapBase.get_protobuff().release_bakhero();
+		mapBase.get_protobuff().release_mapdata();
+		mapBase.get_protobuff().release_mapshow();
 
-	charMain.get_protobuff().release_attridata();
-	charMain.get_protobuff().release_basedata();
-	charMain.get_protobuff().release_fightdata();
-	charMain.get_protobuff().release_mapdata();
+		charMain.get_protobuff().release_attridata();
+		charMain.get_protobuff().release_basedata();
+		charMain.get_protobuff().release_fightdata();
+		charMain.get_protobuff().release_mapdata();
 
-	mapInfo.get_protobuff().release_pos();
-	mapdata.get_protobuff().release_pos();
+		mapInfo.get_protobuff().release_pos();
+		mapdata.get_protobuff().release_pos();
 
-	pktMain.get_protobuff().release_data();
+		pktMain.get_protobuff().release_data();
+	}
+
+	auto skills = ProtobufPacket<magic::MSG_RetRefreshSkill_SC>(CommandID::RetRefreshSkill_SC);
+	auto skill = skills.get_protobuff().add_skills();
+
+	skill->set_skillid(100101);
+	skill->set_active_stages(100101);
+	skill->set_lastupdatetime(1);
+	skill->set_lastusetime(1000);
+	skill->set_level(1);
+	skill->set_maxmultitimes(0);
+	skill->set_onoff(1);
+	skill->set_overlaytimes(1);
+	skill->set_skillcd(1000);
+	
+	skills.compute();
+	SendPacket(skills.get_buffer());
 
 	ProtobufPacket<msg::MSG_Ret_MapScreenBatchRefreshNpc_SC> npc_info(CommandID::Ret_MapScreenBatchRefreshNpc_SC);
 	{
@@ -472,14 +489,14 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 					}
 					msg::EntryIDType myType;
 					{
-						//myType.set_id(100);
-						//myType.set_type(0);
+						myType.set_id(is_ou_npc.id());
+						myType.set_type(msg::MapDataType::MAP_DATATYPE_NPC);
 					}
 					msg::MasterData master;
 					{
 						//master.set_country(1);
 						//master.set_allocated_idtype(&myType);
-						//master.set_name(std::move(std::string("Atidote")));
+						//master.set_name(std::move(std::string(is_ou_npc.name())));
 						//master.set_teamid(0);
 					}
 					msg::CharacterMapShow cmshow;
@@ -517,8 +534,6 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 					npcs->set_name(std::move(std::string(is_ou_npc.name())));
 					//npcs->set_titlename();
 					npcs->set_visit(0);
-
-					LOG_DEBUG << "Spawn: " << npcs->baseid() << " at: " << npcs->pos().fx() << " : " << npcs->pos().fy();
 				}
 			}
 		}
@@ -565,8 +580,8 @@ bool WorldSession::onReceiveMainHero(const Packet& packet)
 
 	LOG_DEBUG << _hero.get_protobuff().DebugString();
 
-	hero.get_protobuff().set_errorcode(0);
-	hero.get_protobuff().set_opcode(2);
+	hero.get_protobuff().set_errorcode(_hero.get_protobuff().errorcode());
+	hero.get_protobuff().set_opcode(_hero.get_protobuff().opcode());
 	hero.get_protobuff().set_herothisid(71001);
 
 	hero.compute();
@@ -779,10 +794,9 @@ bool WorldSession::onReceiveVisitNpcTrade(const Packet& packet)
 			it->set_crc(req.get_protobuff().allcrc().Get(i).crc());
 		}
 		res.get_protobuff().set_action(0);
-		res.get_protobuff().set_type(11);
+		res.get_protobuff().set_type(msg::MapDataType::MAP_DATATYPE_NPC);
 		res.get_protobuff().set_npc_temp_id(req.get_protobuff().npc_temp_id());
-		res.get_protobuff().set_show_type(1);
-
+		res.get_protobuff().set_show_type(0);
 	}
 
 	res.compute();
@@ -862,6 +876,7 @@ bool WorldSession::onReceiveEntrySelectState(const Packet& packet)
 	ProtobufPacket<msg::MSG_RetEntrySelectState_SC> res(CommandID::RetEntrySelectState_SC);
 	{
 		auto it = res.get_protobuff().add_states();
+		//res.get_protobuff().set_allocated_choosen(&req.get_protobuff().oldone());
 	}
 
 	res.compute();
@@ -880,6 +895,10 @@ bool WorldSession::onReceiveSetChooseTarget(const Packet& packet)
 	{
 		res.get_protobuff().set_choosetype(req.get_protobuff().choosetype());
 		res.get_protobuff().set_charid(req.get_protobuff().charid());
+		res.get_protobuff().set_hp(0);
+		res.get_protobuff().set_level(1);
+		res.get_protobuff().set_relation(0);
+		//res.get_protobuff().set_name("");
 	}
 
 	res.compute();

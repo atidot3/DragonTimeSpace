@@ -16,6 +16,12 @@
     <Filter Include="Source\Game\World\Map">
       <UniqueIdentifier>{996f58de-ca76-4c61-8230-ce3092ce4a89}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Game\World\Object">
+      <UniqueIdentifier>{34fbfcb0-f4ed-4750-b048-6cb89d7cdf36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\World\Object\Entity">
+      <UniqueIdentifier>{b29cb18d-1daf-4c2f-85f8-9a3b63aa3268}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -64,6 +70,9 @@
     </ClInclude>
     <ClInclude Include="Source\Game\World\QueueManager.h">
       <Filter>Source\Game\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\World\Object\Object.h">
+      <Filter>Source\Game\World\Object</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

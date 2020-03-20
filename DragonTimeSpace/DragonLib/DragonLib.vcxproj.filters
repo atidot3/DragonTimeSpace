@@ -788,9 +788,6 @@
     <ClInclude Include="Network\Messages\basic.pb.h">
       <Filter>Network\Messages</Filter>
     </ClInclude>
-    <ClInclude Include="Network\ResultCodes.h">
-      <Filter>Network</Filter>
-    </ClInclude>
     <ClInclude Include="Database\Repository\Auth\AuthQuery.h">
       <Filter>Database\Repository\Auth</Filter>
     </ClInclude>

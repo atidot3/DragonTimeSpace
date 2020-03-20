@@ -180,6 +180,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Game\World\Map\map.h" />
+    <ClInclude Include="Source\Game\World\Object\Object.h" />
     <ClInclude Include="Source\Game\World\QueueManager.h" />
     <ClInclude Include="Source\Game\World\World.h" />
     <ClInclude Include="Source\Game\World\WorldSession.h" />

@@ -3,8 +3,6 @@
 #include <Network/Packet/Packet.h>
 #include <Network\Packet\Auth\Auth.h>
 
-#include <Network/ResultCodes.h>
-
 #include <Utils/Logger/Logger.h>
 #include <Utils\Utils.h>
 
@@ -77,7 +75,7 @@ bool AuthSocket::OnClientIp(const Packet& packet)
 	stru_ip.CMD = 104;
 	stru_ip.CMD_PARAM = 16;
 	stru_ip.timestamp = 0;
-	std::string ip = "10.0.0.209";//+ this->GetAddress();
+	std::string ip = "192.168.1.6";//+ this->GetAddress();
 	memcpy(stru_ip.ip, ip.c_str(), ip.size());
 
 	st_Write(stru_ip);
@@ -109,7 +107,7 @@ bool AuthSocket::OnLoginReq(const Packet& packet)
 	}
 	if (result->rowsCount() <= 0)
 	{
-		failed.error_code = ResultCode::CREDENTIALS_FAILED;
+		failed.error_code = msg::LoginRetCode::LOGIN_RETURN_USERDATANOEXIST;
 		st_Write(failed);
 		return false;
 	}
@@ -138,14 +136,14 @@ bool AuthSocket::OnLoginReq(const Packet& packet)
 		if (!ret)
 		{
 			LOG_FATAL << "Unable to retreive realmlist";
-			failed.error_code = ResultCode::DATABASE_ERROR;
+			failed.error_code = msg::LoginRetCode::LOGIN_RETURN_DB;
 			st_Write(failed);
 			return false;
 		}
 		if (result->rowsCount() == 0)
 		{
 			LOG_FATAL << "No regristrated realmlist";
-			failed.error_code = ResultCode::DATABASE_ERROR;
+			failed.error_code = msg::LoginRetCode::LOGIN_RETURN_USERDATANOEXIST;
 			st_Write(failed);
 			return false;
 		}
@@ -174,7 +172,7 @@ bool AuthSocket::OnLoginReq(const Packet& packet)
 		if (_servers.size() == 0)
 		{
 			LOG_FATAL << "No up CGServer found";
-			failed.error_code = ResultCode::DATABASE_ERROR;
+			failed.error_code = msg::LoginRetCode::LOGIN_RETURN_USERDATANOEXIST;
 			st_Write(failed);
 			return true;
 		}
@@ -190,7 +188,7 @@ bool AuthSocket::OnLoginReq(const Packet& packet)
 		st_Write(login_ok);
 	}
 
-	failed.error_code = ResultCode::CREDENTIALS_FAILED;
+	failed.error_code = msg::LoginRetCode::LOGIN_RETURN_USERDATANOEXIST;
 	st_Write(failed);
 
 	return true;

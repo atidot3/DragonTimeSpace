@@ -16,7 +16,6 @@
 #include <Configuration\Configuration.h>
 
 #include <Network/Messages/ParseProto.h>
-#include <Network/ResultCodes.h>
 
 #include <Tables/TableContainer.h>
 
@@ -175,7 +174,7 @@ bool CGSocket::onReceiveCharCreate(const Packet& packet)
 			LOG_FATAL << "Create character failed";
 			auto res = ProtobufPacket<msg::MSG_Ret_Common_Error_SC>(CommandID::RetCommonError_SC);
 			// -- need more result codes
-			res.get_protobuff().set_errorcode(ResultCode::DATABASE_ERROR);
+			res.get_protobuff().set_errorcode(msg::LoginRetCode::LOGIN_RETURN_DB);
 			res.compute();
 
 			ms_Write(res.get_buffer());
@@ -200,7 +199,7 @@ bool CGSocket::onReceiveCharCreate(const Packet& packet)
 
 	auto res = ProtobufPacket<msg::MSG_Ret_Common_Error_SC>(CommandID::RetCommonError_SC);
 	// -- need more result codes
-	res.get_protobuff().set_errorcode(ResultCode::DATABASE_ERROR);
+	res.get_protobuff().set_errorcode(msg::LoginRetCode::LOGIN_RETURN_DB);
 	res.compute();
 
 	ms_Write(res.get_buffer());

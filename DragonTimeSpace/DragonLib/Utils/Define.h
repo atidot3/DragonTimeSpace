@@ -5,6 +5,8 @@
 
 #include <cstdint>
 #include <WinSock2.h>
+#include <Network/Messages/message.pb.h>
+
 
 #define LINE_IMP(l)				#l
 #define LINE(l)					LINE_IMP( l )
