@@ -40,8 +40,8 @@ CGSocket::CGSocket(boost::asio::io_context &service)
 //----------------------------------------
 CGSocket::~CGSocket()
 {
-	sWorld.RemoveSession(_session, "");
-	sWorld.RemoveFromQueue(_session);
+	//sWorld.RemoveSession(account_id);
+	//sWorld.RemoveFromQueue(account_id);
 
 	LOG_TRACE << "CGSocket connection close: [" << GetRemoteEndPoint() << "]";
 }
@@ -134,7 +134,7 @@ bool CGSocket::onReceiveUserInfo(const Packet& packet)
 		sWorld.AddSession(_session);
 	}
 	// -- refuse to continue untill we got pushed in World list
-	else if (sWorld.IsFull() && result->rowsCount() > 0)
+	else if (sWorld.IsFull())
 	{
 		sWorld.AddToQueue(_session);
 		auto queue = ProtobufPacket<msg::MSG_Ret_QueueInfo_SC>(CommandID::Ret_QueueInfo_SC);

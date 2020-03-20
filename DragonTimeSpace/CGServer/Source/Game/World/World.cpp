@@ -14,7 +14,7 @@
 
 constexpr uint32_t DEFAULT_THREAD_SLEEP_TIME = 1;
 constexpr uint32_t MAX_THREAD_SLEEP_TIME = 50;
-constexpr uint32_t MAX_PLAYER_PER_SERVER = 1;
+constexpr uint32_t MAX_PLAYER_PER_SERVER = 0;
 static uint32_t m_uiSerialId = 0;
 
 //----------------------------------------
@@ -197,7 +197,9 @@ bool World::IsFull() const
 void World::AddToQueue(std::shared_ptr<WorldSession> s)
 {
 	std::lock_guard<std::mutex> guard(_queue_mutex);
-	_pending_queue.add_to_queue(s);
+
+	if (!_pending_queue.contain_identifier(s))
+		_pending_queue.add_to_queue(s);
 }
 //----------------------------------------
 //	remove a session to the pending connect queue
