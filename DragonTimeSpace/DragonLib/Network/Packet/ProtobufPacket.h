@@ -23,6 +23,7 @@
 #include <Network\Messages\country.pb.h>
 #include <Network\Messages\mail_cmd.pb.h>
 #include <Network\Messages\magic_msg.pb.h>
+#include <Network\Messages\career.pb.h>
 
 // -- Protobuf packet:
 // -- HEADER_SIZE + 8 + protobuff->bytesizelong()

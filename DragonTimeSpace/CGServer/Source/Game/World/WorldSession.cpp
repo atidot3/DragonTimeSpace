@@ -454,21 +454,75 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		pktMain.get_protobuff().release_data();
 	}
 
-	auto skills = ProtobufPacket<magic::MSG_RetRefreshSkill_SC>(CommandID::RetRefreshSkill_SC);
-	auto skill = skills.get_protobuff().add_skills();
+	/*auto skills = ProtobufPacket<magic::MSG_RetRefreshSkill_SC>(CommandID::RetRefreshSkill_SC);
+	{
+		const std::list<uint32_t> _storage_skills = { 100101, 100102,100103,100104,100105,100106,100107,100108,100109,100110,100112,100113, 100114 };
+		for (auto& c : _storage_skills)
+		{
+			auto skill = skills.get_protobuff().add_skills();
+			skill->set_skillid(c);
+			skill->set_active_stages(0);
+			skill->set_lastupdatetime(0);
+			skill->set_lastusetime(0);
+			skill->set_level(1);
+			skill->set_maxmultitimes(0);
+			skill->set_onoff(0);
+			skill->set_overlaytimes(0);
+			skill->set_skillcd(0);
+		}
+		skills.compute();
+		SendPacket(skills.get_buffer());
+	}*/
 
-	skill->set_skillid(100101);
-	skill->set_active_stages(100101);
-	skill->set_lastupdatetime(1);
-	skill->set_lastusetime(1000);
-	skill->set_level(1);
-	skill->set_maxmultitimes(0);
-	skill->set_onoff(1);
-	skill->set_overlaytimes(1);
-	skill->set_skillcd(1000);
-	
-	skills.compute();
-	SendPacket(skills.get_buffer());
+	auto career_skill = ProtobufPacket<career::MSG_RetCareerSkillInfo_SC>(CommandID::RetCareerSkillInfo_SC);
+	{
+		career::CareerSkillInfo info;
+
+		/*const std::vector<uint32_t> _storage_skills = { 100101, 100102,100103,100104,100105,100106,100107,100108,100109,100110,100112,100113, 100114 };
+		for (int i = 0; i < _storage_skills.size(); ++i)
+		{
+			auto line_skill = info.add_curskills();
+			line_skill->set_line(i);
+			line_skill->set_skill(_storage_skills.at(i));
+		}*/
+
+		magic::SkillData _allocated_skill;
+		auto unlock_skill = info.add_unlockskills();
+		{
+			_allocated_skill.set_skillid(100101);
+			_allocated_skill.set_active_stages(0);
+			_allocated_skill.set_lastupdatetime(0);
+			_allocated_skill.set_lastusetime(0);
+			_allocated_skill.set_level(1);
+			_allocated_skill.set_maxmultitimes(0);
+			_allocated_skill.set_onoff(0);
+			_allocated_skill.set_overlaytimes(0);
+			_allocated_skill.set_skillcd(0);
+		}
+
+		magic::SkillData _allocated_skill2;
+		auto unlock_skill2 = info.add_unlockskills();
+		{
+			_allocated_skill2.set_skillid(100102);
+			_allocated_skill2.set_active_stages(0);
+			_allocated_skill2.set_lastupdatetime(0);
+			_allocated_skill2.set_lastusetime(0);
+			_allocated_skill2.set_level(1);
+			_allocated_skill2.set_maxmultitimes(0);
+			_allocated_skill2.set_onoff(0);
+			_allocated_skill2.set_overlaytimes(0);
+			_allocated_skill2.set_skillcd(0);
+		}
+
+		unlock_skill->set_allocated_skill(&_allocated_skill);
+		unlock_skill2->set_allocated_skill(&_allocated_skill2);
+		career_skill.get_protobuff().set_allocated_skillinfo(&info);
+		career_skill.compute();
+		unlock_skill->release_skill();
+		unlock_skill2->release_skill();
+		career_skill.get_protobuff().release_skillinfo();
+		SendPacket(career_skill.get_buffer());
+	}
 
 	ProtobufPacket<msg::MSG_Ret_MapScreenBatchRefreshNpc_SC> npc_info(CommandID::Ret_MapScreenBatchRefreshNpc_SC);
 	{
@@ -924,17 +978,17 @@ bool WorldSession::onReceiveOperateDatasReq(const Packet& packet)
 	auto req = ProtobufPacket<apprentice::MSG_Req_OperateClientDatas_CS>(packet);
 
 	LOG_DEBUG << "OperateData request: key[" << req.get_protobuff().key() << "] op[" << req.get_protobuff().op() << "] retcode[" << req.get_protobuff().retcode() << "] type[" << req.get_protobuff().type() << "]";
-
+	LOG_DEBUG << req.get_protobuff().value();
 	ProtobufPacket<apprentice::MSG_Req_OperateClientDatas_CS> opdat(CommandID::Req_OperateClientDatas_CS);
 	//known keys for opdats
 	/*
 		storage_Shortcuts,
-		storage_ChatTab,
+		storage_ChatTab, => custom chat tab name / configs (composed as: NAME_id-id-id,NAME_id,)
 		storage_CharacterBottom,
-		storage_UISkillIndex,
+		storage_UISkillIndex, => 100101|48&100102|49
 		storage_GenePageName,
 		storage_SystemData,
-		storage_ShortKey_Config,
+		storage_ShortKey_Config, => are shortcut as Z to walk forward, space jump etc
 		storage_SkillSlotSort,
 		storage_FRIEND_IDS,
 		storage_AbattoirShortcuts,
@@ -942,16 +996,32 @@ bool WorldSession::onReceiveOperateDatasReq(const Packet& packet)
 	*/
 	//Opcodes are as follows
 	/*
-		DeleteAll,
-		AddUpdate,
-		Delete,
-		Get
+		DeleteAll = 0,
+		AddUpdate = 1,
+		Delete = 2,
+		Get = 3
 	*/
+
 	opdat.get_protobuff().set_key(req.get_protobuff().key());
 	opdat.get_protobuff().set_op(req.get_protobuff().op());
 	opdat.get_protobuff().set_retcode(req.get_protobuff().retcode());
 	opdat.get_protobuff().set_type(req.get_protobuff().type());
 	opdat.get_protobuff().set_value(req.get_protobuff().value());
+
+	if (opdat.get_protobuff().key() == "ShortKey_Config" && req.get_protobuff().op() == 3)
+	{
+		LOG_DEBUG << "Testing atidote azerty keyboard";
+		opdat.get_protobuff().set_value(std::move(std::string("{\"0\":{\"key\":\"99\"},\"1\":{\"key\":\"107\"},\"2\":{\"key\":\"\"},\"3\":{\"key\":\"98\"},\"4\":{\"key\":\"108\"},\"5\":{\"key\":\"103\"},\"6\":{\"key\":\"117\"},\"7\":{\"key\":\"106\"},\"8\":{\"key\":\"111\"},\"9\":{\"key\":\"109\"},\"11\":{\"key\":\"122\"},\"12\":{\"key\":\"115\"},\"13\":{\"key\":\"113\"},\"14\":{\"key\":\"100\"},\"15\":{\"key\":\"32\"},\"16\":{\"key\":\"9\"},\"17\":{\"key\":\"304,49\"},\"18\":{\"key\":\"304,50\"},\"19\":{\"key\":\"304,51\"},\"20\":{\"key\":\"304,52\"},\"21\":{\"key\":\"96\"},\"22\":{\"key\":\"101\"},\"23\":{\"key\":\"119\"},\"24\":{\"key\":\"306,290\"},\"25\":{\"key\":\"306,291\"},\"26\":{\"key\":\"306,288\"},\"27\":{\"key\":\"306,289\"},\"28\":{\"key\":\"306,292\"},\"101\":{\"key\":\"282\"},\"102\":{\"key\":\"283\"},\"103\":{\"key\":\"284\"},\"104\":{\"key\":\"285\"},\"105\":{\"key\":\"286\"},\"106\":{\"key\":\"287\"},\"107\":{\"key\":\"288\"},\"108\":{\"key\":\"289\"},\"109\":{\"key\":\"290\"},\"110\":{\"key\":\"291\"},\"111\":{\"key\":\"292\"},\"112\":{\"key\":\"293\"},\"201\":{\"key\":\"\"},\"202\":{\"key\":\"\"},\"203\":{\"key\":\"\"},\"204\":{\"key\":\"\"},\"205\":{\"key\":\"\"},\"206\":{\"key\":\"\"},\"207\":{\"key\":\"\"},\"208\":{\"key\":\"\"},\"209\":{\"key\":\"\"},\"210\":{\"key\":\"\"},\"211\":{\"key\":\"\"},\"212\":{\"key\":\"\"},\"301\":{\"key\":\"\"},\"302\":{\"key\":\"\"},\"303\":{\"key\":\"\"},\"304\":{\"key\":\"\"},\"305\":{\"key\":\"\"},\"306\":{\"key\":\"\"},\"307\":{\"key\":\"\"},\"308\":{\"key\":\"\"},\"309\":{\"key\":\"\"},\"310\":{\"key\":\"\"},\"311\":{\"key\":\"\"},\"312\":{\"key\":\"\"},\"401\":{\"key\":\"\"},\"402\":{\"key\":\"\"},\"403\":{\"key\":\"\"},\"404\":{\"key\":\"\"},\"405\":{\"key\":\"\"},\"406\":{\"key\":\"\"},\"407\":{\"key\":\"\"},\"408\":{\"key\":\"\"},\"409\":{\"key\":\"\"},\"410\":{\"key\":\"\"},\"411\":{\"key\":\"\"},\"412\":{\"key\":\"\"},\"501\":{\"key\":\"49\"},\"502\":{\"key\":\"50\"},\"503\":{\"key\":\"51\"},\"504\":{\"key\":\"52\"},\"505\":{\"key\":\"53\"},\"506\":{\"key\":\"54\"},\"507\":{\"key\":\"55\"},\"508\":{\"key\":\"56\"},\"509\":{\"key\":\"57\"},\"510\":{\"key\":\"48\"},\"511\":{\"key\":\"45\"},\"512\":{\"key\":\"61\"},\"513\":{\"key\":\"\"}}")));
+	}
+	else if (opdat.get_protobuff().key() == "storage_1_SkillSlotSort70024" && req.get_protobuff().op() == 3)
+	{
+		opdat.get_protobuff().set_value(std::move(std::string("70024&49:100101|50:100102|51:0|52:0|53:0|54:0|55:0|56:0|57:0|48:0|282:0|283:0|284:0|285:0|286:0")));
+	}
+	else if (opdat.get_protobuff().key() == "storage_1_ChatTab" && req.get_protobuff().op() == 3)
+	{
+		opdat.get_protobuff().set_value(std::move(std::string("All_1-2-3-4-5-6-10,Party_2,")));
+	}
+
 	opdat.compute();
 
 	SendPacket(opdat.get_buffer());

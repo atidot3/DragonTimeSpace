@@ -86,8 +86,6 @@ public:
 			return;
 
 		MessageBuffer buffer = t;
-
-		LOG_DEBUG << "Buff to send size: " << buffer.GetBufferSize();
 		// -- Emplace the packet in the queue
 		if (_writeQueue.push(std::move(buffer)))
 		{

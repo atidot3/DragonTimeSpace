@@ -186,6 +186,7 @@ bool AuthSocket::OnLoginReq(const Packet& packet)
 			break;
 		}
 		st_Write(login_ok);
+		return true;
 	}
 
 	failed.error_code = msg::LoginRetCode::LOGIN_RETURN_USERDATANOEXIST;
