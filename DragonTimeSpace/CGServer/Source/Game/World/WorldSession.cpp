@@ -465,12 +465,12 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 	ProtobufPacket<hero::MSG_NotifyAllHeros_SC> notifyHero(CommandID::NotifyAllHeros_SC);
 	{
 		auto it = notifyHero.get_protobuff().add_heroinfo();
-		it->set_baseid(70024);
-		it->set_thisid("70024");
+		it->set_baseid(hero->tbxid());
+		it->set_thisid(std::to_string(hero->tbxid()));
 		it->set_self_created(true);
-		it->set_exp(100);
-		it->set_level(10);
-		it->set_score(1000);
+		it->set_exp(0);
+		it->set_level(1);
+		it->set_score(0);
 	}
 	notifyHero.compute();
 	SendPacket(notifyHero.get_buffer());
