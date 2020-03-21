@@ -437,6 +437,25 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		SendPacket(pktMain.get_buffer());
 	}
 
+
+	/*ProtobufPacket<hero::HeroAvatar> avatar(CommandID::RetCommonError_SC);
+	{
+		avatar.
+	}*/
+	ProtobufPacket<hero::MSG_NotifyAllHeros_SC> notifyHero(CommandID::NotifyAllHeros_SC);
+	{
+		auto it = notifyHero.get_protobuff().add_heroinfo();
+		it->set_baseid(70024);
+		it->set_thisid("70024");
+		it->set_self_created(true);
+		it->set_exp(100);
+		it->set_level(10);
+		it->set_score(1000);
+	}
+	notifyHero.compute();
+	SendPacket(notifyHero.get_buffer());
+
+
 	// -- do_fucking_matter
 	{
 		mapBase.get_protobuff().release_bakhero();
@@ -636,7 +655,7 @@ bool WorldSession::onReceiveMainHero(const Packet& packet)
 
 	hero.get_protobuff().set_errorcode(_hero.get_protobuff().errorcode());
 	hero.get_protobuff().set_opcode(_hero.get_protobuff().opcode());
-	hero.get_protobuff().set_herothisid(71001);
+	hero.get_protobuff().set_herothisid(70024);
 
 	hero.compute();
 	
@@ -678,7 +697,7 @@ bool WorldSession::onReceiveTeamMemberReq(const Packet& packet)
 
 	LOG_DEBUG << _team.get_protobuff().DebugString();
 
-	team.get_protobuff().set_id(70022);
+	team.get_protobuff().set_id(70024);
 	team.get_protobuff().set_curmember(0);
 
 	team.compute();
@@ -701,7 +720,7 @@ bool WorldSession::onReceiveCardPackInfo(const Packet& packet)
 		pack.get_protobuff().set_earth_opened_num(0);
 		pack.get_protobuff().set_fire_opened_num(0);
 		pack.get_protobuff().set_gold_opened_num(0);
-		pack.get_protobuff().set_hero_baseid(70022);
+		pack.get_protobuff().set_hero_baseid(70024);
 		pack.get_protobuff().set_water_opened_num(0);
 		pack.get_protobuff().set_wood_opened_num(0);
 
@@ -795,6 +814,7 @@ bool WorldSession::onReceiveMyHeroAttrData(const Packet& packet)
 	{
 
 		attr.get_protobuff().set_allocated_data(&attrData.get_protobuff());
+		attr.get_protobuff().set_herothisid("70024");
 		attr.get_protobuff().set_fightvalue(10000);
 	}
 
@@ -1011,7 +1031,7 @@ bool WorldSession::onReceiveOperateDatasReq(const Packet& packet)
 	if (opdat.get_protobuff().key() == "ShortKey_Config" && req.get_protobuff().op() == 3)
 	{
 		LOG_DEBUG << "Testing atidote azerty keyboard";
-		opdat.get_protobuff().set_value(std::move(std::string("{\"0\":{\"key\":\"99\"},\"1\":{\"key\":\"107\"},\"2\":{\"key\":\"\"},\"3\":{\"key\":\"98\"},\"4\":{\"key\":\"108\"},\"5\":{\"key\":\"103\"},\"6\":{\"key\":\"117\"},\"7\":{\"key\":\"106\"},\"8\":{\"key\":\"111\"},\"9\":{\"key\":\"109\"},\"11\":{\"key\":\"122\"},\"12\":{\"key\":\"115\"},\"13\":{\"key\":\"113\"},\"14\":{\"key\":\"100\"},\"15\":{\"key\":\"32\"},\"16\":{\"key\":\"9\"},\"17\":{\"key\":\"304,49\"},\"18\":{\"key\":\"304,50\"},\"19\":{\"key\":\"304,51\"},\"20\":{\"key\":\"304,52\"},\"21\":{\"key\":\"96\"},\"22\":{\"key\":\"101\"},\"23\":{\"key\":\"119\"},\"24\":{\"key\":\"306,290\"},\"25\":{\"key\":\"306,291\"},\"26\":{\"key\":\"306,288\"},\"27\":{\"key\":\"306,289\"},\"28\":{\"key\":\"306,292\"},\"101\":{\"key\":\"282\"},\"102\":{\"key\":\"283\"},\"103\":{\"key\":\"284\"},\"104\":{\"key\":\"285\"},\"105\":{\"key\":\"286\"},\"106\":{\"key\":\"287\"},\"107\":{\"key\":\"288\"},\"108\":{\"key\":\"289\"},\"109\":{\"key\":\"290\"},\"110\":{\"key\":\"291\"},\"111\":{\"key\":\"292\"},\"112\":{\"key\":\"293\"},\"201\":{\"key\":\"\"},\"202\":{\"key\":\"\"},\"203\":{\"key\":\"\"},\"204\":{\"key\":\"\"},\"205\":{\"key\":\"\"},\"206\":{\"key\":\"\"},\"207\":{\"key\":\"\"},\"208\":{\"key\":\"\"},\"209\":{\"key\":\"\"},\"210\":{\"key\":\"\"},\"211\":{\"key\":\"\"},\"212\":{\"key\":\"\"},\"301\":{\"key\":\"\"},\"302\":{\"key\":\"\"},\"303\":{\"key\":\"\"},\"304\":{\"key\":\"\"},\"305\":{\"key\":\"\"},\"306\":{\"key\":\"\"},\"307\":{\"key\":\"\"},\"308\":{\"key\":\"\"},\"309\":{\"key\":\"\"},\"310\":{\"key\":\"\"},\"311\":{\"key\":\"\"},\"312\":{\"key\":\"\"},\"401\":{\"key\":\"\"},\"402\":{\"key\":\"\"},\"403\":{\"key\":\"\"},\"404\":{\"key\":\"\"},\"405\":{\"key\":\"\"},\"406\":{\"key\":\"\"},\"407\":{\"key\":\"\"},\"408\":{\"key\":\"\"},\"409\":{\"key\":\"\"},\"410\":{\"key\":\"\"},\"411\":{\"key\":\"\"},\"412\":{\"key\":\"\"},\"501\":{\"key\":\"49\"},\"502\":{\"key\":\"50\"},\"503\":{\"key\":\"51\"},\"504\":{\"key\":\"52\"},\"505\":{\"key\":\"53\"},\"506\":{\"key\":\"54\"},\"507\":{\"key\":\"55\"},\"508\":{\"key\":\"56\"},\"509\":{\"key\":\"57\"},\"510\":{\"key\":\"48\"},\"511\":{\"key\":\"45\"},\"512\":{\"key\":\"61\"},\"513\":{\"key\":\"\"}}")));
+		//opdat.get_protobuff().set_value(std::move(std::string("{\"0\":{\"key\":\"99\"},\"1\":{\"key\":\"107\"},\"2\":{\"key\":\"\"},\"3\":{\"key\":\"98\"},\"4\":{\"key\":\"108\"},\"5\":{\"key\":\"103\"},\"6\":{\"key\":\"117\"},\"7\":{\"key\":\"106\"},\"8\":{\"key\":\"111\"},\"9\":{\"key\":\"109\"},\"11\":{\"key\":\"122\"},\"12\":{\"key\":\"115\"},\"13\":{\"key\":\"113\"},\"14\":{\"key\":\"100\"},\"15\":{\"key\":\"32\"},\"16\":{\"key\":\"9\"},\"17\":{\"key\":\"304,49\"},\"18\":{\"key\":\"304,50\"},\"19\":{\"key\":\"304,51\"},\"20\":{\"key\":\"304,52\"},\"21\":{\"key\":\"96\"},\"22\":{\"key\":\"101\"},\"23\":{\"key\":\"119\"},\"24\":{\"key\":\"306,290\"},\"25\":{\"key\":\"306,291\"},\"26\":{\"key\":\"306,288\"},\"27\":{\"key\":\"306,289\"},\"28\":{\"key\":\"306,292\"},\"101\":{\"key\":\"282\"},\"102\":{\"key\":\"283\"},\"103\":{\"key\":\"284\"},\"104\":{\"key\":\"285\"},\"105\":{\"key\":\"286\"},\"106\":{\"key\":\"287\"},\"107\":{\"key\":\"288\"},\"108\":{\"key\":\"289\"},\"109\":{\"key\":\"290\"},\"110\":{\"key\":\"291\"},\"111\":{\"key\":\"292\"},\"112\":{\"key\":\"293\"},\"201\":{\"key\":\"\"},\"202\":{\"key\":\"\"},\"203\":{\"key\":\"\"},\"204\":{\"key\":\"\"},\"205\":{\"key\":\"\"},\"206\":{\"key\":\"\"},\"207\":{\"key\":\"\"},\"208\":{\"key\":\"\"},\"209\":{\"key\":\"\"},\"210\":{\"key\":\"\"},\"211\":{\"key\":\"\"},\"212\":{\"key\":\"\"},\"301\":{\"key\":\"\"},\"302\":{\"key\":\"\"},\"303\":{\"key\":\"\"},\"304\":{\"key\":\"\"},\"305\":{\"key\":\"\"},\"306\":{\"key\":\"\"},\"307\":{\"key\":\"\"},\"308\":{\"key\":\"\"},\"309\":{\"key\":\"\"},\"310\":{\"key\":\"\"},\"311\":{\"key\":\"\"},\"312\":{\"key\":\"\"},\"401\":{\"key\":\"\"},\"402\":{\"key\":\"\"},\"403\":{\"key\":\"\"},\"404\":{\"key\":\"\"},\"405\":{\"key\":\"\"},\"406\":{\"key\":\"\"},\"407\":{\"key\":\"\"},\"408\":{\"key\":\"\"},\"409\":{\"key\":\"\"},\"410\":{\"key\":\"\"},\"411\":{\"key\":\"\"},\"412\":{\"key\":\"\"},\"501\":{\"key\":\"49\"},\"502\":{\"key\":\"50\"},\"503\":{\"key\":\"51\"},\"504\":{\"key\":\"52\"},\"505\":{\"key\":\"53\"},\"506\":{\"key\":\"54\"},\"507\":{\"key\":\"55\"},\"508\":{\"key\":\"56\"},\"509\":{\"key\":\"57\"},\"510\":{\"key\":\"48\"},\"511\":{\"key\":\"45\"},\"512\":{\"key\":\"61\"},\"513\":{\"key\":\"\"}}")));
 	}
 	else if (opdat.get_protobuff().key() == "storage_1_SkillSlotSort70024" && req.get_protobuff().op() == 3)
 	{
