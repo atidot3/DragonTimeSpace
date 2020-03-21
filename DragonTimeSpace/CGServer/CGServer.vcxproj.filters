@@ -22,6 +22,9 @@
     <Filter Include="Source\Game\World\Object\Entity">
       <UniqueIdentifier>{b29cb18d-1daf-4c2f-85f8-9a3b63aa3268}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Game\World\Object\Entity\Player">
+      <UniqueIdentifier>{7d597460-a7c8-4d16-8a4a-6aa1d0eb9c2c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

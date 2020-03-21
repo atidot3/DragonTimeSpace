@@ -180,12 +180,59 @@ bool CGSocket::onReceiveCharCreate(const Packet& packet)
 			ms_Write(res.get_buffer());
 			return false;
 		}
-		if (!_session->CreatePlayer(result->getInsertedID()))
+		const uint32_t char_id = result->getInsertedID();
+		if (!_session->CreatePlayer(char_id))
 		{
 			return true;
 		}
 		else
 			_socket_state = SocketState::GAME;
+		
+		// -- Set default slot
+		{
+			const auto default_skill_id = hero->normalskill();
+			const std::string default_slot = std::to_string(hero->tbxid()) + "&1:" + std::to_string(default_skill_id) + "|2:0|3:0|4:0|5:0|6:0|7:0|8:0|9:0|10:0|11:0|12:0";
+
+			Query query("INSERT INTO `quickslots` (`CharacterID`, `quickslot`) VALUES ('?', '?');");
+			query.setValue(char_id);
+			query.setValue(default_slot);
+			result = sDB.ExecuteQuery(query.GetQuery(), ret);
+			if (!ret || !result)
+			{
+				LOG_FATAL << "Unabled to insert quickslots on char create";
+			}
+		}
+		// -- Set default chat tab
+		{
+			const std::string default_chat = "All_1-2-3-4-5-6-10,Party_2";
+			Query query("INSERT INTO `chattabs` (`AccountID`, `chattab`) VALUES ('?', '?');");
+			query.setValue(account_id);
+			query.setValue(default_chat);
+			result = sDB.ExecuteQuery(query.GetQuery(), ret);
+			if (!ret || !result)
+			{
+				LOG_FATAL << "Unabled to insert chattabs on char create";
+			}
+		}
+		// -- Set default shortcuts
+		{
+			Query query("INSERT INTO `shortcuts` (`AccountID`) VALUES ('?');");
+			query.setValue(account_id);
+			result = sDB.ExecuteQuery(query.GetQuery(), ret);
+			if (!ret || !result)
+			{
+				LOG_FATAL << "Unabled to insert shortcuts on char create";
+			}
+		}
+		// -- Set default inventory
+		{
+			LOG_DEBUG << "Need to add default inventory here in database";
+		}
+		// -- Set default skills
+		{
+			LOG_DEBUG << "Need to add default skills here in database";
+		}
+
 
 		ProtobufPacket<msg::MSG_START_CUTSCENE_SC> cutscene(CommandID::NEW_ROLE_CUTSCENE_SCS);
 		{

@@ -51,10 +51,9 @@ public:
 
 	std::unique_ptr<QueryResult> ExecuteQuery(const std::string& sqlQuery, bool& ret);
 	void DirectExecute(const std::string& sqlQuery);
-
+	std::string EscapeString(const std::string& str);
 private:
 	bool manageException(uint32_t errNo, uint8_t attempts = 5);
-	char* EscapeString(const std::string& str);
 
 	/* ASYNC REQUEST REMOVED */
 	//void ExecuteQuery(const std::string sqlQuery, boost::function<void(std::shared_ptr<QueryResult>)> funct);

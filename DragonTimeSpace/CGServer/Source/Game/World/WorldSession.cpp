@@ -14,6 +14,8 @@
 
 #include <Tables/TableContainer.h>
 
+uint32_t skill_id;
+
 //----------------------------------------
 //	WorldSession constructor
 //	This class handle all data related to the player
@@ -278,6 +280,8 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		return false;
 	}
 
+	skill_id = hero->normalskill();
+
 	pos.set_fx(result->getFloat("Position_X"));
 	pos.set_fy(result->getFloat("Position_Y"));
 
@@ -489,7 +493,7 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		magic::SkillData _allocated_skill;
 		auto unlock_skill = info.add_unlockskills();
 		{
-			_allocated_skill.set_skillid(100101);
+			_allocated_skill.set_skillid(skill_id);
 			_allocated_skill.set_active_stages(0);
 			_allocated_skill.set_lastupdatetime(0);
 			_allocated_skill.set_lastusetime(0);
@@ -500,26 +504,10 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 			_allocated_skill.set_skillcd(0);
 		}
 
-		magic::SkillData _allocated_skill2;
-		auto unlock_skill2 = info.add_unlockskills();
-		{
-			_allocated_skill2.set_skillid(100102);
-			_allocated_skill2.set_active_stages(0);
-			_allocated_skill2.set_lastupdatetime(0);
-			_allocated_skill2.set_lastusetime(0);
-			_allocated_skill2.set_level(1);
-			_allocated_skill2.set_maxmultitimes(0);
-			_allocated_skill2.set_onoff(0);
-			_allocated_skill2.set_overlaytimes(0);
-			_allocated_skill2.set_skillcd(0);
-		}
-
 		unlock_skill->set_allocated_skill(&_allocated_skill);
-		unlock_skill2->set_allocated_skill(&_allocated_skill2);
 		career_skill.get_protobuff().set_allocated_skillinfo(&info);
 		career_skill.compute();
 		unlock_skill->release_skill();
-		unlock_skill2->release_skill();
 		career_skill.get_protobuff().release_skillinfo();
 		SendPacket(career_skill.get_buffer());
 	}
@@ -636,7 +624,7 @@ bool WorldSession::onReceiveMainHero(const Packet& packet)
 
 	hero.get_protobuff().set_errorcode(_hero.get_protobuff().errorcode());
 	hero.get_protobuff().set_opcode(_hero.get_protobuff().opcode());
-	hero.get_protobuff().set_herothisid(71001);
+	hero.get_protobuff().set_herothisid(hero.get_protobuff().herothisid());
 
 	hero.compute();
 	
@@ -678,7 +666,7 @@ bool WorldSession::onReceiveTeamMemberReq(const Packet& packet)
 
 	LOG_DEBUG << _team.get_protobuff().DebugString();
 
-	team.get_protobuff().set_id(70022);
+	team.get_protobuff().set_id(70024);
 	team.get_protobuff().set_curmember(0);
 
 	team.compute();
@@ -701,7 +689,7 @@ bool WorldSession::onReceiveCardPackInfo(const Packet& packet)
 		pack.get_protobuff().set_earth_opened_num(0);
 		pack.get_protobuff().set_fire_opened_num(0);
 		pack.get_protobuff().set_gold_opened_num(0);
-		pack.get_protobuff().set_hero_baseid(70022);
+		pack.get_protobuff().set_hero_baseid(70024);
 		pack.get_protobuff().set_water_opened_num(0);
 		pack.get_protobuff().set_wood_opened_num(0);
 
@@ -793,9 +781,9 @@ bool WorldSession::onReceiveMyHeroAttrData(const Packet& packet)
 
 	ProtobufPacket<msg::MSG_RetHeroAttributeData_SC> attr(CommandID::RetHeroAttributeData_SC);
 	{
-
 		attr.get_protobuff().set_allocated_data(&attrData.get_protobuff());
 		attr.get_protobuff().set_fightvalue(10000);
+		attr.get_protobuff().set_herothisid(std::move(std::string("70024")));
 	}
 
 	attr.compute();
@@ -811,7 +799,7 @@ bool WorldSession::onReceiveDNABagInfo(const Packet& packet)
 {
 	LOG_DEBUG << "onReceiveDNABagInfo";
 
-	auto req = ProtobufPacket<hero::MSG_AllDnaPageInfo_CSC>(packet);
+	/*auto req = ProtobufPacket<hero::MSG_AllDnaPageInfo_CSC>(packet);
 
 	LOG_DEBUG << req.get_protobuff().DebugString();
 	ProtobufPacket<hero::MSG_AllDnaPageInfo_CSC> res(CommandID::AllDnaPageInfo_CSC);
@@ -825,7 +813,7 @@ bool WorldSession::onReceiveDNABagInfo(const Packet& packet)
 	}
 
 	res.compute();
-	SendPacket(res.get_buffer());
+	SendPacket(res.get_buffer());*/
 
 	return true;
 }
@@ -834,7 +822,7 @@ bool WorldSession::onReceiveVisitNpcTrade(const Packet& packet)
 {
 	LOG_DEBUG << "onReceiveVisitNpcTrade";
 
-	auto req = ProtobufPacket<quest::MSG_Req_VisitNpcTrade_CS>(packet);
+	/*auto req = ProtobufPacket<quest::MSG_Req_VisitNpcTrade_CS>(packet);
 
 	LOG_DEBUG << req.get_protobuff().DebugString();
 	ProtobufPacket<quest::MSG_Ret_VisitNpcTrade_SC> res(CommandID::Ret_VisitNpcTrade_SC);
@@ -854,7 +842,7 @@ bool WorldSession::onReceiveVisitNpcTrade(const Packet& packet)
 	}
 
 	res.compute();
-	SendPacket(res.get_buffer());
+	SendPacket(res.get_buffer());*/
 
 	return true;
 }
@@ -863,7 +851,7 @@ bool WorldSession::onReceiveAllDNAPageInfo(const Packet& packet)
 {
 	LOG_DEBUG << "onReceiveAllDNAPageInfo";
 
-	auto req = ProtobufPacket<hero::MSG_DnaBagInfo_CSC>(packet);
+	/*auto req = ProtobufPacket<hero::MSG_DnaBagInfo_CSC>(packet);
 
 	LOG_DEBUG << req.get_protobuff().DebugString();
 	ProtobufPacket<hero::MSG_DnaBagInfo_CSC> res(CommandID::DnaBagInfo_CSC);
@@ -876,7 +864,7 @@ bool WorldSession::onReceiveAllDNAPageInfo(const Packet& packet)
 	}
 
 	res.compute();
-	SendPacket(res.get_buffer());
+	SendPacket(res.get_buffer());*/
 
 	return true;
 }
@@ -885,7 +873,7 @@ bool WorldSession::onReceiveRefreshRadar(const Packet& packet)
 {
 	LOG_DEBUG << "onReceiveRefreshRadar";
 
-	auto req = ProtobufPacket<mobapk::MSG_RefreshRadarPos_CSC>(packet);
+	/*auto req = ProtobufPacket<mobapk::MSG_RefreshRadarPos_CSC>(packet);
 
 	LOG_DEBUG << req.get_protobuff().DebugString();
 	ProtobufPacket<mobapk::MSG_RefreshRadarPos_CSC> res(CommandID::RefreshRadarPos_CSC);
@@ -898,7 +886,7 @@ bool WorldSession::onReceiveRefreshRadar(const Packet& packet)
 	}
 
 	res.compute();
-	SendPacket(res.get_buffer());
+	SendPacket(res.get_buffer());*/
 	return true;
 }
 
@@ -906,7 +894,7 @@ bool WorldSession::onReceiveRefreshMapQuestInfo(const Packet& packet)
 {
 	LOG_DEBUG << "onReceiveRefreshMapQuestInfo";
 
-	auto req = ProtobufPacket<quest::MSG_ReqMapQuestInfo_CS>(packet);
+	/*auto req = ProtobufPacket<quest::MSG_ReqMapQuestInfo_CS>(packet);
 
 	LOG_DEBUG << req.get_protobuff().DebugString();
 	ProtobufPacket<quest::MSG_RetMapQuestInfo_SC> res(CommandID::RetMapQuestInfo_SC);
@@ -915,7 +903,7 @@ bool WorldSession::onReceiveRefreshMapQuestInfo(const Packet& packet)
 	}
 
 	res.compute();
-	SendPacket(res.get_buffer());
+	SendPacket(res.get_buffer());*/
 	return true;
 }
 
@@ -924,7 +912,7 @@ bool WorldSession::onReceiveEntrySelectState(const Packet& packet)
 {
 	LOG_DEBUG << "onReceiveEntrySelectState";
 
-	auto req = ProtobufPacket<msg::MSG_ReqEntrySelectState_CS>(packet);
+	/*auto req = ProtobufPacket<msg::MSG_ReqEntrySelectState_CS>(packet);
 
 	LOG_DEBUG << req.get_protobuff().DebugString();
 	ProtobufPacket<msg::MSG_RetEntrySelectState_SC> res(CommandID::RetEntrySelectState_SC);
@@ -934,7 +922,7 @@ bool WorldSession::onReceiveEntrySelectState(const Packet& packet)
 	}
 
 	res.compute();
-	SendPacket(res.get_buffer());
+	SendPacket(res.get_buffer());*/
 	return true;
 }
 
@@ -942,7 +930,7 @@ bool WorldSession::onReceiveSetChooseTarget(const Packet& packet)
 {
 	LOG_DEBUG << "onReceiveSetChooseTarget";
 
-	auto req = ProtobufPacket<msg::MSG_SetChooseTarget_CS>(packet);
+	/*auto req = ProtobufPacket<msg::MSG_SetChooseTarget_CS>(packet);
 
 	LOG_DEBUG << req.get_protobuff().DebugString();
 	ProtobufPacket<msg::MSG_AttackTargetChange_SC> res(CommandID::AttackTargetChange_SC);
@@ -956,22 +944,21 @@ bool WorldSession::onReceiveSetChooseTarget(const Packet& packet)
 	}
 
 	res.compute();
-	SendPacket(res.get_buffer());
+	SendPacket(res.get_buffer());*/
 	return true;
 }
 
 bool WorldSession::onReceiveOfflineChat(const Packet& packet)
 {
 	//TODO: Make Offline Chat save handler and loader for this function	
-	ProtobufPacket<Chat::MSG_Ret_OfflineChat_SC> chat(CommandID::Ret_OfflineChat_SC);
+	/*ProtobufPacket<Chat::MSG_Ret_OfflineChat_SC> chat(CommandID::Ret_OfflineChat_SC);
 
 	auto it = chat.get_protobuff().add_datas();
 	chat.compute();
 
-	SendPacket(chat.get_buffer());
+	SendPacket(chat.get_buffer());*/
 	return true;
 }
-
 
 bool WorldSession::onReceiveOperateDatasReq(const Packet& packet)
 {
@@ -985,7 +972,7 @@ bool WorldSession::onReceiveOperateDatasReq(const Packet& packet)
 		storage_Shortcuts,
 		storage_ChatTab, => custom chat tab name / configs (composed as: NAME_id-id-id,NAME_id,)
 		storage_CharacterBottom,
-		storage_UISkillIndex, => 100101|48&100102|49
+		storage_UISkillIndex, => 70024&1:0"|2:0|3:0|4:0|5:0|6:0|7:0|8:0|9:0|10:0|11:0|12:0
 		storage_GenePageName,
 		storage_SystemData,
 		storage_ShortKey_Config, => are shortcut as Z to walk forward, space jump etc
@@ -1013,13 +1000,21 @@ bool WorldSession::onReceiveOperateDatasReq(const Packet& packet)
 		LOG_DEBUG << "Testing atidote azerty keyboard";
 		opdat.get_protobuff().set_value(std::move(std::string("{\"0\":{\"key\":\"99\"},\"1\":{\"key\":\"107\"},\"2\":{\"key\":\"\"},\"3\":{\"key\":\"98\"},\"4\":{\"key\":\"108\"},\"5\":{\"key\":\"103\"},\"6\":{\"key\":\"117\"},\"7\":{\"key\":\"106\"},\"8\":{\"key\":\"111\"},\"9\":{\"key\":\"109\"},\"11\":{\"key\":\"122\"},\"12\":{\"key\":\"115\"},\"13\":{\"key\":\"113\"},\"14\":{\"key\":\"100\"},\"15\":{\"key\":\"32\"},\"16\":{\"key\":\"9\"},\"17\":{\"key\":\"304,49\"},\"18\":{\"key\":\"304,50\"},\"19\":{\"key\":\"304,51\"},\"20\":{\"key\":\"304,52\"},\"21\":{\"key\":\"96\"},\"22\":{\"key\":\"101\"},\"23\":{\"key\":\"119\"},\"24\":{\"key\":\"306,290\"},\"25\":{\"key\":\"306,291\"},\"26\":{\"key\":\"306,288\"},\"27\":{\"key\":\"306,289\"},\"28\":{\"key\":\"306,292\"},\"101\":{\"key\":\"282\"},\"102\":{\"key\":\"283\"},\"103\":{\"key\":\"284\"},\"104\":{\"key\":\"285\"},\"105\":{\"key\":\"286\"},\"106\":{\"key\":\"287\"},\"107\":{\"key\":\"288\"},\"108\":{\"key\":\"289\"},\"109\":{\"key\":\"290\"},\"110\":{\"key\":\"291\"},\"111\":{\"key\":\"292\"},\"112\":{\"key\":\"293\"},\"201\":{\"key\":\"\"},\"202\":{\"key\":\"\"},\"203\":{\"key\":\"\"},\"204\":{\"key\":\"\"},\"205\":{\"key\":\"\"},\"206\":{\"key\":\"\"},\"207\":{\"key\":\"\"},\"208\":{\"key\":\"\"},\"209\":{\"key\":\"\"},\"210\":{\"key\":\"\"},\"211\":{\"key\":\"\"},\"212\":{\"key\":\"\"},\"301\":{\"key\":\"\"},\"302\":{\"key\":\"\"},\"303\":{\"key\":\"\"},\"304\":{\"key\":\"\"},\"305\":{\"key\":\"\"},\"306\":{\"key\":\"\"},\"307\":{\"key\":\"\"},\"308\":{\"key\":\"\"},\"309\":{\"key\":\"\"},\"310\":{\"key\":\"\"},\"311\":{\"key\":\"\"},\"312\":{\"key\":\"\"},\"401\":{\"key\":\"\"},\"402\":{\"key\":\"\"},\"403\":{\"key\":\"\"},\"404\":{\"key\":\"\"},\"405\":{\"key\":\"\"},\"406\":{\"key\":\"\"},\"407\":{\"key\":\"\"},\"408\":{\"key\":\"\"},\"409\":{\"key\":\"\"},\"410\":{\"key\":\"\"},\"411\":{\"key\":\"\"},\"412\":{\"key\":\"\"},\"501\":{\"key\":\"49\"},\"502\":{\"key\":\"50\"},\"503\":{\"key\":\"51\"},\"504\":{\"key\":\"52\"},\"505\":{\"key\":\"53\"},\"506\":{\"key\":\"54\"},\"507\":{\"key\":\"55\"},\"508\":{\"key\":\"56\"},\"509\":{\"key\":\"57\"},\"510\":{\"key\":\"48\"},\"511\":{\"key\":\"45\"},\"512\":{\"key\":\"61\"},\"513\":{\"key\":\"\"}}")));
 	}
-	else if (opdat.get_protobuff().key() == "storage_1_SkillSlotSort70024" && req.get_protobuff().op() == 3)
+	else if (opdat.get_protobuff().key() == "ShortKey_Config" && req.get_protobuff().op() == 1)
 	{
-		opdat.get_protobuff().set_value(std::move(std::string("70024&49:100101|50:100102|51:0|52:0|53:0|54:0|55:0|56:0|57:0|48:0|282:0|283:0|284:0|285:0|286:0")));
+		// this is working but we dont need to execute it for now
+		/*Query query("UPDATE `shortcuts` SET `shortcut` = '?' WHERE `AccountId` = '?'");
+		query.setValue(req.get_protobuff().value());
+		query.setValue(_account_id);
+		sDB.DirectExecute(query.GetQuery());*/
 	}
-	else if (opdat.get_protobuff().key() == "storage_1_ChatTab" && req.get_protobuff().op() == 3)
+	else if (opdat.get_protobuff().key().find("ChatTab") != std::string::npos && req.get_protobuff().op() == 3)
 	{
 		opdat.get_protobuff().set_value(std::move(std::string("All_1-2-3-4-5-6-10,Party_2,")));
+	}
+	else if (opdat.get_protobuff().key() == "storage_1_SkillSlotSort70024" && req.get_protobuff().op() == 3)
+	{
+		opdat.get_protobuff().set_value(std::move(std::string("70024&1:"+std::to_string(skill_id )+"|2:0|3:0|4:0|5:0|6:0|7:0|8:0|9:0|10:0|11:0|12:0")));
 	}
 
 	opdat.compute();

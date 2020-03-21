@@ -192,14 +192,14 @@ void MySQLConnWrapper::Ping()
 	if (_con)
 		mysql_ping(_con);
 }
-char* MySQLConnWrapper::EscapeString(const std::string& str)
+std::string MySQLConnWrapper::EscapeString(const std::string& str)
 {
-	char* to = new char[str.size()];
+	char* from = new char[strlen(str.c_str()) * 3 + 1];
+	mysql_real_escape_string(_con, from, str.c_str(), str.size());
+	std::string escaped(from);
+	delete from;
 
-	mysql_escape_string(to, str.c_str(), static_cast<unsigned long>(str.size()));
-	std::string newEscape = std::string(to);
-
-	return to;
+	return escaped;
 }
 
 std::unique_ptr<QueryResult> MySQLConnWrapper::ExecuteQuery(const std::string& query, bool& ret)
