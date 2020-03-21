@@ -42,6 +42,8 @@ WorldSession::WorldSession(Socket* gameSock, std::function<void()> destruct_hand
 		methodList.emplace(CommandID::RefreshRadarPos_CSC, std::make_tuple(std::bind(&WorldSession::onReceiveRefreshRadar, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
 		methodList.emplace(CommandID::ReqMapQuestInfo_CS, std::make_tuple(std::bind(&WorldSession::onReceiveRefreshMapQuestInfo, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
 		methodList.emplace(CommandID::ReqEntrySelectState_CS, std::make_tuple(std::bind(&WorldSession::onReceiveEntrySelectState, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
+		methodList.emplace(CommandID::Req_MagicAttack_CS, std::make_tuple(std::bind(&WorldSession::onRecieveSyncSkillStage, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
+		methodList.emplace(CommandID::Req_SyncSkillStage_CS, std::make_tuple(std::bind(&WorldSession::onReceiveMagicAttack, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
 
 		// -- Chat
 		methodList.emplace(CommandID::Req_Chat_CS, std::make_tuple(std::bind(&WorldSession::onRecieveChat, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
@@ -374,7 +376,7 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		charBase->set_position(0);
 		charBase->set_viplevel(1);
 		charBase->set_port(0);
-		charBase->set_laststage(0);
+		charBase->set_laststage(msg::StageType::None_Stage);
 		charBase->set_nextexp(level->levelupexp());
 		charBase->set_pkmode(msg::PKMode::PKMode_Normal);
 		charBase->set_edupoint(result->getUInt("Edupoint"));
@@ -891,16 +893,14 @@ bool WorldSession::onReceiveRefreshMapQuestInfo(const Packet& packet)
 {
 	LOG_DEBUG << "onReceiveRefreshMapQuestInfo";
 
-	/*auto req = ProtobufPacket<quest::MSG_ReqMapQuestInfo_CS>(packet);
+	auto req = ProtobufPacket<quest::MSG_ReqMapQuestInfo_CS>(packet);
 
 	LOG_DEBUG << req.get_protobuff().DebugString();
 	ProtobufPacket<quest::MSG_RetMapQuestInfo_SC> res(CommandID::RetMapQuestInfo_SC);
 	{
 		auto it = res.get_protobuff().add_npclists();
 	}
-
-	res.compute();
-	SendPacket(res.get_buffer());*/
+	
 	return true;
 }
 
@@ -1106,5 +1106,72 @@ bool WorldSession::onRecieveChat(const Packet& packet)
 
 	SendPacket(chat.get_buffer());
 	chat.get_protobuff().release_data();
+	return true;
+}
+
+bool WorldSession::onRecieveSyncSkillStage(const Packet& packet)
+{
+	LOG_DEBUG << "onRecieveSyncSkillStage";
+	auto _sync_skill = ProtobufPacket<magic::MSG_Req_SyncSkillStage_CS>(packet);
+
+	return true;
+}
+bool WorldSession::onReceiveMagicAttack(const Packet& packet)
+{
+	LOG_DEBUG << "onReceiveMagicAttack";
+	auto _magic_skill = ProtobufPacket<magic::MSG_Req_MagicAttack_CS>(packet);
+
+	msg::EntryIDType* att = new msg::EntryIDType();
+	{
+		att->set_id(_magic_skill.get_protobuff().target().id());
+		att->set_type(_magic_skill.get_protobuff().target().type());
+	}
+	auto _magic_skill_res = ProtobufPacket<magic::MSG_Ret_MagicAttack_SC>(CommandID::Ret_MagicAttack_SC);
+	{
+		auto pkresult = _magic_skill_res.get_protobuff().add_pklist();
+		{
+			msg::EntryIDType* att2 = new msg::EntryIDType();
+			{
+				att2->set_id(_magic_skill.get_protobuff().target().id());
+				att2->set_type(_magic_skill.get_protobuff().target().type());
+			}
+			pkresult->add_attcode(magic::ATTACKRESULT::ATTACKRESULT_HIT);
+			pkresult->set_changehp(100);
+			pkresult->set_hp(500);
+			pkresult->set_allocated_def(att2);
+			pkresult->set_attcode(0, magic::ATTACKRESULT::ATTACKRESULT_HIT);
+		}
+		_magic_skill_res.get_protobuff().set_attdir(_magic_skill.get_protobuff().attdir());
+		_magic_skill_res.get_protobuff().set_desx(_magic_skill.get_protobuff().desx());
+		_magic_skill_res.get_protobuff().set_desy(_magic_skill.get_protobuff().desy());
+		_magic_skill_res.get_protobuff().set_skillstage(0);
+		_magic_skill_res.get_protobuff().set_userdir(_magic_skill.get_protobuff().userdir());
+		
+		_magic_skill_res.get_protobuff().set_allocated_def(att);
+		msg::EntryIDType* att3 = new msg::EntryIDType();
+		{
+			att3->set_id(1);
+			att3->set_type(msg::MapDataType::MAP_DATATYPE_USER);
+		}
+		_magic_skill_res.get_protobuff().set_allocated_att(att3);
+	}
+	_magic_skill_res.compute();
+	_magic_skill_res.get_protobuff().release_def();
+	SendPacket(_magic_skill_res.get_buffer());
+
+
+	//auto start_attack = ProtobufPacket<magic::MSG_Ret_StartMagicAttack_SC>(CommandID::Ret_StartMagicAttack_SC);
+	//{
+	//	start_attack.get_protobuff().set_skillid(skill_id);
+	//	start_attack.get_protobuff().set_attdir(_magic_skill.get_protobuff().attdir());
+	//	start_attack.get_protobuff().set_desx(_magic_skill.get_protobuff().desx());
+	//	start_attack.get_protobuff().set_desy(_magic_skill.get_protobuff().desy());
+	//	start_attack.get_protobuff().set_allocated_att(att);
+	//	start_attack.get_protobuff().set_userdir(_magic_skill.get_protobuff().userdir());
+	//}
+	//start_attack.compute();
+	//SendPacket(start_attack.get_buffer());
+	//start_attack.get_protobuff().release_att();
+
 	return true;
 }

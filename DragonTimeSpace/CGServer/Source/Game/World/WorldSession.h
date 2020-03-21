@@ -76,6 +76,8 @@ private:
 	bool onReceiveEntrySelectState(const Packet& packet);
 	bool onReceiveSetChooseTarget(const Packet& packet);
 	bool onRecieveChat(const Packet& packet);
+	bool onRecieveSyncSkillStage(const Packet& packet);
+	bool onReceiveMagicAttack(const Packet& packet);
 };
 
 #endif /*_WORLDSESSION_H*/
