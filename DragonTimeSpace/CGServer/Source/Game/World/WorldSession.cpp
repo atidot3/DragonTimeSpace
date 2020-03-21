@@ -458,6 +458,23 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		pktMain.get_protobuff().release_data();
 	}
 
+	/*ProtobufPacket<hero::HeroAvatar> avatar(CommandID::RetCommonError_SC);
+		{
+			avatar.
+		}*/
+	ProtobufPacket<hero::MSG_NotifyAllHeros_SC> notifyHero(CommandID::NotifyAllHeros_SC);
+	{
+		auto it = notifyHero.get_protobuff().add_heroinfo();
+		it->set_baseid(70024);
+		it->set_thisid("70024");
+		it->set_self_created(true);
+		it->set_exp(100);
+		it->set_level(10);
+		it->set_score(1000);
+	}
+	notifyHero.compute();
+	SendPacket(notifyHero.get_buffer());
+
 	/*auto skills = ProtobufPacket<magic::MSG_RetRefreshSkill_SC>(CommandID::RetRefreshSkill_SC);
 	{
 		const std::list<uint32_t> _storage_skills = { 100101, 100102,100103,100104,100105,100106,100107,100108,100109,100110,100112,100113, 100114 };
