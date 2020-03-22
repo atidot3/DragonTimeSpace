@@ -48,7 +48,7 @@ World::World()
 	, _playerLimit{ MAX_PLAYER_PER_SERVER }
 	, _pending_shutdown{ false }
 	, _pending_shutdown_time{ 75 }
-	, _queue_handler{ std::thread(&World::UpdateQueue, this) }
+	//, _queue_handler{ std::thread(&World::UpdateQueue, this) }
 {
 	_sessionList.reserve(MAX_PLAYER_PER_SERVER);
 }
@@ -57,10 +57,9 @@ World::World()
 //----------------------------------------
 World::~World()
 {
-	_pending_shutdown = true;
-
-	while (!_queue_handler.joinable())
-		_queue_handler.join();
+	//_pending_shutdown = true;
+	//while (!_queue_handler.joinable())
+		//_queue_handler.join();
 }
 //----------------------------------------
 //	World realm update itself (population / online / offline)

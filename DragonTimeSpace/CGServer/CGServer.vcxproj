@@ -169,7 +169,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Game\World\Map\Helper\VisibilityManager.cpp" />
     <ClCompile Include="Source\Game\World\Map\map.cpp" />
+    <ClCompile Include="Source\Game\World\Map\MapManager.cpp" />
     <ClCompile Include="Source\Game\World\QueueManager.cpp" />
     <ClCompile Include="Source\Game\World\World.cpp" />
     <ClCompile Include="Source\Game\World\WorldSession.cpp" />
@@ -179,7 +181,9 @@
     <ClCompile Include="Source\Network\CGSocket.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Game\World\Map\Helper\VisibilityManager.h" />
     <ClInclude Include="Source\Game\World\Map\map.h" />
+    <ClInclude Include="Source\Game\World\Map\MapManager.h" />
     <ClInclude Include="Source\Game\World\Object\Object.h" />
     <ClInclude Include="Source\Game\World\QueueManager.h" />
     <ClInclude Include="Source\Game\World\World.h" />

@@ -25,6 +25,9 @@
     <Filter Include="Source\Game\World\Object\Entity\Player">
       <UniqueIdentifier>{7d597460-a7c8-4d16-8a4a-6aa1d0eb9c2c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Game\World\Map\Helper">
+      <UniqueIdentifier>{feca19a3-1987-4fba-8e62-7a1355d09bcd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -54,6 +57,12 @@
     <ClCompile Include="Source\Game\World\QueueManager.cpp">
       <Filter>Source\Game\World</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Game\World\Map\MapManager.cpp">
+      <Filter>Source\Game\World\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\World\Map\Helper\VisibilityManager.cpp">
+      <Filter>Source\Game\World\Map\Helper</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Game\World\Map\map.h">
@@ -76,6 +85,12 @@
     </ClInclude>
     <ClInclude Include="Source\Game\World\Object\Object.h">
       <Filter>Source\Game\World\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\World\Map\MapManager.h">
+      <Filter>Source\Game\World\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\World\Map\Helper\VisibilityManager.h">
+      <Filter>Source\Game\World\Map\Helper</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

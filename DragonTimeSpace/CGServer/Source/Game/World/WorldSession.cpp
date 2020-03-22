@@ -1,5 +1,5 @@
 #include "WorldSession.h"
-#include "Map/map.h"
+#include "Map/MapManager.h"
 
 #include "../../Network/CGSocket.h"
 
@@ -263,7 +263,7 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		}
 
 		for (auto it = level_table.datas().begin(); it != level_table.datas().end(); ++it)
-			if (it->level() == 1)
+			if (it->level() == result->getUInt("CurrentLevel"))
 			{
 				level = &(*it);
 				break;
@@ -372,7 +372,7 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		charBase->set_stone(result->getUInt("Stone"));
 		charBase->set_tilizhi(result->getUInt("Tilizhi"));
 		charBase->set_type(msg::MapDataType::MAP_DATATYPE_USER);
-		charBase->set_famelevel(50);
+		charBase->set_famelevel(0);
 		charBase->set_position(0);
 		charBase->set_viplevel(1);
 		charBase->set_port(0);
@@ -450,10 +450,10 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		mapInfo.get_protobuff().release_pos();
 	}
 
-	ProtobufPacket<hero::HeroAvatar> heroavatar(CommandID::RetCommonError_SC);
+	hero::HeroAvatar *heroavatar = new hero::HeroAvatar();
 	{
-		heroavatar.get_protobuff().add_avatars(hero->newavatar());
-		heroavatar.get_protobuff().set_activeavatar(hero->newavatar());
+		heroavatar->add_avatars(hero->newavatar());
+		heroavatar->set_activeavatar(hero->newavatar());
 	}
 	ProtobufPacket<hero::MSG_NotifyAllHeros_SC> notifyHero(CommandID::NotifyAllHeros_SC);
 	{
@@ -461,11 +461,10 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		it->set_baseid(hero->tbxid());
 		it->set_thisid(std::to_string(hero->tbxid()));
 		it->set_self_created(true);
-		it->set_exp(0);
-		it->set_level(1);
+		it->set_exp(result->getUInt("CurrentExp"));
+		it->set_level(result->getUInt("CurrentLevel"));
 		it->set_score(0);
-		it->set_allocated_avatar(&heroavatar.get_protobuff());
-		it->release_avatar();
+		it->set_allocated_avatar(heroavatar);
 	}
 	notifyHero.compute();
 	SendPacket(notifyHero.get_buffer());
@@ -527,7 +526,7 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 	ProtobufPacket<msg::MSG_Ret_MapScreenBatchRefreshNpc_SC> npc_info(CommandID::Ret_MapScreenBatchRefreshNpc_SC);
 	{
 		auto const_map = sMapMgr.get_map(result->getUInt("MapID"));
-		auto const_map_info = const_map.get_map_info();
+		auto const_map_info = const_map->get_map_info();
 
 		auto npc = sTBL.get_table<pb::npc_data>();
 		for (auto& is_ou_npc : npc.datas())

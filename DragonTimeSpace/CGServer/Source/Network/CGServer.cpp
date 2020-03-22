@@ -1,6 +1,6 @@
 #include "CGServer.h"
 
-#include "../Game/World/Map/map.h"
+#include "../Game/World/Map/MapManager.h"
 
 #include <Utils/Logger/Logger.h>
 #include <Database\MySQLWrapper.h>
