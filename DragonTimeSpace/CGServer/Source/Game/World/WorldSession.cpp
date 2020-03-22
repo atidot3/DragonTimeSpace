@@ -414,6 +414,19 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		mapshow->set_bodystyle(0);
 		mapshow->set_antenna(result->getUInt("Antenna"));
 	}
+
+	msg::CharacterMapShow* secondHero = new msg::CharacterMapShow();
+	{
+		secondHero->set_weapon(0);
+		secondHero->set_heroid(0);
+		secondHero->set_avatarid(0);
+		secondHero->set_occupation(msg::Occupation::Occu_Yaohu);
+		secondHero->set_hairstyle(0);
+		secondHero->set_haircolor(0);
+		secondHero->set_facestyle(0);
+		secondHero->set_bodystyle(0);
+		//this is for secondary hero. 
+	}
 	msg::CharacterFightData* fightBase = new msg::CharacterFightData();
 	{
 		fightBase->set_curfightvalue(1000);
@@ -425,7 +438,7 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 
 		mapBase->set_allocated_mapdata(mapdata);
 		mapBase->set_allocated_mapshow(mapshow);
-		mapBase->set_allocated_bakhero(mapshow);
+		mapBase->set_allocated_bakhero(secondHero);
 	}
 	msg::CharacterMainData *charMain = new msg::CharacterMainData();
 	{
@@ -612,6 +625,7 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		lines.compute();
 		SendPacket(lines.get_buffer());
 	}
+
 
 	return true;
 }
@@ -820,9 +834,9 @@ bool WorldSession::onReceiveVisitNpcTrade(const Packet& packet)
 {
 	LOG_DEBUG << "onReceiveVisitNpcTrade";
 
-	/*auto req = ProtobufPacket<quest::MSG_Req_VisitNpcTrade_CS>(packet);
+	auto req = ProtobufPacket<quest::MSG_Req_VisitNpcTrade_CS>(packet);
 
-	LOG_DEBUG << req.get_protobuff().DebugString();
+	//None of this shit worked so far. 
 	ProtobufPacket<quest::MSG_Ret_VisitNpcTrade_SC> res(CommandID::Ret_VisitNpcTrade_SC);
 	{
 
@@ -833,14 +847,17 @@ bool WorldSession::onReceiveVisitNpcTrade(const Packet& packet)
 			it->set_quest_id(req.get_protobuff().allcrc().Get(i).quest_id());
 			it->set_crc(req.get_protobuff().allcrc().Get(i).crc());
 		}
-		res.get_protobuff().set_action(0);
+		res.get_protobuff().set_action(1);
 		res.get_protobuff().set_type(msg::MapDataType::MAP_DATATYPE_NPC);
 		res.get_protobuff().set_npc_temp_id(req.get_protobuff().npc_temp_id());
-		res.get_protobuff().set_show_type(0);
+		res.get_protobuff().set_show_type(1);
+		res.get_protobuff().set_type(1);
+		res.get_protobuff().set_retcode(1);
+		res.get_protobuff().set_user_menu("Fuck off m8");
+		res.get_protobuff().set_npc_menu("What up Bitch");
+		res.get_protobuff().set_source(1);
 	}
 
-	res.compute();
-	SendPacket(res.get_buffer());*/
 
 	return true;
 }
@@ -871,7 +888,7 @@ bool WorldSession::onReceiveRefreshRadar(const Packet& packet)
 {
 	LOG_DEBUG << "onReceiveRefreshRadar";
 
-	/*auto req = ProtobufPacket<mobapk::MSG_RefreshRadarPos_CSC>(packet);
+	auto req = ProtobufPacket<mobapk::MSG_RefreshRadarPos_CSC>(packet);
 
 	LOG_DEBUG << req.get_protobuff().DebugString();
 	ProtobufPacket<mobapk::MSG_RefreshRadarPos_CSC> res(CommandID::RefreshRadarPos_CSC);
@@ -884,7 +901,7 @@ bool WorldSession::onReceiveRefreshRadar(const Packet& packet)
 	}
 
 	res.compute();
-	SendPacket(res.get_buffer());*/
+	SendPacket(res.get_buffer());
 	return true;
 }
 
@@ -898,8 +915,19 @@ bool WorldSession::onReceiveRefreshMapQuestInfo(const Packet& packet)
 	ProtobufPacket<quest::MSG_RetMapQuestInfo_SC> res(CommandID::RetMapQuestInfo_SC);
 	{
 		auto it = res.get_protobuff().add_npclists();
+		it->set_npcid(80);
+		it->set_state(99);
+		auto sec = it->add_quests();
+		sec->set_questid(10021);
+		sec->set_state(99);
 	}
+	res.compute();
+	SendPacket(res.get_buffer());
 	
+	//Send a fixed value, but has to be in this area.
+	//think about how to get the HeroID and expereience here. 
+	SendUpdateXpLevel(70024, 310000, 55, 0, 0);
+
 	return true;
 }
 
@@ -1112,7 +1140,7 @@ bool WorldSession::onRecieveSyncSkillStage(const Packet& packet)
 {
 	LOG_DEBUG << "onRecieveSyncSkillStage";
 	auto _sync_skill = ProtobufPacket<magic::MSG_Req_SyncSkillStage_CS>(packet);
-
+	
 	return true;
 }
 bool WorldSession::onReceiveMagicAttack(const Packet& packet)
@@ -1129,27 +1157,22 @@ bool WorldSession::onReceiveMagicAttack(const Packet& packet)
 	{
 		auto pkresult = _magic_skill_res.get_protobuff().add_pklist();
 		{
-			msg::EntryIDType* att2 = new msg::EntryIDType();
-			{
-				att2->set_id(_magic_skill.get_protobuff().target().id());
-				att2->set_type(_magic_skill.get_protobuff().target().type());
-			}
 			pkresult->add_attcode(magic::ATTACKRESULT::ATTACKRESULT_HIT);
 			pkresult->set_changehp(100);
 			pkresult->set_hp(500);
-			pkresult->set_allocated_def(att2);
+			pkresult->set_allocated_def(att);
 			pkresult->set_attcode(0, magic::ATTACKRESULT::ATTACKRESULT_HIT);
 		}
 		_magic_skill_res.get_protobuff().set_attdir(_magic_skill.get_protobuff().attdir());
 		_magic_skill_res.get_protobuff().set_desx(_magic_skill.get_protobuff().desx());
 		_magic_skill_res.get_protobuff().set_desy(_magic_skill.get_protobuff().desy());
-		_magic_skill_res.get_protobuff().set_skillstage(0);
+		_magic_skill_res.get_protobuff().set_skillstage(1010010103); // SkillID is for Human autoattack. 
 		_magic_skill_res.get_protobuff().set_userdir(_magic_skill.get_protobuff().userdir());
 		
 		_magic_skill_res.get_protobuff().set_allocated_def(att);
 		msg::EntryIDType* att3 = new msg::EntryIDType();
 		{
-			att3->set_id(1);
+			att3->set_id(70024); //MSG_Ret_NineScreenRefreshPlayer_SC need to get your player id from this so you can see attack and damage.
 			att3->set_type(msg::MapDataType::MAP_DATATYPE_USER);
 		}
 		_magic_skill_res.get_protobuff().set_allocated_att(att3);
@@ -1171,6 +1194,22 @@ bool WorldSession::onReceiveMagicAttack(const Packet& packet)
 	//start_attack.compute();
 	//SendPacket(start_attack.get_buffer());
 	//start_attack.get_protobuff().release_att();
-
+	
+		
 	return true;
+}
+
+void WorldSession::SendUpdateXpLevel(uint32_t herothisid, uint32_t exp, uint32_t level, uint32_t secXP, uint32_t secLevel)
+{
+	ProtobufPacket<msg::MSG_UpdateExpLevel_SC> xp(CommandID::UpdateExpLevel_SC);
+	{
+		xp.get_protobuff().set_curexp(exp);
+		xp.get_protobuff().set_curlevel(level);
+		xp.get_protobuff().set_mainhero_exp(secXP);
+		xp.get_protobuff().set_mainhero_lv(secLevel);
+		xp.get_protobuff().set_mainhero_thisid(herothisid);
+	}
+	xp.compute();
+	LOG_DEBUG << xp.get_protobuff().DebugString();
+	SendPacket(xp.get_buffer());
 }

@@ -78,6 +78,7 @@ private:
 	bool onRecieveChat(const Packet& packet);
 	bool onRecieveSyncSkillStage(const Packet& packet);
 	bool onReceiveMagicAttack(const Packet& packet);
+	void SendUpdateXpLevel(uint32_t herothisid, uint32_t exp, uint32_t level, uint32_t secXP, uint32_t secLevel);
 };
 
 #endif /*_WORLDSESSION_H*/
