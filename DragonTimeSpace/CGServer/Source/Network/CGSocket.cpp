@@ -181,13 +181,6 @@ bool CGSocket::onReceiveCharCreate(const Packet& packet)
 			return false;
 		}
 		const uint32_t char_id = result->getInsertedID();
-		if (!_session->CreatePlayer(char_id))
-		{
-			return true;
-		}
-		else
-			_socket_state = SocketState::GAME;
-		
 		// -- Set default slot
 		{
 			const auto default_skill_id = hero->normalskill();
@@ -233,6 +226,12 @@ bool CGSocket::onReceiveCharCreate(const Packet& packet)
 			LOG_DEBUG << "Need to add default skills here in database";
 		}
 
+		if (!_session->CreatePlayer(char_id))
+		{
+			return true;
+		}
+		else
+			_socket_state = SocketState::GAME;
 
 		ProtobufPacket<msg::MSG_START_CUTSCENE_SC> cutscene(CommandID::NEW_ROLE_CUTSCENE_SCS);
 		{

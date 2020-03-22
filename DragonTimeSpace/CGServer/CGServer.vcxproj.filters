@@ -63,6 +63,9 @@
     <ClCompile Include="Source\Game\World\Map\Helper\VisibilityManager.cpp">
       <Filter>Source\Game\World\Map\Helper</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Game\World\Object\Entity\Player\Player.cpp">
+      <Filter>Source\Game\World\Object\Entity\Player</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Game\World\Map\map.h">
@@ -91,6 +94,9 @@
     </ClInclude>
     <ClInclude Include="Source\Game\World\Map\Helper\VisibilityManager.h">
       <Filter>Source\Game\World\Map\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\World\Object\Entity\Player\Player.h">
+      <Filter>Source\Game\World\Object\Entity\Player</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

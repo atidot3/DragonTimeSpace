@@ -55,3 +55,28 @@ std::unique_ptr<QueryResult>	CCGServerQuery::GetAllLineId(bool& ret) const
 
 	return sDB.ExecuteQuery(query.GetQuery(), ret);
 }
+
+std::unique_ptr<QueryResult>	CCGServerQuery::GetQuickSlots(const uint32_t& char_id, const uint32_t& hero_id, bool& ret) const
+{
+	// todo, handle heroid
+	Query query("SELECT * FROM `quickslots` WHERE `CharacterID` = '?';");
+	query.setValue(char_id);
+
+	return sDB.ExecuteQuery(query.GetQuery(), ret);
+}
+
+std::unique_ptr<QueryResult>	CCGServerQuery::GetChatTabs(const uint32_t& account_id, bool& ret) const
+{
+	Query query("SELECT * FROM `chattabs` WHERE `AccountID` = '?';");
+	query.setValue(account_id);
+
+	return sDB.ExecuteQuery(query.GetQuery(), ret);
+}
+
+std::unique_ptr<QueryResult>	CCGServerQuery::GetShortcuts(const uint32_t& account_id, bool& ret) const
+{
+	Query query("SELECT * FROM `shortcuts` WHERE `AccountID` = '?';");
+	query.setValue(account_id);
+
+	return sDB.ExecuteQuery(query.GetQuery(), ret);
+}

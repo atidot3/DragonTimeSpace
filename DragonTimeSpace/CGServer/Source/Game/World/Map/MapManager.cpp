@@ -79,7 +79,7 @@ void MapManager::load()
 	LOG_DEBUG << "Map loaded";
 }
 
-const Map* MapManager::get_map(const uint32_t& id) const
+Map* MapManager::get_map(const uint32_t& id) const
 {
 	const auto map = _maps.find(id);
 	if (map == _maps.end())

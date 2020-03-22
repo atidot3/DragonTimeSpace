@@ -53,6 +53,7 @@ public:
 
 	void set_position(const float& x, const float& y) { _x = x; _y = y; }
 	void set_rotation(const int32_t& dir) { _dir = dir; }
+
 private:
 	float _x, _y;
 	int32_t _dir;
@@ -77,11 +78,12 @@ private:
 class Object : public std::enable_shared_from_this<Object>
 {
 public:
-	explicit Object(const msg::MapDataType& obj_type, const uint32_t& id, const uint32_t& temp_id, const Position& pos) noexcept
+	explicit Object(const msg::MapDataType& obj_type, const uint32_t& id, const uint32_t& temp_id, const Position& pos, const uint32_t& map_id) noexcept
 		: _position{ pos.get_position_x(), pos.get_position_x(), pos.get_dir() }
 		, _obj_type{ obj_type }
 		, _id{ id }
 		, _temp_id{ temp_id }
+		, _map_id{ map_id }
 	{
 	}
 
@@ -90,23 +92,27 @@ public:
 	const msg::MapDataType& get_object_type() const { return _obj_type; }
 	const uint32_t& get_id() const { return _id; }
 	const uint32_t& get_temp_id() const { return _temp_id; }
-
+	const uint32_t& get_map_id() const { return _map_id; }
 	// GETTER EDITABLE
 	Position& get_position() { return _position; }
 	msg::MapDataType& get_object_type() { return _obj_type; }
 
-private:
+	// -- SETTER
+	void set_position(const Position& pos) { _position = pos; }
+	void set_map_id(const uint32_t& map_id) { _map_id = map_id; }
+protected:
 	Position			_position;
 	msg::MapDataType	_obj_type;
 	const uint32_t		_id;
 	const uint32_t		_temp_id;
+	uint32_t			_map_id;
 };
 
 class Entity : public Object
 {
 public:
-	explicit Entity(const uint32_t& id, const uint32_t& temp_id, const Position& pos, const Health& health) noexcept
-		: Object{ msg::MapDataType::MAP_DATATYPE_NPC, id, temp_id, pos }
+	explicit Entity(const uint32_t& id, const uint32_t& temp_id, const Position& pos, const Health& health, const uint32_t& map_id) noexcept
+		: Object{ msg::MapDataType::MAP_DATATYPE_NPC, id, temp_id, pos, map_id }
 		, _health{ health.get_max_health(), health.get_cur_health() }
 	{
 	}
@@ -121,4 +127,5 @@ public:
 
 private:
 	Health			_health;
+	std::string		_name;
 };

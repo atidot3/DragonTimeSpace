@@ -1,6 +1,6 @@
 #include "WorldSession.h"
 #include "Map/MapManager.h"
-
+#include "Object/Entity/Player/Player.h"
 #include "../../Network/CGSocket.h"
 
 #include <Utils/Logger/Logger.h>
@@ -23,7 +23,7 @@ uint32_t skill_id;
 WorldSession::WorldSession(Socket* gameSock, std::function<void()> destruct_handler)
 	: _account_id{ 0 }
 	, _socket{ gameSock }
-	//, _player{ nullptr }
+	, _player{ nullptr }
 	, _firstLogging{ true }
 	, _ip{ "" }
 	, methodList{}
@@ -66,6 +66,13 @@ WorldSession::WorldSession(Socket* gameSock, std::function<void()> destruct_hand
 //----------------------------------------
 WorldSession::~WorldSession()
 {
+	if (_player)
+	{
+		if (_player->get_map())
+		{
+			_player->get_map()->remove_from_map(_player);
+		}
+	}
 	_socket = nullptr;
 	LOG_TRACE << "WorldSession destructed";
 }
@@ -127,18 +134,13 @@ bool WorldSession::_ProcessGamePacket(const Packet& packet)
 		{
 		case THREAD_METHOD::THREAD_UNSAFE:
 		{
-			/*if (_player && _player->GetMap())
+			if (_player && _player->get_map())
 			{
 				_packets.push(std::move(packet));
-				_player->GetMap()->GetStrand().post([t = shared_from_this()]
+				_player->get_map()->GetStrand().post([t = shared_from_this()]
 					{
 						t->ProcessUnSafe();
 					});
-			}*/
-			// -- to remove
-			if (_method(packet) == false)
-			{
-				// ?
 			}
 			break;
 		}
@@ -234,8 +236,6 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		}
 	}
 	result->next();
-
-	// this->player = new std::make_shared<Player>([...]);
 
 	for (auto it = hero_table.datas().begin(); it != hero_table.datas().end(); ++it)
 	{
@@ -459,7 +459,6 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 	// -- do_fucking_matter
 	{
 		mapdata->release_pos();
-		mapBase->release_bakhero();
 		mapInfo.get_protobuff().release_pos();
 	}
 
@@ -626,6 +625,21 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		SendPacket(lines.get_buffer());
 	}
 
+	_player = std::make_shared<Player>(this);
+	if (_player->load(char_id))
+	{
+		auto map = sMapMgr.get_map(result->getUInt("MapID"));
+		if (map)
+		{
+			_player->set_position(Position(result->getFloat("Position_X"), result->getFloat("Position_Y"), 0));
+			map->add_to_map(_player);
+			_player->set_map(map);
+		}
+		else
+		{
+			LOG_FATAL << "Unable to find map: " << result->getUInt("MapID") << " player will not log";
+		}
+	}
 
 	return true;
 }
@@ -857,8 +871,8 @@ bool WorldSession::onReceiveVisitNpcTrade(const Packet& packet)
 		res.get_protobuff().set_npc_menu("What up Bitch");
 		res.get_protobuff().set_source(1);
 	}
-
-
+	res.compute();
+	SendPacket(res.get_buffer());
 	return true;
 }
 
@@ -895,9 +909,9 @@ bool WorldSession::onReceiveRefreshRadar(const Packet& packet)
 	{
 		auto it = res.get_protobuff().add_pos();
 		it->set_num(0);
-		it->set_uid(70022);
-		it->set_x(200);
-		it->set_y(200);
+		it->set_uid(10021);
+		it->set_x(830);
+		it->set_y(830);
 	}
 
 	res.compute();
@@ -914,16 +928,10 @@ bool WorldSession::onReceiveRefreshMapQuestInfo(const Packet& packet)
 	LOG_DEBUG << req.get_protobuff().DebugString();
 	ProtobufPacket<quest::MSG_RetMapQuestInfo_SC> res(CommandID::RetMapQuestInfo_SC);
 	{
-		auto it = res.get_protobuff().add_npclists();
-		it->set_npcid(80);
-		it->set_state(99);
-		auto sec = it->add_quests();
-		sec->set_questid(10021);
-		sec->set_state(99);
 	}
 	res.compute();
 	SendPacket(res.get_buffer());
-	
+
 	//Send a fixed value, but has to be in this area.
 	//think about how to get the HeroID and expereience here. 
 	SendUpdateXpLevel(70024, 310000, 55, 0, 0);
@@ -1019,11 +1027,9 @@ bool WorldSession::onReceiveOperateDatasReq(const Packet& packet)
 	opdat.get_protobuff().set_type(req.get_protobuff().type());
 	opdat.get_protobuff().set_value(req.get_protobuff().value());
 
-	if (opdat.get_protobuff().key() == "ShortKey_Config" && req.get_protobuff().op() == 3)
+	if (opdat.get_protobuff().key() == "ShortKey_Config" && req.get_protobuff().op() == 3 && !_player->get_shortcuts_config().empty())
 	{
-	/*	LOG_DEBUG << "Testing atidote azerty keyboard";
-		opdat.get_protobuff().set_value(std::move(std::string("{\"0\":{\"key\":\"99\"},\"1\":{\"key\":\"107\"},\"2\":{\"key\":\"\"},\"3\":{\"key\":\"98\"},\"4\":{\"key\":\"108\"},\"5\":{\"key\":\"103\"},\"6\":{\"key\":\"117\"},\"7\":{\"key\":\"106\"},\"8\":{\"key\":\"111\"},\"9\":{\"key\":\"109\"},\"11\":{\"key\":\"122\"},\"12\":{\"key\":\"115\"},\"13\":{\"key\":\"113\"},\"14\":{\"key\":\"100\"},\"15\":{\"key\":\"32\"},\"16\":{\"key\":\"9\"},\"17\":{\"key\":\"304,49\"},\"18\":{\"key\":\"304,50\"},\"19\":{\"key\":\"304,51\"},\"20\":{\"key\":\"304,52\"},\"21\":{\"key\":\"96\"},\"22\":{\"key\":\"101\"},\"23\":{\"key\":\"119\"},\"24\":{\"key\":\"306,290\"},\"25\":{\"key\":\"306,291\"},\"26\":{\"key\":\"306,288\"},\"27\":{\"key\":\"306,289\"},\"28\":{\"key\":\"306,292\"},\"101\":{\"key\":\"282\"},\"102\":{\"key\":\"283\"},\"103\":{\"key\":\"284\"},\"104\":{\"key\":\"285\"},\"105\":{\"key\":\"286\"},\"106\":{\"key\":\"287\"},\"107\":{\"key\":\"288\"},\"108\":{\"key\":\"289\"},\"109\":{\"key\":\"290\"},\"110\":{\"key\":\"291\"},\"111\":{\"key\":\"292\"},\"112\":{\"key\":\"293\"},\"201\":{\"key\":\"\"},\"202\":{\"key\":\"\"},\"203\":{\"key\":\"\"},\"204\":{\"key\":\"\"},\"205\":{\"key\":\"\"},\"206\":{\"key\":\"\"},\"207\":{\"key\":\"\"},\"208\":{\"key\":\"\"},\"209\":{\"key\":\"\"},\"210\":{\"key\":\"\"},\"211\":{\"key\":\"\"},\"212\":{\"key\":\"\"},\"301\":{\"key\":\"\"},\"302\":{\"key\":\"\"},\"303\":{\"key\":\"\"},\"304\":{\"key\":\"\"},\"305\":{\"key\":\"\"},\"306\":{\"key\":\"\"},\"307\":{\"key\":\"\"},\"308\":{\"key\":\"\"},\"309\":{\"key\":\"\"},\"310\":{\"key\":\"\"},\"311\":{\"key\":\"\"},\"312\":{\"key\":\"\"},\"401\":{\"key\":\"\"},\"402\":{\"key\":\"\"},\"403\":{\"key\":\"\"},\"404\":{\"key\":\"\"},\"405\":{\"key\":\"\"},\"406\":{\"key\":\"\"},\"407\":{\"key\":\"\"},\"408\":{\"key\":\"\"},\"409\":{\"key\":\"\"},\"410\":{\"key\":\"\"},\"411\":{\"key\":\"\"},\"412\":{\"key\":\"\"},\"501\":{\"key\":\"49\"},\"502\":{\"key\":\"50\"},\"503\":{\"key\":\"51\"},\"504\":{\"key\":\"52\"},\"505\":{\"key\":\"53\"},\"506\":{\"key\":\"54\"},\"507\":{\"key\":\"55\"},\"508\":{\"key\":\"56\"},\"509\":{\"key\":\"57\"},\"510\":{\"key\":\"48\"},\"511\":{\"key\":\"45\"},\"512\":{\"key\":\"61\"},\"513\":{\"key\":\"\"}}")));
-		*/
+		opdat.get_protobuff().set_value(_player->get_shortcuts_config());
 	}
 	else if (opdat.get_protobuff().key() == "ShortKey_Config" && req.get_protobuff().op() == 1)
 	{
@@ -1033,10 +1039,11 @@ bool WorldSession::onReceiveOperateDatasReq(const Packet& packet)
 		query.setValue(_account_id);
 		sDB.DirectExecute(query.GetQuery());*/
 	}
-	else if (opdat.get_protobuff().key().find("ChatTab") != std::string::npos && req.get_protobuff().op() == 3)
+	else if (opdat.get_protobuff().key().find("ChatTab") != std::string::npos && req.get_protobuff().op() == 3 && !_player->get_char_tabs_config().empty())
 	{
-		opdat.get_protobuff().set_value(std::move(std::string("All_1-2-3-4-5-6-10,Party_2,")));
+		opdat.get_protobuff().set_value(_player->get_char_tabs_config());
 	}
+	// -- todo : need some specific stuff here and im lazy now
 	else if (opdat.get_protobuff().key() == "storage_1_SkillSlotSort70024" && req.get_protobuff().op() == 3)
 	{
 		opdat.get_protobuff().set_value(std::move(std::string("70024&1:"+std::to_string(skill_id )+"|2:0|3:0|4:0|5:0|6:0|7:0|8:0|9:0|10:0|11:0|12:0")));
@@ -1140,7 +1147,7 @@ bool WorldSession::onRecieveSyncSkillStage(const Packet& packet)
 {
 	LOG_DEBUG << "onRecieveSyncSkillStage";
 	auto _sync_skill = ProtobufPacket<magic::MSG_Req_SyncSkillStage_CS>(packet);
-	
+
 	return true;
 }
 bool WorldSession::onReceiveMagicAttack(const Packet& packet)
@@ -1194,8 +1201,8 @@ bool WorldSession::onReceiveMagicAttack(const Packet& packet)
 	//start_attack.compute();
 	//SendPacket(start_attack.get_buffer());
 	//start_attack.get_protobuff().release_att();
-	
-		
+
+
 	return true;
 }
 

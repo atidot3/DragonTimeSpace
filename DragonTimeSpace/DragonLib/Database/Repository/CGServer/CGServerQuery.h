@@ -17,6 +17,9 @@ public:
 	std::unique_ptr<QueryResult>	GetCharacterCountByAccountId(const uint32_t& iAccountId, bool& ret) const;
 	std::unique_ptr<QueryResult>	GetCharacterlistByAccountId(const uint32_t&  iAccountId, bool& ret) const;
 	std::unique_ptr<QueryResult>	GetAllLineId(bool& ret) const;
+	std::unique_ptr<QueryResult>	GetQuickSlots(const uint32_t& char_id, const uint32_t& hero_id, bool& ret) const;
+	std::unique_ptr<QueryResult>	GetChatTabs(const uint32_t& account_id, bool& ret) const;
+	std::unique_ptr<QueryResult>	GetShortcuts(const uint32_t& account_id, bool& ret) const;
 	//Set
 	std::unique_ptr<QueryResult>	InsertCharacterByAccountId(const uint32_t& iAccountId, const uint32_t& HeroID, const uint32_t& AvatarID, const BYTE& Gender, const uint32_t& Facestyle, const uint32_t& Hairstyle,
 		const uint32_t& Haircolor, const uint32_t& Antenna, const std::string& name, bool& ret) const;

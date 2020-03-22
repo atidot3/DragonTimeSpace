@@ -18,7 +18,7 @@ public:
 	void Destruct();
 	void Initialize(io_context_pool& pool);
 
-	const Map* get_map(const uint32_t& id) const;
+	Map* get_map(const uint32_t& id) const;
 private:
 	io_context_pool& _pool;
 	std::map<uint32_t, std::unique_ptr<Map>> _maps;

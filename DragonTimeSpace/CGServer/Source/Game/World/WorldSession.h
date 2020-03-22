@@ -8,6 +8,7 @@
 #include <Utils/SafeQueue/SafeQueue.h>
 #include <Network/Socket.h>
 
+class Player;
 class WorldSession : public std::enable_shared_from_this<WorldSession>
 {
 private:
@@ -42,7 +43,7 @@ public:
 private:
 	uint32_t			_account_id;
 	Socket*				_socket;
-	//std::shared_ptr<Player>	 _player;
+	std::shared_ptr<Player>	 _player;
 	bool				_firstLogging;
 	std::string			_ip;
 	SafeVector<Packet>	_packets;

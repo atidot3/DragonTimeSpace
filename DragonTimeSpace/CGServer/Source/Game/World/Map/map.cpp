@@ -30,7 +30,7 @@ Map::Map(const std::string& json_file, const uint32_t& mapid, boost::asio::io_co
 				const uint32_t temp_id = sWorld.AcquireSerialId();
 				const Position pos = Position(c.x, c.y, c.dir);
 				const Health health = Health(npc.maxhp(), npc.maxhp());
-				add_to_map(std::make_shared<Entity>(id, temp_id, pos, health));
+				add_to_map(std::make_shared<Entity>(id, temp_id, pos, health, _mapid));
 			}
 		}
 	}
