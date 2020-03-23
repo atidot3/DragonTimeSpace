@@ -503,7 +503,7 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 
 	auto career_skill = ProtobufPacket<career::MSG_RetCareerSkillInfo_SC>(CommandID::RetCareerSkillInfo_SC);
 	{
-		career::CareerSkillInfo info;
+		career::CareerSkillInfo* info = new career::CareerSkillInfo();
 
 		/*const std::vector<uint32_t> _storage_skills = { 100101, 100102,100103,100104,100105,100106,100107,100108,100109,100110,100112,100113, 100114 };
 		for (int i = 0; i < _storage_skills.size(); ++i)
@@ -513,25 +513,26 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 			line_skill->set_skill(_storage_skills.at(i));
 		}*/
 
-		magic::SkillData _allocated_skill;
-		auto unlock_skill = info.add_unlockskills();
+		const std::vector<uint32_t> _storage_skills = { 100101, 100102,100103,100104,100105,100106,100107,100108,100109,100110,100112,100113, 100114 };
+		for (auto& it : _storage_skills)
 		{
-			_allocated_skill.set_skillid(skill_id);
-			_allocated_skill.set_active_stages(0);
-			_allocated_skill.set_lastupdatetime(0);
-			_allocated_skill.set_lastusetime(0);
-			_allocated_skill.set_level(1);
-			_allocated_skill.set_maxmultitimes(0);
-			_allocated_skill.set_onoff(0);
-			_allocated_skill.set_overlaytimes(0);
-			_allocated_skill.set_skillcd(0);
+			magic::SkillData* _allocated_skill = new magic::SkillData();
+			auto unlock_skill = info->add_unlockskills();
+			{
+				_allocated_skill->set_skillid(it);
+				_allocated_skill->set_active_stages(0);
+				_allocated_skill->set_lastupdatetime(0);
+				_allocated_skill->set_lastusetime(0);
+				_allocated_skill->set_level(1);
+				_allocated_skill->set_maxmultitimes(0);
+				_allocated_skill->set_onoff(0);
+				_allocated_skill->set_overlaytimes(0);
+				_allocated_skill->set_skillcd(0);
+			}
+			unlock_skill->set_allocated_skill(_allocated_skill);
 		}
-
-		unlock_skill->set_allocated_skill(&_allocated_skill);
-		career_skill.get_protobuff().set_allocated_skillinfo(&info);
+		career_skill.get_protobuff().set_allocated_skillinfo(info);
 		career_skill.compute();
-		unlock_skill->release_skill();
-		career_skill.get_protobuff().release_skillinfo();
 		SendPacket(career_skill.get_buffer());
 	}
 
@@ -631,7 +632,7 @@ bool WorldSession::onReceiveTeamMemberReq(const Packet& packet)
 
 	LOG_DEBUG << _team.get_protobuff().DebugString();
 
-	team.get_protobuff().set_id(70024);
+	team.get_protobuff().set_id(10);
 	team.get_protobuff().set_curmember(0);
 
 	team.compute();
@@ -842,10 +843,12 @@ bool WorldSession::onReceiveRefreshRadar(const Packet& packet)
 	ProtobufPacket<mobapk::MSG_RefreshRadarPos_CSC> res(CommandID::RefreshRadarPos_CSC);
 	{
 		auto it = res.get_protobuff().add_pos();
-		it->set_num(0);
-		it->set_uid(10021);
-		it->set_x(830);
-		it->set_y(830);
+		{
+			it->set_num(0);
+			it->set_uid(10021);
+			it->set_x(_player->get_position().get_position_x());
+			it->set_y(_player->get_position().get_position_y());
+		}
 	}
 
 	res.compute();
@@ -868,7 +871,7 @@ bool WorldSession::onReceiveRefreshMapQuestInfo(const Packet& packet)
 
 	//Send a fixed value, but has to be in this area.
 	//think about how to get the HeroID and expereience here. 
-	SendUpdateXpLevel(70024, 310000, 55, 0, 0);
+	SendUpdateXpLevel(70024, 0, 1, 0, 0);
 
 	return true;
 }
@@ -1089,34 +1092,34 @@ bool WorldSession::onReceiveMagicAttack(const Packet& packet)
 	LOG_DEBUG << "onReceiveMagicAttack";
 	auto _magic_skill = ProtobufPacket<magic::MSG_Req_MagicAttack_CS>(packet);
 
+	msg::EntryIDType* def = new msg::EntryIDType();
+	{
+		def->set_id(_magic_skill.get_protobuff().target().id());
+		def->set_type(_magic_skill.get_protobuff().target().type());
+	}
 	msg::EntryIDType* att = new msg::EntryIDType();
 	{
-		att->set_id(_magic_skill.get_protobuff().target().id());
-		att->set_type(_magic_skill.get_protobuff().target().type());
+		att->set_id(10); // character id
+		att->set_type(0);
 	}
 	auto _magic_skill_res = ProtobufPacket<magic::MSG_Ret_MagicAttack_SC>(CommandID::Ret_MagicAttack_SC);
 	{
 		auto pkresult = _magic_skill_res.get_protobuff().add_pklist();
 		{
 			pkresult->add_attcode(magic::ATTACKRESULT::ATTACKRESULT_HIT);
-			pkresult->set_changehp(100);
-			pkresult->set_hp(500);
-			pkresult->set_allocated_def(att);
+			pkresult->set_changehp(-100);
+			pkresult->set_hp(10000);
+			pkresult->set_allocated_def(def);
 			pkresult->set_attcode(0, magic::ATTACKRESULT::ATTACKRESULT_HIT);
 		}
 		_magic_skill_res.get_protobuff().set_attdir(_magic_skill.get_protobuff().attdir());
 		_magic_skill_res.get_protobuff().set_desx(_magic_skill.get_protobuff().desx());
 		_magic_skill_res.get_protobuff().set_desy(_magic_skill.get_protobuff().desy());
-		_magic_skill_res.get_protobuff().set_skillstage(1010010103); // SkillID is for Human autoattack. 
+		_magic_skill_res.get_protobuff().set_skillstage(1010010101); // SkillID is for Human autoattack. 
 		_magic_skill_res.get_protobuff().set_userdir(_magic_skill.get_protobuff().userdir());
 		
-		_magic_skill_res.get_protobuff().set_allocated_def(att);
-		msg::EntryIDType* att3 = new msg::EntryIDType();
-		{
-			att3->set_id(70024); //MSG_Ret_NineScreenRefreshPlayer_SC need to get your player id from this so you can see attack and damage.
-			att3->set_type(msg::MapDataType::MAP_DATATYPE_USER);
-		}
-		_magic_skill_res.get_protobuff().set_allocated_att(att3);
+		_magic_skill_res.get_protobuff().set_allocated_def(def);
+		_magic_skill_res.get_protobuff().set_allocated_att(att);
 	}
 	_magic_skill_res.compute();
 	_magic_skill_res.get_protobuff().release_def();
