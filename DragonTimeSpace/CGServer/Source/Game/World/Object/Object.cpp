@@ -122,9 +122,3 @@ void Object::set_temp_id(const uint32_t& temp_id)
 { 
 	_temp_id = temp_id;
 }
-
-MessageBuffer Object::compose_spawn_packet() const
-{
-	LOG_FATAL << "compose_spawn_packet CALLED FROM OBJECT !!";
-	return MessageBuffer();
-}

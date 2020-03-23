@@ -603,6 +603,34 @@ bool WorldSession::onSceneLoaded(const Packet& packet)
 	if (_player->get_map())
 	{
 		_player->get_map()->add_to_map(_player);
+		quest::MSG_RetCurActiveQuest_SC;
+		auto quests = ProtobufPacket<quest::MSG_notifyRefreshQuestInfo_SC>(CommandID::notifyRefreshQuestInfo_SC);
+		{
+			auto quest = quests.get_protobuff().add_item();
+			{
+				quest->set_curvalue(0);
+				quest->set_cur_extvalue(0);
+				quest->set_id(10021);
+				quest->set_leftsecs(0);
+				quest->set_maxvalue(0);
+				quest->set_max_extvalue(0);
+				quest->set_score(0);
+				quest->set_show(true);
+				quest->set_starttime(0);
+				quest->set_state(msg::QuestState::FINISHED);
+			}
+		}
+		quests.compute();
+		SendPacket(quests.get_buffer());
+		ProtobufPacket<quest::MSG_RetCurActiveQuest_SC> res(CommandID::RetCurActiveQuest_SC);
+		{
+			auto it = res.get_protobuff().add_item();
+			it->set_id(10021);
+			it->set_show(true);
+			it->set_state(msg::QuestState::FINISHED);
+		}
+		res.compute();
+		SendPacket(res.get_buffer());
 	}
 
 	return true;
@@ -657,7 +685,7 @@ bool WorldSession::onReceiveCardPackInfo(const Packet& packet)
 		pack.get_protobuff().set_earth_opened_num(0);
 		pack.get_protobuff().set_fire_opened_num(0);
 		pack.get_protobuff().set_gold_opened_num(0);
-		pack.get_protobuff().set_hero_baseid(70024);
+		pack.get_protobuff().set_hero_baseid(_player->get_hero_data(Hero::selected_hero::PRIMARY)._heroid);
 		pack.get_protobuff().set_water_opened_num(0);
 		pack.get_protobuff().set_wood_opened_num(0);
 
@@ -749,7 +777,7 @@ bool WorldSession::onReceiveMyHeroAttrData(const Packet& packet)
 	{
 		attr.get_protobuff().set_allocated_data(attrData);
 		attr.get_protobuff().set_fightvalue(10000);
-		attr.get_protobuff().set_herothisid(std::move(std::string("70024")));
+		attr.get_protobuff().set_herothisid(std::to_string(_player->get_hero_data(Hero::selected_hero::PRIMARY)._heroid));
 	}
 
 	attr.compute();
@@ -817,7 +845,8 @@ bool WorldSession::onReceiveVisitNpcTrade(const Packet& packet)
 		FFDebug.LogWarning("Call NPCLua", @string);
 */
 		//res.get_protobuff().set_user_menu("dlg:AddDramaTalkByID(\"1012111\")\n");
-		res.get_protobuff().set_npc_menu("dlg:AddDramaTalkByID(\""+std::to_string(req.get_protobuff().npc_temp_id() )+"\")\n"); // => make the npc we talk to showing his id in a frame
+		res.get_protobuff().set_user_menu("dlg:AddDramaTalkByID(\"1\")\n");
+		//res.get_protobuff().set_npc_menu("dlg:AddDramaTalkByID(\""+std::to_string(req.get_protobuff().npc_temp_id() )+"\")\n"); // => make the npc we talk to showing his id in a frame
 		res.get_protobuff().set_source(req.get_protobuff().npc_temp_id());
 	}
 	res.compute();
@@ -859,7 +888,7 @@ bool WorldSession::onReceiveRefreshRadar(const Packet& packet)
 		auto it = res.get_protobuff().add_pos();
 		{
 			it->set_num(0);
-			it->set_uid(10021);
+			it->set_uid(0);
 			it->set_x(_player->get_position().get_position_x());
 			it->set_y(_player->get_position().get_position_y());
 		}
@@ -873,32 +902,43 @@ bool WorldSession::onReceiveRefreshRadar(const Packet& packet)
 bool WorldSession::onReceiveRefreshMapQuestInfo(const Packet& packet)
 {
 	LOG_DEBUG << "onReceiveRefreshMapQuestInfo";
-
 	auto req = ProtobufPacket<quest::MSG_ReqMapQuestInfo_CS>(packet);
-	
-	LOG_DEBUG << req.get_protobuff().DebugString();
+
 	ProtobufPacket<quest::MSG_RetMapQuestInfo_SC> res(CommandID::RetMapQuestInfo_SC);
 	{
 		auto it = res.get_protobuff().add_npclists();
-		it->set_npcid(80);
-		it->set_state(0);
-		auto sec = it->add_quests();
-		sec->set_questid(10021);
-		sec->set_state(msg::QuestState::FINISHED_SAVE);
-		auto thir = it->add_quests();
-		thir->set_questid(10022);
-		thir->set_state(msg::QuestState::UNACCEPT);
+		{
+			it->set_npcid(80);
+			it->set_state(9);
+		
+			auto sec = it->add_quests();
+			sec->set_questid(10021);
+			sec->set_state(msg::QuestState::FINISHED);
+
+			auto sec2 = it->add_quests();
+			sec2->set_questid(10022);
+			sec2->set_state(msg::QuestState::ACCEPTABLE);
+
+			auto sec3 = it->add_quests();
+			sec3->set_questid(10023);
+			sec3->set_state(msg::QuestState::ACCEPTABLE);
+
+			auto sec4 = it->add_quests();
+			sec4->set_questid(10024);
+			sec4->set_state(msg::QuestState::ACCEPTABLE);
+		}
 	}
 	res.compute();
 	SendPacket(res.get_buffer());
 
 	//Send a fixed value, but has to be in this area.
 	//think about how to get the HeroID and expereience here. 
-	SendUpdateXpLevel(70024, 310000, 55, 0, 0);
+	SendUpdateXpLevel(_player->get_hero_data(
+		Hero::selected_hero::PRIMARY)._heroid, _player->get_hero_data(Hero::selected_hero::PRIMARY)._cur_exp, _player->get_hero_data(Hero::selected_hero::PRIMARY)._level,
+		_player->get_hero_data(Hero::selected_hero::SECONDARY)._cur_exp, _player->get_hero_data(Hero::selected_hero::SECONDARY)._level);
 
 	return true;
 }
-
 
 bool WorldSession::onReceiveCurrentActiveQuest(const Packet& packet)
 {
@@ -910,7 +950,7 @@ bool WorldSession::onReceiveCurrentActiveQuest(const Packet& packet)
 		auto it = res.get_protobuff().add_item();
 		it->set_id(10021);
 		it->set_show(true);
-		it->set_state(1);
+		it->set_state(msg::QuestState::FINISHED);
 	}
 	res.compute();
 	SendPacket(res.get_buffer());
@@ -1139,7 +1179,7 @@ bool WorldSession::onReceiveMagicAttack(const Packet& packet)
 	}
 	msg::EntryIDType* att = new msg::EntryIDType();
 	{
-		att->set_id(10); // character id
+		att->set_id(_player->get_character_id()); // character id
 		att->set_type(0);
 	}
 	auto _magic_skill_res = ProtobufPacket<magic::MSG_Ret_MagicAttack_SC>(CommandID::Ret_MagicAttack_SC);

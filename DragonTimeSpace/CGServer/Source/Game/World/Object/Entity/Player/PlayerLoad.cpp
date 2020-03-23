@@ -44,7 +44,6 @@ bool Player::load(const uint32_t& char_id)
 	load_player_data(result.get());
 
 	// -- Load skills
-
 	// -- Load other stuff
 
 	// -- Load system data

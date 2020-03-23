@@ -81,7 +81,7 @@ public:
 	const uint32_t& get_level() const { return _hero[_selected_hero]._level; }
 	const uint32_t& get_cur_exp() const { return _hero[_selected_hero]._cur_exp; }
 	const Hero& get_hero_data(const uint32_t& index) { return _hero[index]; }
-
+	const uint32_t& get_character_id() const { return _char_id; }
 	// -- SETTER
 	void set_map(Map* map) { _map = map; }
 	void set_level(const uint32_t& level) { _hero[_selected_hero]._level = level; }

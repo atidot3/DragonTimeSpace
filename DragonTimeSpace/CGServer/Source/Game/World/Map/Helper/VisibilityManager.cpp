@@ -14,8 +14,7 @@ static void sendCreatePacketsFor(const Object* receiver, const Object* sender)
 
 	if (sender->get_object_type() == msg::MapDataType::MAP_DATATYPE_NPC)
 	{
-		MessageBuffer buffer = sender->compose_spawn_packet();
-		plr->SendPacket(buffer);
+		sender->compose_spawn_packet(plr);
 	}
 }
 
@@ -37,12 +36,29 @@ static void sendDestroyPacketsFor(const Object* receiver, const Object* sender)
 
 void VisibilityManager::ManageCreate(const Object* source, object_vect_t curSet)
 {
+	if (curSet.size() == 0)
+		return;
+
+	Player* plr = (Player*)source;
+	auto npcs = ProtobufPacket<msg::MSG_Ret_MapScreenBatchRefreshNpc_SC>(CommandID::Ret_MapScreenBatchRefreshNpc_SC);
+	auto func_npc = ProtobufPacket<msg::MSG_Ret_MapScreenFuncNpc_SC>(CommandID::Ret_MapScreenFuncNpc_SC);
+
 	for (auto& it : curSet)
 	{
+		if (it->get_object_type() == msg::MapDataType::MAP_DATATYPE_NPC)
+		{
+			((Npc*)it)->compose_spawn_packet(npcs, func_npc);
+		}
 		// -- build packet here ?
-		sendCreatePacketsFor(source, it);
+		//sendCreatePacketsFor(source, it);
 		_visibilityMap[it].emplace(source);
 	}
+
+	npcs.compute();
+	func_npc.compute();
+
+	plr->SendPacket(npcs.get_buffer());
+	plr->SendPacket(func_npc.get_buffer());
 }
 void VisibilityManager::ManageDelete(const Object* source, object_vect_t curSet)
 {

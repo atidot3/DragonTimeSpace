@@ -76,9 +76,6 @@ public:
 	void set_id(const uint32_t& id);
 	void set_temp_id(const uint32_t& id);
 
-	// -- 
-	virtual MessageBuffer compose_spawn_packet() const;
-
 
 protected:
 	Position			_position;
