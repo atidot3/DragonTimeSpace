@@ -1,4 +1,4 @@
-#include "WorldSession.h"
+﻿#include "WorldSession.h"
 #include "Map/MapManager.h"
 #include "Object/Entity/Player/Player.h"
 #include "../../Network/CGSocket.h"
@@ -45,6 +45,9 @@ WorldSession::WorldSession(Socket* gameSock, std::function<void()> destruct_hand
 		methodList.emplace(CommandID::Req_MagicAttack_CS, std::make_tuple(std::bind(&WorldSession::onRecieveSyncSkillStage, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
 		methodList.emplace(CommandID::Req_SyncSkillStage_CS, std::make_tuple(std::bind(&WorldSession::onReceiveMagicAttack, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
 		methodList.emplace(CommandID::Req_Move_CS, std::make_tuple(std::bind(&WorldSession::onReceiveMove, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
+		methodList.emplace(CommandID::ReqCurActiveQuest_CS, std::make_tuple(std::bind(&WorldSession::onReceiveCurrentActiveQuest, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
+
+
 		// -- Chat
 		methodList.emplace(CommandID::Req_Chat_CS, std::make_tuple(std::bind(&WorldSession::onRecieveChat, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
 	}
@@ -450,7 +453,6 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 	ProtobufPacket<msg::MSG_DataCharacterMain_SC> pktMain(CommandID::DataCharacterMain_SC);
 	{
 		pktMain.get_protobuff().set_allocated_data(charMain);
-
 		pktMain.compute();
 
 		SendPacket(pktMain.get_buffer());
@@ -795,15 +797,15 @@ bool WorldSession::onReceiveVisitNpcTrade(const Packet& packet)
 			it->set_quest_id(req.get_protobuff().allcrc().Get(i).quest_id());
 			it->set_crc(req.get_protobuff().allcrc().Get(i).crc());
 		}
-		res.get_protobuff().set_action(1);
-		res.get_protobuff().set_type(msg::MapDataType::MAP_DATATYPE_NPC);
+		res.get_protobuff().set_action(0);
+		res.get_protobuff().set_type(11);
 		res.get_protobuff().set_npc_temp_id(req.get_protobuff().npc_temp_id());
-		res.get_protobuff().set_show_type(1);
-		res.get_protobuff().set_type(1);
+		res.get_protobuff().set_show_type(0);
+//		res.get_protobuff().set_type(11);
 		res.get_protobuff().set_retcode(1);
-		res.get_protobuff().set_user_menu("Fuck off m8");
-		res.get_protobuff().set_npc_menu("What up Bitch");
-		res.get_protobuff().set_source(1);
+		//res.get_protobuff().set_user_menu("dlg:AddDramaTalkByID(\"1012111\")\n");
+		//res.get_protobuff().set_npc_menu("dlg:AddDramaTalkByID(\"1012112\")");
+		res.get_protobuff().set_source(req.get_protobuff().npc_temp_id());
 	}
 	res.compute();
 	SendPacket(res.get_buffer());
@@ -858,10 +860,19 @@ bool WorldSession::onReceiveRefreshMapQuestInfo(const Packet& packet)
 	LOG_DEBUG << "onReceiveRefreshMapQuestInfo";
 
 	auto req = ProtobufPacket<quest::MSG_ReqMapQuestInfo_CS>(packet);
-
+	
 	LOG_DEBUG << req.get_protobuff().DebugString();
 	ProtobufPacket<quest::MSG_RetMapQuestInfo_SC> res(CommandID::RetMapQuestInfo_SC);
 	{
+		auto it = res.get_protobuff().add_npclists();
+		it->set_npcid(80);
+		it->set_state(0);
+		auto sec = it->add_quests();
+		sec->set_questid(10021);
+		sec->set_state(msg::QuestState::FINISHED_SAVE);
+		auto thir = it->add_quests();
+		thir->set_questid(10022);
+		thir->set_state(msg::QuestState::UNACCEPT);
 	}
 	res.compute();
 	SendPacket(res.get_buffer());
@@ -869,26 +880,43 @@ bool WorldSession::onReceiveRefreshMapQuestInfo(const Packet& packet)
 	//Send a fixed value, but has to be in this area.
 	//think about how to get the HeroID and expereience here. 
 	SendUpdateXpLevel(70024, 310000, 55, 0, 0);
-
+	
 	return true;
 }
 
+
+bool WorldSession::onReceiveCurrentActiveQuest(const Packet& packet)
+{
+	auto req = ProtobufPacket<quest::MSG_ReqCurActiveQuest_CS>(packet);
+
+	LOG_DEBUG << req.get_protobuff().DebugString();
+	ProtobufPacket<quest::MSG_RetCurActiveQuest_SC> res(CommandID::RetCurActiveQuest_SC);
+	{
+		auto it = res.get_protobuff().add_item();
+		it->set_id(10021);
+		it->set_show(true);
+		it->set_state(1);
+	}
+	res.compute();
+	SendPacket(res.get_buffer());
+	return true;
+}
 
 bool WorldSession::onReceiveEntrySelectState(const Packet& packet)
 {
 	LOG_DEBUG << "onReceiveEntrySelectState";
 
-	/*auto req = ProtobufPacket<msg::MSG_ReqEntrySelectState_CS>(packet);
+	auto req = ProtobufPacket<msg::MSG_ReqEntrySelectState_CS>(packet);
 
 	LOG_DEBUG << req.get_protobuff().DebugString();
 	ProtobufPacket<msg::MSG_RetEntrySelectState_SC> res(CommandID::RetEntrySelectState_SC);
 	{
 		auto it = res.get_protobuff().add_states();
-		//res.get_protobuff().set_allocated_choosen(&req.get_protobuff().oldone());
+		//Set state here. 
 	}
 
 	res.compute();
-	SendPacket(res.get_buffer());*/
+	SendPacket(res.get_buffer());
 	return true;
 }
 
@@ -1165,3 +1193,4 @@ void WorldSession::SendUpdateXpLevel(uint32_t herothisid, uint32_t exp, uint32_t
 	LOG_DEBUG << xp.get_protobuff().DebugString();
 	SendPacket(xp.get_buffer());
 }
+

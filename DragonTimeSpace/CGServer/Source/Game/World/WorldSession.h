@@ -74,6 +74,7 @@ private:
 	bool onReceiveAllDNAPageInfo(const Packet& packet);
 	bool onReceiveRefreshRadar(const Packet& packet);
 	bool onReceiveRefreshMapQuestInfo(const Packet& packet);
+	bool onReceiveCurrentActiveQuest(const Packet& packet);
 	bool onReceiveEntrySelectState(const Packet& packet);
 	bool onReceiveSetChooseTarget(const Packet& packet);
 	bool onRecieveChat(const Packet& packet);
@@ -82,6 +83,9 @@ private:
 	bool onReceiveMove(const Packet& packet);
 
 	void SendUpdateXpLevel(uint32_t herothisid, uint32_t exp, uint32_t level, uint32_t secXP, uint32_t secLevel);
+
+	void SendRefresh9ScreenInfo(std::string name, uint32_t charId, msg::CharacterMapShow* mapshow, msg::CharacterMapData* mapdata, msg::CharacterMapShow* bakhero);
+
 };
 
 #endif /*_WORLDSESSION_H*/

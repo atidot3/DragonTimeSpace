@@ -21,6 +21,13 @@ CGSERVER:
 		- name contains invalid characters (must be only [a-z])
 		- invalid combinaison race - class and such
 		- already have characters list full
+	- Quest infos
+		- Figure out how to make stupid fucking npcs talk
+		- Figure out how to assign quests when loading and possible save in db
+		- Fucking npcs
 
-	- Return to character screen
-		- Need to drop the WorldSession and set a 'socket state' between (CHAR - GAME) maybe ?
+	- Shop info
+		- Figure out how to differentiate between shop and npc and quest giver. 	
+		- Figure out what shop type is defined by
+		- Dont worry about buy/sell until inventory is done. 
+

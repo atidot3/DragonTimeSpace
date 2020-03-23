@@ -6,3 +6,7 @@ open USocket OnReceive() => replace =>
  - this.encryptremainsize = (this.encryptremainsize + num) % 8;
 by
 this.encryptremainsize = 0
+
+Add all logging parameters in InitFFDebug.
+Change some hard coded text to english equivilents. 
+"fuck ton of shit"

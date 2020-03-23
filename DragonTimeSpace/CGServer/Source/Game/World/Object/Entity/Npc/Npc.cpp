@@ -35,9 +35,14 @@ const NpcType& Npc::get_npc_type() const
 {
 	return _npc_type;
 }
+uint64_t GenernateBuffHash(uint64_t entryID, uint64_t userState, uint64_t entrytype, uint64_t uniqueID)
+{
+	return (userState & 65535UL) << 48 | (uniqueID & 255UL) << 40 | (entrytype & 255UL) << 32 | (entryID & (uint64_t)-1);
+}
 
 MessageBuffer Npc::compose_spawn_packet() const
 {
+
 	ProtobufPacket<msg::MSG_Ret_MapScreenRefreshNpc_SC> npc_refresh(CommandID::Ret_MapScreenRefreshNpc_SC);
 	{
 		msg::MapNpcData* data = new msg::MapNpcData();
@@ -92,6 +97,8 @@ MessageBuffer Npc::compose_spawn_packet() const
 			data->set_name(get_name());
 			//npcs->set_titlename();
 			data->set_visit(0);
+			auto it = data->add_states();		
+			it->set_uniqid(GenernateBuffHash(get_temp_id(), 6, 1, get_temp_id()));
 		}
 		npc_refresh.get_protobuff().set_allocated_data(data);
 		npc_refresh.compute();
