@@ -22,7 +22,6 @@ public:
 	void Update(const Object* object);
 	void Remove(const Object* object);
 	void Add(const Object* object);
-
 private:
 	void ManageCreate(const Object* source, std::vector<const Object*> curSet);
 	void ManageDelete(const Object* source, std::vector<const Object*> curSet);

@@ -172,7 +172,10 @@
     <ClCompile Include="Source\Game\World\Map\Helper\VisibilityManager.cpp" />
     <ClCompile Include="Source\Game\World\Map\map.cpp" />
     <ClCompile Include="Source\Game\World\Map\MapManager.cpp" />
+    <ClCompile Include="Source\Game\World\Object\Entity\Entity.cpp" />
+    <ClCompile Include="Source\Game\World\Object\Entity\Npc\Npc.cpp" />
     <ClCompile Include="Source\Game\World\Object\Entity\Player\Player.cpp" />
+    <ClCompile Include="Source\Game\World\Object\Object.cpp" />
     <ClCompile Include="Source\Game\World\QueueManager.cpp" />
     <ClCompile Include="Source\Game\World\World.cpp" />
     <ClCompile Include="Source\Game\World\WorldSession.cpp" />
@@ -185,6 +188,8 @@
     <ClInclude Include="Source\Game\World\Map\Helper\VisibilityManager.h" />
     <ClInclude Include="Source\Game\World\Map\map.h" />
     <ClInclude Include="Source\Game\World\Map\MapManager.h" />
+    <ClInclude Include="Source\Game\World\Object\Entity\Entity.h" />
+    <ClInclude Include="Source\Game\World\Object\Entity\Npc\Npc.h" />
     <ClInclude Include="Source\Game\World\Object\Entity\Player\Player.h" />
     <ClInclude Include="Source\Game\World\Object\Object.h" />
     <ClInclude Include="Source\Game\World\QueueManager.h" />

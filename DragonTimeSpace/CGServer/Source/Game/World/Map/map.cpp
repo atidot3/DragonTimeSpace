@@ -1,6 +1,7 @@
 #include "map.h"
 #include "Helper/VisibilityManager.h"
-#include "../Object/Object.h"
+#include "../Object/Entity/Npc/Npc.h"
+
 #include "../World.h"
 
 #include <Tables/TableContainer.h>
@@ -25,12 +26,7 @@ Map::Map(const std::string& json_file, const uint32_t& mapid, boost::asio::io_co
 		{
 			if (c.id == npc.tbxid())
 			{
-				msg::MapDataType obj_type = msg::MapDataType::MAP_DATATYPE_NPC;
-				const uint32_t id = c.id;
-				const uint32_t temp_id = sWorld.AcquireSerialId();
-				const Position pos = Position(c.x, c.y, c.dir);
-				const Health health = Health(npc.maxhp(), npc.maxhp());
-				add_to_map(std::make_shared<Entity>(id, temp_id, pos, health, _mapid));
+				add_to_map(std::make_shared<Npc>(c.x, c.y, c.dir, npc, _mapid));
 			}
 		}
 	}
@@ -94,6 +90,25 @@ void Map::Update()
 		return;
 
 	update_visibility();
+
+	// respawn mechanic ?
+	{
+		for (auto it = _respawn_object.begin(); it != _respawn_object.end();)
+		{
+			std::shared_ptr<Object> npc = *it;
+			// -- should always be i think
+			if (npc->get_object_type() == msg::MapDataType::MAP_DATATYPE_NPC && ((Npc*)(npc.get()))->get_respawn_time_left() == 0)
+			{
+				// npc-revive;
+				// this should add npc back to the spawn list
+				_objects.emplace_back(npc);
+				_visibility_manager->Add(npc.get());
+				_respawn_object.erase(it);
+			}
+			else
+				++it;
+		}
+	}
 
 	// Sheldule next update
 	map_timer.expires_at(map_timer.expires_at() + boost::posix_time::milliseconds(DBO_UPDATE_TIME_IN_MILLI));

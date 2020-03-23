@@ -24,6 +24,10 @@
 //----------------------------------------
 CGSocket::CGSocket(boost::asio::io_context &service)
 	: Socket{ service }
+	, userName{}
+	, userPassword{}
+	, macAddress{}
+	, account_id{}
 	, _session{ std::make_shared<WorldSession>(this, std::bind(&CGSocket::release_worldsession, this)) }
 	, _socket_state{ SocketState::CHARACTER }
 {
@@ -71,14 +75,13 @@ bool CGSocket::ProcessIncomingData(const Packet& packet)
 					return true;
 				}
 			}
+			break;
 		}
 		case SocketState::GAME:
 		{
 			return _session->_ProcessGamePacket(packet);
 		}
 	}
-	LOG_WARNING << "Get an unexpected packet: [" << GetPacketName(p->CMD) << "]";
-	internalError = 1000;
 	return false;
 }
 

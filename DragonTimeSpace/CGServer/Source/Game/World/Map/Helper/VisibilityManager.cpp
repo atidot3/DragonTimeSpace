@@ -1,17 +1,38 @@
 #include "VisibilityManager.h"
 #include "../../Object/Object.h"
+#include "../../Object/Entity/Npc/Npc.h"
+#include "../../Object/Entity/Player/Player.h"
+
+#include <Network/Packet/ProtobufPacket.h>
 
 using object_vect_t = std::vector<const Object*>;
 
 //send spawn packets for objects
-static void sendCreatePacketsFor(const Object* object, const Object* obj)
+static void sendCreatePacketsFor(const Object* receiver, const Object* sender)
 {
+	Player* plr = (Player*)receiver;
+
+	if (sender->get_object_type() == msg::MapDataType::MAP_DATATYPE_NPC)
+	{
+		MessageBuffer buffer = sender->compose_spawn_packet();
+		plr->SendPacket(buffer);
+	}
 }
 
 //send destroy packets for objects
-static void sendDestroyPacketsFor(const Object* object, const Object* obj)
+static void sendDestroyPacketsFor(const Object* receiver, const Object* sender)
 {
+	Player* plr = (Player*)receiver;
 
+	if (sender->get_object_type() == msg::MapDataType::MAP_DATATYPE_NPC)
+	{
+		auto remove = ProtobufPacket<msg::MSG_Ret_MapScreenBatchRemoveNpc_SC>(CommandID::Ret_MapScreenBatchRemoveNpc_SC);
+		{
+			remove.get_protobuff().add_tempids(sender->get_temp_id());
+		}
+		remove.compute();
+		plr->SendPacket(remove.get_buffer());
+	}
 }
 
 void VisibilityManager::ManageCreate(const Object* source, object_vect_t curSet)
@@ -19,6 +40,7 @@ void VisibilityManager::ManageCreate(const Object* source, object_vect_t curSet)
 	for (auto& it : curSet)
 	{
 		// -- build packet here ?
+		sendCreatePacketsFor(source, it);
 		_visibilityMap[it].emplace(source);
 	}
 }
@@ -27,6 +49,8 @@ void VisibilityManager::ManageDelete(const Object* source, object_vect_t curSet)
 	for (auto& it : curSet)
 	{
 		// -- build packet here ?
+
+		sendDestroyPacketsFor(source, it);
 		_visibilityMap[it].erase(source);
 	}
 }
@@ -36,6 +60,13 @@ void VisibilityManager::Add(const Object* object)
 {
 	object_set_t curSet;
 	_visibilityMap[object] = curSet;
+}
+
+float get_distance(float fPositionX1, float fPositionY1, float fPositionX2, float fPositionY2)
+{
+	double val = sqrt((fPositionX1 - fPositionX2) * (fPositionX1 - fPositionX2) + (fPositionY1 - fPositionY2) * (fPositionY1 - fPositionY2));
+	val = floor(val);
+	return static_cast<float>(val);
 }
 
 void VisibilityManager::Update(const Object* object)
@@ -55,10 +86,14 @@ void VisibilityManager::Update(const Object* object)
 		if (entity.first != object)
 		{
 			const auto _position = entity.first->get_position();
-			const auto distance = sqrt(pow(_position.get_position_x() - _plr_position.get_position_x(), 2) +
-				pow(_position.get_position_y() - _plr_position.get_position_y(), 2) * 1.0);
+			const auto distance = get_distance(_position.get_position_x(), _position.get_position_y(), _plr_position.get_position_x(), _plr_position.get_position_y());
+			
+			// -- a bit ugly
+			Npc* npc = nullptr;
+			if (entity.first->get_object_type() == msg::MapDataType::MAP_DATATYPE_NPC)
+				npc = (Npc*)entity.first;
 
-			if (distance <= 100)
+			if (distance <= 500 || (npc && npc->get_npc_type() == NpcType::NPC_TYPE_VISIT))
 			{
 				curSet.emplace(entity.first);
 			}

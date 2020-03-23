@@ -22,38 +22,38 @@ public:
 	{
 		struct npc
 		{
-			int32_t id;
-			int32_t x;
-			int32_t y;
-			int32_t num;
-			int32_t interval;
-			int32_t dir;
+			uint32_t id;
+			uint32_t x;
+			uint32_t y;
+			uint32_t num;
+			uint32_t interval;
+			uint32_t dir;
 		};
 		struct on_zone_script
 		{
-			int32_t questid;
-			int32_t zoneid;
-			int32_t x;
-			int32_t y;
-			int32_t width;
-			int32_t height;
-			int32_t zonecheckquest;
+			uint32_t questid;
+			uint32_t zoneid;
+			uint32_t x;
+			uint32_t y;
+			uint32_t width;
+			uint32_t height;
+			uint32_t zonecheckquest;
 		};
 		struct zonedef
 		{
-			int32_t width;
-			int32_t height;
-			int32_t x;
-			int32_t y;
-			int32_t type;
-			int32_t UniqueID;
-			int32_t id;
-			int32_t num;
-			int32_t userdir;
+			uint32_t width;
+			uint32_t height;
+			uint32_t x;
+			uint32_t y;
+			uint32_t type;
+			uint32_t UniqueID;
+			uint32_t id;
+			uint32_t num;
+			uint32_t userdir;
 		};
 		struct other
 		{
-			int32_t default_pkmode;
+			uint32_t default_pkmode;
 		};
 
 		std::vector<npc> _npc;
@@ -85,6 +85,7 @@ private:
 	const uint32_t _mapid;
 	Map::map_info* info;
 	std::vector<std::shared_ptr<Object>> _objects;
+	std::vector<std::shared_ptr<Object>> _respawn_object;
 	std::unique_ptr<VisibilityManager> _visibility_manager;
 
 	// io stuff

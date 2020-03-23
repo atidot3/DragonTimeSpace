@@ -28,6 +28,9 @@
     <Filter Include="Source\Game\World\Map\Helper">
       <UniqueIdentifier>{feca19a3-1987-4fba-8e62-7a1355d09bcd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Game\World\Object\Entity\Npc">
+      <UniqueIdentifier>{403cc685-069d-4077-83c3-fe920a9245c1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -66,6 +69,15 @@
     <ClCompile Include="Source\Game\World\Object\Entity\Player\Player.cpp">
       <Filter>Source\Game\World\Object\Entity\Player</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Game\World\Object\Object.cpp">
+      <Filter>Source\Game\World\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\World\Object\Entity\Entity.cpp">
+      <Filter>Source\Game\World\Object\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\World\Object\Entity\Npc\Npc.cpp">
+      <Filter>Source\Game\World\Object\Entity\Npc</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Game\World\Map\map.h">
@@ -97,6 +109,12 @@
     </ClInclude>
     <ClInclude Include="Source\Game\World\Object\Entity\Player\Player.h">
       <Filter>Source\Game\World\Object\Entity\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\World\Object\Entity\Entity.h">
+      <Filter>Source\Game\World\Object\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\World\Object\Entity\Npc\Npc.h">
+      <Filter>Source\Game\World\Object\Entity\Npc</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

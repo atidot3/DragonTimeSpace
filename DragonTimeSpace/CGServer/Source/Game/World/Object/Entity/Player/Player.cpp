@@ -2,20 +2,15 @@
 #include "../../../WorldSession.h"
 
 #include <Network/Packet/ProtobufPacket.h>
+#include <Network/Buffer/MessageBuffer.h>
 #include <Tables/TableContainer.h>
 #include <Database/Repository/RepositoryManager.h>
 #include <Configuration/Configuration.h>
 
 Player::Player(WorldSession* session)
-    : Entity(0, 0, Position(0, 0, 0), Health(0, 0), 0)
+    : Entity()
     , _session{ session }
 {
-    _obj_type		= msg::MapDataType::MAP_DATATYPE_USER;
-	_base_data		= std::make_unique<msg::CharacterBaseData>();
-	_map_data		= std::make_unique<msg::CharacterMapData>();
-	_map_show		= std::make_unique<msg::CharacterMapShow>();
-	_second_hero	= std::make_unique<msg::CharacterMapShow>();
-	_fight_data		= std::make_unique<msg::CharacterFightData>();
 }
 
 Player::~Player()
@@ -63,4 +58,9 @@ bool Player::load(const uint32_t& char_id)
 	}
 
 	return true;
+}
+
+void Player::SendPacket(const MessageBuffer& buffer)
+{
+	_session->SendPacket(buffer);
 }

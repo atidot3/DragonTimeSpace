@@ -44,7 +44,7 @@ WorldSession::WorldSession(Socket* gameSock, std::function<void()> destruct_hand
 		methodList.emplace(CommandID::ReqEntrySelectState_CS, std::make_tuple(std::bind(&WorldSession::onReceiveEntrySelectState, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
 		methodList.emplace(CommandID::Req_MagicAttack_CS, std::make_tuple(std::bind(&WorldSession::onRecieveSyncSkillStage, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
 		methodList.emplace(CommandID::Req_SyncSkillStage_CS, std::make_tuple(std::bind(&WorldSession::onReceiveMagicAttack, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
-
+		methodList.emplace(CommandID::Req_Move_CS, std::make_tuple(std::bind(&WorldSession::onReceiveMove, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
 		// -- Chat
 		methodList.emplace(CommandID::Req_Chat_CS, std::make_tuple(std::bind(&WorldSession::onRecieveChat, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
 	}
@@ -535,78 +535,6 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		SendPacket(career_skill.get_buffer());
 	}
 
-	ProtobufPacket<msg::MSG_Ret_MapScreenBatchRefreshNpc_SC> npc_info(CommandID::Ret_MapScreenBatchRefreshNpc_SC);
-	{
-		auto const_map = sMapMgr.get_map(result->getUInt("MapID"));
-		auto const_map_info = const_map->get_map_info();
-
-		auto npc = sTBL.get_table<pb::npc_data>();
-		for (auto& is_ou_npc : npc.datas())
-		{
-			for (auto& const_npc : const_map_info._npc)
-			{
-				if (is_ou_npc.tbxid() == const_npc.id)
-				{
-					msg::FloatMovePos* pos = new msg::FloatMovePos();
-					{
-						pos->set_fx(const_npc.x);
-						pos->set_fy(const_npc.y);
-					}
-					msg::EntryIDType* myType = new msg::EntryIDType();
-					{
-						myType->set_id(is_ou_npc.id());
-						myType->set_type(msg::MapDataType::MAP_DATATYPE_NPC);
-					}
-					msg::MasterData* master = new msg::MasterData();
-					{
-						//master.set_country(1);
-						//master.set_allocated_idtype(&myType);
-						//master.set_name(std::move(std::string(is_ou_npc.name())));
-						//master.set_teamid(0);
-					}
-					msg::CharacterMapShow* cmshow = new msg::CharacterMapShow();
-					{
-						//cmshow.set_avatarid(80);
-						//cmshow.set_heroid(80);
-						//cmshow.set_occupation(1);
-					}
-					msg::NPC_HatredList* list = new msg::NPC_HatredList();
-					{
-						// -- what am i doing
-						if (is_ou_npc.hatred_distance() > 0)
-						{
-							list->add_enemytempid(is_ou_npc.id());
-						}
-						else
-						{
-							list->set_npctempid(is_ou_npc.id());
-						}
-					}
-
-					auto npcs = npc_info.get_protobuff().add_data();
-					npcs->set_tempid(const_npc.id);
-					npcs->set_allocated_hatredlist(list);
-					npcs->set_allocated_master(master);
-					npcs->set_allocated_pos(pos);
-					npcs->set_allocated_showdata(cmshow);
-					npcs->set_attspeed(0);
-					npcs->set_baseid(const_npc.id);
-					npcs->set_birth(false);
-					npcs->set_dir(const_npc.dir);
-					npcs->set_hp(is_ou_npc.maxhp());
-					npcs->set_maxhp(is_ou_npc.maxhp());
-					npcs->set_movespeed(0);
-					npcs->set_name(std::move(std::string(is_ou_npc.name())));
-					//npcs->set_titlename();
-					npcs->set_visit(0);
-				}
-			}
-		}
-
-		npc_info.compute();
-		SendPacket(npc_info.get_buffer());
-	}
-
 	auto lines = ProtobufPacket<msg::MSG_NoticeClientAllLines_SC>(CommandID::NoticeClientAllLines_SC);
 	{
 		lines.get_protobuff().set_your_line(sConfig.GetGameServerServerId());
@@ -628,16 +556,17 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 	_player = std::make_shared<Player>(this);
 	if (_player->load(char_id))
 	{
-		auto map = sMapMgr.get_map(result->getUInt("MapID"));
+		_player->set_map_id(result->getUInt("MapID"));
+		_player->set_position(result->getUInt("Position_X"), result->getUInt("Position_Y"), 0);
+
+		auto map = sMapMgr.get_map(_player->get_map_id());
 		if (map)
 		{
-			_player->set_position(Position(result->getFloat("Position_X"), result->getFloat("Position_Y"), 0));
-			map->add_to_map(_player);
 			_player->set_map(map);
 		}
 		else
 		{
-			LOG_FATAL << "Unable to find map: " << result->getUInt("MapID") << " player will not log";
+			LOG_FATAL << "Unable to find map: " << _player->get_map_id() << " player will not log";
 		}
 	}
 
@@ -667,6 +596,11 @@ bool WorldSession::onReceiveMainHero(const Packet& packet)
 bool WorldSession::onSceneLoaded(const Packet& packet)
 {
 	LOG_DEBUG << "on scene loaded request received";
+
+	if (_player->get_map())
+	{
+		_player->get_map()->add_to_map(_player);
+	}
 
 	return true;
 }
@@ -1202,6 +1136,17 @@ bool WorldSession::onReceiveMagicAttack(const Packet& packet)
 	//SendPacket(start_attack.get_buffer());
 	//start_attack.get_protobuff().release_att();
 
+
+	return true;
+}
+
+bool WorldSession::onReceiveMove(const Packet& packet)
+{
+	auto _move = ProtobufPacket<msg::MSG_Req_Move_CS>(packet);
+	_move.get_protobuff().movedata().Get(0).pos().fx();
+	_move.get_protobuff().movedata().Get(0).pos().fy();
+
+	_player->set_position(_move.get_protobuff().movedata().Get(0).pos().fx(), _move.get_protobuff().movedata().Get(0).pos().fy(), _move.get_protobuff().movedata().Get(0).dir());
 
 	return true;
 }
