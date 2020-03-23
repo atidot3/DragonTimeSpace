@@ -798,14 +798,26 @@ bool WorldSession::onReceiveVisitNpcTrade(const Packet& packet)
 			it->set_quest_id(req.get_protobuff().allcrc().Get(i).quest_id());
 			it->set_crc(req.get_protobuff().allcrc().Get(i).crc());
 		}
-		res.get_protobuff().set_action(0);
-		res.get_protobuff().set_type(11);
+		res.get_protobuff().set_action(10);
+		res.get_protobuff().set_type(1);
 		res.get_protobuff().set_npc_temp_id(req.get_protobuff().npc_temp_id());
-		res.get_protobuff().set_show_type(0);
-//		res.get_protobuff().set_type(11);
+		res.get_protobuff().set_show_type(1);
 		res.get_protobuff().set_retcode(1);
+/*
+		stringBuilder.AppendLine("this = {}");
+		stringBuilder.AppendLine("dlg = NpcTalkAndTaskDlgCtrl");
+		luastr = luastr.Replace("[", "<");
+		luastr = luastr.Replace("]", ">");
+		luastr = luastr.Replace("{replacenpcid}", npcid.ToString());
+		stringBuilder.AppendLine(luastr);
+		stringBuilder.Append("dlg:EndDlg()");
+		string s = stringBuilder.ToString();
+		string @string = Encoding.UTF8.GetString(Encoding.UTF8.GetBytes(s));
+		LuaScriptMgr.Instance.CallLuaFunction("NpcTalkAndTaskDlgCtrl.CleanNpcTalk", new object[0]);
+		FFDebug.LogWarning("Call NPCLua", @string);
+*/
 		//res.get_protobuff().set_user_menu("dlg:AddDramaTalkByID(\"1012111\")\n");
-		//res.get_protobuff().set_npc_menu("dlg:AddDramaTalkByID(\"1012112\")");
+		res.get_protobuff().set_npc_menu("dlg:AddDramaTalkByID(\""+std::to_string(req.get_protobuff().npc_temp_id() )+"\")\n"); // => make the npc we talk to showing his id in a frame
 		res.get_protobuff().set_source(req.get_protobuff().npc_temp_id());
 	}
 	res.compute();

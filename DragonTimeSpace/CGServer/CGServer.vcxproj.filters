@@ -78,6 +78,9 @@
     <ClCompile Include="Source\Game\World\Object\Entity\Npc\Npc.cpp">
       <Filter>Source\Game\World\Object\Entity\Npc</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Game\World\Object\Entity\Player\PlayerLoad.cpp">
+      <Filter>Source\Game\World\Object\Entity\Player</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Game\World\Map\map.h">

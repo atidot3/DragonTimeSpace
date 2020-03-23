@@ -97,8 +97,8 @@ MessageBuffer Npc::compose_spawn_packet() const
 			data->set_name(get_name());
 			//npcs->set_titlename();
 			data->set_visit(0);
-			auto it = data->add_states();		
-			it->set_uniqid(GenernateBuffHash(get_temp_id(), 6, 1, get_temp_id()));
+			//auto it = data->add_states();		
+			//it->set_uniqid(GenernateBuffHash(get_temp_id(), 6, 1, get_temp_id()));
 		}
 		npc_refresh.get_protobuff().set_allocated_data(data);
 		npc_refresh.compute();

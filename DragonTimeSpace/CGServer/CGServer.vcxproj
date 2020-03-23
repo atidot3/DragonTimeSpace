@@ -175,6 +175,7 @@
     <ClCompile Include="Source\Game\World\Object\Entity\Entity.cpp" />
     <ClCompile Include="Source\Game\World\Object\Entity\Npc\Npc.cpp" />
     <ClCompile Include="Source\Game\World\Object\Entity\Player\Player.cpp" />
+    <ClCompile Include="Source\Game\World\Object\Entity\Player\PlayerLoad.cpp" />
     <ClCompile Include="Source\Game\World\Object\Object.cpp" />
     <ClCompile Include="Source\Game\World\QueueManager.cpp" />
     <ClCompile Include="Source\Game\World\World.cpp" />
