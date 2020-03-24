@@ -72,16 +72,18 @@ public:
 
 
 	// -- CONST GETTER
-		// user datas
-
-		// user parameters
 	const std::string& get_char_tabs_config() const { return _chat_tabs; }
 	const std::string& get_quickslots_config() const { return _quick_slots; }
 	const std::string& get_shortcuts_config() const { return _shortcuts; }
 	const uint32_t& get_level() const { return _hero[_selected_hero]._level; }
 	const uint32_t& get_cur_exp() const { return _hero[_selected_hero]._cur_exp; }
-	const Hero& get_hero_data(const uint32_t& index) { return _hero[index]; }
+	const Hero& get_hero_data(const uint32_t& index) const { return _hero[index]; }
 	const uint32_t& get_character_id() const { return _char_id; }
+
+
+	// -- GETTER
+	Hero& get_hero_data(const uint32_t & index) { return _hero[index]; }
+
 	// -- SETTER
 	void set_map(Map* map) { _map = map; }
 	void set_level(const uint32_t& level) { _hero[_selected_hero]._level = level; }

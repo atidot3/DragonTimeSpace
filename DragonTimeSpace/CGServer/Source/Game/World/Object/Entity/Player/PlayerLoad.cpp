@@ -1,4 +1,5 @@
 #include "Player.h"
+#include "../../../World.h"
 #include "../../../WorldSession.h"
 
 #include <Network/Packet/ProtobufPacket.h>
@@ -10,6 +11,7 @@
 bool Player::load(const uint32_t& char_id)
 {
 	_char_id = char_id;
+	set_temp_id(sWorld.AcquireSerialId());
 	LOG_DEBUG << "Need to load the character data from here";
 
 	// -- mysql select

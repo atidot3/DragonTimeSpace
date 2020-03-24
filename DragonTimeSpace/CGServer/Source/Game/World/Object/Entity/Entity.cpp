@@ -82,3 +82,8 @@ void Entity::update_max_health(const uint32_t& max_health)
 {
 	_health.set_max_health(max_health);
 }
+
+uint64_t Entity::GenernateBuffHash(const uint64_t& entryID, const uint64_t& userState, const uint64_t& entrytype, const uint64_t& uniqueID)
+{
+	return (userState & 65535UL) << 48 | (uniqueID & 255UL) << 40 | (entrytype & 255UL) << 32 | (entryID & (uint64_t)-1);
+}
