@@ -10,12 +10,6 @@ using object_vect_t = std::vector<const Object*>;
 //send spawn packets for objects
 static void sendCreatePacketsFor(const Object* receiver, const Object* sender)
 {
-	Player* plr = (Player*)receiver;
-
-	if (sender->get_object_type() == msg::MapDataType::MAP_DATATYPE_NPC)
-	{
-		sender->compose_spawn_packet(plr);
-	}
 }
 
 //send destroy packets for objects

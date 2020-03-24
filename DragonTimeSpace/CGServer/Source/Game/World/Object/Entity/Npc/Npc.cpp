@@ -492,7 +492,6 @@ void Npc::compose_spawn_packet(ProtobufPacket<msg::MSG_Ret_MapScreenBatchRefresh
 	data->set_name(get_name());
 	//npcs->set_titlename();
 	data->set_visit(0);
-
 	auto it = data->add_states();		
 	it->set_uniqid(GenernateBuffHash(get_temp_id(), USTATE_NOSTATE, 1, get_temp_id()));
 
