@@ -13,7 +13,7 @@
 #include <Network/Messages/ParseProto.h>
 
 #include <Tables/TableContainer.h>
-
+#pragma execution_character_set("utf-8")
 uint32_t skill_id;
 
 //----------------------------------------
@@ -46,7 +46,9 @@ WorldSession::WorldSession(Socket* gameSock, std::function<void()> destruct_hand
 		methodList.emplace(CommandID::Req_SyncSkillStage_CS, std::make_tuple(std::bind(&WorldSession::onReceiveMagicAttack, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
 		methodList.emplace(CommandID::Req_Move_CS, std::make_tuple(std::bind(&WorldSession::onReceiveMove, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
 		methodList.emplace(CommandID::ReqCurActiveQuest_CS, std::make_tuple(std::bind(&WorldSession::onReceiveCurrentActiveQuest, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
-
+		methodList.emplace(CommandID::Req_TELE_PORT_CS, std::make_tuple(std::bind(&WorldSession::onReceiveTeleport, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
+		methodList.emplace(CommandID::ReqExecuteQuest_CS, std::make_tuple(std::bind(&WorldSession::onReceiveExecuteQuest, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
+		//
 
 		// -- Chat
 		methodList.emplace(CommandID::Req_Chat_CS, std::make_tuple(std::bind(&WorldSession::onRecieveChat, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
@@ -849,14 +851,37 @@ bool WorldSession::onReceiveVisitNpcTrade(const Packet& packet)
 		//res.get_protobuff().set_user_menu("dlg:AddDramaTalkByID(\"1\")\n");
 		//res.get_protobuff().set_npc_menu("dlg:AddDramaTalkByID(\""+std::to_string(req.get_protobuff().npc_temp_id() )+"\")\n"); // => make the npc we talk to showing his id in a frame
 
-		res.get_protobuff().set_npc_menu("\
-				dlg:AddDramaTalkByID(1002101)\n\
-				dlg:AddDramaTalkByID(1002102)\n\
-				dlg:AddDramaTalkByID(1002103)\n\
-				dlg:AddDramaTalkByID(1002104)\n\
-				dlg:AddDramaTalkByID(1002105)\n\
-				dlg:OpenTaskDialogByState(\"10|10021|0|0\")");
+		//open portals
+		/*dlg:Execute(\"StartAddTeleportItem,0\")\n\
+		dlg:Execute(\"AddTeleportItem, 25\")\n\
+		dlg:Execute(\"AddTeleportItem, 26\")\n\
+		dlg:Execute(\"AddTeleportItem, 28\")\n\
+		dlg:Execute(\"EndAddTeleportItem,0\")\n\*/
 
+		res.get_protobuff().set_npc_menu(	"function this:TaskDialog()\n\
+			dlg:AddDramaTalk(\"新脚本机制显示下面的话\")\n \
+			dlg:AddDramaItemByID(\"ic0019\", \"1002111\", \"this.Dialog1\")\n \
+			end\n\
+			function this:Dialog1()\n\
+				dlg:AddDramaGroupByID(\"1002101\", \"ExecuteQuest,v80,10021,1,10000650\")\n\
+			end\n\
+		function this:IsHasTask()\n\
+			return true\n\
+		end\n\
+		this.TaskDialog()\n");
+
+	//	res.get_protobuff().set_npc_menu("\
+	//function this:TaskDialog()\n\
+	//	dlg:Execute(\"StartAddTeleportItem,0\")\n\
+	//	dlg:Execute(\"AddTeleportItem, 25\")\n\
+	//	dlg:Execute(\"AddTeleportItem, 26\")\n\
+	//	dlg:Execute(\"AddTeleportItem, 28\")\n\
+	//	dlg:Execute(\"EndTeleportAddItem,0\")\n\
+	//end\n\
+	//function this:IsHasTask()\n\
+	//	return true\n\
+	//end");
+		 
 		res.get_protobuff().set_source(req.get_protobuff().npc_temp_id());
 	}
 
@@ -1299,5 +1324,89 @@ void WorldSession::SendUpdateXpLevel(uint32_t herothisid, uint32_t exp, uint32_t
 	xp.compute();
 	LOG_DEBUG << xp.get_protobuff().DebugString();
 	SendPacket(xp.get_buffer());
+}
+
+bool WorldSession::onReceiveTeleport(const Packet& packet)
+{
+	LOG_DEBUG << " Teleport";
+
+	auto _teleport = ProtobufPacket<msg::MSG_Req_TELE_PORT_CS>(packet);
+	msg::FloatMovePos pos;
+
+	LOG_DEBUG << _teleport.get_protobuff().DebugString();
+
+	/*ProtobufPacket<> teleport(CommandID::RetNpcWarpMove_SC)
+		teleport*/
+	//ProtobufPacket<Chat::MSG_Ret_Chat_SC> chat(CommandID::tele);
+	//Chat::ChatData data = teleport.get_protobuff().data();
+	//chat.get_protobuff().set_allocated_data(&data);
+
+//	chat.compute();
+
+	//SendPacket(chat.get_buffer());
+	//chat.get_protobuff().release_data();
+	return true;
+}
+
+bool WorldSession::onReceiveExecuteQuest(const Packet& packet)
+{
+	LOG_DEBUG << " Execute Quest Received";
+
+	auto _quest = ProtobufPacket<quest::MSG_ReqExecuteQuest_CS>(packet);
+
+	LOG_DEBUG << _quest.get_protobuff().DebugString();
+
+
+	ProtobufPacket<quest::MSG_RetCurActiveQuest_SC> questpkt(CommandID::RetCurActiveQuest_SC);
+	auto quest_table = sTBL.get_table<pb::questconfig>();
+	const pb::questconfig_t_quest_config* qc = nullptr;
+
+	for (auto it = quest_table.datas().begin(); it != quest_table.datas().end(); ++it)
+	{
+		if (it->tbxid() == _quest.get_protobuff().id())
+		{
+			qc = &(*it);
+		}
+	}
+	if (qc != nullptr)
+	{
+
+		std::string target = _quest.get_protobuff().target();
+		auto qi = questpkt.get_protobuff().add_item();
+		{
+				auto ext = qi->add_extinfo();
+				{
+					ext->set_curvalue(0);
+					ext->set_degreevar(qc->degree());
+					
+					ext->set_maxvalue(1);
+				}
+				qi->set_id(_quest.get_protobuff().id());
+				qi->set_state(0);
+				qi->set_show(true);
+				
+		
+			auto newact = questpkt.get_protobuff().add_newaccept();
+			{
+				std::size_t found = target.find("v");
+				if (found != std::string::npos)
+				{
+					target.replace(target.find("v"),1, "");
+				}
+				if(target != "")
+				newact->set_npcid(std::stoi(target));
+				newact->set_questid(_quest.get_protobuff().id());
+				
+			}
+			auto ri = questpkt.get_protobuff().add_ringinfo();
+			{
+				ri->set_mainquestid(_quest.get_protobuff().id());
+				ri->set_finishringnum(_quest.get_protobuff().id());
+			}
+		}
+		questpkt.compute();
+		SendPacket(questpkt.get_buffer());
+	}
+	return true;
 }
 
