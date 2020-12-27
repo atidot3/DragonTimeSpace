@@ -204,6 +204,10 @@ class MSG_Req_PlayYQDRetry_CSDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MSG_Req_PlayYQDRetry_CS> _instance;
 } _MSG_Req_PlayYQDRetry_CS_default_instance_;
+class MSG_Ret_OutOfCircle_SCDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MSG_Ret_OutOfCircle_SC> _instance;
+} _MSG_Ret_OutOfCircle_SC_default_instance_;
 }  // namespace quest
 static void InitDefaultsscc_info_ChangeMapFindWayInfo_quest_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -661,6 +665,20 @@ static void InitDefaultsscc_info_MSG_Ret_NotifyShareQuest_SC_quest_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MSG_Ret_NotifyShareQuest_SC_quest_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MSG_Ret_NotifyShareQuest_SC_quest_2eproto}, {}};
 
+static void InitDefaultsscc_info_MSG_Ret_OutOfCircle_SC_quest_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::quest::_MSG_Ret_OutOfCircle_SC_default_instance_;
+    new (ptr) ::quest::MSG_Ret_OutOfCircle_SC();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::quest::MSG_Ret_OutOfCircle_SC::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MSG_Ret_OutOfCircle_SC_quest_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MSG_Ret_OutOfCircle_SC_quest_2eproto}, {}};
+
 static void InitDefaultsscc_info_MSG_Ret_QuestInfo_SC_quest_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -847,7 +865,7 @@ static void InitDefaultsscc_info_validQuest_quest_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_validQuest_quest_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_validQuest_quest_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_quest_2eproto[45];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_quest_2eproto[46];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_quest_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_quest_2eproto = nullptr;
 
@@ -953,6 +971,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_quest_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::quest::MSG_Ret_QuestInfo_SC, leftsecs_),
   PROTOBUF_FIELD_OFFSET(::quest::MSG_Ret_QuestInfo_SC, extinfo_),
   PROTOBUF_FIELD_OFFSET(::quest::MSG_Ret_QuestInfo_SC, show_),
+  PROTOBUF_FIELD_OFFSET(::quest::MSG_Ret_QuestInfo_SC, discount_),
   0,
   1,
   2,
@@ -964,6 +983,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_quest_2eproto::offsets[] PROTO
   8,
   ~0u,
   9,
+  10,
   PROTOBUF_FIELD_OFFSET(::quest::MSG_ReqExecuteQuest_CS, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::quest::MSG_ReqExecuteQuest_CS, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1291,6 +1311,17 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_quest_2eproto::offsets[] PROTO
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::quest::MSG_Req_PlayYQDRetry_CS, type_),
   0,
+  PROTOBUF_FIELD_OFFSET(::quest::MSG_Ret_OutOfCircle_SC, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::quest::MSG_Ret_OutOfCircle_SC, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::quest::MSG_Ret_OutOfCircle_SC, npcid_),
+  PROTOBUF_FIELD_OFFSET(::quest::MSG_Ret_OutOfCircle_SC, tipid_),
+  PROTOBUF_FIELD_OFFSET(::quest::MSG_Ret_OutOfCircle_SC, state_),
+  0,
+  1,
+  2,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 8, sizeof(::quest::questCRC)},
@@ -1300,44 +1331,45 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 38, 55, sizeof(::quest::MSG_Ret_VisitNpcTrade_SC)},
   { 67, 73, sizeof(::quest::MSG_Req_QuestInfo_CS)},
   { 74, 82, sizeof(::quest::UnorderQuestBranchInfo)},
-  { 85, 101, sizeof(::quest::MSG_Ret_QuestInfo_SC)},
-  { 112, 122, sizeof(::quest::MSG_ReqExecuteQuest_CS)},
-  { 127, 132, sizeof(::quest::MSG_ReqValidQuests_CS)},
-  { 132, 138, sizeof(::quest::MSG_RetValidQuests_SC)},
-  { 139, 146, sizeof(::quest::MSG_ReqRetQuestState_CSC)},
-  { 148, 154, sizeof(::quest::MSG_ReqAbandonQuest_CS)},
-  { 155, 161, sizeof(::quest::MSG_RetAbandonQuest_SC)},
-  { 162, 169, sizeof(::quest::QuestStateInfo)},
-  { 171, 179, sizeof(::quest::npcQuestList)},
-  { 182, 187, sizeof(::quest::MSG_ReqMapQuestInfo_CS)},
-  { 187, 193, sizeof(::quest::MSG_RetMapQuestInfo_SC)},
-  { 194, 199, sizeof(::quest::MSG_ReqCurActiveQuest_CS)},
-  { 199, 206, sizeof(::quest::ringQuestInfo)},
-  { 208, 217, sizeof(::quest::MSG_RetCurActiveQuest_SC)},
-  { 221, 230, sizeof(::quest::MSG_ReqChangeMapFindPath_CS)},
-  { 234, 240, sizeof(::quest::MSG_RetChangeMapFindPath_SC)},
-  { 241, 250, sizeof(::quest::ChangeMapFindWayInfo)},
-  { 254, 260, sizeof(::quest::MSG_RetPlotTalkID_SC)},
-  { 261, 269, sizeof(::quest::MSG_CartoonCompleteNotify_SC)},
-  { 272, 281, sizeof(::quest::MSG_PlayCartoonAndGoMap_SC)},
-  { 285, 292, sizeof(::quest::MSG_ReqSubmitObjs_CS)},
-  { 294, 300, sizeof(::quest::MSG_RetSubmitObjs_SC)},
-  { 301, 308, sizeof(::quest::RingQuestRingCount)},
-  { 310, 316, sizeof(::quest::MSG_RetRingQuestRingCount_SC)},
-  { 317, 323, sizeof(::quest::MSG_notifyRefreshQuestInfo_SC)},
-  { 324, 330, sizeof(::quest::MSG_PlayBellQTE_SC)},
-  { 331, 338, sizeof(::quest::MSG_PlayBellQTEResult_CS)},
-  { 340, 347, sizeof(::quest::MSG_Req_SetQuestNeedShow_CS)},
-  { 349, 357, sizeof(::quest::MSG_Ret_SetQuestNeedShow_SC)},
-  { 360, 366, sizeof(::quest::MSG_Req_ShareQuestToTeamMember_CS)},
-  { 367, 374, sizeof(::quest::MSG_Ret_NotifyShareQuest_SC)},
-  { 376, 383, sizeof(::quest::MSG_Req_AnswerShareQuest_CS)},
-  { 385, 391, sizeof(::quest::MSG_Ret_AnswerShareQuest_SC)},
-  { 392, 400, sizeof(::quest::MSG_Ret_NotifyCountDown_SC)},
-  { 403, 410, sizeof(::quest::MSG_NotifyClientOptional_SC)},
-  { 412, 419, sizeof(::quest::MSG_notifyQuestStateEffect_SC)},
-  { 421, 429, sizeof(::quest::MSG_Req_CommitYQDData_CS)},
-  { 432, 438, sizeof(::quest::MSG_Req_PlayYQDRetry_CS)},
+  { 85, 102, sizeof(::quest::MSG_Ret_QuestInfo_SC)},
+  { 114, 124, sizeof(::quest::MSG_ReqExecuteQuest_CS)},
+  { 129, 134, sizeof(::quest::MSG_ReqValidQuests_CS)},
+  { 134, 140, sizeof(::quest::MSG_RetValidQuests_SC)},
+  { 141, 148, sizeof(::quest::MSG_ReqRetQuestState_CSC)},
+  { 150, 156, sizeof(::quest::MSG_ReqAbandonQuest_CS)},
+  { 157, 163, sizeof(::quest::MSG_RetAbandonQuest_SC)},
+  { 164, 171, sizeof(::quest::QuestStateInfo)},
+  { 173, 181, sizeof(::quest::npcQuestList)},
+  { 184, 189, sizeof(::quest::MSG_ReqMapQuestInfo_CS)},
+  { 189, 195, sizeof(::quest::MSG_RetMapQuestInfo_SC)},
+  { 196, 201, sizeof(::quest::MSG_ReqCurActiveQuest_CS)},
+  { 201, 208, sizeof(::quest::ringQuestInfo)},
+  { 210, 219, sizeof(::quest::MSG_RetCurActiveQuest_SC)},
+  { 223, 232, sizeof(::quest::MSG_ReqChangeMapFindPath_CS)},
+  { 236, 242, sizeof(::quest::MSG_RetChangeMapFindPath_SC)},
+  { 243, 252, sizeof(::quest::ChangeMapFindWayInfo)},
+  { 256, 262, sizeof(::quest::MSG_RetPlotTalkID_SC)},
+  { 263, 271, sizeof(::quest::MSG_CartoonCompleteNotify_SC)},
+  { 274, 283, sizeof(::quest::MSG_PlayCartoonAndGoMap_SC)},
+  { 287, 294, sizeof(::quest::MSG_ReqSubmitObjs_CS)},
+  { 296, 302, sizeof(::quest::MSG_RetSubmitObjs_SC)},
+  { 303, 310, sizeof(::quest::RingQuestRingCount)},
+  { 312, 318, sizeof(::quest::MSG_RetRingQuestRingCount_SC)},
+  { 319, 325, sizeof(::quest::MSG_notifyRefreshQuestInfo_SC)},
+  { 326, 332, sizeof(::quest::MSG_PlayBellQTE_SC)},
+  { 333, 340, sizeof(::quest::MSG_PlayBellQTEResult_CS)},
+  { 342, 349, sizeof(::quest::MSG_Req_SetQuestNeedShow_CS)},
+  { 351, 359, sizeof(::quest::MSG_Ret_SetQuestNeedShow_SC)},
+  { 362, 368, sizeof(::quest::MSG_Req_ShareQuestToTeamMember_CS)},
+  { 369, 376, sizeof(::quest::MSG_Ret_NotifyShareQuest_SC)},
+  { 378, 385, sizeof(::quest::MSG_Req_AnswerShareQuest_CS)},
+  { 387, 393, sizeof(::quest::MSG_Ret_AnswerShareQuest_SC)},
+  { 394, 402, sizeof(::quest::MSG_Ret_NotifyCountDown_SC)},
+  { 405, 412, sizeof(::quest::MSG_NotifyClientOptional_SC)},
+  { 414, 421, sizeof(::quest::MSG_notifyQuestStateEffect_SC)},
+  { 423, 431, sizeof(::quest::MSG_Req_CommitYQDData_CS)},
+  { 434, 440, sizeof(::quest::MSG_Req_PlayYQDRetry_CS)},
+  { 441, 449, sizeof(::quest::MSG_Ret_OutOfCircle_SC)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -1386,6 +1418,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::quest::_MSG_notifyQuestStateEffect_SC_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::quest::_MSG_Req_CommitYQDData_CS_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::quest::_MSG_Req_PlayYQDRetry_CS_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::quest::_MSG_Ret_OutOfCircle_SC_default_instance_),
 };
 
 const char descriptor_table_protodef_quest_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -1404,78 +1437,80 @@ const char descriptor_table_protodef_quest_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "c\030\013 \003(\0132\017.quest.questCRC\022\016\n\006source\030\014 \001(\r"
   "\"\"\n\024MSG_Req_QuestInfo_CS\022\n\n\002id\030\001 \001(\r\"O\n\026"
   "UnorderQuestBranchInfo\022\021\n\tdegreevar\030\001 \001("
-  "\t\022\020\n\010curvalue\030\002 \001(\r\022\020\n\010maxvalue\030\003 \001(\r\"\363\001"
+  "\t\022\020\n\010curvalue\030\002 \001(\r\022\020\n\010maxvalue\030\003 \001(\r\"\205\002"
   "\n\024MSG_Ret_QuestInfo_SC\022\n\n\002id\030\001 \001(\r\022\r\n\005st"
   "ate\030\002 \001(\r\022\r\n\005score\030\003 \001(\r\022\020\n\010curvalue\030\004 \001"
   "(\r\022\020\n\010maxvalue\030\005 \001(\r\022\021\n\tstarttime\030\006 \001(\r\022"
   "\024\n\014cur_extvalue\030\007 \001(\r\022\024\n\014max_extvalue\030\010 "
   "\001(\r\022\020\n\010leftsecs\030\t \001(\005\022.\n\007extinfo\030\n \003(\0132\035"
   ".quest.UnorderQuestBranchInfo\022\014\n\004show\030\013 "
-  "\001(\010\"n\n\026MSG_ReqExecuteQuest_CS\022\n\n\002id\030\001 \001("
-  "\r\022\016\n\006target\030\002 \001(\t\022\016\n\006offset\030\003 \001(\r\022\024\n\014que"
-  "stdesccrc\030\004 \001(\r\022\022\n\nchartarget\030\005 \001(\004\"\027\n\025M"
-  "SG_ReqValidQuests_CS\"\?\n\025MSG_RetValidQues"
-  "ts_SC\022&\n\010onequest\030\001 \003(\0132\024.quest.npcValid"
-  "Quest\"5\n\030MSG_ReqRetQuestState_CSC\022\n\n\002id\030"
-  "\001 \001(\r\022\r\n\005state\030\002 \001(\r\"$\n\026MSG_ReqAbandonQu"
-  "est_CS\022\n\n\002id\030\001 \001(\r\"$\n\026MSG_RetAbandonQues"
-  "t_SC\022\n\n\002id\030\001 \001(\r\"0\n\016QuestStateInfo\022\017\n\007qu"
-  "estid\030\001 \001(\r\022\r\n\005state\030\002 \001(\r\"S\n\014npcQuestLi"
-  "st\022\r\n\005npcid\030\001 \001(\r\022%\n\006quests\030\002 \003(\0132\025.ques"
-  "t.QuestStateInfo\022\r\n\005state\030\003 \001(\005\"\030\n\026MSG_R"
-  "eqMapQuestInfo_CS\"\?\n\026MSG_RetMapQuestInfo"
-  "_SC\022%\n\010npclists\030\001 \003(\0132\023.quest.npcQuestLi"
-  "st\"\032\n\030MSG_ReqCurActiveQuest_CS\";\n\rringQu"
-  "estInfo\022\023\n\013mainquestid\030\001 \001(\r\022\025\n\rfinishri"
-  "ngnum\030\002 \001(\r\"\246\001\n\030MSG_RetCurActiveQuest_SC"
-  "\022)\n\004item\030\001 \003(\0132\033.quest.MSG_Ret_QuestInfo"
-  "_SC\022\'\n\tnewaccept\030\002 \003(\0132\024.quest.npcValidQ"
-  "uest\022\016\n\006dayvar\030\003 \001(\t\022&\n\010ringinfo\030\004 \003(\0132\024"
-  ".quest.ringQuestInfo\"_\n\033MSG_ReqChangeMap"
-  "FindPath_CS\022\021\n\tpathwayid\030\001 \001(\r\022\017\n\007questi"
-  "d\030\002 \001(\r\022\r\n\005destx\030\003 \001(\r\022\r\n\005desty\030\004 \001(\r\"H\n"
-  "\033MSG_RetChangeMapFindPath_SC\022)\n\004info\030\001 \001"
-  "(\0132\033.quest.ChangeMapFindWayInfo\"h\n\024Chang"
-  "eMapFindWayInfo\022\017\n\007errcode\030\001 \001(\r\022\021\n\tpath"
-  "wayid\030\002 \001(\r\022\021\n\tdestmapid\030\003 \001(\r\022\031\n\nfindin"
-  "gway\030\004 \001(\010:\005false\"\'\n\024MSG_RetPlotTalkID_S"
-  "C\022\017\n\007groupid\030\001 \001(\r\"O\n\034MSG_CartoonComplet"
-  "eNotify_SC\022\017\n\007groupid\030\001 \001(\r\022\017\n\007command\030\002"
-  " \001(\t\022\r\n\005delay\030\003 \001(\r\"a\n\032MSG_PlayCartoonAn"
-  "dGoMap_SC\022\017\n\007groupid\030\001 \001(\r\022\017\n\007command\030\002 "
-  "\001(\t\022\r\n\005delay\030\003 \001(\r\022\022\n\ncallbackid\030\004 \001(\r\"5"
-  "\n\024MSG_ReqSubmitObjs_CS\022\016\n\006thisid\030\001 \003(\t\022\r"
-  "\n\005bagid\030\002 \001(\r\"\'\n\024MSG_RetSubmitObjs_SC\022\017\n"
-  "\007retcode\030\001 \001(\r\";\n\022RingQuestRingCount\022\021\n\t"
-  "questtype\030\001 \001(\r\022\022\n\nring_count\030\002 \001(\r\"L\n\034M"
-  "SG_RetRingQuestRingCount_SC\022,\n\tringcount"
-  "\030\001 \003(\0132\031.quest.RingQuestRingCount\"J\n\035MSG"
-  "_notifyRefreshQuestInfo_SC\022)\n\004item\030\001 \003(\013"
-  "2\033.quest.MSG_Ret_QuestInfo_SC\"&\n\022MSG_Pla"
-  "yBellQTE_SC\022\020\n\010qtelevel\030\001 \001(\r\"<\n\030MSG_Pla"
-  "yBellQTEResult_CS\022\020\n\010qtelevel\030\001 \001(\r\022\016\n\006r"
-  "esult\030\002 \001(\r\"<\n\033MSG_Req_SetQuestNeedShow_"
-  "CS\022\017\n\007questid\030\001 \001(\r\022\014\n\004show\030\002 \001(\010\"L\n\033MSG"
-  "_Ret_SetQuestNeedShow_SC\022\017\n\007questid\030\001 \001("
-  "\r\022\016\n\006result\030\002 \001(\010\022\014\n\004code\030\003 \001(\010\"4\n!MSG_R"
-  "eq_ShareQuestToTeamMember_CS\022\017\n\007questid\030"
-  "\001 \001(\r\"<\n\033MSG_Ret_NotifyShareQuest_SC\022\014\n\004"
-  "name\030\001 \001(\t\022\017\n\007questid\030\002 \001(\r\">\n\033MSG_Req_A"
-  "nswerShareQuest_CS\022\017\n\007questid\030\001 \001(\r\022\016\n\006a"
-  "ccept\030\002 \001(\010\"+\n\033MSG_Ret_AnswerShareQuest_"
-  "SC\022\014\n\004code\030\001 \001(\r\"J\n\032MSG_Ret_NotifyCountD"
-  "own_SC\022\014\n\004bset\030\001 \001(\010\022\r\n\005delay\030\002 \001(\r\022\017\n\007s"
-  "econds\030\003 \001(\r\"<\n\033MSG_NotifyClientOptional"
-  "_SC\022\014\n\004type\030\001 \001(\r\022\017\n\007setting\030\002 \001(\t\"\?\n\035MS"
-  "G_notifyQuestStateEffect_SC\022\017\n\007questid\030\001"
-  " \001(\r\022\r\n\005state\030\002 \001(\r\"G\n\030MSG_Req_CommitYQD"
-  "Data_CS\022\014\n\004step\030\001 \001(\r\022\017\n\007success\030\002 \001(\r\022\014"
-  "\n\004type\030\003 \001(\r\"\'\n\027MSG_Req_PlayYQDRetry_CS\022"
-  "\014\n\004type\030\001 \001(\r"
+  "\001(\010\022\020\n\010discount\030\014 \001(\010\"n\n\026MSG_ReqExecuteQ"
+  "uest_CS\022\n\n\002id\030\001 \001(\r\022\016\n\006target\030\002 \001(\t\022\016\n\006o"
+  "ffset\030\003 \001(\r\022\024\n\014questdesccrc\030\004 \001(\r\022\022\n\ncha"
+  "rtarget\030\005 \001(\004\"\027\n\025MSG_ReqValidQuests_CS\"\?"
+  "\n\025MSG_RetValidQuests_SC\022&\n\010onequest\030\001 \003("
+  "\0132\024.quest.npcValidQuest\"5\n\030MSG_ReqRetQue"
+  "stState_CSC\022\n\n\002id\030\001 \001(\r\022\r\n\005state\030\002 \001(\r\"$"
+  "\n\026MSG_ReqAbandonQuest_CS\022\n\n\002id\030\001 \001(\r\"$\n\026"
+  "MSG_RetAbandonQuest_SC\022\n\n\002id\030\001 \001(\r\"0\n\016Qu"
+  "estStateInfo\022\017\n\007questid\030\001 \001(\r\022\r\n\005state\030\002"
+  " \001(\r\"S\n\014npcQuestList\022\r\n\005npcid\030\001 \001(\r\022%\n\006q"
+  "uests\030\002 \003(\0132\025.quest.QuestStateInfo\022\r\n\005st"
+  "ate\030\003 \001(\005\"\030\n\026MSG_ReqMapQuestInfo_CS\"\?\n\026M"
+  "SG_RetMapQuestInfo_SC\022%\n\010npclists\030\001 \003(\0132"
+  "\023.quest.npcQuestList\"\032\n\030MSG_ReqCurActive"
+  "Quest_CS\";\n\rringQuestInfo\022\023\n\013mainquestid"
+  "\030\001 \001(\r\022\025\n\rfinishringnum\030\002 \001(\r\"\246\001\n\030MSG_Re"
+  "tCurActiveQuest_SC\022)\n\004item\030\001 \003(\0132\033.quest"
+  ".MSG_Ret_QuestInfo_SC\022\'\n\tnewaccept\030\002 \003(\013"
+  "2\024.quest.npcValidQuest\022\016\n\006dayvar\030\003 \001(\t\022&"
+  "\n\010ringinfo\030\004 \003(\0132\024.quest.ringQuestInfo\"_"
+  "\n\033MSG_ReqChangeMapFindPath_CS\022\021\n\tpathway"
+  "id\030\001 \001(\r\022\017\n\007questid\030\002 \001(\r\022\r\n\005destx\030\003 \001(\r"
+  "\022\r\n\005desty\030\004 \001(\r\"H\n\033MSG_RetChangeMapFindP"
+  "ath_SC\022)\n\004info\030\001 \001(\0132\033.quest.ChangeMapFi"
+  "ndWayInfo\"h\n\024ChangeMapFindWayInfo\022\017\n\007err"
+  "code\030\001 \001(\r\022\021\n\tpathwayid\030\002 \001(\r\022\021\n\tdestmap"
+  "id\030\003 \001(\r\022\031\n\nfindingway\030\004 \001(\010:\005false\"\'\n\024M"
+  "SG_RetPlotTalkID_SC\022\017\n\007groupid\030\001 \001(\r\"O\n\034"
+  "MSG_CartoonCompleteNotify_SC\022\017\n\007groupid\030"
+  "\001 \001(\r\022\017\n\007command\030\002 \001(\t\022\r\n\005delay\030\003 \001(\r\"a\n"
+  "\032MSG_PlayCartoonAndGoMap_SC\022\017\n\007groupid\030\001"
+  " \001(\r\022\017\n\007command\030\002 \001(\t\022\r\n\005delay\030\003 \001(\r\022\022\n\n"
+  "callbackid\030\004 \001(\r\"5\n\024MSG_ReqSubmitObjs_CS"
+  "\022\016\n\006thisid\030\001 \003(\t\022\r\n\005bagid\030\002 \001(\r\"\'\n\024MSG_R"
+  "etSubmitObjs_SC\022\017\n\007retcode\030\001 \001(\r\";\n\022Ring"
+  "QuestRingCount\022\021\n\tquesttype\030\001 \001(\r\022\022\n\nrin"
+  "g_count\030\002 \001(\r\"L\n\034MSG_RetRingQuestRingCou"
+  "nt_SC\022,\n\tringcount\030\001 \003(\0132\031.quest.RingQue"
+  "stRingCount\"J\n\035MSG_notifyRefreshQuestInf"
+  "o_SC\022)\n\004item\030\001 \003(\0132\033.quest.MSG_Ret_Quest"
+  "Info_SC\"&\n\022MSG_PlayBellQTE_SC\022\020\n\010qteleve"
+  "l\030\001 \001(\r\"<\n\030MSG_PlayBellQTEResult_CS\022\020\n\010q"
+  "televel\030\001 \001(\r\022\016\n\006result\030\002 \001(\r\"<\n\033MSG_Req"
+  "_SetQuestNeedShow_CS\022\017\n\007questid\030\001 \001(\r\022\014\n"
+  "\004show\030\002 \001(\010\"L\n\033MSG_Ret_SetQuestNeedShow_"
+  "SC\022\017\n\007questid\030\001 \001(\r\022\016\n\006result\030\002 \001(\010\022\014\n\004c"
+  "ode\030\003 \001(\010\"4\n!MSG_Req_ShareQuestToTeamMem"
+  "ber_CS\022\017\n\007questid\030\001 \001(\r\"<\n\033MSG_Ret_Notif"
+  "yShareQuest_SC\022\014\n\004name\030\001 \001(\t\022\017\n\007questid\030"
+  "\002 \001(\r\">\n\033MSG_Req_AnswerShareQuest_CS\022\017\n\007"
+  "questid\030\001 \001(\r\022\016\n\006accept\030\002 \001(\010\"+\n\033MSG_Ret"
+  "_AnswerShareQuest_SC\022\014\n\004code\030\001 \001(\r\"J\n\032MS"
+  "G_Ret_NotifyCountDown_SC\022\014\n\004bset\030\001 \001(\010\022\r"
+  "\n\005delay\030\002 \001(\r\022\017\n\007seconds\030\003 \001(\r\"<\n\033MSG_No"
+  "tifyClientOptional_SC\022\014\n\004type\030\001 \001(\r\022\017\n\007s"
+  "etting\030\002 \001(\t\"\?\n\035MSG_notifyQuestStateEffe"
+  "ct_SC\022\017\n\007questid\030\001 \001(\r\022\r\n\005state\030\002 \001(\r\"G\n"
+  "\030MSG_Req_CommitYQDData_CS\022\014\n\004step\030\001 \001(\r\022"
+  "\017\n\007success\030\002 \001(\r\022\014\n\004type\030\003 \001(\r\"\'\n\027MSG_Re"
+  "q_PlayYQDRetry_CS\022\014\n\004type\030\001 \001(\r\"E\n\026MSG_R"
+  "et_OutOfCircle_SC\022\r\n\005npcid\030\001 \001(\r\022\r\n\005tipi"
+  "d\030\002 \001(\r\022\r\n\005state\030\003 \001(\r"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_quest_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_quest_2eproto_sccs[45] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_quest_2eproto_sccs[46] = {
   &scc_info_ChangeMapFindWayInfo_quest_2eproto.base,
   &scc_info_MSG_CartoonCompleteNotify_SC_quest_2eproto.base,
   &scc_info_MSG_NotifyClientOptional_SC_quest_2eproto.base,
@@ -1508,6 +1543,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_que
   &scc_info_MSG_Ret_AnswerShareQuest_SC_quest_2eproto.base,
   &scc_info_MSG_Ret_NotifyCountDown_SC_quest_2eproto.base,
   &scc_info_MSG_Ret_NotifyShareQuest_SC_quest_2eproto.base,
+  &scc_info_MSG_Ret_OutOfCircle_SC_quest_2eproto.base,
   &scc_info_MSG_Ret_QuestInfo_SC_quest_2eproto.base,
   &scc_info_MSG_Ret_SetQuestNeedShow_SC_quest_2eproto.base,
   &scc_info_MSG_Ret_VisitNpcTrade_SC_quest_2eproto.base,
@@ -1525,10 +1561,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_que
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_quest_2eproto_once;
 static bool descriptor_table_quest_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_quest_2eproto = {
-  &descriptor_table_quest_2eproto_initialized, descriptor_table_protodef_quest_2eproto, "quest.proto", 3293,
-  &descriptor_table_quest_2eproto_once, descriptor_table_quest_2eproto_sccs, descriptor_table_quest_2eproto_deps, 45, 0,
+  &descriptor_table_quest_2eproto_initialized, descriptor_table_protodef_quest_2eproto, "quest.proto", 3382,
+  &descriptor_table_quest_2eproto_once, descriptor_table_quest_2eproto_sccs, descriptor_table_quest_2eproto_deps, 46, 0,
   schemas, file_default_instances, TableStruct_quest_2eproto::offsets,
-  file_level_metadata_quest_2eproto, 45, file_level_enum_descriptors_quest_2eproto, file_level_service_descriptors_quest_2eproto,
+  file_level_metadata_quest_2eproto, 46, file_level_enum_descriptors_quest_2eproto, file_level_service_descriptors_quest_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -3612,6 +3648,9 @@ class MSG_Ret_QuestInfo_SC::_Internal {
   static void set_has_show(HasBits* has_bits) {
     (*has_bits)[0] |= 512u;
   }
+  static void set_has_discount(HasBits* has_bits) {
+    (*has_bits)[0] |= 1024u;
+  }
 };
 
 MSG_Ret_QuestInfo_SC::MSG_Ret_QuestInfo_SC()
@@ -3626,16 +3665,16 @@ MSG_Ret_QuestInfo_SC::MSG_Ret_QuestInfo_SC(const MSG_Ret_QuestInfo_SC& from)
       extinfo_(from.extinfo_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&id_, &from.id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&show_) -
-    reinterpret_cast<char*>(&id_)) + sizeof(show_));
+    static_cast<size_t>(reinterpret_cast<char*>(&discount_) -
+    reinterpret_cast<char*>(&id_)) + sizeof(discount_));
   // @@protoc_insertion_point(copy_constructor:quest.MSG_Ret_QuestInfo_SC)
 }
 
 void MSG_Ret_QuestInfo_SC::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MSG_Ret_QuestInfo_SC_quest_2eproto.base);
   ::memset(&id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&show_) -
-      reinterpret_cast<char*>(&id_)) + sizeof(show_));
+      reinterpret_cast<char*>(&discount_) -
+      reinterpret_cast<char*>(&id_)) + sizeof(discount_));
 }
 
 MSG_Ret_QuestInfo_SC::~MSG_Ret_QuestInfo_SC() {
@@ -3668,10 +3707,10 @@ void MSG_Ret_QuestInfo_SC::Clear() {
         reinterpret_cast<char*>(&max_extvalue_) -
         reinterpret_cast<char*>(&id_)) + sizeof(max_extvalue_));
   }
-  if (cached_has_bits & 0x00000300u) {
+  if (cached_has_bits & 0x00000700u) {
     ::memset(&leftsecs_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&show_) -
-        reinterpret_cast<char*>(&leftsecs_)) + sizeof(show_));
+        reinterpret_cast<char*>(&discount_) -
+        reinterpret_cast<char*>(&leftsecs_)) + sizeof(discount_));
   }
   _has_bits_.Clear();
   _internal_metadata_.Clear();
@@ -3777,6 +3816,14 @@ const char* MSG_Ret_QuestInfo_SC::_InternalParse(const char* ptr, ::PROTOBUF_NAM
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
+      // optional bool discount = 12;
+      case 12:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96)) {
+          _Internal::set_has_discount(&has_bits);
+          discount_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
@@ -3873,6 +3920,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(11, this->_internal_show(), target);
   }
 
+  // optional bool discount = 12;
+  if (cached_has_bits & 0x00000400u) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(12, this->_internal_discount(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target, stream);
@@ -3955,7 +4008,7 @@ size_t MSG_Ret_QuestInfo_SC::ByteSizeLong() const {
     }
 
   }
-  if (cached_has_bits & 0x00000300u) {
+  if (cached_has_bits & 0x00000700u) {
     // optional int32 leftsecs = 9;
     if (cached_has_bits & 0x00000100u) {
       total_size += 1 +
@@ -3965,6 +4018,11 @@ size_t MSG_Ret_QuestInfo_SC::ByteSizeLong() const {
 
     // optional bool show = 11;
     if (cached_has_bits & 0x00000200u) {
+      total_size += 1 + 1;
+    }
+
+    // optional bool discount = 12;
+    if (cached_has_bits & 0x00000400u) {
       total_size += 1 + 1;
     }
 
@@ -4029,12 +4087,15 @@ void MSG_Ret_QuestInfo_SC::MergeFrom(const MSG_Ret_QuestInfo_SC& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 0x00000300u) {
+  if (cached_has_bits & 0x00000700u) {
     if (cached_has_bits & 0x00000100u) {
       leftsecs_ = from.leftsecs_;
     }
     if (cached_has_bits & 0x00000200u) {
       show_ = from.show_;
+    }
+    if (cached_has_bits & 0x00000400u) {
+      discount_ = from.discount_;
     }
     _has_bits_[0] |= cached_has_bits;
   }
@@ -4073,6 +4134,7 @@ void MSG_Ret_QuestInfo_SC::InternalSwap(MSG_Ret_QuestInfo_SC* other) {
   swap(max_extvalue_, other->max_extvalue_);
   swap(leftsecs_, other->leftsecs_);
   swap(show_, other->show_);
+  swap(discount_, other->discount_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MSG_Ret_QuestInfo_SC::GetMetadata() const {
@@ -12721,6 +12783,275 @@ void MSG_Req_PlayYQDRetry_CS::InternalSwap(MSG_Req_PlayYQDRetry_CS* other) {
 }
 
 
+// ===================================================================
+
+void MSG_Ret_OutOfCircle_SC::InitAsDefaultInstance() {
+}
+class MSG_Ret_OutOfCircle_SC::_Internal {
+ public:
+  using HasBits = decltype(std::declval<MSG_Ret_OutOfCircle_SC>()._has_bits_);
+  static void set_has_npcid(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static void set_has_tipid(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static void set_has_state(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
+  }
+};
+
+MSG_Ret_OutOfCircle_SC::MSG_Ret_OutOfCircle_SC()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:quest.MSG_Ret_OutOfCircle_SC)
+}
+MSG_Ret_OutOfCircle_SC::MSG_Ret_OutOfCircle_SC(const MSG_Ret_OutOfCircle_SC& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
+      _has_bits_(from._has_bits_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::memcpy(&npcid_, &from.npcid_,
+    static_cast<size_t>(reinterpret_cast<char*>(&state_) -
+    reinterpret_cast<char*>(&npcid_)) + sizeof(state_));
+  // @@protoc_insertion_point(copy_constructor:quest.MSG_Ret_OutOfCircle_SC)
+}
+
+void MSG_Ret_OutOfCircle_SC::SharedCtor() {
+  ::memset(&npcid_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&state_) -
+      reinterpret_cast<char*>(&npcid_)) + sizeof(state_));
+}
+
+MSG_Ret_OutOfCircle_SC::~MSG_Ret_OutOfCircle_SC() {
+  // @@protoc_insertion_point(destructor:quest.MSG_Ret_OutOfCircle_SC)
+  SharedDtor();
+}
+
+void MSG_Ret_OutOfCircle_SC::SharedDtor() {
+}
+
+void MSG_Ret_OutOfCircle_SC::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MSG_Ret_OutOfCircle_SC& MSG_Ret_OutOfCircle_SC::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MSG_Ret_OutOfCircle_SC_quest_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MSG_Ret_OutOfCircle_SC::Clear() {
+// @@protoc_insertion_point(message_clear_start:quest.MSG_Ret_OutOfCircle_SC)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
+    ::memset(&npcid_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&state_) -
+        reinterpret_cast<char*>(&npcid_)) + sizeof(state_));
+  }
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
+}
+
+const char* MSG_Ret_OutOfCircle_SC::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // optional uint32 npcid = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          _Internal::set_has_npcid(&has_bits);
+          npcid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // optional uint32 tipid = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          _Internal::set_has_tipid(&has_bits);
+          tipid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // optional uint32 state = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          _Internal::set_has_state(&has_bits);
+          state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  _has_bits_.Or(has_bits);
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MSG_Ret_OutOfCircle_SC::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:quest.MSG_Ret_OutOfCircle_SC)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // optional uint32 npcid = 1;
+  if (cached_has_bits & 0x00000001u) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_npcid(), target);
+  }
+
+  // optional uint32 tipid = 2;
+  if (cached_has_bits & 0x00000002u) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_tipid(), target);
+  }
+
+  // optional uint32 state = 3;
+  if (cached_has_bits & 0x00000004u) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->_internal_state(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:quest.MSG_Ret_OutOfCircle_SC)
+  return target;
+}
+
+size_t MSG_Ret_OutOfCircle_SC::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:quest.MSG_Ret_OutOfCircle_SC)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
+    // optional uint32 npcid = 1;
+    if (cached_has_bits & 0x00000001u) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+          this->_internal_npcid());
+    }
+
+    // optional uint32 tipid = 2;
+    if (cached_has_bits & 0x00000002u) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+          this->_internal_tipid());
+    }
+
+    // optional uint32 state = 3;
+    if (cached_has_bits & 0x00000004u) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+          this->_internal_state());
+    }
+
+  }
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MSG_Ret_OutOfCircle_SC::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:quest.MSG_Ret_OutOfCircle_SC)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MSG_Ret_OutOfCircle_SC* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MSG_Ret_OutOfCircle_SC>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:quest.MSG_Ret_OutOfCircle_SC)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:quest.MSG_Ret_OutOfCircle_SC)
+    MergeFrom(*source);
+  }
+}
+
+void MSG_Ret_OutOfCircle_SC::MergeFrom(const MSG_Ret_OutOfCircle_SC& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:quest.MSG_Ret_OutOfCircle_SC)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
+    if (cached_has_bits & 0x00000001u) {
+      npcid_ = from.npcid_;
+    }
+    if (cached_has_bits & 0x00000002u) {
+      tipid_ = from.tipid_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      state_ = from.state_;
+    }
+    _has_bits_[0] |= cached_has_bits;
+  }
+}
+
+void MSG_Ret_OutOfCircle_SC::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:quest.MSG_Ret_OutOfCircle_SC)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MSG_Ret_OutOfCircle_SC::CopyFrom(const MSG_Ret_OutOfCircle_SC& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:quest.MSG_Ret_OutOfCircle_SC)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MSG_Ret_OutOfCircle_SC::IsInitialized() const {
+  return true;
+}
+
+void MSG_Ret_OutOfCircle_SC::InternalSwap(MSG_Ret_OutOfCircle_SC* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(npcid_, other->npcid_);
+  swap(tipid_, other->tipid_);
+  swap(state_, other->state_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MSG_Ret_OutOfCircle_SC::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace quest
 PROTOBUF_NAMESPACE_OPEN
@@ -12858,6 +13189,9 @@ template<> PROTOBUF_NOINLINE ::quest::MSG_Req_CommitYQDData_CS* Arena::CreateMay
 }
 template<> PROTOBUF_NOINLINE ::quest::MSG_Req_PlayYQDRetry_CS* Arena::CreateMaybeMessage< ::quest::MSG_Req_PlayYQDRetry_CS >(Arena* arena) {
   return Arena::CreateInternal< ::quest::MSG_Req_PlayYQDRetry_CS >(arena);
+}
+template<> PROTOBUF_NOINLINE ::quest::MSG_Ret_OutOfCircle_SC* Arena::CreateMaybeMessage< ::quest::MSG_Ret_OutOfCircle_SC >(Arena* arena) {
+  return Arena::CreateInternal< ::quest::MSG_Ret_OutOfCircle_SC >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

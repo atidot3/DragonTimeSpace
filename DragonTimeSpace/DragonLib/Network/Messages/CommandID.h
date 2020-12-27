@@ -1226,6 +1226,8 @@ enum CommandID
 	
 	Ret_Wegame_Fcm_Info,
 	
+	Ret_OutOfCircle_SC,
+
 	Ret_Test1 = 40002,
 	
 	Ret_Test2,

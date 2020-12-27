@@ -47,7 +47,7 @@ struct TableStruct_quest_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxillaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[45]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[46]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -151,6 +151,9 @@ extern MSG_Ret_NotifyCountDown_SCDefaultTypeInternal _MSG_Ret_NotifyCountDown_SC
 class MSG_Ret_NotifyShareQuest_SC;
 class MSG_Ret_NotifyShareQuest_SCDefaultTypeInternal;
 extern MSG_Ret_NotifyShareQuest_SCDefaultTypeInternal _MSG_Ret_NotifyShareQuest_SC_default_instance_;
+class MSG_Ret_OutOfCircle_SC;
+class MSG_Ret_OutOfCircle_SCDefaultTypeInternal;
+extern MSG_Ret_OutOfCircle_SCDefaultTypeInternal _MSG_Ret_OutOfCircle_SC_default_instance_;
 class MSG_Ret_QuestInfo_SC;
 class MSG_Ret_QuestInfo_SCDefaultTypeInternal;
 extern MSG_Ret_QuestInfo_SCDefaultTypeInternal _MSG_Ret_QuestInfo_SC_default_instance_;
@@ -224,6 +227,7 @@ template<> ::quest::MSG_RetValidQuests_SC* Arena::CreateMaybeMessage<::quest::MS
 template<> ::quest::MSG_Ret_AnswerShareQuest_SC* Arena::CreateMaybeMessage<::quest::MSG_Ret_AnswerShareQuest_SC>(Arena*);
 template<> ::quest::MSG_Ret_NotifyCountDown_SC* Arena::CreateMaybeMessage<::quest::MSG_Ret_NotifyCountDown_SC>(Arena*);
 template<> ::quest::MSG_Ret_NotifyShareQuest_SC* Arena::CreateMaybeMessage<::quest::MSG_Ret_NotifyShareQuest_SC>(Arena*);
+template<> ::quest::MSG_Ret_OutOfCircle_SC* Arena::CreateMaybeMessage<::quest::MSG_Ret_OutOfCircle_SC>(Arena*);
 template<> ::quest::MSG_Ret_QuestInfo_SC* Arena::CreateMaybeMessage<::quest::MSG_Ret_QuestInfo_SC>(Arena*);
 template<> ::quest::MSG_Ret_SetQuestNeedShow_SC* Arena::CreateMaybeMessage<::quest::MSG_Ret_SetQuestNeedShow_SC>(Arena*);
 template<> ::quest::MSG_Ret_VisitNpcTrade_SC* Arena::CreateMaybeMessage<::quest::MSG_Ret_VisitNpcTrade_SC>(Arena*);
@@ -1647,6 +1651,7 @@ class MSG_Ret_QuestInfo_SC :
     kMaxExtvalueFieldNumber = 8,
     kLeftsecsFieldNumber = 9,
     kShowFieldNumber = 11,
+    kDiscountFieldNumber = 12,
   };
   // repeated .quest.UnorderQuestBranchInfo extinfo = 10;
   int extinfo_size() const;
@@ -1796,6 +1801,19 @@ class MSG_Ret_QuestInfo_SC :
   void _internal_set_show(bool value);
   public:
 
+  // optional bool discount = 12;
+  bool has_discount() const;
+  private:
+  bool _internal_has_discount() const;
+  public:
+  void clear_discount();
+  bool discount() const;
+  void set_discount(bool value);
+  private:
+  bool _internal_discount() const;
+  void _internal_set_discount(bool value);
+  public:
+
   // @@protoc_insertion_point(class_scope:quest.MSG_Ret_QuestInfo_SC)
  private:
   class _Internal;
@@ -1814,6 +1832,7 @@ class MSG_Ret_QuestInfo_SC :
   ::PROTOBUF_NAMESPACE_ID::uint32 max_extvalue_;
   ::PROTOBUF_NAMESPACE_ID::int32 leftsecs_;
   bool show_;
+  bool discount_;
   friend struct ::TableStruct_quest_2eproto;
 };
 // -------------------------------------------------------------------
@@ -7595,6 +7614,176 @@ class MSG_Req_PlayYQDRetry_CS :
   ::PROTOBUF_NAMESPACE_ID::uint32 type_;
   friend struct ::TableStruct_quest_2eproto;
 };
+// -------------------------------------------------------------------
+
+class MSG_Ret_OutOfCircle_SC :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:quest.MSG_Ret_OutOfCircle_SC) */ {
+ public:
+  MSG_Ret_OutOfCircle_SC();
+  virtual ~MSG_Ret_OutOfCircle_SC();
+
+  MSG_Ret_OutOfCircle_SC(const MSG_Ret_OutOfCircle_SC& from);
+  MSG_Ret_OutOfCircle_SC(MSG_Ret_OutOfCircle_SC&& from) noexcept
+    : MSG_Ret_OutOfCircle_SC() {
+    *this = ::std::move(from);
+  }
+
+  inline MSG_Ret_OutOfCircle_SC& operator=(const MSG_Ret_OutOfCircle_SC& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MSG_Ret_OutOfCircle_SC& operator=(MSG_Ret_OutOfCircle_SC&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MSG_Ret_OutOfCircle_SC& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const MSG_Ret_OutOfCircle_SC* internal_default_instance() {
+    return reinterpret_cast<const MSG_Ret_OutOfCircle_SC*>(
+               &_MSG_Ret_OutOfCircle_SC_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    45;
+
+  friend void swap(MSG_Ret_OutOfCircle_SC& a, MSG_Ret_OutOfCircle_SC& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MSG_Ret_OutOfCircle_SC* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MSG_Ret_OutOfCircle_SC* New() const final {
+    return CreateMaybeMessage<MSG_Ret_OutOfCircle_SC>(nullptr);
+  }
+
+  MSG_Ret_OutOfCircle_SC* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MSG_Ret_OutOfCircle_SC>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MSG_Ret_OutOfCircle_SC& from);
+  void MergeFrom(const MSG_Ret_OutOfCircle_SC& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MSG_Ret_OutOfCircle_SC* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "quest.MSG_Ret_OutOfCircle_SC";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_quest_2eproto);
+    return ::descriptor_table_quest_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kNpcidFieldNumber = 1,
+    kTipidFieldNumber = 2,
+    kStateFieldNumber = 3,
+  };
+  // optional uint32 npcid = 1;
+  bool has_npcid() const;
+  private:
+  bool _internal_has_npcid() const;
+  public:
+  void clear_npcid();
+  ::PROTOBUF_NAMESPACE_ID::uint32 npcid() const;
+  void set_npcid(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::uint32 _internal_npcid() const;
+  void _internal_set_npcid(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  public:
+
+  // optional uint32 tipid = 2;
+  bool has_tipid() const;
+  private:
+  bool _internal_has_tipid() const;
+  public:
+  void clear_tipid();
+  ::PROTOBUF_NAMESPACE_ID::uint32 tipid() const;
+  void set_tipid(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::uint32 _internal_tipid() const;
+  void _internal_set_tipid(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  public:
+
+  // optional uint32 state = 3;
+  bool has_state() const;
+  private:
+  bool _internal_has_state() const;
+  public:
+  void clear_state();
+  ::PROTOBUF_NAMESPACE_ID::uint32 state() const;
+  void set_state(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::uint32 _internal_state() const;
+  void _internal_set_state(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:quest.MSG_Ret_OutOfCircle_SC)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  ::PROTOBUF_NAMESPACE_ID::uint32 npcid_;
+  ::PROTOBUF_NAMESPACE_ID::uint32 tipid_;
+  ::PROTOBUF_NAMESPACE_ID::uint32 state_;
+  friend struct ::TableStruct_quest_2eproto;
+};
 // ===================================================================
 
 
@@ -8802,6 +8991,34 @@ inline void MSG_Ret_QuestInfo_SC::_internal_set_show(bool value) {
 inline void MSG_Ret_QuestInfo_SC::set_show(bool value) {
   _internal_set_show(value);
   // @@protoc_insertion_point(field_set:quest.MSG_Ret_QuestInfo_SC.show)
+}
+
+// optional bool discount = 12;
+inline bool MSG_Ret_QuestInfo_SC::_internal_has_discount() const {
+  bool value = (_has_bits_[0] & 0x00000400u) != 0;
+  return value;
+}
+inline bool MSG_Ret_QuestInfo_SC::has_discount() const {
+  return _internal_has_discount();
+}
+inline void MSG_Ret_QuestInfo_SC::clear_discount() {
+  discount_ = false;
+  _has_bits_[0] &= ~0x00000400u;
+}
+inline bool MSG_Ret_QuestInfo_SC::_internal_discount() const {
+  return discount_;
+}
+inline bool MSG_Ret_QuestInfo_SC::discount() const {
+  // @@protoc_insertion_point(field_get:quest.MSG_Ret_QuestInfo_SC.discount)
+  return _internal_discount();
+}
+inline void MSG_Ret_QuestInfo_SC::_internal_set_discount(bool value) {
+  _has_bits_[0] |= 0x00000400u;
+  discount_ = value;
+}
+inline void MSG_Ret_QuestInfo_SC::set_discount(bool value) {
+  _internal_set_discount(value);
+  // @@protoc_insertion_point(field_set:quest.MSG_Ret_QuestInfo_SC.discount)
 }
 
 // -------------------------------------------------------------------
@@ -11364,9 +11581,99 @@ inline void MSG_Req_PlayYQDRetry_CS::set_type(::PROTOBUF_NAMESPACE_ID::uint32 va
   // @@protoc_insertion_point(field_set:quest.MSG_Req_PlayYQDRetry_CS.type)
 }
 
+// -------------------------------------------------------------------
+
+// MSG_Ret_OutOfCircle_SC
+
+// optional uint32 npcid = 1;
+inline bool MSG_Ret_OutOfCircle_SC::_internal_has_npcid() const {
+  bool value = (_has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool MSG_Ret_OutOfCircle_SC::has_npcid() const {
+  return _internal_has_npcid();
+}
+inline void MSG_Ret_OutOfCircle_SC::clear_npcid() {
+  npcid_ = 0u;
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_Ret_OutOfCircle_SC::_internal_npcid() const {
+  return npcid_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_Ret_OutOfCircle_SC::npcid() const {
+  // @@protoc_insertion_point(field_get:quest.MSG_Ret_OutOfCircle_SC.npcid)
+  return _internal_npcid();
+}
+inline void MSG_Ret_OutOfCircle_SC::_internal_set_npcid(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  _has_bits_[0] |= 0x00000001u;
+  npcid_ = value;
+}
+inline void MSG_Ret_OutOfCircle_SC::set_npcid(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  _internal_set_npcid(value);
+  // @@protoc_insertion_point(field_set:quest.MSG_Ret_OutOfCircle_SC.npcid)
+}
+
+// optional uint32 tipid = 2;
+inline bool MSG_Ret_OutOfCircle_SC::_internal_has_tipid() const {
+  bool value = (_has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool MSG_Ret_OutOfCircle_SC::has_tipid() const {
+  return _internal_has_tipid();
+}
+inline void MSG_Ret_OutOfCircle_SC::clear_tipid() {
+  tipid_ = 0u;
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_Ret_OutOfCircle_SC::_internal_tipid() const {
+  return tipid_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_Ret_OutOfCircle_SC::tipid() const {
+  // @@protoc_insertion_point(field_get:quest.MSG_Ret_OutOfCircle_SC.tipid)
+  return _internal_tipid();
+}
+inline void MSG_Ret_OutOfCircle_SC::_internal_set_tipid(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  _has_bits_[0] |= 0x00000002u;
+  tipid_ = value;
+}
+inline void MSG_Ret_OutOfCircle_SC::set_tipid(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  _internal_set_tipid(value);
+  // @@protoc_insertion_point(field_set:quest.MSG_Ret_OutOfCircle_SC.tipid)
+}
+
+// optional uint32 state = 3;
+inline bool MSG_Ret_OutOfCircle_SC::_internal_has_state() const {
+  bool value = (_has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool MSG_Ret_OutOfCircle_SC::has_state() const {
+  return _internal_has_state();
+}
+inline void MSG_Ret_OutOfCircle_SC::clear_state() {
+  state_ = 0u;
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_Ret_OutOfCircle_SC::_internal_state() const {
+  return state_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint32 MSG_Ret_OutOfCircle_SC::state() const {
+  // @@protoc_insertion_point(field_get:quest.MSG_Ret_OutOfCircle_SC.state)
+  return _internal_state();
+}
+inline void MSG_Ret_OutOfCircle_SC::_internal_set_state(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  _has_bits_[0] |= 0x00000004u;
+  state_ = value;
+}
+inline void MSG_Ret_OutOfCircle_SC::set_state(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  _internal_set_state(value);
+  // @@protoc_insertion_point(field_set:quest.MSG_Ret_OutOfCircle_SC.state)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

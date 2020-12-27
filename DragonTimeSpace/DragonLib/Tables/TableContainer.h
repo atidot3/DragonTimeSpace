@@ -66,6 +66,7 @@
 #include <Tables/Definitions/uimapinfo.pb.h>
 #include <Tables/Definitions/unlock_config.pb.h>
 #include <Tables/Definitions/vipcard_config.pb.h>
+#include <Tables/Definitions/fetters_config.pb.h>
 
 class TableContainer
 {

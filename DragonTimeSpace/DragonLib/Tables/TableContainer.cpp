@@ -94,6 +94,7 @@ void TableContainer::load(const std::string& path)
 	_vect.push_back(new pb::uimapinfo());
 	_vect.push_back(new pb::unlock_config());
 	_vect.push_back(new pb::vipcard_config());
+	_vect.push_back(new pb::fetters_config());
 
 	for (auto& c : _vect)
 	{
