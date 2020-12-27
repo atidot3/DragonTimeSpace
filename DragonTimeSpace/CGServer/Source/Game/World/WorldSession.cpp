@@ -48,7 +48,8 @@ WorldSession::WorldSession(Socket* gameSock, std::function<void()> destruct_hand
 		methodList.emplace(CommandID::ReqCurActiveQuest_CS, std::make_tuple(std::bind(&WorldSession::onReceiveCurrentActiveQuest, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
 		methodList.emplace(CommandID::Req_TELE_PORT_CS, std::make_tuple(std::bind(&WorldSession::onReceiveTeleport, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
 		methodList.emplace(CommandID::ReqExecuteQuest_CS, std::make_tuple(std::bind(&WorldSession::onReceiveExecuteQuest, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
-		//
+		methodList.emplace(CommandID::Req_QuestInfo_CS, std::make_tuple(std::bind(&WorldSession::onRecieveQuestInfo, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
+		
 
 		// -- Chat
 		methodList.emplace(CommandID::Req_Chat_CS, std::make_tuple(std::bind(&WorldSession::onRecieveChat, this, std::placeholders::_1), THREAD_METHOD::THREAD_UNSAFE));
@@ -825,28 +826,40 @@ bool WorldSession::onReceiveVisitNpcTrade(const Packet& packet)
 			it->set_quest_id(req.get_protobuff().allcrc().Get(i).quest_id());
 			it->set_crc(req.get_protobuff().allcrc().Get(i).crc());
 		}
-		res.get_protobuff().set_action(10);
-		res.get_protobuff().set_type(1);
+		res.get_protobuff().set_action(0);
+		res.get_protobuff().set_type(0);
 		res.get_protobuff().set_npc_temp_id(req.get_protobuff().npc_temp_id());
 		res.get_protobuff().set_show_type(1);
 		res.get_protobuff().set_retcode(1);
 		auto crc = res.get_protobuff().add_allcrc();
-		crc->set_branch_id(0);
-		crc->set_crc(0);
-		crc->set_quest_id(10021);
-/*
-		stringBuilder.AppendLine("this = {}");
-		stringBuilder.AppendLine("dlg = NpcTalkAndTaskDlgCtrl");
-		luastr = luastr.Replace("[", "<");
-		luastr = luastr.Replace("]", ">");
-		luastr = luastr.Replace("{replacenpcid}", npcid.ToString());
-		stringBuilder.AppendLine(luastr);
-		stringBuilder.Append("dlg:EndDlg()");
-		string s = stringBuilder.ToString();
-		string @string = Encoding.UTF8.GetString(Encoding.UTF8.GetBytes(s));
-		LuaScriptMgr.Instance.CallLuaFunction("NpcTalkAndTaskDlgCtrl.CleanNpcTalk", new object[0]);
-		FFDebug.LogWarning("Call NPCLua", @string);
-*/
+		res.get_protobuff().set_crc_ret(2);
+				/*res.get_protobuff().set_user_menu("function this:MainDialog()\n\
+			dlg:AddTalk(\"看来，这一场较量是不可避免的了。\")\n \
+			dlg:AddDialogItem(\"ic0145\",\"我在哪里？\",\"openTaskFinish, v80, 10021, 2\")\n \
+			end\n\
+			function this:TaskDialog()\n\
+				end\n\
+			this:MainDialog()\n\
+		function this:IsHasTask()\n\
+			return true\n\
+		end\n");
+		res.get_protobuff().set_npc_menu("function this:MainDialog()\n\
+			this:TaskDialog()\n \
+			end\n\
+			this:MainDialog()\n");*/
+		/*
+				stringBuilder.AppendLine("this = {}");
+				stringBuilder.AppendLine("dlg = NpcTalkAndTaskDlgCtrl");
+				luastr = luastr.Replace("[", "<");
+				luastr = luastr.Replace("]", ">");
+				luastr = luastr.Replace("{replacenpcid}", npcid.ToString());
+				stringBuilder.AppendLine(luastr);
+				stringBuilder.Append("dlg:EndDlg()");
+				string s = stringBuilder.ToString();
+				string @string = Encoding.UTF8.GetString(Encoding.UTF8.GetBytes(s));
+				LuaScriptMgr.Instance.CallLuaFunction("NpcTalkAndTaskDlgCtrl.CleanNpcTalk", new object[0]);
+				FFDebug.LogWarning("Call NPCLua", @string);
+		*/
 		//res.get_protobuff().set_user_menu("dlg:AddDramaTalkByID(\"1012111\")\n");
 		//res.get_protobuff().set_user_menu("dlg:AddDramaTalkByID(\"1\")\n");
 		//res.get_protobuff().set_npc_menu("dlg:AddDramaTalkByID(\""+std::to_string(req.get_protobuff().npc_temp_id() )+"\")\n"); // => make the npc we talk to showing his id in a frame
@@ -858,31 +871,51 @@ bool WorldSession::onReceiveVisitNpcTrade(const Packet& packet)
 		dlg:Execute(\"AddTeleportItem, 28\")\n\
 		dlg:Execute(\"EndAddTeleportItem,0\")\n\*/
 
-		res.get_protobuff().set_npc_menu(	"function this:TaskDialog()\n\
-			dlg:AddDramaTalk(\"新脚本机制显示下面的话\")\n \
-			dlg:AddDramaItemByID(\"ic0019\", \"1002111\", \"this.Dialog1\")\n \
+		/*res.get_protobuff().set_user_menu("function this:MainDialog()\n\
+			dlg:AddTalk(\"看来，这一场较量是不可避免的了。\")\n \
+			dlg:AddDialogItem(\"ic0145\",\"我在哪里？\",\"openTaskFinish, v80, 10021, 2\")\n \
 			end\n\
-			function this:Dialog1()\n\
-				dlg:AddDramaGroupByID(\"1002101\", \"ExecuteQuest,v80,10021,1,10000650\")\n\
-			end\n\
+			function this:TaskDialog()\n\
+				end\n\
+			this:MainDialog()\n\
 		function this:IsHasTask()\n\
 			return true\n\
-		end\n\
-		this.TaskDialog()\n");
+		end\n");
+		res.get_protobuff().set_npc_menu("function this:MainDialog()\n\
+			this:TaskDialog()\n \
+			end\n\
+			this:MainDialog()\n");*/
 
-	//	res.get_protobuff().set_npc_menu("\
-	//function this:TaskDialog()\n\
-	//	dlg:Execute(\"StartAddTeleportItem,0\")\n\
-	//	dlg:Execute(\"AddTeleportItem, 25\")\n\
-	//	dlg:Execute(\"AddTeleportItem, 26\")\n\
-	//	dlg:Execute(\"AddTeleportItem, 28\")\n\
-	//	dlg:Execute(\"EndTeleportAddItem,0\")\n\
-	//end\n\
-	//function this:IsHasTask()\n\
-	//	return true\n\
-	//end");
-		 
+
+			//	res.get_protobuff().set_npc_menu("\
+			//function this:TaskDialog()\n\
+			//	dlg:Execute(\"StartAddTeleportItem,0\")\n\
+			//	dlg:Execute(\"AddTeleportItem, 25\")\n\
+			//	dlg:Execute(\"AddTeleportItem, 26\")\n\
+			//	dlg:Execute(\"AddTeleportItem, 28\")\n\
+			//	dlg:Execute(\"EndTeleportAddItem,0\")\n\
+			//end\n\
+			//function this:IsHasTask()\n\
+			//	return true\n\
+			//end");
+
+		res.get_protobuff().set_user_menu("function this:TaskDialog()\n\
+		 dlg:AddDramaTalk(\"新脚本机制显示下面的话\")\n\
+		dlg:AddDramaItemByID(\"ic0019\",\"1002111\",\"this.Dialog1\")\n\
+		end\n\
+		function this:Dialog1()\n\
+			dlg:AddDramaGroupByID(\"1002101\",\"ExecuteQuest,v80,10021,1,10000650\")\n\
+		end\n\
+		function this:IsHasTask()\n\
+			return true\n\
+			end\n");
+		res.get_protobuff().set_npc_menu("function this:MainDialog()\n\
+			this:TaskDialog()\n\
+			end\n\
+			this:MainDialog()\n");
+
 		res.get_protobuff().set_source(req.get_protobuff().npc_temp_id());
+
 	}
 
 	res.compute();
@@ -1113,6 +1146,21 @@ bool WorldSession::onReceiveOperateDatasReq(const Packet& packet)
 	opdat.compute();
 
 	SendPacket(opdat.get_buffer());
+
+
+	//SendQuestInfo
+	ProtobufPacket<quest::MSG_notifyQuestStateEffect_SC> q(CommandID::notifyQuestStateEffect_SC);
+
+	LOG_DEBUG << q.get_protobuff().DebugString();
+
+	
+	q.get_protobuff().set_questid(10021);
+	q.get_protobuff().set_state(100);
+	
+	q.compute();
+
+	SendPacket(q.get_buffer());
+
 	return true;
 }
 
@@ -1407,6 +1455,143 @@ bool WorldSession::onReceiveExecuteQuest(const Packet& packet)
 		questpkt.compute();
 		SendPacket(questpkt.get_buffer());
 	}
+
+	ProtobufPacket<quest::MSG_Ret_VisitNpcTrade_SC> res(CommandID::Ret_VisitNpcTrade_SC);
+	{
+
+		/*for (int i = 0; i < req.get_protobuff().allcrc().size(); i++)
+		{
+			auto it = res.get_protobuff().add_allcrc();
+			it->set_branch_id(req.get_protobuff().allcrc().Get(i).branch_id());
+			it->set_quest_id(req.get_protobuff().allcrc().Get(i).quest_id());
+			it->set_crc(req.get_protobuff().allcrc().Get(i).crc());
+		}*/
+		res.get_protobuff().set_action(0);
+		res.get_protobuff().set_type(0);
+		res.get_protobuff().set_npc_temp_id(10000650);
+		res.get_protobuff().set_show_type(1);
+		res.get_protobuff().set_retcode(1);
+		auto crc = res.get_protobuff().add_allcrc();
+		res.get_protobuff().set_crc_ret(2);
+		/*res.get_protobuff().set_user_menu("function this:MainDialog()\n\
+	dlg:AddTalk(\"看来，这一场较量是不可避免的了。\")\n \
+	dlg:AddDialogItem(\"ic0145\",\"我在哪里？\",\"openTaskFinish, v80, 10021, 2\")\n \
+	end\n\
+	function this:TaskDialog()\n\
+		end\n\
+	this:MainDialog()\n\
+function this:IsHasTask()\n\
+	return true\n\
+end\n");
+res.get_protobuff().set_npc_menu("function this:MainDialog()\n\
+	this:TaskDialog()\n \
+	end\n\
+	this:MainDialog()\n");*/
+	/*
+			stringBuilder.AppendLine("this = {}");
+			stringBuilder.AppendLine("dlg = NpcTalkAndTaskDlgCtrl");
+			luastr = luastr.Replace("[", "<");
+			luastr = luastr.Replace("]", ">");
+			luastr = luastr.Replace("{replacenpcid}", npcid.ToString());
+			stringBuilder.AppendLine(luastr);
+			stringBuilder.Append("dlg:EndDlg()");
+			string s = stringBuilder.ToString();
+			string @string = Encoding.UTF8.GetString(Encoding.UTF8.GetBytes(s));
+			LuaScriptMgr.Instance.CallLuaFunction("NpcTalkAndTaskDlgCtrl.CleanNpcTalk", new object[0]);
+			FFDebug.LogWarning("Call NPCLua", @string);
+	*/
+	//res.get_protobuff().set_user_menu("dlg:AddDramaTalkByID(\"1012111\")\n");
+	//res.get_protobuff().set_user_menu("dlg:AddDramaTalkByID(\"1\")\n");
+	//res.get_protobuff().set_npc_menu("dlg:AddDramaTalkByID(\""+std::to_string(req.get_protobuff().npc_temp_id() )+"\")\n"); // => make the npc we talk to showing his id in a frame
+
+	//open portals
+	/*dlg:Execute(\"StartAddTeleportItem,0\")\n\
+	dlg:Execute(\"AddTeleportItem, 25\")\n\
+	dlg:Execute(\"AddTeleportItem, 26\")\n\
+	dlg:Execute(\"AddTeleportItem, 28\")\n\
+	dlg:Execute(\"EndAddTeleportItem,0\")\n\*/
+
+	res.get_protobuff().set_user_menu("function this:MainDialog()\n\
+		dlg:AddTalk(\"看来，这一场较量是不可避免的了。\")\n \
+		dlg:AddDialogItem(\"ic0145\",\"我在哪里？\",\"openTaskFinish,v80,10021,2\")\n \
+		end\n\
+		function this:TaskDialog()\n\
+			end\n\
+		this:MainDialog()\n\
+	function this:IsHasTask()\n\
+		return true\n\
+	end\n");
+	res.get_protobuff().set_npc_menu("function this:MainDialog()\n\
+		this:TaskDialog()\n \
+		end\n\
+		this:MainDialog()\n");
+
+
+		//	res.get_protobuff().set_npc_menu("\
+			//function this:TaskDialog()\n\
+			//	dlg:Execute(\"StartAddTeleportItem,0\")\n\
+			//	dlg:Execute(\"AddTeleportItem, 25\")\n\
+			//	dlg:Execute(\"AddTeleportItem, 26\")\n\
+			//	dlg:Execute(\"AddTeleportItem, 28\")\n\
+			//	dlg:Execute(\"EndTeleportAddItem,0\")\n\
+			//end\n\
+			//function this:IsHasTask()\n\
+			//	return true\n\
+			//end");
+
+		//res.get_protobuff().set_user_menu("function this:TaskDialog()\n\
+		// dlg:AddDramaTalk(\"新脚本机制显示下面的话\")\n\
+		//dlg:AddDramaItemByID(\"ic0019\",\"1002111\",\"this.Dialog1\")\n\
+		//end\n\
+		//function this:Dialog1()\n\
+		//	dlg:AddDramaGroupByID(\"1002101\",\"ExecuteQuest,v80,10021,1,10000650\")\n\
+		//end\n\
+		//function this:IsHasTask()\n\
+		//	return true\n\
+		//	end\n");
+		//res.get_protobuff().set_npc_menu("function this:MainDialog()\n\
+		//	this:TaskDialog()\n\
+		//	end\n\
+		//	this:MainDialog()\n");
+
+		res.get_protobuff().set_source(10000650);
+
+	}
+
+	res.compute();
+	SendPacket(res.get_buffer());
 	return true;
 }
 
+bool WorldSession::onRecieveQuestInfo(const Packet& packet)
+{
+	LOG_DEBUG << " Execute Quest INFO Received";
+
+	auto _quest = ProtobufPacket<quest::MSG_Req_QuestInfo_CS>(packet);
+
+	LOG_DEBUG << _quest.get_protobuff().DebugString();
+
+	//Get Database Values. 
+	ProtobufPacket<quest::MSG_Ret_QuestInfo_SC> questpkt(CommandID::Ret_QuestInfo_SC);
+	{
+		questpkt.get_protobuff().set_curvalue(0);
+		questpkt.get_protobuff().set_id(_quest.get_protobuff().id());
+		questpkt.get_protobuff().set_starttime(0);
+		questpkt.get_protobuff().set_state(100);
+		questpkt.get_protobuff().set_maxvalue(0);
+		questpkt.get_protobuff().set_score(0);
+		questpkt.get_protobuff().set_cur_extvalue(0);
+		questpkt.get_protobuff().set_max_extvalue(0);
+		questpkt.get_protobuff().set_leftsecs(0);
+		questpkt.get_protobuff().set_show(false);
+		questpkt.get_protobuff().set_discount(false);
+		
+		auto it = questpkt.get_protobuff().add_extinfo();
+		
+	}
+	questpkt.compute();
+	LOG_DEBUG << questpkt.get_protobuff().DebugString();
+	SendPacket(questpkt.get_buffer());
+	
+	return true;
+}

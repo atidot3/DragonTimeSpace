@@ -83,6 +83,7 @@ private:
 	bool onReceiveMove(const Packet& packet);
 	bool onReceiveTeleport(const Packet& packet);
 	bool onReceiveExecuteQuest(const Packet& packet);
+	bool onRecieveQuestInfo(const Packet& packet);
 
 	void SendUpdateXpLevel(uint32_t herothisid, uint32_t exp, uint32_t level, uint32_t secXP, uint32_t secLevel);
 
