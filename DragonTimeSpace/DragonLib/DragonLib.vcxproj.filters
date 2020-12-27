@@ -438,6 +438,9 @@
     <ClCompile Include="Network\Messages\test.pb.cc">
       <Filter>Network\Messages</Filter>
     </ClCompile>
+    <ClCompile Include="Tables\Definitions\fetters_config.pb.cc">
+      <Filter>Tables\Definitions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Configuration\Configuration.h">
@@ -862,6 +865,9 @@
     </ClInclude>
     <ClInclude Include="Network\Messages\test.pb.h">
       <Filter>Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Tables\Definitions\fetters_config.pb.h">
+      <Filter>Tables\Definitions</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
