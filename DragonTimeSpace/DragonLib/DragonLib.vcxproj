@@ -249,6 +249,7 @@
     <ClCompile Include="Tables\Definitions\event_config.pb.cc" />
     <ClCompile Include="Tables\Definitions\evolution_config.pb.cc" />
     <ClCompile Include="Tables\Definitions\faceconfig.pb.cc" />
+    <ClCompile Include="Tables\Definitions\fetters_config.pb.cc" />
     <ClCompile Include="Tables\Definitions\gene_remake.pb.cc" />
     <ClCompile Include="Tables\Definitions\growtarget_config.pb.cc" />
     <ClCompile Include="Tables\Definitions\guide.pb.cc" />
@@ -387,6 +388,7 @@
     <ClInclude Include="Tables\Definitions\event_config.pb.h" />
     <ClInclude Include="Tables\Definitions\evolution_config.pb.h" />
     <ClInclude Include="Tables\Definitions\faceconfig.pb.h" />
+    <ClInclude Include="Tables\Definitions\fetters_config.pb.h" />
     <ClInclude Include="Tables\Definitions\gene_remake.pb.h" />
     <ClInclude Include="Tables\Definitions\growtarget_config.pb.h" />
     <ClInclude Include="Tables\Definitions\guide.pb.h" />
