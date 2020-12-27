@@ -12,10 +12,14 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTabWidget>
+#include <QtWidgets/QTableWidget>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -26,6 +30,11 @@ public:
     QAction *actionQuit;
     QAction *actionLoad_TBX;
     QWidget *centralwidget;
+    QTabWidget *tabWidget;
+    QWidget *tab;
+    QComboBox *cbTBXNames;
+    QTableWidget *dataTable;
+    QWidget *tab_2;
     QMenuBar *menubar;
     QMenu *menuFile;
     QStatusBar *statusbar;
@@ -41,6 +50,30 @@ public:
         actionLoad_TBX->setObjectName(QString::fromUtf8("actionLoad_TBX"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
+        tabWidget = new QTabWidget(centralwidget);
+        tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
+        tabWidget->setGeometry(QRect(0, 0, 801, 561));
+        QSizePolicy sizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(tabWidget->sizePolicy().hasHeightForWidth());
+        tabWidget->setSizePolicy(sizePolicy);
+        tab = new QWidget();
+        tab->setObjectName(QString::fromUtf8("tab"));
+        cbTBXNames = new QComboBox(tab);
+        cbTBXNames->setObjectName(QString::fromUtf8("cbTBXNames"));
+        cbTBXNames->setGeometry(QRect(570, 10, 221, 22));
+        dataTable = new QTableWidget(tab);
+        dataTable->setObjectName(QString::fromUtf8("dataTable"));
+        dataTable->setGeometry(QRect(0, 40, 801, 501));
+        sizePolicy.setHeightForWidth(dataTable->sizePolicy().hasHeightForWidth());
+        dataTable->setSizePolicy(sizePolicy);
+        dataTable->setSizeAdjustPolicy(QAbstractScrollArea::AdjustToContents);
+        dataTable->setGridStyle(Qt::SolidLine);
+        tabWidget->addTab(tab, QString());
+        tab_2 = new QWidget();
+        tab_2->setObjectName(QString::fromUtf8("tab_2"));
+        tabWidget->addTab(tab_2, QString());
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -59,6 +92,9 @@ public:
 
         retranslateUi(MainWindow);
 
+        tabWidget->setCurrentIndex(0);
+
+
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
 
@@ -70,6 +106,8 @@ public:
 #if QT_CONFIG(tooltip)
         actionLoad_TBX->setToolTip(QCoreApplication::translate("MainWindow", "Load TBX", nullptr));
 #endif // QT_CONFIG(tooltip)
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("MainWindow", "TBX Editing", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("MainWindow", "Something Else", nullptr));
         menuFile->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
     } // retranslateUi
 
