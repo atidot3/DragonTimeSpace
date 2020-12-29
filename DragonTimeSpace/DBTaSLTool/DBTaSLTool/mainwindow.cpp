@@ -46,8 +46,6 @@ void IterateTbxFields(QTableWidget* dataTable, T& tbl)
         }
         dataTable->setColumnCount(HeaderNames.size());
         dataTable->setHorizontalHeaderLabels(HeaderNames);
-     /*   for (auto it = tbl.datas().begin(); it != tbl.datas().end(); ++it)
-        {*/
 
         const google::protobuf::FieldDescriptor* field = desc->field(0);
         // Use the reflection interface to examine the contents.
@@ -141,27 +139,6 @@ void IterateTbxFields(QTableWidget* dataTable, T& tbl)
     {
         std::cout << "Error: " << e.what();
     }
-}
-QStringList GetChatCommandLabels()
-{
-
-
-    QStringList list;
-    list << "cdrate"
-        << "id"
-        << "levellimit"
-
-        << "name_short"
-
-        << "contentstyle"
-
-        << "name"
-        << "cachedount"
-        << "tbxid"
-        << "namestyle"
-        << "wordlimit"
-        << "cost";
-    return list;
 }
 
 void MainWindow::on_actionLoad_TBX_triggered()
@@ -317,6 +294,349 @@ void MainWindow::LoadTbxTableView(int index)
             {
                 auto table = sTBL.get_table < pb::devicesetting>();
                 IterateTbxFields<pb::devicesetting>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::DIALOGUECONFIG:
+            {
+                auto table = sTBL.get_table < pb::dialogueconfig>();
+                IterateTbxFields<pb::dialogueconfig>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::DNACHIP_CONFIG:
+            {
+                auto table = sTBL.get_table < pb::dnachip_config>();
+                IterateTbxFields<pb::dnachip_config>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::DNASLOT_CONFIG:
+            {
+                auto table = sTBL.get_table < pb::dnaslot_config>();
+                IterateTbxFields<pb::dnaslot_config>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::DYNAMICTEXT:
+            {
+                auto table = sTBL.get_table < pb::dynamictext>();
+                IterateTbxFields<pb::dynamictext>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::ENTANGLEMENT_CONFIG:
+            {
+                auto table = sTBL.get_table < pb::entanglement_config>();
+                IterateTbxFields<pb::entanglement_config>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::EQUIPS:
+            {
+                auto table = sTBL.get_table < pb::equips>();
+                IterateTbxFields<pb::equips>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::EQUIP_SUFFIX:
+            {
+                auto table = sTBL.get_table < pb::equip_suffix>();
+                IterateTbxFields<pb::equip_suffix>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::ESC_CONFIG:
+            {
+                auto table = sTBL.get_table < pb::esc_config>();
+                IterateTbxFields<pb::esc_config>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::EVENT_CONFIG:
+            {
+                auto table = sTBL.get_table < pb::event_config>();
+                IterateTbxFields<pb::event_config>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::EVOLUTION_CONFIG:
+            {
+                auto table = sTBL.get_table < pb::evolution_config>();
+                IterateTbxFields<pb::evolution_config>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::FACECONFIG:
+            {
+                auto table = sTBL.get_table < pb::faceconfig>();
+                IterateTbxFields<pb::faceconfig>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::FETTERS_CONFIG:
+            {
+                auto table = sTBL.get_table < pb::fetters_config>();
+                IterateTbxFields<pb::fetters_config>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::GENE_REMAKE:
+            {
+                auto table = sTBL.get_table < pb::gene_remake>();
+                IterateTbxFields<pb::gene_remake>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::GROWTARGET_CONFIG:
+            {
+                auto table = sTBL.get_table < pb::growtarget_config>();
+                IterateTbxFields<pb::growtarget_config>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::GUIDE:
+            {
+                auto table = sTBL.get_table < pb::guide>();
+                IterateTbxFields<pb::guide>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::HEROPANEL_MAXIMUM:
+            {
+                auto table = sTBL.get_table < pb::heropanel_maximum>();
+                IterateTbxFields<pb::heropanel_maximum>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::HEROS:
+            {
+                auto table = sTBL.get_table < pb::heros>();
+                IterateTbxFields<pb::heros>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::ILLEGALWORD:
+            {
+                auto table = sTBL.get_table < pb::illegalword>();
+                IterateTbxFields<pb::illegalword>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::KEY:
+            {
+                auto table = sTBL.get_table < pb::key>();
+                IterateTbxFields<pb::key>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::LEVELCONFIG:
+            {
+                auto table = sTBL.get_table < pb::levelconfig>();
+                IterateTbxFields<pb::levelconfig>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::LOADINGTIPS:
+            {
+                auto table = sTBL.get_table < pb::loadingtips>();
+                IterateTbxFields<pb::loadingtips>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::LOOKSCONFIG:
+            {
+                auto table = sTBL.get_table < pb::looksconfig>();
+                IterateTbxFields < pb::looksconfig > (dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::MANUFACTURE:
+            {
+                auto table = sTBL.get_table < pb::manufacture>();
+                IterateTbxFields<pb::manufacture>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::NAMEPOOL:
+            {
+                auto table = sTBL.get_table < pb::namepool>();
+                IterateTbxFields<pb::namepool>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::NEWUSER:
+            {
+                auto table = sTBL.get_table < pb::newUser>();
+                IterateTbxFields<pb::newUser>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::NPC_DATA:
+            {
+                auto table = sTBL.get_table < pb::npc_data>();
+                IterateTbxFields<pb::npc_data>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::OBJECTS:
+            {
+                auto table = sTBL.get_table < pb::objects>();
+                IterateTbxFields<pb::objects>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::PATHWAY:
+            {
+                auto table = sTBL.get_table < pb::pathway>();
+                IterateTbxFields<pb::pathway>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::PLAYER_LEVEL_CONFIG:
+            {
+                auto table = sTBL.get_table < pb::player_level_config>();
+                IterateTbxFields<pb::player_level_config>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::QUESTCONFIG:
+            {
+                auto table = sTBL.get_table < pb::questconfig>();
+                IterateTbxFields<pb::questconfig>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::QUIZDATACONFIG:
+            {
+                auto table = sTBL.get_table < pb::quizdataConfig>();
+                IterateTbxFields<pb::quizdataConfig>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::RANKPK_LEVEL:
+            {
+                auto table = sTBL.get_table < pb::rankpk_level>();
+                IterateTbxFields<pb::rankpk_level>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::RELATION_TBX:
+            {
+                auto table = sTBL.get_table < pb::relation_tbx>();
+                IterateTbxFields<pb::relation_tbx>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::REWARD_LEVEL:
+            {
+                auto table = sTBL.get_table < pb::reward_level>();
+                IterateTbxFields<pb::reward_level>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::RUNECONFIG:
+            {
+                auto table = sTBL.get_table < pb::runeConfig>();
+                IterateTbxFields<pb::runeConfig>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::SCREENSETTING:
+            {
+                auto table = sTBL.get_table < pb::screensetting>();
+                IterateTbxFields<pb::screensetting>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::SEVENTARGET_CONFIG:
+            {
+                auto table = sTBL.get_table < pb::seventarget_config>();
+                IterateTbxFields<pb::seventarget_config>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::SKILLSHOW:
+            {
+                auto table = sTBL.get_table < pb::skillshow>();
+                IterateTbxFields<pb::skillshow>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::SKILL_DATA:
+            {
+                auto table = sTBL.get_table < pb::skill_data>();
+                IterateTbxFields<pb::skill_data>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::SKILL_GUILD:
+            {
+                auto table = sTBL.get_table < pb::skill_guild>();
+                IterateTbxFields<pb::skill_guild>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::SKILL_STAGE:
+            {
+                auto table = sTBL.get_table < pb::skill_stage>();
+                IterateTbxFields<pb::skill_stage>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::SUMMONPET:
+            {
+                auto table = sTBL.get_table < pb::summonpet>();
+                IterateTbxFields<pb::summonpet>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::SUMMONPETLEVELUP:
+            {
+                auto table = sTBL.get_table < pb::summonpetLevelUp>();
+                IterateTbxFields<pb::summonpetLevelUp>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::SURVEY_CONFIG:
+            {
+                auto table = sTBL.get_table < pb::survey_config>();
+                IterateTbxFields<pb::survey_config>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::TELEPORT:
+            {
+                auto table = sTBL.get_table < pb::teleport>();
+                IterateTbxFields<pb::teleport>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::TEXTCONFIG:
+            {
+                auto table = sTBL.get_table < pb::textconfig>();
+                IterateTbxFields<pb::textconfig>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::UIMAPINFO:
+            {
+                auto table = sTBL.get_table < pb::uimapinfo>();
+                IterateTbxFields<pb::uimapinfo>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::UNLOCK_CONFIG:
+            {
+                auto table = sTBL.get_table < pb::unlock_config>();
+                IterateTbxFields<pb::unlock_config>(dataTable, table);
+                ui->statusbar->showMessage("Table Loaded");
+            }
+            break;
+            case TABLES::VIPCARD_CONFIG:
+            {
+                auto table = sTBL.get_table < pb::vipcard_config>();
+                IterateTbxFields<pb::vipcard_config>(dataTable, table);
                 ui->statusbar->showMessage("Table Loaded");
             }
             break;
