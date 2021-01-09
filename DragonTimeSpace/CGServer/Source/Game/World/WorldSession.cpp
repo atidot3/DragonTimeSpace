@@ -4,6 +4,8 @@
 #include "../../Network/CGSocket.h"
 
 #include <Utils/Logger/Logger.h>
+#include <Utils/Base64/base64.h>
+
 #include <Database/Repository/RepositoryManager.h>
 #include <Configuration/Configuration.h>
 
@@ -13,6 +15,8 @@
 #include <Network/Messages/ParseProto.h>
 
 #include <Tables/TableContainer.h>
+
+
 #pragma execution_character_set("utf-8")
 uint32_t skill_id;
 
@@ -297,7 +301,7 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 	{
 		mapInfo.get_protobuff().set_mapid(result->getUInt("MapID"));
 		mapInfo.get_protobuff().set_lineid(sConfig.GetGameServerServerId());
-		mapInfo.get_protobuff().set_sceneid(0);
+		mapInfo.get_protobuff().set_sceneid(16777911);
 		mapInfo.get_protobuff().set_allocated_pos(&pos);
 		mapInfo.get_protobuff().set_copymapidx(0);
 		mapInfo.get_protobuff().set_subcopymapidx(0);
@@ -305,6 +309,40 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		mapInfo.compute();
 
 		SendPacket(mapInfo.get_buffer());
+	}
+
+	// Send lines info
+	ProtobufPacket<msg::MSG_NoticeClientAllLines_SC> allLineInfo(CommandID::NoticeClientAllLines_SC);
+	{
+		allLineInfo.get_protobuff().set_your_line(1);
+		auto lines = allLineInfo.get_protobuff().add_lines();
+		{
+			lines->set_index(1);
+			lines->set_user_num(1);
+		}
+
+		allLineInfo.compute();
+
+		SendPacket(allLineInfo.get_buffer());
+	}
+
+	// Send npcs etc
+	_player = std::make_shared<Player>(this);
+	if (_player->load(char_id))
+	{
+		_player->set_map_id(result->getUInt("MapID"));
+		_player->set_position(result->getUInt("Position_X"), result->getUInt("Position_Y"), 0);
+
+		auto map = sMapMgr.get_map(_player->get_map_id());
+		if (map)
+		{
+			_player->set_map(map);
+			map->add_to_map(_player);
+		}
+		else
+		{
+			LOG_FATAL << "Unable to find map: " << _player->get_map_id() << " player will not log";
+		}
 	}
 
 	//Set Main Char
@@ -541,41 +579,6 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		SendPacket(career_skill.get_buffer());
 	}
 
-	auto lines = ProtobufPacket<msg::MSG_NoticeClientAllLines_SC>(CommandID::NoticeClientAllLines_SC);
-	{
-		lines.get_protobuff().set_your_line(sConfig.GetGameServerServerId());
-
-		/*
-			SELECT * FROM REAMLIST;
-		for (int i = 0; i < 3; ++i)
-		{
-			auto other_lines = lines.get_protobuff().add_lines();
-			other_lines->set_index(i);
-			other_lines->set_user_num(0);
-
-		}
-		*/
-		lines.compute();
-		SendPacket(lines.get_buffer());
-	}
-
-	_player = std::make_shared<Player>(this);
-	if (_player->load(char_id))
-	{
-		_player->set_map_id(result->getUInt("MapID"));
-		_player->set_position(result->getUInt("Position_X"), result->getUInt("Position_Y"), 0);
-
-		auto map = sMapMgr.get_map(_player->get_map_id());
-		if (map)
-		{
-			_player->set_map(map);
-		}
-		else
-		{
-			LOG_FATAL << "Unable to find map: " << _player->get_map_id() << " player will not log";
-		}
-	}
-
 	return true;
 }
 
@@ -584,16 +587,15 @@ bool WorldSession::onReceiveMainHero(const Packet& packet)
 	LOG_DEBUG << "onReceiveMainHero";
 
 	auto _hero = ProtobufPacket<hero::MSG_SetMainHero_CSC>(packet);
-	ProtobufPacket<hero::MSG_SetMainHero_CSC> hero(CommandID::SetMainHero_CSC);
-
 	LOG_DEBUG << _hero.get_protobuff().DebugString();
 
-	hero.get_protobuff().set_errorcode(_hero.get_protobuff().errorcode());
-	hero.get_protobuff().set_opcode(_hero.get_protobuff().opcode());
-	hero.get_protobuff().set_herothisid(hero.get_protobuff().herothisid());
-
+	ProtobufPacket<hero::MSG_SetMainHero_CSC> hero(CommandID::SetMainHero_CSC);
+	{
+		hero.get_protobuff().set_errorcode(_hero.get_protobuff().errorcode());
+		hero.get_protobuff().set_opcode(_hero.get_protobuff().opcode());
+		hero.get_protobuff().set_herothisid(hero.get_protobuff().herothisid());
+	}
 	hero.compute();
-	
 	SendPacket(hero.get_buffer());
 
 	return true;
@@ -603,12 +605,20 @@ bool WorldSession::onSceneLoaded(const Packet& packet)
 {
 	LOG_DEBUG << "on scene loaded request received";
 
-	if (_player->get_map())
+	/*if (_player->get_map())
 	{
-		SendUpdateXpLevel(_player->get_hero_data(
-			Hero::selected_hero::PRIMARY)._heroid, _player->get_hero_data(Hero::selected_hero::PRIMARY)._cur_exp, _player->get_hero_data(Hero::selected_hero::PRIMARY)._level,
-			_player->get_hero_data(Hero::selected_hero::SECONDARY)._cur_exp, _player->get_hero_data(Hero::selected_hero::SECONDARY)._level);
+		_player->get_map()->add_to_map(_player);
 
+		// Send QuestInfo
+		ProtobufPacket<quest::MSG_notifyQuestStateEffect_SC> q(CommandID::notifyQuestStateEffect_SC);
+		{
+			q.get_protobuff().set_questid(10021);
+			q.get_protobuff().set_state(msg::QuestState::FINISHED);
+		}
+		q.compute();
+		SendPacket(q.get_buffer());
+
+		// Send active quests
 		ProtobufPacket<quest::MSG_RetCurActiveQuest_SC> res(CommandID::RetCurActiveQuest_SC);
 		{
 			auto first = res.get_protobuff().add_item();
@@ -618,20 +628,34 @@ bool WorldSession::onSceneLoaded(const Packet& packet)
 			first->set_curvalue(0);
 			first->set_cur_extvalue(0);
 			first->set_leftsecs(0);
-			first->set_maxvalue(1);
-			first->set_max_extvalue(1);
+			first->set_maxvalue(0);
+			first->set_max_extvalue(0);
 			first->set_score(0);
 			first->set_starttime(0);
-			auto ext_info = first->add_extinfo();
-			ext_info->set_curvalue(0);
-			ext_info->set_degreevar(std::string("kill_10416-1-1:99"));
-			ext_info->set_maxvalue(1);
 		}
 		res.compute();
 		SendPacket(res.get_buffer());
 
-		_player->get_map()->add_to_map(_player);
+		// i dont know
+		ProtobufPacket<quest::MSG_Ret_SetQuestNeedShow_SC> res2(CommandID::Ret_SetQuestNeedShow_SC);
+		{
+			res2.get_protobuff().set_code(true);
+			res2.get_protobuff().set_questid(10021);
+			res2.get_protobuff().set_result(true);
+		}
+		res2.compute();
+		SendPacket(res2.get_buffer());
+
+
+		// Send xp / level / hero data
+		SendUpdateXpLevel(_player->get_hero_data(
+			Hero::selected_hero::PRIMARY)._heroid, _player->get_hero_data(Hero::selected_hero::PRIMARY)._cur_exp, _player->get_hero_data(Hero::selected_hero::PRIMARY)._level,
+			_player->get_hero_data(Hero::selected_hero::SECONDARY)._cur_exp, _player->get_hero_data(Hero::selected_hero::SECONDARY)._level);
 	}
+	else
+	{
+		LOG_FATAL << "Map not found";
+	}*/
 
 	return true;
 }
@@ -833,89 +857,16 @@ bool WorldSession::onReceiveVisitNpcTrade(const Packet& packet)
 		res.get_protobuff().set_retcode(1);
 		auto crc = res.get_protobuff().add_allcrc();
 		res.get_protobuff().set_crc_ret(2);
-				/*res.get_protobuff().set_user_menu("function this:MainDialog()\n\
-			dlg:AddTalk(\"看来，这一场较量是不可避免的了。\")\n \
-			dlg:AddDialogItem(\"ic0145\",\"我在哪里？\",\"openTaskFinish, v80, 10021, 2\")\n \
-			end\n\
-			function this:TaskDialog()\n\
-				end\n\
-			this:MainDialog()\n\
-		function this:IsHasTask()\n\
-			return true\n\
-		end\n");
-		res.get_protobuff().set_npc_menu("function this:MainDialog()\n\
-			this:TaskDialog()\n \
-			end\n\
-			this:MainDialog()\n");*/
-		/*
-				stringBuilder.AppendLine("this = {}");
-				stringBuilder.AppendLine("dlg = NpcTalkAndTaskDlgCtrl");
-				luastr = luastr.Replace("[", "<");
-				luastr = luastr.Replace("]", ">");
-				luastr = luastr.Replace("{replacenpcid}", npcid.ToString());
-				stringBuilder.AppendLine(luastr);
-				stringBuilder.Append("dlg:EndDlg()");
-				string s = stringBuilder.ToString();
-				string @string = Encoding.UTF8.GetString(Encoding.UTF8.GetBytes(s));
-				LuaScriptMgr.Instance.CallLuaFunction("NpcTalkAndTaskDlgCtrl.CleanNpcTalk", new object[0]);
-				FFDebug.LogWarning("Call NPCLua", @string);
-		*/
-		//res.get_protobuff().set_user_menu("dlg:AddDramaTalkByID(\"1012111\")\n");
-		//res.get_protobuff().set_user_menu("dlg:AddDramaTalkByID(\"1\")\n");
-		//res.get_protobuff().set_npc_menu("dlg:AddDramaTalkByID(\""+std::to_string(req.get_protobuff().npc_temp_id() )+"\")\n"); // => make the npc we talk to showing his id in a frame
 
-		//open portals
-		/*dlg:Execute(\"StartAddTeleportItem,0\")\n\
-		dlg:Execute(\"AddTeleportItem, 25\")\n\
-		dlg:Execute(\"AddTeleportItem, 26\")\n\
-		dlg:Execute(\"AddTeleportItem, 28\")\n\
-		dlg:Execute(\"EndAddTeleportItem,0\")\n\*/
+		const std::string encoded = "dGhpcyA9IHt9CmRsZyA9IE5wY1RhbGtBbmRUYXNrRGxnQ3RybAoKCQkJCQkJZnVuY3Rpb24gdGhpczpUYXNrRGlhbG9nKCkKCQkJCQkJICAgIGRsZzpBZGREcmFtYVRhbGtCeUlEKCI0MDAwMDgxIikKCQkJCQkJCWRsZzpBZGREcmFtYUl0ZW1CeUlEKCJpYzAwMTkiLCI0MDAwMDgyIiwiRXhlY3V0ZVF1ZXN0LHYyOTQxLDk5OTk5LDIsMTAwMDA5OTEiKQoJCQkJCQkJZGxnOkFkZERyYW1hSXRlbUJ5SUQoImljMDAxOSIsIjQwMDAwODMiLCIiKQkJCQkJCgkJCQkJCWVuZAoKCQkJCQkKZnVuY3Rpb24gdGhpczpJc0hhc1Rhc2soKQoJcmV0dXJuIHRydWUKZW5kCgogICAgICAgIGZ1bmN0aW9uIHRoaXM6TWFpbkRpYWxvZygpCQkJCgkJCXRoaXM6VGFza0RpYWxvZygpCiAgICAgICAgZW5kCiAgICAgICAgdGhpczpNYWluRGlhbG9nKCkKCQkKZGxnOkVuZERsZygp";
+		auto vector = Base64::decode(encoded);
+		std::string luaString;
+		std::copy(vector.begin(), vector.end(), std::back_inserter(luaString));
 
-		/*res.get_protobuff().set_user_menu("function this:MainDialog()\n\
-			dlg:AddTalk(\"看来，这一场较量是不可避免的了。\")\n \
-			dlg:AddDialogItem(\"ic0145\",\"我在哪里？\",\"openTaskFinish, v80, 10021, 2\")\n \
-			end\n\
-			function this:TaskDialog()\n\
-				end\n\
-			this:MainDialog()\n\
-		function this:IsHasTask()\n\
-			return true\n\
-		end\n");
-		res.get_protobuff().set_npc_menu("function this:MainDialog()\n\
-			this:TaskDialog()\n \
-			end\n\
-			this:MainDialog()\n");*/
+		LOG_DEBUG << "LUA STRING: " << luaString;
 
-
-			//	res.get_protobuff().set_npc_menu("\
-			//function this:TaskDialog()\n\
-			//	dlg:Execute(\"StartAddTeleportItem,0\")\n\
-			//	dlg:Execute(\"AddTeleportItem, 25\")\n\
-			//	dlg:Execute(\"AddTeleportItem, 26\")\n\
-			//	dlg:Execute(\"AddTeleportItem, 28\")\n\
-			//	dlg:Execute(\"EndTeleportAddItem,0\")\n\
-			//end\n\
-			//function this:IsHasTask()\n\
-			//	return true\n\
-			//end");
-
-		res.get_protobuff().set_user_menu("function this:TaskDialog()\n\
-		 dlg:AddDramaTalk(\"新脚本机制显示下面的话\")\n\
-		dlg:AddDramaItemByID(\"ic0019\",\"1002111\",\"this.Dialog1\")\n\
-		end\n\
-		function this:Dialog1()\n\
-			dlg:AddDramaGroupByID(\"1002101\",\"ExecuteQuest,v80,10021,1,10000650\")\n\
-		end\n\
-		function this:IsHasTask()\n\
-			return true\n\
-			end\n");
-		res.get_protobuff().set_npc_menu("function this:MainDialog()\n\
-			this:TaskDialog()\n\
-			end\n\
-			this:MainDialog()\n");
-
+		res.get_protobuff().set_user_menu(luaString);
 		res.get_protobuff().set_source(req.get_protobuff().npc_temp_id());
-
 	}
 
 	res.compute();
@@ -973,30 +924,38 @@ bool WorldSession::onReceiveRefreshRadar(const Packet& packet)
 bool WorldSession::onReceiveRefreshMapQuestInfo(const Packet& packet)
 {
 	LOG_DEBUG << "onReceiveRefreshMapQuestInfo";
-	auto req = ProtobufPacket<quest::MSG_ReqMapQuestInfo_CS>(packet);
 
+	auto req = ProtobufPacket<quest::MSG_ReqMapQuestInfo_CS>(packet);
 	ProtobufPacket<quest::MSG_RetMapQuestInfo_SC> res(CommandID::RetMapQuestInfo_SC);
 	{
 		auto it = res.get_protobuff().add_npclists();
 		{
 			it->set_npcid(80);
 			it->set_state(9);
-		
+
 			auto sec = it->add_quests();
 			sec->set_questid(10021);
 			sec->set_state(msg::QuestState::FINISHED);
+		}
 
-			auto sec2 = it->add_quests();
-			sec2->set_questid(10022);
-			sec2->set_state(msg::QuestState::ACCEPTABLE);
+		auto it2 = res.get_protobuff().add_npclists();
+		{
+			it2->set_npcid(2941);
+			it2->set_state(0);
 
-			auto sec3 = it->add_quests();
-			sec3->set_questid(10023);
-			sec3->set_state(msg::QuestState::ACCEPTABLE);
+			auto sec = it2->add_quests();
+			sec->set_questid(99999);
+			sec->set_state(msg::QuestState::UNACCEPT);
+		}
 
-			auto sec4 = it->add_quests();
-			sec4->set_questid(10024);
-			sec4->set_state(msg::QuestState::ACCEPTABLE);
+		auto it3 = res.get_protobuff().add_npclists();
+		{
+			it3->set_npcid(60);
+			it3->set_state(0);
+
+			auto sec = it3->add_quests();
+			sec->set_questid(71001);
+			sec->set_state(msg::QuestState::UNACCEPT);
 		}
 	}
 	res.compute();
@@ -1014,23 +973,24 @@ bool WorldSession::onReceiveCurrentActiveQuest(const Packet& packet)
 	{
 		auto first = res.get_protobuff().add_item();
 		first->set_id(10021);
-		first->set_show(true);
+		first->set_show(false);
 		first->set_state(msg::QuestState::FINISHED);
 		first->set_curvalue(0);
 		first->set_cur_extvalue(0);
 		first->set_leftsecs(0);
-		first->set_maxvalue(1);
-		first->set_max_extvalue(1);
+		first->set_maxvalue(0);
+		first->set_max_extvalue(0);
 		first->set_score(0);
 		first->set_starttime(0);
-		auto ext_info = first->add_extinfo();
+		/*auto ext_info = first->add_extinfo();
 		ext_info->set_curvalue(0);
 		ext_info->set_degreevar(std::string("kill_10416-1-1:99"));
-		ext_info->set_maxvalue(1);
+		ext_info->set_maxvalue(1);*/
 	}
 
 	res.compute();
 	SendPacket(res.get_buffer());
+
 	return true;
 }
 
@@ -1043,7 +1003,7 @@ bool WorldSession::onReceiveEntrySelectState(const Packet& packet)
 	LOG_DEBUG << req.get_protobuff().DebugString();
 	ProtobufPacket<msg::MSG_RetEntrySelectState_SC> res(CommandID::RetEntrySelectState_SC);
 	{
-		auto it = res.get_protobuff().add_states();
+		//auto it = res.get_protobuff().add_states();
 		//Set state here. 
 	}
 
@@ -1056,10 +1016,10 @@ bool WorldSession::onReceiveSetChooseTarget(const Packet& packet)
 {
 	LOG_DEBUG << "onReceiveSetChooseTarget";
 
-	/*auto req = ProtobufPacket<msg::MSG_SetChooseTarget_CS>(packet);
+	auto req = ProtobufPacket<msg::MSG_SetChooseTarget_CS>(packet);
 
 	LOG_DEBUG << req.get_protobuff().DebugString();
-	ProtobufPacket<msg::MSG_AttackTargetChange_SC> res(CommandID::AttackTargetChange_SC);
+	/*ProtobufPacket<msg::MSG_AttackTargetChange_SC> res(CommandID::AttackTargetChange_SC);
 	{
 		res.get_protobuff().set_choosetype(req.get_protobuff().choosetype());
 		res.get_protobuff().set_charid(req.get_protobuff().charid());
@@ -1146,20 +1106,6 @@ bool WorldSession::onReceiveOperateDatasReq(const Packet& packet)
 	opdat.compute();
 
 	SendPacket(opdat.get_buffer());
-
-
-	//SendQuestInfo
-	ProtobufPacket<quest::MSG_notifyQuestStateEffect_SC> q(CommandID::notifyQuestStateEffect_SC);
-
-	LOG_DEBUG << q.get_protobuff().DebugString();
-
-	
-	q.get_protobuff().set_questid(10021);
-	q.get_protobuff().set_state(100);
-	
-	q.compute();
-
-	SendPacket(q.get_buffer());
 
 	return true;
 }
@@ -1418,20 +1364,19 @@ bool WorldSession::onReceiveExecuteQuest(const Packet& packet)
 	}
 	if (qc != nullptr)
 	{
-
 		std::string target = _quest.get_protobuff().target();
 		auto qi = questpkt.get_protobuff().add_item();
 		{
-				auto ext = qi->add_extinfo();
-				{
-					ext->set_curvalue(0);
-					ext->set_degreevar(qc->degree());
+			auto ext = qi->add_extinfo();
+			{
+				ext->set_curvalue(0);
+				ext->set_degreevar(qc->degree());
 					
-					ext->set_maxvalue(1);
-				}
-				qi->set_id(_quest.get_protobuff().id());
-				qi->set_state(0);
-				qi->set_show(true);
+				ext->set_maxvalue(1);
+			}
+			qi->set_id(_quest.get_protobuff().id());
+			qi->set_state(0);
+			qi->set_show(true);
 				
 		
 			auto newact = questpkt.get_protobuff().add_newaccept();
@@ -1444,7 +1389,7 @@ bool WorldSession::onReceiveExecuteQuest(const Packet& packet)
 				if(target != "")
 				newact->set_npcid(std::stoi(target));
 				newact->set_questid(_quest.get_protobuff().id());
-				
+				LOG_DEBUG << "QUEST ID: " << _quest.get_protobuff().id();
 			}
 			auto ri = questpkt.get_protobuff().add_ringinfo();
 			{
@@ -1568,7 +1513,6 @@ bool WorldSession::onRecieveQuestInfo(const Packet& packet)
 	LOG_DEBUG << " Execute Quest INFO Received";
 
 	auto _quest = ProtobufPacket<quest::MSG_Req_QuestInfo_CS>(packet);
-
 	LOG_DEBUG << _quest.get_protobuff().DebugString();
 
 	//Get Database Values. 
@@ -1577,7 +1521,7 @@ bool WorldSession::onRecieveQuestInfo(const Packet& packet)
 		questpkt.get_protobuff().set_curvalue(0);
 		questpkt.get_protobuff().set_id(_quest.get_protobuff().id());
 		questpkt.get_protobuff().set_starttime(0);
-		questpkt.get_protobuff().set_state(100);
+		questpkt.get_protobuff().set_state(msg::QuestState::FINISHED);
 		questpkt.get_protobuff().set_maxvalue(0);
 		questpkt.get_protobuff().set_score(0);
 		questpkt.get_protobuff().set_cur_extvalue(0);
@@ -1587,7 +1531,9 @@ bool WorldSession::onRecieveQuestInfo(const Packet& packet)
 		questpkt.get_protobuff().set_discount(false);
 		
 		auto it = questpkt.get_protobuff().add_extinfo();
-		
+		it->set_curvalue(0);
+		it->set_degreevar(std::string("kill_10416-1-1:99"));
+		it->set_maxvalue(0);
 	}
 	questpkt.compute();
 	LOG_DEBUG << questpkt.get_protobuff().DebugString();

@@ -94,7 +94,7 @@ public:
 			}
 		}
 		// -- we never should get here since we store everything
-		LOG_FATAL << "WOOOW WOOOOOOOOOOW CALM YOU TITS";
+		//LOG_FATAL << "WOOOW WOOOOOOOOOOW CALM YOU TITS";
 		T t;
 		return t;
 	}

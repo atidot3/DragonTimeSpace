@@ -36,12 +36,14 @@ void VisibilityManager::ManageCreate(const Object* source, object_vect_t curSet)
 	Player* plr = (Player*)source;
 	auto npcs = ProtobufPacket<msg::MSG_Ret_MapScreenBatchRefreshNpc_SC>(CommandID::Ret_MapScreenBatchRefreshNpc_SC);
 	auto func_npc = ProtobufPacket<msg::MSG_Ret_MapScreenFuncNpc_SC>(CommandID::Ret_MapScreenFuncNpc_SC);
+	auto visible_npcs = ProtobufPacket<msg::MSG_Ret_VisibleNpcList_SC>(CommandID::Ret_VisibleNpcList_SC);
 
 	for (auto& it : curSet)
 	{
 		if (it->get_object_type() == msg::MapDataType::MAP_DATATYPE_NPC)
 		{
 			((Npc*)it)->compose_spawn_packet(npcs, func_npc);
+			visible_npcs.get_protobuff().add_npc(it->get_id());
 		}
 		// -- build packet here ?
 		//sendCreatePacketsFor(source, it);
@@ -49,10 +51,12 @@ void VisibilityManager::ManageCreate(const Object* source, object_vect_t curSet)
 	}
 
 	npcs.compute();
+	visible_npcs.compute();
 	func_npc.compute();
 
-	plr->SendPacket(npcs.get_buffer());
 	plr->SendPacket(func_npc.get_buffer());
+	plr->SendPacket(visible_npcs.get_buffer());
+	plr->SendPacket(npcs.get_buffer());
 }
 void VisibilityManager::ManageDelete(const Object* source, object_vect_t curSet)
 {

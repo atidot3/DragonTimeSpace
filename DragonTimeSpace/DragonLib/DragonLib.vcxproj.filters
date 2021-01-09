@@ -70,6 +70,9 @@
     <Filter Include="Database\Repository\CGServer">
       <UniqueIdentifier>{00ecafbd-bc12-4f5a-af31-51ce742cd497}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Utils\Base64">
+      <UniqueIdentifier>{ee2bd779-f043-46dd-8d48-5991ccb96c48}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Configuration\Configuration.cpp">
@@ -440,6 +443,9 @@
     </ClCompile>
     <ClCompile Include="Tables\Definitions\fetters_config.pb.cc">
       <Filter>Tables\Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Base64\Base64.cpp">
+      <Filter>Utils\Base64</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -868,6 +874,9 @@
     </ClInclude>
     <ClInclude Include="Tables\Definitions\fetters_config.pb.h">
       <Filter>Tables\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Base64\base64.h">
+      <Filter>Utils\Base64</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

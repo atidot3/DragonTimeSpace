@@ -1,6 +1,7 @@
 #include "map.h"
 #include "Helper/VisibilityManager.h"
 #include "../Object/Entity/Npc/Npc.h"
+#include "../Object/Entity/Player/Player.h"
 
 #include "../World.h"
 
