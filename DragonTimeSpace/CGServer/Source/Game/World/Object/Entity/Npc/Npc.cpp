@@ -50,7 +50,7 @@ void Npc::compose_spawn_packet(ProtobufPacket<msg::MSG_Ret_MapScreenBatchRefresh
 	msg::EntryIDType* myType = new msg::EntryIDType();
 	{
 		myType->set_id(get_id());
-		myType->set_type(msg::MapDataType::MAP_DATATYPE_NPC);
+		myType->set_type(_npc_type);
 	}
 	msg::MasterData* master = new msg::MasterData();
 	{
@@ -89,7 +89,8 @@ void Npc::compose_spawn_packet(ProtobufPacket<msg::MSG_Ret_MapScreenBatchRefresh
 	//npcs->set_titlename();
 	data->set_visit(0);
 	auto it = data->add_states();		
-	it->set_uniqid(Entity::GenernateBuffHash(get_temp_id(), Entity::USTATE_NOSTATE, 1, get_temp_id()));
+	// -- state define if this npc is quest giver / finish etc
+	it->set_uniqid(Entity::GenernateBuffHash(get_id(), Entity::USTATE_NOSTATE, _npc_type, get_temp_id()));
 
 	if (_npc_function != "")
 	{

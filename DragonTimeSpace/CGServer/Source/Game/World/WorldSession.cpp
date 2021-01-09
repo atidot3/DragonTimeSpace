@@ -931,7 +931,7 @@ bool WorldSession::onReceiveRefreshMapQuestInfo(const Packet& packet)
 		auto it = res.get_protobuff().add_npclists();
 		{
 			it->set_npcid(80);
-			it->set_state(9);
+			it->set_state(Entity::USTATE_QUEST_FINISH);
 
 			auto sec = it->add_quests();
 			sec->set_questid(10021);
@@ -941,7 +941,7 @@ bool WorldSession::onReceiveRefreshMapQuestInfo(const Packet& packet)
 		auto it2 = res.get_protobuff().add_npclists();
 		{
 			it2->set_npcid(2941);
-			it2->set_state(0);
+			it2->set_state(Entity::USTATE_NOSTATE);
 
 			auto sec = it2->add_quests();
 			sec->set_questid(99999);
@@ -951,7 +951,7 @@ bool WorldSession::onReceiveRefreshMapQuestInfo(const Packet& packet)
 		auto it3 = res.get_protobuff().add_npclists();
 		{
 			it3->set_npcid(60);
-			it3->set_state(0);
+			it3->set_state(Entity::USTATE_NOSTATE);
 
 			auto sec = it3->add_quests();
 			sec->set_questid(71001);
@@ -1413,7 +1413,7 @@ bool WorldSession::onReceiveExecuteQuest(const Packet& packet)
 		}*/
 		res.get_protobuff().set_action(0);
 		res.get_protobuff().set_type(0);
-		res.get_protobuff().set_npc_temp_id(10000650);
+		res.get_protobuff().set_npc_temp_id(3355);
 		res.get_protobuff().set_show_type(1);
 		res.get_protobuff().set_retcode(1);
 		auto crc = res.get_protobuff().add_allcrc();
