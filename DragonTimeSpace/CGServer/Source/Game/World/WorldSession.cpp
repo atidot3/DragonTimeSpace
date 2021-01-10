@@ -206,6 +206,15 @@ const uint32_t& WorldSession::GetAccountID() const
 //----------------------------------------
 bool WorldSession::CreatePlayer(const uint32_t& char_id)
 {
+	// -- First send game time
+	ProtobufPacket<msg::MSG_Ret_ServerTime_SC> srvTime(CommandID::ServerTimer_SC);
+	{
+		srvTime.get_protobuff().set_servertime(time(NULL));
+		srvTime.compute();
+		SendPacket(srvTime.get_buffer());
+	}
+
+
 	msg::FloatMovePos pos;
 
 	auto hero_table = sTBL.get_table<pb::heros>();
@@ -337,7 +346,6 @@ bool WorldSession::CreatePlayer(const uint32_t& char_id)
 		if (map)
 		{
 			_player->set_map(map);
-			map->add_to_map(_player);
 		}
 		else
 		{
@@ -605,7 +613,7 @@ bool WorldSession::onSceneLoaded(const Packet& packet)
 {
 	LOG_DEBUG << "on scene loaded request received";
 
-	/*if (_player->get_map())
+	if (_player->get_map())
 	{
 		_player->get_map()->add_to_map(_player);
 
@@ -655,7 +663,7 @@ bool WorldSession::onSceneLoaded(const Packet& packet)
 	else
 	{
 		LOG_FATAL << "Map not found";
-	}*/
+	}
 
 	return true;
 }
@@ -664,12 +672,12 @@ bool WorldSession::onNewRoleCutScene(const Packet& packet)
 {
 	LOG_DEBUG << "on new role scenecut request received";
 
-	auto req = ProtobufPacket<msg::MSG_Create_Role_CS>(packet);
-	// This make infinit looping cutscene
-	/*auto res = ProtobufPacket<msg::MSG_START_CUTSCENE_SC>(CommandID::NEW_ROLE_CUTSCENE_SCS);
+	/*auto req = ProtobufPacket<msg::MSG_NEW_ROLE_CUTSCENE_SCS>(packet);
+	auto res = ProtobufPacket<msg::MSG_START_CUTSCENE_SC>(CommandID::ART_CUTSCENE_SC);
 	{
-		res.get_protobuff().set_cutsceneid(req.cutsceneid());
-		res.get_protobuff().set_onfinish(std::move(std::string(req.onfinish())));
+		req.get_protobuff().PrintDebugString();
+		res.get_protobuff().set_cutsceneid(2);
+		res.get_protobuff().set_onfinish("");
 	}
 	res.compute();
 	SendPacket(res.get_buffer());*/
