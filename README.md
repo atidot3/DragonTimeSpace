@@ -17,3 +17,5 @@ Again : https://github.com/atidot3/DragonTimeSpace/blob/master/DragonTimeSpace/A
 Change it with your GCServer ip.
 
 Change Auth.json and GCServer.json parameters to your current needs.
+
+![alt text](https://www.mmobyte.tv/wp-content/uploads/2019/10/Dragon-Ball-Legend-of-Time-and-Space.png)
